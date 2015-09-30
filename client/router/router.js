@@ -2,10 +2,14 @@ Router.configure({
   layoutTemplate: 'masterLayout'
 });
 
-Router.route('/', function () {
-  this.render('home');
-});
+Router.route('/', {name: 'home'});
 
 Router.route('/calendar', function () {
   this.render('calendar');
 });
+
+Router.route('/account', function () {
+  this.render('account');
+});
+
+Router.route('/profileEdit', {name: 'profileEdit'});
