@@ -1,26 +1,29 @@
 Template.calendar.rendered = function() {
   var calendar = $('#calendar').fullCalendar({
-      dayClick:function(date,allDay,jsEvent,view){
+      header: {
+        left: 'prev,next today myCustomButton',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay'
+      },
+      dayClick:function(date,jsEvent,view){
         var calendarEvent = {};
         calendarEvent.start = date;
         calendarEvent.end = date;
-        calendarEvent.title = 'New Event';
+        calendarEvent.title = 'New Class';
         calendarEvent.owner = Meteor.userId();
         Meteor.call('saveCalEvent',calendarEvent);
       },
       events:function(start,end,calback){
-        var calevent = CalEvent.find().fetch();
+        var calevent = CalEvent.find({},{reactive:false}).fetch();
         calback(calevent);
-      },
-      eventClick:function(calEvent,jsEvent,view){
-        Session.set('editing_event',calEvent._id);
-        $('#title').val(calEvent.title);
       },
       eventDrop:function(reqEvent){
         Meteor.call('moveEvent',reqEvent);
       },
       editable:true,
-      selectable:true
+      selectable:true,
+      eventColor: '#378006',
+      eventBackgroundColor: '#378006'
   }).data().fullCalendar;
   Deps.autorun(function(){
     CalEvent.find().fetch();
@@ -29,8 +32,3 @@ Template.calendar.rendered = function() {
     }
   });
 };
-
-Template.calendar.helpers({
-
-
-});

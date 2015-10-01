@@ -12,7 +12,8 @@ Meteor.startup(function () {
           start:reqEvent.start,
           end:reqEvent.end
         }
-      })
+      });
     }
-  })
+  });
 });
+
