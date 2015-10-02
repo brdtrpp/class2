@@ -1,0 +1,1 @@
+Meteor.subscribe('calevent'); //subscribe 10 messages 

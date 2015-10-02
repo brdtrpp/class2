@@ -9,6 +9,10 @@ Template.eventItemList.helpers({
     return this.owner === Meteor.userId();
   },
   
+  username: function () {
+    return this.owner.username
+  },
+  
   startDate: function () {
     var time = this.start;
     return time.moment.format('MM/DD/YYYY, HH:MM');

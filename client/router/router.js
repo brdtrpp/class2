@@ -13,3 +13,5 @@ Router.route('/account', function () {
 });
 
 Router.route('/profileEdit', {name: 'profileEdit'});
+
+Router.route('/myclasses', {name: 'myEvent'});

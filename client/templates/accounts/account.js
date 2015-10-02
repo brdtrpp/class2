@@ -3,3 +3,9 @@ Template._loginButtonsLoggedInDropdown.events({
         Router.go('profileEdit');
     }
 });
+
+Template.profileEdit.helpers({
+  user: function(){
+    return Meteor.user();
+  }
+});
