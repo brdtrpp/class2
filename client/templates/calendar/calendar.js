@@ -14,7 +14,7 @@ Template.calendar.rendered = function() {
         Meteor.call('saveCalEvent',calendarEvent);
       },
       events:function(start,end,calback){
-        var calevent = CalEvent.find({},{reactive:false}).fetch();
+        var calevent = CalEvent.find({}, {reactive:false}).fetch();
         calback(calevent);
       },
       eventDrop:function(reqEvent){

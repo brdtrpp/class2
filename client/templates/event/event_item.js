@@ -9,9 +9,9 @@ Template.eventItemList.helpers({
     return this.owner === Meteor.userId();
   },
   
-  username: function () {
-    return this.owner.username
-  },
+  // username: function () {
+  //   return this.owner.username();
+  // },
   
   startDate: function () {
     var time = this.start;
