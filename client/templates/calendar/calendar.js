@@ -1,34 +1,48 @@
-Template.calendar.rendered = function() {
-  var calendar = $('#calendar').fullCalendar({
-      header: {
-        left: 'prev,next today myCustomButton',
-        center: 'title',
-        right: 'month,agendaWeek,agendaDay'
-      },
-      dayClick:function(date,jsEvent,view){
-        var calendarEvent = {};
-        calendarEvent.start = date;
-        calendarEvent.end = date;
-        calendarEvent.title = 'New Class';
-        calendarEvent.owner = Meteor.userId();
-        Meteor.call('saveCalEvent',calendarEvent);
-      },
-      events:function(start,end,calback){
-        var calevent = CalEvent.find({}, {reactive:false}).fetch();
-        calback(calevent);
-      },
-      eventDrop:function(reqEvent){
-        Meteor.call('moveEvent',reqEvent);
-      },
-      editable:true,
-      selectable:true,
-      eventColor: '#378006',
-      eventBackgroundColor: '#378006'
-  }).data().fullCalendar;
-  Deps.autorun(function(){
-    CalEvent.find().fetch();
-    if(calendar){
-      calendar.refetchEvents();
-    }
-  });
-};
+    Template.calendar.helpers({
+        calendarOptions: {
+            // Standard fullcalendar options
+            height: 700,
+            hiddenDays: [ 0 ],
+            slotDuration: '01:00:00',
+            minTime: '00:00:01',
+            maxTime: '24:00:00',
+            lang: 'en',
+            // Function providing events reactive computation for fullcalendar plugin
+            dayClick: function(date, jsEvent, view) {
+              $('#myModal').modal('show');
+              console.log('Clicked on: ' + date.format());
+              console.log('Modal Fired');
+            },
+            events: function(start, end, timezone, callback) {
+              console.log("Events Trigger");
+                console.log(start);
+                console.log(end);
+                console.log(timezone);
+                var events = CalEvent.find();
+                // Get only events from one document of the Calendars collection
+                // events is a field of the Calendars collection document
+                // var calendar = CalEvent.findOne();
+                // events need to be an array of subDocuments:
+                // each event field named as fullcalendar Event Object property is automatically used by fullcalendar
+                // if (calendar && calendar.events) {
+                //     calendar.events.forEach(function (event) {
+                //         eventDetails = {};
+                //         for(key in event)
+                //             eventDetails[key] = event[key];
+                //         events.push(eventDetails);
+                //     });
+                // }
+                callback(events);
+            },
+            // Optional: id of the calendar
+            // id: "calendar1" + MeteorId(),
+            // Optional: Additional classes to apply to the calendar
+            // addedClasses: "col-md-8",
+            // Optional: Additional functions to apply after each reactive events computation
+            autoruns: [
+                function () {
+                    console.log("user defined autorun function executed!");
+                }
+            ]
+        },
+    });
