@@ -1,16 +1,22 @@
     Template.calendar.helpers({
         calendarOptions: {
             // Standard fullcalendar options
-            height: 700,
-            hiddenDays: [ 0 ],
+            height: window.innerHeight - 85,
+            // hiddenDays: [ 0 ],
             slotDuration: '01:00:00',
             minTime: '00:00:01',
             maxTime: '24:00:00',
             lang: 'en',
             // Function providing events reactive computation for fullcalendar plugin
             dayClick: function(date, jsEvent, view) {
-              $('#myModal').modal('show');
               console.log('Clicked on: ' + date.format());
+              var calendarEvent = {};
+                calendarEvent.start = date.format();
+                calendarEvent.end = date.format();
+                calendarEvent.title = 'New Event';
+                calendarEvent.owner = Meteor.userId();
+                Meteor.call('saveCalEvent',calendarEvent);
+              $('#calevent-update').modal('show');
               console.log('Modal Fired');
             },
             events: function(start, end, timezone, callback) {

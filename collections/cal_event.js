@@ -7,11 +7,21 @@ CalEvent.attachSchema(new SimpleSchema({
   },
   start: {
     type: Date,
-    label: "Start"
+    label: "Start",
+    autoform: {
+      afFieldInput: {
+        type: "datetimepicker"
+      }
+    }
   },
   end: {
     type: Date,
-    label: "End"
+    label: "End",
+    autoform: {
+      afFieldInput: {
+        type: "datetimepicker"
+      }
+    }
   },
   owner: {
     type: String,
