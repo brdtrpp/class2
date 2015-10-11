@@ -14,5 +14,9 @@ accounts-facebook
 ian:accounts-ui-bootstrap-3
 aldeed:autoform
 aldeed:collection2
-gquemart:meteor-reactive-fullcalendar
 aldeed:autoform-bs-datetimepicker
+yogiben:autoform-modals
+momentjs:moment
+rzymek:fullcalendar
+mrgalaxy:stripe
+chadkruser:meteor-accounts-stripe-connect

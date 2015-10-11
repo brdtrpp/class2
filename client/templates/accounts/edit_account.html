@@ -4,7 +4,10 @@
 
 <template name="profileEdit">
   <div class="container">
+    <div class="col-md-6">
+<a href="https://connect.stripe.com/oauth/authorize?response_type=code&client_id=ca_72Lcgei4oPPFzkpSpNttxeKK1ul7Etth&scope=read_write" class="stripe-connect dark"><span>Connect with Stripe</span></a>
     <h2>Edit Profile</h2>
     {{> quickForm collection="Meteor.users" doc=user id="user-profile-form" type="update"}}
+  </div>
   </div>
 </template>

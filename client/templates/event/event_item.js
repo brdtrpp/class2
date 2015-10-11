@@ -1,7 +1,10 @@
 Template.eventItemList.events({
-  "click .mdi-content-clear": function() {
-    CalEvent.remove(this._id);
-  }
+  // "click .mdi-content-clear": function() {
+  //   CalEvent.remove(this._id);
+  // },
+  // "click .mdi-content-create": function() {
+  //   $('#calevent-update').modal('show');
+  // }
 });
 
 Template.eventItemList.helpers({
@@ -15,7 +18,7 @@ Template.eventItemList.helpers({
   
   startDate: function () {
     var time = this.start;
-    return time.moment.format('MM/DD/YYYY, HH:MM');
+    return moment(time).format('MM/DD/YYYY, HH:MM');
   },
   
   endDate: function() {

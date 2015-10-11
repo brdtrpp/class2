@@ -3,5 +3,8 @@
     <div class="main">
       {{> yield}}
     </div>
-    <a class="btn btn-material-deep-orange btn-fab btn-raised mdi-content-add"></a>
+    {{#afModal class="btn btn-material-deep-orange btn-fab btn-raised mdi-content-add" collection="CalEvent" operation="insert"}}
+    {{/afModal}}
+    <a class=""></a>
+    {{> autoformModals}}
 </template>

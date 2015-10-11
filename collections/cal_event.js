@@ -7,24 +7,44 @@ CalEvent.attachSchema(new SimpleSchema({
   },
   start: {
     type: Date,
-    label: "Start",
-    autoform: {
-      afFieldInput: {
-        type: "datetimepicker"
-      }
-    }
+    label: "Start Date and Time",
+    // autoform: {
+    //   afFieldInput: {
+    //     type: "datetimepicker"
+    //   }
+    // }
   },
   end: {
     type: Date,
-    label: "End",
+    label: "End Date and Time",
+    // autoform: {
+    //   afFieldInput: {
+    //     type: "datetimepicker"
+    //   }
+    // }
+    optional: true,
+  },
+  description: {
+    type: String,
+    optional: true,
+    label: "Description",
+    max: 5000,
     autoform: {
       afFieldInput: {
-        type: "datetimepicker"
+        type: "textarea",
+        rows: 10,
       }
     }
   },
   owner: {
     type: String,
     label: "Host",
+  },
+  price: {
+   type: Number,
+   label: "Price",
+   optional: true,
+   min: 10,
+   max: 50000
   }
 }));
