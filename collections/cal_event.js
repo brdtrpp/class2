@@ -6,7 +6,7 @@ CalEvent.attachSchema(new SimpleSchema({
     max: 200
   },
   start: {
-    type: Date,
+    type: String,
     label: "Start Date and Time",
     // autoform: {
     //   afFieldInput: {
@@ -15,7 +15,7 @@ CalEvent.attachSchema(new SimpleSchema({
     // }
   },
   end: {
-    type: Date,
+    type: String,
     label: "End Date and Time",
     // autoform: {
     //   afFieldInput: {
@@ -32,13 +32,23 @@ CalEvent.attachSchema(new SimpleSchema({
     autoform: {
       afFieldInput: {
         type: "textarea",
-        rows: 10,
+        rows: 5,
       }
     }
   },
   owner: {
     type: String,
     label: "Host",
+  },
+  allDay: {
+    type: Boolean,
+    label: "All Day Event",
+    optional: true,
+    // autoform: {
+    //   afFieldInput: {
+    //     type: "boolean-checkbox",
+    //   }
+    // }
   },
   price: {
    type: Number,

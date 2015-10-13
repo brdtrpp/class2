@@ -13,16 +13,23 @@ Template.calendar.helpers({
             var events = CalEvent.find().fetch();
             callback(events);
           },
-          dayClick: function(start, end, jsEvent, view) {
-            console.log(start.format() + " Clicked");
+          dayClick: function(date, jsEvent, view) {
+            console.log(date.format() + " Clicked");
+            var ce = {};
+            ce.title = "New Class";
+            ce.owner = Meteor.userId();
+            ce.description = "This is a test event";
+            ce.start = date.format();
+            ce.end = date.add(1,"h").format();
+            Meteor.call('saveCalEvent',ce);
           },
-          select: function(start, end, jsEvent, view) {
-            console.log(start.format()+ end.format() + " Selected");
-          },
+          // select: function(start, end, jsEvent, view) {
+          //   console.log(start.format()+ end.format() + " Selected");
+          // },
 
           eventDrop: function(event, delta, revertFunc) {
             console.log(event.title + " was dropped on " + event.start.format());
-            // console.log(event.title + " was dropped on " + event.end.format());
+            Meteor.call('moveEvent');
           },
 
           eventAfterAllRender: function(view) {
