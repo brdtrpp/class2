@@ -9,27 +9,30 @@ Template.calendar.helpers({
             left: "month,agendaDay,agendaWeek",
             center: "title",
           },
+          eventLimit: true,
           events: function(start,end,timezone,callback) {
             var events = CalEvent.find().fetch();
             callback(events);
           },
           dayClick: function(date, jsEvent, view) {
-            console.log(date.format() + " Clicked");
+            console.log(date.format("DD/MM/YYYY hh:mm a") + " Clicked");
             var ce = {};
             ce.title = "New Class";
             ce.owner = Meteor.userId();
             ce.description = "This is a test event";
             ce.start = date.format();
             ce.end = date.add(1,"h").format();
+            ce.price = 10;
             Meteor.call('saveCalEvent',ce);
           },
-          // select: function(start, end, jsEvent, view) {
-          //   console.log(start.format()+ end.format() + " Selected");
-          // },
+          eventClick: function(event, jsEvent, view) {
+            Router.go('/class/'+event._id, {
+            });
+          },
 
           eventDrop: function(event, delta, revertFunc) {
-            console.log(event.title + " was dropped on " + event.start.format());
-            Meteor.call('moveEvent');
+            console.log(event.title + " was dropped on " + event.start.format("DD/MM/YYYY hh:mm a"));
+            Meteor.call('moveEvent', event);
           },
 
           eventAfterAllRender: function(view) {

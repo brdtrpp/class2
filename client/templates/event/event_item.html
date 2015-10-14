@@ -1,18 +1,45 @@
 <template name="eventItemList">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      {{#if isOwner}}
-        <ul class="pull-right">
-          {{#afModal class="mdi-content-create" collection="CalEvent" operation="update" doc=_id}}
-          {{/afModal}}
-          {{#afModal class="mdi-content-clear" collection="CalEvent" operation="remove" doc=_id}}
-          {{/afModal}}
-        </ul>
-      {{/if}}
-      <h3 class="panel-title"> {{title}} <small>{{username}}</small></h3>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          <ul class="panel-title pull-right ">
+            <span style="font-size:15pt;"><i class="mdi-editor-attach-money"></i>{{price}}</span>
+            {{#if isOwner}}
+              {{#afModal class="mdi-content-create" collection="CalEvent" operation="update" doc=_id}}
+              {{/afModal}}
+              {{#afModal class="mdi-content-clear" collection="CalEvent" operation="remove" doc=_id}}
+              {{/afModal}}
+            {{/if}}
+          </ul>
+        <h2 class="panel-title"><a href="{{pathFor 'eventItem'}}"> {{title}} <small>{{start}} {{end}}</small></a></h2>
+      </div>
+      <div class="panel-body">
+        <p>{{description}}</p>
+      </div>
     </div>
-    <div class="panel-body">
-        {{start}} {{end}}
+</template>
+
+<template name="eventItem">
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          <ul class="panel-title pull-right ">
+            <span style="font-size:15pt;"><i class="mdi-editor-attach-money"></i>{{price}}</span>
+            {{#if isOwner}}
+              {{#afModal class="mdi-content-create" collection="CalEvent" operation="update" doc=_id}}
+              {{/afModal}}
+              {{#afModal class="mdi-content-clear" collection="CalEvent" operation="remove" doc=_id}}
+              {{/afModal}}
+            {{/if}}
+          </ul>
+        <h2 class="panel-title"> {{title}} <small>{{start}} {{end}}</small></h2>
+      </div>
+      <div class="panel-body">
+        <p>{{description}}</p>
+        Address Needed!
+      </div>
+      <div class="panel-footer">
+        <button id='chargeCard' class="btn btn-flat btn-success chargeCard">Register</button>
+      </div>
     </div>
-  </div>
+
 </template>

@@ -1,27 +1,33 @@
-Template.eventItemList.events({
-  // "click .mdi-content-clear": function() {
-  //   CalEvent.remove(this._id);
-  // },
-  // "click .mdi-content-create": function() {
-  //   $('#calevent-update').modal('show');
-  // }
+Template.eventItemList.helpers({
+  isOwner: function() {
+    return this.owner === Meteor.userId();
+  },
 });
 
-Template.eventItemList.helpers({
-  isOwner: function () {
+Template.eventItem.helpers({
+  isOwner: function() {
     return this.owner === Meteor.userId();
   },
   
-  // username: function () {
-  //   return this.owner.username();
-  // },
-  
-  startDate: function () {
-    var time = this.start;
-    return moment(time).format('MM/DD/YYYY, HH:MM');
+  customerPrice: function() {
+   return this.price * 1.1;
   },
-  
-  endDate: function() {
-    return CalEvent(this._id).moment.calendar();
+});
+
+Template.eventItem.events({
+    'click #chargeCard': function(stripeToken) {
+    var stripe = require("stripe")(
+      "sk_test_HniGfoNv0wNhzqEnIdTeQMFI"
+    );
+
+    stripe.charges.create({
+      amount: this.price * 100,
+      currency: 'usd',
+      source: stripeToken,
+      customer: this.userId,
+      description: "Tes tCharge"
+    }, function(err, charge) {
+      console.log(err, charge);
+    });
   }
 });
