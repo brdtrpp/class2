@@ -1,6 +1,6 @@
 <template name="attendeesItem">
      <li class="list-group-item">
-       {{attendeeFirstName}} - {{attendeeLastName}}
+      {{attendeeFirstName}} {{attendeeLastName}}
        <div class="pull-right">
          {{#if isAttendee}}
            {{#quickRemoveButton class="btn btn-danger btn-xs" collection="Attendee" _id=this._id}}Unregister{{/quickRemoveButton}}

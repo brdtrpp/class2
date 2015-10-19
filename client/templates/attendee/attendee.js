@@ -8,9 +8,12 @@ AutoForm.hooks({
   insertAttendee: {
     before: {
       insert: function(doc, template) {
-        doc.eventId = Template.instance().data.postId;
-        // console.log(doc);
-        return doc;
+        var eventId = Template.instance().data.event._id;
+        var limit = Template.instance().data.event.attendeeCount;
+        var ac = Attendee.find({eventId: eventId}).count();
+        console.log(limit - ac);
+          doc.eventId = eventId;
+          return doc;
       }
     },
   }

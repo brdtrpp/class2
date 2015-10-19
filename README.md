@@ -6,4 +6,4 @@
 * Prevent Duplicate Attendees
 * Route on delete
 * Account Dashboard
-* 
+* User Public Profile

@@ -4,9 +4,9 @@
           <ul class="panel-title pull-right ">
             <span style="font-size:15pt;"><i class="glyphicon glyphicon-usd"></i>{{price}}</span>
             {{#if isOwner}}
-              {{#afModal class="mdi-content-create" collection="CalEvent" operation="update" doc=_id omitFields="owner"}}
+              {{#afModal class="glyphicon glyphicon-pencil" collection="CalEvent" operation="update" doc=_id omitFields="owner"}}
               {{/afModal}}
-              {{#afModal class="mdi-content-clear" collection="CalEvent" operation="remove" doc=_id}}
+              {{#afModal class="glyphicon glyphicon-remove-circle" collection="CalEvent" operation="remove" doc=_id}}
               {{/afModal}}
             {{/if}}
           </ul>
