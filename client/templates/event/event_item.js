@@ -24,10 +24,16 @@ Template.eventItem.helpers({
 });
 
 Template.eventItem.events({
+    'submit': function () {
+      console.log("submit");
+      $('#attend').modal('hide');
+    },
     'click #chargeCard': function(stripeToken) {
     var stripe = require("stripe")(
       "sk_test_HniGfoNv0wNhzqEnIdTeQMFI"
     );
+    
+
 
     stripe.charges.create({
       amount: this.price * 100,

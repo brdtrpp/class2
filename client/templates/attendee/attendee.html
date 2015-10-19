@@ -2,7 +2,9 @@
      <li class="list-group-item">
        {{attendeeFirstName}} - {{attendeeLastName}}
        <div class="pull-right">
-         {{#quickRemoveButton collection="Attendee" _id=this._id}}Unregister{{/quickRemoveButton}}
+         {{#if isAttendee}}
+           {{#quickRemoveButton class="btn btn-danger btn-xs" collection="Attendee" _id=this._id}}Unregister{{/quickRemoveButton}}
+          {{/if}}
        </div>
     </li>
 </template>

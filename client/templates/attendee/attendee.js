@@ -1,5 +1,7 @@
 Template.attendeesItem.helpers({
-
+  isAttendee: function() {
+    return this.owner === Meteor.userId();
+  }
 });
 
 AutoForm.hooks({
