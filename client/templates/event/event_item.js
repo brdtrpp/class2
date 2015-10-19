@@ -40,7 +40,7 @@ Template.eventItem.events({
       currency: 'usd',
       source: stripeToken,
       customer: this.userId,
-      description: "Tes tCharge"
+      description: "Test Charge"
     }, function(err, charge) {
       console.log(err, charge);
     });

@@ -14,7 +14,7 @@ Router.route('/account', function () {
 
 Router.route('/user-profile', {name: 'profileEdit'});
 
-Router.route('/myclasses', {name: 'myEvent'});
+Router.route('/classes', {name: 'myEvent'});
 
 Router.route('/class/:_id', {  
   name: 'eventItem',
