@@ -6,7 +6,6 @@
 
 meteor-platform
 twbs:bootstrap
-fezvrasta:bootstrap-material-design
 iron:router
 accounts-password
 accounts-facebook
@@ -19,3 +18,11 @@ momentjs:moment
 rzymek:fullcalendar
 random
 benjick:stripe
+ongoworks:security
+useraccounts:bootstrap
+useraccounts:iron-routing
+aldeed:autoform-bs-button-group-input
+meteoric:ionic
+chadkruser:meteor-accounts-stripe-connect
+service-configuration
+aldeed:delete-button

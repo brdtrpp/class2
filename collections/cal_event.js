@@ -43,11 +43,11 @@ CalEvent.attachSchema(new SimpleSchema({
     type: Boolean,
     label: "All Day Event",
     optional: true,
-    // autoform: {
-    //   afFieldInput: {
-    //     type: "boolean-checkbox",
-    //   }
-    // }
+    autoform: {
+      afFieldInput: {
+        type: "select-checkbox",
+      }
+    }
   },
   price: {
    type: Number,
@@ -72,12 +72,12 @@ CalEvent.attachSchema(new SimpleSchema({
   },
 }));
 
-CalEvent.allow({  
-  insert: function(userId, doc) {
-    // only allow posting if you are logged in
-    return !! userId;  
-  },
-  remove: function(userId, calevent) {
-    return ownsDocument(userId, calevent);
-  },
-});
+// CalEvent.allow({  
+//   insert: function(userId, doc) {
+//     // only allow posting if you are logged in
+//     return !! userId;  
+//   },
+//   remove: function(userId, calevent) {
+//     return ownsDocument(userId, calevent);
+//   },
+// });

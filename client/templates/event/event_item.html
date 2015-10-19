@@ -1,45 +1,58 @@
-<template name="eventItemList">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-          <ul class="panel-title pull-right ">
-            <span style="font-size:15pt;"><i class="mdi-editor-attach-money"></i>{{price}}</span>
-            {{#if isOwner}}
-              {{#afModal class="mdi-content-create" collection="CalEvent" operation="update" doc=_id}}
-              {{/afModal}}
-              {{#afModal class="mdi-content-clear" collection="CalEvent" operation="remove" doc=_id}}
-              {{/afModal}}
-            {{/if}}
-          </ul>
-        <h2 class="panel-title"><a href="{{pathFor 'eventItem'}}"> {{title}} <small>{{start}} {{end}}</small></a></h2>
-      </div>
-      <div class="panel-body">
-        <p>{{description}}</p>
-      </div>
-    </div>
-</template>
-
 <template name="eventItem">
-
-    <div class="panel panel-default">
-      <div class="panel-heading">
-          <ul class="panel-title pull-right ">
-            <span style="font-size:15pt;"><i class="mdi-editor-attach-money"></i>{{price}}</span>
-            {{#if isOwner}}
-              {{#afModal class="mdi-content-create" collection="CalEvent" operation="update" doc=_id}}
-              {{/afModal}}
-              {{#afModal class="mdi-content-clear" collection="CalEvent" operation="remove" doc=_id}}
-              {{/afModal}}
-            {{/if}}
-          </ul>
-        <h2 class="panel-title"> {{title}} <small>{{start}} {{end}}</small></h2>
-      </div>
-      <div class="panel-body">
-        <p>{{description}}</p>
-        Address Needed!
-      </div>
-      <div class="panel-footer">
-        <button id='chargeCard' class="btn btn-flat btn-success chargeCard">Register</button>
-      </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+        <ul class="panel-title pull-right">
+          <span style="font-size:15pt;"><i class="glyphicon glyphicon-usd"></i>{{price}}</span>
+          <span style="font-size:15pt;"><i class="glyphicon glyphicon-user"></i>{{aCount}}</span>
+          {{#if isOwner}}
+            {{#afModal class="glyphicon glyphicon-pencil" collection="CalEvent" operation="update" doc=_id omitFields="owner"}}
+            {{/afModal}}
+            {{#afModal class="glyphicon glyphicon-remove-circle" collection="CalEvent" operation="remove" doc=_id}}
+            {{/afModal}}
+          {{/if}}
+        </ul>
+      <h2 class="panel-title"> {{title}} <small>{{start}} {{end}}</small></h2>
     </div>
+    <div class="panel-body">
+      <p>{{description}}</p>
+    </div>
+    <div class="panel-footer">
+      {{#if currentUser}}
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        Register
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+              {{> quickForm collection="Attendee" id="insertAttendee" type="insert" postId=_id}}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {{else}}
+      <p>Please log in to register.</p>
+      {{/if}}
+
+    </div>
+  </div>
+  <ul class="list-group">
+  {{#each attendee}}
+    {{> attendeesItem}}
+  {{/each}}
+  </ul>
+
 
 </template>

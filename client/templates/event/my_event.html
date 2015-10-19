@@ -1,29 +1,8 @@
 <template name="myEvent">
-    <div class="container">
-      <div class="list-group">
-        {{#each calevent}}
-          {{> eventItemList}}
-        {{/each}}
-      </div>
-  </div>
-</template>
-
-<template name="myEventHosted">
-    <div class="container">
-      <div class="list-group">
-        {{#each calevent}}
-          {{> eventItemList}}
-        {{/each}}
-      </div>
-  </div>
-</template>
-
-<template name="myEventTaken">
-    <div class="container">
-      <div class="list-group">
-        {{#each calevent}}
-          {{> eventItemList}}
-        {{/each}}
-      </div>
+  <div class="container-fluid">
+    <div class='text-center'><h2>Classes</h2></div>
+    {{#each calevent}}
+      {{> eventItemList}}
+    {{/each}}
   </div>
 </template>

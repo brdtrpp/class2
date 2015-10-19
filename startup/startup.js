@@ -18,8 +18,14 @@ Meteor.startup(function() {
   //     callback();
   //   },
   // };
+Security.permit(['insert', 'update', 'remove']).collections([
+  Meteor.users
+  ]).apply();
+Security.permit(['insert', 'update', 'remove']).collections([CalEvent]).apply();
+Security.permit(['insert', 'update', 'remove']).collections([Attendee]).apply();
 
   Meteor.methods({
+
     'saveCalEvent':function(ce){
         CalEvent.insert(ce);
       },

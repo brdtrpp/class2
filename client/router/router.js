@@ -12,7 +12,7 @@ Router.route('/account', function () {
   this.render('account');
 });
 
-Router.route('/profileEdit', {name: 'profileEdit'});
+Router.route('/user-profile', {name: 'profileEdit'});
 
 Router.route('/myclasses', {name: 'myEvent'});
 
@@ -24,3 +24,4 @@ Router.route('/class/:_id', {
 });
 
 Router.route('/terms', {name: 'terms'});
+Router.route('/stripeconnect', {name: 'stripeConnect'})

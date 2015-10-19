@@ -1,6 +1,9 @@
 .main {
   margin-top: 75px;
 }
+.body {
+  background-color: #eee;  
+}
 
 .stripe-connect {
   display: inline-block;
