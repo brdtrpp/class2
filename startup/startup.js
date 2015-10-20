@@ -7,7 +7,6 @@ Security.permit(['insert', 'update', 'remove']).collections([CalEvent]).apply();
 Security.permit(['insert', 'update', 'remove']).collections([Attendee]).apply();
 
   Meteor.methods({
-
     'saveCalEvent':function(ce){
         CalEvent.insert(ce);
       },
@@ -21,5 +20,6 @@ Security.permit(['insert', 'update', 'remove']).collections([Attendee]).apply();
       });
     },
   });
+  
 });
 

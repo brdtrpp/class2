@@ -2,6 +2,7 @@ Template.calendar.helpers({
     options: function() {
         return {
           height: $(window).height() - 80,
+          timezone: "local",
           defaultView:'month',
           editable: true,
           selectable: true,
@@ -17,10 +18,9 @@ Template.calendar.helpers({
           dayClick: function(date, jsEvent, view) {
             console.log(date.format("DD/MM/YYYY hh:mm a") + " Clicked");
             var ce = {};
-            ce.description = "This is a test event";
+
             ce.start = date.format();
             ce.end = date.add(1,"h").format();
-            ce.price = 10;
             Meteor.call('saveCalEvent',ce);
           },
           eventClick: function(event, jsEvent, view) {

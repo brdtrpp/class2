@@ -4,25 +4,13 @@
 
 <template name="profileEdit">
   <div class="container">
-    <a href="/stripeconnect" class="btn btn-warning btn-lg">Connect to Stripe</a>
     <div class="panel panel-default">
       <div class="panel-heading">
         <div class="panel-title">Edit Profile</div>
       </div>
       <div class="panel-body">
-        <!--{{> accountUpdateForm}}-->
         {{> quickForm collection="Meteor.users" doc=user id="updateUserProfile" type="update" autosave=true}}
       </div>
     </div>
   </div>
-</template>
-
-<template name="accountUpdateForm">
-  {{# autoForm collection="Meteor.users" doc=user id="updateUserProfile1" type="update" autosave="true" trimStrings=false}}
-  <fieldset>
-    {{> afQuickField name='username'}}
-    {{> afQuickField name='profile.firstName'}}
-    {{> afQuickField name='profile.gender' type="select-radio"}}
-  </fieldset>
-  {{/ autoForm}}
 </template>
