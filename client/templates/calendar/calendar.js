@@ -17,8 +17,6 @@ Template.calendar.helpers({
           dayClick: function(date, jsEvent, view) {
             console.log(date.format("DD/MM/YYYY hh:mm a") + " Clicked");
             var ce = {};
-            ce.title = "New Class";
-            ce.owner = Meteor.userId();
             ce.description = "This is a test event";
             ce.start = date.format();
             ce.end = date.add(1,"h").format();

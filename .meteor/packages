@@ -26,3 +26,4 @@ meteoric:ionic
 chadkruser:meteor-accounts-stripe-connect
 service-configuration
 aldeed:delete-button
+tsega:bootstrap3-datetimepicker@=3.1.3_3

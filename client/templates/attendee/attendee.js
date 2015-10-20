@@ -8,12 +8,16 @@ AutoForm.hooks({
   insertAttendee: {
     before: {
       insert: function(doc, template) {
-        var eventId = Template.instance().data.event._id;
-        var limit = Template.instance().data.event.attendeeCount;
+        var eventId = Template.instance().data.event;
+        var event = CalEvent.findOne({_id: eventId});
+        var limit = event.attendeeCount;
         var ac = Attendee.find({eventId: eventId}).count();
-        console.log(limit - ac);
-          doc.eventId = eventId;
-          return doc;
+        var available = limit - ac;
+        if (available > 0) {
+          console.log(available);
+            doc.eventId = event._id;
+            return doc;
+        }
       }
     },
   }
