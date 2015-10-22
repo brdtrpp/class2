@@ -7,7 +7,6 @@
 meteor-platform
 twbs:bootstrap
 iron:router
-benjick:stripe
 accounts-password
 accounts-facebook
 ian:accounts-ui-bootstrap-3
@@ -23,8 +22,11 @@ useraccounts:bootstrap
 useraccounts:iron-routing
 aldeed:autoform-bs-button-group-input
 meteoric:ionic
-chadkruser:meteor-accounts-stripe-connect
 service-configuration
 aldeed:delete-button
 tsega:bootstrap3-datetimepicker@=3.1.3_3
 aldeed:template-extension
+adelq:moment-recur
+mrt:moment-timezone
+alanning:roles
+mrgalaxy:stripe

@@ -1,0 +1,1 @@
+Template.dpReplacement.replaces("afBootstrapDateTimePicker");

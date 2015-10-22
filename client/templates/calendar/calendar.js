@@ -18,7 +18,6 @@ Template.calendar.helpers({
           dayClick: function(date, jsEvent, view) {
             console.log(date.format("DD/MM/YYYY hh:mm a") + " Clicked");
             var ce = {};
-
             ce.start = date.format();
             ce.end = date.add(1,"h").format();
             Meteor.call('saveCalEvent',ce);
