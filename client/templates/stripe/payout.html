@@ -1,20 +1,39 @@
 <template name="payout">
-  <h3>Pay for Classes</h3>
-  <div class="col-md-6 col-md-offset-3">
-    <div class="panel panel-primary">
-      <div class="panel-heading">
-        <div class="panel-title">Save Payment Information</div>
-      </div>
-      <form action="" method="POST" id="payment-form">
-      <div class="panel-body">
+  <div class="container">
+    <h3>Pay for Classes</h3>
+    <div class="col-md-6 col-md-offset-3">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <div class="panel-title">Save Payment Information</div>
+        </div>
+        <form action="" method="POST" id="payment-form">
+        <div class="panel-body">
+          <span class="payment-errors"></span>
+            <div class="row">
+              <label>
+                <span>Card Number</span>
+                <input type="text" data-stripe="number">
+                <input type="text" class="form-control" placeholder="Text input">
+              </label>
+            </div>
 
-        </div>
-        <div class="panel-footer">
-          <button class="btn btn-success" type="submit">Store Card</button>
-        </div>
-      </form>
+            <label>
+              <span>CVC</span>
+              <input type="text" data-stripe="cvc">
+            </label>
+            <label>
+              <span>Expiration (MM/YYYY)</span>
+              <input type="text" data-stripe="exp-month">
+              <span> / </span>
+              <input type="text" data-stripe="exp-year">
+            </label>
+          </div>
+          <div class="panel-footer">
+            <button class="btn btn-success" type="submit">Store Card</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
-
 
 </template>

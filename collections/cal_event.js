@@ -48,7 +48,7 @@ CalEvent.attachSchema(new SimpleSchema({
     optional: true,
     label: "Description",
     max: 5000,
-    autoValue: function() {
+    defaultValue: function() {
       return "Write the class description here";
     },
   },
@@ -72,8 +72,7 @@ CalEvent.attachSchema(new SimpleSchema({
    optional: true,
    decimal: true,
    min: 10,
-   max: 50000,
-   autoValue: function() {
+   defaultValue: function() {
       return 10;
     },
   },
@@ -89,7 +88,7 @@ CalEvent.attachSchema(new SimpleSchema({
     label: "Attendee Limit",
     optional: true,
     min: 1,
-    autoValue: function() {
+    defaultValue: function() {
       return 10;
     },
   },

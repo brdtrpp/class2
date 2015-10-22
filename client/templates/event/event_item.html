@@ -5,7 +5,7 @@
           <span style="font-size:15pt;"><i class="glyphicon glyphicon-usd"></i>{{price}}</span>
           <span style="font-size:15pt;"><i class="glyphicon glyphicon-user"></i>{{aCount}}</span>
           {{#if isOwner}}
-            {{#afModal class="glyphicon glyphicon-pencil" collection="CalEvent" operation="update" doc=_id omitFields="owner"}}
+            {{#afModal class="glyphicon glyphicon-pencil" collection="CalEvent" operation="update" doc=_id}}
             {{/afModal}}
             {{#afModal class="glyphicon glyphicon-remove-circle" collection="CalEvent" operation="remove" doc=_id}}
             {{/afModal}}
@@ -19,7 +19,7 @@
     <div class="panel-footer">
       {{#if currentUser}}
        <!--Button trigger modal -->
-      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#attend">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#attend">
         Register
       </button>
       {{> modals}}
