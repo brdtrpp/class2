@@ -15,13 +15,24 @@ Meteor.methods({
   createCard: function (stripeToken) {
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
-    Stripe.customers.createSource(user.profile.customerId, {
-      source: stripeToken
-      }, function (err, card) {
-        console.log(err, card);
-    });
-    
-    console.log("French");
+    var stripeCardCreate = Meteor.wrapAsync(Stripe.customers.createSource,Stripe.customers);
+    var stripeCardDelete = Meteor.wrapAsync(Stripe.customers.deleteCard,Stripe.customers);
+    if (user.profile.cardId == undefined) {
+      stripeCardCreate(user.profile.customerId, {
+        source: stripeToken
+        }, function (err, card) {
+          console.log(err, card);
+          Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.cardId': card.id}});
+      });
+    } else {
+      stripeCardDelete(user.profile.customerId, user.profile.cardId);
+      stripeCardCreate(user.profile.customerId, {
+        source: stripeToken
+        }, function (err, card) {
+          console.log(err, card);
+          Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.cardId': card.id}});
+      });
+    }
   },
 
 });
