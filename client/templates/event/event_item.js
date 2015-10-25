@@ -24,14 +24,9 @@ Template.eventItem.helpers({
 });
 
 Template.eventItem.events({
-  // 'submit': function () {
-  //   var eventId = Template.instance().data.event;
-  //   var event = CalEvent.findOne({_id: eventId});
-  //   console.log(event.price);
-  //   // if(event && event.price)
-  //   //   return event.price;
-  //   // console.log("submit");
-  //   // $('#attend').modal('hide');
-  //   // Meteor.call('charge', event.price);
-  // },
+
+  'submit': function () {
+    console.log("submit");
+    $('#attend').modal('hide');
+  },
 });

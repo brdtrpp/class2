@@ -48,9 +48,7 @@ CalEvent.attachSchema(new SimpleSchema({
     optional: true,
     label: "Description",
     max: 5000,
-    defaultValue: function() {
-      return "Write the class description here";
-    },
+    defaultValue: "Write class descriptionhere.",
   },
   owner: {
     type: String,
@@ -72,9 +70,7 @@ CalEvent.attachSchema(new SimpleSchema({
    optional: true,
    decimal: true,
    min: 10,
-   defaultValue: function() {
-      return 10;
-    },
+   defaultValue: 10,
   },
   // eventPrice: {
   //   type: Number,
@@ -88,18 +84,6 @@ CalEvent.attachSchema(new SimpleSchema({
     label: "Attendee Limit",
     optional: true,
     min: 1,
-    defaultValue: function() {
-      return 10;
-    },
+    defaultValue: 10,
   },
 }));
-
-// CalEvent.allow({
-//   insert: function(userId, doc) {
-//     // only allow posting if you are logged in
-//     return !! userId;
-//   },
-//   remove: function(userId, calevent) {
-//     return ownsDocument(userId, calevent);
-//   },
-// });
