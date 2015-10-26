@@ -7,11 +7,14 @@ Meteor.methods({
         amount: endPrice,
         currency: "USD",
         customer: user.profile.customerId,
-        application_fee: endPrice - price,
+        application_fee: endPrice - ( price * 100 ),
         destination: "acct_16zz7rJoNACEbq9Q"
     }, function (err, res) {
         console.log(err, res);
+        
     });
+    var message = "Charged";
+    Meteor.call('basuccess', message);
   },
 
   createCard: function (stripeToken) {

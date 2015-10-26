@@ -1,6 +1,11 @@
 <template name="getPaid">
   <div class="col-md-8 col-md-offset-2">
-    <h3>Get Paid</h3>
-    <a type="submit" class="btn btn-default submit">Start Instructing</a>
+    {{#if hasAccount}}
+    <h2>Account Dashboard</h2>
+    {{else}}
+    <h3>Start Instructing</h3>
+    <h5>Form Goes Here</h5>
+    <a type="paid" class="btn btn-default paid">Start Instructing</a>
+    {{/if}}
   </div>
 </template>

@@ -7,6 +7,7 @@
 * Stripe pre-fill fields...?
 * TOS and acceptance
 * How it Works on getting paid
+* Star rating system
 * Search Function
 * Prevent Duplicate Attendees
 * Route on delete on Class Page
@@ -15,4 +16,5 @@
 * Recurring Events
 * My Class (both hosted and taken)
 * My Calendar (both hosted and taken)
+* Erroring (with Bert)
 

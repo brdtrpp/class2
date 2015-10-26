@@ -1,5 +1,9 @@
 Router.configure({
-  layoutTemplate: 'masterLayout'
+  layoutTemplate: 'masterLayout',
+  loadingTemplate: 'loading',
+  waitOn: function() {
+    return [Meteor.subscribe('calevent'), Meteor.subscribe('attendee')];
+  },
 });
 
 Router.route('/', {name: 'home'});
@@ -12,8 +16,8 @@ Router.route('/account', function () {
   this.render('account');
 });
 
-Router.route('/get-paid', {name: 'getPaid'});
-Router.route('/payout', {name: 'payout'});
+Router.route('/account-dashboard', {name: 'getPaid'});
+Router.route('/payment-method', {name: 'payout'});
 Router.route('/user-profile', {name: 'profileEdit'});
 Router.route('/classes', {name: 'myEvent'});
 Router.route('/terms', {name: 'terms'});
