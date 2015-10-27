@@ -1,5 +1,5 @@
 Meteor.methods({
-  charge: function(price) {
+  charge: function(price, owner) {
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
     var endPrice = price * 110;
@@ -8,7 +8,7 @@ Meteor.methods({
         currency: "USD",
         customer: user.profile.customerId,
         application_fee: endPrice - ( price * 100 ),
-        destination: "acct_16zz7rJoNACEbq9Q"
+        destination: Meteor.user(owner).profile.accountId
     }, function (err, res) {
         console.log(err, res);
         
