@@ -1,15 +1,17 @@
 #CLASS
 
 ##TO-DO
-* Create forms for Stripe Integration
+* Create forms for Stripe Managed Accounts
+* Only whole numbers in price
 * Charge at specific times
-* Time restricted refunding and unregister function
+* Time restrictions on registration process
 * Stripe pre-fill fields...?
+* Move-able events
+* Scalable events
 * TOS and acceptance
 * How it Works on getting paid
 * Star rating system
 * Search Function
-* Prevent Duplicate Attendees
 * Route on delete on Class Page
 * Account Dashboard
 * User Public Profile
@@ -17,4 +19,7 @@
 * My Class (both hosted and taken)
 * My Calendar (both hosted and taken)
 * Erroring (with Bert)
+* Day Click move to day
+* Seaching functions
+* 
 

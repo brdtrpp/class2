@@ -26,7 +26,7 @@ AutoForm.hooks({
         } else {
           if (available != 0) {
             doc.eventId = event._id;
-            Meteor.call('charge', price, owner);
+            Meteor.call('charge', price, owner, event);
             return doc;
           } else {
             Bert.alert("This class is full!", "danger", "fixed-bottom");

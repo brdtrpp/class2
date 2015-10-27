@@ -48,7 +48,7 @@ CalEvent.attachSchema(new SimpleSchema({
     optional: true,
     label: "Description",
     max: 5000,
-    defaultValue: "Write class descriptionhere.",
+    defaultValue: "Write class description here.",
   },
   owner: {
     type: String,
@@ -70,6 +70,7 @@ CalEvent.attachSchema(new SimpleSchema({
    optional: true,
    decimal: true,
    min: 10,
+   max: 900000,
    defaultValue: 10,
   },
   // eventPrice: {
