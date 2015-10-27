@@ -2,7 +2,7 @@
   <div class="col-md-8 col-md-offset-2">
     {{#if hasAccount}}
     <h2>Account Dashboard</h2>
-    {{else}}
+    {{> quickForm collection="Meteor.users" doc=user id="updateUserProfile" type="update"}}
     <h3>Start Instructing</h3>
     <h5>Form Goes Here</h5>
     <a type="paid" class="btn btn-default paid">Start Instructing</a>

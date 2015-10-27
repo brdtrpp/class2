@@ -1,15 +1,15 @@
 Meteor.methods({
-  charge: function(price, owner, event) {
+  charge: function(event) {
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
-    var endPrice = price * 110;
+    var endPrice = event.price * 110;
     Stripe.charges.create({
         amount: endPrice,
         currency: "USD",
         customer: user.profile.customerId,
-        application_fee: endPrice - ( price * 100 ),
+        application_fee: endPrice - ( event.price * 100 ),
         description: event.title + " " + event.start,
-        destination: Meteor.user(owner).profile.accountId
+        destination: Meteor.user(event.owner).profile.accountId
     }, function (err, res) {
         console.log(err, res);
         
