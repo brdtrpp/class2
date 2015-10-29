@@ -5,7 +5,6 @@
 * Only whole numbers in price
 * Charge at specific times
 * Time restrictions on registration process
-* Stripe pre-fill fields...?
 * Move-able events
 * Scalable events
 * TOS and acceptance
@@ -20,6 +19,6 @@
 * My Calendar (both hosted and taken)
 * Erroring (with Bert)
 * Day Click move to day
-* Seaching functions
-* Terms of Service agreed upon sign-up,(IP needed)
+* Request refund
+
 

@@ -10,11 +10,11 @@ Meteor.methods({
         application_fee: endPrice - ( event.price * 100 ),
         description: event.title + " " + event.start,
         destination: Meteor.user(event.owner).profile.accountId
-    }, function (err, res) {
-        console.log(err, res);
-        
+    }, function(err, charge) {
+        if (err && err.type === 'StripeCardError') {
+         console.log(err);
+        }
     });
-    var message = "Charged " + endPrice + " to your card on file";
   },
 
   createCard: function (stripeToken) {
@@ -50,7 +50,12 @@ Meteor.methods({
         first_name: doc.legalEntity.firstName,
         last_name: doc.legalEntity.lastName,
         type: doc.legalEntity.type
-      }
+      },
+      transfer_schedule: {
+        delay_days: 7,
+        interval: 'weekly',
+        weekly_anchor: 'friday'},
+      
     }, function(err, account) {
       console.log(err, account);
       Meteor.users.update({_id: Meteor.userId()}, {

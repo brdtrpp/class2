@@ -34,7 +34,7 @@ Template.calendar.helpers({
           },
 
           eventAfterAllRender: function(view) {
-            console.log("Events have been rendered");
+            // console.log("Events have been rendered");
           },
 
           eventResizeStart: function(event, jsEvent, ui, view) {

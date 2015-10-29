@@ -68,14 +68,17 @@ CalEvent.attachSchema(new SimpleSchema({
    optional: true,
    min: 10,
    max: 900000,
-   defaultValue: 10,
+   defaultValue: 35,
   },
   // eventPrice: {
   //   type: Number,
   //   autoValue: function() {
   //     var price = this.field("price");
-  //     return price * 1.1;
-  //   }
+  //     return (price * 1.1) + 1;
+  //   },
+  //   autoform: {
+  //     omit: true
+  //   },
   // },
   attendeeCount: {
     type: Number,

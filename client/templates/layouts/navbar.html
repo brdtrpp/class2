@@ -22,7 +22,7 @@
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Classes <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               {{#if hasAccount}}
-              <li><a href="{{pathFor 'myEvent'}}">Instructing</a></li>
+                <li><a href="{{pathFor 'myEvent'}}">Instructing</a></li>
               {{/if}}
               <li><a href="{{pathFor 'myAttend'}}">Attending</a></li>
               <li><a href="#">Near Me</a></li>
@@ -47,6 +47,13 @@
               </a></li>
             </ul>
           </li>
+            {{#if hasAccount}}
+              <li>
+                {{#afModal collection="CalEvent" operation="insert"}}
+                 New Class
+                {{/afModal}}
+              </li>
+            {{/if}}
           {{else}}
           <li><a href="#">Calendar</a></li>
           <li><a href="#">Classes</a></li>
