@@ -1,8 +1,12 @@
 <template name="myEvent">
   <div class="container-fluid">
-    <div class='text-center'><h2>Classes</h2></div>
+    <div class='text-center'><h2>Classes I Instruct</h2></div>
+    {{#afModal class="btn btn-primary" collection="CalEvent" operation="insert"}}
+      Start a Class
+    {{/afModal}}
     {{#each calevent}}
       {{> eventItemList}}
     {{/each}}
   </div>
 </template>
+

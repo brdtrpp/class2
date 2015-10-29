@@ -15,16 +15,40 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="{{pathFor 'calendar'}}">Calendar</a></li>
-          <li><a href="{{pathFor 'myEvent'}}">Classes</a></li>
+
+
           {{#if currentUser}}
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Classes <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              {{#if hasAccount}}
+              <li><a href="{{pathFor 'myEvent'}}">Instructing</a></li>
+              {{/if}}
+              <li><a href="{{pathFor 'myAttend'}}">Attending</a></li>
+              <li><a href="#">Near Me</a></li>
+              <li class="divider"></li>
+              <li><a href="{{pathFor 'calendar'}}">My Calendar</a></li>
+
+              <li>
+                <a href="{{pathFor 'getPaid'}}">
+                  {{#if hasAccount}}
+                    Account Dashboard
+                  {{else}}
+                    Start Instructing
+                  {{/if}}
+                </a>
+              </li>
+            </ul>
+          </li>
+
+
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Account <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li><a href="{{pathFor 'profileEdit'}}">Edit Profile</a></li>
               <li class="divider"></li>
               <li><a href="{{pathFor 'payout'}}">Payment Method</a></li>
-              
+
               <li><a href="{{pathFor 'getPaid'}}">
                 {{#if hasAccount}}
                   Account Dashboard
@@ -32,9 +56,11 @@
                   Start Instructing
                 {{/if}}
               </a></li>
-              
             </ul>
           </li>
+          {{else}}
+          <li><a href="#">Calendar</a></li>
+          <li><a href="#">Classes</a></li>
           {{/if}}
         </ul>
         <ul class="nav navbar-nav navbar-right">

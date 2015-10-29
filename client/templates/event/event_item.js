@@ -1,9 +1,3 @@
-Template.eventItemList.helpers({
-  isOwner: function() {
-    return this.owner === Meteor.userId();
-  },
-});
-
 Template.eventItem.helpers({
   isOwner: function() {
     return this.owner === Meteor.userId();
@@ -27,7 +21,6 @@ Template.eventItem.events({
 
   'submit': function () {
     console.log("submit");
-
     $('#attend').modal('hide');
   },
 });

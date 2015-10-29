@@ -19,7 +19,8 @@ Router.route('/account', function () {
 Router.route('/account-dashboard', {name: 'getPaid'});
 Router.route('/payment-method', {name: 'payout'});
 Router.route('/user-profile', {name: 'profileEdit'});
-Router.route('/classes', {name: 'myEvent'});
+Router.route('/my-classes', {name: 'myEvent'});
+Router.route('/my-attend', {name: 'myAttend'});
 Router.route('/terms', {name: 'terms'});
 
 Router.route('/class/:_id', {

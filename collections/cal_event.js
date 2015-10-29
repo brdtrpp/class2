@@ -19,9 +19,7 @@ CalEvent.attachSchema(new SimpleSchema({
     type: String,
     label: "Title",
     max: 200,
-    autoValue: function() {
-      return "New Class";
-    },
+    defaultValue: "New Class",
   },
   start: {
     type: String,
@@ -34,7 +32,7 @@ CalEvent.attachSchema(new SimpleSchema({
   },
   end: {
     type: String,
-    label: "Start Date and Time",
+    label: "End Date and Time",
     autoform: {
       afFieldInput: {
         type: "bootstrap-datetimepicker"
@@ -68,7 +66,6 @@ CalEvent.attachSchema(new SimpleSchema({
    type: Number,
    label: "Price in $",
    optional: true,
-   decimal: true,
    min: 10,
    max: 900000,
    defaultValue: 10,

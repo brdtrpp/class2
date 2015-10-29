@@ -21,5 +21,5 @@
 * Erroring (with Bert)
 * Day Click move to day
 * Seaching functions
-* Terms of Service agreed upon sign-up,(IP needed
+* Terms of Service agreed upon sign-up,(IP needed)
 

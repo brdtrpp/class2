@@ -17,3 +17,8 @@ AccountsTemplates.configureRoute('signIn', {
     layoutTemplate: 'masterLayout',
     redirect: '/user-profile',
 });
+
+AccountsTemplates.configure({
+    termsUrl: '/terms',
+    sendVerificationEmail: true,
+});

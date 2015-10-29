@@ -3,3 +3,4 @@ Template.myEvent.helpers({
     return CalEvent.find({owner:Meteor.userId()});
   },
 });
+

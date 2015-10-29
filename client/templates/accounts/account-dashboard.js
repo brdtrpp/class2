@@ -14,3 +14,8 @@ Template.getPaid.helpers({
     }
   },
 });
+
+//Autoform beforeInsert Stripe Validation
+AutoForm.hooks: {
+  
+}

@@ -5,9 +5,9 @@
           <span style="font-size:15pt;"><i class="glyphicon glyphicon-usd"></i>{{price}}</span>
           <span style="font-size:15pt;"><i class="glyphicon glyphicon-user"></i>{{aCount}}</span>
           {{#if isOwner}}
-            {{#afModal class="glyphicon glyphicon-pencil" collection="CalEvent" operation="update" doc=_id}}
+            {{#afModal class="glyphicon glyphicon-pencil" collection="CalEvent" operation="update" doc=_id title="Edit Class"}}
             {{/afModal}}
-            {{#afModal class="glyphicon glyphicon-remove-circle" collection="CalEvent" operation="remove" doc=_id}}
+            {{#afModal class="glyphicon glyphicon-remove-circle" collection="CalEvent" operation="remove" doc=_id title="Delete Class" prompt="Delete class and refund the attendees?"}}
             {{/afModal}}
           {{/if}}
         </ul>

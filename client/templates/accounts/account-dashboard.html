@@ -3,8 +3,9 @@
     {{#if hasAccount}}
     <h2>Account Dashboard</h2>
     {{> quickForm collection="Meteor.users" doc=user id="updateUserProfile" type="update"}}
+    {{else}}
     <h3>Start Instructing</h3>
-    <h5>Form Goes Here</h5>
+    {{> quickForm collection="Account" id="insertAccount" type="insert"}}
     <a type="paid" class="btn btn-default paid">Start Instructing</a>
     {{/if}}
   </div>
