@@ -28,16 +28,6 @@
               <li><a href="#">Near Me</a></li>
               <li class="divider"></li>
               <li><a href="{{pathFor 'calendar'}}">My Calendar</a></li>
-
-              <li>
-                <a href="{{pathFor 'getPaid'}}">
-                  {{#if hasAccount}}
-                    Account Dashboard
-                  {{else}}
-                    Start Instructing
-                  {{/if}}
-                </a>
-              </li>
             </ul>
           </li>
 
@@ -48,7 +38,6 @@
               <li><a href="{{pathFor 'profileEdit'}}">Edit Profile</a></li>
               <li class="divider"></li>
               <li><a href="{{pathFor 'payout'}}">Payment Method</a></li>
-
               <li><a href="{{pathFor 'getPaid'}}">
                 {{#if hasAccount}}
                   Account Dashboard

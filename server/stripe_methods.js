@@ -36,17 +36,28 @@ Meteor.methods({
     }
   },
 
-  createAccount: function() {
+  createAccount: function(doc, stripeToken) {
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
     var stripeCreateAccount = Meteor.wrapAsync(Stripe.accounts.create,Stripe.accounts);
     stripeCreateAccount({
       managed: true,
       country: 'US',
-      email: user.emails[0].address
+      email: user.emails[0].address,
+      business_name: doc.businessName, 
+      external_account: stripeToken,
+      legal_entity: {
+        first_name: doc.legalEntity.firstName,
+        last_name: doc.legalEntity.lastName,
+        type: doc.legalEntity.type
+      }
     }, function(err, account) {
       console.log(err, account);
-      Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.accountId': account.id}});
+      Meteor.users.update({_id: Meteor.userId()}, {
+        $set: {
+          'profile.accountId': account.id
+        }
+      });
     });
   },
 

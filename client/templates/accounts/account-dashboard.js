@@ -16,6 +16,25 @@ Template.getPaid.helpers({
 });
 
 //Autoform beforeInsert Stripe Validation
-AutoForm.hooks: {
-  
-}
+AutoForm.hooks({
+  insertAccount: {
+    before:{
+      insert: function (doc) {
+        Stripe.bankAccount.createToken({
+          country: "US",
+          routing_number: doc.externalAccount.routingNumber,
+          account_number: doc.externalAccount.accountNumber
+        }, function(status, response) {
+          stripeToken = response.id;
+          if(response.error !== undefined) {
+            Bert.alert(response.error.message, "danger", "fixed-bottom");
+          } else {
+            Meteor.call('createAccount', doc, stripeToken);
+            Bert.alert("Congratulations, you now can host classes", "success", "fixed-bottom");
+          }
+        });
+
+      }
+    }
+  }
+});
