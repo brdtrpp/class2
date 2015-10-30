@@ -47,5 +47,12 @@ Attendee.attachSchema(new SimpleSchema({
       var user = Meteor.user();
       return user.profile.lastName;
     }
-  }
+  },
+  charge: {
+    type: String,
+    autoform: {
+      omit: true
+    },
+    optional: true
+  },
 }));

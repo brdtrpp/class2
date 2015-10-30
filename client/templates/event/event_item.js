@@ -20,7 +20,6 @@ Template.eventItem.helpers({
 Template.eventItem.events({
 
   'submit': function () {
-    console.log("submit");
     $('#attend').modal('hide');
   },
 });

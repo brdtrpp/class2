@@ -5,14 +5,20 @@ Template.attendeesItem.helpers({
 });
 
 AutoForm.hooks({
+  removeAttendee:{
+    before: {
+      remove : function(doc, template) {
+        var eventId = Template.instance().data.event;
+        var event = CalEvent.findOne({_id: eventId});
+      }
+    }
+  },
   insertAttendee: {
     before: {
       insert: function(doc, template) {
         var eventId = Template.instance().data.event;
         var event = CalEvent.findOne({_id: eventId});
-
         var available = event.attendeeCount - Attendee.find({eventId: eventId}).count();
-        console.log(doc.attendeeFirstName);
         if (
           Attendee.find({
             eventId: eventId,
@@ -23,15 +29,27 @@ AutoForm.hooks({
         ) {
           Bert.alert("That person is already registered for this class!", "danger", "fixed-bottom");
         } else {
-          if (available != 0) {
-            doc.eventId = event._id;
-            Meteor.call('charge', event);
-            return doc;
+          if (Meteor.user().profile.cardId !== undefined) {
+            if (available != 0) {
+              doc.eventId = event._id;
+              return doc;
+            } else {
+              Bert.alert("This class is full!", "danger", "fixed-bottom");
+            }
           } else {
-            Bert.alert("This class is full!", "danger", "fixed-bottom");
+            Bert.alert("You don't have a poayment method stored!", "danger", "fixed-bottom");
           }
         }
       }
     },
+    
+    after: {
+      insert: function(error, result) {
+        console.log(result);
+        var doc = result;
+        var event = CalEvent.findOne({_id: Attendee.findOne({_id: result}).eventId});
+        Meteor.call('charge', event, doc);
+      }
+    }
   }
 });
