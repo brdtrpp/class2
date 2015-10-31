@@ -5,14 +5,14 @@ Template.attendeesItem.helpers({
 });
 
 AutoForm.hooks({
-  removeAttendee:{
+deleteAttendee: {
     before: {
-      remove : function(doc, template) {
-        var eventId = Template.instance().data.event;
-        var event = CalEvent.findOne({_id: eventId});
+      remove: function() {
+        console.log("toaster");
       }
     }
   },
+  
   insertAttendee: {
     before: {
       insert: function(doc, template) {
@@ -37,18 +37,20 @@ AutoForm.hooks({
               Bert.alert("This class is full!", "danger", "fixed-bottom");
             }
           } else {
-            Bert.alert("You don't have a poayment method stored!", "danger", "fixed-bottom");
+            Bert.alert("You don't have a payment method stored!", "danger", "fixed-bottom");
           }
         }
       }
     },
-    
+
     after: {
       insert: function(error, result) {
-        console.log(result);
         var doc = result;
         var event = CalEvent.findOne({_id: Attendee.findOne({_id: result}).eventId});
         Meteor.call('charge', event, doc);
+      },
+      remove: function() {
+        Bert.alert("Something went wrong with your card", "danger", "fixed-bottom");
       }
     }
   }

@@ -18,10 +18,9 @@ Meteor.methods({
     }, function(err, charge) {
       console.log(charge);
         if (err && err.type === 'StripeCardError') {
-         console.log(err);
+          Attendee.remove({_id: doc});
         } else {
-          console.log(doc);
-          // Attendee.update({_id: doc}, {$set: {charge: charge.id}});
+          Attendee.update({_id: doc}, {$set: {charge: charge.id}});
         }
     });
   },

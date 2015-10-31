@@ -1,8 +1,6 @@
 #CLASS
 
 ##TO-DO
-* Create forms for Stripe Managed Accounts
-* Only whole numbers in price
 * Charge at specific times
 * Time restrictions on registration process
 * Move-able events
