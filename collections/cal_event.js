@@ -1,4 +1,11 @@
 CalEvent = new Mongo.Collection('calevent');
+
+RecurSchema = new SimpleSchema({
+  daily: {
+    type: Boolean,
+  },
+});
+
 CalEvent.attachSchema(new SimpleSchema({
   createdAt: {
     type: Date,
@@ -61,6 +68,11 @@ CalEvent.attachSchema(new SimpleSchema({
     type: Boolean,
     label: "All Day Event",
     optional: true,
+  },
+  recur: {
+    type: RecurSchema,
+    label: "Recurring Structure",
+    optional: true
   },
   price: {
    type: Number,
