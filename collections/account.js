@@ -21,17 +21,16 @@ LegalEntSchema = new SimpleSchema({
   },
   type: {
     type: String,
-  },
-  acceptedTos: {
-    type: String,
-  },
-  acceptedIp: {
-    type: String,
-    autoValue: function(){
-       var clientIP = this.connection.clientAddress;
-       return clientIP;
+    label: "Type of Business",
+    allowedValues: ['individual', 'corporation'],
+    autoform: {
+      options: {
+        individual: "Individual",
+        corporation: "Corporation",
+      }
     }
-  }
+  },
+
 }),
 
 Account.attachSchema(new SimpleSchema({
@@ -78,5 +77,16 @@ Account.attachSchema(new SimpleSchema({
     type: ExternalAccSchema,
     label: "Bank Account Information"
   },
+  acceptedTos: {
+    type: Boolean,
+    label: "I have read and accepted Class, Inc. and Stripes terms of service"
+  },
+  acceptedIp: {
+    type: String,
+    autoValue: function(){
+       var clientIP = this.connection.clientAddress;
+       return clientIP;
+    }
+  }
 }));
 

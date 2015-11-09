@@ -1,9 +1,53 @@
 CalEvent = new Mongo.Collection('calevent');
 
 RecurSchema = new SimpleSchema({
-  daily: {
-    type: Boolean,
+  type: {
+    type: String,
+    label: "Type of Class",
+    allowedValues: ['false','lesson', 'course'],
+    autoform: {
+      type: "select-radio",
+      options: {
+        false: "None Recurring Class",
+        lesson: "Lesson (individual classes with separate attendee list)",
+        course: "Course (a recurring class with the same attendees)",
+      }
+    }
   },
+  intervalNumber: {
+    type: Number,
+    label: "Repeat this class every...",
+  },
+  intervalType: {
+    type: String,
+    label: "Interval",
+    allowedValues: ['days', 'weeks', "months", "years"],
+    autoform: {
+      type: "select-radio-inline",
+      options: {
+        days: "Days",
+        weeks: "Weeks",
+        months: "Months",
+        years: "Years"
+      }
+    }
+  },
+  // calendar: {
+  //   type: String,
+  //   label: "Calendar",
+  //   allowedValues: ['dayOfWeek', 'dayOfMonth', "weekOfMonth", "weekOfYear", "monthOfYear"],
+  //   autoform: {
+  //     type: "select-checkbox-inline",
+  //     options: {
+  //       dayOfWeek: "Day of Week",
+  //       dayOfMonth: "Day of Month",
+  //       weekOfMonth: "Week of Month",
+  //       weekOfYear: "Week of Year",
+  //       monthOfYear: "Month of Year"
+  //     }
+  //   }
+  // }
+
 });
 
 CalEvent.attachSchema(new SimpleSchema({
@@ -33,7 +77,8 @@ CalEvent.attachSchema(new SimpleSchema({
     label: "Start Date and Time",
     autoform: {
       afFieldInput: {
-        type: "bootstrap-datetimepicker"
+        type: "bootstrap-datetimepicker",
+        class: "col-md-4"
       }
     }
   },
@@ -71,8 +116,8 @@ CalEvent.attachSchema(new SimpleSchema({
   },
   recur: {
     type: RecurSchema,
-    label: "Recurring Structure",
-    optional: true
+    label: "Recurring Structure (optional)",
+    optional: true,
   },
   price: {
    type: Number,
@@ -107,3 +152,5 @@ CalEvent.attachSchema(new SimpleSchema({
   //   regEx: /^[0-9]{5}$/
   // }
 }));
+
+
