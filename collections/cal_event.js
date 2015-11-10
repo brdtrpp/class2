@@ -8,7 +8,7 @@ RecurSchema = new SimpleSchema({
     autoform: {
       type: "select-radio",
       options: {
-        false: "None Recurring Class",
+        undefined: "None Recurring",
         lesson: "Lesson (individual classes with separate attendee list)",
         course: "Course (a recurring class with the same attendees)",
       }
@@ -78,7 +78,6 @@ CalEvent.attachSchema(new SimpleSchema({
     autoform: {
       afFieldInput: {
         type: "bootstrap-datetimepicker",
-        class: "col-md-4"
       }
     }
   },
