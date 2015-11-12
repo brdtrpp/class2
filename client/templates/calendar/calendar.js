@@ -3,7 +3,7 @@ Template.calendar.helpers({
         return {
           height: $(window).height() - 80,
           timezone: "local",
-          defaultView:'month',
+          defaultView:'agendaWeek',
           editable: true,
           selectable: true,
           header: {
@@ -17,7 +17,6 @@ Template.calendar.helpers({
           },
           dayClick: function(date, jsEvent, view) {
             console.log(date.format("DD/MM/YYYY hh:mm a") + " Clicked");
-            changeView: agendaDay;
             // var ce = {};
             // ce.start = date.format();
             // ce.end = date.add(1,"h").format();
@@ -28,9 +27,9 @@ Template.calendar.helpers({
             });
           },
 
-          eventDrop: function(event, delta, revertFunc) {
-            console.log(event.title + " was dropped on " + event.start.format("DD/MM/YYYY hh:mm a"));
-            Meteor.call('moveEvent', event);
+          eventDrop: function(event, delta, revertFunc, jsEvent, ui, view) {
+            var id = event._id;
+            Meteor.call('moveEvent', id, delta);
           },
 
           eventAfterAllRender: function(view) {
@@ -38,13 +37,12 @@ Template.calendar.helpers({
           },
 
           eventResizeStart: function(event, jsEvent, ui, view) {
-            console.log(event.title + " Start Resizing Started " + event.start.format());
-            // console.log(event.title + "End Resizing Started " + event.end.format());
+
           },
 
-          eventResizeStop: function(event, jsEvent, ui, view) {
-            console.log(event.title + " Start Resizing Stopped " + event.start.format());
-            // console.log(event._id + "End Resizing Started " + event.end.format());
+          eventResize: function(event, delta, revertFunc, jsEvent, ui, view) {
+            var id = event._id;
+            Meteor.call('resizeCalEvet', id, delta);
           },
         };
     }

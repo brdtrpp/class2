@@ -2,9 +2,20 @@ Meteor.methods({
   recur:function(doc){
     var date = moment(doc.start).format("MM-DD-YYYY");
     var end = moment(doc.end).format("MM-DD-YYYY");
-    var startTime = moment(doc.start).format("HH:mm");
-    var endTime = moment(doc.end).format("HH:mm");
+    var startTime = moment(doc.start).format("hh:mm a [GMT] ZZ");
+    var endTime = moment(doc.end).format("hh:mm a [GMT] ZZ");
     var recur = moment(date).recur(end).every(doc.recur.intervalNumber, doc.recur.intervalType);
+    CalEvent.insert({
+      createdAt: doc.createdAt,
+      title: doc.title,
+      start: moment(doc.start).format("ddd MMM DD YYYY hh:mm a [GMT] ZZ"),
+      end: moment(doc.start).format("ddd MMM DD YYYY hh:mm a [GMT] ZZ"),
+      description: doc.description,
+      owner: doc.owner,
+      allDay: doc.allDay,
+      price: doc.price,
+      attendeeCount: doc.attendeeCount
+    });
 
     //Recurring individual events
     if (doc.recur.type === "lesson") {
@@ -15,14 +26,20 @@ Meteor.methods({
         ) {
             if (recur.matches(date) == true) {
               CalEvent.insert({
+                createdAt: doc.createdAt,
                 title: doc.title,
-                start: moment(date+startime).format("YYYY-MM-DDTHH:mm:ss")
-                // end: moment()
+                start: moment(date+startTime).format("ddd MMM DD YYYY hh:mm a [GMT] ZZ"),
+                end: moment(date+endTime).format("ddd MMM DD YYYY hh:mm a [GMT] ZZ"),
+                description: doc.description,
+                owner: doc.owner,
+                allDay: doc.allDay,
+                price: doc.price,
+                attendeeCount: doc.attendeeCount
               });
             }
           }
     }
-    
+
     if (doc.recur.type === "course") {
       for (
         i = 0;
@@ -35,20 +52,51 @@ Meteor.methods({
           }
     }
   },
-  
-  
+
+
 
   saveCalEvent:function(ce){
     return  CalEvent.insert(ce);
   },
 
-  moveEvent:function(event){
-    return CalEvent.update({_id:event._id},{
-      $set:{
-        start: moment(event.start).format(),
-        end: moment(event.end).format(),
-        owner: Meteor.userId(),
-      }
+  resizeCalEvet:function(id, delta) {
+    var event = CalEvent.findOne({_id: id});
+    var add = moment(event.end).add({
+      years: delta._data.years,
+      months: delta._data.months,
+      days: delta._data.days,
+      hours: delta._data.hours,
+      minutes: delta._data.minutes,
     });
+    var end = add._d;
+    CalEvent.update({_id: id}, {$set: {
+      end: moment(end).toISOString(),
+    }});
+  },
+
+  moveEvent:function(id, delta){
+    var event = CalEvent.findOne({_id: id});
+    console.log(event.start);
+    console.log(delta);
+    var startAdd = moment(event.start).add({
+      years: delta._data.years,
+      months: delta._data.months,
+      days: delta._data.days,
+      hours: delta._data.hours,
+      minutes: delta._data.minutes,
+    });
+    var endAdd = moment(event.end).add({
+      years: delta._data.years,
+      months: delta._data.months,
+      days: delta._data.days,
+      hours: delta._data.hours,
+      minutes: delta._data.minutes,
+    });
+    var start = startAdd._d;
+    var end = endAdd._d;
+    CalEvent.update({_id: id}, {$set: {
+      start: moment(start).toISOString(),
+      end: moment(end).toISOString(),
+    }});
   },
 });

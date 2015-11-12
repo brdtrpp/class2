@@ -2,6 +2,7 @@
 
 ##TO-DO
 * Recurring Events
+* Timezone and Daylight savings time
 * Charge at specific times
 * Time restrictions on registration process
 * Move-able events

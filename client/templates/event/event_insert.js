@@ -3,9 +3,10 @@ AutoForm.hooks({
     before:{
       insert: function(doc) {
         if (doc.recur != undefined) {
+
           Meteor.call('recur', doc);
-          return doc;
         } else {
+          console.log(doc);
           return doc;
         }
       }

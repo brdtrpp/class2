@@ -89,7 +89,6 @@ CalEvent.attachSchema(new SimpleSchema({
         type: "bootstrap-datetimepicker"
       }
     },
-    optional: true
   },
 
   description: {
