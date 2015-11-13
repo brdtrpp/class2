@@ -1,6 +1,6 @@
 <template name="attendeesItem">
      <li class="list-group-item">
-      {{attendeeFirstName}} {{attendeeLastName}} <small>registered on {{createdAt}}</small>
+      {{attendeeFirstName}} {{attendeeLastName}} <small>registered on {{dateFormat}}</small>
         {{#if isAttendee}}
           <div class="pull-right">
             {{#afModal class="glyphicon glyphicon-pencil" collection="Attendee" operation="update" doc=_id formId="updateAttendee" title="Edit Attendee Name"}}

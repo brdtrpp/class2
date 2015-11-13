@@ -1,6 +1,9 @@
 Template.attendeesItem.helpers({
   isAttendee: function() {
     return this.owner === Meteor.userId();
+  },
+  dateFormat: function() {
+    return moment(this.createdAt).format("L");
   }
 });
 

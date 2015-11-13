@@ -1,6 +1,7 @@
 Router.configure({
   layoutTemplate: 'masterLayout',
   loadingTemplate: 'loading',
+  notFoundTemplate: '404',
   waitOn: function() {
     return [Meteor.subscribe('calevent'), Meteor.subscribe('attendee')];
   },
@@ -29,5 +30,7 @@ Router.route('/class/:_id', {
     return CalEvent.findOne(this.params._id);
   },
 });
+
+Router.onBeforeAction('dataNotFound', {only: 'eventItem'});
 
 
