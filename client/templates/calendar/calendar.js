@@ -16,11 +16,10 @@ Template.calendar.helpers({
             callback(events);
           },
           dayClick: function(date, jsEvent, view) {
-            console.log(date.format("DD/MM/YYYY hh:mm a") + " Clicked");
-            // var ce = {};
-            // ce.start = date.format();
-            // ce.end = date.add(1,"h").format();
-            // Meteor.call('saveCalEvent',ce);
+            var ce = {};
+            ce.start = date.format();
+            ce.end = date.add(1,"h").format();
+            Meteor.call('saveCalEvent',ce);
           },
           eventClick: function(event, jsEvent, view) {
             Router.go('/class/'+event._id, {
@@ -40,9 +39,20 @@ Template.calendar.helpers({
 
           },
 
+          select: function(start, end, jsEvent, view) {
+            var ce = {};
+            ce.start = start._d;
+            ce.end = end._d;
+            Meteor.call('saveCalEvent', ce);
+          },
+
           eventResize: function(event, delta, revertFunc, jsEvent, ui, view) {
-            var id = event._id;
-            Meteor.call('resizeCalEvet', id, delta);
+            if (Meteor.userId() === event.owner) {
+              var id = event._id;
+              Meteor.call('resizeCalEvet', id, delta);
+            } else {
+              Bert.alert("You are not allowed to modify this event", "danger", "fixed-bottom");
+            }
           },
         };
     }
@@ -61,19 +71,4 @@ Template.calendar.onRendered(function() {
     CalEvent.find();
     fc.fullCalendar('refetchEvents');
   });
-});
-
-Meteor.methods({
-  'saveCalEvent':function(ce){
-      CalEvent.insert(ce);
-    },
-  'moveEvent':function(event){
-    return CalEvent.update({_id:event._id},{
-      $set:{
-        start:event.start.format(),
-        end:event.end.format(),
-        owner:Meteor.userId(),
-      }
-    });
-  },
 });

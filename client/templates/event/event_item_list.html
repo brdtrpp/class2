@@ -3,14 +3,9 @@
       <div class="panel-heading">
           <ul class="panel-title pull-right ">
             <span style="font-size:15pt;"><i class="glyphicon glyphicon-usd"></i>{{price}}</span>
-            {{#if isOwner}}
-              {{#afModal class="glyphicon glyphicon-pencil" collection="CalEvent" operation="update" doc=_id omitFields="owner"}}
-              {{/afModal}}
-              {{#afModal class="glyphicon glyphicon-remove-circle" collection="CalEvent" operation="remove" doc=_id}}
-              {{/afModal}}
-            {{/if}}
+            {{> eventOwner}}
           </ul>
-        <h2 class="panel-title"><a href="{{pathFor 'eventItem'}}"> {{title}} <small>{{start}} {{end}}</small></a></h2>
+        <h2 class="panel-title"><a href="{{pathFor 'eventItem'}}"> {{title}} <small>{{startDate}} {{endDate}}</small></a></h2>
       </div>
       <div class="panel-body">
         <p>{{description}}</p>

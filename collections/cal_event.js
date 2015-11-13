@@ -32,22 +32,6 @@ RecurSchema = new SimpleSchema({
       }
     }
   },
-  // calendar: {
-  //   type: String,
-  //   label: "Calendar",
-  //   allowedValues: ['dayOfWeek', 'dayOfMonth', "weekOfMonth", "weekOfYear", "monthOfYear"],
-  //   autoform: {
-  //     type: "select-checkbox-inline",
-  //     options: {
-  //       dayOfWeek: "Day of Week",
-  //       dayOfMonth: "Day of Month",
-  //       weekOfMonth: "Week of Month",
-  //       weekOfYear: "Week of Year",
-  //       monthOfYear: "Month of Year"
-  //     }
-  //   }
-  // }
-
 });
 
 CalEvent.attachSchema(new SimpleSchema({

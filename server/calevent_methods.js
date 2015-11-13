@@ -53,8 +53,6 @@ Meteor.methods({
     }
   },
 
-
-
   saveCalEvent:function(ce){
     return  CalEvent.insert(ce);
   },
@@ -76,8 +74,6 @@ Meteor.methods({
 
   moveEvent:function(id, delta){
     var event = CalEvent.findOne({_id: id});
-    console.log(event.start);
-    console.log(delta);
     var startAdd = moment(event.start).add({
       years: delta._data.years,
       months: delta._data.months,

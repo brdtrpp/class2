@@ -1,12 +1,9 @@
 #CLASS
 
 ##TO-DO
-* Recurring Events
 * Timezone and Daylight savings time
 * Charge at specific times
 * Time restrictions on registration process
-* Move-able events
-* Scalable events
 * TOS and acceptance
 * How it Works on getting paid
 * Star rating system
@@ -15,7 +12,7 @@
 * Account Dashboard
 * User Public Profile
 * My Class (both hosted and taken)
-* My Calendar (both hosted and taken)
+* My Calendar (both hosted and taken) colot coded
 * Erroring (with Bert)
 * Day Click move to day
 * Request refund
