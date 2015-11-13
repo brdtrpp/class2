@@ -4,23 +4,27 @@ Template.calendar.helpers({
           height: $(window).height() - 80,
           timezone: "local",
           defaultView:'agendaWeek',
+          handleWindowResize: true,
           editable: true,
           selectable: true,
           header: {
-            left: "month,agendaDay,agendaWeek",
+            left: "month,agendaWeek,agendaDay",
             center: "title",
           },
           eventLimit: true,
+          slotDuration: '01:00:00',
           events: function(start,end,timezone,callback) {
             var events = CalEvent.find().fetch();
+            color: 'yellow';
             callback(events);
           },
-          dayClick: function(date, jsEvent, view) {
-            var ce = {};
-            ce.start = date.format();
-            ce.end = date.add(1,"h").format();
-            Meteor.call('saveCalEvent',ce);
-          },
+          
+          // dayClick: function(date, jsEvent, view) {
+          //   var ce = {};
+          //   ce.start = date.format();
+          //   ce.end = date.add(1,"h").format();
+          //   Meteor.call('saveCalEvent',ce);
+          // },
           eventClick: function(event, jsEvent, view) {
             Router.go('/class/'+event._id, {
             });

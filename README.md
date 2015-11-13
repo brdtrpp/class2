@@ -15,6 +15,8 @@
 * My Calendar (both hosted and taken) colot coded
 * Erroring (with Bert)
 * Day Click move to day
+* Mass edit and remove
+* Display Limits
 * Request refund
 * Notifications
 * Messaging

@@ -1,6 +1,9 @@
 Template.myAttend.helpers({  
-  calevent: function() {
-    var a = Attendee.find({owner: Meteor.userId()}, {fields: {eventId: 1}});
-    return CalEvent.find({_id: a});
+  attendee: function() {
+    return Attendee.find({owner: Meteor.userId()}, {fields: {eventId: 1}}).fetch();
+  },
+  
+  event: function() {
+    return CalEvent.find({_id: this.eventId});
   },
 });

@@ -1,5 +1,7 @@
 <template name="myAttend">
-    {{#each calevent}}
-      {{> eventItemList}}
+    {{#each attendee}}
+      {{#each event}}
+        {{> eventItemList}}
+      {{/each}}
     {{/each}}
 </template>

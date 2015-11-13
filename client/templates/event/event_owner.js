@@ -3,5 +3,3 @@ Template.eventOwner.helpers({
     return this.owner === Meteor.userId();
   },
 });
-
-T
