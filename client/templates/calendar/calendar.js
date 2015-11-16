@@ -1,25 +1,44 @@
 Template.calendar.helpers({
     options: function() {
         return {
-          height: $(window).height() - 80,
+          height: $(window).height() - 75,
           timezone: "local",
           defaultView:'agendaWeek',
           handleWindowResize: true,
-          editable: true,
           selectable: true,
           header: {
             left: "month,agendaWeek,agendaDay",
             center: "title",
           },
           eventLimit: true,
-          slotDuration: '01:00:00',
-          events: function(start,end,timezone,callback) {
-            var events = CalEvent.find().fetch();
-            color: 'yellow';
-            callback(events);
-          },
-          
-          // dayClick: function(date, jsEvent, view) {
+          slotDuration: '00:30:00',
+          eventSources: [
+            {
+              events: function(start,end,timezone,callback) {
+                var events = CalEvent.find({owner: {$not: Meteor.userId()}}).fetch();
+                callback(events);
+              },
+              color: '#007196',
+            },
+            {
+              events: function(start,end,timezone,callback) {
+                var events = CalEvent.find({owner: Meteor.userId()}).fetch();
+                callback(events);
+              },
+              editable: true,
+              color: '#43AC6A',
+            },
+            // {
+            //   events: function(start,end,timezone,callback) {
+            //     var attendee = Attendee.find({owner: Meteor.userId()}).fetch();
+            //     var events = CalEvent.find({_id: attendee.eventId}).fetch();
+            //     callback(events);
+            //   },
+            //   color: '#FFF',
+            // }
+          ],
+
+          // dayClick: funct30n(date, jsEvent, view) {
           //   var ce = {};
           //   ce.start = date.format();
           //   ce.end = date.add(1,"h").format();

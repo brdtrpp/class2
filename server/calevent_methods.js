@@ -54,7 +54,11 @@ Meteor.methods({
   },
 
   saveCalEvent:function(ce){
-    return  CalEvent.insert(ce);
+    if (!this.userId) {
+      return null;
+    } else {
+      return  CalEvent.insert(ce);
+    }
   },
 
   resizeCalEvet:function(id, delta) {
