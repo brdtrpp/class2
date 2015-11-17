@@ -1,12 +1,24 @@
 <template name="myEvent">
   <div class="container-fluid">
-    <div class='text-center'><h2>Classes I Instruct</h2></div>
-    {{#afModal class="btn btn-primary" collection="CalEvent" operation="insert"}}
-      Start a Class
-    {{/afModal}}
-    {{#each calevent}}
-      {{> eventItemList}}
-    {{/each}}
+    <div class='text-center'><h2>Instructing</h2></div>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Date</th>
+          <th>Attending</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each calevent}}
+          <tr>
+            <td>{{title}}</td>
+            <td>{{startDate}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
   </div>
 </template>
 

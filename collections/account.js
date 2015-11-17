@@ -15,9 +15,17 @@ ExternalAccSchema = new SimpleSchema({
 LegalEntSchema = new SimpleSchema({
   firstName: {
     type: String,
+    defaultValue: function() {
+      var user = Meteor.user().profile.firstName;
+      return user; 
+    }  
   },
   lastName: {
     type: String,
+    defaultValue: function() {
+      var user = Meteor.user().profile.lastName;
+      return user; 
+    }  
   },
   dob: {
     type: Date,
@@ -25,7 +33,11 @@ LegalEntSchema = new SimpleSchema({
       afFieldInput: {
         type: "bootstrap-datepicker",
       }
-    }
+    },
+    defaultValue: function() {
+      var user = Meteor.user().profile.birthday;
+      return user; 
+    }  
   },
   type: {
     type: String,
@@ -69,12 +81,12 @@ Account.attachSchema(new SimpleSchema({
     type: Boolean,
     label: "I have read and accepted Class, Inc. and Stripes terms of service"
   },
-  acceptedIp: {
-    type: String,
-    defaultValue: function(){
-       var clientIP = this.connection.clientAddress;
-       return clientIP;
-    }
-  }
+  // acceptedIp: {
+  //   type: String,
+  //   defaultValue: function(){
+  //     var clientIP = this.connection.clientAddress;
+  //     return clientIP;
+  //   }
+  // }
 }));
 
