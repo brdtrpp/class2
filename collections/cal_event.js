@@ -103,11 +103,11 @@ CalEvent.attachSchema(new SimpleSchema({
   },
   price: {
    type: Number,
-   label: "Price in $",
+   label: "Price in $ (leave blank if class is free)",
    optional: true,
    min: 10,
    max: 900000,
-   defaultValue: 35,
+   defaultValue: 25,
   },
 
   attendeeCount: {
@@ -117,22 +117,22 @@ CalEvent.attachSchema(new SimpleSchema({
     min: 1,
     defaultValue: 10,
   },
-  // street: {
-  //   type: String,
-  //   max: 100
-  // },
-  // city: {
-  //   type: String,
-  //   max: 50
-  // },
-  // state: {
-  //   type: String,
-  //   regEx: /^A[LKSZRAEP]|C[AOT]|D[EC]|F[LM]|G[AU]|HI|I[ADLN]|K[SY]|LA|M[ADEHINOPST]|N[CDEHJMVY]|O[HKR]|P[ARW]|RI|S[CD]|T[NX]|UT|V[AIT]|W[AIVY]$/
-  // },
-  // zip: {
-  //   type: String,
-  //   regEx: /^[0-9]{5}$/
-  // }
+  street: {
+    type: String,
+    max: 100
+  },
+  city: {
+    type: String,
+    max: 50
+  },
+  state: {
+    type: String,
+    regEx: /^A[LKSZRAEP]|C[AOT]|D[EC]|F[LM]|G[AU]|HI|I[ADLN]|K[SY]|LA|M[ADEHINOPST]|N[CDEHJMVY]|O[HKR]|P[ARW]|RI|S[CD]|T[NX]|UT|V[AIT]|W[AIVY]$/
+  },
+  zip: {
+    type: String,
+    regEx: /^[0-9]{5}$/,
+  }
 }));
 
 

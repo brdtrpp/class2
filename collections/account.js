@@ -19,6 +19,14 @@ LegalEntSchema = new SimpleSchema({
   lastName: {
     type: String,
   },
+  dob: {
+    type: Date,
+    autoform: {
+      afFieldInput: {
+        type: "bootstrap-datepicker",
+      }
+    }
+  },
   type: {
     type: String,
     label: "Type of Business",
@@ -53,26 +61,6 @@ Account.attachSchema(new SimpleSchema({
   legalEntity: {
     type: LegalEntSchema
   },
-  // legalEntityDob: {
-  //   type: String,
-  //   label: "Legal Name of Business"
-  // },
-  // legalEntityFirstName: {
-  //   type: String,
-  //   label: "Legal First Name"
-  // }, 
-  // legalEntityLastName: {
-  //   type: String,
-  // }, 
-  // legalEntityType: {
-  //   type: String,
-  // }, 
-  // tosAcceptanceDate: {
-  //   type: String,
-  // }, 
-  // tosAcceptanceIp: {
-  //   type: String,
-  // },
   externalAccount: {
     type: ExternalAccSchema,
     label: "Bank Account Information"
@@ -83,7 +71,7 @@ Account.attachSchema(new SimpleSchema({
   },
   acceptedIp: {
     type: String,
-    autoValue: function(){
+    defaultValue: function(){
        var clientIP = this.connection.clientAddress;
        return clientIP;
     }

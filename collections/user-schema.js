@@ -1,33 +1,5 @@
 Schema = {},
 
-AccountSchema = new SimpleSchema({
-  
-  // legal_entity.dob.day: {
-
-  // },
-  // legal_entity.dob.month: {
-
-  // },
-  // legal_entity.dob.year: {
-
-  // },
-  // legal_entity.first_name: {
-
-  // },
-  // legal_entity.last_name: {
-
-  // },
-  // legal_entity.type: {
-
-  // },
-  // tos_acceptance.date: {
-
-  // }
-  // tos_acceptance.ip: {
-
-  // }
-
-});
 
 AddressSchema = new SimpleSchema({
   street: {
@@ -77,7 +49,7 @@ Schema.UserProfile = new SimpleSchema({
       optional: true,
       autoform: {
         afFieldInput: {
-          type: "bootstrap-datetimepicker"
+          type: "bootstrap-datepicker"
         }
       }
   },

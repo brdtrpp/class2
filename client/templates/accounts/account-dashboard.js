@@ -30,6 +30,9 @@ AutoForm.hooks({
             Bert.alert(response.error.message, "danger", "fixed-bottom");
           } else {
             Meteor.call('createAccount', doc, stripeToken);
+            Meteor.user.update({_id: Meteor.userId()}, {
+              
+            });
             Bert.alert("Congratulations, you now can host classes", "success", "fixed-bottom");
           }
         });

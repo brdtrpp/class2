@@ -61,19 +61,23 @@ Meteor.methods({
     }
   },
 
-  resizeCalEvet:function(id, delta) {
-    var event = CalEvent.findOne({_id: id});
-    var add = moment(event.end).add({
-      years: delta._data.years,
-      months: delta._data.months,
-      days: delta._data.days,
-      hours: delta._data.hours,
-      minutes: delta._data.minutes,
-    });
-    var end = add._d;
-    CalEvent.update({_id: id}, {$set: {
-      end: moment(end).toISOString(),
-    }});
+  resizeCalEvent:function(id, delta) {
+    if (!this.userId) {
+      return null;
+    } else {
+      var event = CalEvent.findOne({_id: id});
+      var add = moment(event.end).add({
+        years: delta._data.years,
+        months: delta._data.months,
+        days: delta._data.days,
+        hours: delta._data.hours,
+        minutes: delta._data.minutes,
+      });
+      var end = add._d;
+      CalEvent.update({_id: id}, {$set: {
+        end: moment(end).toISOString(),
+      }});
+    }
   },
 
   moveEvent:function(id, delta){

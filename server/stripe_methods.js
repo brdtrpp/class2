@@ -65,7 +65,6 @@ Meteor.methods({
         delay_days: 7,
         interval: 'weekly',
         weekly_anchor: 'friday'},
-
     }, function(err, account) {
       console.log(err, account);
       Meteor.users.update({_id: Meteor.userId()}, {
