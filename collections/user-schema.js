@@ -20,6 +20,36 @@ AddressSchema = new SimpleSchema({
   }
 });
 
+BusinessSchema = new SimpleSchema({
+  createdAt: {
+    type: Date,
+    autoValue: function() {
+      if (this.isInsert) {
+        return new Date;
+      } else {
+        this.unset();  // Prevent user from supplying their own value
+      }
+    },
+    autoform: {
+      omit: true
+    },
+  },
+  name: {
+    type: String,
+  },
+  legalEntity: {
+    type: LegalEntSchema
+  },
+  externalAccount: {
+    type: ExternalAccSchema,
+    label: "Bank Account Information"
+  },
+  acceptedTos: {
+    type: Boolean,
+    label: "I have read and accepted Class, Inc. and Stripes terms of service"
+  },
+});
+
 Schema.UserProfile = new SimpleSchema({
   createdAt: {
     type: Date,
@@ -109,6 +139,13 @@ Schema.UserProfile = new SimpleSchema({
       omit: true
     }
   },
+  business: {
+    type: BusinessSchema,
+    optional: true,
+    autoform: {
+      omit: true
+    }
+  }
 });
 
 Schema.User = new SimpleSchema({

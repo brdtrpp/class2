@@ -13,6 +13,9 @@ ExternalAccSchema = new SimpleSchema({
 });
 
 LegalEntSchema = new SimpleSchema({
+  business_name: {
+    type: String,
+  },
   firstName: {
     type: String,
     defaultValue: function() {
