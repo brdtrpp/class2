@@ -31,7 +31,6 @@ Template.eventItem.helpers({
 });
 
 Template.eventItem.events({
-
   'submit': function () {
     $('#attend').modal('hide');
   },

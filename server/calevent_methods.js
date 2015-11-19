@@ -1,4 +1,7 @@
 Meteor.methods({
+  removeCal: function(doc) {
+    CalEvent.remove({_id: doc._id});
+  },
   recur:function(doc){
     var date = moment(doc.start).format("MM-DD-YYYY");
     var end = moment(doc.end).format("MM-DD-YYYY");

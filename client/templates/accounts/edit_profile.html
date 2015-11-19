@@ -1,14 +1,5 @@
 <template name="profileEdit">
   <div class="container-fluid">
-    <div class="col-md-8 col-md-offset-2">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <div class="panel-title">Edit Profile</div>
-        </div>
-        <div class="panel-body">
-          {{> quickForm collection="Meteor.users" doc=user id="updateUserProfile" type="update"}}
-        </div>
-      </div>
-    </div>
+    {{> quickForm collection="Meteor.users" doc=user id="updateUserProfile" type="update"}}
   </div>
 </template>
