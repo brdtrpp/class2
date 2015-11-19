@@ -1,6 +1,7 @@
 <template name="myEvent">
   <div class="container-fluid">
-    <div class='text-center'><h2>Instructing</h2></div>
+    <div class='text-center'><h2>Instructing {{count}} {{classes}}</h2>
+    </div>
     <table class="table table-hover">
       <thead>
         <tr>
@@ -13,10 +14,11 @@
       <tbody>
         {{#each calevent}}
           <tr>
-            <td>{{title}}</td>
+            <td><a href="{{pathFor 'eventItem'}}">{{title}}</a></td>
             <td>{{startDate}}</td>
             <td>{{attending}}/{{attendeeCount}}</td>
-            <td><a class="glyphicon glyphicon-remove" aria-hidden="true"></a></td>
+            <td><a class="glyphicon glyphicon-pencil" aria-hidden="true"></a>
+            <a class="glyphicon glyphicon-remove" aria-hidden="true"></a></td>
           </tr>
         {{/each}}
       </tbody>

@@ -3,7 +3,8 @@
 ##TO-DO
 * Timezone and Daylight savings time
 * Refunding
-* Time restrictions on registration process
+* Recurring needs fixing
+* Time restrictions
 * TOS and acceptance
 * How it Works on getting paid
 * Star rating system
@@ -12,9 +13,6 @@
 * Account Dashboard
 * User Public Profile
 * My Calendar (both hosted and taken) color coded
-* Erroring (with Bert)
-* Day Click move to day
-* Mass edit and remove
 * Display Limits
 * Notifications
 * Messaging

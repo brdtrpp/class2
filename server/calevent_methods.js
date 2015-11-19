@@ -2,6 +2,10 @@ Meteor.methods({
   removeCal: function(doc) {
     CalEvent.remove({_id: doc._id});
   },
+  
+  edit: function(doc) {
+    
+  },
   recur:function(doc){
     var date = moment(doc.start).format("MM-DD-YYYY");
     var end = moment(doc.end).format("MM-DD-YYYY");
@@ -47,7 +51,7 @@ Meteor.methods({
       for (
         i = 0;
         i < 365;
-        i++, date = JSON.stringify(moment(moment(date).add(1, "days")._d).format("MM-DD-YYYY"))
+        i++, date = moment(moment(date).add(1, "days")._d).toISOString()
         ) {
             if (recur.matches(date) == true) {
               console.log(doc);

@@ -17,12 +17,35 @@ Template.myEvent.helpers({
   attending:function() {
     return Attendee.find({eventId: this._id}).count();
   },
+  count:function() {
+    if (CalEvent.find({owner: Meteor.userId()}).count() == 0) {
+      return "no";
+    } else {
+      return CalEvent.find({owner: Meteor.userId()}).count();
+    }
+  },
+  classes:function() {
+    if (CalEvent.find({owner: Meteor.userId()}).count() == 1) {
+      return "class";
+    } else {
+      return "classes";
+    }
+  }
 });
 
 Template.myEvent.events({
   'click .glyphicon-remove' : function() {
     var doc = CalEvent.findOne({_id: this._id});
     Meteor.call("removeCal", doc);
+  },
+  
+  'click .glyphicon-pencil' : function() {
+    var doc = CalEvent.findOne({_id: this._id});
+    Meteor.call('editEvent', doc);
   }
+});
+
+Template.myEvent.onRendered(function(){
+  Bert.alert( '<h4><b>Warning:</b>  this page will not ask for confirmation before editing or deleting classes. All changes that are made are permenant.</h4>', 'danger', 'fixed-top', 'fa-frown-o' );
 });
 
