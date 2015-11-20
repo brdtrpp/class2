@@ -32,6 +32,16 @@ Router.route('/my-classes', {name: 'myEvent'});
 Router.route('/my-attend', {name: 'myAttend'});
 Router.route('/terms', {name: 'terms'});
 Router.route('/class', {name: 'eventNear'});
+Router.route('/user/:username', {
+  name: 'profile',
+  data: function() {
+    if (Meteor.user({username: this.username}) != undefined) {
+      return Meteor.users.find({username: this.username});
+    } else {
+      return Meteor.users.find({_id: this.params._id});
+    }
+  }
+});
 
 Router.route('/class/:_id', {
   name: 'eventItem',

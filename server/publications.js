@@ -5,3 +5,7 @@ Meteor.publish('calevent', function() {
 Meteor.publish('attendee', function() {
   return Attendee.find();
 });
+
+Meteor.publish('allUsers', function() {
+  return Meteor.users.find();
+});

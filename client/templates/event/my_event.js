@@ -38,7 +38,7 @@ Template.myEvent.events({
     var doc = CalEvent.findOne({_id: this._id});
     Meteor.call("removeCal", doc);
   },
-  
+
   'click .glyphicon-pencil' : function() {
     var doc = CalEvent.findOne({_id: this._id});
     Meteor.call('editEvent', doc);
@@ -46,6 +46,6 @@ Template.myEvent.events({
 });
 
 Template.myEvent.onRendered(function(){
-  Bert.alert( '<h4><b>Warning:</b>  this page will not ask for confirmation before editing or deleting classes. All changes that are made are permenant.</h4>', 'danger', 'fixed-top', 'fa-frown-o' );
+  Bert.alert( '<h4><b>Warning:</b>  this page will not ask for confirmation before editing or deleting classes. All changes that are made are permenant.</h4>', 'danger', 'growl-top-right', 'fa-frown-o' );
 });
 
