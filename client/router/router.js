@@ -31,7 +31,7 @@ Router.route('/user-profile', {name: 'profileEdit'});
 Router.route('/my-classes', {name: 'myEvent'});
 Router.route('/my-attend', {name: 'myAttend'});
 Router.route('/terms', {name: 'terms'});
-Router.route('/class', {name: 'eventNear'});
+Router.route('/classes', {name: 'eventSearch'});
 Router.route('/user/:username', {
   name: 'profile',
   data: function() {

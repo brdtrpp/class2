@@ -1,4 +1,9 @@
-CalEvent = new Mongo.Collection('calevent');
+CalEvent = new Mongo.Collection('calevent'),
+CalEventIndex = new EasySearch.Index({
+  collection: CalEvent,
+  fields: ['title', 'start'],
+  engine: new EasySearch.MongoDB()
+});
 
 RecurSchema = new SimpleSchema({
   type: {
@@ -134,5 +139,7 @@ CalEvent.attachSchema(new SimpleSchema({
   //   regEx: /^[0-9]{5}$/,
   // }
 }));
+
+
 
 

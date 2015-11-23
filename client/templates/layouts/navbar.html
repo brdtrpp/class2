@@ -15,8 +15,6 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-
-
           {{#if currentUser}}
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Classes <span class="caret"></span></a>
@@ -25,13 +23,11 @@
                 <li><a href="{{pathFor 'myEvent'}}">Instructing</a></li>
               {{/if}}
               <li><a href="{{pathFor 'myAttend'}}">Attending</a></li>
-              <li><a href="#">Near Me</a></li>
+              <li><a href="{{pathFor 'eventSearch'}}">Near Me</a></li>
               <li class="divider"></li>
               <li><a href="{{pathFor 'calendar'}}">My Calendar</a></li>
             </ul>
           </li>
-
-
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Account <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
@@ -56,7 +52,7 @@
             {{/if}}
           {{else}}
           <li><a href="{{pathFor 'calendar'}}">Calendar</a></li>
-          <li><a href="{{pathFor 'eventNear'}}">Classes</a></li>
+          <li><a href="{{pathFor 'eventSearch'}}">Classes</a></li>
           {{/if}}
         </ul>
         <ul class="nav navbar-nav navbar-right">

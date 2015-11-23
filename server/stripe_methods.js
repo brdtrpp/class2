@@ -8,11 +8,12 @@ Meteor.methods({
     var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
     var stripeCardCharge = Meteor.wrapAsync(Stripe.charges.create,Stripe.charges);
     var endPrice = event.price * 110;
+    var appfee = endPrice - ( event.price * 100 );
    stripeCardCharge({
         amount: endPrice,
         currency: "USD",
         customer: user.profile.customerId,
-        application_fee: endPrice - ( event.price * 100 ),
+        application_fee: appfee.toFixed(2),
         description: event.title + " " + event.start,
         destination: Meteor.user(event.owner).profile.accountId
     }, function(err, charge) {
