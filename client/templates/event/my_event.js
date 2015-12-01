@@ -18,14 +18,14 @@ Template.myEvent.helpers({
     return Attendee.find({eventId: this._id}).count();
   },
   count:function() {
-    if (CalEvent.find({owner: Meteor.userId()}).count() == 0) {
+    if (CalEvent.find({owner: Meteor.userId(), start: {$gt: moment().toISOString()}}, {sort: {start: 1}}).count() == 0) {
       return "no";
     } else {
-      return CalEvent.find({owner: Meteor.userId()}).count();
+      return CalEvent.find({owner: Meteor.userId(), start: {$gt: moment().toISOString()}}, {sort: {start: 1}}).count();
     }
   },
   classes:function() {
-    if (CalEvent.find({owner: Meteor.userId()}).count() == 1) {
+    if (CalEvent.find({owner: Meteor.userId(), start: {$gt: moment().toISOString()}}, {sort: {start: 1}}).count() == 1) {
       return "class";
     } else {
       return "classes";

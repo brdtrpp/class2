@@ -5,8 +5,10 @@
           <div class="pull-right">
             {{#afModal class="glyphicon glyphicon-pencil" collection="Attendee" operation="update" doc=_id formId="updateAttendee" title="Edit Attendee Name"}}
             {{/afModal}}
-            {{#afModal class="glyphicon glyphicon-remove-circle" collection="Attendee" operation="remove" doc=_id formId="deleteAttendee" title="Unregister"  prompt="Unregister from this class and be refunded?"}}
-            {{/afModal}}
+            {{#if timeRes }}
+              {{#afModal class="glyphicon glyphicon-remove-circle" collection="Attendee" operation="remove" doc=_id formId="deleteAttendee" title="Unregister"  prompt="Unregister from this class and be refunded?"}}
+              {{/afModal}}
+            {{/if}}
           </div>
         {{/if}}
     </li>

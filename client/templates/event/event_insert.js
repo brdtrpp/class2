@@ -5,8 +5,7 @@ AutoForm.hooks({
         if (doc.recur != undefined) {
           Meteor.call('recur', doc);
         } else {
-          console.log(doc);
-          return doc;
+          Meteor.call('saveCalEvent',doc);
         }
       }
     }

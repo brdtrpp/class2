@@ -1,11 +1,17 @@
 Meteor.methods({
   removeCal: function(doc) {
-    CalEvent.remove({_id: doc._id});
+    //refund to antendees
+    Meteor.call('refund', doc);
+    //remove class
+    // CalEvent.remove({_id: doc._id});
+    
+    
   },
   
   edit: function(doc) {
     
   },
+  
   recur:function(doc){
     var date = moment(doc.start).format("MM-DD-YYYY");
     var end = moment(doc.end).format("MM-DD-YYYY");
@@ -22,7 +28,7 @@ Meteor.methods({
       allDay: doc.allDay,
       price: doc.price,
       attendeeCount: doc.attendeeCount,
-      zip: doc.zip
+      // zip: doc.zip
     });
 
     //Recurring individual events
@@ -61,11 +67,22 @@ Meteor.methods({
     }
   },
 
-  saveCalEvent:function(ce){
+  saveCalEvent:function(doc){
     if (!this.userId) {
       return null;
     } else {
-      return  CalEvent.insert(ce);
+      return CalEvent.insert({
+        createdAt: doc.createdAt,
+        title: doc.title,
+        start: moment(doc.start).toISOString(),
+        end: moment(doc.end).toISOString(),
+        description: doc.description,
+        owner: doc.owner,
+        allDay: doc.allDay,
+        price: doc.price,
+        attendeeCount: doc.attendeeCount,
+        // zip: doc.zip
+      });
     }
   },
 

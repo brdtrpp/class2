@@ -1,3 +1,3 @@
 Meteor.startup(function() {
-  Stripe.setPublishableKey("pk_test_Hp3cH2DH048bEnH56mzrJu4F");
+  Stripe.setPublishableKey(Meteor.settings.public.stripe.testPublishableKey);
 });

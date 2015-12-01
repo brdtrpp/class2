@@ -66,10 +66,10 @@ Template.calendar.helpers({
       },
   
       select: function(start, end, jsEvent, view) {
-        var ce = {};
-        ce.start = start._d.toISOString();
-        ce.end = end._d.toISOString();
-        Meteor.call('saveCalEvent', ce);
+        var doc = {};
+        doc.start = start._d.toISOString();
+        doc.end = end._d.toISOString();
+        Meteor.call('saveCalEvent', doc);
       },
   
       eventResize: function(event, delta, revertFunc, jsEvent, ui, view) {

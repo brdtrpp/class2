@@ -1,13 +1,16 @@
 Template.attendeesItem.helpers({
   isAttendee: function() {
-    var id = this._id;
-    var start = CalEvent.findOne({_id: id}).start;
-    if (moment(Date()).isAfter(start) === true) {
-      return this.owner === Meteor.userId();
-    }
+    return this.owner === Meteor.userId();
   },
+  
   dateFormat: function() {
     return moment(this.createdAt).format("L");
+  },
+  
+  timeRes: function () {
+    // return true;
+    var start = moment(CalEvent.findOne({_id: this.eventId}).start).subtract(1, "days");
+    return moment().isBefore(start);
   }
 });
 

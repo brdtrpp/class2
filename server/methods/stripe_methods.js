@@ -1,10 +1,9 @@
 Meteor.methods({
-  refund: function(event) {
-
+  refund: function(doc) {
+    console.log(doc);
   },
   
   getAccount: function(aid) {
-    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
     var stripeAccounts = Meteor.wrapAsync(Stripe.accounts.retrieve,Stripe.accounts);
     stripeAccounts(aid, function(err, result) {
       if (err) {
@@ -21,7 +20,6 @@ Meteor.methods({
 
   charge: function(event, doc) {
     var user = Meteor.users.findOne({_id: Meteor.userId()});
-    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
     var stripeCardCharge = Meteor.wrapAsync(Stripe.charges.create,Stripe.charges);
     var endPrice = event.price * 110;
     var appfee = endPrice - ( event.price * 100 );
@@ -44,7 +42,6 @@ Meteor.methods({
 
   createCard: function (stripeToken) {
     var user = Meteor.users.findOne({_id: Meteor.userId()});
-    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
     var stripeCardCreate = Meteor.wrapAsync(Stripe.customers.createSource,Stripe.customers);
     var stripeCardDelete = Meteor.wrapAsync(Stripe.customers.deleteCard,Stripe.customers);
     var create = stripeCardCreate(
@@ -65,7 +62,6 @@ Meteor.methods({
 
   createAccount: function(doc, stripeToken) {
     var user = Meteor.users.findOne({_id: Meteor.userId()});
-    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
     var stripeCreateAccount = Meteor.wrapAsync(Stripe.accounts.create,Stripe.accounts);
     stripeCreateAccount({
       managed: true,

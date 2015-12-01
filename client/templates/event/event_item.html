@@ -13,10 +13,13 @@
     </div>
     <div class="panel-footer">
       {{#if currentUser}}
-       <!--Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#attend">
-        Register
-      </button>
+        {{#if timeRes}}
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#attend">
+            Register
+          </button>
+        {{else}}
+         <h4>This class is in the past...get over it!</h4>
+        {{/if}}
       {{> modals}}
       {{else}}
       <p>Please <a href="{{pathFor 'register'}}">signup/login</a> to register.</p>
