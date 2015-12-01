@@ -2,7 +2,7 @@
   <div class="col-md-8 col-md-offset-2">
     {{#if hasAccount}}
       <h2>Account Dashboard</h2>
-      {{> quickForm collection="Account" doc=user id="updateAccount" type="update"}}
+        {{account}}
     {{else}}
       <h3>Start Instructing</h3>
       {{> quickForm collection="Account" id="insertAccount" type="insert"}}

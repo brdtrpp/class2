@@ -2,6 +2,22 @@ Meteor.methods({
   refund: function(event) {
 
   },
+  
+  getAccount: function(aid) {
+    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
+    var stripeAccounts = Meteor.wrapAsync(Stripe.accounts.retrieve,Stripe.accounts);
+    stripeAccounts(aid, function(err, result) {
+      if (err) {
+        console.log(err);
+      }
+       if (result) {
+       console.log(result.id);
+        return result;
+       }
+
+    });
+
+  },
 
   charge: function(event, doc) {
     var user = Meteor.users.findOne({_id: Meteor.userId()});
@@ -60,7 +76,16 @@ Meteor.methods({
       legal_entity: {
         first_name: doc.legalEntity.firstName,
         last_name: doc.legalEntity.lastName,
-        type: doc.legalEntity.type
+        type: doc.legalEntity.type,
+        dob: {
+          day: moment(doc.legalEntity.dob).get('date'),
+          month: moment(doc.legalEntity.dob).get('month'),
+          year: moment(doc.legalEntity.dob).get('year')
+        },
+      },
+      tos_acceptance: {
+        date: moment().unix(),
+        ip: this.connection.clientAddress,
       },
       transfer_schedule: {
         delay_days: 7,
@@ -70,7 +95,7 @@ Meteor.methods({
       console.log(err, account);
       Meteor.users.update({_id: Meteor.userId()}, {
         $set: {
-          'profile.accountId': account.id
+          'profile.accountId': account.id,
         }
       });
     });

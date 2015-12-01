@@ -1,6 +1,10 @@
 Template.attendeesItem.helpers({
   isAttendee: function() {
-    return this.owner === Meteor.userId();
+    var id = this._id;
+    var start = CalEvent.findOne({_id: id}).start;
+    if (moment(Date()).isAfter(start) === true) {
+      return this.owner === Meteor.userId();
+    }
   },
   dateFormat: function() {
     return moment(this.createdAt).format("L");

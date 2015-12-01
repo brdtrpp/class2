@@ -1,21 +1,33 @@
 <template name="eventSearch">
-  {{> EasySearch.Input index=calEventIndex}}
-  <!--<ul>-->
-    {{#EasySearch.Each index=calEventIndex}}
-      {{> eventItemList}}
-    {{/EasySearch.Each}}
-  <!--</ul>-->
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4">
+          <label>Keyword</label>
+          {{> EasySearch.Input index=calEventIndex attributes=getSearchAttributes}}
+        </div>
+        <div class="col-md-4">
+          <label>Start Date</label>
+          {{> EasySearch.FieldInput field="start" index=calEventIndex attributes=getSearchAttributes }}
+        </div>
+        <div class="col-md-4">
+          <label>Zipcode</label>
+          {{> EasySearch.FieldInput field='zip' index=calEventIndex attributes=getSearchAttributes}}
+        </div>
+      </div>
+      <div class="row">
 
-  {{> EasySearch.LoadMore index=calEventIndex}}
+          {{#EasySearch.Each index=calEventIndex}}
+            {{> eventItemList}}
+          {{/EasySearch.Each}}
+      </div>
 
-  <!--{{#EasySearch.IfNoResults index=CalEventIndex}}-->
-  <!--  <div class="no-results">No results found!</div>-->
-  <!--{{/EasySearch.IfNoResults}}-->
-  
-  <!--<h2>Classes near Zipcode</h2>-->
-  <!--<div class="list-group">-->
-  <!--  {{#each calevent}}-->
-  <!--    {{> eventItemList}}-->
-  <!--  {{/each}}-->
-  <!--</div>-->
+      {{> EasySearch.LoadMore index=calEventIndex attributes=getLoadMoreAttributes}}
+
+      {{#EasySearch.IfNoResults index=calEventIndex}}
+        <div class="jumbotron">
+          <h2><center>No Results Found</center></h2>
+        </div>
+      {{/EasySearch.IfNoResults}}
+    </div>
 </template>
+

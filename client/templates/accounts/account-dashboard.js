@@ -1,10 +1,27 @@
 Template.getPaid.events({
-  'click .paid' : function () {
-    Meteor.call('createAccount');
+
+});
+
+Template.getPaid.onRendered(function() {
+  var aid = Meteor.user().profile.accountId;
+  if (aid) {
+    Meteor.call('getAccount', aid, function(err, result) {
+      if (err) {
+        alert(err);
+        Bert.alert(err, "danger", "fixed-bottom");
+      } 
+      if (result) {
+        alert(result);
+        Session.set("account", result);
+        
+      }
+    });
   }
 });
 
+
 Template.getPaid.helpers({
+  
   hasAccount: function() {
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     if (user.profile.accountId != undefined) {
@@ -13,6 +30,10 @@ Template.getPaid.helpers({
       return false;
     }
   },
+  
+  account: function() {
+    return Session.get("account");
+  }
 });
 
 //Autoform beforeInsert Stripe Validation
@@ -33,7 +54,6 @@ AutoForm.hooks({
             Bert.alert("Congratulations, you now can host classes", "success", "fixed-bottom");
           }
         });
-
       }
     }
   }

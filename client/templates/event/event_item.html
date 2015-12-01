@@ -6,7 +6,7 @@
           <span style="font-size:15pt;"><i class="glyphicon glyphicon-user"></i>{{aCount}}</span>
           {{> eventOwner}}
         </ul>
-      <h2 class="panel-title"> {{title}} <small>{{startDate}} {{endDate}}</small></h2>
+      <h2 class="panel-title"> {{title}} <small>{{startDate}} {{endDate}} {{zip}}</small></h2>
     </div>
     <div class="panel-body">
       <p>{{description}}</p>
@@ -19,7 +19,7 @@
       </button>
       {{> modals}}
       {{else}}
-      <p>Please log in to register.</p>
+      <p>Please <a href="{{pathFor 'register'}}">signup/login</a> to register.</p>
       {{/if}}
 
     </div>

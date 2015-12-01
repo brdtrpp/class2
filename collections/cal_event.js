@@ -1,7 +1,8 @@
-CalEvent = new Mongo.Collection('calevent'),
+CalEvent = new Mongo.Collection('calevent');
+
 CalEventIndex = new EasySearch.Index({
   collection: CalEvent,
-  fields: ['title', 'start'],
+  fields: ['title', 'description', 'start', 'zip'],
   engine: new EasySearch.MongoDB()
 });
 
@@ -84,6 +85,7 @@ CalEvent.attachSchema(new SimpleSchema({
     type: String,
     optional: true,
     label: "Description",
+    min: 10,
     max: 5000,
     defaultValue: "Write class description here.",
   },
@@ -124,22 +126,30 @@ CalEvent.attachSchema(new SimpleSchema({
   },
   // street: {
   //   type: String,
-  //   max: 100
+  //   max: 100,
+  //   defaultValue: function() {
+  //     return Meteor.user().profile.business.address.street;
+  //   }
   // },
   // city: {
   //   type: String,
-  //   max: 50
+  //   max: 50,
+  //   defaultValue: function() {
+  //     return Meteor.user().profile.business.address.city;
+  //   }
   // },
   // state: {
   //   type: String,
-  //   regEx: /^A[LKSZRAEP]|C[AOT]|D[EC]|F[LM]|G[AU]|HI|I[ADLN]|K[SY]|LA|M[ADEHINOPST]|N[CDEHJMVY]|O[HKR]|P[ARW]|RI|S[CD]|T[NX]|UT|V[AIT]|W[AIVY]$/
+  //   regEx: /^A[LKSZRAEP]|C[AOT]|D[EC]|F[LM]|G[AU]|HI|I[ADLN]|K[SY]|LA|M[ADEHINOPST]|N[CDEHJMVY]|O[HKR]|P[ARW]|RI|S[CD]|T[NX]|UT|V[AIT]|W[AIVY]$/,
+  //   defaultValue: function() {
+  //     return Meteor.user().profile.business.address.state;
+  //   }
   // },
   // zip: {
   //   type: String,
   //   regEx: /^[0-9]{5}$/,
+  //   defaultValue: function() {
+  //     return Meteor.user().profile.business.address.zip;
+  //   }
   // }
 }));
-
-
-
-

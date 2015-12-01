@@ -1,6 +1,6 @@
 Template.myEvent.helpers({
   calevent: function() {
-    return CalEvent.find({owner:Meteor.userId()});
+    return CalEvent.find({owner: Meteor.userId(), start: {$gt: moment().toISOString()}}, {sort: {start: 1}});
   },
 
   startDate:function() {

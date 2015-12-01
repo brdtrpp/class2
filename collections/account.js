@@ -18,17 +18,17 @@ LegalEntSchema = new SimpleSchema({
   },
   firstName: {
     type: String,
-    defaultValue: function() {
-      var user = Meteor.user().profile.firstName;
-      return user; 
-    }  
+    // defaultValue: function() {
+    //   var user = Meteor.user().profile.firstName;
+    //   return user; 
+    // }  
   },
   lastName: {
     type: String,
-    defaultValue: function() {
-      var user = Meteor.user().profile.lastName;
-      return user; 
-    }  
+    // defaultValue: function() {
+    //   var user = Meteor.user().profile.lastName;
+    //   return user; 
+    // }  
   },
   dob: {
     type: Date,
@@ -37,10 +37,10 @@ LegalEntSchema = new SimpleSchema({
         type: "bootstrap-datepicker",
       }
     },
-    defaultValue: function() {
-      var user = Meteor.user().profile.birthday;
-      return user; 
-    }  
+    // defaultValue: function() {
+    //   var user = Meteor.user().profile.birthday;
+    //   return user; 
+    // }  
   },
   type: {
     type: String,
@@ -57,24 +57,27 @@ LegalEntSchema = new SimpleSchema({
 }),
 
 Account.attachSchema(new SimpleSchema({
-  createdAt: {
-    type: Date,
-    autoValue: function() {
-      if (this.isInsert) {
-        return new Date;
-      } else {
-        this.unset();  // Prevent user from supplying their own value
-      }
-    },
-    autoform: {
-      omit: true
-    },
-  },
+  // createdAt: {
+  //   type: Date,
+  //   autoValue: function() {
+  //     if (this.isInsert) {
+  //       return new Date;
+  //     } else {
+  //       this.unset();  // Prevent user from supplying their own value
+  //     }
+  //   },
+  //   autoform: {
+  //     omit: true
+  //   },
+  // },
   businessName: {
     type: String,
   },
   legalEntity: {
     type: LegalEntSchema
+  },
+  address: {
+    type: AddressSchema
   },
   externalAccount: {
     type: ExternalAccSchema,

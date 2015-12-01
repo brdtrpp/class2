@@ -32,6 +32,7 @@ Router.route('/my-classes', {name: 'myEvent'});
 Router.route('/my-attend', {name: 'myAttend'});
 Router.route('/terms', {name: 'terms'});
 Router.route('/classes', {name: 'eventSearch'});
+Router.route('/register', {name: 'register'});
 Router.route('/user/:username', {
   name: 'profile',
   data: function() {
@@ -52,11 +53,11 @@ Router.route('/class/:_id', {
 
 Router.onBeforeAction('dataNotFound', {only: 'eventItem'});
 Router.onBeforeAction(requireLogin, {only: [
-  'getPaid', 
-  'payout', 
-  'profileEdit', 
-  'myEvent', 
-  'myAttend', 
+  'getPaid',
+  'payout',
+  'profileEdit',
+  'myEvent',
+  'myAttend',
   'account'
 ]});
 

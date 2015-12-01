@@ -34,6 +34,7 @@ ddp-rate-limiter@1.0.0
 ddp-server@1.2.2
 deps@1.0.9
 diff-sequence@1.0.1
+doctorpangloss:filter-collections@1.0.2
 easy:search@2.0.4
 easysearch:components@2.0.4
 easysearch:core@2.0.3

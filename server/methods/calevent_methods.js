@@ -15,13 +15,14 @@ Meteor.methods({
     CalEvent.insert({
       createdAt: doc.createdAt,
       title: doc.title,
-      start: moment(doc.start).format("ddd MMM DD YYYY hh:mm a [GMT] ZZ"),
-      end: moment(doc.start).format("ddd MMM DD YYYY hh:mm a [GMT] ZZ"),
+      start: moment(doc.start).toISOString(),
+      end: moment(doc.start).toISOString(),
       description: doc.description,
       owner: doc.owner,
       allDay: doc.allDay,
       price: doc.price,
-      attendeeCount: doc.attendeeCount
+      attendeeCount: doc.attendeeCount,
+      zip: doc.zip
     });
 
     //Recurring individual events
@@ -35,8 +36,8 @@ Meteor.methods({
               CalEvent.insert({
                 createdAt: doc.createdAt,
                 title: doc.title,
-                start: moment(date+startTime).format("ddd MMM DD YYYY hh:mm a [GMT] ZZ"),
-                end: moment(date+endTime).format("ddd MMM DD YYYY hh:mm a [GMT] ZZ"),
+                start: moment(date+startTime).toISOString(),
+                end: moment(date+endTime).toISOString(),
                 description: doc.description,
                 owner: doc.owner,
                 allDay: doc.allDay,
