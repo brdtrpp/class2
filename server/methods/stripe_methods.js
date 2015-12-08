@@ -4,7 +4,9 @@ Meteor.methods({
     var attendees = Attendee.find({eventId: doc._id});
     _.forEach(attendees.fetch(), function(item){
       stripeRefund({
-        charge: item.charge
+        charge: item.charge,
+        refund_application_fee: true,
+        reverse_transfer: true,
       }, function(err, refund) {
         if (err) {
           console.log(err);
@@ -21,7 +23,9 @@ Meteor.methods({
     var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
     console.log(att);
     stripeRefund({
-      charge: att.charge
+      charge: att.charge,
+      refund_application_fee: true,
+      reverse_transfer: true,
     }, function(err, refund) {
       console.log(err, refund);
       if (refund) {
@@ -117,16 +121,19 @@ Meteor.methods({
         interval: 'weekly',
         weekly_anchor: 'friday'},
     }, function(err, account) {
-      console.log(err, account);
-      Meteor.users.update({_id: Meteor.userId()}, {
-        $set: {
-          'profile.accountId': account.id,
-          'profile.businessAddress.street': doc.address.street,
-          'profile.businessAddress.city': doc.address.city,
-          'profile.businessAddress.state': doc.address.state,
-          'profile.businessAddress.zip': doc.address.zip,
-        }
-      });
+      if (err) {
+        console.log(err);
+      } else {
+        Meteor.users.update({_id: Meteor.userId()}, {
+          $set: {
+            'profile.accountId': account.id,
+            'profile.businessAddress.street': doc.address.street,
+            'profile.businessAddress.city': doc.address.city,
+            'profile.businessAddress.state': doc.address.state,
+            'profile.businessAddress.zip': doc.address.zip,
+          }
+        });
+      }
     });
   },
 
