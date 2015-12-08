@@ -1,11 +1,14 @@
 Meteor.methods({
   removeCal: function(doc) {
     //refund to antendees
-    Meteor.call('refund', doc);
-    //remove class
-    // CalEvent.remove({_id: doc._id});
-    
-    
+    if (moment(moment(doc.start).toISOString()).isBefore(moment())) {
+      console.log(Meteor.userId() + " tried to delete event after current date");
+    } else {
+      if (CalEvent.findOne({_id: doc._id}).owner === Meteor.userId()) {
+        Meteor.call('refundEvent', doc);
+        CalEvent.remove({_id: doc._id});
+      }
+    }
   },
   
   edit: function(doc) {
@@ -68,9 +71,11 @@ Meteor.methods({
   },
 
   saveCalEvent:function(doc){
-    if (!this.userId) {
+    //check if user is signed in or if the start date of the event is before now
+    if (!this.userId || moment(moment(doc.start).toISOString()).isBefore(moment())) {
       return null;
     } else {
+      //save event and dates are saved into ISO format
       return CalEvent.insert({
         createdAt: doc.createdAt,
         title: doc.title,

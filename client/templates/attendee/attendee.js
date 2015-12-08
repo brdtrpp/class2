@@ -14,15 +14,15 @@ Template.attendeesItem.helpers({
   }
 });
 
+Template.attendeesItem.events({
+  'click .refund' : function () {
+    var doc = CalEvent.findOne({_id: this.eventId});
+    var att = Attendee.findOne({_id: this._id});
+    Meteor.call('refundAttendee', doc, att);
+  }
+}),
+
 AutoForm.hooks({
-deleteAttendee: {
-    before: {
-      remove: function() {
-        console.log("toaster");
-      }
-    }
-  },
-  
   insertAttendee: {
     before: {
       insert: function(doc, template) {

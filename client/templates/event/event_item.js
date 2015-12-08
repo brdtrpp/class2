@@ -4,7 +4,7 @@ Template.eventItem.helpers({
   },
 
   attendee: function() {
-    return Attendee.find({eventId: this._id});
+    return Attendee.find({eventId: this._id, refund: null});
   },
 
   aCount: function() {

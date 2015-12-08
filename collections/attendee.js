@@ -22,6 +22,13 @@ Attendee.attachSchema(new SimpleSchema({
       omit: true
     }
   },
+  reEventId: {
+    type: String,
+    autoform: {
+      omit: true
+    },
+    defaultValue: null
+  },
   owner: {
     type: String,
     autoValue: function() {
@@ -50,6 +57,14 @@ Attendee.attachSchema(new SimpleSchema({
   },
   charge: {
     type: String,
+    autoform: {
+      omit: true
+    },
+    optional: true
+  },
+  refund: {
+    type: String,
+    defaultValue: null,
     autoform: {
       omit: true
     },

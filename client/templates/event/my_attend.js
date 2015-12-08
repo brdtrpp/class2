@@ -4,6 +4,6 @@ Template.myAttend.helpers({
   },
   
   event: function() {
-    return CalEvent.find({_id: this.eventId});
+    return CalEvent.find({_id: this.eventId}, {sort: {start: 1}});
   },
 });
