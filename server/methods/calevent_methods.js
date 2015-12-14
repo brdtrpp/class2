@@ -86,7 +86,10 @@ Meteor.methods({
         allDay: doc.allDay,
         price: doc.price,
         attendeeCount: doc.attendeeCount,
-        // zip: doc.zip
+        street: doc.street,
+        city: doc.city,
+        state: doc.state,
+        zip: doc.zip
       });
     }
   },

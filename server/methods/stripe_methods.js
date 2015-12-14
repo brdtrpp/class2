@@ -1,21 +1,10 @@
 Meteor.methods({
   refundEvent: function(doc) {
-    var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
     var attendees = Attendee.find({eventId: doc._id});
     _.forEach(attendees.fetch(), function(item){
-      stripeRefund({
-        charge: item.charge,
-        refund_application_fee: true,
-        reverse_transfer: true,
-      }, function(err, refund) {
-        if (err) {
-          console.log(err);
-        } else {
-          console.log(refund);
-          Attendee.update({_id: item._id}, {$set: {refund : refund.id}});
-          console.log(Attendee.findOne({_id: item._id}).refund);
-        }
-      });
+      var att = this;
+      console.log(att);
+      // Meteor.call('refundAttendee', doc, att)
     });
   },
 
