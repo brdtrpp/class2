@@ -66,9 +66,14 @@ Template.calendar.helpers({
       },
   
       select: function(start, end, jsEvent, view) {
+        var user = Meteor.user();
         var doc = {};
         doc.start = start._d.toISOString();
         doc.end = end._d.toISOString();
+        doc.street = user.profile.businessAddress.street;
+        doc.city = user.profile.businessAddress.city;
+        doc.state = user.profile.businessAddress.state;
+        doc.zip = user.profile.businessAddress.zip;
         Meteor.call('saveCalEvent', doc);
       },
   

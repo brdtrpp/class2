@@ -1,13 +1,9 @@
 #CLASS
 
-##TO-DO
-* Search Function
-* Locations for classes
-* Refunding
-* Timezone and Daylight savings time
+##To-Do
+* Refunding modals and edit modals
 * Recurring needs fixing (start and end)
-* Time restrictions
-* TOS and acceptance
+* Timezone and Daylight savings time
 * How it Works on getting paid
 * Star rating system
 * Route on delete on Class Page

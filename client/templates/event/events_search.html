@@ -1,32 +1,36 @@
 <template name="eventSearch">
   <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4">
-          <label>Keyword</label>
-          {{> EasySearch.Input index=calEventIndex attributes=getSearchAttributes}}
-        </div>
-        <div class="col-md-4">
-          <label>Start Date</label>
-          {{> EasySearch.FieldInput field="start" index=calEventIndex attributes=getSearchAttributes }}
-        </div>
-        <div class="col-md-4">
-          <label>Zipcode</label>
-          {{> EasySearch.FieldInput field='zip' index=calEventIndex attributes=getSearchAttributes}}
-        </div>
+    <div class="row">
+      <div class="col-md-6">
+        <label>Keyword</label>
+        {{> EasySearch.Input index=calEventIndex attributes=getSearchAttributes}}
       </div>
-      <div class="row">
-
-          {{#EasySearch.Each index=calEventIndex}}
-            {{> eventItemList}}
-          {{/EasySearch.Each}}
+      <div class="col-md-6">
+        <label>Zipcode</label>
+        {{> EasySearch.FieldInput field='zip' index=calEventIndex attributes=getSearchAttributes}}
       </div>
-
-      {{> EasySearch.LoadMore index=calEventIndex attributes=getLoadMoreAttributes}}
-
-      {{#EasySearch.IfNoResults index=calEventIndex}}
-        <div class="jumbotron">
-          <h2><center>No Results Found</center></h2>
-        </div>
-      {{/EasySearch.IfNoResults}}
     </div>
+    <div class="row">
+      {{#EasySearch.Each index=calEventIndex}}
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">
+              <a href="/class/{{id}}">{{title}} - {{city}}, {{state}} {{zip}}</a>
+            </h3>
+          </div>
+          <div class="panel-body">
+            {{description}}
+          </div>
+        </div>
+      {{/EasySearch.Each}}
+    </div>
+
+    {{> EasySearch.LoadMore index=calEventIndex attributes=getLoadMoreAttributes}}
+
+    {{#EasySearch.IfNoResults index=calEventIndex}}
+      <div class="jumbotron">
+        <h2><center>No Results Found</center></h2>
+      </div>
+    {{/EasySearch.IfNoResults}}
+  </div>
 </template>
