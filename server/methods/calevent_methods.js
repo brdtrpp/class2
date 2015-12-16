@@ -16,64 +16,26 @@ Meteor.methods({
   },
   
   recur:function(doc){
-    var date = moment(doc.start).format("MM-DD-YYYY");
+    var start = moment(doc.start).format("MM-DD-YYYY");
     var end = moment(doc.end).format("MM-DD-YYYY");
     var startTime = moment(doc.start).format("hh:mm a [GMT] ZZ");
     var endTime = moment(doc.end).format("hh:mm a [GMT] ZZ");
-    var recur = moment(date).recur(end).every(doc.recur.intervalNumber, doc.recur.intervalType);
-    CalEvent.insert({
-      createdAt: doc.createdAt,
-      title: doc.title,
-      start: moment(doc.start).toISOString(),
-      end: moment(doc.start).toISOString(),
-      description: doc.description,
-      owner: doc.owner,
-      allDay: doc.allDay,
-      price: doc.price,
-      attendeeCount: doc.attendeeCount,
-      street: doc.street,
-      city: doc.city,
-      state: doc.state,
-      zip: doc.zip
-    });
+    var recur = moment(start).recur().every(doc.recur.intervalNumber, doc.recur.intervalType);
+    var dates = recur.next(doc.recur.intervalStop, "L");
+    Meteor.call('saveCalEvent', doc);
 
     //Recurring individual events
     if (doc.recur.type === "lesson") {
-      for (
-        i = 0;
-        i < 365;
-        i++, date = JSON.stringify(moment(moment(date).add(1, "days")._d).format("MM-DD-YYYY"))
-        ) {
-            if (recur.matches(date) == true) {
-              CalEvent.insert({
-                createdAt: doc.createdAt,
-                title: doc.title,
-                start: moment(date+startTime).toISOString(),
-                end: moment(date+endTime).toISOString(),
-                description: doc.description,
-                owner: doc.owner,
-                allDay: doc.allDay,
-                price: doc.price,
-                attendeeCount: doc.attendeeCount,
-                street: doc.street,
-                city: doc.city,
-                state: doc.state,
-                zip: doc.zip
-              });
-            }
-          }
+      _.forEach(dates, function(item){
+        var res = item + " " +startTime;
+        console.log(moment(res).toISOString());
+      });
     }
 
     if (doc.recur.type === "course") {
-      for (
-        i = 0;
-        i < 365;
-        i++, date = moment(moment(date).add(1, "days")._d).toISOString()
-        ) {
-            if (recur.matches(date) == true) {
-              console.log(doc);
-            }
-          }
+      _.forEach(dates, function(item){
+        console.log(item);
+      });
     }
   },
 

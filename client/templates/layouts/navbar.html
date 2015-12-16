@@ -46,11 +46,7 @@
             </ul>
           </li>
             {{#if hasAccount}}
-              <li>
-                {{#afModal collection="CalEvent" operation="insert" formId="insertClass"}}
-                 New Class
-                {{/afModal}}
-              </li>
+              <li><a href="{{pathFor 'eventInsert'}}">New Class</a></li>
             {{/if}}
           {{else}}
           <li><a href="{{pathFor 'calendar'}}">Calendar</a></li>

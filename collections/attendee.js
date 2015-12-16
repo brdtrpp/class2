@@ -27,7 +27,8 @@ Attendee.attachSchema(new SimpleSchema({
     autoform: {
       omit: true
     },
-    defaultValue: null
+    defaultValue: null,
+    optional: true
   },
   owner: {
     type: String,

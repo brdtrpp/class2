@@ -1,38 +1,39 @@
 <template name="eventItem">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-        <ul class="panel-title pull-right">
-          <span style="font-size:15pt;"><i class="glyphicon glyphicon-usd"></i>{{customerPrice}}</span>
-          <span style="font-size:15pt;"><i class="glyphicon glyphicon-user"></i>{{aCount}}</span>
-          {{> eventOwner}}
-        </ul>
-      <h2 class="panel-title"> {{title}} <small>{{startDate}} {{endDate}} {{zip}}</small></h2>
-    </div>
-    <div class="panel-body">
-      <p>{{description}}</p>
-    </div>
-    <div class="panel-footer">
-      {{#if currentUser}}
-        {{#if timeRes}}
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#attend">
-            Register
-          </button>
+  <div class="container-fluid">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+          <ul class="panel-title pull-right">
+            <span style="font-size:15pt;"><i class="glyphicon glyphicon-usd"></i>{{customerPrice}}</span>
+            <span style="font-size:15pt;"><i class="glyphicon glyphicon-user"></i>{{aCount}}</span>
+            {{> eventOwner}}
+          </ul>
+        <h2 class="panel-title"> {{title}} <small>{{startDate}} {{endDate}} {{zip}}</small></h2>
+      </div>
+      <div class="panel-body">
+        <p>{{description}}</p>
+      </div>
+      <div class="panel-footer">
+        {{#if currentUser}}
+          {{#if timeRes}}
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#attend">
+              Register
+            </button>
+          {{else}}
+           <h4>This class is in the past...get over it!</h4>
+          {{/if}}
+        {{> modals}}
         {{else}}
-         <h4>This class is in the past...get over it!</h4>
+        <p>Please <a href="{{pathFor 'register'}}">signup/login</a> to register.</p>
         {{/if}}
-      {{> modals}}
-      {{else}}
-      <p>Please <a href="{{pathFor 'register'}}">signup/login</a> to register.</p>
-      {{/if}}
-
+  
+      </div>
     </div>
+    <ul class="list-group">
+      <h3>Attendees</h3>
+      {{#each attendee}}
+        {{> attendeesItem}}
+      {{/each}}
+    </ul>
   </div>
-  <ul class="list-group">
-    <h4>Attendees</h4>
-    {{#each attendee}}
-      {{> attendeesItem}}
-    {{/each}}
-  </ul>
-
 
 </template>

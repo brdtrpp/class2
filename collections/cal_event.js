@@ -38,6 +38,11 @@ RecurSchema = new SimpleSchema({
       }
     }
   },
+  intervalStop: {
+    type: Number,
+    label: "Stop after this many occurances.",
+    max: 365
+  }
 });
 
 CalEvent.attachSchema(new SimpleSchema({

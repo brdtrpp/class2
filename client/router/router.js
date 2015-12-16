@@ -33,6 +33,7 @@ Router.route('/my-attend', {name: 'myAttend'});
 Router.route('/terms', {name: 'terms'});
 Router.route('/classes', {name: 'eventSearch'});
 Router.route('/register', {name: 'register'});
+Router.route('/new-class', {name: 'eventInsert'});
 Router.route('/user/:username', {
   name: 'profile',
   data: function() {

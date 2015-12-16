@@ -27,6 +27,7 @@ AutoForm.hooks({
     before: {
       insert: function(doc, template) {
         var eventId = Template.instance().data.event;
+        console.log(eventId);
         var event = CalEvent.findOne({_id: eventId});
         var available = event.attendeeCount - Attendee.find({eventId: eventId}).count();
         if (

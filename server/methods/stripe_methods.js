@@ -3,8 +3,7 @@ Meteor.methods({
     var attendees = Attendee.find({eventId: doc._id});
     _.forEach(attendees.fetch(), function(item){
       var att = this;
-      console.log(att);
-      // Meteor.call('refundAttendee', doc, att)
+      Meteor.call('refundAttendee', doc, att);
     });
   },
 

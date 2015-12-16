@@ -2,6 +2,7 @@
 
 ##To-Do
 * Refunding modals and edit modals
+* Refunding whole events and attendees
 * Recurring needs fixing (start and end)
 * Timezone and Daylight savings time
 * How it Works on getting paid
