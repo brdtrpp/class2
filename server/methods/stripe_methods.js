@@ -17,7 +17,11 @@ Meteor.methods({
     }, function(err, refund) {
       console.log(err, refund);
       if (refund) {
-        Attendee.update({_id: att._id}, {$set: {eventId: null, rEventId: att.eventId, refund: refund.id}});
+        console.log(refund);
+        Attendee.update({_id: att._id}, {$set: {eventId: "refunded" , reEventId: att.eventId, refund: refund.id}});
+      }
+      if (err) {
+        console.log(err);
       }
     });
   },

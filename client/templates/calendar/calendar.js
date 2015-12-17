@@ -31,14 +31,6 @@ Template.calendar.helpers({
           editable: true,
           color: '#3FB618',
         },
-        // {
-        //   events: function(start,end,timezone,callback) {
-        //     var attendee = Attendee.find({owner: Meteor.userId()}).fetch();
-        //     var events = CalEvent.find({_id: attendee.eventId}).fetch();
-        //     callback(events);
-        //   },
-        //   color: '#FFF',
-        // }
       ],
   
       // dayClick: funct30n(date, jsEvent, view) {
