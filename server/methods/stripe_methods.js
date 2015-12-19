@@ -2,23 +2,27 @@ Meteor.methods({
   refundEvent: function(doc) {
     var attendees = Attendee.find({eventId: doc._id});
     _.forEach(attendees.fetch(), function(item){
-      var att = this;
+      var att = item;
       Meteor.call('refundAttendee', doc, att);
     });
   },
 
   refundAttendee: function (doc, att) {
     var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
-    console.log(att);
     stripeRefund({
       charge: att.charge,
       refund_application_fee: true,
       reverse_transfer: true,
     }, function(err, refund) {
-      console.log(err, refund);
       if (refund) {
         console.log(refund);
-        Attendee.update({_id: att._id}, {$set: {eventId: "refunded" , reEventId: att.eventId, refund: refund.id}});
+        Attendee.update({_id: att._id}, 
+          {$set: {
+            eventId: "refunded",
+            reEventId: att.eventId,
+            refund: refund.id,
+          }}
+        );
       }
       if (err) {
         console.log(err);

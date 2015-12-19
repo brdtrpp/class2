@@ -1,6 +1,7 @@
 Meteor.methods({
   removeCal: function(doc) {
     //refund to antendees
+    console.log(doc);
     if (moment(moment(doc.start).toISOString()).isBefore(moment())) {
       console.log(Meteor.userId() + " tried to delete event after current date");
     } else {
@@ -16,19 +17,24 @@ Meteor.methods({
   },
   
   recur:function(doc){
-    var start = moment(doc.start).format("MM-DD-YYYY");
-    var end = moment(doc.end).format("MM-DD-YYYY");
     var startTime = moment(doc.start).format("hh:mm a [GMT] ZZ");
-    var endTime = moment(doc.end).format("hh:mm a [GMT] ZZ");
-    var recur = moment(start).recur().every(doc.recur.intervalNumber, doc.recur.intervalType);
+    var recur = moment(doc.start).recur().every(doc.recur.intervalNumber, doc.recur.intervalType);
     var dates = recur.next(doc.recur.intervalStop, "L");
+    var dur = moment(doc.end).diff(moment(doc.start));
+    // console.log(recur);
+    // console.log(dur);
     Meteor.call('saveCalEvent', doc);
 
     //Recurring individual events
     if (doc.recur.type === "lesson") {
       _.forEach(dates, function(item){
-        var res = item + " " +startTime;
-        console.log(moment(res).toISOString());
+        var newStart = moment(item + " " + startTime);
+        var newEnd = newStart.add(dur, 'ms');
+        doc.start = moment(newStart).toISOString();
+        doc.end = moment(newEnd).toISOString();
+        // console.log(doc.start);
+        // console.log(doc.end);
+        Meteor.call('saveCalEvent', doc);
       });
     }
 

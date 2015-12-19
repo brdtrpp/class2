@@ -2,7 +2,7 @@ AutoForm.hooks({
   insertClass:{
     before:{
       insert: function(doc) {
-        if (doc.recur != undefined) {
+        if (doc.recur) {
           Meteor.call('recur', doc);
         } else {
           Meteor.call('saveCalEvent',doc);
@@ -10,7 +10,7 @@ AutoForm.hooks({
       }
     }
   },
-  
+
   deleteClass:{
     before:{
       remove: function(doc) {
