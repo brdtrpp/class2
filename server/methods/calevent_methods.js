@@ -12,6 +12,14 @@ Meteor.methods({
     }
   },
   
+  removeCourse: function(doc) {
+    var course = CalEvent.find({courseId: doc.courseId}).fetch();
+    _.forEach(course, function(item) {
+      var doc = item;
+      Meteor.call("removeCal", doc);
+    });
+  },
+  
   edit: function(doc) {
     
   },
@@ -21,6 +29,7 @@ Meteor.methods({
     var recur = moment(doc.start).recur().every(doc.recur.intervalNumber, doc.recur.intervalType);
     var dates = recur.next(doc.recur.intervalStop, "L");
     var dur = moment(doc.end).diff(moment(doc.start));
+    var courseId = Random.id();
     // console.log(recur);
     // console.log(dur);
     Meteor.call('saveCalEvent', doc);
@@ -40,7 +49,14 @@ Meteor.methods({
 
     if (doc.recur.type === "course") {
       _.forEach(dates, function(item){
-        console.log(item);
+        doc.courseId = courseId;
+        var newStart = moment(item + " " + startTime);
+        var newEnd = newStart.add(dur, 'ms');
+        doc.start = moment(newStart).toISOString();
+        doc.end = moment(newEnd).toISOString();
+        // console.log(doc.start);
+        // console.log(doc.end);
+        Meteor.call('saveCalEvent', doc);
       });
     }
   },
@@ -64,8 +80,9 @@ Meteor.methods({
         street: doc.street,
         city: doc.city,
         state: doc.state,
-        zip: doc.zip
-      });
+        zip: doc.zip,
+        courseId: doc.courseId,
+      }); 
     }
   },
 

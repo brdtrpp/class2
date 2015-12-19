@@ -36,7 +36,11 @@ Template.myEvent.helpers({
 Template.myEvent.events({
   'click .glyphicon-remove' : function() {
     var doc = CalEvent.findOne({_id: this._id});
-    Meteor.call("removeCal", doc);
+    if (doc.courseId) {
+      console.log(doc.courseId);
+      Meteor.call("removeCourse", doc);
+    }
+    // Meteor.call("removeCal", doc);
   },
 
   'click .glyphicon-pencil' : function() {

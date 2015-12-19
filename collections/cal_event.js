@@ -42,7 +42,7 @@ RecurSchema = new SimpleSchema({
     type: Number,
     label: "Stop after this many occurances.",
     max: 365
-  }
+  },
 });
 
 CalEvent.attachSchema(new SimpleSchema({
@@ -158,5 +158,12 @@ CalEvent.attachSchema(new SimpleSchema({
     defaultValue: function() {
       return Meteor.user().profile.businessAddress.zip;
     }
+  },
+  courseId: {
+    type: String,
+    optional: true,
+    autoform: {
+      omit: true
+    },
   }
 }));

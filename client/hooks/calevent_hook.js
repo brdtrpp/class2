@@ -10,13 +10,4 @@ AutoForm.hooks({
       }
     }
   },
-
-  deleteClass:{
-    before:{
-      remove: function(doc) {
-        console.log("deleted");
-        return doc;
-      }
-    }
-  },
 })
