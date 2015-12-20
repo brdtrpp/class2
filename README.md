@@ -1,9 +1,10 @@
 #CLASS
 
 ##To-Do
-* Refunding modals and edit modals
-* Refunding whole events and attendees
-* Recurring needs fixing (start and end)
+* Modals
+* Course Refund partial
+* Refund from past event
+* Delete events
 * Timezone and Daylight savings time
 * How it Works on getting paid
 * Star rating system

@@ -71,4 +71,11 @@ Attendee.attachSchema(new SimpleSchema({
     },
     optional: true
   },
+  courseId: {
+    type: String,
+    optional: true,
+    autoform: {
+      omit: true
+    }
+  }
 }));
