@@ -4,7 +4,3 @@ Meteor.methods({
       return ip;
   }
 });
-
-// Meteor.onConnection(function(connection){ 
-//   console.log(connection); 
-// });

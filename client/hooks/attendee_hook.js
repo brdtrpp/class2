@@ -4,7 +4,6 @@ AutoForm.hooks({
       insert: function(doc, template) {
         var eventId = Template.instance().data.event;
         var event = CalEvent.findOne({_id: eventId});
-
         var available = event.attendeeCount - Attendee.find({eventId: eventId}).count();
         if (
           Attendee.find({
@@ -18,7 +17,12 @@ AutoForm.hooks({
         } else {
           if (Meteor.user().profile.cardId !== undefined) {
             if (available != 0) {
-              doc.eventId = event._id;
+              if (event.courseId) {
+                console.log(event.courseId);
+                doc.eventId = event.courseId;
+              } else {
+                doc.eventId = event._id;
+              }
               return doc;
             } else {
               Bert.alert("This class is full!", "danger", "fixed-bottom");

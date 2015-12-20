@@ -37,10 +37,10 @@ Template.myEvent.events({
   'click .glyphicon-remove' : function() {
     var doc = CalEvent.findOne({_id: this._id});
     if (doc.courseId) {
-      console.log(doc.courseId);
       Meteor.call("removeCourse", doc);
+    } else {
+      Meteor.call("removeCal", doc);
     }
-    // Meteor.call("removeCal", doc);
   },
 
   'click .glyphicon-pencil' : function() {

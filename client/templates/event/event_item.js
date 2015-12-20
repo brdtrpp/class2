@@ -4,7 +4,11 @@ Template.eventItem.helpers({
   },
 
   attendee: function() {
+    if (this.courseId) {
+    return Attendee.find({eventId: this.courseId, refund: null});
+    } else {
     return Attendee.find({eventId: this._id, refund: null});
+    }
   },
 
   aCount: function() {
@@ -36,6 +40,13 @@ Template.eventItem.helpers({
 });
 
 Template.eventItem.events({
+  'click .btn-primary': function() {
+    var doc = this;
+    var att = {};
+    att.firstName = "Bradley",
+    att.lastName = "Trapp",
+    Meteor.call('addAtt', doc, att);
+  },
   'submit': function () {
     $('#attend').modal('hide');
   },

@@ -21,7 +21,7 @@ Meteor.methods({
   },
   
   edit: function(doc) {
-    
+    console.log("editing " + doc._id);
   },
   
   recur:function(doc){
@@ -38,7 +38,7 @@ Meteor.methods({
     if (doc.recur.type === "lesson") {
       _.forEach(dates, function(item){
         var newStart = moment(item + " " + startTime);
-        var newEnd = newStart.add(dur, 'ms');
+        var newEnd = moment(newStart).add(dur, 'ms');
         doc.start = moment(newStart).toISOString();
         doc.end = moment(newEnd).toISOString();
         // console.log(doc.start);
@@ -51,11 +51,10 @@ Meteor.methods({
       _.forEach(dates, function(item){
         doc.courseId = courseId;
         var newStart = moment(item + " " + startTime);
-        var newEnd = newStart.add(dur, 'ms');
+        var newEnd = moment(newStart).add(dur, 'ms');
         doc.start = moment(newStart).toISOString();
         doc.end = moment(newEnd).toISOString();
-        // console.log(doc.start);
-        // console.log(doc.end);
+        // console.log(doc);
         Meteor.call('saveCalEvent', doc);
       });
     }

@@ -8,6 +8,7 @@ Meteor.methods({
   },
 
   refundAttendee: function (doc, att) {
+    console.log(doc);
     var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
     stripeRefund({
       charge: att.charge,
@@ -16,13 +17,8 @@ Meteor.methods({
     }, function(err, refund) {
       if (refund) {
         console.log(refund);
-        Attendee.update({_id: att._id}, 
-          {$set: {
-            eventId: "refunded",
-            reEventId: att.eventId,
-            refund: refund.id,
-          }}
-        );
+        var doc = refund;
+        Meteor.call('removeAtt', doc, att);
       }
       if (err) {
         console.log(err);
@@ -46,6 +42,7 @@ Meteor.methods({
   },
 
   charge: function(event, doc) {
+    console.log
     //doc is the _id of the attendee
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     var stripeCardCharge = Meteor.wrapAsync(Stripe.charges.create,Stripe.charges);
@@ -60,10 +57,11 @@ Meteor.methods({
         description: event.title + " " + event.start,
         destination: Meteor.user(event.owner).profile.accountId
     }, function(err, charge) {
-      console.log(err, charge);
         if (err && err.type === 'StripeCardError') {
+          console.log(err);
           Attendee.remove({_id: doc});
         } else {
+          console.log(charge.id);
           Attendee.update({_id: doc}, {$set: {charge: charge.id}});
         }
     });
