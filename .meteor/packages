@@ -7,7 +7,6 @@
 twbs:bootstrap
 iron:router
 accounts-password
-accounts-facebook
 mrgalaxy:stripe
 ian:accounts-ui-bootstrap-3
 aldeed:autoform
@@ -21,14 +20,12 @@ ongoworks:security
 useraccounts:bootstrap
 useraccounts:iron-routing
 aldeed:autoform-bs-button-group-input
-meteoric:ionic
 service-configuration
 aldeed:delete-button
 tsega:bootstrap3-datetimepicker@=3.1.3_3
 aldeed:template-extension
 adelq:moment-recur
 mrt:moment-timezone
-alanning:roles
 
 
 standard-minifiers

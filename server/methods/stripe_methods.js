@@ -8,7 +8,6 @@ Meteor.methods({
   },
 
   refundAttendee: function (doc, att) {
-    
     var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
     stripeRefund({
       charge: att.charge,
