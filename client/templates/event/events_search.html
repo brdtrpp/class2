@@ -1,29 +1,33 @@
 <template name="eventSearch">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-6 col-md-offset-3">
         <label>Keyword</label>
         {{> EasySearch.Input index=calEventIndex attributes=getSearchAttributes}}
       </div>
-      <div class="col-md-6">
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
         <label>Zipcode</label>
         {{> EasySearch.FieldInput field='zip' index=calEventIndex attributes=getSearchAttributes}}
       </div>
     </div>
     <div name="container-fluid">
       <div class="row">
-        {{#EasySearch.Each index=calEventIndex}}
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">
-                <a href="/class/{{id}}">{{title}} - {{city}}, {{state}} {{zip}}</a>
-              </h3>
+        <div class="col-md-6 col-md-offset-3">
+          {{#EasySearch.Each index=calEventIndex}}
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">
+                  <a href="/class/{{id}}">{{title}} - {{city}}, {{state}} {{zip}}</a>
+                </h3>
+              </div>
+              <div class="panel-body">
+                {{description}}
+              </div>
             </div>
-            <div class="panel-body">
-              {{description}}
-            </div>
-          </div>
-        {{/EasySearch.Each}}
+          {{/EasySearch.Each}}
+        </div>
       </div>
     </div>
 

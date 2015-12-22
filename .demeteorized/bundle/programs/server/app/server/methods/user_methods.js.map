@@ -1,0 +1,1 @@
+{"version":3,"sources":["meteor://💻app/server/methods/user_methods.js"],"names":[],"mappings":"yBAAA;AACA;AACA;AACA;AACA;AACA,G","file":"/server/methods/user_methods.js","sourcesContent":["Meteor.methods({\n  getIP: function(){\n      var ip = this.connection.clientAddress;\n      return ip;\n  }\n});"]}

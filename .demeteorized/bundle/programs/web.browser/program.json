@@ -1,0 +1,236 @@
+{
+  "format": "web-program-pre1",
+  "manifest": [
+    {
+      "path": "ee0b77fc8cabce9d4d95448c2ebedc36deeb9a0f.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/ee0b77fc8cabce9d4d95448c2ebedc36deeb9a0f.css?meteor_css_resource=true",
+      "size": 202502,
+      "hash": "ee0b77fc8cabce9d4d95448c2ebedc36deeb9a0f"
+    },
+    {
+      "path": "b86e0c997c3152a38b9f6c6c62dd18739862cdfe.css",
+      "where": "client",
+      "type": "css",
+      "cacheable": true,
+      "url": "/b86e0c997c3152a38b9f6c6c62dd18739862cdfe.css?meteor_css_resource=true",
+      "size": 33249,
+      "hash": "b86e0c997c3152a38b9f6c6c62dd18739862cdfe"
+    },
+    {
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.eot",
+      "size": 20127,
+      "hash": "86b6f62b7853e67d3e635f6512a5a5efc58ea3c3"
+    },
+    {
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.svg",
+      "size": 108738,
+      "hash": "de51a8494180a6db074af2dee2383f0a363c5b08"
+    },
+    {
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.ttf",
+      "size": 45404,
+      "hash": "44bc1850f570972267b169ae18f1cb06b611ffa2"
+    },
+    {
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff",
+      "size": 23424,
+      "hash": "278e49a86e634da6f2a02f3b47dd9d2a8f26210f"
+    },
+    {
+      "path": "packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/twbs_bootstrap/dist/fonts/glyphicons-halflings-regular.woff2",
+      "size": 18028,
+      "hash": "ca35b697d99cae4d1b60f2d60fcd37771987eb07"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.eot",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.eot",
+      "size": 70807,
+      "hash": "986eed8dca049714e43eeebcb3932741a4bec76d"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.svg",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.svg",
+      "size": 365616,
+      "hash": "b06b5c8f67fd632cdc62a33b62ae4f74194131b3"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.ttf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.ttf",
+      "size": 142072,
+      "hash": "6484f1af6b485d5096b71b344e67f4164c33dd1f"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff",
+      "size": 83588,
+      "hash": "4a313eb93b959cc4154c684b915b0a31ddb68d84"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff2",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/fontawesome-webfont.woff2",
+      "size": 66624,
+      "hash": "638c652d623280a58144f93e7b552c66d1667a11"
+    },
+    {
+      "path": "packages/fortawesome_fontawesome/upstream/fonts/FontAwesome.otf",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/packages/fortawesome_fontawesome/upstream/fonts/FontAwesome.otf",
+      "size": 109688,
+      "hash": "42c179eef588854b5ec151bcf6a3f58aa8b79b11"
+    },
+    {
+      "path": "app/permissions.js",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/permissions.js",
+      "size": 79,
+      "hash": "334b110cfdc884a0e12708246bfe0d7fd19412c7"
+    },
+    {
+      "path": "app/images/apple-touch-icon-114x114.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/apple-touch-icon-114x114.png",
+      "size": 6820,
+      "hash": "6e0e82deb67e44000bf66f725a5ab14172533385"
+    },
+    {
+      "path": "app/images/apple-touch-icon-120x120.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/apple-touch-icon-120x120.png",
+      "size": 3952,
+      "hash": "8ae86e68b8f8b5c78009ab2b2cb7d66fcdc06e5d"
+    },
+    {
+      "path": "app/images/apple-touch-icon-144x144.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/apple-touch-icon-144x144.png",
+      "size": 9940,
+      "hash": "4ea12b4d5239672eac51afe21da866fc1251fb75"
+    },
+    {
+      "path": "app/images/apple-touch-icon-152x152.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/apple-touch-icon-152x152.png",
+      "size": 11064,
+      "hash": "fd56a0573408af2ee76eeb580502205e0bbed787"
+    },
+    {
+      "path": "app/images/apple-touch-icon-180x180.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/apple-touch-icon-180x180.png",
+      "size": 7093,
+      "hash": "fca342ff6a05c96d4047a0ad48ce5c4de4e4534f"
+    },
+    {
+      "path": "app/images/apple-touch-icon-57x57.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/apple-touch-icon-57x57.png",
+      "size": 2054,
+      "hash": "7bafe53294283a0e3aafd4fed7cc50dca4d365cc"
+    },
+    {
+      "path": "app/images/apple-touch-icon-72x72.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/apple-touch-icon-72x72.png",
+      "size": 2582,
+      "hash": "748cd1e7a8556b34db5a627c540ed7f4a5999203"
+    },
+    {
+      "path": "app/images/apple-touch-icon-76x76.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/apple-touch-icon-76x76.png",
+      "size": 3061,
+      "hash": "f3a4fcc66b3bbfc7180b05720f4b62755fd83df1"
+    },
+    {
+      "path": "app/images/apple-touch-icon.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/apple-touch-icon.png",
+      "size": 2054,
+      "hash": "7bafe53294283a0e3aafd4fed7cc50dca4d365cc"
+    },
+    {
+      "path": "app/images/class-type.png",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/class-type.png",
+      "size": 13825,
+      "hash": "a9e4f75895ca8ce7844af82d29267399cfb0469c"
+    },
+    {
+      "path": "app/images/favicon.ico",
+      "where": "client",
+      "type": "asset",
+      "cacheable": false,
+      "url": "/images/favicon.ico",
+      "size": 34494,
+      "hash": "839d5e2ec68270956fdc1ef523ee22bed32a094e"
+    },
+    {
+      "path": "head.html",
+      "where": "internal",
+      "type": "head",
+      "hash": "ab2ad2b264d2cc95d481b1b201ea928375dd4498"
+    }
+  ]
+}

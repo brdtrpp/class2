@@ -54,7 +54,10 @@
           {{/if}}
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="{{pathFor 'register'}}">Register</a></li>
+          {{#if currentUser}}
+          {{else}}
+            <li><a href="{{pathFor 'register'}}">Register</a></li>
+          {{/if}}
           {{> atNavButton}}
         </ul>
       </div><!-- /.navbar-collapse -->

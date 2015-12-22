@@ -1,5 +1,7 @@
 <template name="profileEdit">
   <div class="container-fluid">
-    {{> quickForm collection="Meteor.users" doc=user id="updateUserProfile" type="update"}}
+    <div class="col-md-6 col-md-offset-3">
+      {{> quickForm collection="Meteor.users" doc=user id="updateUserProfile" type="update"}}
+    </div>
   </div>
 </template>

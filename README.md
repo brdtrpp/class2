@@ -2,6 +2,8 @@
 
 ##To-Do
 * Modals
+* Event Resize broken
+* All Day broken
 * Course Refund partial
 * Refund from past event
 * Delete events

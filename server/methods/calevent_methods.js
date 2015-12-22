@@ -32,24 +32,24 @@ Meteor.methods({
     var courseId = Random.id();
     // console.log(recur);
     // console.log(dur);
-    Meteor.call('saveCalEvent', doc);
+    
 
     //Recurring individual events
     if (doc.recur.type === "lesson") {
+      Meteor.call('saveCalEvent', doc);
       _.forEach(dates, function(item){
         var newStart = moment(item + " " + startTime);
         var newEnd = moment(newStart).add(dur, 'ms');
         doc.start = moment(newStart).toISOString();
         doc.end = moment(newEnd).toISOString();
-        // console.log(doc.start);
-        // console.log(doc.end);
         Meteor.call('saveCalEvent', doc);
       });
     }
 
     if (doc.recur.type === "course") {
+      doc.courseId = courseId;
+      Meteor.call('saveCalEvent', doc);
       _.forEach(dates, function(item){
-        doc.courseId = courseId;
         var newStart = moment(item + " " + startTime);
         var newEnd = moment(newStart).add(dur, 'ms');
         doc.start = moment(newStart).toISOString();
