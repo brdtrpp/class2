@@ -41,6 +41,7 @@ Meteor.methods({
   },
 
   charge: function(event, att) {
+    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
     //doc is the _id of the attendee
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     var stripeCardCharge = Meteor.wrapAsync(Stripe.charges.create,Stripe.charges);
