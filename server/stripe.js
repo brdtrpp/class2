@@ -1,5 +1,1 @@
-Meteor.startup(function() {
-
-});
-
-Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
+Stripe = Meteor.wrapAsync(StripeAPI(Meteor.settings.private.stripe.testSecretKey));
