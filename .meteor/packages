@@ -21,7 +21,6 @@ useraccounts:bootstrap
 useraccounts:iron-routing
 aldeed:autoform-bs-button-group-input
 service-configuration
-aldeed:delete-button
 tsega:bootstrap3-datetimepicker@=3.1.3_3
 aldeed:template-extension
 adelq:moment-recur

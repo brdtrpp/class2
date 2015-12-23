@@ -1,0 +1,3584 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/v0.10.40/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/v0.10.40/bin/npm',
+1 verbose cli   'update' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.40
+4 verbose request where is /archiver
+5 verbose request registry https://registry.npmjs.org/
+6 verbose request id 838507338f54121b
+7 verbose url raw /archiver
+8 verbose url resolving [ 'https://registry.npmjs.org/', './archiver' ]
+9 verbose url resolved https://registry.npmjs.org/archiver
+10 verbose request where is https://registry.npmjs.org/archiver
+11 info trying registry request attempt 1 at 22:01:12
+12 verbose etag "9WK1NFLE51AWX1MHV3YWFLGM1"
+13 http GET https://registry.npmjs.org/archiver
+14 verbose request where is /asn1
+15 verbose request registry https://registry.npmjs.org/
+16 verbose url raw /asn1
+17 verbose url resolving [ 'https://registry.npmjs.org/', './asn1' ]
+18 verbose url resolved https://registry.npmjs.org/asn1
+19 verbose request where is https://registry.npmjs.org/asn1
+20 info trying registry request attempt 1 at 22:01:12
+21 verbose etag "8MZDEQY0TE5A5S43PFPN4Z679"
+22 http GET https://registry.npmjs.org/asn1
+23 verbose request where is /balanced-match
+24 verbose request registry https://registry.npmjs.org/
+25 verbose url raw /balanced-match
+26 verbose url resolving [ 'https://registry.npmjs.org/', './balanced-match' ]
+27 verbose url resolved https://registry.npmjs.org/balanced-match
+28 verbose request where is https://registry.npmjs.org/balanced-match
+29 info trying registry request attempt 1 at 22:01:12
+30 verbose etag "EWNXFSBBRIGH7I8HCEJKUKS4M"
+31 http GET https://registry.npmjs.org/balanced-match
+32 verbose request where is /async
+33 verbose request registry https://registry.npmjs.org/
+34 verbose url raw /async
+35 verbose url resolving [ 'https://registry.npmjs.org/', './async' ]
+36 verbose url resolved https://registry.npmjs.org/async
+37 verbose request where is https://registry.npmjs.org/async
+38 info trying registry request attempt 1 at 22:01:12
+39 verbose etag "30DKPP61RX5HW2JJNP9DB5VEF"
+40 http GET https://registry.npmjs.org/async
+41 verbose request where is /bl
+42 verbose request registry https://registry.npmjs.org/
+43 verbose url raw /bl
+44 verbose url resolving [ 'https://registry.npmjs.org/', './bl' ]
+45 verbose url resolved https://registry.npmjs.org/bl
+46 verbose request where is https://registry.npmjs.org/bl
+47 info trying registry request attempt 1 at 22:01:12
+48 verbose etag "1QW45QJTVFVWJ5YM6H0GGCASF"
+49 http GET https://registry.npmjs.org/bl
+50 verbose request where is /brace-expansion
+51 verbose request registry https://registry.npmjs.org/
+52 verbose url raw /brace-expansion
+53 verbose url resolving [ 'https://registry.npmjs.org/', './brace-expansion' ]
+54 verbose url resolved https://registry.npmjs.org/brace-expansion
+55 verbose request where is https://registry.npmjs.org/brace-expansion
+56 info trying registry request attempt 1 at 22:01:12
+57 verbose etag "BC3J7JX1LEFWG3645L5NSTZJP"
+58 http GET https://registry.npmjs.org/brace-expansion
+59 verbose request where is /buffer-crc32
+60 verbose request registry https://registry.npmjs.org/
+61 verbose url raw /buffer-crc32
+62 verbose url resolving [ 'https://registry.npmjs.org/', './buffer-crc32' ]
+63 verbose url resolved https://registry.npmjs.org/buffer-crc32
+64 verbose request where is https://registry.npmjs.org/buffer-crc32
+65 info trying registry request attempt 1 at 22:01:12
+66 verbose etag "CR10R1H9CLVA9L87RE1JJV0SA"
+67 http GET https://registry.npmjs.org/buffer-crc32
+68 verbose request where is /cjson
+69 verbose request registry https://registry.npmjs.org/
+70 verbose url raw /cjson
+71 verbose url resolving [ 'https://registry.npmjs.org/', './cjson' ]
+72 verbose url resolved https://registry.npmjs.org/cjson
+73 verbose request where is https://registry.npmjs.org/cjson
+74 info trying registry request attempt 1 at 22:01:12
+75 verbose etag "A54BC5Y8V7363GHSTSIQLQ0D5"
+76 http GET https://registry.npmjs.org/cjson
+77 verbose request where is /colors
+78 verbose request registry https://registry.npmjs.org/
+79 verbose url raw /colors
+80 verbose url resolving [ 'https://registry.npmjs.org/', './colors' ]
+81 verbose url resolved https://registry.npmjs.org/colors
+82 verbose request where is https://registry.npmjs.org/colors
+83 info trying registry request attempt 1 at 22:01:12
+84 verbose etag "7MWE8VPMLB2F9SX8HFBGJQAZD"
+85 http GET https://registry.npmjs.org/colors
+86 verbose request where is /concat-map
+87 verbose request registry https://registry.npmjs.org/
+88 verbose url raw /concat-map
+89 verbose url resolving [ 'https://registry.npmjs.org/', './concat-map' ]
+90 verbose url resolved https://registry.npmjs.org/concat-map
+91 verbose request where is https://registry.npmjs.org/concat-map
+92 info trying registry request attempt 1 at 22:01:12
+93 verbose etag "66LI2B4AH1989LYDFSL4P944A"
+94 http GET https://registry.npmjs.org/concat-map
+95 verbose request where is /core-util-is
+96 verbose request registry https://registry.npmjs.org/
+97 verbose url raw /core-util-is
+98 verbose url resolving [ 'https://registry.npmjs.org/', './core-util-is' ]
+99 verbose url resolved https://registry.npmjs.org/core-util-is
+100 verbose request where is https://registry.npmjs.org/core-util-is
+101 info trying registry request attempt 1 at 22:01:12
+102 verbose etag "75RK9UUWAHLYO40UZKLLOJ8YF"
+103 http GET https://registry.npmjs.org/core-util-is
+104 verbose request where is /crc32-stream
+105 verbose request registry https://registry.npmjs.org/
+106 verbose url raw /crc32-stream
+107 verbose url resolving [ 'https://registry.npmjs.org/', './crc32-stream' ]
+108 verbose url resolved https://registry.npmjs.org/crc32-stream
+109 verbose request where is https://registry.npmjs.org/crc32-stream
+110 info trying registry request attempt 1 at 22:01:12
+111 verbose etag "E64R85CMEWH9KHG7OGJPGK8M6"
+112 http GET https://registry.npmjs.org/crc32-stream
+113 verbose request where is /debug
+114 verbose request registry https://registry.npmjs.org/
+115 verbose url raw /debug
+116 verbose url resolving [ 'https://registry.npmjs.org/', './debug' ]
+117 verbose url resolved https://registry.npmjs.org/debug
+118 verbose request where is https://registry.npmjs.org/debug
+119 info trying registry request attempt 1 at 22:01:12
+120 verbose etag "422PTSQDSLUSY1XWGQ92XHWN7"
+121 http GET https://registry.npmjs.org/debug
+122 verbose request where is /ejs
+123 verbose request registry https://registry.npmjs.org/
+124 verbose url raw /ejs
+125 verbose url resolving [ 'https://registry.npmjs.org/', './ejs' ]
+126 verbose url resolved https://registry.npmjs.org/ejs
+127 verbose request where is https://registry.npmjs.org/ejs
+128 info trying registry request attempt 1 at 22:01:12
+129 verbose etag "6U974RXW13PBFXHX3G0H26AVF"
+130 http GET https://registry.npmjs.org/ejs
+131 verbose request where is /end-of-stream
+132 verbose request registry https://registry.npmjs.org/
+133 verbose url raw /end-of-stream
+134 verbose url resolving [ 'https://registry.npmjs.org/', './end-of-stream' ]
+135 verbose url resolved https://registry.npmjs.org/end-of-stream
+136 verbose request where is https://registry.npmjs.org/end-of-stream
+137 info trying registry request attempt 1 at 22:01:12
+138 verbose etag "AX799CECSKOM0NE81UEPPRYXW"
+139 http GET https://registry.npmjs.org/end-of-stream
+140 verbose request where is /inflight
+141 verbose request registry https://registry.npmjs.org/
+142 verbose url raw /inflight
+143 verbose url resolving [ 'https://registry.npmjs.org/', './inflight' ]
+144 verbose url resolved https://registry.npmjs.org/inflight
+145 verbose request where is https://registry.npmjs.org/inflight
+146 info trying registry request attempt 1 at 22:01:12
+147 verbose etag "AYD7KENJNHXM5Z0WKMT2D06HW"
+148 http GET https://registry.npmjs.org/inflight
+149 verbose request where is /glob
+150 verbose request registry https://registry.npmjs.org/
+151 verbose url raw /glob
+152 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+153 verbose url resolved https://registry.npmjs.org/glob
+154 verbose request where is https://registry.npmjs.org/glob
+155 info trying registry request attempt 1 at 22:01:12
+156 verbose etag "35LSUK3ZVVWE83UZHSN9S342Z"
+157 http GET https://registry.npmjs.org/glob
+158 verbose request where is /inherits
+159 verbose request registry https://registry.npmjs.org/
+160 verbose url raw /inherits
+161 verbose url resolving [ 'https://registry.npmjs.org/', './inherits' ]
+162 verbose url resolved https://registry.npmjs.org/inherits
+163 verbose request where is https://registry.npmjs.org/inherits
+164 info trying registry request attempt 1 at 22:01:12
+165 verbose etag "CERC4URX8EKVASPFPHVBBMCEU"
+166 http GET https://registry.npmjs.org/inherits
+167 verbose request where is /isarray
+168 verbose request registry https://registry.npmjs.org/
+169 verbose url raw /isarray
+170 verbose url resolving [ 'https://registry.npmjs.org/', './isarray' ]
+171 verbose url resolved https://registry.npmjs.org/isarray
+172 verbose request where is https://registry.npmjs.org/isarray
+173 info trying registry request attempt 1 at 22:01:12
+174 verbose etag "9BAUPW5RTV3W0838KA6Y08NTG"
+175 http GET https://registry.npmjs.org/isarray
+176 verbose request where is /jju
+177 verbose request registry https://registry.npmjs.org/
+178 verbose url raw /jju
+179 verbose url resolving [ 'https://registry.npmjs.org/', './jju' ]
+180 verbose url resolved https://registry.npmjs.org/jju
+181 verbose request where is https://registry.npmjs.org/jju
+182 info trying registry request attempt 1 at 22:01:12
+183 verbose etag "37VM8EAVX1I4BOMOLZ0EDSLAK"
+184 http GET https://registry.npmjs.org/jju
+185 verbose request where is /json-parse-helpfulerror
+186 verbose request registry https://registry.npmjs.org/
+187 verbose url raw /json-parse-helpfulerror
+188 verbose url resolving [ 'https://registry.npmjs.org/', './json-parse-helpfulerror' ]
+189 verbose url resolved https://registry.npmjs.org/json-parse-helpfulerror
+190 verbose request where is https://registry.npmjs.org/json-parse-helpfulerror
+191 info trying registry request attempt 1 at 22:01:12
+192 verbose etag "2UCES0K0YEIX7DXYNBYNLGQ1G"
+193 http GET https://registry.npmjs.org/json-parse-helpfulerror
+194 verbose request where is /lazystream
+195 verbose request registry https://registry.npmjs.org/
+196 verbose url raw /lazystream
+197 verbose url resolving [ 'https://registry.npmjs.org/', './lazystream' ]
+198 verbose url resolved https://registry.npmjs.org/lazystream
+199 verbose request where is https://registry.npmjs.org/lazystream
+200 info trying registry request attempt 1 at 22:01:12
+201 verbose etag "3OJ7T4PSG18MJICF6NWJG0GH3"
+202 http GET https://registry.npmjs.org/lazystream
+203 verbose request where is /lodash
+204 verbose request registry https://registry.npmjs.org/
+205 verbose url raw /lodash
+206 verbose url resolving [ 'https://registry.npmjs.org/', './lodash' ]
+207 verbose url resolved https://registry.npmjs.org/lodash
+208 verbose request where is https://registry.npmjs.org/lodash
+209 info trying registry request attempt 1 at 22:01:12
+210 verbose etag "C3TDU7JK7D7XJL8FSOQ0GDEMI"
+211 http GET https://registry.npmjs.org/lodash
+212 verbose request where is /minimatch
+213 verbose request registry https://registry.npmjs.org/
+214 verbose url raw /minimatch
+215 verbose url resolving [ 'https://registry.npmjs.org/', './minimatch' ]
+216 verbose url resolved https://registry.npmjs.org/minimatch
+217 verbose request where is https://registry.npmjs.org/minimatch
+218 info trying registry request attempt 1 at 22:01:12
+219 verbose etag "4LFAQ3IFUTR8Q3IE1RPPWNQGA"
+220 http GET https://registry.npmjs.org/minimatch
+221 verbose request where is /mup
+222 verbose request registry https://registry.npmjs.org/
+223 verbose url raw /mup
+224 verbose url resolving [ 'https://registry.npmjs.org/', './mup' ]
+225 verbose url resolved https://registry.npmjs.org/mup
+226 verbose request where is https://registry.npmjs.org/mup
+227 info trying registry request attempt 1 at 22:01:12
+228 verbose etag "9E8D9U7WT17UGLM5DGW3ATGGE"
+229 http GET https://registry.npmjs.org/mup
+230 verbose request where is /node-int64
+231 verbose request registry https://registry.npmjs.org/
+232 verbose url raw /node-int64
+233 verbose url resolving [ 'https://registry.npmjs.org/', './node-int64' ]
+234 verbose url resolved https://registry.npmjs.org/node-int64
+235 verbose request where is https://registry.npmjs.org/node-int64
+236 info trying registry request attempt 1 at 22:01:12
+237 verbose etag "BFDX9NEMFQQ7H09NXUHAF6JKE"
+238 http GET https://registry.npmjs.org/node-int64
+239 verbose request where is /compress-commons
+240 verbose request registry https://registry.npmjs.org/
+241 verbose url raw /compress-commons
+242 verbose url resolving [ 'https://registry.npmjs.org/', './compress-commons' ]
+243 verbose url resolved https://registry.npmjs.org/compress-commons
+244 verbose request where is https://registry.npmjs.org/compress-commons
+245 info trying registry request attempt 1 at 22:01:12
+246 verbose etag "2FIQOD0FYAXU8YV2ESZ0D30SE"
+247 http GET https://registry.npmjs.org/compress-commons
+248 verbose request where is /nodemiral
+249 verbose request registry https://registry.npmjs.org/
+250 verbose url raw /nodemiral
+251 verbose url resolving [ 'https://registry.npmjs.org/', './nodemiral' ]
+252 verbose url resolved https://registry.npmjs.org/nodemiral
+253 verbose request where is https://registry.npmjs.org/nodemiral
+254 info trying registry request attempt 1 at 22:01:12
+255 verbose etag "EXJHGIXBZXWBAU9LE8WT0SHRI"
+256 http GET https://registry.npmjs.org/nodemiral
+257 verbose request where is /once
+258 verbose request registry https://registry.npmjs.org/
+259 verbose url raw /once
+260 verbose url resolving [ 'https://registry.npmjs.org/', './once' ]
+261 verbose url resolved https://registry.npmjs.org/once
+262 verbose request where is https://registry.npmjs.org/once
+263 info trying registry request attempt 1 at 22:01:12
+264 verbose etag "4HLPOKRFA58ZSBJPEJ3GZTC4A"
+265 http GET https://registry.npmjs.org/once
+266 verbose request where is /path-is-absolute
+267 verbose request registry https://registry.npmjs.org/
+268 verbose url raw /path-is-absolute
+269 verbose url resolving [ 'https://registry.npmjs.org/', './path-is-absolute' ]
+270 verbose url resolved https://registry.npmjs.org/path-is-absolute
+271 verbose request where is https://registry.npmjs.org/path-is-absolute
+272 info trying registry request attempt 1 at 22:01:12
+273 verbose etag "BN5VZYARJTFIZINEV94ZMOHSE"
+274 http GET https://registry.npmjs.org/path-is-absolute
+275 verbose request where is /progress
+276 verbose request registry https://registry.npmjs.org/
+277 verbose url raw /progress
+278 verbose url resolving [ 'https://registry.npmjs.org/', './progress' ]
+279 verbose url resolved https://registry.npmjs.org/progress
+280 verbose request where is https://registry.npmjs.org/progress
+281 info trying registry request attempt 1 at 22:01:12
+282 verbose etag "1MWJSBT5S35PX2FU1QA9PPNU8"
+283 http GET https://registry.npmjs.org/progress
+284 verbose request where is /readable-stream
+285 verbose request registry https://registry.npmjs.org/
+286 verbose url raw /readable-stream
+287 verbose url resolving [ 'https://registry.npmjs.org/', './readable-stream' ]
+288 verbose url resolved https://registry.npmjs.org/readable-stream
+289 verbose request where is https://registry.npmjs.org/readable-stream
+290 info trying registry request attempt 1 at 22:01:12
+291 verbose etag "3EOIL5JTL47JFABLY3LGTYV7"
+292 http GET https://registry.npmjs.org/readable-stream
+293 verbose request where is /rimraf
+294 verbose request registry https://registry.npmjs.org/
+295 verbose url raw /rimraf
+296 verbose url resolving [ 'https://registry.npmjs.org/', './rimraf' ]
+297 verbose url resolved https://registry.npmjs.org/rimraf
+298 verbose request where is https://registry.npmjs.org/rimraf
+299 info trying registry request attempt 1 at 22:01:12
+300 verbose etag "7YEKVN1EFWXJ8YH1SVXNDYV9N"
+301 http GET https://registry.npmjs.org/rimraf
+302 verbose request where is /ssh2
+303 verbose request registry https://registry.npmjs.org/
+304 verbose url raw /ssh2
+305 verbose url resolving [ 'https://registry.npmjs.org/', './ssh2' ]
+306 verbose url resolved https://registry.npmjs.org/ssh2
+307 verbose request where is https://registry.npmjs.org/ssh2
+308 info trying registry request attempt 1 at 22:01:12
+309 verbose etag "7AAJB6HSTKQRW75MSF3N34I4F"
+310 http GET https://registry.npmjs.org/ssh2
+311 verbose request where is /ssh2-streams
+312 verbose request registry https://registry.npmjs.org/
+313 verbose url raw /ssh2-streams
+314 verbose url resolving [ 'https://registry.npmjs.org/', './ssh2-streams' ]
+315 verbose url resolved https://registry.npmjs.org/ssh2-streams
+316 verbose request where is https://registry.npmjs.org/ssh2-streams
+317 info trying registry request attempt 1 at 22:01:12
+318 verbose etag "5VOCUA96KOD0CMA6DBHKDVR2F"
+319 http GET https://registry.npmjs.org/ssh2-streams
+320 verbose request where is /streamsearch
+321 verbose request registry https://registry.npmjs.org/
+322 verbose url raw /streamsearch
+323 verbose url resolving [ 'https://registry.npmjs.org/', './streamsearch' ]
+324 verbose url resolved https://registry.npmjs.org/streamsearch
+325 verbose request where is https://registry.npmjs.org/streamsearch
+326 info trying registry request attempt 1 at 22:01:12
+327 verbose etag "2WH6656VS9T8MLWVMD3PRSF7H"
+328 http GET https://registry.npmjs.org/streamsearch
+329 verbose request where is /string_decoder
+330 verbose request registry https://registry.npmjs.org/
+331 verbose url raw /string_decoder
+332 verbose url resolving [ 'https://registry.npmjs.org/', './string_decoder' ]
+333 verbose url resolved https://registry.npmjs.org/string_decoder
+334 verbose request where is https://registry.npmjs.org/string_decoder
+335 info trying registry request attempt 1 at 22:01:12
+336 verbose etag "3SLQP4XEWUIBONOV855WOPR0B"
+337 http GET https://registry.npmjs.org/string_decoder
+338 verbose request where is /tar-stream
+339 verbose request registry https://registry.npmjs.org/
+340 verbose url raw /tar-stream
+341 verbose url resolving [ 'https://registry.npmjs.org/', './tar-stream' ]
+342 verbose url resolved https://registry.npmjs.org/tar-stream
+343 verbose request where is https://registry.npmjs.org/tar-stream
+344 info trying registry request attempt 1 at 22:01:12
+345 verbose etag "36Q9PABMJRRGKUDJZJPGA2R4M"
+346 http GET https://registry.npmjs.org/tar-stream
+347 verbose request where is /underscore
+348 verbose request registry https://registry.npmjs.org/
+349 verbose url raw /underscore
+350 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+351 verbose url resolved https://registry.npmjs.org/underscore
+352 verbose request where is https://registry.npmjs.org/underscore
+353 info trying registry request attempt 1 at 22:01:12
+354 verbose etag "EFDD5CQTW181YVOL282U8VRMC"
+355 http GET https://registry.npmjs.org/underscore
+356 verbose request where is /uuid
+357 verbose request registry https://registry.npmjs.org/
+358 verbose url raw /uuid
+359 verbose url resolving [ 'https://registry.npmjs.org/', './uuid' ]
+360 verbose url resolved https://registry.npmjs.org/uuid
+361 verbose request where is https://registry.npmjs.org/uuid
+362 info trying registry request attempt 1 at 22:01:12
+363 verbose etag "95HFEGREJ3VDCJFVWA8N5LG7K"
+364 http GET https://registry.npmjs.org/uuid
+365 verbose request where is /wrappy
+366 verbose request registry https://registry.npmjs.org/
+367 verbose url raw /wrappy
+368 verbose url resolving [ 'https://registry.npmjs.org/', './wrappy' ]
+369 verbose url resolved https://registry.npmjs.org/wrappy
+370 verbose request where is https://registry.npmjs.org/wrappy
+371 info trying registry request attempt 1 at 22:01:12
+372 verbose etag "BC9JAW6E2PQBS8NYYKIYUR99F"
+373 http GET https://registry.npmjs.org/wrappy
+374 verbose request where is /xtend
+375 verbose request registry https://registry.npmjs.org/
+376 verbose url raw /xtend
+377 verbose url resolving [ 'https://registry.npmjs.org/', './xtend' ]
+378 verbose url resolved https://registry.npmjs.org/xtend
+379 verbose request where is https://registry.npmjs.org/xtend
+380 info trying registry request attempt 1 at 22:01:12
+381 verbose etag "BZUX5KQ99P4R4FEALL3DKKHAJ"
+382 http GET https://registry.npmjs.org/xtend
+383 verbose request where is /zip-stream
+384 verbose request registry https://registry.npmjs.org/
+385 verbose url raw /zip-stream
+386 verbose url resolving [ 'https://registry.npmjs.org/', './zip-stream' ]
+387 verbose url resolved https://registry.npmjs.org/zip-stream
+388 verbose request where is https://registry.npmjs.org/zip-stream
+389 info trying registry request attempt 1 at 22:01:12
+390 verbose etag "CVTGEL46AG5XRG5G7DPH8DRF1"
+391 http GET https://registry.npmjs.org/zip-stream
+392 http 304 https://registry.npmjs.org/bl
+393 silly registry.get cb [ 304,
+393 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+393 silly registry.get     via: '1.1 varnish',
+393 silly registry.get     'cache-control': 'max-age=60',
+393 silly registry.get     etag: '"1QW45QJTVFVWJ5YM6H0GGCASF"',
+393 silly registry.get     age: '21',
+393 silly registry.get     connection: 'keep-alive',
+393 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+393 silly registry.get     'x-cache': 'HIT',
+393 silly registry.get     'x-cache-hits': '1',
+393 silly registry.get     'x-timer': 'S1450908072.460606,VS0,VE0',
+393 silly registry.get     vary: 'Accept' } ]
+394 verbose etag https://registry.npmjs.org/bl from cache
+395 http 304 https://registry.npmjs.org/balanced-match
+396 silly registry.get cb [ 304,
+396 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+396 silly registry.get     via: '1.1 varnish',
+396 silly registry.get     'cache-control': 'max-age=60',
+396 silly registry.get     etag: '"EWNXFSBBRIGH7I8HCEJKUKS4M"',
+396 silly registry.get     age: '9',
+396 silly registry.get     connection: 'keep-alive',
+396 silly registry.get     'x-served-by': 'cache-ord1730-ORD',
+396 silly registry.get     'x-cache': 'HIT',
+396 silly registry.get     'x-cache-hits': '2',
+396 silly registry.get     'x-timer': 'S1450908072.462150,VS0,VE0',
+396 silly registry.get     vary: 'Accept' } ]
+397 verbose etag https://registry.npmjs.org/balanced-match from cache
+398 http 304 https://registry.npmjs.org/asn1
+399 silly registry.get cb [ 304,
+399 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+399 silly registry.get     via: '1.1 varnish',
+399 silly registry.get     'cache-control': 'max-age=60',
+399 silly registry.get     etag: '"8MZDEQY0TE5A5S43PFPN4Z679"',
+399 silly registry.get     age: '33',
+399 silly registry.get     connection: 'keep-alive',
+399 silly registry.get     'x-served-by': 'cache-ord1724-ORD',
+399 silly registry.get     'x-cache': 'HIT',
+399 silly registry.get     'x-cache-hits': '1',
+399 silly registry.get     'x-timer': 'S1450908072.463674,VS0,VE0',
+399 silly registry.get     vary: 'Accept' } ]
+400 verbose etag https://registry.npmjs.org/asn1 from cache
+401 http 304 https://registry.npmjs.org/async
+402 silly registry.get cb [ 304,
+402 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+402 silly registry.get     via: '1.1 varnish',
+402 silly registry.get     'cache-control': 'max-age=300',
+402 silly registry.get     etag: '"30DKPP61RX5HW2JJNP9DB5VEF"',
+402 silly registry.get     age: '170',
+402 silly registry.get     connection: 'keep-alive',
+402 silly registry.get     'x-served-by': 'cache-ord1720-ORD',
+402 silly registry.get     'x-cache': 'HIT',
+402 silly registry.get     'x-cache-hits': '14',
+402 silly registry.get     'x-timer': 'S1450908072.466538,VS0,VE0',
+402 silly registry.get     vary: 'Accept' } ]
+403 verbose etag https://registry.npmjs.org/async from cache
+404 http 304 https://registry.npmjs.org/brace-expansion
+405 silly registry.get cb [ 304,
+405 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+405 silly registry.get     via: '1.1 varnish',
+405 silly registry.get     'cache-control': 'max-age=60',
+405 silly registry.get     etag: '"BC3J7JX1LEFWG3645L5NSTZJP"',
+405 silly registry.get     age: '3',
+405 silly registry.get     connection: 'keep-alive',
+405 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+405 silly registry.get     'x-cache': 'HIT',
+405 silly registry.get     'x-cache-hits': '1',
+405 silly registry.get     'x-timer': 'S1450908072.479727,VS0,VE0',
+405 silly registry.get     vary: 'Accept' } ]
+406 verbose etag https://registry.npmjs.org/brace-expansion from cache
+407 http 304 https://registry.npmjs.org/cjson
+408 silly registry.get cb [ 304,
+408 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+408 silly registry.get     via: '1.1 varnish',
+408 silly registry.get     'cache-control': 'max-age=300',
+408 silly registry.get     etag: '"A54BC5Y8V7363GHSTSIQLQ0D5"',
+408 silly registry.get     age: '237',
+408 silly registry.get     connection: 'keep-alive',
+408 silly registry.get     'x-served-by': 'cache-ord1724-ORD',
+408 silly registry.get     'x-cache': 'HIT',
+408 silly registry.get     'x-cache-hits': '1',
+408 silly registry.get     'x-timer': 'S1450908072.482999,VS0,VE0',
+408 silly registry.get     vary: 'Accept' } ]
+409 verbose etag https://registry.npmjs.org/cjson from cache
+410 http 304 https://registry.npmjs.org/buffer-crc32
+411 silly registry.get cb [ 304,
+411 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+411 silly registry.get     via: '1.1 varnish',
+411 silly registry.get     'cache-control': 'max-age=60',
+411 silly registry.get     etag: '"CR10R1H9CLVA9L87RE1JJV0SA"',
+411 silly registry.get     age: '22',
+411 silly registry.get     connection: 'keep-alive',
+411 silly registry.get     'x-served-by': 'cache-ord1730-ORD',
+411 silly registry.get     'x-cache': 'HIT',
+411 silly registry.get     'x-cache-hits': '1',
+411 silly registry.get     'x-timer': 'S1450908072.484867,VS0,VE0',
+411 silly registry.get     vary: 'Accept' } ]
+412 verbose etag https://registry.npmjs.org/buffer-crc32 from cache
+413 http 304 https://registry.npmjs.org/colors
+414 silly registry.get cb [ 304,
+414 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+414 silly registry.get     via: '1.1 varnish',
+414 silly registry.get     'cache-control': 'max-age=300',
+414 silly registry.get     etag: '"7MWE8VPMLB2F9SX8HFBGJQAZD"',
+414 silly registry.get     age: '213',
+414 silly registry.get     connection: 'keep-alive',
+414 silly registry.get     'x-served-by': 'cache-ord1720-ORD',
+414 silly registry.get     'x-cache': 'HIT',
+414 silly registry.get     'x-cache-hits': '2',
+414 silly registry.get     'x-timer': 'S1450908072.485753,VS0,VE0',
+414 silly registry.get     vary: 'Accept' } ]
+415 verbose etag https://registry.npmjs.org/colors from cache
+416 http 304 https://registry.npmjs.org/concat-map
+417 silly registry.get cb [ 304,
+417 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+417 silly registry.get     via: '1.1 varnish',
+417 silly registry.get     'cache-control': 'max-age=300',
+417 silly registry.get     etag: '"66LI2B4AH1989LYDFSL4P944A"',
+417 silly registry.get     age: '289',
+417 silly registry.get     connection: 'keep-alive',
+417 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+417 silly registry.get     'x-cache': 'HIT',
+417 silly registry.get     'x-cache-hits': '16',
+417 silly registry.get     'x-timer': 'S1450908072.496866,VS0,VE0',
+417 silly registry.get     vary: 'Accept' } ]
+418 verbose etag https://registry.npmjs.org/concat-map from cache
+419 http 304 https://registry.npmjs.org/debug
+420 silly registry.get cb [ 304,
+420 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+420 silly registry.get     via: '1.1 varnish',
+420 silly registry.get     'cache-control': 'max-age=300',
+420 silly registry.get     etag: '"422PTSQDSLUSY1XWGQ92XHWN7"',
+420 silly registry.get     age: '90',
+420 silly registry.get     connection: 'keep-alive',
+420 silly registry.get     'x-served-by': 'cache-ord1720-ORD',
+420 silly registry.get     'x-cache': 'HIT',
+420 silly registry.get     'x-cache-hits': '4',
+420 silly registry.get     'x-timer': 'S1450908072.501823,VS0,VE0',
+420 silly registry.get     vary: 'Accept' } ]
+421 verbose etag https://registry.npmjs.org/debug from cache
+422 http 304 https://registry.npmjs.org/archiver
+423 silly registry.get cb [ 304,
+423 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+423 silly registry.get     via: '1.1 varnish',
+423 silly registry.get     'cache-control': 'max-age=300',
+423 silly registry.get     etag: '"9WK1NFLE51AWX1MHV3YWFLGM1"',
+423 silly registry.get     age: '0',
+423 silly registry.get     connection: 'keep-alive',
+423 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+423 silly registry.get     'x-cache': 'HIT',
+423 silly registry.get     'x-cache-hits': '1',
+423 silly registry.get     'x-timer': 'S1450908072.458988,VS0,VE43',
+423 silly registry.get     vary: 'Accept' } ]
+424 verbose etag https://registry.npmjs.org/archiver from cache
+425 verbose registry.get https://registry.npmjs.org/balanced-match not expired, no request
+426 verbose registry.get https://registry.npmjs.org/concat-map not expired, no request
+427 http 304 https://registry.npmjs.org/core-util-is
+428 silly registry.get cb [ 304,
+428 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+428 silly registry.get     via: '1.1 varnish',
+428 silly registry.get     'cache-control': 'max-age=60',
+428 silly registry.get     etag: '"75RK9UUWAHLYO40UZKLLOJ8YF"',
+428 silly registry.get     age: '26',
+428 silly registry.get     connection: 'keep-alive',
+428 silly registry.get     'x-served-by': 'cache-ord1724-ORD',
+428 silly registry.get     'x-cache': 'HIT',
+428 silly registry.get     'x-cache-hits': '1',
+428 silly registry.get     'x-timer': 'S1450908072.507857,VS0,VE0',
+428 silly registry.get     vary: 'Accept' } ]
+429 verbose etag https://registry.npmjs.org/core-util-is from cache
+430 http 304 https://registry.npmjs.org/ejs
+431 silly registry.get cb [ 304,
+431 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+431 silly registry.get     via: '1.1 varnish',
+431 silly registry.get     'cache-control': 'max-age=300',
+431 silly registry.get     etag: '"6U974RXW13PBFXHX3G0H26AVF"',
+431 silly registry.get     age: '233',
+431 silly registry.get     connection: 'keep-alive',
+431 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+431 silly registry.get     'x-cache': 'HIT',
+431 silly registry.get     'x-cache-hits': '2',
+431 silly registry.get     'x-timer': 'S1450908072.509925,VS0,VE0',
+431 silly registry.get     vary: 'Accept' } ]
+432 verbose etag https://registry.npmjs.org/ejs from cache
+433 verbose request where is /json-parse-helpfulerror
+434 verbose request registry https://registry.npmjs.org/
+435 verbose url raw /json-parse-helpfulerror
+436 verbose url resolving [ 'https://registry.npmjs.org/', './json-parse-helpfulerror' ]
+437 verbose url resolved https://registry.npmjs.org/json-parse-helpfulerror
+438 verbose request where is https://registry.npmjs.org/json-parse-helpfulerror
+439 info trying registry request attempt 1 at 22:01:12
+440 verbose etag "2UCES0K0YEIX7DXYNBYNLGQ1G"
+441 http GET https://registry.npmjs.org/json-parse-helpfulerror
+442 http 304 https://registry.npmjs.org/end-of-stream
+443 silly registry.get cb [ 304,
+443 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+443 silly registry.get     via: '1.1 varnish',
+443 silly registry.get     'cache-control': 'max-age=60',
+443 silly registry.get     etag: '"AX799CECSKOM0NE81UEPPRYXW"',
+443 silly registry.get     age: '42',
+443 silly registry.get     connection: 'keep-alive',
+443 silly registry.get     'x-served-by': 'cache-ord1720-ORD',
+443 silly registry.get     'x-cache': 'HIT',
+443 silly registry.get     'x-cache-hits': '1',
+443 silly registry.get     'x-timer': 'S1450908072.517125,VS0,VE0',
+443 silly registry.get     vary: 'Accept' } ]
+444 verbose etag https://registry.npmjs.org/end-of-stream from cache
+445 http 304 https://registry.npmjs.org/inflight
+446 silly registry.get cb [ 304,
+446 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+446 silly registry.get     via: '1.1 varnish',
+446 silly registry.get     'cache-control': 'max-age=60',
+446 silly registry.get     etag: '"AYD7KENJNHXM5Z0WKMT2D06HW"',
+446 silly registry.get     age: '6',
+446 silly registry.get     connection: 'keep-alive',
+446 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+446 silly registry.get     'x-cache': 'HIT',
+446 silly registry.get     'x-cache-hits': '1',
+446 silly registry.get     'x-timer': 'S1450908072.517545,VS0,VE0',
+446 silly registry.get     vary: 'Accept' } ]
+447 verbose etag https://registry.npmjs.org/inflight from cache
+448 http 304 https://registry.npmjs.org/glob
+449 silly registry.get cb [ 304,
+449 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+449 silly registry.get     via: '1.1 varnish',
+449 silly registry.get     'cache-control': 'max-age=300',
+449 silly registry.get     etag: '"35LSUK3ZVVWE83UZHSN9S342Z"',
+449 silly registry.get     age: '291',
+449 silly registry.get     connection: 'keep-alive',
+449 silly registry.get     'x-served-by': 'cache-ord1724-ORD',
+449 silly registry.get     'x-cache': 'HIT',
+449 silly registry.get     'x-cache-hits': '20',
+449 silly registry.get     'x-timer': 'S1450908072.524624,VS0,VE0',
+449 silly registry.get     vary: 'Accept' } ]
+450 verbose etag https://registry.npmjs.org/glob from cache
+451 http 304 https://registry.npmjs.org/inherits
+452 silly registry.get cb [ 304,
+452 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+452 silly registry.get     via: '1.1 varnish',
+452 silly registry.get     'cache-control': 'max-age=60',
+452 silly registry.get     etag: '"CERC4URX8EKVASPFPHVBBMCEU"',
+452 silly registry.get     age: '1',
+452 silly registry.get     connection: 'keep-alive',
+452 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+452 silly registry.get     'x-cache': 'HIT',
+452 silly registry.get     'x-cache-hits': '1',
+452 silly registry.get     'x-timer': 'S1450908072.524604,VS0,VE0',
+452 silly registry.get     vary: 'Accept' } ]
+453 verbose etag https://registry.npmjs.org/inherits from cache
+454 http 304 https://registry.npmjs.org/isarray
+455 silly registry.get cb [ 304,
+455 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+455 silly registry.get     via: '1.1 varnish',
+455 silly registry.get     'cache-control': 'max-age=300',
+455 silly registry.get     etag: '"9BAUPW5RTV3W0838KA6Y08NTG"',
+455 silly registry.get     age: '112',
+455 silly registry.get     connection: 'keep-alive',
+455 silly registry.get     'x-served-by': 'cache-ord1720-ORD',
+455 silly registry.get     'x-cache': 'HIT',
+455 silly registry.get     'x-cache-hits': '7',
+455 silly registry.get     'x-timer': 'S1450908072.531935,VS0,VE0',
+455 silly registry.get     vary: 'Accept' } ]
+456 verbose etag https://registry.npmjs.org/isarray from cache
+457 http 304 https://registry.npmjs.org/jju
+458 silly registry.get cb [ 304,
+458 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+458 silly registry.get     via: '1.1 varnish',
+458 silly registry.get     'cache-control': 'max-age=300',
+458 silly registry.get     etag: '"37VM8EAVX1I4BOMOLZ0EDSLAK"',
+458 silly registry.get     age: '18',
+458 silly registry.get     connection: 'keep-alive',
+458 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+458 silly registry.get     'x-cache': 'HIT',
+458 silly registry.get     'x-cache-hits': '1',
+458 silly registry.get     'x-timer': 'S1450908072.533843,VS0,VE0',
+458 silly registry.get     vary: 'Accept' } ]
+459 verbose etag https://registry.npmjs.org/jju from cache
+460 http 304 https://registry.npmjs.org/crc32-stream
+461 silly registry.get cb [ 304,
+461 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+461 silly registry.get     via: '1.1 varnish',
+461 silly registry.get     'cache-control': 'max-age=300',
+461 silly registry.get     etag: '"E64R85CMEWH9KHG7OGJPGK8M6"',
+461 silly registry.get     age: '0',
+461 silly registry.get     connection: 'keep-alive',
+461 silly registry.get     'x-served-by': 'cache-ord1730-ORD',
+461 silly registry.get     'x-cache': 'HIT',
+461 silly registry.get     'x-cache-hits': '1',
+461 silly registry.get     'x-timer': 'S1450908072.500623,VS0,VE39',
+461 silly registry.get     vary: 'Accept' } ]
+462 verbose etag https://registry.npmjs.org/crc32-stream from cache
+463 http 304 https://registry.npmjs.org/lodash
+464 silly registry.get cb [ 304,
+464 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+464 silly registry.get     via: '1.1 varnish',
+464 silly registry.get     'cache-control': 'max-age=300',
+464 silly registry.get     etag: '"C3TDU7JK7D7XJL8FSOQ0GDEMI"',
+464 silly registry.get     age: '81',
+464 silly registry.get     connection: 'keep-alive',
+464 silly registry.get     'x-served-by': 'cache-ord1720-ORD',
+464 silly registry.get     'x-cache': 'HIT',
+464 silly registry.get     'x-cache-hits': '9',
+464 silly registry.get     'x-timer': 'S1450908072.548817,VS0,VE0',
+464 silly registry.get     vary: 'Accept' } ]
+465 verbose etag https://registry.npmjs.org/lodash from cache
+466 http 304 https://registry.npmjs.org/minimatch
+467 silly registry.get cb [ 304,
+467 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+467 silly registry.get     via: '1.1 varnish',
+467 silly registry.get     'cache-control': 'max-age=300',
+467 silly registry.get     etag: '"4LFAQ3IFUTR8Q3IE1RPPWNQGA"',
+467 silly registry.get     age: '251',
+467 silly registry.get     connection: 'keep-alive',
+467 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+467 silly registry.get     'x-cache': 'HIT',
+467 silly registry.get     'x-cache-hits': '12',
+467 silly registry.get     'x-timer': 'S1450908072.550008,VS0,VE0',
+467 silly registry.get     vary: 'Accept' } ]
+468 verbose etag https://registry.npmjs.org/minimatch from cache
+469 verbose request where is /once
+470 verbose request registry https://registry.npmjs.org/
+471 verbose url raw /once
+472 verbose url resolving [ 'https://registry.npmjs.org/', './once' ]
+473 verbose url resolved https://registry.npmjs.org/once
+474 verbose request where is https://registry.npmjs.org/once
+475 info trying registry request attempt 1 at 22:01:12
+476 verbose etag "4HLPOKRFA58ZSBJPEJ3GZTC4A"
+477 http GET https://registry.npmjs.org/once
+478 verbose request where is /once
+479 verbose request registry https://registry.npmjs.org/
+480 verbose url raw /once
+481 verbose url resolving [ 'https://registry.npmjs.org/', './once' ]
+482 verbose url resolved https://registry.npmjs.org/once
+483 verbose request where is https://registry.npmjs.org/once
+484 info trying registry request attempt 1 at 22:01:12
+485 verbose etag "4HLPOKRFA58ZSBJPEJ3GZTC4A"
+486 http GET https://registry.npmjs.org/once
+487 verbose request where is /wrappy
+488 verbose request registry https://registry.npmjs.org/
+489 verbose url raw /wrappy
+490 verbose url resolving [ 'https://registry.npmjs.org/', './wrappy' ]
+491 verbose url resolved https://registry.npmjs.org/wrappy
+492 verbose request where is https://registry.npmjs.org/wrappy
+493 info trying registry request attempt 1 at 22:01:12
+494 verbose etag "BC9JAW6E2PQBS8NYYKIYUR99F"
+495 http GET https://registry.npmjs.org/wrappy
+496 http 304 https://registry.npmjs.org/node-int64
+497 silly registry.get cb [ 304,
+497 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+497 silly registry.get     via: '1.1 varnish',
+497 silly registry.get     'cache-control': 'max-age=300',
+497 silly registry.get     etag: '"BFDX9NEMFQQ7H09NXUHAF6JKE"',
+497 silly registry.get     age: '59',
+497 silly registry.get     connection: 'keep-alive',
+497 silly registry.get     'x-served-by': 'cache-ord1720-ORD',
+497 silly registry.get     'x-cache': 'HIT',
+497 silly registry.get     'x-cache-hits': '1',
+497 silly registry.get     'x-timer': 'S1450908072.562760,VS0,VE0',
+497 silly registry.get     vary: 'Accept' } ]
+498 verbose etag https://registry.npmjs.org/node-int64 from cache
+499 http 304 https://registry.npmjs.org/compress-commons
+500 silly registry.get cb [ 304,
+500 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+500 silly registry.get     via: '1.1 varnish',
+500 silly registry.get     'cache-control': 'max-age=300',
+500 silly registry.get     etag: '"2FIQOD0FYAXU8YV2ESZ0D30SE"',
+500 silly registry.get     age: '0',
+500 silly registry.get     connection: 'keep-alive',
+500 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+500 silly registry.get     'x-cache': 'HIT',
+500 silly registry.get     'x-cache-hits': '1',
+500 silly registry.get     'x-timer': 'S1450908072.563130,VS0,VE38',
+500 silly registry.get     vary: 'Accept' } ]
+501 verbose etag https://registry.npmjs.org/compress-commons from cache
+502 http 304 https://registry.npmjs.org/lazystream
+503 silly registry.get cb [ 304,
+503 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+503 silly registry.get     via: '1.1 varnish',
+503 silly registry.get     'cache-control': 'max-age=300',
+503 silly registry.get     etag: '"3OJ7T4PSG18MJICF6NWJG0GH3"',
+503 silly registry.get     age: '0',
+503 silly registry.get     connection: 'keep-alive',
+503 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+503 silly registry.get     'x-cache': 'HIT',
+503 silly registry.get     'x-cache-hits': '1',
+503 silly registry.get     'x-timer': 'S1450908072.540258,VS0,VE63',
+503 silly registry.get     vary: 'Accept' } ]
+504 verbose etag https://registry.npmjs.org/lazystream from cache
+505 http 304 https://registry.npmjs.org/once
+506 silly registry.get cb [ 304,
+506 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+506 silly registry.get     via: '1.1 varnish',
+506 silly registry.get     'cache-control': 'max-age=300',
+506 silly registry.get     etag: '"4HLPOKRFA58ZSBJPEJ3GZTC4A"',
+506 silly registry.get     age: '265',
+506 silly registry.get     connection: 'keep-alive',
+506 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+506 silly registry.get     'x-cache': 'HIT',
+506 silly registry.get     'x-cache-hits': '13',
+506 silly registry.get     'x-timer': 'S1450908072.614105,VS0,VE0',
+506 silly registry.get     vary: 'Accept' } ]
+507 verbose etag https://registry.npmjs.org/once from cache
+508 verbose request where is /wrappy
+509 verbose request registry https://registry.npmjs.org/
+510 verbose url raw /wrappy
+511 verbose url resolving [ 'https://registry.npmjs.org/', './wrappy' ]
+512 verbose url resolved https://registry.npmjs.org/wrappy
+513 verbose request where is https://registry.npmjs.org/wrappy
+514 info trying registry request attempt 1 at 22:01:12
+515 verbose etag "BC9JAW6E2PQBS8NYYKIYUR99F"
+516 http GET https://registry.npmjs.org/wrappy
+517 http 304 https://registry.npmjs.org/path-is-absolute
+518 silly registry.get cb [ 304,
+518 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+518 silly registry.get     via: '1.1 varnish',
+518 silly registry.get     'cache-control': 'max-age=60',
+518 silly registry.get     etag: '"BN5VZYARJTFIZINEV94ZMOHSE"',
+518 silly registry.get     age: '49',
+518 silly registry.get     connection: 'keep-alive',
+518 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+518 silly registry.get     'x-cache': 'HIT',
+518 silly registry.get     'x-cache-hits': '2',
+518 silly registry.get     'x-timer': 'S1450908072.618059,VS0,VE0',
+518 silly registry.get     vary: 'Accept' } ]
+519 verbose etag https://registry.npmjs.org/path-is-absolute from cache
+520 http 304 https://registry.npmjs.org/progress
+521 silly registry.get cb [ 304,
+521 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+521 silly registry.get     via: '1.1 varnish',
+521 silly registry.get     'cache-control': 'max-age=300',
+521 silly registry.get     etag: '"1MWJSBT5S35PX2FU1QA9PPNU8"',
+521 silly registry.get     age: '165',
+521 silly registry.get     connection: 'keep-alive',
+521 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+521 silly registry.get     'x-cache': 'HIT',
+521 silly registry.get     'x-cache-hits': '3',
+521 silly registry.get     'x-timer': 'S1450908072.625855,VS0,VE0',
+521 silly registry.get     vary: 'Accept' } ]
+522 verbose etag https://registry.npmjs.org/progress from cache
+523 http 304 https://registry.npmjs.org/readable-stream
+524 silly registry.get cb [ 304,
+524 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+524 silly registry.get     via: '1.1 varnish',
+524 silly registry.get     'cache-control': 'max-age=300',
+524 silly registry.get     etag: '"3EOIL5JTL47JFABLY3LGTYV7"',
+524 silly registry.get     age: '69',
+524 silly registry.get     connection: 'keep-alive',
+524 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+524 silly registry.get     'x-cache': 'HIT',
+524 silly registry.get     'x-cache-hits': '4',
+524 silly registry.get     'x-timer': 'S1450908072.631168,VS0,VE0',
+524 silly registry.get     vary: 'Accept' } ]
+525 verbose etag https://registry.npmjs.org/readable-stream from cache
+526 http 304 https://registry.npmjs.org/rimraf
+527 silly registry.get cb [ 304,
+527 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+527 silly registry.get     via: '1.1 varnish',
+527 silly registry.get     'cache-control': 'max-age=300',
+527 silly registry.get     etag: '"7YEKVN1EFWXJ8YH1SVXNDYV9N"',
+527 silly registry.get     age: '128',
+527 silly registry.get     connection: 'keep-alive',
+527 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+527 silly registry.get     'x-cache': 'HIT',
+527 silly registry.get     'x-cache-hits': '11',
+527 silly registry.get     'x-timer': 'S1450908072.639345,VS0,VE0',
+527 silly registry.get     vary: 'Accept' } ]
+528 verbose etag https://registry.npmjs.org/rimraf from cache
+529 http 304 https://registry.npmjs.org/ssh2
+530 silly registry.get cb [ 304,
+530 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+530 silly registry.get     via: '1.1 varnish',
+530 silly registry.get     'cache-control': 'max-age=300',
+530 silly registry.get     etag: '"7AAJB6HSTKQRW75MSF3N34I4F"',
+530 silly registry.get     age: '44',
+530 silly registry.get     connection: 'keep-alive',
+530 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+530 silly registry.get     'x-cache': 'HIT',
+530 silly registry.get     'x-cache-hits': '1',
+530 silly registry.get     'x-timer': 'S1450908072.642665,VS0,VE0',
+530 silly registry.get     vary: 'Accept' } ]
+531 verbose etag https://registry.npmjs.org/ssh2 from cache
+532 http 304 https://registry.npmjs.org/ssh2-streams
+533 silly registry.get cb [ 304,
+533 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+533 silly registry.get     via: '1.1 varnish',
+533 silly registry.get     'cache-control': 'max-age=300',
+533 silly registry.get     etag: '"5VOCUA96KOD0CMA6DBHKDVR2F"',
+533 silly registry.get     age: '42',
+533 silly registry.get     connection: 'keep-alive',
+533 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+533 silly registry.get     'x-cache': 'HIT',
+533 silly registry.get     'x-cache-hits': '1',
+533 silly registry.get     'x-timer': 'S1450908072.651732,VS0,VE0',
+533 silly registry.get     vary: 'Accept' } ]
+534 verbose etag https://registry.npmjs.org/ssh2-streams from cache
+535 http 304 https://registry.npmjs.org/streamsearch
+536 silly registry.get cb [ 304,
+536 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+536 silly registry.get     via: '1.1 varnish',
+536 silly registry.get     'cache-control': 'max-age=300',
+536 silly registry.get     etag: '"2WH6656VS9T8MLWVMD3PRSF7H"',
+536 silly registry.get     age: '15',
+536 silly registry.get     connection: 'keep-alive',
+536 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+536 silly registry.get     'x-cache': 'HIT',
+536 silly registry.get     'x-cache-hits': '1',
+536 silly registry.get     'x-timer': 'S1450908072.664801,VS0,VE0',
+536 silly registry.get     vary: 'Accept' } ]
+537 verbose etag https://registry.npmjs.org/streamsearch from cache
+538 http 304 https://registry.npmjs.org/string_decoder
+539 silly registry.get cb [ 304,
+539 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+539 silly registry.get     via: '1.1 varnish',
+539 silly registry.get     'cache-control': 'max-age=60',
+539 silly registry.get     etag: '"3SLQP4XEWUIBONOV855WOPR0B"',
+539 silly registry.get     age: '16',
+539 silly registry.get     connection: 'keep-alive',
+539 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+539 silly registry.get     'x-cache': 'HIT',
+539 silly registry.get     'x-cache-hits': '1',
+539 silly registry.get     'x-timer': 'S1450908072.666413,VS0,VE0',
+539 silly registry.get     vary: 'Accept' } ]
+540 verbose etag https://registry.npmjs.org/string_decoder from cache
+541 verbose registry.get https://registry.npmjs.org/asn1 not expired, no request
+542 verbose registry.get https://registry.npmjs.org/readable-stream not expired, no request
+543 verbose request where is /streamsearch
+544 verbose request registry https://registry.npmjs.org/
+545 verbose url raw /streamsearch
+546 verbose url resolving [ 'https://registry.npmjs.org/', './streamsearch' ]
+547 verbose url resolved https://registry.npmjs.org/streamsearch
+548 verbose request where is https://registry.npmjs.org/streamsearch
+549 info trying registry request attempt 1 at 22:01:12
+550 verbose etag "2WH6656VS9T8MLWVMD3PRSF7H"
+551 http GET https://registry.npmjs.org/streamsearch
+552 http 304 https://registry.npmjs.org/tar-stream
+553 silly registry.get cb [ 304,
+553 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+553 silly registry.get     via: '1.1 varnish',
+553 silly registry.get     'cache-control': 'max-age=300',
+553 silly registry.get     etag: '"36Q9PABMJRRGKUDJZJPGA2R4M"',
+553 silly registry.get     age: '101',
+553 silly registry.get     connection: 'keep-alive',
+553 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+553 silly registry.get     'x-cache': 'HIT',
+553 silly registry.get     'x-cache-hits': '1',
+553 silly registry.get     'x-timer': 'S1450908072.677515,VS0,VE0',
+553 silly registry.get     vary: 'Accept' } ]
+554 verbose etag https://registry.npmjs.org/tar-stream from cache
+555 verbose registry.get https://registry.npmjs.org/glob not expired, no request
+556 http 304 https://registry.npmjs.org/underscore
+557 silly registry.get cb [ 304,
+557 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+557 silly registry.get     via: '1.1 varnish',
+557 silly registry.get     'cache-control': 'max-age=300',
+557 silly registry.get     etag: '"EFDD5CQTW181YVOL282U8VRMC"',
+557 silly registry.get     age: '105',
+557 silly registry.get     connection: 'keep-alive',
+557 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+557 silly registry.get     'x-cache': 'HIT',
+557 silly registry.get     'x-cache-hits': '6',
+557 silly registry.get     'x-timer': 'S1450908072.679989,VS0,VE0',
+557 silly registry.get     vary: 'Accept' } ]
+558 verbose etag https://registry.npmjs.org/underscore from cache
+559 http 304 https://registry.npmjs.org/uuid
+560 silly registry.get cb [ 304,
+560 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+560 silly registry.get     via: '1.1 varnish',
+560 silly registry.get     'cache-control': 'max-age=300',
+560 silly registry.get     etag: '"95HFEGREJ3VDCJFVWA8N5LG7K"',
+560 silly registry.get     age: '93',
+560 silly registry.get     connection: 'keep-alive',
+560 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+560 silly registry.get     'x-cache': 'HIT',
+560 silly registry.get     'x-cache-hits': '1',
+560 silly registry.get     'x-timer': 'S1450908072.690120,VS0,VE0',
+560 silly registry.get     vary: 'Accept' } ]
+561 verbose etag https://registry.npmjs.org/uuid from cache
+562 verbose registry.get https://registry.npmjs.org/inflight not expired, no request
+563 verbose registry.get https://registry.npmjs.org/inherits not expired, no request
+564 verbose registry.get https://registry.npmjs.org/minimatch not expired, no request
+565 verbose registry.get https://registry.npmjs.org/once not expired, no request
+566 verbose registry.get https://registry.npmjs.org/path-is-absolute not expired, no request
+567 http 304 https://registry.npmjs.org/wrappy
+568 silly registry.get cb [ 304,
+568 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+568 silly registry.get     via: '1.1 varnish',
+568 silly registry.get     'cache-control': 'max-age=60',
+568 silly registry.get     etag: '"BC9JAW6E2PQBS8NYYKIYUR99F"',
+568 silly registry.get     age: '33',
+568 silly registry.get     connection: 'keep-alive',
+568 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+568 silly registry.get     'x-cache': 'HIT',
+568 silly registry.get     'x-cache-hits': '1',
+568 silly registry.get     'x-timer': 'S1450908072.701635,VS0,VE0',
+568 silly registry.get     vary: 'Accept' } ]
+569 verbose etag https://registry.npmjs.org/wrappy from cache
+570 http 304 https://registry.npmjs.org/xtend
+571 silly registry.get cb [ 304,
+571 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+571 silly registry.get     via: '1.1 varnish',
+571 silly registry.get     'cache-control': 'max-age=300',
+571 silly registry.get     etag: '"BZUX5KQ99P4R4FEALL3DKKHAJ"',
+571 silly registry.get     age: '176',
+571 silly registry.get     connection: 'keep-alive',
+571 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+571 silly registry.get     'x-cache': 'HIT',
+571 silly registry.get     'x-cache-hits': '6',
+571 silly registry.get     'x-timer': 'S1450908072.704596,VS0,VE0',
+571 silly registry.get     vary: 'Accept' } ]
+572 verbose etag https://registry.npmjs.org/xtend from cache
+573 http 304 https://registry.npmjs.org/nodemiral
+574 silly registry.get cb [ 304,
+574 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+574 silly registry.get     via: '1.1 varnish',
+574 silly registry.get     'cache-control': 'max-age=300',
+574 silly registry.get     etag: '"EXJHGIXBZXWBAU9LE8WT0SHRI"',
+574 silly registry.get     age: '0',
+574 silly registry.get     connection: 'keep-alive',
+574 silly registry.get     'x-served-by': 'cache-ord1720-ORD',
+574 silly registry.get     'x-cache': 'MISS',
+574 silly registry.get     'x-cache-hits': '0',
+574 silly registry.get     'x-timer': 'S1450908072.578618,VS0,VE154',
+574 silly registry.get     vary: 'Accept' } ]
+575 verbose etag https://registry.npmjs.org/nodemiral from cache
+576 http 304 https://registry.npmjs.org/mup
+577 silly registry.get cb [ 304,
+577 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+577 silly registry.get     via: '1.1 varnish',
+577 silly registry.get     'cache-control': 'max-age=300',
+577 silly registry.get     etag: '"9E8D9U7WT17UGLM5DGW3ATGGE"',
+577 silly registry.get     age: '0',
+577 silly registry.get     connection: 'keep-alive',
+577 silly registry.get     'x-served-by': 'cache-ord1730-ORD',
+577 silly registry.get     'x-cache': 'MISS',
+577 silly registry.get     'x-cache-hits': '0',
+577 silly registry.get     'x-timer': 'S1450908072.554391,VS0,VE183',
+577 silly registry.get     vary: 'Accept' } ]
+578 verbose etag https://registry.npmjs.org/mup from cache
+579 http 304 https://registry.npmjs.org/once
+580 silly registry.get cb [ 304,
+580 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+580 silly registry.get     via: '1.1 varnish',
+580 silly registry.get     'cache-control': 'max-age=300',
+580 silly registry.get     etag: '"4HLPOKRFA58ZSBJPEJ3GZTC4A"',
+580 silly registry.get     age: '265',
+580 silly registry.get     connection: 'keep-alive',
+580 silly registry.get     'x-served-by': 'cache-ord1720-ORD',
+580 silly registry.get     'x-cache': 'HIT',
+580 silly registry.get     'x-cache-hits': '23',
+580 silly registry.get     'x-timer': 'S1450908072.746843,VS0,VE0',
+580 silly registry.get     vary: 'Accept' } ]
+581 verbose etag https://registry.npmjs.org/once from cache
+582 verbose registry.get https://registry.npmjs.org/debug not expired, no request
+583 verbose registry.get https://registry.npmjs.org/async not expired, no request
+584 verbose registry.get https://registry.npmjs.org/progress not expired, no request
+585 verbose registry.get https://registry.npmjs.org/colors not expired, no request
+586 verbose registry.get https://registry.npmjs.org/ejs not expired, no request
+587 verbose registry.get https://registry.npmjs.org/underscore not expired, no request
+588 verbose registry.get https://registry.npmjs.org/ssh2 not expired, no request
+589 http 304 https://registry.npmjs.org/once
+590 silly registry.get cb [ 304,
+590 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+590 silly registry.get     via: '1.1 varnish',
+590 silly registry.get     'cache-control': 'max-age=300',
+590 silly registry.get     etag: '"4HLPOKRFA58ZSBJPEJ3GZTC4A"',
+590 silly registry.get     age: '266',
+590 silly registry.get     connection: 'keep-alive',
+590 silly registry.get     'x-served-by': 'cache-ord1730-ORD',
+590 silly registry.get     'x-cache': 'HIT',
+590 silly registry.get     'x-cache-hits': '9',
+590 silly registry.get     'x-timer': 'S1450908072.752705,VS0,VE0',
+590 silly registry.get     vary: 'Accept' } ]
+591 verbose etag https://registry.npmjs.org/once from cache
+592 http 304 https://registry.npmjs.org/zip-stream
+593 silly registry.get cb [ 304,
+593 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+593 silly registry.get     via: '1.1 varnish',
+593 silly registry.get     'cache-control': 'max-age=300',
+593 silly registry.get     etag: '"CVTGEL46AG5XRG5G7DPH8DRF1"',
+593 silly registry.get     age: '0',
+593 silly registry.get     connection: 'keep-alive',
+593 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+593 silly registry.get     'x-cache': 'HIT',
+593 silly registry.get     'x-cache-hits': '1',
+593 silly registry.get     'x-timer': 'S1450908072.717277,VS0,VE37',
+593 silly registry.get     vary: 'Accept' } ]
+594 verbose etag https://registry.npmjs.org/zip-stream from cache
+595 http 304 https://registry.npmjs.org/wrappy
+596 silly registry.get cb [ 304,
+596 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+596 silly registry.get     via: '1.1 varnish',
+596 silly registry.get     'cache-control': 'max-age=60',
+596 silly registry.get     etag: '"BC9JAW6E2PQBS8NYYKIYUR99F"',
+596 silly registry.get     age: '33',
+596 silly registry.get     connection: 'keep-alive',
+596 silly registry.get     'x-served-by': 'cache-ord1720-ORD',
+596 silly registry.get     'x-cache': 'HIT',
+596 silly registry.get     'x-cache-hits': '4',
+596 silly registry.get     'x-timer': 'S1450908072.758553,VS0,VE0',
+596 silly registry.get     vary: 'Accept' } ]
+597 verbose etag https://registry.npmjs.org/wrappy from cache
+598 verbose registry.get https://registry.npmjs.org/archiver not expired, no request
+599 verbose registry.get https://registry.npmjs.org/cjson not expired, no request
+600 verbose registry.get https://registry.npmjs.org/colors not expired, no request
+601 verbose registry.get https://registry.npmjs.org/async not expired, no request
+602 verbose registry.get https://registry.npmjs.org/nodemiral not expired, no request
+603 verbose registry.get https://registry.npmjs.org/rimraf not expired, no request
+604 verbose registry.get https://registry.npmjs.org/underscore not expired, no request
+605 verbose registry.get https://registry.npmjs.org/uuid not expired, no request
+606 http 304 https://registry.npmjs.org/wrappy
+607 silly registry.get cb [ 304,
+607 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+607 silly registry.get     via: '1.1 varnish',
+607 silly registry.get     'cache-control': 'max-age=60',
+607 silly registry.get     etag: '"BC9JAW6E2PQBS8NYYKIYUR99F"',
+607 silly registry.get     age: '33',
+607 silly registry.get     connection: 'keep-alive',
+607 silly registry.get     'x-served-by': 'cache-ord1730-ORD',
+607 silly registry.get     'x-cache': 'HIT',
+607 silly registry.get     'x-cache-hits': '1',
+607 silly registry.get     'x-timer': 'S1450908072.782328,VS0,VE0',
+607 silly registry.get     vary: 'Accept' } ]
+608 verbose etag https://registry.npmjs.org/wrappy from cache
+609 http 304 https://registry.npmjs.org/streamsearch
+610 silly registry.get cb [ 304,
+610 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+610 silly registry.get     via: '1.1 varnish',
+610 silly registry.get     'cache-control': 'max-age=300',
+610 silly registry.get     etag: '"2WH6656VS9T8MLWVMD3PRSF7H"',
+610 silly registry.get     age: '15',
+610 silly registry.get     connection: 'keep-alive',
+610 silly registry.get     'x-served-by': 'cache-ord1726-ORD',
+610 silly registry.get     'x-cache': 'HIT',
+610 silly registry.get     'x-cache-hits': '1',
+610 silly registry.get     'x-timer': 'S1450908072.782564,VS0,VE0',
+610 silly registry.get     vary: 'Accept' } ]
+611 verbose etag https://registry.npmjs.org/streamsearch from cache
+612 http 304 https://registry.npmjs.org/json-parse-helpfulerror
+613 silly registry.get cb [ 304,
+613 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+613 silly registry.get     via: '1.1 varnish',
+613 silly registry.get     'cache-control': 'max-age=300',
+613 silly registry.get     etag: '"2UCES0K0YEIX7DXYNBYNLGQ1G"',
+613 silly registry.get     age: '0',
+613 silly registry.get     connection: 'keep-alive',
+613 silly registry.get     'x-served-by': 'cache-ord1724-ORD',
+613 silly registry.get     'x-cache': 'HIT',
+613 silly registry.get     'x-cache-hits': '1',
+613 silly registry.get     'x-timer': 'S1450908072.539058,VS0,VE255',
+613 silly registry.get     vary: 'Accept' } ]
+614 verbose etag https://registry.npmjs.org/json-parse-helpfulerror from cache
+615 http 304 https://registry.npmjs.org/json-parse-helpfulerror
+616 silly registry.get cb [ 304,
+616 silly registry.get   { date: 'Wed, 23 Dec 2015 22:01:12 GMT',
+616 silly registry.get     via: '1.1 varnish',
+616 silly registry.get     'cache-control': 'max-age=300',
+616 silly registry.get     etag: '"2UCES0K0YEIX7DXYNBYNLGQ1G"',
+616 silly registry.get     age: '0',
+616 silly registry.get     connection: 'keep-alive',
+616 silly registry.get     'x-served-by': 'cache-ord1723-ORD',
+616 silly registry.get     'x-cache': 'HIT',
+616 silly registry.get     'x-cache-hits': '1',
+616 silly registry.get     'x-timer': 'S1450908072.726553,VS0,VE67',
+616 silly registry.get     vary: 'Accept' } ]
+617 verbose etag https://registry.npmjs.org/json-parse-helpfulerror from cache
+618 verbose registry.get https://registry.npmjs.org/jju not expired, no request
+619 info outdated updating [ [ '/home/ubuntu/workspace',
+619 info outdated     'bl',
+619 info outdated     '0.9.4',
+619 info outdated     '1.0.0',
+619 info outdated     '1.0.0',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'async',
+619 info outdated     '0.9.2',
+619 info outdated     '1.5.0',
+619 info outdated     '1.5.0',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'colors',
+619 info outdated     '0.6.2',
+619 info outdated     '1.1.2',
+619 info outdated     '1.1.2',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'debug',
+619 info outdated     '0.7.4',
+619 info outdated     '2.2.0',
+619 info outdated     '2.2.0',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'archiver',
+619 info outdated     '0.14.4',
+619 info outdated     '0.21.0',
+619 info outdated     '0.21.0',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'ejs',
+619 info outdated     '0.8.8',
+619 info outdated     '2.3.4',
+619 info outdated     '2.3.4',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'glob',
+619 info outdated     '4.3.5',
+619 info outdated     '6.0.2',
+619 info outdated     '6.0.2',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'isarray',
+619 info outdated     '0.0.1',
+619 info outdated     '1.0.0',
+619 info outdated     '1.0.0',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'crc32-stream',
+619 info outdated     '0.3.4',
+619 info outdated     '0.4.0',
+619 info outdated     '0.4.0',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'lodash',
+619 info outdated     '3.2.0',
+619 info outdated     '3.10.1',
+619 info outdated     '3.10.1',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'minimatch',
+619 info outdated     '2.0.10',
+619 info outdated     '3.0.0',
+619 info outdated     '3.0.0',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'node-int64',
+619 info outdated     '0.3.3',
+619 info outdated     '0.4.0',
+619 info outdated     '0.4.0',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'compress-commons',
+619 info outdated     '0.2.9',
+619 info outdated     '0.4.2',
+619 info outdated     '0.4.2',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'lazystream',
+619 info outdated     '0.1.0',
+619 info outdated     '0.2.0',
+619 info outdated     '0.2.0',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'progress',
+619 info outdated     '1.1.5',
+619 info outdated     '1.1.8',
+619 info outdated     '1.1.8',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'readable-stream',
+619 info outdated     '1.0.33',
+619 info outdated     '2.0.5',
+619 info outdated     '2.0.5',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'ssh2',
+619 info outdated     '0.4.6',
+619 info outdated     '0.4.13',
+619 info outdated     '0.4.13',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'tar-stream',
+619 info outdated     '1.1.5',
+619 info outdated     '1.3.1',
+619 info outdated     '1.3.1',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace/node_modules/rimraf/node_modules/glob',
+619 info outdated     'minimatch',
+619 info outdated     '2.0.10',
+619 info outdated     '3.0.0',
+619 info outdated     '3.0.0',
+619 info outdated     '2 || 3' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'underscore',
+619 info outdated     '1.7.0',
+619 info outdated     '1.8.3',
+619 info outdated     '1.8.3',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'uuid',
+619 info outdated     '1.4.2',
+619 info outdated     '2.0.1',
+619 info outdated     '2.0.1',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace/node_modules/nodemiral',
+619 info outdated     'debug',
+619 info outdated     '0.7.4',
+619 info outdated     '0.7.4',
+619 info outdated     '2.2.0',
+619 info outdated     '0.7.x' ],
+619 info outdated   [ '/home/ubuntu/workspace/node_modules/nodemiral',
+619 info outdated     'async',
+619 info outdated     '0.9.0',
+619 info outdated     '0.9.0',
+619 info outdated     '1.5.0',
+619 info outdated     '0.9.0' ],
+619 info outdated   [ '/home/ubuntu/workspace/node_modules/nodemiral',
+619 info outdated     'progress',
+619 info outdated     '1.1.5',
+619 info outdated     '1.1.5',
+619 info outdated     '1.1.8',
+619 info outdated     '1.1.5' ],
+619 info outdated   [ '/home/ubuntu/workspace/node_modules/nodemiral',
+619 info outdated     'colors',
+619 info outdated     '0.6.2',
+619 info outdated     '0.6.2',
+619 info outdated     '1.1.2',
+619 info outdated     '0.6.x' ],
+619 info outdated   [ '/home/ubuntu/workspace/node_modules/nodemiral',
+619 info outdated     'ejs',
+619 info outdated     '0.8.8',
+619 info outdated     '0.8.8',
+619 info outdated     '2.3.4',
+619 info outdated     '0.8.x' ],
+619 info outdated   [ '/home/ubuntu/workspace/node_modules/nodemiral',
+619 info outdated     'ssh2',
+619 info outdated     '0.4.6',
+619 info outdated     '0.4.6',
+619 info outdated     '0.4.13',
+619 info outdated     '0.4.6' ],
+619 info outdated   [ '/home/ubuntu/workspace',
+619 info outdated     'zip-stream',
+619 info outdated     '0.5.2',
+619 info outdated     '0.8.0',
+619 info outdated     '0.8.0',
+619 info outdated     'latest' ],
+619 info outdated   [ '/home/ubuntu/workspace/node_modules/mup',
+619 info outdated     'archiver',
+619 info outdated     '0.14.4',
+619 info outdated     '0.14.4',
+619 info outdated     '0.21.0',
+619 info outdated     '0.14.x' ],
+619 info outdated   [ '/home/ubuntu/workspace/node_modules/mup',
+619 info outdated     'colors',
+619 info outdated     '0.6.2',
+619 info outdated     '0.6.2',
+619 info outdated     '1.1.2',
+619 info outdated     '0.6.x' ],
+619 info outdated   [ '/home/ubuntu/workspace/node_modules/mup',
+619 info outdated     'async',
+619 info outdated     '0.9.2',
+619 info outdated     '0.9.2',
+619 info outdated     '1.5.0',
+619 info outdated     '^0.9.0' ],
+619 info outdated   [ '/home/ubuntu/workspace/node_modules/mup',
+619 info outdated     'underscore',
+619 info outdated     '1.7.0',
+619 info outdated     '1.7.0',
+619 info outdated     '1.8.3',
+619 info outdated     '1.7.0' ],
+619 info outdated   [ '/home/ubuntu/workspace/node_modules/mup',
+619 info outdated     'uuid',
+619 info outdated     '1.4.2',
+619 info outdated     '1.4.2',
+619 info outdated     '2.0.1',
+619 info outdated     '1.4.x' ],
+619 info outdated   [ '/home/ubuntu/workspace/node_modules/ssh2-streams',
+619 info outdated     'readable-stream',
+619 info outdated     '1.0.33',
+619 info outdated     '1.0.33',
+619 info outdated     '2.0.5',
+619 info outdated     '~1.0.0' ] ]
+620 verbose install where,what [ '/home/ubuntu/workspace', [ 'bl@1.0.0' ] ]
+621 verbose install where,what [ '/home/ubuntu/workspace', [ 'async@1.5.0' ] ]
+622 verbose install where,what [ '/home/ubuntu/workspace', [ 'colors@1.1.2' ] ]
+623 verbose install where,what [ '/home/ubuntu/workspace', [ 'debug@2.2.0' ] ]
+624 verbose install where,what [ '/home/ubuntu/workspace', [ 'archiver@0.21.0' ] ]
+625 verbose install where,what [ '/home/ubuntu/workspace', [ 'ejs@2.3.4' ] ]
+626 verbose install where,what [ '/home/ubuntu/workspace', [ 'glob@6.0.2' ] ]
+627 verbose install where,what [ '/home/ubuntu/workspace', [ 'isarray@1.0.0' ] ]
+628 verbose install where,what [ '/home/ubuntu/workspace', [ 'crc32-stream@0.4.0' ] ]
+629 verbose install where,what [ '/home/ubuntu/workspace', [ 'lodash@3.10.1' ] ]
+630 verbose install where,what [ '/home/ubuntu/workspace', [ 'minimatch@3.0.0' ] ]
+631 verbose install where,what [ '/home/ubuntu/workspace', [ 'node-int64@0.4.0' ] ]
+632 verbose install where,what [ '/home/ubuntu/workspace', [ 'compress-commons@0.4.2' ] ]
+633 verbose install where,what [ '/home/ubuntu/workspace', [ 'lazystream@0.2.0' ] ]
+634 verbose install where,what [ '/home/ubuntu/workspace', [ 'progress@1.1.8' ] ]
+635 verbose install where,what [ '/home/ubuntu/workspace', [ 'readable-stream@2.0.5' ] ]
+636 verbose install where,what [ '/home/ubuntu/workspace', [ 'ssh2@0.4.13' ] ]
+637 verbose install where,what [ '/home/ubuntu/workspace', [ 'tar-stream@1.3.1' ] ]
+638 verbose install where,what [ '/home/ubuntu/workspace/node_modules/rimraf/node_modules/glob',
+638 verbose install   [ 'minimatch@3.0.0' ] ]
+639 verbose install where,what [ '/home/ubuntu/workspace', [ 'underscore@1.8.3' ] ]
+640 verbose install where,what [ '/home/ubuntu/workspace', [ 'uuid@2.0.1' ] ]
+641 verbose install where,what [ '/home/ubuntu/workspace/node_modules/nodemiral',
+641 verbose install   [ 'debug@0.7.4' ] ]
+642 verbose install where,what [ '/home/ubuntu/workspace/node_modules/nodemiral',
+642 verbose install   [ 'async@0.9.0' ] ]
+643 verbose install where,what [ '/home/ubuntu/workspace/node_modules/nodemiral',
+643 verbose install   [ 'progress@1.1.5' ] ]
+644 verbose install where,what [ '/home/ubuntu/workspace/node_modules/nodemiral',
+644 verbose install   [ 'colors@0.6.2' ] ]
+645 verbose install where,what [ '/home/ubuntu/workspace/node_modules/nodemiral',
+645 verbose install   [ 'ejs@0.8.8' ] ]
+646 verbose install where,what [ '/home/ubuntu/workspace/node_modules/nodemiral',
+646 verbose install   [ 'ssh2@0.4.6' ] ]
+647 verbose install where,what [ '/home/ubuntu/workspace', [ 'zip-stream@0.8.0' ] ]
+648 verbose install where,what [ '/home/ubuntu/workspace/node_modules/mup',
+648 verbose install   [ 'archiver@0.14.4' ] ]
+649 verbose install where,what [ '/home/ubuntu/workspace/node_modules/mup',
+649 verbose install   [ 'colors@0.6.2' ] ]
+650 verbose install where,what [ '/home/ubuntu/workspace/node_modules/mup', [ 'async@0.9.2' ] ]
+651 verbose install where,what [ '/home/ubuntu/workspace/node_modules/mup',
+651 verbose install   [ 'underscore@1.7.0' ] ]
+652 verbose install where,what [ '/home/ubuntu/workspace/node_modules/mup', [ 'uuid@1.4.2' ] ]
+653 verbose install where,what [ '/home/ubuntu/workspace/node_modules/ssh2-streams',
+653 verbose install   [ 'readable-stream@1.0.33' ] ]
+654 verbose readDependencies using package.json deps
+655 verbose cache add [ 'minimatch@3.0.0', null ]
+656 verbose cache add name=undefined spec="minimatch@3.0.0" args=["minimatch@3.0.0",null]
+657 verbose parsed url { protocol: null,
+657 verbose parsed url   slashes: null,
+657 verbose parsed url   auth: null,
+657 verbose parsed url   host: null,
+657 verbose parsed url   port: null,
+657 verbose parsed url   hostname: null,
+657 verbose parsed url   hash: null,
+657 verbose parsed url   search: null,
+657 verbose parsed url   query: null,
+657 verbose parsed url   pathname: 'minimatch@3.0.0',
+657 verbose parsed url   path: 'minimatch@3.0.0',
+657 verbose parsed url   href: 'minimatch@3.0.0' }
+658 verbose readDependencies using package.json deps
+659 verbose cache add [ 'debug@0.7.4', null ]
+660 verbose cache add name=undefined spec="debug@0.7.4" args=["debug@0.7.4",null]
+661 verbose parsed url { protocol: null,
+661 verbose parsed url   slashes: null,
+661 verbose parsed url   auth: null,
+661 verbose parsed url   host: null,
+661 verbose parsed url   port: null,
+661 verbose parsed url   hostname: null,
+661 verbose parsed url   hash: null,
+661 verbose parsed url   search: null,
+661 verbose parsed url   query: null,
+661 verbose parsed url   pathname: 'debug@0.7.4',
+661 verbose parsed url   path: 'debug@0.7.4',
+661 verbose parsed url   href: 'debug@0.7.4' }
+662 verbose readDependencies using package.json deps
+663 verbose cache add [ 'async@0.9.0', null ]
+664 verbose cache add name=undefined spec="async@0.9.0" args=["async@0.9.0",null]
+665 verbose parsed url { protocol: null,
+665 verbose parsed url   slashes: null,
+665 verbose parsed url   auth: null,
+665 verbose parsed url   host: null,
+665 verbose parsed url   port: null,
+665 verbose parsed url   hostname: null,
+665 verbose parsed url   hash: null,
+665 verbose parsed url   search: null,
+665 verbose parsed url   query: null,
+665 verbose parsed url   pathname: 'async@0.9.0',
+665 verbose parsed url   path: 'async@0.9.0',
+665 verbose parsed url   href: 'async@0.9.0' }
+666 verbose readDependencies using package.json deps
+667 verbose cache add [ 'progress@1.1.5', null ]
+668 verbose cache add name=undefined spec="progress@1.1.5" args=["progress@1.1.5",null]
+669 verbose parsed url { protocol: null,
+669 verbose parsed url   slashes: null,
+669 verbose parsed url   auth: null,
+669 verbose parsed url   host: null,
+669 verbose parsed url   port: null,
+669 verbose parsed url   hostname: null,
+669 verbose parsed url   hash: null,
+669 verbose parsed url   search: null,
+669 verbose parsed url   query: null,
+669 verbose parsed url   pathname: 'progress@1.1.5',
+669 verbose parsed url   path: 'progress@1.1.5',
+669 verbose parsed url   href: 'progress@1.1.5' }
+670 verbose readDependencies using package.json deps
+671 verbose cache add [ 'colors@0.6.2', null ]
+672 verbose cache add name=undefined spec="colors@0.6.2" args=["colors@0.6.2",null]
+673 verbose parsed url { protocol: null,
+673 verbose parsed url   slashes: null,
+673 verbose parsed url   auth: null,
+673 verbose parsed url   host: null,
+673 verbose parsed url   port: null,
+673 verbose parsed url   hostname: null,
+673 verbose parsed url   hash: null,
+673 verbose parsed url   search: null,
+673 verbose parsed url   query: null,
+673 verbose parsed url   pathname: 'colors@0.6.2',
+673 verbose parsed url   path: 'colors@0.6.2',
+673 verbose parsed url   href: 'colors@0.6.2' }
+674 verbose readDependencies using package.json deps
+675 verbose cache add [ 'ejs@0.8.8', null ]
+676 verbose cache add name=undefined spec="ejs@0.8.8" args=["ejs@0.8.8",null]
+677 verbose parsed url { protocol: null,
+677 verbose parsed url   slashes: null,
+677 verbose parsed url   auth: null,
+677 verbose parsed url   host: null,
+677 verbose parsed url   port: null,
+677 verbose parsed url   hostname: null,
+677 verbose parsed url   hash: null,
+677 verbose parsed url   search: null,
+677 verbose parsed url   query: null,
+677 verbose parsed url   pathname: 'ejs@0.8.8',
+677 verbose parsed url   path: 'ejs@0.8.8',
+677 verbose parsed url   href: 'ejs@0.8.8' }
+678 verbose readDependencies using package.json deps
+679 verbose cache add [ 'ssh2@0.4.6', null ]
+680 verbose cache add name=undefined spec="ssh2@0.4.6" args=["ssh2@0.4.6",null]
+681 verbose parsed url { protocol: null,
+681 verbose parsed url   slashes: null,
+681 verbose parsed url   auth: null,
+681 verbose parsed url   host: null,
+681 verbose parsed url   port: null,
+681 verbose parsed url   hostname: null,
+681 verbose parsed url   hash: null,
+681 verbose parsed url   search: null,
+681 verbose parsed url   query: null,
+681 verbose parsed url   pathname: 'ssh2@0.4.6',
+681 verbose parsed url   path: 'ssh2@0.4.6',
+681 verbose parsed url   href: 'ssh2@0.4.6' }
+682 verbose readDependencies using package.json deps
+683 verbose cache add [ 'archiver@0.14.4', null ]
+684 verbose cache add name=undefined spec="archiver@0.14.4" args=["archiver@0.14.4",null]
+685 verbose parsed url { protocol: null,
+685 verbose parsed url   slashes: null,
+685 verbose parsed url   auth: null,
+685 verbose parsed url   host: null,
+685 verbose parsed url   port: null,
+685 verbose parsed url   hostname: null,
+685 verbose parsed url   hash: null,
+685 verbose parsed url   search: null,
+685 verbose parsed url   query: null,
+685 verbose parsed url   pathname: 'archiver@0.14.4',
+685 verbose parsed url   path: 'archiver@0.14.4',
+685 verbose parsed url   href: 'archiver@0.14.4' }
+686 verbose readDependencies using package.json deps
+687 verbose cache add [ 'colors@0.6.2', null ]
+688 verbose cache add name=undefined spec="colors@0.6.2" args=["colors@0.6.2",null]
+689 verbose parsed url { protocol: null,
+689 verbose parsed url   slashes: null,
+689 verbose parsed url   auth: null,
+689 verbose parsed url   host: null,
+689 verbose parsed url   port: null,
+689 verbose parsed url   hostname: null,
+689 verbose parsed url   hash: null,
+689 verbose parsed url   search: null,
+689 verbose parsed url   query: null,
+689 verbose parsed url   pathname: 'colors@0.6.2',
+689 verbose parsed url   path: 'colors@0.6.2',
+689 verbose parsed url   href: 'colors@0.6.2' }
+690 verbose readDependencies using package.json deps
+691 verbose cache add [ 'async@0.9.2', null ]
+692 verbose cache add name=undefined spec="async@0.9.2" args=["async@0.9.2",null]
+693 verbose parsed url { protocol: null,
+693 verbose parsed url   slashes: null,
+693 verbose parsed url   auth: null,
+693 verbose parsed url   host: null,
+693 verbose parsed url   port: null,
+693 verbose parsed url   hostname: null,
+693 verbose parsed url   hash: null,
+693 verbose parsed url   search: null,
+693 verbose parsed url   query: null,
+693 verbose parsed url   pathname: 'async@0.9.2',
+693 verbose parsed url   path: 'async@0.9.2',
+693 verbose parsed url   href: 'async@0.9.2' }
+694 verbose readDependencies using package.json deps
+695 verbose cache add [ 'underscore@1.7.0', null ]
+696 verbose cache add name=undefined spec="underscore@1.7.0" args=["underscore@1.7.0",null]
+697 verbose parsed url { protocol: null,
+697 verbose parsed url   slashes: null,
+697 verbose parsed url   auth: null,
+697 verbose parsed url   host: null,
+697 verbose parsed url   port: null,
+697 verbose parsed url   hostname: null,
+697 verbose parsed url   hash: null,
+697 verbose parsed url   search: null,
+697 verbose parsed url   query: null,
+697 verbose parsed url   pathname: 'underscore@1.7.0',
+697 verbose parsed url   path: 'underscore@1.7.0',
+697 verbose parsed url   href: 'underscore@1.7.0' }
+698 verbose readDependencies using package.json deps
+699 verbose cache add [ 'uuid@1.4.2', null ]
+700 verbose cache add name=undefined spec="uuid@1.4.2" args=["uuid@1.4.2",null]
+701 verbose parsed url { protocol: null,
+701 verbose parsed url   slashes: null,
+701 verbose parsed url   auth: null,
+701 verbose parsed url   host: null,
+701 verbose parsed url   port: null,
+701 verbose parsed url   hostname: null,
+701 verbose parsed url   hash: null,
+701 verbose parsed url   search: null,
+701 verbose parsed url   query: null,
+701 verbose parsed url   pathname: 'uuid@1.4.2',
+701 verbose parsed url   path: 'uuid@1.4.2',
+701 verbose parsed url   href: 'uuid@1.4.2' }
+702 verbose readDependencies using package.json deps
+703 verbose cache add [ 'readable-stream@1.0.33', null ]
+704 verbose cache add name=undefined spec="readable-stream@1.0.33" args=["readable-stream@1.0.33",null]
+705 verbose parsed url { protocol: null,
+705 verbose parsed url   slashes: null,
+705 verbose parsed url   auth: null,
+705 verbose parsed url   host: null,
+705 verbose parsed url   port: null,
+705 verbose parsed url   hostname: null,
+705 verbose parsed url   hash: null,
+705 verbose parsed url   search: null,
+705 verbose parsed url   query: null,
+705 verbose parsed url   pathname: 'readable-stream@1.0.33',
+705 verbose parsed url   path: 'readable-stream@1.0.33',
+705 verbose parsed url   href: 'readable-stream@1.0.33' }
+706 verbose cache add name="minimatch" spec="3.0.0" args=["minimatch","3.0.0"]
+707 verbose parsed url { protocol: null,
+707 verbose parsed url   slashes: null,
+707 verbose parsed url   auth: null,
+707 verbose parsed url   host: null,
+707 verbose parsed url   port: null,
+707 verbose parsed url   hostname: null,
+707 verbose parsed url   hash: null,
+707 verbose parsed url   search: null,
+707 verbose parsed url   query: null,
+707 verbose parsed url   pathname: '3.0.0',
+707 verbose parsed url   path: '3.0.0',
+707 verbose parsed url   href: '3.0.0' }
+708 verbose addNamed [ 'minimatch', '3.0.0' ]
+709 verbose addNamed [ '3.0.0', '3.0.0' ]
+710 verbose cache add name="debug" spec="0.7.4" args=["debug","0.7.4"]
+711 verbose parsed url { protocol: null,
+711 verbose parsed url   slashes: null,
+711 verbose parsed url   auth: null,
+711 verbose parsed url   host: null,
+711 verbose parsed url   port: null,
+711 verbose parsed url   hostname: null,
+711 verbose parsed url   hash: null,
+711 verbose parsed url   search: null,
+711 verbose parsed url   query: null,
+711 verbose parsed url   pathname: '0.7.4',
+711 verbose parsed url   path: '0.7.4',
+711 verbose parsed url   href: '0.7.4' }
+712 verbose addNamed [ 'debug', '0.7.4' ]
+713 verbose addNamed [ '0.7.4', '0.7.4' ]
+714 verbose cache add name="async" spec="0.9.0" args=["async","0.9.0"]
+715 verbose parsed url { protocol: null,
+715 verbose parsed url   slashes: null,
+715 verbose parsed url   auth: null,
+715 verbose parsed url   host: null,
+715 verbose parsed url   port: null,
+715 verbose parsed url   hostname: null,
+715 verbose parsed url   hash: null,
+715 verbose parsed url   search: null,
+715 verbose parsed url   query: null,
+715 verbose parsed url   pathname: '0.9.0',
+715 verbose parsed url   path: '0.9.0',
+715 verbose parsed url   href: '0.9.0' }
+716 verbose addNamed [ 'async', '0.9.0' ]
+717 verbose addNamed [ '0.9.0', '0.9.0' ]
+718 verbose cache add name="progress" spec="1.1.5" args=["progress","1.1.5"]
+719 verbose parsed url { protocol: null,
+719 verbose parsed url   slashes: null,
+719 verbose parsed url   auth: null,
+719 verbose parsed url   host: null,
+719 verbose parsed url   port: null,
+719 verbose parsed url   hostname: null,
+719 verbose parsed url   hash: null,
+719 verbose parsed url   search: null,
+719 verbose parsed url   query: null,
+719 verbose parsed url   pathname: '1.1.5',
+719 verbose parsed url   path: '1.1.5',
+719 verbose parsed url   href: '1.1.5' }
+720 verbose addNamed [ 'progress', '1.1.5' ]
+721 verbose addNamed [ '1.1.5', '1.1.5' ]
+722 verbose cache add name="colors" spec="0.6.2" args=["colors","0.6.2"]
+723 verbose parsed url { protocol: null,
+723 verbose parsed url   slashes: null,
+723 verbose parsed url   auth: null,
+723 verbose parsed url   host: null,
+723 verbose parsed url   port: null,
+723 verbose parsed url   hostname: null,
+723 verbose parsed url   hash: null,
+723 verbose parsed url   search: null,
+723 verbose parsed url   query: null,
+723 verbose parsed url   pathname: '0.6.2',
+723 verbose parsed url   path: '0.6.2',
+723 verbose parsed url   href: '0.6.2' }
+724 verbose addNamed [ 'colors', '0.6.2' ]
+725 verbose addNamed [ '0.6.2', '0.6.2' ]
+726 verbose cache add name="ejs" spec="0.8.8" args=["ejs","0.8.8"]
+727 verbose parsed url { protocol: null,
+727 verbose parsed url   slashes: null,
+727 verbose parsed url   auth: null,
+727 verbose parsed url   host: null,
+727 verbose parsed url   port: null,
+727 verbose parsed url   hostname: null,
+727 verbose parsed url   hash: null,
+727 verbose parsed url   search: null,
+727 verbose parsed url   query: null,
+727 verbose parsed url   pathname: '0.8.8',
+727 verbose parsed url   path: '0.8.8',
+727 verbose parsed url   href: '0.8.8' }
+728 verbose addNamed [ 'ejs', '0.8.8' ]
+729 verbose addNamed [ '0.8.8', '0.8.8' ]
+730 verbose cache add name="ssh2" spec="0.4.6" args=["ssh2","0.4.6"]
+731 verbose parsed url { protocol: null,
+731 verbose parsed url   slashes: null,
+731 verbose parsed url   auth: null,
+731 verbose parsed url   host: null,
+731 verbose parsed url   port: null,
+731 verbose parsed url   hostname: null,
+731 verbose parsed url   hash: null,
+731 verbose parsed url   search: null,
+731 verbose parsed url   query: null,
+731 verbose parsed url   pathname: '0.4.6',
+731 verbose parsed url   path: '0.4.6',
+731 verbose parsed url   href: '0.4.6' }
+732 verbose addNamed [ 'ssh2', '0.4.6' ]
+733 verbose addNamed [ '0.4.6', '0.4.6' ]
+734 verbose cache add name="archiver" spec="0.14.4" args=["archiver","0.14.4"]
+735 verbose parsed url { protocol: null,
+735 verbose parsed url   slashes: null,
+735 verbose parsed url   auth: null,
+735 verbose parsed url   host: null,
+735 verbose parsed url   port: null,
+735 verbose parsed url   hostname: null,
+735 verbose parsed url   hash: null,
+735 verbose parsed url   search: null,
+735 verbose parsed url   query: null,
+735 verbose parsed url   pathname: '0.14.4',
+735 verbose parsed url   path: '0.14.4',
+735 verbose parsed url   href: '0.14.4' }
+736 verbose addNamed [ 'archiver', '0.14.4' ]
+737 verbose addNamed [ '0.14.4', '0.14.4' ]
+738 verbose cache add name="colors" spec="0.6.2" args=["colors","0.6.2"]
+739 verbose parsed url { protocol: null,
+739 verbose parsed url   slashes: null,
+739 verbose parsed url   auth: null,
+739 verbose parsed url   host: null,
+739 verbose parsed url   port: null,
+739 verbose parsed url   hostname: null,
+739 verbose parsed url   hash: null,
+739 verbose parsed url   search: null,
+739 verbose parsed url   query: null,
+739 verbose parsed url   pathname: '0.6.2',
+739 verbose parsed url   path: '0.6.2',
+739 verbose parsed url   href: '0.6.2' }
+740 verbose addNamed [ 'colors', '0.6.2' ]
+741 verbose cache add name="async" spec="0.9.2" args=["async","0.9.2"]
+742 verbose parsed url { protocol: null,
+742 verbose parsed url   slashes: null,
+742 verbose parsed url   auth: null,
+742 verbose parsed url   host: null,
+742 verbose parsed url   port: null,
+742 verbose parsed url   hostname: null,
+742 verbose parsed url   hash: null,
+742 verbose parsed url   search: null,
+742 verbose parsed url   query: null,
+742 verbose parsed url   pathname: '0.9.2',
+742 verbose parsed url   path: '0.9.2',
+742 verbose parsed url   href: '0.9.2' }
+743 verbose addNamed [ 'async', '0.9.2' ]
+744 verbose addNamed [ '0.9.2', '0.9.2' ]
+745 verbose cache add name="underscore" spec="1.7.0" args=["underscore","1.7.0"]
+746 verbose parsed url { protocol: null,
+746 verbose parsed url   slashes: null,
+746 verbose parsed url   auth: null,
+746 verbose parsed url   host: null,
+746 verbose parsed url   port: null,
+746 verbose parsed url   hostname: null,
+746 verbose parsed url   hash: null,
+746 verbose parsed url   search: null,
+746 verbose parsed url   query: null,
+746 verbose parsed url   pathname: '1.7.0',
+746 verbose parsed url   path: '1.7.0',
+746 verbose parsed url   href: '1.7.0' }
+747 verbose addNamed [ 'underscore', '1.7.0' ]
+748 verbose addNamed [ '1.7.0', '1.7.0' ]
+749 verbose cache add name="uuid" spec="1.4.2" args=["uuid","1.4.2"]
+750 verbose parsed url { protocol: null,
+750 verbose parsed url   slashes: null,
+750 verbose parsed url   auth: null,
+750 verbose parsed url   host: null,
+750 verbose parsed url   port: null,
+750 verbose parsed url   hostname: null,
+750 verbose parsed url   hash: null,
+750 verbose parsed url   search: null,
+750 verbose parsed url   query: null,
+750 verbose parsed url   pathname: '1.4.2',
+750 verbose parsed url   path: '1.4.2',
+750 verbose parsed url   href: '1.4.2' }
+751 verbose addNamed [ 'uuid', '1.4.2' ]
+752 verbose addNamed [ '1.4.2', '1.4.2' ]
+753 verbose cache add name="readable-stream" spec="1.0.33" args=["readable-stream","1.0.33"]
+754 verbose parsed url { protocol: null,
+754 verbose parsed url   slashes: null,
+754 verbose parsed url   auth: null,
+754 verbose parsed url   host: null,
+754 verbose parsed url   port: null,
+754 verbose parsed url   hostname: null,
+754 verbose parsed url   hash: null,
+754 verbose parsed url   search: null,
+754 verbose parsed url   query: null,
+754 verbose parsed url   pathname: '1.0.33',
+754 verbose parsed url   path: '1.0.33',
+754 verbose parsed url   href: '1.0.33' }
+755 verbose addNamed [ 'readable-stream', '1.0.33' ]
+756 verbose addNamed [ '1.0.33', '1.0.33' ]
+757 silly lockFile a6a3a933-minimatch-3-0-0 minimatch@3.0.0
+758 verbose lock minimatch@3.0.0 /home/ubuntu/.npm/a6a3a933-minimatch-3-0-0.lock
+759 silly lockFile 16160008-debug-0-7-4 debug@0.7.4
+760 verbose lock debug@0.7.4 /home/ubuntu/.npm/16160008-debug-0-7-4.lock
+761 silly lockFile 9a58a886-async-0-9-0 async@0.9.0
+762 verbose lock async@0.9.0 /home/ubuntu/.npm/9a58a886-async-0-9-0.lock
+763 silly lockFile 10cc5742-progress-1-1-5 progress@1.1.5
+764 verbose lock progress@1.1.5 /home/ubuntu/.npm/10cc5742-progress-1-1-5.lock
+765 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+766 verbose lock colors@0.6.2 /home/ubuntu/.npm/1ce149d5-colors-0-6-2.lock
+767 silly lockFile 37d7c450-ejs-0-8-8 ejs@0.8.8
+768 verbose lock ejs@0.8.8 /home/ubuntu/.npm/37d7c450-ejs-0-8-8.lock
+769 silly lockFile 0b927482-ssh2-0-4-6 ssh2@0.4.6
+770 verbose lock ssh2@0.4.6 /home/ubuntu/.npm/0b927482-ssh2-0-4-6.lock
+771 silly lockFile 3ab3cad9-archiver-0-14-4 archiver@0.14.4
+772 verbose lock archiver@0.14.4 /home/ubuntu/.npm/3ab3cad9-archiver-0-14-4.lock
+773 silly lockFile c32a6c4e-async-0-9-2 async@0.9.2
+774 verbose lock async@0.9.2 /home/ubuntu/.npm/c32a6c4e-async-0-9-2.lock
+775 silly lockFile 900da168-underscore-1-7-0 underscore@1.7.0
+776 verbose lock underscore@1.7.0 /home/ubuntu/.npm/900da168-underscore-1-7-0.lock
+777 silly lockFile 53015245-uuid-1-4-2 uuid@1.4.2
+778 verbose lock uuid@1.4.2 /home/ubuntu/.npm/53015245-uuid-1-4-2.lock
+779 silly lockFile f026aa23-readable-stream-1-0-33 readable-stream@1.0.33
+780 verbose lock readable-stream@1.0.33 /home/ubuntu/.npm/f026aa23-readable-stream-1-0-33.lock
+781 verbose cache add [ 'bl@1.0.0', null ]
+782 verbose cache add name=undefined spec="bl@1.0.0" args=["bl@1.0.0",null]
+783 verbose parsed url { protocol: null,
+783 verbose parsed url   slashes: null,
+783 verbose parsed url   auth: null,
+783 verbose parsed url   host: null,
+783 verbose parsed url   port: null,
+783 verbose parsed url   hostname: null,
+783 verbose parsed url   hash: null,
+783 verbose parsed url   search: null,
+783 verbose parsed url   query: null,
+783 verbose parsed url   pathname: 'bl@1.0.0',
+783 verbose parsed url   path: 'bl@1.0.0',
+783 verbose parsed url   href: 'bl@1.0.0' }
+784 verbose cache add [ 'async@1.5.0', null ]
+785 verbose cache add name=undefined spec="async@1.5.0" args=["async@1.5.0",null]
+786 verbose parsed url { protocol: null,
+786 verbose parsed url   slashes: null,
+786 verbose parsed url   auth: null,
+786 verbose parsed url   host: null,
+786 verbose parsed url   port: null,
+786 verbose parsed url   hostname: null,
+786 verbose parsed url   hash: null,
+786 verbose parsed url   search: null,
+786 verbose parsed url   query: null,
+786 verbose parsed url   pathname: 'async@1.5.0',
+786 verbose parsed url   path: 'async@1.5.0',
+786 verbose parsed url   href: 'async@1.5.0' }
+787 verbose cache add [ 'colors@1.1.2', null ]
+788 verbose cache add name=undefined spec="colors@1.1.2" args=["colors@1.1.2",null]
+789 verbose parsed url { protocol: null,
+789 verbose parsed url   slashes: null,
+789 verbose parsed url   auth: null,
+789 verbose parsed url   host: null,
+789 verbose parsed url   port: null,
+789 verbose parsed url   hostname: null,
+789 verbose parsed url   hash: null,
+789 verbose parsed url   search: null,
+789 verbose parsed url   query: null,
+789 verbose parsed url   pathname: 'colors@1.1.2',
+789 verbose parsed url   path: 'colors@1.1.2',
+789 verbose parsed url   href: 'colors@1.1.2' }
+790 verbose cache add [ 'debug@2.2.0', null ]
+791 verbose cache add name=undefined spec="debug@2.2.0" args=["debug@2.2.0",null]
+792 verbose parsed url { protocol: null,
+792 verbose parsed url   slashes: null,
+792 verbose parsed url   auth: null,
+792 verbose parsed url   host: null,
+792 verbose parsed url   port: null,
+792 verbose parsed url   hostname: null,
+792 verbose parsed url   hash: null,
+792 verbose parsed url   search: null,
+792 verbose parsed url   query: null,
+792 verbose parsed url   pathname: 'debug@2.2.0',
+792 verbose parsed url   path: 'debug@2.2.0',
+792 verbose parsed url   href: 'debug@2.2.0' }
+793 verbose cache add [ 'archiver@0.21.0', null ]
+794 verbose cache add name=undefined spec="archiver@0.21.0" args=["archiver@0.21.0",null]
+795 verbose parsed url { protocol: null,
+795 verbose parsed url   slashes: null,
+795 verbose parsed url   auth: null,
+795 verbose parsed url   host: null,
+795 verbose parsed url   port: null,
+795 verbose parsed url   hostname: null,
+795 verbose parsed url   hash: null,
+795 verbose parsed url   search: null,
+795 verbose parsed url   query: null,
+795 verbose parsed url   pathname: 'archiver@0.21.0',
+795 verbose parsed url   path: 'archiver@0.21.0',
+795 verbose parsed url   href: 'archiver@0.21.0' }
+796 verbose cache add [ 'ejs@2.3.4', null ]
+797 verbose cache add name=undefined spec="ejs@2.3.4" args=["ejs@2.3.4",null]
+798 verbose parsed url { protocol: null,
+798 verbose parsed url   slashes: null,
+798 verbose parsed url   auth: null,
+798 verbose parsed url   host: null,
+798 verbose parsed url   port: null,
+798 verbose parsed url   hostname: null,
+798 verbose parsed url   hash: null,
+798 verbose parsed url   search: null,
+798 verbose parsed url   query: null,
+798 verbose parsed url   pathname: 'ejs@2.3.4',
+798 verbose parsed url   path: 'ejs@2.3.4',
+798 verbose parsed url   href: 'ejs@2.3.4' }
+799 verbose cache add [ 'glob@6.0.2', null ]
+800 verbose cache add name=undefined spec="glob@6.0.2" args=["glob@6.0.2",null]
+801 verbose parsed url { protocol: null,
+801 verbose parsed url   slashes: null,
+801 verbose parsed url   auth: null,
+801 verbose parsed url   host: null,
+801 verbose parsed url   port: null,
+801 verbose parsed url   hostname: null,
+801 verbose parsed url   hash: null,
+801 verbose parsed url   search: null,
+801 verbose parsed url   query: null,
+801 verbose parsed url   pathname: 'glob@6.0.2',
+801 verbose parsed url   path: 'glob@6.0.2',
+801 verbose parsed url   href: 'glob@6.0.2' }
+802 verbose cache add [ 'isarray@1.0.0', null ]
+803 verbose cache add name=undefined spec="isarray@1.0.0" args=["isarray@1.0.0",null]
+804 verbose parsed url { protocol: null,
+804 verbose parsed url   slashes: null,
+804 verbose parsed url   auth: null,
+804 verbose parsed url   host: null,
+804 verbose parsed url   port: null,
+804 verbose parsed url   hostname: null,
+804 verbose parsed url   hash: null,
+804 verbose parsed url   search: null,
+804 verbose parsed url   query: null,
+804 verbose parsed url   pathname: 'isarray@1.0.0',
+804 verbose parsed url   path: 'isarray@1.0.0',
+804 verbose parsed url   href: 'isarray@1.0.0' }
+805 verbose cache add [ 'crc32-stream@0.4.0', null ]
+806 verbose cache add name=undefined spec="crc32-stream@0.4.0" args=["crc32-stream@0.4.0",null]
+807 verbose parsed url { protocol: null,
+807 verbose parsed url   slashes: null,
+807 verbose parsed url   auth: null,
+807 verbose parsed url   host: null,
+807 verbose parsed url   port: null,
+807 verbose parsed url   hostname: null,
+807 verbose parsed url   hash: null,
+807 verbose parsed url   search: null,
+807 verbose parsed url   query: null,
+807 verbose parsed url   pathname: 'crc32-stream@0.4.0',
+807 verbose parsed url   path: 'crc32-stream@0.4.0',
+807 verbose parsed url   href: 'crc32-stream@0.4.0' }
+808 verbose cache add [ 'lodash@3.10.1', null ]
+809 verbose cache add name=undefined spec="lodash@3.10.1" args=["lodash@3.10.1",null]
+810 verbose parsed url { protocol: null,
+810 verbose parsed url   slashes: null,
+810 verbose parsed url   auth: null,
+810 verbose parsed url   host: null,
+810 verbose parsed url   port: null,
+810 verbose parsed url   hostname: null,
+810 verbose parsed url   hash: null,
+810 verbose parsed url   search: null,
+810 verbose parsed url   query: null,
+810 verbose parsed url   pathname: 'lodash@3.10.1',
+810 verbose parsed url   path: 'lodash@3.10.1',
+810 verbose parsed url   href: 'lodash@3.10.1' }
+811 verbose cache add [ 'minimatch@3.0.0', null ]
+812 verbose cache add name=undefined spec="minimatch@3.0.0" args=["minimatch@3.0.0",null]
+813 verbose parsed url { protocol: null,
+813 verbose parsed url   slashes: null,
+813 verbose parsed url   auth: null,
+813 verbose parsed url   host: null,
+813 verbose parsed url   port: null,
+813 verbose parsed url   hostname: null,
+813 verbose parsed url   hash: null,
+813 verbose parsed url   search: null,
+813 verbose parsed url   query: null,
+813 verbose parsed url   pathname: 'minimatch@3.0.0',
+813 verbose parsed url   path: 'minimatch@3.0.0',
+813 verbose parsed url   href: 'minimatch@3.0.0' }
+814 verbose cache add [ 'node-int64@0.4.0', null ]
+815 verbose cache add name=undefined spec="node-int64@0.4.0" args=["node-int64@0.4.0",null]
+816 verbose parsed url { protocol: null,
+816 verbose parsed url   slashes: null,
+816 verbose parsed url   auth: null,
+816 verbose parsed url   host: null,
+816 verbose parsed url   port: null,
+816 verbose parsed url   hostname: null,
+816 verbose parsed url   hash: null,
+816 verbose parsed url   search: null,
+816 verbose parsed url   query: null,
+816 verbose parsed url   pathname: 'node-int64@0.4.0',
+816 verbose parsed url   path: 'node-int64@0.4.0',
+816 verbose parsed url   href: 'node-int64@0.4.0' }
+817 verbose cache add [ 'compress-commons@0.4.2', null ]
+818 verbose cache add name=undefined spec="compress-commons@0.4.2" args=["compress-commons@0.4.2",null]
+819 verbose parsed url { protocol: null,
+819 verbose parsed url   slashes: null,
+819 verbose parsed url   auth: null,
+819 verbose parsed url   host: null,
+819 verbose parsed url   port: null,
+819 verbose parsed url   hostname: null,
+819 verbose parsed url   hash: null,
+819 verbose parsed url   search: null,
+819 verbose parsed url   query: null,
+819 verbose parsed url   pathname: 'compress-commons@0.4.2',
+819 verbose parsed url   path: 'compress-commons@0.4.2',
+819 verbose parsed url   href: 'compress-commons@0.4.2' }
+820 verbose cache add [ 'lazystream@0.2.0', null ]
+821 verbose cache add name=undefined spec="lazystream@0.2.0" args=["lazystream@0.2.0",null]
+822 verbose parsed url { protocol: null,
+822 verbose parsed url   slashes: null,
+822 verbose parsed url   auth: null,
+822 verbose parsed url   host: null,
+822 verbose parsed url   port: null,
+822 verbose parsed url   hostname: null,
+822 verbose parsed url   hash: null,
+822 verbose parsed url   search: null,
+822 verbose parsed url   query: null,
+822 verbose parsed url   pathname: 'lazystream@0.2.0',
+822 verbose parsed url   path: 'lazystream@0.2.0',
+822 verbose parsed url   href: 'lazystream@0.2.0' }
+823 verbose cache add [ 'progress@1.1.8', null ]
+824 verbose cache add name=undefined spec="progress@1.1.8" args=["progress@1.1.8",null]
+825 verbose parsed url { protocol: null,
+825 verbose parsed url   slashes: null,
+825 verbose parsed url   auth: null,
+825 verbose parsed url   host: null,
+825 verbose parsed url   port: null,
+825 verbose parsed url   hostname: null,
+825 verbose parsed url   hash: null,
+825 verbose parsed url   search: null,
+825 verbose parsed url   query: null,
+825 verbose parsed url   pathname: 'progress@1.1.8',
+825 verbose parsed url   path: 'progress@1.1.8',
+825 verbose parsed url   href: 'progress@1.1.8' }
+826 verbose cache add [ 'readable-stream@2.0.5', null ]
+827 verbose cache add name=undefined spec="readable-stream@2.0.5" args=["readable-stream@2.0.5",null]
+828 verbose parsed url { protocol: null,
+828 verbose parsed url   slashes: null,
+828 verbose parsed url   auth: null,
+828 verbose parsed url   host: null,
+828 verbose parsed url   port: null,
+828 verbose parsed url   hostname: null,
+828 verbose parsed url   hash: null,
+828 verbose parsed url   search: null,
+828 verbose parsed url   query: null,
+828 verbose parsed url   pathname: 'readable-stream@2.0.5',
+828 verbose parsed url   path: 'readable-stream@2.0.5',
+828 verbose parsed url   href: 'readable-stream@2.0.5' }
+829 verbose cache add [ 'ssh2@0.4.13', null ]
+830 verbose cache add name=undefined spec="ssh2@0.4.13" args=["ssh2@0.4.13",null]
+831 verbose parsed url { protocol: null,
+831 verbose parsed url   slashes: null,
+831 verbose parsed url   auth: null,
+831 verbose parsed url   host: null,
+831 verbose parsed url   port: null,
+831 verbose parsed url   hostname: null,
+831 verbose parsed url   hash: null,
+831 verbose parsed url   search: null,
+831 verbose parsed url   query: null,
+831 verbose parsed url   pathname: 'ssh2@0.4.13',
+831 verbose parsed url   path: 'ssh2@0.4.13',
+831 verbose parsed url   href: 'ssh2@0.4.13' }
+832 verbose cache add [ 'tar-stream@1.3.1', null ]
+833 verbose cache add name=undefined spec="tar-stream@1.3.1" args=["tar-stream@1.3.1",null]
+834 verbose parsed url { protocol: null,
+834 verbose parsed url   slashes: null,
+834 verbose parsed url   auth: null,
+834 verbose parsed url   host: null,
+834 verbose parsed url   port: null,
+834 verbose parsed url   hostname: null,
+834 verbose parsed url   hash: null,
+834 verbose parsed url   search: null,
+834 verbose parsed url   query: null,
+834 verbose parsed url   pathname: 'tar-stream@1.3.1',
+834 verbose parsed url   path: 'tar-stream@1.3.1',
+834 verbose parsed url   href: 'tar-stream@1.3.1' }
+835 verbose cache add [ 'underscore@1.8.3', null ]
+836 verbose cache add name=undefined spec="underscore@1.8.3" args=["underscore@1.8.3",null]
+837 verbose parsed url { protocol: null,
+837 verbose parsed url   slashes: null,
+837 verbose parsed url   auth: null,
+837 verbose parsed url   host: null,
+837 verbose parsed url   port: null,
+837 verbose parsed url   hostname: null,
+837 verbose parsed url   hash: null,
+837 verbose parsed url   search: null,
+837 verbose parsed url   query: null,
+837 verbose parsed url   pathname: 'underscore@1.8.3',
+837 verbose parsed url   path: 'underscore@1.8.3',
+837 verbose parsed url   href: 'underscore@1.8.3' }
+838 verbose cache add [ 'uuid@2.0.1', null ]
+839 verbose cache add name=undefined spec="uuid@2.0.1" args=["uuid@2.0.1",null]
+840 verbose parsed url { protocol: null,
+840 verbose parsed url   slashes: null,
+840 verbose parsed url   auth: null,
+840 verbose parsed url   host: null,
+840 verbose parsed url   port: null,
+840 verbose parsed url   hostname: null,
+840 verbose parsed url   hash: null,
+840 verbose parsed url   search: null,
+840 verbose parsed url   query: null,
+840 verbose parsed url   pathname: 'uuid@2.0.1',
+840 verbose parsed url   path: 'uuid@2.0.1',
+840 verbose parsed url   href: 'uuid@2.0.1' }
+841 verbose cache add [ 'zip-stream@0.8.0', null ]
+842 verbose cache add name=undefined spec="zip-stream@0.8.0" args=["zip-stream@0.8.0",null]
+843 verbose parsed url { protocol: null,
+843 verbose parsed url   slashes: null,
+843 verbose parsed url   auth: null,
+843 verbose parsed url   host: null,
+843 verbose parsed url   port: null,
+843 verbose parsed url   hostname: null,
+843 verbose parsed url   hash: null,
+843 verbose parsed url   search: null,
+843 verbose parsed url   query: null,
+843 verbose parsed url   pathname: 'zip-stream@0.8.0',
+843 verbose parsed url   path: 'zip-stream@0.8.0',
+843 verbose parsed url   href: 'zip-stream@0.8.0' }
+844 verbose cache add name="bl" spec="1.0.0" args=["bl","1.0.0"]
+845 verbose parsed url { protocol: null,
+845 verbose parsed url   slashes: null,
+845 verbose parsed url   auth: null,
+845 verbose parsed url   host: null,
+845 verbose parsed url   port: null,
+845 verbose parsed url   hostname: null,
+845 verbose parsed url   hash: null,
+845 verbose parsed url   search: null,
+845 verbose parsed url   query: null,
+845 verbose parsed url   pathname: '1.0.0',
+845 verbose parsed url   path: '1.0.0',
+845 verbose parsed url   href: '1.0.0' }
+846 verbose addNamed [ 'bl', '1.0.0' ]
+847 verbose addNamed [ '1.0.0', '1.0.0' ]
+848 silly lockFile 314bbb77-bl-1-0-0 bl@1.0.0
+849 verbose lock bl@1.0.0 /home/ubuntu/.npm/314bbb77-bl-1-0-0.lock
+850 verbose cache add name="async" spec="1.5.0" args=["async","1.5.0"]
+851 verbose parsed url { protocol: null,
+851 verbose parsed url   slashes: null,
+851 verbose parsed url   auth: null,
+851 verbose parsed url   host: null,
+851 verbose parsed url   port: null,
+851 verbose parsed url   hostname: null,
+851 verbose parsed url   hash: null,
+851 verbose parsed url   search: null,
+851 verbose parsed url   query: null,
+851 verbose parsed url   pathname: '1.5.0',
+851 verbose parsed url   path: '1.5.0',
+851 verbose parsed url   href: '1.5.0' }
+852 verbose addNamed [ 'async', '1.5.0' ]
+853 verbose addNamed [ '1.5.0', '1.5.0' ]
+854 silly lockFile 9f79283b-async-1-5-0 async@1.5.0
+855 verbose lock async@1.5.0 /home/ubuntu/.npm/9f79283b-async-1-5-0.lock
+856 verbose cache add name="colors" spec="1.1.2" args=["colors","1.1.2"]
+857 verbose parsed url { protocol: null,
+857 verbose parsed url   slashes: null,
+857 verbose parsed url   auth: null,
+857 verbose parsed url   host: null,
+857 verbose parsed url   port: null,
+857 verbose parsed url   hostname: null,
+857 verbose parsed url   hash: null,
+857 verbose parsed url   search: null,
+857 verbose parsed url   query: null,
+857 verbose parsed url   pathname: '1.1.2',
+857 verbose parsed url   path: '1.1.2',
+857 verbose parsed url   href: '1.1.2' }
+858 verbose addNamed [ 'colors', '1.1.2' ]
+859 verbose addNamed [ '1.1.2', '1.1.2' ]
+860 silly lockFile 12b5d644-colors-1-1-2 colors@1.1.2
+861 verbose lock colors@1.1.2 /home/ubuntu/.npm/12b5d644-colors-1-1-2.lock
+862 verbose cache add name="debug" spec="2.2.0" args=["debug","2.2.0"]
+863 verbose parsed url { protocol: null,
+863 verbose parsed url   slashes: null,
+863 verbose parsed url   auth: null,
+863 verbose parsed url   host: null,
+863 verbose parsed url   port: null,
+863 verbose parsed url   hostname: null,
+863 verbose parsed url   hash: null,
+863 verbose parsed url   search: null,
+863 verbose parsed url   query: null,
+863 verbose parsed url   pathname: '2.2.0',
+863 verbose parsed url   path: '2.2.0',
+863 verbose parsed url   href: '2.2.0' }
+864 verbose addNamed [ 'debug', '2.2.0' ]
+865 verbose addNamed [ '2.2.0', '2.2.0' ]
+866 silly lockFile 82f99b48-debug-2-2-0 debug@2.2.0
+867 verbose lock debug@2.2.0 /home/ubuntu/.npm/82f99b48-debug-2-2-0.lock
+868 verbose cache add name="archiver" spec="0.21.0" args=["archiver","0.21.0"]
+869 verbose parsed url { protocol: null,
+869 verbose parsed url   slashes: null,
+869 verbose parsed url   auth: null,
+869 verbose parsed url   host: null,
+869 verbose parsed url   port: null,
+869 verbose parsed url   hostname: null,
+869 verbose parsed url   hash: null,
+869 verbose parsed url   search: null,
+869 verbose parsed url   query: null,
+869 verbose parsed url   pathname: '0.21.0',
+869 verbose parsed url   path: '0.21.0',
+869 verbose parsed url   href: '0.21.0' }
+870 verbose addNamed [ 'archiver', '0.21.0' ]
+871 verbose addNamed [ '0.21.0', '0.21.0' ]
+872 silly lockFile 551eca35-archiver-0-21-0 archiver@0.21.0
+873 verbose lock archiver@0.21.0 /home/ubuntu/.npm/551eca35-archiver-0-21-0.lock
+874 verbose cache add name="ejs" spec="2.3.4" args=["ejs","2.3.4"]
+875 verbose parsed url { protocol: null,
+875 verbose parsed url   slashes: null,
+875 verbose parsed url   auth: null,
+875 verbose parsed url   host: null,
+875 verbose parsed url   port: null,
+875 verbose parsed url   hostname: null,
+875 verbose parsed url   hash: null,
+875 verbose parsed url   search: null,
+875 verbose parsed url   query: null,
+875 verbose parsed url   pathname: '2.3.4',
+875 verbose parsed url   path: '2.3.4',
+875 verbose parsed url   href: '2.3.4' }
+876 verbose addNamed [ 'ejs', '2.3.4' ]
+877 verbose addNamed [ '2.3.4', '2.3.4' ]
+878 silly lockFile 7d57aeaf-ejs-2-3-4 ejs@2.3.4
+879 verbose lock ejs@2.3.4 /home/ubuntu/.npm/7d57aeaf-ejs-2-3-4.lock
+880 verbose cache add name="glob" spec="6.0.2" args=["glob","6.0.2"]
+881 verbose parsed url { protocol: null,
+881 verbose parsed url   slashes: null,
+881 verbose parsed url   auth: null,
+881 verbose parsed url   host: null,
+881 verbose parsed url   port: null,
+881 verbose parsed url   hostname: null,
+881 verbose parsed url   hash: null,
+881 verbose parsed url   search: null,
+881 verbose parsed url   query: null,
+881 verbose parsed url   pathname: '6.0.2',
+881 verbose parsed url   path: '6.0.2',
+881 verbose parsed url   href: '6.0.2' }
+882 verbose addNamed [ 'glob', '6.0.2' ]
+883 verbose addNamed [ '6.0.2', '6.0.2' ]
+884 silly lockFile 02a76839-glob-6-0-2 glob@6.0.2
+885 verbose lock glob@6.0.2 /home/ubuntu/.npm/02a76839-glob-6-0-2.lock
+886 verbose cache add name="isarray" spec="1.0.0" args=["isarray","1.0.0"]
+887 verbose parsed url { protocol: null,
+887 verbose parsed url   slashes: null,
+887 verbose parsed url   auth: null,
+887 verbose parsed url   host: null,
+887 verbose parsed url   port: null,
+887 verbose parsed url   hostname: null,
+887 verbose parsed url   hash: null,
+887 verbose parsed url   search: null,
+887 verbose parsed url   query: null,
+887 verbose parsed url   pathname: '1.0.0',
+887 verbose parsed url   path: '1.0.0',
+887 verbose parsed url   href: '1.0.0' }
+888 verbose addNamed [ 'isarray', '1.0.0' ]
+889 verbose addNamed [ '1.0.0', '1.0.0' ]
+890 silly lockFile 61d13322-isarray-1-0-0 isarray@1.0.0
+891 verbose lock isarray@1.0.0 /home/ubuntu/.npm/61d13322-isarray-1-0-0.lock
+892 verbose cache add name="crc32-stream" spec="0.4.0" args=["crc32-stream","0.4.0"]
+893 verbose parsed url { protocol: null,
+893 verbose parsed url   slashes: null,
+893 verbose parsed url   auth: null,
+893 verbose parsed url   host: null,
+893 verbose parsed url   port: null,
+893 verbose parsed url   hostname: null,
+893 verbose parsed url   hash: null,
+893 verbose parsed url   search: null,
+893 verbose parsed url   query: null,
+893 verbose parsed url   pathname: '0.4.0',
+893 verbose parsed url   path: '0.4.0',
+893 verbose parsed url   href: '0.4.0' }
+894 verbose addNamed [ 'crc32-stream', '0.4.0' ]
+895 verbose addNamed [ '0.4.0', '0.4.0' ]
+896 silly lockFile 9fb3208e-crc32-stream-0-4-0 crc32-stream@0.4.0
+897 verbose lock crc32-stream@0.4.0 /home/ubuntu/.npm/9fb3208e-crc32-stream-0-4-0.lock
+898 verbose cache add name="lodash" spec="3.10.1" args=["lodash","3.10.1"]
+899 verbose parsed url { protocol: null,
+899 verbose parsed url   slashes: null,
+899 verbose parsed url   auth: null,
+899 verbose parsed url   host: null,
+899 verbose parsed url   port: null,
+899 verbose parsed url   hostname: null,
+899 verbose parsed url   hash: null,
+899 verbose parsed url   search: null,
+899 verbose parsed url   query: null,
+899 verbose parsed url   pathname: '3.10.1',
+899 verbose parsed url   path: '3.10.1',
+899 verbose parsed url   href: '3.10.1' }
+900 verbose addNamed [ 'lodash', '3.10.1' ]
+901 verbose addNamed [ '3.10.1', '3.10.1' ]
+902 silly lockFile 8e3ad7e2-lodash-3-10-1 lodash@3.10.1
+903 verbose lock lodash@3.10.1 /home/ubuntu/.npm/8e3ad7e2-lodash-3-10-1.lock
+904 verbose cache add name="minimatch" spec="3.0.0" args=["minimatch","3.0.0"]
+905 verbose parsed url { protocol: null,
+905 verbose parsed url   slashes: null,
+905 verbose parsed url   auth: null,
+905 verbose parsed url   host: null,
+905 verbose parsed url   port: null,
+905 verbose parsed url   hostname: null,
+905 verbose parsed url   hash: null,
+905 verbose parsed url   search: null,
+905 verbose parsed url   query: null,
+905 verbose parsed url   pathname: '3.0.0',
+905 verbose parsed url   path: '3.0.0',
+905 verbose parsed url   href: '3.0.0' }
+906 verbose addNamed [ 'minimatch', '3.0.0' ]
+907 verbose cache add name="node-int64" spec="0.4.0" args=["node-int64","0.4.0"]
+908 verbose parsed url { protocol: null,
+908 verbose parsed url   slashes: null,
+908 verbose parsed url   auth: null,
+908 verbose parsed url   host: null,
+908 verbose parsed url   port: null,
+908 verbose parsed url   hostname: null,
+908 verbose parsed url   hash: null,
+908 verbose parsed url   search: null,
+908 verbose parsed url   query: null,
+908 verbose parsed url   pathname: '0.4.0',
+908 verbose parsed url   path: '0.4.0',
+908 verbose parsed url   href: '0.4.0' }
+909 verbose addNamed [ 'node-int64', '0.4.0' ]
+910 verbose addNamed [ '0.4.0', '0.4.0' ]
+911 silly lockFile b23d4606-node-int64-0-4-0 node-int64@0.4.0
+912 verbose lock node-int64@0.4.0 /home/ubuntu/.npm/b23d4606-node-int64-0-4-0.lock
+913 verbose cache add name="compress-commons" spec="0.4.2" args=["compress-commons","0.4.2"]
+914 verbose parsed url { protocol: null,
+914 verbose parsed url   slashes: null,
+914 verbose parsed url   auth: null,
+914 verbose parsed url   host: null,
+914 verbose parsed url   port: null,
+914 verbose parsed url   hostname: null,
+914 verbose parsed url   hash: null,
+914 verbose parsed url   search: null,
+914 verbose parsed url   query: null,
+914 verbose parsed url   pathname: '0.4.2',
+914 verbose parsed url   path: '0.4.2',
+914 verbose parsed url   href: '0.4.2' }
+915 verbose addNamed [ 'compress-commons', '0.4.2' ]
+916 verbose addNamed [ '0.4.2', '0.4.2' ]
+917 silly lockFile 8fa86419-compress-commons-0-4-2 compress-commons@0.4.2
+918 verbose lock compress-commons@0.4.2 /home/ubuntu/.npm/8fa86419-compress-commons-0-4-2.lock
+919 verbose cache add name="lazystream" spec="0.2.0" args=["lazystream","0.2.0"]
+920 verbose parsed url { protocol: null,
+920 verbose parsed url   slashes: null,
+920 verbose parsed url   auth: null,
+920 verbose parsed url   host: null,
+920 verbose parsed url   port: null,
+920 verbose parsed url   hostname: null,
+920 verbose parsed url   hash: null,
+920 verbose parsed url   search: null,
+920 verbose parsed url   query: null,
+920 verbose parsed url   pathname: '0.2.0',
+920 verbose parsed url   path: '0.2.0',
+920 verbose parsed url   href: '0.2.0' }
+921 verbose addNamed [ 'lazystream', '0.2.0' ]
+922 verbose addNamed [ '0.2.0', '0.2.0' ]
+923 silly lockFile 65292583-lazystream-0-2-0 lazystream@0.2.0
+924 verbose lock lazystream@0.2.0 /home/ubuntu/.npm/65292583-lazystream-0-2-0.lock
+925 verbose cache add name="progress" spec="1.1.8" args=["progress","1.1.8"]
+926 verbose parsed url { protocol: null,
+926 verbose parsed url   slashes: null,
+926 verbose parsed url   auth: null,
+926 verbose parsed url   host: null,
+926 verbose parsed url   port: null,
+926 verbose parsed url   hostname: null,
+926 verbose parsed url   hash: null,
+926 verbose parsed url   search: null,
+926 verbose parsed url   query: null,
+926 verbose parsed url   pathname: '1.1.8',
+926 verbose parsed url   path: '1.1.8',
+926 verbose parsed url   href: '1.1.8' }
+927 verbose addNamed [ 'progress', '1.1.8' ]
+928 verbose addNamed [ '1.1.8', '1.1.8' ]
+929 silly lockFile caa8d10f-progress-1-1-8 progress@1.1.8
+930 verbose lock progress@1.1.8 /home/ubuntu/.npm/caa8d10f-progress-1-1-8.lock
+931 verbose cache add name="readable-stream" spec="2.0.5" args=["readable-stream","2.0.5"]
+932 verbose parsed url { protocol: null,
+932 verbose parsed url   slashes: null,
+932 verbose parsed url   auth: null,
+932 verbose parsed url   host: null,
+932 verbose parsed url   port: null,
+932 verbose parsed url   hostname: null,
+932 verbose parsed url   hash: null,
+932 verbose parsed url   search: null,
+932 verbose parsed url   query: null,
+932 verbose parsed url   pathname: '2.0.5',
+932 verbose parsed url   path: '2.0.5',
+932 verbose parsed url   href: '2.0.5' }
+933 verbose addNamed [ 'readable-stream', '2.0.5' ]
+934 verbose addNamed [ '2.0.5', '2.0.5' ]
+935 silly lockFile 140f9d4f-readable-stream-2-0-5 readable-stream@2.0.5
+936 verbose lock readable-stream@2.0.5 /home/ubuntu/.npm/140f9d4f-readable-stream-2-0-5.lock
+937 verbose cache add name="ssh2" spec="0.4.13" args=["ssh2","0.4.13"]
+938 verbose parsed url { protocol: null,
+938 verbose parsed url   slashes: null,
+938 verbose parsed url   auth: null,
+938 verbose parsed url   host: null,
+938 verbose parsed url   port: null,
+938 verbose parsed url   hostname: null,
+938 verbose parsed url   hash: null,
+938 verbose parsed url   search: null,
+938 verbose parsed url   query: null,
+938 verbose parsed url   pathname: '0.4.13',
+938 verbose parsed url   path: '0.4.13',
+938 verbose parsed url   href: '0.4.13' }
+939 verbose addNamed [ 'ssh2', '0.4.13' ]
+940 verbose addNamed [ '0.4.13', '0.4.13' ]
+941 silly lockFile 1754f824-ssh2-0-4-13 ssh2@0.4.13
+942 verbose lock ssh2@0.4.13 /home/ubuntu/.npm/1754f824-ssh2-0-4-13.lock
+943 verbose cache add name="tar-stream" spec="1.3.1" args=["tar-stream","1.3.1"]
+944 verbose parsed url { protocol: null,
+944 verbose parsed url   slashes: null,
+944 verbose parsed url   auth: null,
+944 verbose parsed url   host: null,
+944 verbose parsed url   port: null,
+944 verbose parsed url   hostname: null,
+944 verbose parsed url   hash: null,
+944 verbose parsed url   search: null,
+944 verbose parsed url   query: null,
+944 verbose parsed url   pathname: '1.3.1',
+944 verbose parsed url   path: '1.3.1',
+944 verbose parsed url   href: '1.3.1' }
+945 verbose addNamed [ 'tar-stream', '1.3.1' ]
+946 verbose addNamed [ '1.3.1', '1.3.1' ]
+947 silly lockFile cd5067bf-tar-stream-1-3-1 tar-stream@1.3.1
+948 verbose lock tar-stream@1.3.1 /home/ubuntu/.npm/cd5067bf-tar-stream-1-3-1.lock
+949 verbose cache add name="underscore" spec="1.8.3" args=["underscore","1.8.3"]
+950 verbose parsed url { protocol: null,
+950 verbose parsed url   slashes: null,
+950 verbose parsed url   auth: null,
+950 verbose parsed url   host: null,
+950 verbose parsed url   port: null,
+950 verbose parsed url   hostname: null,
+950 verbose parsed url   hash: null,
+950 verbose parsed url   search: null,
+950 verbose parsed url   query: null,
+950 verbose parsed url   pathname: '1.8.3',
+950 verbose parsed url   path: '1.8.3',
+950 verbose parsed url   href: '1.8.3' }
+951 verbose addNamed [ 'underscore', '1.8.3' ]
+952 verbose addNamed [ '1.8.3', '1.8.3' ]
+953 silly lockFile e5e32fca-underscore-1-8-3 underscore@1.8.3
+954 verbose lock underscore@1.8.3 /home/ubuntu/.npm/e5e32fca-underscore-1-8-3.lock
+955 verbose cache add name="uuid" spec="2.0.1" args=["uuid","2.0.1"]
+956 verbose parsed url { protocol: null,
+956 verbose parsed url   slashes: null,
+956 verbose parsed url   auth: null,
+956 verbose parsed url   host: null,
+956 verbose parsed url   port: null,
+956 verbose parsed url   hostname: null,
+956 verbose parsed url   hash: null,
+956 verbose parsed url   search: null,
+956 verbose parsed url   query: null,
+956 verbose parsed url   pathname: '2.0.1',
+956 verbose parsed url   path: '2.0.1',
+956 verbose parsed url   href: '2.0.1' }
+957 verbose addNamed [ 'uuid', '2.0.1' ]
+958 verbose addNamed [ '2.0.1', '2.0.1' ]
+959 silly lockFile 07c25d2d-uuid-2-0-1 uuid@2.0.1
+960 verbose lock uuid@2.0.1 /home/ubuntu/.npm/07c25d2d-uuid-2-0-1.lock
+961 verbose cache add name="zip-stream" spec="0.8.0" args=["zip-stream","0.8.0"]
+962 verbose parsed url { protocol: null,
+962 verbose parsed url   slashes: null,
+962 verbose parsed url   auth: null,
+962 verbose parsed url   host: null,
+962 verbose parsed url   port: null,
+962 verbose parsed url   hostname: null,
+962 verbose parsed url   hash: null,
+962 verbose parsed url   search: null,
+962 verbose parsed url   query: null,
+962 verbose parsed url   pathname: '0.8.0',
+962 verbose parsed url   path: '0.8.0',
+962 verbose parsed url   href: '0.8.0' }
+963 verbose addNamed [ 'zip-stream', '0.8.0' ]
+964 verbose addNamed [ '0.8.0', '0.8.0' ]
+965 silly lockFile 747602ef-zip-stream-0-8-0 zip-stream@0.8.0
+966 verbose lock zip-stream@0.8.0 /home/ubuntu/.npm/747602ef-zip-stream-0-8-0.lock
+967 verbose registry.get https://registry.npmjs.org/minimatch not expired, no request
+968 verbose registry.get https://registry.npmjs.org/debug not expired, no request
+969 verbose registry.get https://registry.npmjs.org/async not expired, no request
+970 verbose registry.get https://registry.npmjs.org/colors not expired, no request
+971 verbose registry.get https://registry.npmjs.org/progress not expired, no request
+972 verbose registry.get https://registry.npmjs.org/ejs not expired, no request
+973 verbose registry.get https://registry.npmjs.org/ssh2 not expired, no request
+974 verbose registry.get https://registry.npmjs.org/archiver not expired, no request
+975 verbose registry.get https://registry.npmjs.org/async not expired, no request
+976 verbose registry.get https://registry.npmjs.org/underscore not expired, no request
+977 verbose registry.get https://registry.npmjs.org/uuid not expired, no request
+978 verbose registry.get https://registry.npmjs.org/readable-stream not expired, no request
+979 verbose registry.get https://registry.npmjs.org/bl not expired, no request
+980 verbose registry.get https://registry.npmjs.org/colors not expired, no request
+981 verbose registry.get https://registry.npmjs.org/async not expired, no request
+982 verbose registry.get https://registry.npmjs.org/debug not expired, no request
+983 verbose registry.get https://registry.npmjs.org/archiver not expired, no request
+984 verbose registry.get https://registry.npmjs.org/ejs not expired, no request
+985 verbose registry.get https://registry.npmjs.org/isarray not expired, no request
+986 verbose registry.get https://registry.npmjs.org/glob not expired, no request
+987 verbose registry.get https://registry.npmjs.org/crc32-stream not expired, no request
+988 verbose registry.get https://registry.npmjs.org/node-int64 not expired, no request
+989 verbose registry.get https://registry.npmjs.org/lodash not expired, no request
+990 verbose registry.get https://registry.npmjs.org/compress-commons not expired, no request
+991 verbose registry.get https://registry.npmjs.org/lazystream not expired, no request
+992 verbose registry.get https://registry.npmjs.org/progress not expired, no request
+993 verbose registry.get https://registry.npmjs.org/readable-stream not expired, no request
+994 verbose registry.get https://registry.npmjs.org/ssh2 not expired, no request
+995 verbose registry.get https://registry.npmjs.org/tar-stream not expired, no request
+996 verbose registry.get https://registry.npmjs.org/underscore not expired, no request
+997 verbose registry.get https://registry.npmjs.org/uuid not expired, no request
+998 silly lockFile a3fd4c0b-pmjs-org-colors-colors-1-1-2-tgz https://registry.npmjs.org/colors/-/colors-1.1.2.tgz
+999 verbose lock https://registry.npmjs.org/colors/-/colors-1.1.2.tgz /home/ubuntu/.npm/a3fd4c0b-pmjs-org-colors-colors-1-1-2-tgz.lock
+1000 silly lockFile 5f327ade--npmjs-org-debug-debug-2-2-0-tgz https://registry.npmjs.org/debug/-/debug-2.2.0.tgz
+1001 verbose lock https://registry.npmjs.org/debug/-/debug-2.2.0.tgz /home/ubuntu/.npm/5f327ade--npmjs-org-debug-debug-2-2-0-tgz.lock
+1002 silly lockFile c9305ac2-org-archiver-archiver-0-21-0-tgz https://registry.npmjs.org/archiver/-/archiver-0.21.0.tgz
+1003 verbose lock https://registry.npmjs.org/archiver/-/archiver-0.21.0.tgz /home/ubuntu/.npm/c9305ac2-org-archiver-archiver-0-21-0-tgz.lock
+1004 silly lockFile 3c500350-stry-npmjs-org-ejs-ejs-2-3-4-tgz https://registry.npmjs.org/ejs/-/ejs-2.3.4.tgz
+1005 verbose lock https://registry.npmjs.org/ejs/-/ejs-2.3.4.tgz /home/ubuntu/.npm/3c500350-stry-npmjs-org-ejs-ejs-2-3-4-tgz.lock
+1006 silly lockFile 6fa39274-js-org-isarray-isarray-1-0-0-tgz https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz
+1007 verbose lock https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz /home/ubuntu/.npm/6fa39274-js-org-isarray-isarray-1-0-0-tgz.lock
+1008 verbose registry.get https://registry.npmjs.org/zip-stream not expired, no request
+1009 silly lockFile 0314ae00-32-stream-crc32-stream-0-4-0-tgz https://registry.npmjs.org/crc32-stream/-/crc32-stream-0.4.0.tgz
+1010 verbose lock https://registry.npmjs.org/crc32-stream/-/crc32-stream-0.4.0.tgz /home/ubuntu/.npm/0314ae00-32-stream-crc32-stream-0-4-0-tgz.lock
+1011 silly lockFile 3272bc92--node-int64-node-int64-0-4-0-tgz https://registry.npmjs.org/node-int64/-/node-int64-0.4.0.tgz
+1012 verbose lock https://registry.npmjs.org/node-int64/-/node-int64-0.4.0.tgz /home/ubuntu/.npm/3272bc92--node-int64-node-int64-0-4-0-tgz.lock
+1013 silly lockFile 14180d2e-mmons-compress-commons-0-4-2-tgz https://registry.npmjs.org/compress-commons/-/compress-commons-0.4.2.tgz
+1014 verbose lock https://registry.npmjs.org/compress-commons/-/compress-commons-0.4.2.tgz /home/ubuntu/.npm/14180d2e-mmons-compress-commons-0-4-2-tgz.lock
+1015 silly lockFile c6727331--lazystream-lazystream-0-2-0-tgz https://registry.npmjs.org/lazystream/-/lazystream-0.2.0.tgz
+1016 verbose lock https://registry.npmjs.org/lazystream/-/lazystream-0.2.0.tgz /home/ubuntu/.npm/c6727331--lazystream-lazystream-0-2-0-tgz.lock
+1017 silly lockFile 6df68d67--org-progress-progress-1-1-8-tgz https://registry.npmjs.org/progress/-/progress-1.1.8.tgz
+1018 verbose lock https://registry.npmjs.org/progress/-/progress-1.1.8.tgz /home/ubuntu/.npm/6df68d67--org-progress-progress-1-1-8-tgz.lock
+1019 silly lockFile bf99d690-y-npmjs-org-ssh2-ssh2-0-4-13-tgz https://registry.npmjs.org/ssh2/-/ssh2-0.4.13.tgz
+1020 verbose lock https://registry.npmjs.org/ssh2/-/ssh2-0.4.13.tgz /home/ubuntu/.npm/bf99d690-y-npmjs-org-ssh2-ssh2-0-4-13-tgz.lock
+1021 silly lockFile 28bf3cd1--tar-stream-tar-stream-1-3-1-tgz https://registry.npmjs.org/tar-stream/-/tar-stream-1.3.1.tgz
+1022 verbose lock https://registry.npmjs.org/tar-stream/-/tar-stream-1.3.1.tgz /home/ubuntu/.npm/28bf3cd1--tar-stream-tar-stream-1-3-1-tgz.lock
+1023 silly lockFile 4d840362--zip-stream-zip-stream-0-8-0-tgz https://registry.npmjs.org/zip-stream/-/zip-stream-0.8.0.tgz
+1024 verbose lock https://registry.npmjs.org/zip-stream/-/zip-stream-0.8.0.tgz /home/ubuntu/.npm/4d840362--zip-stream-zip-stream-0-8-0-tgz.lock
+1025 verbose addRemoteTarball [ 'https://registry.npmjs.org/colors/-/colors-1.1.2.tgz',
+1025 verbose addRemoteTarball   '168a4701756b6a7f51a12ce0c97bfa28c084ed63' ]
+1026 verbose addRemoteTarball [ 'https://registry.npmjs.org/debug/-/debug-2.2.0.tgz',
+1026 verbose addRemoteTarball   'f87057e995b1a1f6ae6a4960664137bc56f039da' ]
+1027 verbose addRemoteTarball [ 'https://registry.npmjs.org/archiver/-/archiver-0.21.0.tgz',
+1027 verbose addRemoteTarball   '129da0c8eae1a9bf08a012d8a4e2043a1e2909ce' ]
+1028 verbose addRemoteTarball [ 'https://registry.npmjs.org/ejs/-/ejs-2.3.4.tgz',
+1028 verbose addRemoteTarball   '3c76caa09664b3583b0037af9dc136e79ec68b98' ]
+1029 verbose addRemoteTarball [ 'https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz',
+1029 verbose addRemoteTarball   'bb935d48582cba168c06834957a54a3e07124f11' ]
+1030 verbose addRemoteTarball [ 'https://registry.npmjs.org/crc32-stream/-/crc32-stream-0.4.0.tgz',
+1030 verbose addRemoteTarball   'b54d4c6eefd35b53e653d062b306edc6316ae26d' ]
+1031 verbose addRemoteTarball [ 'https://registry.npmjs.org/node-int64/-/node-int64-0.4.0.tgz',
+1031 verbose addRemoteTarball   '87a9065cdb355d3182d8f94ce11188b825c68a3b' ]
+1032 verbose addRemoteTarball [ 'https://registry.npmjs.org/compress-commons/-/compress-commons-0.4.2.tgz',
+1032 verbose addRemoteTarball   '1a0847489f0d713d0dd76343c0c2d055dc9cd892' ]
+1033 verbose addRemoteTarball [ 'https://registry.npmjs.org/lazystream/-/lazystream-0.2.0.tgz',
+1033 verbose addRemoteTarball   'a1defbf395fea69a2958fec3b55bb2b4345e5084' ]
+1034 verbose addRemoteTarball [ 'https://registry.npmjs.org/progress/-/progress-1.1.8.tgz',
+1034 verbose addRemoteTarball   'e260c78f6161cdd9b0e56cc3e0a85de17c7a57be' ]
+1035 verbose addRemoteTarball [ 'https://registry.npmjs.org/ssh2/-/ssh2-0.4.13.tgz',
+1035 verbose addRemoteTarball   '3c6d469e9753ba5ec2bf1a48128419a2db1bc2f9' ]
+1036 verbose addRemoteTarball [ 'https://registry.npmjs.org/tar-stream/-/tar-stream-1.3.1.tgz',
+1036 verbose addRemoteTarball   '490ec2ad1ec5823fce63f18bb904c7469cd70897' ]
+1037 verbose addRemoteTarball [ 'https://registry.npmjs.org/zip-stream/-/zip-stream-0.8.0.tgz',
+1037 verbose addRemoteTarball   '236b2fe25823cb4f48e8336f5bfa743aa5ae9dbd' ]
+1038 silly lockFile a6a3a933-minimatch-3-0-0 minimatch@3.0.0
+1039 silly lockFile a6a3a933-minimatch-3-0-0 minimatch@3.0.0
+1040 silly lockFile 16160008-debug-0-7-4 debug@0.7.4
+1041 silly lockFile 16160008-debug-0-7-4 debug@0.7.4
+1042 silly lockFile 9a58a886-async-0-9-0 async@0.9.0
+1043 silly lockFile 9a58a886-async-0-9-0 async@0.9.0
+1044 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+1045 silly lockFile 1ce149d5-colors-0-6-2 colors@0.6.2
+1046 silly lockFile 10cc5742-progress-1-1-5 progress@1.1.5
+1047 silly lockFile 10cc5742-progress-1-1-5 progress@1.1.5
+1048 silly lockFile 37d7c450-ejs-0-8-8 ejs@0.8.8
+1049 silly lockFile 37d7c450-ejs-0-8-8 ejs@0.8.8
+1050 silly lockFile 0b927482-ssh2-0-4-6 ssh2@0.4.6
+1051 silly lockFile 0b927482-ssh2-0-4-6 ssh2@0.4.6
+1052 silly lockFile 3ab3cad9-archiver-0-14-4 archiver@0.14.4
+1053 silly lockFile 3ab3cad9-archiver-0-14-4 archiver@0.14.4
+1054 silly lockFile c32a6c4e-async-0-9-2 async@0.9.2
+1055 silly lockFile c32a6c4e-async-0-9-2 async@0.9.2
+1056 silly lockFile 900da168-underscore-1-7-0 underscore@1.7.0
+1057 silly lockFile 900da168-underscore-1-7-0 underscore@1.7.0
+1058 silly lockFile 53015245-uuid-1-4-2 uuid@1.4.2
+1059 silly lockFile 53015245-uuid-1-4-2 uuid@1.4.2
+1060 silly lockFile f026aa23-readable-stream-1-0-33 readable-stream@1.0.33
+1061 silly lockFile f026aa23-readable-stream-1-0-33 readable-stream@1.0.33
+1062 silly lockFile 314bbb77-bl-1-0-0 bl@1.0.0
+1063 silly lockFile 314bbb77-bl-1-0-0 bl@1.0.0
+1064 silly lockFile 9f79283b-async-1-5-0 async@1.5.0
+1065 silly lockFile 9f79283b-async-1-5-0 async@1.5.0
+1066 silly lockFile 02a76839-glob-6-0-2 glob@6.0.2
+1067 silly lockFile 02a76839-glob-6-0-2 glob@6.0.2
+1068 silly lockFile 8e3ad7e2-lodash-3-10-1 lodash@3.10.1
+1069 silly lockFile 8e3ad7e2-lodash-3-10-1 lodash@3.10.1
+1070 silly lockFile 140f9d4f-readable-stream-2-0-5 readable-stream@2.0.5
+1071 silly lockFile 140f9d4f-readable-stream-2-0-5 readable-stream@2.0.5
+1072 silly lockFile e5e32fca-underscore-1-8-3 underscore@1.8.3
+1073 silly lockFile e5e32fca-underscore-1-8-3 underscore@1.8.3
+1074 silly lockFile 07c25d2d-uuid-2-0-1 uuid@2.0.1
+1075 silly lockFile 07c25d2d-uuid-2-0-1 uuid@2.0.1
+1076 info retry fetch attempt 1 at 22:01:12
+1077 verbose fetch to= /tmp/npm-3291-1V70Wvn6/registry.npmjs.org/zip-stream/-/zip-stream-0.8.0.tgz
+1078 info retry fetch attempt 1 at 22:01:12
+1079 verbose fetch to= /tmp/npm-3291-1V70Wvn6/registry.npmjs.org/colors/-/colors-1.1.2.tgz
+1080 http GET https://registry.npmjs.org/zip-stream/-/zip-stream-0.8.0.tgz
+1081 info retry fetch attempt 1 at 22:01:12
+1082 verbose fetch to= /tmp/npm-3291-1V70Wvn6/registry.npmjs.org/archiver/-/archiver-0.21.0.tgz
+1083 info retry fetch attempt 1 at 22:01:12
+1084 verbose fetch to= /tmp/npm-3291-1V70Wvn6/registry.npmjs.org/debug/-/debug-2.2.0.tgz
+1085 info retry fetch attempt 1 at 22:01:12
+1086 verbose fetch to= /tmp/npm-3291-1V70Wvn6/registry.npmjs.org/ejs/-/ejs-2.3.4.tgz
+1087 info retry fetch attempt 1 at 22:01:12
+1088 verbose fetch to= /tmp/npm-3291-1V70Wvn6/registry.npmjs.org/isarray/-/isarray-1.0.0.tgz
+1089 info retry fetch attempt 1 at 22:01:12
+1090 verbose fetch to= /tmp/npm-3291-1V70Wvn6/registry.npmjs.org/node-int64/-/node-int64-0.4.0.tgz
+1091 info retry fetch attempt 1 at 22:01:12
+1092 verbose fetch to= /tmp/npm-3291-1V70Wvn6/registry.npmjs.org/lazystream/-/lazystream-0.2.0.tgz
+1093 info retry fetch attempt 1 at 22:01:12
+1094 verbose fetch to= /tmp/npm-3291-1V70Wvn6/registry.npmjs.org/crc32-stream/-/crc32-stream-0.4.0.tgz
+1095 info retry fetch attempt 1 at 22:01:12
+1096 verbose fetch to= /tmp/npm-3291-1V70Wvn6/registry.npmjs.org/progress/-/progress-1.1.8.tgz
+1097 info retry fetch attempt 1 at 22:01:12
+1098 verbose fetch to= /tmp/npm-3291-1V70Wvn6/registry.npmjs.org/ssh2/-/ssh2-0.4.13.tgz
+1099 info retry fetch attempt 1 at 22:01:12
+1100 verbose fetch to= /tmp/npm-3291-1V70Wvn6/registry.npmjs.org/tar-stream/-/tar-stream-1.3.1.tgz
+1101 info retry fetch attempt 1 at 22:01:12
+1102 verbose fetch to= /tmp/npm-3291-1V70Wvn6/registry.npmjs.org/compress-commons/-/compress-commons-0.4.2.tgz
+1103 http GET https://registry.npmjs.org/colors/-/colors-1.1.2.tgz
+1104 silly resolved [ { name: 'debug',
+1104 silly resolved     version: '0.7.4',
+1104 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/debug.git' },
+1104 silly resolved     description: 'small debugging utility',
+1104 silly resolved     keywords: [ 'debug', 'log', 'debugger' ],
+1104 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+1104 silly resolved     dependencies: {},
+1104 silly resolved     devDependencies: { mocha: '*' },
+1104 silly resolved     main: 'lib/debug.js',
+1104 silly resolved     browser: './debug.js',
+1104 silly resolved     engines: { node: '*' },
+1104 silly resolved     files: [ 'lib/debug.js', 'debug.js', 'index.js' ],
+1104 silly resolved     component: { scripts: [Object] },
+1104 silly resolved     bugs: { url: 'https://github.com/visionmedia/debug/issues' },
+1104 silly resolved     homepage: 'https://github.com/visionmedia/debug',
+1104 silly resolved     _id: 'debug@0.7.4',
+1104 silly resolved     dist:
+1104 silly resolved      { shasum: '06e1ea8082c2cb14e39806e22e2f6f757f92af39',
+1104 silly resolved        tarball: 'http://registry.npmjs.org/debug/-/debug-0.7.4.tgz' },
+1104 silly resolved     _from: 'debug@0.7.4',
+1104 silly resolved     _npmVersion: '1.3.13',
+1104 silly resolved     _npmUser: { name: 'tjholowaychuk', email: 'tj@vision-media.ca' },
+1104 silly resolved     maintainers: [ [Object] ],
+1104 silly resolved     directories: {},
+1104 silly resolved     _shasum: '06e1ea8082c2cb14e39806e22e2f6f757f92af39',
+1104 silly resolved     _resolved: 'https://registry.npmjs.org/debug/-/debug-0.7.4.tgz',
+1104 silly resolved     readme: 'ERROR: No README data found!' } ]
+1105 info install debug@0.7.4 into /home/ubuntu/workspace/node_modules/nodemiral
+1106 info installOne debug@0.7.4
+1107 silly resolved [ { author:
+1107 silly resolved      { name: 'Isaac Z. Schlueter',
+1107 silly resolved        email: 'i@izs.me',
+1107 silly resolved        url: 'http://blog.izs.me' },
+1107 silly resolved     name: 'minimatch',
+1107 silly resolved     description: 'a glob matcher in javascript',
+1107 silly resolved     version: '3.0.0',
+1107 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/minimatch.git' },
+1107 silly resolved     main: 'minimatch.js',
+1107 silly resolved     scripts:
+1107 silly resolved      { posttest: 'standard minimatch.js test/*.js',
+1107 silly resolved        test: 'tap test/*.js' },
+1107 silly resolved     engines: { node: '*' },
+1107 silly resolved     dependencies: { 'brace-expansion': '^1.0.0' },
+1107 silly resolved     devDependencies: { standard: '^3.7.2', tap: '^1.2.0' },
+1107 silly resolved     license: 'ISC',
+1107 silly resolved     files: [ 'minimatch.js' ],
+1107 silly resolved     gitHead: '270dbea567f0af6918cb18103e98c612aa717a20',
+1107 silly resolved     bugs: { url: 'https://github.com/isaacs/minimatch/issues' },
+1107 silly resolved     homepage: 'https://github.com/isaacs/minimatch#readme',
+1107 silly resolved     _id: 'minimatch@3.0.0',
+1107 silly resolved     _shasum: '5236157a51e4f004c177fb3c527ff7dd78f0ef83',
+1107 silly resolved     _from: 'minimatch@3.0.0',
+1107 silly resolved     _npmVersion: '3.3.2',
+1107 silly resolved     _nodeVersion: '4.0.0',
+1107 silly resolved     _npmUser: { name: 'isaacs', email: 'isaacs@npmjs.com' },
+1107 silly resolved     dist:
+1107 silly resolved      { shasum: '5236157a51e4f004c177fb3c527ff7dd78f0ef83',
+1107 silly resolved        tarball: 'http://registry.npmjs.org/minimatch/-/minimatch-3.0.0.tgz' },
+1107 silly resolved     maintainers: [ [Object] ],
+1107 silly resolved     directories: {},
+1107 silly resolved     _resolved: 'https://registry.npmjs.org/minimatch/-/minimatch-3.0.0.tgz',
+1107 silly resolved     readme: 'ERROR: No README data found!' } ]
+1108 info install minimatch@3.0.0 into /home/ubuntu/workspace/node_modules/rimraf/node_modules/glob
+1109 info installOne minimatch@3.0.0
+1110 silly resolved [ { author:
+1110 silly resolved      { name: 'Isaac Z. Schlueter',
+1110 silly resolved        email: 'i@izs.me',
+1110 silly resolved        url: 'http://blog.izs.me' },
+1110 silly resolved     name: 'minimatch',
+1110 silly resolved     description: 'a glob matcher in javascript',
+1110 silly resolved     version: '3.0.0',
+1110 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/minimatch.git' },
+1110 silly resolved     main: 'minimatch.js',
+1110 silly resolved     scripts:
+1110 silly resolved      { posttest: 'standard minimatch.js test/*.js',
+1110 silly resolved        test: 'tap test/*.js' },
+1110 silly resolved     engines: { node: '*' },
+1110 silly resolved     dependencies: { 'brace-expansion': '^1.0.0' },
+1110 silly resolved     devDependencies: { standard: '^3.7.2', tap: '^1.2.0' },
+1110 silly resolved     license: 'ISC',
+1110 silly resolved     files: [ 'minimatch.js' ],
+1110 silly resolved     gitHead: '270dbea567f0af6918cb18103e98c612aa717a20',
+1110 silly resolved     bugs: { url: 'https://github.com/isaacs/minimatch/issues' },
+1110 silly resolved     homepage: 'https://github.com/isaacs/minimatch#readme',
+1110 silly resolved     _id: 'minimatch@3.0.0',
+1110 silly resolved     _shasum: '5236157a51e4f004c177fb3c527ff7dd78f0ef83',
+1110 silly resolved     _from: 'minimatch@3.0.0',
+1110 silly resolved     _npmVersion: '3.3.2',
+1110 silly resolved     _nodeVersion: '4.0.0',
+1110 silly resolved     _npmUser: { name: 'isaacs', email: 'isaacs@npmjs.com' },
+1110 silly resolved     dist:
+1110 silly resolved      { shasum: '5236157a51e4f004c177fb3c527ff7dd78f0ef83',
+1110 silly resolved        tarball: 'http://registry.npmjs.org/minimatch/-/minimatch-3.0.0.tgz' },
+1110 silly resolved     maintainers: [ [Object] ],
+1110 silly resolved     directories: {},
+1110 silly resolved     _resolved: 'https://registry.npmjs.org/minimatch/-/minimatch-3.0.0.tgz',
+1110 silly resolved     readme: 'ERROR: No README data found!' } ]
+1111 info install minimatch@3.0.0 into /home/ubuntu/workspace
+1112 info installOne minimatch@3.0.0
+1113 silly resolved [ { name: 'progress',
+1113 silly resolved     version: '1.1.5',
+1113 silly resolved     description: 'Flexible ascii progress bar',
+1113 silly resolved     keywords: [ 'cli', 'progress' ],
+1113 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+1113 silly resolved     dependencies: {},
+1113 silly resolved     main: 'index',
+1113 silly resolved     engines: { node: '>=0.4.0' },
+1113 silly resolved     repository:
+1113 silly resolved      { type: 'git',
+1113 silly resolved        url: 'git://github.com/visionmedia/node-progress.git' },
+1113 silly resolved     bugs: { url: 'https://github.com/visionmedia/node-progress/issues' },
+1113 silly resolved     homepage: 'https://github.com/visionmedia/node-progress',
+1113 silly resolved     _id: 'progress@1.1.5',
+1113 silly resolved     dist:
+1113 silly resolved      { shasum: '0954b25aa36132e7b264c67c388f073919b387d0',
+1113 silly resolved        tarball: 'http://registry.npmjs.org/progress/-/progress-1.1.5.tgz' },
+1113 silly resolved     _from: 'progress@1.1.5',
+1113 silly resolved     _npmVersion: '1.3.22',
+1113 silly resolved     _npmUser: { name: 'hallas', email: 'christoffer.hallas@gmail.com' },
+1113 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+1113 silly resolved     directories: {},
+1113 silly resolved     _shasum: '0954b25aa36132e7b264c67c388f073919b387d0',
+1113 silly resolved     _resolved: 'https://registry.npmjs.org/progress/-/progress-1.1.5.tgz',
+1113 silly resolved     readme: 'ERROR: No README data found!' } ]
+1114 info install progress@1.1.5 into /home/ubuntu/workspace/node_modules/nodemiral
+1115 info installOne progress@1.1.5
+1116 silly resolved [ { name: 'colors',
+1116 silly resolved     description: 'get colors in your node.js console like what',
+1116 silly resolved     version: '0.6.2',
+1116 silly resolved     author: { name: 'Marak Squires' },
+1116 silly resolved     homepage: 'https://github.com/Marak/colors.js',
+1116 silly resolved     bugs: { url: 'https://github.com/Marak/colors.js/issues' },
+1116 silly resolved     keywords: [ 'ansi', 'terminal', 'colors' ],
+1116 silly resolved     repository:
+1116 silly resolved      { type: 'git',
+1116 silly resolved        url: 'git+ssh://git@github.com/Marak/colors.js.git' },
+1116 silly resolved     engines: { node: '>=0.1.90' },
+1116 silly resolved     main: 'colors',
+1116 silly resolved     _id: 'colors@0.6.2',
+1116 silly resolved     dist:
+1116 silly resolved      { shasum: '2423fe6678ac0c5dae8852e5d0e5be08c997abcc',
+1116 silly resolved        tarball: 'http://registry.npmjs.org/colors/-/colors-0.6.2.tgz' },
+1116 silly resolved     _from: 'colors@0.6.2',
+1116 silly resolved     _npmVersion: '1.2.30',
+1116 silly resolved     _npmUser: { name: 'marak', email: 'marak.squires@gmail.com' },
+1116 silly resolved     maintainers: [ [Object] ],
+1116 silly resolved     directories: {},
+1116 silly resolved     _shasum: '2423fe6678ac0c5dae8852e5d0e5be08c997abcc',
+1116 silly resolved     _resolved: 'https://registry.npmjs.org/colors/-/colors-0.6.2.tgz',
+1116 silly resolved     readme: 'ERROR: No README data found!' } ]
+1117 info install colors@0.6.2 into /home/ubuntu/workspace/node_modules/nodemiral
+1118 info installOne colors@0.6.2
+1119 silly resolved [ { name: 'colors',
+1119 silly resolved     description: 'get colors in your node.js console like what',
+1119 silly resolved     version: '0.6.2',
+1119 silly resolved     author: { name: 'Marak Squires' },
+1119 silly resolved     homepage: 'https://github.com/Marak/colors.js',
+1119 silly resolved     bugs: { url: 'https://github.com/Marak/colors.js/issues' },
+1119 silly resolved     keywords: [ 'ansi', 'terminal', 'colors' ],
+1119 silly resolved     repository:
+1119 silly resolved      { type: 'git',
+1119 silly resolved        url: 'git+ssh://git@github.com/Marak/colors.js.git' },
+1119 silly resolved     engines: { node: '>=0.1.90' },
+1119 silly resolved     main: 'colors',
+1119 silly resolved     _id: 'colors@0.6.2',
+1119 silly resolved     dist:
+1119 silly resolved      { shasum: '2423fe6678ac0c5dae8852e5d0e5be08c997abcc',
+1119 silly resolved        tarball: 'http://registry.npmjs.org/colors/-/colors-0.6.2.tgz' },
+1119 silly resolved     _from: 'colors@0.6.2',
+1119 silly resolved     _npmVersion: '1.2.30',
+1119 silly resolved     _npmUser: { name: 'marak', email: 'marak.squires@gmail.com' },
+1119 silly resolved     maintainers: [ [Object] ],
+1119 silly resolved     directories: {},
+1119 silly resolved     _shasum: '2423fe6678ac0c5dae8852e5d0e5be08c997abcc',
+1119 silly resolved     _resolved: 'https://registry.npmjs.org/colors/-/colors-0.6.2.tgz',
+1119 silly resolved     readme: 'ERROR: No README data found!' } ]
+1120 info install colors@0.6.2 into /home/ubuntu/workspace/node_modules/mup
+1121 info installOne colors@0.6.2
+1122 silly resolved [ { name: 'async',
+1122 silly resolved     description: 'Higher-order functions and common patterns for asynchronous code',
+1122 silly resolved     main: './lib/async',
+1122 silly resolved     author: { name: 'Caolan McMahon' },
+1122 silly resolved     version: '0.9.0',
+1122 silly resolved     repository: { type: 'git', url: 'git+https://github.com/caolan/async.git' },
+1122 silly resolved     bugs: { url: 'https://github.com/caolan/async/issues' },
+1122 silly resolved     licenses: [ [Object] ],
+1122 silly resolved     devDependencies: { nodeunit: '>0.0.0', 'uglify-js': '1.2.x', nodelint: '>0.0.0' },
+1122 silly resolved     jam: { main: 'lib/async.js', include: [Object] },
+1122 silly resolved     scripts: { test: 'nodeunit test/test-async.js' },
+1122 silly resolved     homepage: 'https://github.com/caolan/async',
+1122 silly resolved     _id: 'async@0.9.0',
+1122 silly resolved     dist:
+1122 silly resolved      { shasum: 'ac3613b1da9bed1b47510bb4651b8931e47146c7',
+1122 silly resolved        tarball: 'http://registry.npmjs.org/async/-/async-0.9.0.tgz' },
+1122 silly resolved     _from: 'async@0.9.0',
+1122 silly resolved     _npmVersion: '1.4.3',
+1122 silly resolved     _npmUser: { name: 'caolan', email: 'caolan.mcmahon@gmail.com' },
+1122 silly resolved     maintainers: [ [Object] ],
+1122 silly resolved     directories: {},
+1122 silly resolved     _shasum: 'ac3613b1da9bed1b47510bb4651b8931e47146c7',
+1122 silly resolved     _resolved: 'https://registry.npmjs.org/async/-/async-0.9.0.tgz',
+1122 silly resolved     readme: 'ERROR: No README data found!' } ]
+1123 info install async@0.9.0 into /home/ubuntu/workspace/node_modules/nodemiral
+1124 info installOne async@0.9.0
+1125 silly resolved [ { name: 'ejs',
+1125 silly resolved     description: 'Embedded JavaScript templates',
+1125 silly resolved     version: '0.8.8',
+1125 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+1125 silly resolved     keywords: [ 'template', 'engine', 'ejs' ],
+1125 silly resolved     devDependencies: { mocha: '*', should: '*' },
+1125 silly resolved     main: './lib/ejs.js',
+1125 silly resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/ejs.git' },
+1125 silly resolved     scripts: { test: 'mocha --require should --reporter spec' },
+1125 silly resolved     bugs: { url: 'https://github.com/visionmedia/ejs/issues' },
+1125 silly resolved     homepage: 'https://github.com/visionmedia/ejs',
+1125 silly resolved     _id: 'ejs@0.8.8',
+1125 silly resolved     dist:
+1125 silly resolved      { shasum: 'ffdc56dcc35d02926dd50ad13439bbc54061d598',
+1125 silly resolved        tarball: 'http://registry.npmjs.org/ejs/-/ejs-0.8.8.tgz' },
+1125 silly resolved     _from: 'ejs@0.8.8',
+1125 silly resolved     _npmVersion: '1.4.6',
+1125 silly resolved     _npmUser: { name: 'tjholowaychuk', email: 'tj@vision-media.ca' },
+1125 silly resolved     maintainers: [ [Object] ],
+1125 silly resolved     directories: {},
+1125 silly resolved     _shasum: 'ffdc56dcc35d02926dd50ad13439bbc54061d598',
+1125 silly resolved     _resolved: 'https://registry.npmjs.org/ejs/-/ejs-0.8.8.tgz',
+1125 silly resolved     readme: 'ERROR: No README data found!' } ]
+1126 info install ejs@0.8.8 into /home/ubuntu/workspace/node_modules/nodemiral
+1127 info installOne ejs@0.8.8
+1128 silly resolved [ { name: 'archiver',
+1128 silly resolved     version: '0.14.4',
+1128 silly resolved     description: 'a streaming interface for archive generation',
+1128 silly resolved     homepage: 'https://github.com/archiverjs/node-archiver',
+1128 silly resolved     author: { name: 'Chris Talkington', url: 'http://christalkington.com/' },
+1128 silly resolved     repository:
+1128 silly resolved      { type: 'git',
+1128 silly resolved        url: 'git+https://github.com/archiverjs/node-archiver.git' },
+1128 silly resolved     bugs: { url: 'https://github.com/archiverjs/node-archiver/issues' },
+1128 silly resolved     license: 'MIT',
+1128 silly resolved     main: 'lib/archiver.js',
+1128 silly resolved     files: [ 'lib' ],
+1128 silly resolved     engines: { node: '>= 0.10.0' },
+1128 silly resolved     scripts:
+1128 silly resolved      { test: 'mocha --reporter dot',
+1128 silly resolved        bench: 'node benchmark/simple/pack-zip.js' },
+1128 silly resolved     dependencies:
+1128 silly resolved      { async: '~0.9.0',
+1128 silly resolved        'buffer-crc32': '~0.2.1',
+1128 silly resolved        glob: '~4.3.0',
+1128 silly resolved        lazystream: '~0.1.0',
+1128 silly resolved        lodash: '~3.2.0',
+1128 silly resolved        'readable-stream': '~1.0.26',
+1128 silly resolved        'tar-stream': '~1.1.0',
+1128 silly resolved        'zip-stream': '~0.5.0' },
+1128 silly resolved     devDependencies:
+1128 silly resolved      { chai: '~2.0.0',
+1128 silly resolved        mocha: '~2.1.0',
+1128 silly resolved        rimraf: '~2.2.8',
+1128 silly resolved        mkdirp: '~0.5.0',
+1128 silly resolved        'stream-bench': '~0.1.2',
+1128 silly resolved        tar: '~1.0.3',
+1128 silly resolved        yauzl: '~2.2.1' },
+1128 silly resolved     keywords: [ 'archive', 'archiver', 'stream', 'zip', 'tar' ],
+1128 silly resolved     publishConfig: { registry: 'https://registry.npmjs.org/' },
+1128 silly resolved     gitHead: '1e55f081f0ad96622990da016e7f1ea091143c16',
+1128 silly resolved     _id: 'archiver@0.14.4',
+1128 silly resolved     _shasum: '5b9ddb9f5ee1ceef21cb8f3b020e6240ecb4315c',
+1128 silly resolved     _from: 'archiver@0.14.4',
+1128 silly resolved     _npmVersion: '2.8.3',
+1128 silly resolved     _nodeVersion: '0.12.2',
+1128 silly resolved     _npmUser: { name: 'ctalkington', email: 'chris@christalkington.com' },
+1128 silly resolved     maintainers: [ [Object] ],
+1128 silly resolved     dist:
+1128 silly resolved      { shasum: '5b9ddb9f5ee1ceef21cb8f3b020e6240ecb4315c',
+1128 silly resolved        tarball: 'http://registry.npmjs.org/archiver/-/archiver-0.14.4.tgz' },
+1128 silly resolved     directories: {},
+1128 silly resolved     _resolved: 'https://registry.npmjs.org/archiver/-/archiver-0.14.4.tgz',
+1128 silly resolved     readme: 'ERROR: No README data found!' } ]
+1129 info install archiver@0.14.4 into /home/ubuntu/workspace/node_modules/mup
+1130 info installOne archiver@0.14.4
+1131 silly resolved [ { name: 'async',
+1131 silly resolved     description: 'Higher-order functions and common patterns for asynchronous code',
+1131 silly resolved     main: 'lib/async.js',
+1131 silly resolved     author: { name: 'Caolan McMahon' },
+1131 silly resolved     version: '0.9.2',
+1131 silly resolved     keywords: [ 'async', 'callback', 'utility', 'module' ],
+1131 silly resolved     repository: { type: 'git', url: 'git+https://github.com/caolan/async.git' },
+1131 silly resolved     bugs: { url: 'https://github.com/caolan/async/issues' },
+1131 silly resolved     license: 'MIT',
+1131 silly resolved     devDependencies:
+1131 silly resolved      { nodeunit: '>0.0.0',
+1131 silly resolved        'uglify-js': '1.2.x',
+1131 silly resolved        nodelint: '>0.0.0',
+1131 silly resolved        lodash: '>=2.4.1' },
+1131 silly resolved     jam: { main: 'lib/async.js', include: [Object], categories: [Object] },
+1131 silly resolved     scripts: { test: 'nodeunit test/test-async.js' },
+1131 silly resolved     spm: { main: 'lib/async.js' },
+1131 silly resolved     volo: { main: 'lib/async.js', ignore: [Object] },
+1131 silly resolved     gitHead: 'de3a16091d5125384eff4a54deb3998b13c3814c',
+1131 silly resolved     homepage: 'https://github.com/caolan/async#readme',
+1131 silly resolved     _id: 'async@0.9.2',
+1131 silly resolved     _shasum: 'aea74d5e61c1f899613bf64bda66d4c78f2fd17d',
+1131 silly resolved     _from: 'async@0.9.2',
+1131 silly resolved     _npmVersion: '2.9.0',
+1131 silly resolved     _nodeVersion: '2.0.1',
+1131 silly resolved     _npmUser: { name: 'beaugunderson', email: 'beau@beaugunderson.com' },
+1131 silly resolved     maintainers: [ [Object], [Object] ],
+1131 silly resolved     dist:
+1131 silly resolved      { shasum: 'aea74d5e61c1f899613bf64bda66d4c78f2fd17d',
+1131 silly resolved        tarball: 'http://registry.npmjs.org/async/-/async-0.9.2.tgz' },
+1131 silly resolved     directories: {},
+1131 silly resolved     _resolved: 'https://registry.npmjs.org/async/-/async-0.9.2.tgz',
+1131 silly resolved     readme: 'ERROR: No README data found!' } ]
+1132 info install async@0.9.2 into /home/ubuntu/workspace/node_modules/mup
+1133 info installOne async@0.9.2
+1134 silly resolved [ { name: 'ssh2',
+1134 silly resolved     version: '0.4.6',
+1134 silly resolved     author: { name: 'Brian White', email: 'mscdex@mscdex.net' },
+1134 silly resolved     description: 'SSH2 client and server modules written in pure JavaScript for node.js',
+1134 silly resolved     main: './lib/client',
+1134 silly resolved     engines: { node: '>=0.8.7' },
+1134 silly resolved     dependencies: { 'readable-stream': '~1.0.0', 'ssh2-streams': '~0.0.5' },
+1134 silly resolved     scripts: { test: 'node test/test.js' },
+1134 silly resolved     keywords:
+1134 silly resolved      [ 'ssh',
+1134 silly resolved        'ssh2',
+1134 silly resolved        'sftp',
+1134 silly resolved        'secure',
+1134 silly resolved        'shell',
+1134 silly resolved        'exec',
+1134 silly resolved        'remote',
+1134 silly resolved        'client' ],
+1134 silly resolved     licenses: [ [Object] ],
+1134 silly resolved     repository: { type: 'git', url: 'git+ssh://git@github.com/mscdex/ssh2.git' },
+1134 silly resolved     bugs: { url: 'https://github.com/mscdex/ssh2/issues' },
+1134 silly resolved     homepage: 'https://github.com/mscdex/ssh2',
+1134 silly resolved     _id: 'ssh2@0.4.6',
+1134 silly resolved     _shasum: 'd0d2cc372aac610bf4a65545fe0162331e26509d',
+1134 silly resolved     _from: 'ssh2@0.4.6',
+1134 silly resolved     _resolved: 'https://registry.npmjs.org/ssh2/-/ssh2-0.4.6.tgz',
+1134 silly resolved     _npmVersion: '1.4.28',
+1134 silly resolved     _npmUser: { name: 'mscdex', email: 'mscdex@mscdex.net' },
+1134 silly resolved     maintainers: [ [Object] ],
+1134 silly resolved     dist:
+1134 silly resolved      { shasum: 'd0d2cc372aac610bf4a65545fe0162331e26509d',
+1134 silly resolved        tarball: 'http://registry.npmjs.org/ssh2/-/ssh2-0.4.6.tgz' },
+1134 silly resolved     directories: {},
+1134 silly resolved     readme: 'ERROR: No README data found!' } ]
+1135 info install ssh2@0.4.6 into /home/ubuntu/workspace/node_modules/nodemiral
+1136 info installOne ssh2@0.4.6
+1137 silly resolved [ { name: 'underscore',
+1137 silly resolved     description: 'JavaScript\'s functional programming helper library.',
+1137 silly resolved     homepage: 'http://underscorejs.org',
+1137 silly resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+1137 silly resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+1137 silly resolved     repository:
+1137 silly resolved      { type: 'git',
+1137 silly resolved        url: 'git://github.com/jashkenas/underscore.git' },
+1137 silly resolved     main: 'underscore.js',
+1137 silly resolved     version: '1.7.0',
+1137 silly resolved     devDependencies:
+1137 silly resolved      { docco: '0.6.x',
+1137 silly resolved        phantomjs: '1.9.7-1',
+1137 silly resolved        'uglify-js': '2.4.x',
+1137 silly resolved        eslint: '0.6.x' },
+1137 silly resolved     scripts:
+1137 silly resolved      { test: 'phantomjs test/vendor/runner.js test/index.html?noglobals=true && eslint underscore.js test/*.js test/vendor/runner.js',
+1137 silly resolved        build: 'uglifyjs underscore.js -c "evaluate=false" --comments "/    .*/" -m --source-map underscore-min.map -o underscore-min.js',
+1137 silly resolved        doc: 'docco underscore.js' },
+1137 silly resolved     licenses: [ [Object] ],
+1137 silly resolved     files: [ 'underscore.js', 'underscore-min.js', 'LICENSE' ],
+1137 silly resolved     gitHead: 'da996e665deb0b69b257e80e3e257c04fde4191c',
+1137 silly resolved     bugs: { url: 'https://github.com/jashkenas/underscore/issues' },
+1137 silly resolved     _id: 'underscore@1.7.0',
+1137 silly resolved     _shasum: '6bbaf0877500d36be34ecaa584e0db9fef035209',
+1137 silly resolved     _from: 'underscore@1.7.0',
+1137 silly resolved     _npmVersion: '1.4.24',
+1137 silly resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+1137 silly resolved     maintainers: [ [Object] ],
+1137 silly resolved     dist:
+1137 silly resolved      { shasum: '6bbaf0877500d36be34ecaa584e0db9fef035209',
+1137 silly resolved        tarball: 'http://registry.npmjs.org/underscore/-/underscore-1.7.0.tgz' },
+1137 silly resolved     directories: {},
+1137 silly resolved     _resolved: 'https://registry.npmjs.org/underscore/-/underscore-1.7.0.tgz',
+1137 silly resolved     readme: 'ERROR: No README data found!' } ]
+1138 info install underscore@1.7.0 into /home/ubuntu/workspace/node_modules/mup
+1139 info installOne underscore@1.7.0
+1140 http GET https://registry.npmjs.org/archiver/-/archiver-0.21.0.tgz
+1141 http GET https://registry.npmjs.org/debug/-/debug-2.2.0.tgz
+1142 http GET https://registry.npmjs.org/ejs/-/ejs-2.3.4.tgz
+1143 http GET https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz
+1144 http GET https://registry.npmjs.org/node-int64/-/node-int64-0.4.0.tgz
+1145 silly resolved [ { name: 'readable-stream',
+1145 silly resolved     version: '1.0.33',
+1145 silly resolved     description: 'Streams2, a user-land copy of the stream library from Node.js v0.10.x',
+1145 silly resolved     main: 'readable.js',
+1145 silly resolved     dependencies:
+1145 silly resolved      { 'core-util-is': '~1.0.0',
+1145 silly resolved        isarray: '0.0.1',
+1145 silly resolved        string_decoder: '~0.10.x',
+1145 silly resolved        inherits: '~2.0.1' },
+1145 silly resolved     devDependencies: { tap: '~0.2.6' },
+1145 silly resolved     scripts: { test: 'tap test/simple/*.js' },
+1145 silly resolved     repository:
+1145 silly resolved      { type: 'git',
+1145 silly resolved        url: 'git://github.com/isaacs/readable-stream.git' },
+1145 silly resolved     keywords: [ 'readable', 'stream', 'pipe' ],
+1145 silly resolved     browser: { util: false },
+1145 silly resolved     author:
+1145 silly resolved      { name: 'Isaac Z. Schlueter',
+1145 silly resolved        email: 'i@izs.me',
+1145 silly resolved        url: 'http://blog.izs.me/' },
+1145 silly resolved     license: 'MIT',
+1145 silly resolved     gitHead: '0bf97a117c5646556548966409ebc57a6dda2638',
+1145 silly resolved     bugs: { url: 'https://github.com/isaacs/readable-stream/issues' },
+1145 silly resolved     homepage: 'https://github.com/isaacs/readable-stream',
+1145 silly resolved     _id: 'readable-stream@1.0.33',
+1145 silly resolved     _shasum: '3a360dd66c1b1d7fd4705389860eda1d0f61126c',
+1145 silly resolved     _from: 'readable-stream@1.0.33',
+1145 silly resolved     _npmVersion: '1.4.28',
+1145 silly resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+1145 silly resolved     maintainers: [ [Object], [Object], [Object] ],
+1145 silly resolved     dist:
+1145 silly resolved      { shasum: '3a360dd66c1b1d7fd4705389860eda1d0f61126c',
+1145 silly resolved        tarball: 'http://registry.npmjs.org/readable-stream/-/readable-stream-1.0.33.tgz' },
+1145 silly resolved     directories: {},
+1145 silly resolved     _resolved: 'https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.33.tgz',
+1145 silly resolved     readme: 'ERROR: No README data found!' } ]
+1146 info install readable-stream@1.0.33 into /home/ubuntu/workspace/node_modules/ssh2-streams
+1147 info installOne readable-stream@1.0.33
+1148 silly resolved [ { name: 'uuid',
+1148 silly resolved     version: '1.4.2',
+1148 silly resolved     description: 'Rigorous implementation of RFC4122 (v1 and v4) UUIDs.',
+1148 silly resolved     keywords: [ 'uuid', 'guid', 'rfc4122' ],
+1148 silly resolved     author: { name: 'Robert Kieffer', email: 'robert@broofa.com' },
+1148 silly resolved     contributors: [ [Object], [Object] ],
+1148 silly resolved     main: './uuid.js',
+1148 silly resolved     devDependencies: { mocha: '1.8.0' },
+1148 silly resolved     scripts: { test: 'mocha test/test.js' },
+1148 silly resolved     browser:
+1148 silly resolved      { './rng.js': './rng-browser.js',
+1148 silly resolved        './buffer.js': './buffer-browser.js' },
+1148 silly resolved     repository:
+1148 silly resolved      { type: 'git',
+1148 silly resolved        url: 'git+https://github.com/shtylman/node-uuid.git' },
+1148 silly resolved     testling: { browsers: [Object], harness: 'mocha-tdd', files: 'test/*.js' },
+1148 silly resolved     gitHead: '688730efe3ec3ab7c12c6b92db2aa2826a50ed14',
+1148 silly resolved     bugs: { url: 'https://github.com/shtylman/node-uuid/issues' },
+1148 silly resolved     homepage: 'https://github.com/shtylman/node-uuid',
+1148 silly resolved     _id: 'uuid@1.4.2',
+1148 silly resolved     _shasum: '453019f686966a6df83cdc5244e7c990ecc332fc',
+1148 silly resolved     _from: 'uuid@1.4.2',
+1148 silly resolved     _npmVersion: '2.0.0',
+1148 silly resolved     _npmUser: { name: 'vvo', email: 'vincent.voyer@gmail.com' },
+1148 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+1148 silly resolved     dist:
+1148 silly resolved      { shasum: '453019f686966a6df83cdc5244e7c990ecc332fc',
+1148 silly resolved        tarball: 'http://registry.npmjs.org/uuid/-/uuid-1.4.2.tgz' },
+1148 silly resolved     directories: {},
+1148 silly resolved     _resolved: 'https://registry.npmjs.org/uuid/-/uuid-1.4.2.tgz',
+1148 silly resolved     readme: 'ERROR: No README data found!' } ]
+1149 info install uuid@1.4.2 into /home/ubuntu/workspace/node_modules/mup
+1150 info installOne uuid@1.4.2
+1151 http GET https://registry.npmjs.org/lazystream/-/lazystream-0.2.0.tgz
+1152 http GET https://registry.npmjs.org/crc32-stream/-/crc32-stream-0.4.0.tgz
+1153 http GET https://registry.npmjs.org/progress/-/progress-1.1.8.tgz
+1154 http GET https://registry.npmjs.org/ssh2/-/ssh2-0.4.13.tgz
+1155 verbose node_modules/nodemiral/node_modules/debug unbuild
+1156 verbose node_modules/rimraf/node_modules/glob/node_modules/minimatch unbuild
+1157 verbose node_modules/nodemiral/node_modules/progress unbuild
+1158 verbose node_modules/nodemiral/node_modules/colors unbuild
+1159 verbose node_modules/mup/node_modules/colors unbuild
+1160 http GET https://registry.npmjs.org/tar-stream/-/tar-stream-1.3.1.tgz
+1161 verbose node_modules/nodemiral/node_modules/ejs unbuild
+1162 verbose node_modules/mup/node_modules/archiver unbuild
+1163 verbose node_modules/mup/node_modules/async unbuild
+1164 verbose node_modules/nodemiral/node_modules/ssh2 unbuild
+1165 http GET https://registry.npmjs.org/compress-commons/-/compress-commons-0.4.2.tgz
+1166 silly resolved [ { name: 'bl',
+1166 silly resolved     version: '1.0.0',
+1166 silly resolved     description: 'Buffer List: collect buffers and access with a standard readable Buffer interface, streamable too!',
+1166 silly resolved     main: 'bl.js',
+1166 silly resolved     scripts:
+1166 silly resolved      { test: 'node test/test.js | faucet',
+1166 silly resolved        'test-local': 'brtapsauce-local test/basic-test.js' },
+1166 silly resolved     repository: { type: 'git', url: 'git+https://github.com/rvagg/bl.git' },
+1166 silly resolved     homepage: 'https://github.com/rvagg/bl',
+1166 silly resolved     authors:
+1166 silly resolved      [ 'Rod Vagg <rod@vagg.org> (https://github.com/rvagg)',
+1166 silly resolved        'Matteo Collina <matteo.collina@gmail.com> (https://github.com/mcollina)',
+1166 silly resolved        'Jarett Cruger <jcrugzz@gmail.com> (https://github.com/jcrugzz)' ],
+1166 silly resolved     keywords: [ 'buffer', 'buffers', 'stream', 'awesomesauce' ],
+1166 silly resolved     license: 'MIT',
+1166 silly resolved     dependencies: { 'readable-stream': '~2.0.0' },
+1166 silly resolved     devDependencies:
+1166 silly resolved      { tape: '~2.12.3',
+1166 silly resolved        hash_file: '~0.1.1',
+1166 silly resolved        faucet: '~0.0.1',
+1166 silly resolved        brtapsauce: '~0.3.0' },
+1166 silly resolved     gitHead: '1794938be6697a6d1e02cd942a4eea59b353347a',
+1166 silly resolved     bugs: { url: 'https://github.com/rvagg/bl/issues' },
+1166 silly resolved     _id: 'bl@1.0.0',
+1166 silly resolved     _shasum: 'ada9a8a89a6d7ac60862f7dec7db207873e0c3f5',
+1166 silly resolved     _from: 'bl@1.0.0',
+1166 silly resolved     _npmVersion: '2.9.0',
+1166 silly resolved     _nodeVersion: '2.0.1-nightly20150618d2e4e03444',
+1166 silly resolved     _npmUser: { name: 'rvagg', email: 'rod@vagg.org' },
+1166 silly resolved     maintainers: [ [Object] ],
+1166 silly resolved     dist:
+1166 silly resolved      { shasum: 'ada9a8a89a6d7ac60862f7dec7db207873e0c3f5',
+1166 silly resolved        tarball: 'http://registry.npmjs.org/bl/-/bl-1.0.0.tgz' },
+1166 silly resolved     directories: {},
+1166 silly resolved     _resolved: 'https://registry.npmjs.org/bl/-/bl-1.0.0.tgz',
+1166 silly resolved     readme: 'ERROR: No README data found!' } ]
+1167 info install bl@1.0.0 into /home/ubuntu/workspace
+1168 info installOne bl@1.0.0
+1169 verbose node_modules/mup/node_modules/underscore unbuild
+1170 silly resolved [ { name: 'async',
+1170 silly resolved     description: 'Higher-order functions and common patterns for asynchronous code',
+1170 silly resolved     main: 'lib/async.js',
+1170 silly resolved     files: [ 'lib', 'dist/async.js', 'dist/async.min.js' ],
+1170 silly resolved     author: { name: 'Caolan McMahon' },
+1170 silly resolved     version: '1.5.0',
+1170 silly resolved     keywords: [ 'async', 'callback', 'utility', 'module' ],
+1170 silly resolved     repository: { type: 'git', url: 'git+https://github.com/caolan/async.git' },
+1170 silly resolved     bugs: { url: 'https://github.com/caolan/async/issues' },
+1170 silly resolved     license: 'MIT',
+1170 silly resolved     devDependencies:
+1170 silly resolved      { benchmark: 'github:bestiejs/benchmark.js',
+1170 silly resolved        bluebird: '^2.9.32',
+1170 silly resolved        chai: '^3.1.0',
+1170 silly resolved        coveralls: '^2.11.2',
+1170 silly resolved        'es6-promise': '^2.3.0',
+1170 silly resolved        jscs: '^1.13.1',
+1170 silly resolved        jshint: '~2.8.0',
+1170 silly resolved        karma: '^0.13.2',
+1170 silly resolved        'karma-browserify': '^4.2.1',
+1170 silly resolved        'karma-firefox-launcher': '^0.1.6',
+1170 silly resolved        'karma-mocha': '^0.2.0',
+1170 silly resolved        'karma-mocha-reporter': '^1.0.2',
+1170 silly resolved        lodash: '^3.9.0',
+1170 silly resolved        mkdirp: '~0.5.1',
+1170 silly resolved        mocha: '^2.2.5',
+1170 silly resolved        'native-promise-only': '^0.8.0-a',
+1170 silly resolved        nodeunit: '>0.0.0',
+1170 silly resolved        nyc: '^2.1.0',
+1170 silly resolved        rsvp: '^3.0.18',
+1170 silly resolved        semver: '^4.3.6',
+1170 silly resolved        'uglify-js': '~2.4.0',
+1170 silly resolved        xyz: '^0.5.0',
+1170 silly resolved        yargs: '~3.9.1' },
+1170 silly resolved     jam: { main: 'lib/async.js', include: [Object], categories: [Object] },
+1170 silly resolved     scripts:
+1170 silly resolved      { 'mocha-node-test': 'mocha mocha_test/',
+1170 silly resolved        'mocha-browser-test': 'karma start',
+1170 silly resolved        'mocha-test': 'npm run mocha-node-test && npm run mocha-browser-test',
+1170 silly resolved        'nodeunit-test': 'nodeunit test/test-async.js',
+1170 silly resolved        test: 'npm run-script lint && npm run nodeunit-test && npm run mocha-test',
+1170 silly resolved        lint: 'jshint lib/*.js test/*.js perf/*.js && jscs lib/*.js test/*.js perf/*.js',
+1170 silly resolved        coverage: 'nyc npm test && nyc report',
+1170 silly resolved        coveralls: 'nyc npm test && nyc report --reporter=text-lcov | coveralls' },
+1170 silly resolved     spm: { main: 'lib/async.js' },
+1170 silly resolved     volo: { main: 'lib/async.js', ignore: [Object] },
+1170 silly resolved     gitHead: '621f13805aa326865b85dbbf7128baf7146ab976',
+1170 silly resolved     homepage: 'https://github.com/caolan/async#readme',
+1170 silly resolved     _id: 'async@1.5.0',
+1170 silly resolved     _shasum: '2796642723573859565633fc6274444bee2f8ce3',
+1170 silly resolved     _from: 'async@1.5.0',
+1170 silly resolved     _npmVersion: '2.14.2',
+1170 silly resolved     _nodeVersion: '0.10.26',
+1170 silly resolved     _npmUser: { name: 'aearly', email: 'alexander.early@gmail.com' },
+1170 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+1170 silly resolved     dist:
+1170 silly resolved      { shasum: '2796642723573859565633fc6274444bee2f8ce3',
+1170 silly resolved        tarball: 'http://registry.npmjs.org/async/-/async-1.5.0.tgz' },
+1170 silly resolved     directories: {},
+1170 silly resolved     _resolved: 'https://registry.npmjs.org/async/-/async-1.5.0.tgz',
+1170 silly resolved     readme: 'ERROR: No README data found!' } ]
+1171 info install async@1.5.0 into /home/ubuntu/workspace
+1172 info installOne async@1.5.0
+1173 silly resolved [ { author:
+1173 silly resolved      { name: 'Isaac Z. Schlueter',
+1173 silly resolved        email: 'i@izs.me',
+1173 silly resolved        url: 'http://blog.izs.me/' },
+1173 silly resolved     name: 'glob',
+1173 silly resolved     description: 'a little globber',
+1173 silly resolved     version: '6.0.2',
+1173 silly resolved     repository: { type: 'git', url: 'git://github.com/isaacs/node-glob.git' },
+1173 silly resolved     main: 'glob.js',
+1173 silly resolved     files: [ 'glob.js', 'sync.js', 'common.js' ],
+1173 silly resolved     engines: { node: '*' },
+1173 silly resolved     dependencies:
+1173 silly resolved      { inflight: '^1.0.4',
+1173 silly resolved        inherits: '2',
+1173 silly resolved        minimatch: '2 || 3',
+1173 silly resolved        once: '^1.3.0',
+1173 silly resolved        'path-is-absolute': '^1.0.0' },
+1173 silly resolved     devDependencies: { mkdirp: '0', rimraf: '^2.2.8', tap: '^1.1.4', tick: '0.0.6' },
+1173 silly resolved     scripts:
+1173 silly resolved      { prepublish: 'npm run benchclean',
+1173 silly resolved        profclean: 'rm -f v8.log profile.txt',
+1173 silly resolved        test: 'tap test/*.js --cov',
+1173 silly resolved        'test-regen': 'npm run profclean && TEST_REGEN=1 node test/00-setup.js',
+1173 silly resolved        bench: 'bash benchmark.sh',
+1173 silly resolved        prof: 'bash prof.sh && cat profile.txt',
+1173 silly resolved        benchclean: 'node benchclean.js' },
+1173 silly resolved     license: 'ISC',
+1173 silly resolved     gitHead: '19f5928d703d2ae9beeffe404d53b0fc01b35eca',
+1173 silly resolved     bugs: { url: 'https://github.com/isaacs/node-glob/issues' },
+1173 silly resolved     homepage: 'https://github.com/isaacs/node-glob#readme',
+1173 silly resolved     _id: 'glob@6.0.2',
+1173 silly resolved     _shasum: '4bfaf2d6f1d89a3d95e9d4660bd88faccce00565',
+1173 silly resolved     _from: 'glob@6.0.2',
+1173 silly resolved     _npmVersion: '3.3.2',
+1173 silly resolved     _nodeVersion: '4.0.0',
+1173 silly resolved     _npmUser: { name: 'isaacs', email: 'i@izs.me' },
+1173 silly resolved     dist:
+1173 silly resolved      { shasum: '4bfaf2d6f1d89a3d95e9d4660bd88faccce00565',
+1173 silly resolved        tarball: 'http://registry.npmjs.org/glob/-/glob-6.0.2.tgz' },
+1173 silly resolved     maintainers: [ [Object] ],
+1173 silly resolved     directories: {},
+1173 silly resolved     _resolved: 'https://registry.npmjs.org/glob/-/glob-6.0.2.tgz',
+1173 silly resolved     readme: 'ERROR: No README data found!' } ]
+1174 info install glob@6.0.2 into /home/ubuntu/workspace
+1175 info installOne glob@6.0.2
+1176 verbose node_modules/ssh2-streams/node_modules/readable-stream unbuild
+1177 verbose node_modules/mup/node_modules/uuid unbuild
+1178 verbose node_modules/minimatch unbuild
+1179 info preuninstall minimatch@2.0.10
+1180 verbose node_modules/nodemiral/node_modules/async unbuild
+1181 info preuninstall async@0.9.0
+1182 silly resolved [ { name: 'readable-stream',
+1182 silly resolved     version: '2.0.5',
+1182 silly resolved     description: 'Streams3, a user-land copy of the stream library from iojs v2.x',
+1182 silly resolved     main: 'readable.js',
+1182 silly resolved     dependencies:
+1182 silly resolved      { 'core-util-is': '~1.0.0',
+1182 silly resolved        inherits: '~2.0.1',
+1182 silly resolved        isarray: '0.0.1',
+1182 silly resolved        'process-nextick-args': '~1.0.6',
+1182 silly resolved        string_decoder: '~0.10.x',
+1182 silly resolved        'util-deprecate': '~1.0.1' },
+1182 silly resolved     devDependencies: { tap: '~0.2.6', tape: '~4.0.0', zuul: '~3.0.0' },
+1182 silly resolved     scripts:
+1182 silly resolved      { test: 'tap test/parallel/*.js',
+1182 silly resolved        browser: 'npm run write-zuul && zuul -- test/browser.js',
+1182 silly resolved        'write-zuul': 'printf "ui: tape\nbrowsers:\n  - name: $BROWSER_NAME\n    version: $BROWSER_VERSION\n">.zuul.yml' },
+1182 silly resolved     repository:
+1182 silly resolved      { type: 'git',
+1182 silly resolved        url: 'git://github.com/nodejs/readable-stream.git' },
+1182 silly resolved     keywords: [ 'readable', 'stream', 'pipe' ],
+1182 silly resolved     browser: { util: false },
+1182 silly resolved     license: 'MIT',
+1182 silly resolved     gitHead: 'a4f23d8e451267684a8160679ce16e16149fe72b',
+1182 silly resolved     bugs: { url: 'https://github.com/nodejs/readable-stream/issues' },
+1182 silly resolved     homepage: 'https://github.com/nodejs/readable-stream#readme',
+1182 silly resolved     _id: 'readable-stream@2.0.5',
+1182 silly resolved     _shasum: 'a2426f8dcd4551c77a33f96edf2886a23c829669',
+1182 silly resolved     _from: 'readable-stream@2.0.5',
+1182 silly resolved     _npmVersion: '3.3.12',
+1182 silly resolved     _nodeVersion: '5.1.1',
+1182 silly resolved     _npmUser: { name: 'cwmma', email: 'calvin.metcalf@gmail.com' },
+1182 silly resolved     dist:
+1182 silly resolved      { shasum: 'a2426f8dcd4551c77a33f96edf2886a23c829669',
+1182 silly resolved        tarball: 'http://registry.npmjs.org/readable-stream/-/readable-stream-2.0.5.tgz' },
+1182 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+1182 silly resolved     directories: {},
+1182 silly resolved     _resolved: 'https://registry.npmjs.org/readable-stream/-/readable-stream-2.0.5.tgz',
+1182 silly resolved     readme: 'ERROR: No README data found!' } ]
+1183 info install readable-stream@2.0.5 into /home/ubuntu/workspace
+1184 info installOne readable-stream@2.0.5
+1185 silly resolved [ { name: 'lodash',
+1185 silly resolved     version: '3.10.1',
+1185 silly resolved     description: 'The modern build of lodash modular utilities.',
+1185 silly resolved     homepage: 'https://lodash.com/',
+1185 silly resolved     icon: 'https://lodash.com/icon.svg',
+1185 silly resolved     license: 'MIT',
+1185 silly resolved     main: 'index.js',
+1185 silly resolved     keywords: [ 'modules', 'stdlib', 'util' ],
+1185 silly resolved     author:
+1185 silly resolved      { name: 'John-David Dalton',
+1185 silly resolved        email: 'john.david.dalton@gmail.com',
+1185 silly resolved        url: 'http://allyoucanleet.com/' },
+1185 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+1185 silly resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+1185 silly resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+1185 silly resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+1185 silly resolved     _id: 'lodash@3.10.1',
+1185 silly resolved     _shasum: '5bf45e8e49ba4189e17d482789dfd15bd140b7b6',
+1185 silly resolved     _from: 'lodash@3.10.1',
+1185 silly resolved     _npmVersion: '2.13.1',
+1185 silly resolved     _nodeVersion: '0.12.5',
+1185 silly resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+1185 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+1185 silly resolved     dist:
+1185 silly resolved      { shasum: '5bf45e8e49ba4189e17d482789dfd15bd140b7b6',
+1185 silly resolved        tarball: 'http://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz' },
+1185 silly resolved     directories: {},
+1185 silly resolved     _resolved: 'https://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz',
+1185 silly resolved     readme: 'ERROR: No README data found!' } ]
+1186 info install lodash@3.10.1 into /home/ubuntu/workspace
+1187 info installOne lodash@3.10.1
+1188 silly resolved [ { name: 'uuid',
+1188 silly resolved     version: '2.0.1',
+1188 silly resolved     description: 'Rigorous implementation of RFC4122 (v1 and v4) UUIDs.',
+1188 silly resolved     keywords: [ 'uuid', 'guid', 'rfc4122' ],
+1188 silly resolved     author: { name: 'Robert Kieffer', email: 'robert@broofa.com' },
+1188 silly resolved     contributors: [ [Object], [Object] ],
+1188 silly resolved     main: './uuid.js',
+1188 silly resolved     devDependencies: { mocha: '1.8.0' },
+1188 silly resolved     scripts: { test: 'mocha test/test.js' },
+1188 silly resolved     browser: { './rng.js': './rng-browser.js' },
+1188 silly resolved     repository:
+1188 silly resolved      { type: 'git',
+1188 silly resolved        url: 'https://github.com/shtylman/node-uuid.git' },
+1188 silly resolved     testling: { browsers: [Object], harness: 'mocha-tdd', files: 'test/*.js' },
+1188 silly resolved     gitHead: 'ddaf90942095f26ee8c1961b4346f093b3e7eb5b',
+1188 silly resolved     bugs: { url: 'https://github.com/shtylman/node-uuid/issues' },
+1188 silly resolved     homepage: 'https://github.com/shtylman/node-uuid',
+1188 silly resolved     _id: 'uuid@2.0.1',
+1188 silly resolved     _shasum: 'c2a30dedb3e535d72ccf82e343941a50ba8533ac',
+1188 silly resolved     _from: 'uuid@2.0.1',
+1188 silly resolved     _npmVersion: '2.0.0',
+1188 silly resolved     _npmUser: { name: 'vvo', email: 'vincent.voyer@gmail.com' },
+1188 silly resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+1188 silly resolved     dist:
+1188 silly resolved      { shasum: 'c2a30dedb3e535d72ccf82e343941a50ba8533ac',
+1188 silly resolved        tarball: 'http://registry.npmjs.org/uuid/-/uuid-2.0.1.tgz' },
+1188 silly resolved     directories: {},
+1188 silly resolved     _resolved: 'https://registry.npmjs.org/uuid/-/uuid-2.0.1.tgz',
+1188 silly resolved     readme: 'ERROR: No README data found!' } ]
+1189 info install uuid@2.0.1 into /home/ubuntu/workspace
+1190 info installOne uuid@2.0.1
+1191 silly resolved [ { name: 'underscore',
+1191 silly resolved     description: 'JavaScript\'s functional programming helper library.',
+1191 silly resolved     homepage: 'http://underscorejs.org',
+1191 silly resolved     keywords: [ 'util', 'functional', 'server', 'client', 'browser' ],
+1191 silly resolved     author: { name: 'Jeremy Ashkenas', email: 'jeremy@documentcloud.org' },
+1191 silly resolved     repository:
+1191 silly resolved      { type: 'git',
+1191 silly resolved        url: 'git://github.com/jashkenas/underscore.git' },
+1191 silly resolved     main: 'underscore.js',
+1191 silly resolved     version: '1.8.3',
+1191 silly resolved     devDependencies:
+1191 silly resolved      { docco: '*',
+1191 silly resolved        eslint: '0.6.x',
+1191 silly resolved        karma: '~0.12.31',
+1191 silly resolved        'karma-qunit': '~0.1.4',
+1191 silly resolved        'qunit-cli': '~0.2.0',
+1191 silly resolved        'uglify-js': '2.4.x' },
+1191 silly resolved     scripts:
+1191 silly resolved      { test: 'npm run test-node && npm run lint',
+1191 silly resolved        lint: 'eslint underscore.js test/*.js',
+1191 silly resolved        'test-node': 'qunit-cli test/*.js',
+1191 silly resolved        'test-browser': 'npm i karma-phantomjs-launcher && ./node_modules/karma/bin/karma start',
+1191 silly resolved        build: 'uglifyjs underscore.js -c "evaluate=false" --comments "/    .*/" -m --source-map underscore-min.map -o underscore-min.js',
+1191 silly resolved        doc: 'docco underscore.js' },
+1191 silly resolved     license: 'MIT',
+1191 silly resolved     files:
+1191 silly resolved      [ 'underscore.js',
+1191 silly resolved        'underscore-min.js',
+1191 silly resolved        'underscore-min.map',
+1191 silly resolved        'LICENSE' ],
+1191 silly resolved     gitHead: 'e4743ab712b8ab42ad4ccb48b155034d02394e4d',
+1191 silly resolved     bugs: { url: 'https://github.com/jashkenas/underscore/issues' },
+1191 silly resolved     _id: 'underscore@1.8.3',
+1191 silly resolved     _shasum: '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022',
+1191 silly resolved     _from: 'underscore@1.8.3',
+1191 silly resolved     _npmVersion: '1.4.28',
+1191 silly resolved     _npmUser: { name: 'jashkenas', email: 'jashkenas@gmail.com' },
+1191 silly resolved     maintainers: [ [Object] ],
+1191 silly resolved     dist:
+1191 silly resolved      { shasum: '4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022',
+1191 silly resolved        tarball: 'http://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz' },
+1191 silly resolved     directories: {},
+1191 silly resolved     _resolved: 'https://registry.npmjs.org/underscore/-/underscore-1.8.3.tgz',
+1191 silly resolved     readme: 'ERROR: No README data found!' } ]
+1192 info install underscore@1.8.3 into /home/ubuntu/workspace
+1193 info installOne underscore@1.8.3
+1194 verbose node_modules/bl unbuild
+1195 info preuninstall bl@0.9.4
+1196 verbose node_modules/async unbuild
+1197 info preuninstall async@0.9.2
+1198 verbose node_modules/glob unbuild
+1199 info preuninstall glob@4.3.5
+1200 verbose tar unpack /home/ubuntu/.npm/debug/0.7.4/package.tgz
+1201 silly lockFile cecae898-les-nodemiral-node-modules-debug tar:///home/ubuntu/workspace/node_modules/nodemiral/node_modules/debug
+1202 verbose lock tar:///home/ubuntu/workspace/node_modules/nodemiral/node_modules/debug /home/ubuntu/.npm/cecae898-les-nodemiral-node-modules-debug.lock
+1203 silly lockFile 5f3af655-untu-npm-debug-0-7-4-package-tgz tar:///home/ubuntu/.npm/debug/0.7.4/package.tgz
+1204 verbose lock tar:///home/ubuntu/.npm/debug/0.7.4/package.tgz /home/ubuntu/.npm/5f3af655-untu-npm-debug-0-7-4-package-tgz.lock
+1205 verbose tar unpack /home/ubuntu/.npm/minimatch/3.0.0/package.tgz
+1206 silly lockFile ace7022d-ules-glob-node-modules-minimatch tar:///home/ubuntu/workspace/node_modules/rimraf/node_modules/glob/node_modules/minimatch
+1207 verbose lock tar:///home/ubuntu/workspace/node_modules/rimraf/node_modules/glob/node_modules/minimatch /home/ubuntu/.npm/ace7022d-ules-glob-node-modules-minimatch.lock
+1208 silly lockFile ddccc61a--npm-minimatch-3-0-0-package-tgz tar:///home/ubuntu/.npm/minimatch/3.0.0/package.tgz
+1209 verbose lock tar:///home/ubuntu/.npm/minimatch/3.0.0/package.tgz /home/ubuntu/.npm/ddccc61a--npm-minimatch-3-0-0-package-tgz.lock
+1210 info uninstall minimatch@2.0.10
+1211 verbose tar unpack /home/ubuntu/.npm/progress/1.1.5/package.tgz
+1212 silly lockFile 53fcf503--nodemiral-node-modules-progress tar:///home/ubuntu/workspace/node_modules/nodemiral/node_modules/progress
+1213 verbose lock tar:///home/ubuntu/workspace/node_modules/nodemiral/node_modules/progress /home/ubuntu/.npm/53fcf503--nodemiral-node-modules-progress.lock
+1214 silly lockFile 415658aa-u-npm-progress-1-1-5-package-tgz tar:///home/ubuntu/.npm/progress/1.1.5/package.tgz
+1215 verbose lock tar:///home/ubuntu/.npm/progress/1.1.5/package.tgz /home/ubuntu/.npm/415658aa-u-npm-progress-1-1-5-package-tgz.lock
+1216 verbose tar unpack /home/ubuntu/.npm/colors/0.6.2/package.tgz
+1217 silly lockFile 3abfb5ae-es-nodemiral-node-modules-colors tar:///home/ubuntu/workspace/node_modules/nodemiral/node_modules/colors
+1218 verbose lock tar:///home/ubuntu/workspace/node_modules/nodemiral/node_modules/colors /home/ubuntu/.npm/3abfb5ae-es-nodemiral-node-modules-colors.lock
+1219 silly lockFile 91395881-ntu-npm-colors-0-6-2-package-tgz tar:///home/ubuntu/.npm/colors/0.6.2/package.tgz
+1220 verbose lock tar:///home/ubuntu/.npm/colors/0.6.2/package.tgz /home/ubuntu/.npm/91395881-ntu-npm-colors-0-6-2-package-tgz.lock
+1221 verbose tar unpack /home/ubuntu/.npm/colors/0.6.2/package.tgz
+1222 silly lockFile 97d69110--modules-mup-node-modules-colors tar:///home/ubuntu/workspace/node_modules/mup/node_modules/colors
+1223 verbose lock tar:///home/ubuntu/workspace/node_modules/mup/node_modules/colors /home/ubuntu/.npm/97d69110--modules-mup-node-modules-colors.lock
+1224 silly lockFile 91395881-ntu-npm-colors-0-6-2-package-tgz tar:///home/ubuntu/.npm/colors/0.6.2/package.tgz
+1225 verbose lock tar:///home/ubuntu/.npm/colors/0.6.2/package.tgz /home/ubuntu/.npm/91395881-ntu-npm-colors-0-6-2-package-tgz.lock
+1226 info uninstall async@0.9.0
+1227 verbose node_modules/readable-stream unbuild
+1228 info preuninstall readable-stream@1.0.33
+1229 verbose tar unpack /home/ubuntu/.npm/ejs/0.8.8/package.tgz
+1230 silly lockFile a676735c-dules-nodemiral-node-modules-ejs tar:///home/ubuntu/workspace/node_modules/nodemiral/node_modules/ejs
+1231 verbose lock tar:///home/ubuntu/workspace/node_modules/nodemiral/node_modules/ejs /home/ubuntu/.npm/a676735c-dules-nodemiral-node-modules-ejs.lock
+1232 silly lockFile 5ca9b47e-ubuntu-npm-ejs-0-8-8-package-tgz tar:///home/ubuntu/.npm/ejs/0.8.8/package.tgz
+1233 verbose lock tar:///home/ubuntu/.npm/ejs/0.8.8/package.tgz /home/ubuntu/.npm/5ca9b47e-ubuntu-npm-ejs-0-8-8-package-tgz.lock
+1234 verbose tar unpack /home/ubuntu/.npm/archiver/0.14.4/package.tgz
+1235 silly lockFile 414c223e-odules-mup-node-modules-archiver tar:///home/ubuntu/workspace/node_modules/mup/node_modules/archiver
+1236 verbose lock tar:///home/ubuntu/workspace/node_modules/mup/node_modules/archiver /home/ubuntu/.npm/414c223e-odules-mup-node-modules-archiver.lock
+1237 silly lockFile d41b1a43--npm-archiver-0-14-4-package-tgz tar:///home/ubuntu/.npm/archiver/0.14.4/package.tgz
+1238 verbose lock tar:///home/ubuntu/.npm/archiver/0.14.4/package.tgz /home/ubuntu/.npm/d41b1a43--npm-archiver-0-14-4-package-tgz.lock
+1239 verbose node_modules/lodash unbuild
+1240 info preuninstall lodash@3.2.0
+1241 verbose tar unpack /home/ubuntu/.npm/async/0.9.2/package.tgz
+1242 silly lockFile 981babaa-e-modules-mup-node-modules-async tar:///home/ubuntu/workspace/node_modules/mup/node_modules/async
+1243 verbose lock tar:///home/ubuntu/workspace/node_modules/mup/node_modules/async /home/ubuntu/.npm/981babaa-e-modules-mup-node-modules-async.lock
+1244 silly lockFile 8bb6e40a-untu-npm-async-0-9-2-package-tgz tar:///home/ubuntu/.npm/async/0.9.2/package.tgz
+1245 verbose lock tar:///home/ubuntu/.npm/async/0.9.2/package.tgz /home/ubuntu/.npm/8bb6e40a-untu-npm-async-0-9-2-package-tgz.lock
+1246 verbose node_modules/uuid unbuild
+1247 info preuninstall uuid@1.4.2
+1248 verbose tar unpack /home/ubuntu/.npm/ssh2/0.4.6/package.tgz
+1249 silly lockFile 46c7cd26-ules-nodemiral-node-modules-ssh2 tar:///home/ubuntu/workspace/node_modules/nodemiral/node_modules/ssh2
+1250 verbose lock tar:///home/ubuntu/workspace/node_modules/nodemiral/node_modules/ssh2 /home/ubuntu/.npm/46c7cd26-ules-nodemiral-node-modules-ssh2.lock
+1251 silly lockFile 242b7731-buntu-npm-ssh2-0-4-6-package-tgz tar:///home/ubuntu/.npm/ssh2/0.4.6/package.tgz
+1252 verbose lock tar:///home/ubuntu/.npm/ssh2/0.4.6/package.tgz /home/ubuntu/.npm/242b7731-buntu-npm-ssh2-0-4-6-package-tgz.lock
+1253 verbose tar unpack /home/ubuntu/.npm/underscore/1.7.0/package.tgz
+1254 silly lockFile 5ebc218f-ules-mup-node-modules-underscore tar:///home/ubuntu/workspace/node_modules/mup/node_modules/underscore
+1255 verbose lock tar:///home/ubuntu/workspace/node_modules/mup/node_modules/underscore /home/ubuntu/.npm/5ebc218f-ules-mup-node-modules-underscore.lock
+1256 silly lockFile cddd2548-npm-underscore-1-7-0-package-tgz tar:///home/ubuntu/.npm/underscore/1.7.0/package.tgz
+1257 verbose lock tar:///home/ubuntu/.npm/underscore/1.7.0/package.tgz /home/ubuntu/.npm/cddd2548-npm-underscore-1-7-0-package-tgz.lock
+1258 verbose node_modules/underscore unbuild
+1259 info preuninstall underscore@1.7.0
+1260 verbose tar unpack /home/ubuntu/.npm/readable-stream/1.0.33/package.tgz
+1261 silly lockFile f031f0fa-ams-node-modules-readable-stream tar:///home/ubuntu/workspace/node_modules/ssh2-streams/node_modules/readable-stream
+1262 verbose lock tar:///home/ubuntu/workspace/node_modules/ssh2-streams/node_modules/readable-stream /home/ubuntu/.npm/f031f0fa-ams-node-modules-readable-stream.lock
+1263 silly lockFile b0806e83-adable-stream-1-0-33-package-tgz tar:///home/ubuntu/.npm/readable-stream/1.0.33/package.tgz
+1264 verbose lock tar:///home/ubuntu/.npm/readable-stream/1.0.33/package.tgz /home/ubuntu/.npm/b0806e83-adable-stream-1-0-33-package-tgz.lock
+1265 verbose tar unpack /home/ubuntu/.npm/uuid/1.4.2/package.tgz
+1266 silly lockFile dc91a6f4-de-modules-mup-node-modules-uuid tar:///home/ubuntu/workspace/node_modules/mup/node_modules/uuid
+1267 verbose lock tar:///home/ubuntu/workspace/node_modules/mup/node_modules/uuid /home/ubuntu/.npm/dc91a6f4-de-modules-mup-node-modules-uuid.lock
+1268 silly lockFile 311af9a0-buntu-npm-uuid-1-4-2-package-tgz tar:///home/ubuntu/.npm/uuid/1.4.2/package.tgz
+1269 verbose lock tar:///home/ubuntu/.npm/uuid/1.4.2/package.tgz /home/ubuntu/.npm/311af9a0-buntu-npm-uuid-1-4-2-package-tgz.lock
+1270 info uninstall bl@0.9.4
+1271 info uninstall async@0.9.2
+1272 info uninstall glob@4.3.5
+1273 verbose true,/home/ubuntu/workspace/node_modules,/home/ubuntu/workspace/node_modules unbuild minimatch@2.0.10
+1274 info postuninstall minimatch@2.0.10
+1275 verbose false,/home/ubuntu/workspace/node_modules,/home/ubuntu/workspace/node_modules/nodemiral/node_modules unbuild async@0.9.0
+1276 info postuninstall async@0.9.0
+1277 info uninstall readable-stream@1.0.33
+1278 info uninstall lodash@3.2.0
+1279 info uninstall uuid@1.4.2
+1280 info uninstall underscore@1.7.0
+1281 silly gunzTarPerm modes [ '755', '644' ]
+1282 silly gunzTarPerm modes [ '755', '644' ]
+1283 silly gunzTarPerm modes [ '755', '644' ]
+1284 silly gunzTarPerm modes [ '755', '644' ]
+1285 silly gunzTarPerm modes [ '755', '644' ]
+1286 silly gunzTarPerm modes [ '755', '644' ]
+1287 silly gunzTarPerm modes [ '755', '644' ]
+1288 silly gunzTarPerm modes [ '755', '644' ]
+1289 verbose true,/home/ubuntu/workspace/node_modules,/home/ubuntu/workspace/node_modules unbuild bl@0.9.4
+1290 info postuninstall bl@0.9.4
+1291 silly gunzTarPerm modes [ '755', '644' ]
+1292 verbose true,/home/ubuntu/workspace/node_modules,/home/ubuntu/workspace/node_modules unbuild async@0.9.2
+1293 info postuninstall async@0.9.2
+1294 verbose true,/home/ubuntu/workspace/node_modules,/home/ubuntu/workspace/node_modules unbuild glob@4.3.5
+1295 info postuninstall glob@4.3.5
+1296 silly gunzTarPerm modes [ '755', '644' ]
+1297 silly gunzTarPerm modes [ '755', '644' ]
+1298 verbose true,/home/ubuntu/workspace/node_modules,/home/ubuntu/workspace/node_modules unbuild readable-stream@1.0.33
+1299 info postuninstall readable-stream@1.0.33
+1300 verbose true,/home/ubuntu/workspace/node_modules,/home/ubuntu/workspace/node_modules unbuild lodash@3.2.0
+1301 info postuninstall lodash@3.2.0
+1302 verbose true,/home/ubuntu/workspace/node_modules,/home/ubuntu/workspace/node_modules unbuild uuid@1.4.2
+1303 info postuninstall uuid@1.4.2
+1304 verbose true,/home/ubuntu/workspace/node_modules,/home/ubuntu/workspace/node_modules unbuild underscore@1.7.0
+1305 info postuninstall underscore@1.7.0
+1306 http 200 https://registry.npmjs.org/colors/-/colors-1.1.2.tgz
+1307 http 200 https://registry.npmjs.org/zip-stream/-/zip-stream-0.8.0.tgz
+1308 http 200 https://registry.npmjs.org/debug/-/debug-2.2.0.tgz
+1309 http 200 https://registry.npmjs.org/archiver/-/archiver-0.21.0.tgz
+1310 silly gunzTarPerm extractEntry package.json
+1311 silly gunzTarPerm extractEntry package.json
+1312 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+1313 http 200 https://registry.npmjs.org/ejs/-/ejs-2.3.4.tgz
+1314 silly gunzTarPerm extractEntry package.json
+1315 silly gunzTarPerm extractEntry package.json
+1316 silly gunzTarPerm extractEntry package.json
+1317 http 200 https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz
+1318 http 200 https://registry.npmjs.org/node-int64/-/node-int64-0.4.0.tgz
+1319 error Error: EACCES, mkdir '/home/ubuntu/workspace/node_modules/nodemiral/node_modules/debug'
+1319 error  { [Error: EACCES, mkdir '/home/ubuntu/workspace/node_modules/nodemiral/node_modules/debug']
+1319 error   errno: 3,
+1319 error   code: 'EACCES',
+1319 error   path: '/home/ubuntu/workspace/node_modules/nodemiral/node_modules/debug',
+1319 error   fstream_type: 'Directory',
+1319 error   fstream_path: '/home/ubuntu/workspace/node_modules/nodemiral/node_modules/debug',
+1319 error   fstream_class: 'DirWriter',
+1319 error   fstream_stack:
+1319 error    [ '/home/ubuntu/.nvm/v0.10.40/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+1319 error      '/home/ubuntu/.nvm/v0.10.40/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+1319 error      'Object.oncomplete (fs.js:108:15)' ] }
+1320 error Please try running this command again as root/Administrator.
+1321 error System Linux 4.2.0-c9
+1322 error command "/home/ubuntu/.nvm/v0.10.40/bin/node" "/home/ubuntu/.nvm/v0.10.40/bin/npm" "update"
+1323 error cwd /home/ubuntu/workspace
+1324 error node -v v0.10.40
+1325 error npm -v 1.4.28
+1326 error path /home/ubuntu/workspace/node_modules/nodemiral/node_modules/debug
+1327 error fstream_path /home/ubuntu/workspace/node_modules/nodemiral/node_modules/debug
+1328 error fstream_type Directory
+1329 error fstream_class DirWriter
+1330 error code EACCES
+1331 error errno 3
+1332 error stack Error: EACCES, mkdir '/home/ubuntu/workspace/node_modules/nodemiral/node_modules/debug'
+1333 error fstream_stack /home/ubuntu/.nvm/v0.10.40/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+1333 error fstream_stack /home/ubuntu/.nvm/v0.10.40/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+1333 error fstream_stack Object.oncomplete (fs.js:108:15)
+1334 verbose exit [ 3, true ]
+1335 verbose node_modules/minimatch unbuild
+1336 silly gunzTarPerm extractEntry package.json
+1337 error Error: EACCES, mkdir '/home/ubuntu/workspace/node_modules/nodemiral/node_modules/progress'
+1337 error  { [Error: EACCES, mkdir '/home/ubuntu/workspace/node_modules/nodemiral/node_modules/progress']
+1337 error   errno: 3,
+1337 error   code: 'EACCES',
+1337 error   path: '/home/ubuntu/workspace/node_modules/nodemiral/node_modules/progress',
+1337 error   fstream_type: 'Directory',
+1337 error   fstream_path: '/home/ubuntu/workspace/node_modules/nodemiral/node_modules/progress',
+1337 error   fstream_class: 'DirWriter',
+1337 error   fstream_stack:
+1337 error    [ '/home/ubuntu/.nvm/v0.10.40/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+1337 error      '/home/ubuntu/.nvm/v0.10.40/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+1337 error      'Object.oncomplete (fs.js:108:15)' ] }
+1338 error Please try running this command again as root/Administrator.
+1339 error System Linux 4.2.0-c9
+1340 error command "/home/ubuntu/.nvm/v0.10.40/bin/node" "/home/ubuntu/.nvm/v0.10.40/bin/npm" "update"
+1341 error cwd /home/ubuntu/workspace
+1342 error node -v v0.10.40
+1343 error npm -v 1.4.28
+1344 error path /home/ubuntu/workspace/node_modules/nodemiral/node_modules/progress
+1345 error fstream_path /home/ubuntu/workspace/node_modules/nodemiral/node_modules/progress
+1346 error fstream_type Directory
+1347 error fstream_class DirWriter
+1348 error code EACCES
+1349 error errno 3
+1350 error stack Error: EACCES, mkdir '/home/ubuntu/workspace/node_modules/nodemiral/node_modules/progress'
+1351 error fstream_stack /home/ubuntu/.nvm/v0.10.40/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+1351 error fstream_stack /home/ubuntu/.nvm/v0.10.40/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+1351 error fstream_stack Object.oncomplete (fs.js:108:15)
+1352 verbose exit [ 3, true ]
