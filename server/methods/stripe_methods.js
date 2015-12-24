@@ -8,6 +8,7 @@ Meteor.methods({
   },
 
   refundAttendee: function (doc, att) {
+    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
     var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
     stripeRefund({
       charge: att.charge,
@@ -26,6 +27,7 @@ Meteor.methods({
   },
 
   getAccount: function(aid) {
+    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
     var stripeAccounts = Meteor.wrapAsync(Stripe.accounts.retrieve,Stripe.accounts);
     stripeAccounts(aid, function(err, result) {
       if (err) {
@@ -70,6 +72,7 @@ Meteor.methods({
   },
 
   createCard: function (stripeToken) {
+    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     var stripeCardCreate = Meteor.wrapAsync(Stripe.customers.createSource,Stripe.customers);
     var stripeCardDelete = Meteor.wrapAsync(Stripe.customers.deleteCard,Stripe.customers);
@@ -90,6 +93,7 @@ Meteor.methods({
   },
 
   createAccount: function(doc, stripeToken) {
+    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     var stripeCreateAccount = Meteor.wrapAsync(Stripe.accounts.create,Stripe.accounts);
     stripeCreateAccount({
@@ -132,5 +136,4 @@ Meteor.methods({
       }
     });
   },
-
 });

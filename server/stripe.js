@@ -1,1 +1,0 @@
-Stripe = Meteor.wrapAsync(StripeAPI(Meteor.settings.private.stripe.testSecretKey));
