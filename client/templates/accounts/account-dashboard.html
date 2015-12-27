@@ -2,7 +2,21 @@
   <div class="col-md-8 col-md-offset-2">
     {{#if hasAccount}}
       <h2>Account Dashboard</h2>
-        {{account}}
+        <h3>{{account.business_name}}</h3>
+        <p>
+          <h4>Account Owner: <small>{{account.legal_entity.first_name}} {{account.legal_entity.last_name}} </small></h4>
+        </p>
+        {{account.email}}
+        {{account.legal_entity.dob.day}}/{{account.legal_entity.dob.month}}/{{account.legal_entity.dob.year}}
+        {{account.external_account.data.[0].bank_name}}
+        <p>
+          {{account.legal_entity.address.line1}}
+        </p>
+        <p>
+          {{account.legal_entity.address.city}}, {{account.legal_entity.address.state}} {{account.legal_entity.address.postal_code}}
+        </p>
+
+
     {{else}}
       <h3>Start Instructing</h3>
       {{> quickForm collection="Account" id="insertAccount" type="insert"}}

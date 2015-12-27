@@ -4,9 +4,6 @@ ExternalAccSchema = new SimpleSchema({
   accountNumber: {
     type: String,
   },
-  // country: {
-  //   type: String,
-  // },
   routingNumber: {
     type: String,
   }
@@ -18,17 +15,9 @@ LegalEntSchema = new SimpleSchema({
   },
   firstName: {
     type: String,
-    // defaultValue: function() {
-    //   var user = Meteor.user().profile.firstName;
-    //   return user; 
-    // }  
   },
   lastName: {
     type: String,
-    // defaultValue: function() {
-    //   var user = Meteor.user().profile.lastName;
-    //   return user; 
-    // }  
   },
   dob: {
     type: Date,
@@ -37,10 +26,6 @@ LegalEntSchema = new SimpleSchema({
         type: "bootstrap-datepicker",
       }
     },
-    // defaultValue: function() {
-    //   var user = Meteor.user().profile.birthday;
-    //   return user; 
-    // }  
   },
   type: {
     type: String,
@@ -57,19 +42,6 @@ LegalEntSchema = new SimpleSchema({
 }),
 
 Account.attachSchema(new SimpleSchema({
-  // createdAt: {
-  //   type: Date,
-  //   autoValue: function() {
-  //     if (this.isInsert) {
-  //       return new Date;
-  //     } else {
-  //       this.unset();  // Prevent user from supplying their own value
-  //     }
-  //   },
-  //   autoform: {
-  //     omit: true
-  //   },
-  // },
   businessName: {
     type: String,
   },
@@ -87,12 +59,5 @@ Account.attachSchema(new SimpleSchema({
     type: Boolean,
     label: "I have read and accepted Class, Inc. and Stripes terms of service"
   },
-  // acceptedIp: {
-  //   type: String,
-  //   defaultValue: function(){
-  //     var clientIP = this.connection.clientAddress;
-  //     return clientIP;
-  //   }
-  // }
 }));
 

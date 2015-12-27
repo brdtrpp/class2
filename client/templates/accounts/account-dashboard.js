@@ -1,27 +1,10 @@
-Template.getPaid.events({
-
-});
-
-Template.getPaid.onRendered(function() {
-  var aid = Meteor.user().profile.accountId;
-  if (aid) {
-    Meteor.call('getAccount', aid, function(err, result) {
-      if (err) {
-        alert(err);
-        Bert.alert(err, "danger", "fixed-bottom");
-      } 
-      if (result) {
-        alert(result);
-        Session.set("account", result);
-        
-      }
-    });
-  }
-});
+// Template.getPaid.onCreated(function() {
+//   a = new ReactiveVar();
+// });
 
 
 Template.getPaid.helpers({
-  
+
   hasAccount: function() {
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     if (user.profile.accountId != undefined) {
@@ -30,9 +13,16 @@ Template.getPaid.helpers({
       return false;
     }
   },
-  
+
   account: function() {
-    return Session.get("account");
+    var aid = Meteor.user().profile.accountId;
+    Meteor.call('getAccount', aid,  function(error, result) {
+      if (error) {
+        console.log("error");
+      } else {
+        Session.set("account", result);
+      }
+    });
+    return Session.get('account');
   }
 });
-

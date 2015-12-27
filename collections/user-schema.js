@@ -67,12 +67,14 @@ Schema.UserProfile = new SimpleSchema({
     type: String,
     autoValue: function() {
       if (this.isInsert) {
-        var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
-        var stripeCustomersCreateSync = Meteor.wrapAsync(Stripe.customers.create,Stripe.customers);
-        var result = stripeCustomersCreateSync({
-          description: 'Attendee',
+        Meteor.call('createCustomer', function(error, result) {
+          if (error) {
+            console.log(error);
+          } else {
+            c = result.id;
+          }
         });
-        return result.id;
+        return c;
       } else {
         this.unset();  // Prevent user from supplying their own value
       }
@@ -81,6 +83,7 @@ Schema.UserProfile = new SimpleSchema({
       omit: true
     }
   },
+
   accountId: {
     type : String,
     optional: true,
@@ -129,27 +132,6 @@ Schema.User = new SimpleSchema({
         optional: true,
         blackbox: true
     },
-
-    // Add `roles` to your schema if you use the meteor-roles package.
-    // Option 1: Object type
-    // If you specify that type as Object, you must also specify the
-    // `Roles.GLOBAL_GROUP` group whenever you add a user to a role.
-    // Example:
-    // Roles.addUsersToRoles(userId, ["admin"], Roles.GLOBAL_GROUP);
-    // You can't mix and match adding with and without a group since
-    // you will fail validation in some cases.
-    // roles: {
-    //     type: Object,
-    //     optional: true,
-    //     blackbox: true
-    // },
-    // // Option 2: [String] type
-    // // If you are sure you will never need to use role groups, then
-    // // you can specify [String] as the type
-    // roles: {
-    //     type: [String],
-    //     optional: true
-    // }
 });
 
 Meteor.users.attachSchema(Schema.User);

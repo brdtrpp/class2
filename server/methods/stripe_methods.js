@@ -29,18 +29,14 @@ Meteor.methods({
   getAccount: function(aid) {
     var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
     var stripeAccounts = Meteor.wrapAsync(Stripe.accounts.retrieve,Stripe.accounts);
-    stripeAccounts(aid, function(err, result) {
-      if (err) {
-        console.log(err);
-      }
-       if (result) {
-       console.log(result.id);
-        return result;
-       }
-
-    });
-
+    try {
+      return  stripeAccounts(aid);
+    }catch(error){
+      throw new Meteor.Error("StripeAPIFailure", error.message);
+    }
   },
+
+  // balance: function()
 
   charge: function(event, att) {
     //doc is the _id of the attendee
@@ -50,7 +46,7 @@ Meteor.methods({
     //end price is in cents and marked up 10%
     var endPrice = event.price * 110;
     var appfee = endPrice - ( event.price * 100 );
-   stripeCardCharge({
+    stripeCardCharge({
         amount: endPrice,
         currency: "USD",
         customer: user.profile.customerId,
@@ -68,6 +64,15 @@ Meteor.methods({
             Meteor.call("addAtt", event, att, charge);
           }
         }
+    });
+  },
+
+
+  createCustomer : function() {
+    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
+    var stripeCustomersCreate = Meteor.wrapAsync(Stripe.customers.create,Stripe.customers);
+    return stripeCustomersCreate({
+      description: 'Attendee',
     });
   },
 
@@ -106,6 +111,12 @@ Meteor.methods({
         first_name: doc.legalEntity.firstName,
         last_name: doc.legalEntity.lastName,
         type: doc.legalEntity.type,
+        address: {
+          city: doc.address.city,
+          state: doc.address.state,
+          line1: doc.address.street,
+          postal_code: doc.address.zip,
+        },
         dob: {
           day: moment(doc.legalEntity.dob).get('date'),
           month: moment(doc.legalEntity.dob).get('month'),

@@ -2,6 +2,7 @@
 
 ##To-Do
 * Modals
+* Allergies
 * Event Resize broken
 * All Day broken
 * Course Refund partial
@@ -17,3 +18,6 @@
 * Display Limits
 * Notifications
 * Messaging
+* Text Area
+* Stripe on creation
+* Sign-up Modals
