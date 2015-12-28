@@ -23,6 +23,7 @@ Template.getPaid.helpers({
         Session.set("account", result);
       }
     });
-    return Session.get('account');
+    var account = Session.get('account');
+    return account;
   }
 });

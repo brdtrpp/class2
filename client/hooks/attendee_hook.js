@@ -33,16 +33,5 @@ AutoForm.hooks({
         }
       }
     },
-
-    after: {
-      insert: function(error, result) {
-        var doc = result;
-        var event = CalEvent.findOne({_id: Attendee.findOne({_id: result}).eventId});
-        Meteor.call('charge', event, doc);
-      },
-      remove: function() {
-        Bert.alert("Something went wrong with your card", "danger", "fixed-bottom");
-      }
-    }
   }
 });

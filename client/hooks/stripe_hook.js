@@ -12,8 +12,16 @@ AutoForm.hooks({
           if(response.error !== undefined) {
             Bert.alert(response.error.message, "danger", "fixed-bottom");
           } else {
-            Meteor.call('createAccount', doc, stripeToken);
-            Bert.alert("Congratulations, you now can host classes", "success", "fixed-bottom");
+            Meteor.call('createAccount', doc, stripeToken, function(error, result){
+              if (error) {
+                console.log(error);
+                return false;
+              }
+              if(result){
+                console.log(result);
+                return false;
+              }
+            });
           }
         });
       }
@@ -36,10 +44,10 @@ AutoForm.hooks({
             Meteor.call('createCard', stripeToken);
             Bert.alert("Card has been stored", "success", "fixed-bottom");
             Router.go('/user-profile');
-            return false
+            return false;
           }
         });
       }
-    },  
+    },
   }
 });

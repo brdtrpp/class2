@@ -4,6 +4,6 @@ Bert.defaults = {
   style: 'fixed-bottom',
   // Accepts: fixed-top, fixed-bottom, growl-top-left,   growl-top-right,
   // growl-bottom-left, growl-bottom-right.
-  type: 'default'
+  type: 'success'
   // Accepts: default, success, info, warning, danger.
 };
