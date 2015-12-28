@@ -1,6 +1,7 @@
 #CLASS
 
 ##To-Do
+* Stripe replacement and settings
 * Modals
 * Allergies
 * Event Resize broken
@@ -19,5 +20,5 @@
 * Notifications
 * Messaging
 * Text Area
-* Stripe on creation
+
 * Sign-up Modals
