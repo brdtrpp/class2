@@ -3,3 +3,4 @@ Meteor.startup(function() {
   Stripe.setPublishableKey(stripeKey);
 });
 
+ 

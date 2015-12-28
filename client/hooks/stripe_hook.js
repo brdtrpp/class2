@@ -31,10 +31,12 @@ AutoForm.hooks({
           stripeToken = response.id;
           if (response.error !== undefined) {
             Bert.alert(response.error.message, "danger", "fixed-bottom");
+            return false;
           } else {
             Meteor.call('createCard', stripeToken);
             Bert.alert("Card has been stored", "success", "fixed-bottom");
             Router.go('/user-profile');
+            return false
           }
         });
       }

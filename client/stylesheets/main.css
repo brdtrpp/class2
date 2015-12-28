@@ -12,7 +12,22 @@ input[type="number"]
     font-size:16px;
     text-align: center;
   }
-  
+input[type="email"]
+  {
+    font-size:16px;
+    text-align: center;
+  }
+input[type="password"]
+  {
+    font-size:16px;
+    text-align: center;
+  }
+select
+  {
+    font-size:16px;
+    text-align: center;
+  }
+
 .body {
   background-color: #eee;
 }
