@@ -3,7 +3,9 @@ Card = new Mongo.Collection('card');
 Card.attachSchema( new SimpleSchema ({
   creditCardNumber: {
     type: Number,
-    label: "Credit Card Number"
+    label: "Credit Card Number",
+    min: 16,
+    max: 16
   },
   
   cvc: {
@@ -15,7 +17,9 @@ Card.attachSchema( new SimpleSchema ({
   
   expMo: {
     type: Number,
-    label: "Experation Month"
+    label: "Experation Month",
+    min: 1,
+    max: 12,
   },
   
   expYr: {

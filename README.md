@@ -1,7 +1,6 @@
 #CLASS
 
 ##To-Do
-* Stripe replacement and settings
 * Modals
 * Allergies
 * Event Resize broken
@@ -20,5 +19,6 @@
 * Notifications
 * Messaging
 * Text Area
-
+* Publically Viewable Profile (User and Host)
+* Limit Card Information & selectable
 * Sign-up Modals

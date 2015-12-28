@@ -1,3 +1,5 @@
 Meteor.startup(function() {
-  Stripe.setPublishableKey(Meteor.settings.public.stripe.testPublishableKey);
+  var stripeKey = Meteor.settings.public.stripe;
+  Stripe.setPublishableKey(stripeKey);
 });
+

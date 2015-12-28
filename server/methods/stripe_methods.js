@@ -8,7 +8,7 @@ Meteor.methods({
   },
 
   refundAttendee: function (doc, att) {
-    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
+    var Stripe = StripeAPI(Meteor.settings.private.stripe);
     var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
     stripeRefund({
       charge: att.charge,
@@ -27,7 +27,7 @@ Meteor.methods({
   },
 
   getAccount: function(aid) {
-    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
+    var Stripe = StripeAPI(Meteor.settings.private.stripe);
     var stripeAccounts = Meteor.wrapAsync(Stripe.accounts.retrieve,Stripe.accounts);
     try {
       return  stripeAccounts(aid);
@@ -40,7 +40,7 @@ Meteor.methods({
 
   charge: function(event, att) {
     //doc is the _id of the attendee
-    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
+    var Stripe = StripeAPI(Meteor.settings.private.stripe);
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     var stripeCardCharge = Meteor.wrapAsync(Stripe.charges.create,Stripe.charges);
     //end price is in cents and marked up 10%
@@ -69,7 +69,7 @@ Meteor.methods({
 
 
   createCustomer : function() {
-    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
+    var Stripe = StripeAPI(Meteor.settings.private.stripe);
     var stripeCustomersCreate = Meteor.wrapAsync(Stripe.customers.create,Stripe.customers);
     return stripeCustomersCreate({
       description: 'Attendee',
@@ -77,7 +77,7 @@ Meteor.methods({
   },
 
   createCard: function (stripeToken) {
-    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
+    var Stripe = StripeAPI(Meteor.settings.private.stripe);
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     var stripeCardCreate = Meteor.wrapAsync(Stripe.customers.createSource,Stripe.customers);
     var stripeCardDelete = Meteor.wrapAsync(Stripe.customers.deleteCard,Stripe.customers);
@@ -98,7 +98,7 @@ Meteor.methods({
   },
 
   createAccount: function(doc, stripeToken) {
-    var Stripe = StripeAPI(Meteor.settings.private.stripe.testSecretKey);
+    var Stripe = StripeAPI(Meteor.settings.private.stripe);
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     var stripeCreateAccount = Meteor.wrapAsync(Stripe.accounts.create,Stripe.accounts);
     stripeCreateAccount({
