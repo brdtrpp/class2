@@ -5,6 +5,7 @@ AutoForm.hooks({
         var eventId = Template.instance().data.event;
         var event = CalEvent.findOne({_id: eventId});
         var available = event.attendeeCount - Attendee.find({eventId: eventId}).count();
+        var att = doc;
         if (
           Attendee.find({
             eventId: eventId,
@@ -23,7 +24,7 @@ AutoForm.hooks({
               } else {
                 doc.eventId = event._id;
               }
-              return doc;
+              Meteor.call('charge', event, att);
             } else {
               Bert.alert("This class is full!", "danger", "fixed-bottom");
             }

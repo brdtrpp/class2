@@ -45,7 +45,7 @@ Meteor.methods({
     var stripeCardCharge = Meteor.wrapAsync(Stripe.charges.create,Stripe.charges);
     //end price is in cents and marked up 10%
     var endPrice = event.price * 110;
-    var appfee = endPrice - ( event.price * 100.5 );
+    var appfee = endPrice - ( event.price * 100. );
     stripeCardCharge({
         amount: endPrice.toFixed(0),
         currency: "USD",
@@ -88,16 +88,21 @@ Meteor.methods({
     var create = stripeCardCreate(
       user.profile.customerId, {
         source: stripeToken
-        },
-        function (err, card) {
-          console.log(err, card);
-          Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.cardId': card.id}});
-      });
+        });
     if (user.profile.cardId == undefined) {
-      create;
+      try {
+        return create;
+      }catch(error){
+        throw new Meteor.Error("StripeAPIFailure", error.message);
+      }
     } else {
       stripeCardDelete(user.profile.customerId, user.profile.cardId);
-      create;
+      Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.cardId': null}});
+      try {
+        return create;
+      }catch(error){
+        throw new Meteor.Error("StripeAPIFailure", error.message);
+      }
     }
   },
 
@@ -129,27 +134,13 @@ Meteor.methods({
           },
         },
         tos_acceptance: {
-          date: Math.floor(Date.now() / 1000),
-          ip: request.connection.remoteAddress // Assumes you're not using a proxy
+          date: moment().unix(),
+          ip: this.connection.clientAddress,
         },
         transfer_schedule: {
           delay_days: 7,
           interval: 'weekly',
           weekly_anchor: 'friday'},
-      }, function(err, account) {
-        if (err) {
-          console.log(err);
-        } else {
-          Meteor.users.update({_id: Meteor.userId()}, {
-            $set: {
-              'profile.accountId': account.id,
-              'profile.businessAddress.street': doc.address.street,
-              'profile.businessAddress.city': doc.address.city,
-              'profile.businessAddress.state': doc.address.state,
-              'profile.businessAddress.zip': doc.address.zip,
-            }
-          });
-        }
       });
     }catch(error){
       throw new Meteor.Error("StripeAPIFailure", error.message);

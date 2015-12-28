@@ -9,16 +9,25 @@ AutoForm.hooks({
           account_number: doc.externalAccount.accountNumber
         }, function(status, response) {
           stripeToken = response.id;
-          if(response.error !== undefined) {
-            Bert.alert(response.error.message, "danger", "fixed-bottom");
+          if(response.error) {
+            Bert.alert(response.error.message, "danger");
           } else {
             Meteor.call('createAccount', doc, stripeToken, function(error, result){
               if (error) {
-                console.log(error);
+                Bert.alert(error.reason.toUpperCase(), 'danger');
                 return false;
               }
               if(result){
-                console.log(result);
+                Meteor.users.update({_id: Meteor.userId()}, {
+                  $set: {
+                    'profile.accountId': result.id,
+                    'profile.businessAddress.street': doc.address.street,
+                    'profile.businessAddress.city': doc.address.city,
+                    'profile.businessAddress.state': doc.address.state,
+                    'profile.businessAddress.zip': doc.address.zip,
+                  }
+                });
+                Bert.alert('Congratulations you can now host classes!');
                 return false;
               }
             });
@@ -27,6 +36,7 @@ AutoForm.hooks({
       }
     }
   },
+  
   insertCard: {
     before: {
       insert: function(doc) {
@@ -38,12 +48,21 @@ AutoForm.hooks({
         }, function(status, response) {
           stripeToken = response.id;
           if (response.error !== undefined) {
-            Bert.alert(response.error.message, "danger", "fixed-bottom");
+            Bert.alert(response.error.message, "danger");
             return false;
           } else {
-            Meteor.call('createCard', stripeToken);
-            Bert.alert("Card has been stored", "success", "fixed-bottom");
-            Router.go('/user-profile');
+            Meteor.call('createCard', stripeToken, function(error, result) {
+              if(error) {
+                console.log(error);
+                Bert.alert(error.reason, 'danger');
+              }
+              if(result) {
+                console.log(result);
+                Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.cardId': result.id}});
+                Bert.alert("Card has been stored");
+                Router.go('/user-profile');
+              }
+            });
             return false;
           }
         });
