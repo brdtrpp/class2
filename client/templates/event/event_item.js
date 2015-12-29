@@ -36,13 +36,6 @@ Template.eventItem.helpers({
 });
 
 Template.eventItem.events({
-  'click .btn-primary': function() {
-    var event = this;
-    var att = {};
-    att.firstName = "Bradley",
-    att.lastName = "Trapp",
-    Meteor.call('charge', event, att);
-  },
   'submit': function () {
     $('#attend').modal('hide');
   },

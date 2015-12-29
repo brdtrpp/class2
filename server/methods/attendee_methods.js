@@ -15,8 +15,8 @@ Meteor.methods({
     if (moment(event.start).isAfter(moment())) {
       Attendee.insert({
         eventId: event._id,
-        attendeeFirstName: att.firstName,
-        attendeeLastName: att.lastName,
+        attendeeFirstName: att.attendeeFirstName,
+        attendeeLastName: att.attendeeLastName,
         charge: charge.id
       });
     }

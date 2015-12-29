@@ -1,7 +1,12 @@
 Template.calendar.helpers({
+  calEventIndex: () => CalEventIndex, // instance of EasySearch.Index
+  getSearchAttributes :{
+      class: "form-control",
+      placeholder: "Search",
+  },
   options: function() {
     return {
-      height: $(window).height() - 75,
+      height: $(window).height() - 115,
       timezone: "local",
       defaultView:'agendaWeek',
       handleWindowResize: true,
@@ -15,24 +20,43 @@ Template.calendar.helpers({
       eventSources: [
         {
           events: function(start,end,timezone,callback) {
-            // var events = CalEventIndex.search({title: 'Class'}).fetch();
-            // var id = Meteor.userId();
-            var events = CalEvent.find({owner: {$not: Meteor.userId()}}).fetch();
-            callback(events);
+            if (Meteor.user().profile.homeAddress) {
+              var event = CalEventIndex.search({city: Meteor.user().profile.homeAddress.city, state: Meteor.user().profile.homeAddress.state}).fetch();
+            }
+            callback(event);
           },
           color: '#1A6ECC',
         },
         {
           events: function(start,end,timezone,callback) {
-            // var events = CalEventIndex.search({owner: Meteor.userId()}).fetch();
-            var events = CalEvent.find({owner: Meteor.userId()}).fetch();
-            callback(events);
+            if (Meteor.user().profile.accountId) {
+              var events = CalEventIndex.search({owner: Meteor.userId()}).fetch();
+              callback(events);
+            } else {
+              callback(null);
+            }
           },
           editable: true,
           color: '#3FB618',
         },
+        {
+          event: function(start,end,timezone,callback) {
+            if (Meteor.user()) {
+              var events = [];
+              var att = Attendee.find({owner: Meteor.userId()}).fetch();
+              _.forEach(att, function(item) {
+                var id = CalEventIndex.search({_id: item.eventId});
+                events.push(id);
+              });
+              callback(events);
+
+            } else {
+              callback(null);
+            }
+          }
+        }
       ],
-  
+
       // dayClick: funct30n(date, jsEvent, view) {
       //   var ce = {};
       //   ce.start = date.format();
@@ -40,23 +64,24 @@ Template.calendar.helpers({
       //   Meteor.call('saveCalEvent',ce);
       // },
       eventClick: function(event, jsEvent, view) {
-        Router.go('/class/'+event._id, {
+        var cal = CalEvent.findOne(event.__originalId);
+        Router.go('/class/'+ cal._id, {
         });
       },
-  
+
       eventDrop: function(event, delta, revertFunc, jsEvent, ui, view) {
-        var id = event._id;
+        var id = CalEvent.findOne(event.__originalId)._id;
         Meteor.call('moveEvent', id, delta);
       },
-  
+
       eventAfterAllRender: function(view) {
         // console.log("Events have been rendered");
       },
-  
+
       eventResizeStart: function(event, jsEvent, ui, view) {
-  
+
       },
-  
+
       select: function(start, end, jsEvent, view) {
         var user = Meteor.user();
         var doc = {};
@@ -68,13 +93,13 @@ Template.calendar.helpers({
         doc.zip = user.profile.businessAddress.zip;
         Meteor.call('saveCalEvent', doc);
       },
-  
+
       eventResize: function(event, delta, revertFunc, jsEvent, ui, view) {
         if (Meteor.userId() === event.owner) {
-          var id = event._id;
-          Meteor.call('resizeCalEvet', id, delta);
+          var id = CalEvent.findOne(event.__originalId)._id;
+          Meteor.call('resizeCalEvent', id, delta);
         } else {
-          Bert.alert("You are not allowed to modify this event", "danger", "fixed-bottom");
+          Bert.alert("You are not allowed to modify this event", "danger");
         }
       },
     };

@@ -2,7 +2,7 @@ CalEvent = new Mongo.Collection('calevent');
 
 CalEventIndex = new EasySearch.Index({
   collection: CalEvent,
-  fields: ['title', 'description', 'start', 'zip'],
+  fields: ['title', 'description', 'start', 'zip', 'owner', 'city', 'state', '_id'],
   engine: new EasySearch.MongoDB()
 });
 
