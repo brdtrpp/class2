@@ -14,7 +14,7 @@ AutoForm.hooks({
             owner: Meteor.userId()
           }).count() != 0
         ) {
-          Bert.alert("That person is already registered for this class!", "danger", "fixed-bottom");
+          Bert.alert("That person is already registered for this class!", "danger");
         } else {
           if (Meteor.user().profile.cardId !== undefined) {
             if (available != 0) {
@@ -26,10 +26,10 @@ AutoForm.hooks({
               }
               Meteor.call('charge', event, att);
             } else {
-              Bert.alert("This class is full!", "danger", "fixed-bottom");
+              Bert.alert("This class is full!", "danger");
             }
           } else {
-            Bert.alert("You don't have a payment method stored!", "danger", "fixed-bottom");
+            Bert.alert("You don't have a payment method stored!", "danger");
           }
         }
       }

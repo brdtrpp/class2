@@ -23,7 +23,7 @@ Meteor.methods({
   },
   
   removeAtt: function(doc, att) {
-    console.log(doc, att)
+    console.log(doc, att);
   },
   
   refundAtt: function(doc, att) {
