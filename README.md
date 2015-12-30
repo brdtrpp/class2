@@ -3,7 +3,9 @@
 ##To-Do
 * Allergies
 * Attendance
-* Default area display
+* Teams
+* Subscriptions
+* Default location display
 * All Day broken
 * Course Refund partial
 * Refund from past event

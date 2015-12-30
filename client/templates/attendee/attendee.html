@@ -1,5 +1,8 @@
 <template name="attendeesItem">
      <li class="list-group-item">
+      {{#if isEventOwner}}
+        <span class="{{present}}"></span>
+      {{/if}}
       {{attendeeFirstName}} {{attendeeLastName}} <small>registered on {{dateFormat}}</small>
         {{#if isAttendee}}
           <div class="pull-right">
@@ -10,5 +13,6 @@
             {{/if}}
           </div>
         {{/if}}
+
     </li>
 </template>

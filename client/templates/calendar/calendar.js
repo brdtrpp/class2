@@ -22,6 +22,8 @@ Template.calendar.helpers({
           events: function(start,end,timezone,callback) {
             if (Meteor.user().profile.homeAddress) {
               var event = CalEventIndex.search({city: Meteor.user().profile.homeAddress.city, state: Meteor.user().profile.homeAddress.state}).fetch();
+            } else {
+              var event = null;
             }
             callback(event);
           },
