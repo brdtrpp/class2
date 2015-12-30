@@ -46,10 +46,11 @@ Template.calendar.helpers({
               var att = Attendee.find({owner: Meteor.userId()}).fetch();
               _.forEach(att, function(item) {
                 var id = CalEventIndex.search({_id: item.eventId});
-                events.push(id);
+                if (events.indexOf(id) == -1) {
+                  events.push(id);
+                }
               });
               callback(events);
-
             } else {
               callback(null);
             }

@@ -1,7 +1,7 @@
 Router.configure({
   layoutTemplate: 'masterLayout',
   loadingTemplate: 'loading',
-  notFoundTemplate: '404',
+  notFoundTemplate: 'four0',
   waitOn: function() {
     return [Meteor.subscribe('calevent'), Meteor.subscribe('attendee')];
   },

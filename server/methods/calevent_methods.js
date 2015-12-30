@@ -122,9 +122,11 @@ Meteor.methods({
     });
     var start = startAdd._d;
     var end = endAdd._d;
-    CalEvent.update({_id: id}, {$set: {
-      start: moment(start).toISOString(),
-      end: moment(end).toISOString(),
-    }});
+    if (moment(start).isAfter(moment()) && moment(event.start).isAfter(moment())) {
+      CalEvent.update({_id: id}, {$set: {
+        start: moment(start).toISOString(),
+        end: moment(end).toISOString(),
+      }});
+    }
   },
 });

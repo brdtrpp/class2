@@ -6,7 +6,7 @@ Template.eventOwner.helpers({
 
 Template.eventOwner.events({
   'click .glyphicon-remove' : function() {
-    var doc = CalEvent.findOne({_id: this._d});
+    var doc = CalEvent.findOne({_id: this._id});
     Meteor.call("removeCal", doc);
   },
 
