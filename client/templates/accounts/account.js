@@ -20,5 +20,7 @@ AccountsTemplates.configureRoute('signIn', {
 
 AccountsTemplates.configure({
     termsUrl: '/terms',
+    showForgotPasswordLink: true,
     sendVerificationEmail: true,
+    overrideLoginErrors: false,
 });

@@ -36,7 +36,15 @@ Meteor.methods({
     }
   },
 
-  // balance: function()
+  getCharge: function(charge) {
+    var Stripe = StripeAPI(Meteor.settings.private.stripe);
+    var stripeCharges = Meteor.wrapAsync(Stripe.charges.retrieve,Stripe.charges);
+    try {
+      return stripeCharges(charge);
+    }catch(error){
+      throw new Meteor.Error("StripeAPIFailure", error.message);
+    }
+  },
 
   charge: function(event, att) {
     //doc is the _id of the attendee

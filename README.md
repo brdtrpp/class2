@@ -2,14 +2,10 @@
 
 ##To-Do
 * Allergies
-* Attendance
-* Teams
-* Subscriptions
 * Default location display
 * All Day broken
 * Course Refund partial
 * Refund from past event
-* Delete events
 * Timezone and Daylight savings time
 * How it Works on getting paid
 * Star rating system
