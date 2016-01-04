@@ -2,6 +2,7 @@
 
 ##To-Do
 * Allergies
+* Searchn function broken
 * Default location display
 * All Day broken
 * Timezone and Daylight savings time
