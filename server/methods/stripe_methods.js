@@ -4,26 +4,26 @@ Meteor.methods({
       var attendees = Attendee.find({eventId: doc._id});
       _.forEach(attendees.fetch(), function(item){
         var att = item;
-        Meteor.call('refundAttendee', doc, att);
+        Meteor.call('refundAttendee', att);
       });
     }
   },
 
-  refundAttendee: function (doc, att) {
-      var Stripe = StripeAPI(Meteor.settings.private.stripe);
-      var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
-      stripeRefund({
-        charge: att.charge,
-        refund_application_fee: true,
-        reverse_transfer: true,
-      }, function(err, refund) {
-        if (refund) {
-          var doc = refund;
-          Meteor.call('refundAtt', doc, att);
-        } else if (err) {
-          console.log(err);
-        }
-      });
+  refundAttendee: function (att) {
+    var Stripe = StripeAPI(Meteor.settings.private.stripe);
+    var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
+    stripeRefund({
+      charge: att.charge,
+      refund_application_fee: true,
+      reverse_transfer: true,
+    }, function(err, refund) {
+      if (refund) {
+        var doc = refund;
+        Meteor.call('refundAtt', doc, att);
+      } else if (err) {
+        console.log(err);
+      }
+    });
     
   },
 

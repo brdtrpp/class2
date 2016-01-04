@@ -24,14 +24,20 @@ Template.attendeesItem.helpers({
     } else {
       return "glyphicon glyphicon-unchecked present";
     }
+  },
+  
+  status: function() {
+    var att = Attendee.findOne({_id: this._id});
+    if(att.reEventId) {
+      return "Refunded";
+    }
   }
 });
 
 Template.attendeesItem.events({
   'click .refund' : function () {
-    var doc = CalEvent.findOne({_id: this.eventId});
     var att = Attendee.findOne({_id: this._id});
-    Meteor.call('refundAttendee', doc, att);
+    Meteor.call('refundAttendee', att);
   },
 
   'click .present' : function() {

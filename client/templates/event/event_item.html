@@ -19,13 +19,13 @@
               Register
             </button>
           {{else}}
-           <h4>This class is in the past...get over it!</h4>
+           <h4>This class is in the past...unless you have a TARDIS, you cannot attend it!</h4>
           {{/if}}
         {{> modals}}
         {{else}}
         <p>Please <a href="{{pathFor 'register'}}">signup/login</a> to register.</p>
         {{/if}}
-  
+
       </div>
     </div>
     <ul class="list-group">
@@ -33,6 +33,13 @@
       {{#each attendee}}
         {{> attendeesItem}}
       {{/each}}
+    </ul>
+    <ul class="list-group">
+      <h3>Refunded Attendees</h3>
+      {{refunded}}
+      <!--{{#each refunded}}-->
+      <!--  {{> attendeesItem}}-->
+      <!--{{/each}}-->
     </ul>
   </div>
 
