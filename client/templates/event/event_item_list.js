@@ -13,8 +13,13 @@ Template.eventItemList.helpers({
     var date = moment(end).format('LLL');
     return date;
   },
+
   customerPrice: function() {
     var cPrice = this.price * 1.1;
     return cPrice.toFixed(2);
+  },
+
+  isAttendee: function() {
+    return this.owner === Meteor.userId();
   },
 });

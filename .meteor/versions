@@ -24,6 +24,7 @@ boilerplate-generator@1.0.4
 caching-compiler@1.0.0
 caching-html-compiler@1.0.2
 callback-hook@1.0.4
+ccorcos:transitioner@2.0.2
 check@1.1.0
 coffeescript@1.0.11
 ddp@1.2.2
@@ -125,6 +126,7 @@ url@1.0.5
 useraccounts:bootstrap@1.13.1
 useraccounts:core@1.13.1
 useraccounts:iron-routing@1.13.1
+velocityjs:velocityjs@1.2.1
 webapp@1.2.3
 webapp-hashing@1.0.5
 yogiben:autoform-modals@0.3.8

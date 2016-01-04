@@ -1,29 +1,30 @@
 Meteor.methods({
   refundEvent: function(doc) {
-    var attendees = Attendee.find({eventId: doc._id});
-    _.forEach(attendees.fetch(), function(item){
-      var att = item;
-      Meteor.call('refundAttendee', doc, att);
-    });
+    if (doc.owner === Meteor.userId()) {
+      var attendees = Attendee.find({eventId: doc._id});
+      _.forEach(attendees.fetch(), function(item){
+        var att = item;
+        Meteor.call('refundAttendee', doc, att);
+      });
+    }
   },
 
   refundAttendee: function (doc, att) {
-    var Stripe = StripeAPI(Meteor.settings.private.stripe);
-    var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
-    stripeRefund({
-      charge: att.charge,
-      refund_application_fee: true,
-      reverse_transfer: true,
-    }, function(err, refund) {
-      if (refund) {
-        console.log(refund);
-        var doc = refund;
-        Meteor.call('refundAtt', doc, att);
-      }
-      if (err) {
-        console.log(err);
-      }
-    });
+      var Stripe = StripeAPI(Meteor.settings.private.stripe);
+      var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
+      stripeRefund({
+        charge: att.charge,
+        refund_application_fee: true,
+        reverse_transfer: true,
+      }, function(err, refund) {
+        if (refund) {
+          var doc = refund;
+          Meteor.call('refundAtt', doc, att);
+        } else if (err) {
+          console.log(err);
+        }
+      });
+    
   },
 
   getAccount: function(aid) {
@@ -47,32 +48,41 @@ Meteor.methods({
   },
 
   charge: function(event, att) {
-    //doc is the _id of the attendee
     var Stripe = StripeAPI(Meteor.settings.private.stripe);
     var user = Meteor.users.findOne({_id: Meteor.userId()});
+    var owner = Meteor.users.findOne({_id: event.owner});
     var stripeCardCharge = Meteor.wrapAsync(Stripe.charges.create,Stripe.charges);
     //end price is in cents and marked up 10%
     var endPrice = event.price * 110;
-    var appfee = endPrice - ( event.price * 100. );
-    stripeCardCharge({
-        amount: endPrice.toFixed(0),
-        currency: "USD",
-        customer: user.profile.customerId,
-        application_fee: appfee.toFixed(0),
-        description: event.title + " " + event.start,
-        destination: Meteor.user(event.owner).profile.accountId
-    }, function(err, charge) {
-        if (err && err.type === 'StripeCardError') {
-          console.log(err);
-        } else {
-          console.log(charge);
-          if (event.courseId != undefined) {
-            Meteor.call("addCourseAtt", event, att, charge);
-          } else {
-            Meteor.call("addAtt", event, att, charge);
-          }
-        }
-    });
+    var appfee = endPrice - ( event.price * 100 );
+    var available = event.attendeeCount - Attendee.find({eventId: event._id}).count();
+    if (event.owner == Meteor.userId()) {
+      throw new Meteor.Error('SelfReg', "Cannot signup for your own class.");
+      
+    } else if (
+      Attendee.find({
+        eventId: event._id,
+        attendeeFirstName: att.attendeeFirstName,
+        attendeeLastName: att.attendeeLastName,
+        owner: Meteor.userId()
+      }).count() != 0){
+        throw new Meteor.Error('already', "That person has already registered for this class.");
+    } else if (Meteor.user().profile.cardId == undefined) {
+      throw new Meteor.Error('NoCard', "You don't have a card stored.");
+    } else if (available === 0) {
+      throw new Meteor.Error('NoSpace', "This class is full");
+    } else try{
+      return stripeCardCharge({
+          amount: endPrice.toFixed(0),
+          currency: "USD",
+          customer: user.profile.customerId,
+          application_fee: appfee.toFixed(0),
+          description: event.title + " " + event.start,
+          destination: owner.profile.accountId
+      });
+    } catch(error) {
+      throw new Meteor.Error("StripeAPIFailure", error.message);
+    }
   },
 
 
@@ -154,4 +164,15 @@ Meteor.methods({
       throw new Meteor.Error("StripeAPIFailure", error.message);
     }
   },
+
+  getCard : function() {
+    var Stripe = StripeAPI(Meteor.settings.private.stripe);
+    var user = Meteor.users.findOne({_id: Meteor.userId()});
+    var stripeCardGet = Meteor.wrapAsync(Stripe.customers.retrieveCard,Stripe.customers);
+    try {
+      return stripeCardGet(user.profile.customerId, user.profile.cardId);
+    }catch(error){
+      throw new Meteor.Error("StripeAPIFailure", error.message);
+    }
+  }
 });

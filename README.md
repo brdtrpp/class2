@@ -4,8 +4,6 @@
 * Allergies
 * Default location display
 * All Day broken
-* Course Refund partial
-* Refund from past event
 * Timezone and Daylight savings time
 * How it Works on getting paid
 * Star rating system
@@ -17,5 +15,8 @@
 * Notifications
 * Messaging
 * Text Area
+* Wait List
 * Publically Viewable Profile (User and Host)
-* Limit Card Information & selectable
+* Limit Credit Card Information & selectable
+* Add animations
+* User added Users

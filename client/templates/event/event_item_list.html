@@ -5,6 +5,15 @@
           <ul class="panel-title pull-right ">
             <span style="font-size:15pt;"><i class="glyphicon glyphicon-usd"></i>{{customerPrice}}</span>
             {{> eventOwner}}
+            <div class="pull-right">
+              {{#if isAttendee}}
+                  {{#afModal class="glyphicon glyphicon-pencil" collection="Attendee" operation="update" doc=_id formId="updateAttendee" title="Edit Attendee Name"}}
+                  {{/afModal}}
+                  {{#if timeRes }}
+                    <a class="glyphicon glyphicon-remove-circle refund"></a>
+                  {{/if}}
+              {{/if}}
+            </div>
           </ul>
         <h2 class="panel-title"><a href="{{pathFor 'eventItem'}}"> {{title}} <small>{{startDate}} {{endDate}}</small></a></h2>
       </div>

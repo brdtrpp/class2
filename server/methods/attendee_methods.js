@@ -12,7 +12,7 @@ Meteor.methods({
   },
   
   addAtt: function(event, att, charge) {
-    if (moment(event.start).isAfter(moment())) {
+    if ((moment(event.start).isAfter(moment())) && (event.owner != Meteor.userId())) {
       Attendee.insert({
         eventId: event._id,
         attendeeFirstName: att.attendeeFirstName,

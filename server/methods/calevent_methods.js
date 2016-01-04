@@ -1,17 +1,18 @@
 Meteor.methods({
   removeCal: function(doc) {
     //refund to antendees
-    console.log(doc);
-    if (moment(moment(doc.start).toISOString()).isBefore(moment())) {
-      console.log(Meteor.userId() + " tried to delete event after current date");
-    } else {
-      if (CalEvent.findOne({_id: doc._id}).owner === Meteor.userId()) {
-        Meteor.call('refundEvent', doc);
-        CalEvent.remove({_id: doc._id});
+    if (doc.owner === Meteor.userId()){
+      if (moment(moment(doc.start).toISOString()).isBefore(moment())) {
+        console.log(Meteor.userId() + " tried to delete event after current date");
+      } else {
+        if (CalEvent.findOne({_id: doc._id}).owner === Meteor.userId()) {
+          Meteor.call('refundEvent', doc);
+          CalEvent.remove({_id: doc._id});
+        }
       }
     }
   },
-  
+
   removeCourse: function(doc) {
     var course = CalEvent.find({courseId: doc.courseId}).fetch();
     _.forEach(course, function(item) {
@@ -19,20 +20,17 @@ Meteor.methods({
       Meteor.call("removeCal", doc);
     });
   },
-  
+
   edit: function(doc) {
     console.log("editing " + doc._id);
   },
-  
+
   recur:function(doc){
     var startTime = moment(doc.start).format("hh:mm a [GMT] ZZ");
     var recur = moment(doc.start).recur().every(doc.recur.intervalNumber, doc.recur.intervalType);
-    var dates = recur.next(doc.recur.intervalStop, "L");
+    var dates = recur.next((doc.recur.intervalStop - 1), "L");
     var dur = moment(doc.end).diff(moment(doc.start));
     var courseId = Random.id();
-    // console.log(recur);
-    // console.log(dur);
-    
 
     //Recurring individual events
     if (doc.recur.type === "lesson") {
@@ -81,7 +79,7 @@ Meteor.methods({
         state: doc.state,
         zip: doc.zip,
         courseId: doc.courseId,
-      }); 
+      });
     }
   },
 
@@ -105,28 +103,32 @@ Meteor.methods({
   },
 
   moveEvent:function(id, delta){
-    var event = CalEvent.findOne({_id: id});
-    var startAdd = moment(event.start).add({
-      years: delta._data.years,
-      months: delta._data.months,
-      days: delta._data.days,
-      hours: delta._data.hours,
-      minutes: delta._data.minutes,
-    });
-    var endAdd = moment(event.end).add({
-      years: delta._data.years,
-      months: delta._data.months,
-      days: delta._data.days,
-      hours: delta._data.hours,
-      minutes: delta._data.minutes,
-    });
-    var start = startAdd._d;
-    var end = endAdd._d;
-    if (moment(start).isAfter(moment()) && moment(event.start).isAfter(moment())) {
-      CalEvent.update({_id: id}, {$set: {
-        start: moment(start).toISOString(),
-        end: moment(end).toISOString(),
-      }});
+    if (!this.userId) {
+      return null;
+    } else {
+      var event = CalEvent.findOne({_id: id});
+      var startAdd = moment(event.start).add({
+        years: delta._data.years,
+        months: delta._data.months,
+        days: delta._data.days,
+        hours: delta._data.hours,
+        minutes: delta._data.minutes,
+      });
+      var endAdd = moment(event.end).add({
+        years: delta._data.years,
+        months: delta._data.months,
+        days: delta._data.days,
+        hours: delta._data.hours,
+        minutes: delta._data.minutes,
+      });
+      var start = startAdd._d;
+      var end = endAdd._d;
+      if (moment(start).isAfter(moment()) && moment(event.start).isAfter(moment())) {
+        CalEvent.update({_id: id}, {$set: {
+          start: moment(start).toISOString(),
+          end: moment(end).toISOString(),
+        }});
+      }
     }
   },
 });

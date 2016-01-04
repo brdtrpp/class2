@@ -8,6 +8,7 @@ AutoForm.hooks({
           Meteor.call('saveCalEvent',doc);
         }
         Router.go('/my-classes');
+        return false;
       }
     },
   },

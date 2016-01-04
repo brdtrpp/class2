@@ -12,6 +12,7 @@ AttendanceSchema = new SimpleSchema({
         this.unset();  // Prevent user from supplying their own value
       }
     },
+    denyUpdate: true,
     autoform: {
       omit: true
     },
@@ -23,7 +24,6 @@ AttendanceSchema = new SimpleSchema({
     autoform: {
       omit: true
     },
-
   },
   owner: {
     type: String,
@@ -39,9 +39,10 @@ AttendanceSchema = new SimpleSchema({
     autoValue: function() {
       if (this.isUpdate) {
         return new Date();
+      } else {
+        return null;
       }
     },
-    denyInsert: true,
     optional: true,
     autoform: {
       omit: true
@@ -82,9 +83,13 @@ Attendee.attachSchema(new SimpleSchema({
   owner: {
     type: String,
     autoValue: function() {
-      var user = Meteor.user();
-      return user._id;
+      if (this.isInsert) {
+        return Meteor.userId();
+      } else {
+        this.unset();
+      }
     },
+    denyUpdate: true,
     autoform: {
       omit: true
     }

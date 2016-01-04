@@ -52,3 +52,5 @@ ecmascript
 underscore
 mrt:zipcodes
 email
+ccorcos:transitioner
+aldeed:schema-deny

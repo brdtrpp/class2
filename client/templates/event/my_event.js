@@ -1,11 +1,26 @@
 Template.myEvent.helpers({
+  instructing:function() {
+    if (Session.get('tense') == "future") {
+      return "Instructing";
+    } else if (Session.get('tense') == "past") {
+      return "Instructed";
+    }
+  },
   calevent: function() {
     if (Session.get('tense') == "future") {
       return CalEvent.find({owner: Meteor.userId(), start: {$gt: moment().toISOString()}}, {sort: {start: 1}});
     } else {
       return CalEvent.find({owner: Meteor.userId(), start: {$lt: moment().toISOString()}}, {sort: {start: 1}});
     }
-    
+
+  },
+
+  edit:function() {
+    if (Session.get('tense') == "future") {
+      return "Edit";
+    } else if (Session.get('tense') == "past") {
+      return "Refund";
+    }
   },
 
   startDate:function() {
@@ -19,13 +34,13 @@ Template.myEvent.helpers({
     var date = moment(end).format('LLL');
     return date;
   },
-  
+
   attending:function() {
     return Attendee.find({eventId: this._id}).count();
   },
-  
+
   count:function() {
-    if (Session.get('tense') == "future") {
+    if (Session.equals('tense', "future") ) {
       if (CalEvent.find({owner: Meteor.userId(), start: {$gt: moment().toISOString()}}, {sort: {start: 1}}).count() == 0) {
         return "no";
       } else {
@@ -39,7 +54,7 @@ Template.myEvent.helpers({
       }
     }
   },
-  
+
   classes:function() {
     if (CalEvent.find({owner: Meteor.userId(), start: {$gt: moment().toISOString()}}, {sort: {start: 1}}).count() == 1) {
       return "class";
@@ -47,16 +62,37 @@ Template.myEvent.helpers({
       return "classes";
     }
   },
-  
+
   tense:function() {
     return Session.get('tense');
+  },
+
+  refund:function() {
+    if (Session.equals("tense", "past")){
+      return "share-alt";
+    } else if (Session.equals("tense", "future")) {
+      return "remove";
+    }
   }
 });
 
 Template.myEvent.events({
+  'click .glyphicon-share-alt' : function() {
+    if (Meteor.userId() === this.owner) {
+      var doc = this;
+      Meteor.call('refundEvent', doc);
+    }
+  },
+  
+  'click .clickable-column' : function () {
+    Router.go('/class/' + this._id);
+  },
+
   'click .glyphicon-remove' : function() {
     var doc = CalEvent.findOne({_id: this._id});
-    if (doc.courseId) {
+    if (moment(doc.start).isBefore(moment())){
+      Bert.alert("You cannot delete past events");
+    } else if (doc.courseId) {
       Meteor.call("removeCourse", doc);
     } else {
       Meteor.call("removeCal", doc);
@@ -74,11 +110,16 @@ Template.myEvent.events({
     } else {
       Session.set("tense", "future");
     }
+    if (Session.equals("tense", "future")) {
+      Bert.alert( '<h4><b>Danger:</b>  this page will not ask for confirmation before editing or deleting classes. All changes that are made are permanent.</h4>', 'danger');
+    } else if (Session.equals("tense", "past")) {
+      Bert.alert('<h4><b>Warning:</b> you cannot delete past classes, only refund them (wholly or partially). All refunds are permanent!</h4>', 'warning');
+    }
   },
 });
 
 Template.myEvent.onRendered(function(){
-  Bert.alert( '<h4><b>Warning:</b>  this page will not ask for confirmation before editing or deleting classes. All changes that are made are permenant.</h4>', 'danger');
   Session.set("tense", "future");
+  Bert.alert( '<h4><b>Warning:</b> this page will not ask for confirmation before editing or deleting classes. All changes that are made are permenant.</h4>', 'danger');
 });
 
