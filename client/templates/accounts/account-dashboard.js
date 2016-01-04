@@ -4,6 +4,18 @@
 
 
 Template.getPaid.helpers({
+  toast: function() {
+    Meteor.call("getLocationByZipcode", 45385, function(error, result){
+      if (error){
+          // do something with the error
+          console.log(error.reason);
+      }
+      else{
+          // do something with result
+          console.log(result);
+      }
+    });
+  },
 
   hasAccount: function() {
     var user = Meteor.users.findOne({_id: Meteor.userId()});

@@ -23,7 +23,7 @@ Template.calendar.helpers({
             if (Meteor.user().profile.homeAddress) {
               var event = CalEventIndex.search({city: Meteor.user().profile.homeAddress.city, state: Meteor.user().profile.homeAddress.state}).fetch();
             } else {
-              var event = null;
+              var event = CalEventIndex.search({city: 'Xenia', state: 'OH'}).fetch();
             }
             callback(event);
           },
@@ -41,23 +41,24 @@ Template.calendar.helpers({
           editable: true,
           color: '#3FB618',
         },
-        {
-          event: function(start,end,timezone,callback) {
-            if (Meteor.user()) {
-              var events = [];
-              var att = Attendee.find({owner: Meteor.userId()}).fetch();
-              _.forEach(att, function(item) {
-                var id = CalEventIndex.search({_id: item.eventId});
-                if (events.indexOf(id) == -1) {
-                  events.push(id);
-                }
-              });
-              callback(events);
-            } else {
-              callback(null);
-            }
-          }
-        }
+        // {
+        //   event: function(start,end,timezone,callback) {
+        //     console.log('Toaster');
+        //     if (Meteor.user()) {
+        //       var events = [];
+        //       var att = Attendee.find({owner: Meteor.userId()}).fetch();
+        //       _.forEach(att, function(item) {
+                
+        //         if ((item.eventId !== "refunded" )){
+        //           events.push(CalEventIndex.search({_id: item.eventId}));
+        //         }
+        //       });
+        //       callback(events);
+        //     } else {
+        //       callback(null);
+        //     }
+        //   }
+        // }
       ],
 
       // dayClick: funct30n(date, jsEvent, view) {
