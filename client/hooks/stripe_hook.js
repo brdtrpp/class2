@@ -34,7 +34,9 @@ AutoForm.hooks({
           }
         });
       }
-    }
+    },
+    beginSubmit: function() {},
+    endSubmit: function() {}
   },
   
   insertCard: {
@@ -68,5 +70,7 @@ AutoForm.hooks({
         });
       }
     },
+    beginSubmit: function() {},
+    endSubmit: function() {}
   }
 });

@@ -11,5 +11,7 @@ AutoForm.hooks({
         return false;
       }
     },
+    beginSubmit: function() {},
+    endSubmit: function() {}
   },
 })

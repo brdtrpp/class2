@@ -29,5 +29,7 @@ AutoForm.hooks({
         });
       }
     },
+    beginSubmit: function() {},
+    endSubmit: function() {}
   }
 });

@@ -6,6 +6,7 @@ Template.calendar.helpers({
   },
   options: function() {
     return {
+      // theme: true,
       height: $(window).height() - 115,
       timezone: "local",
       defaultView:'agendaWeek',
@@ -48,7 +49,7 @@ Template.calendar.helpers({
         //       var events = [];
         //       var att = Attendee.find({owner: Meteor.userId()}).fetch();
         //       _.forEach(att, function(item) {
-                
+
         //         if ((item.eventId !== "refunded" )){
         //           events.push(CalEventIndex.search({_id: item.eventId}));
         //         }

@@ -1,14 +1,12 @@
 <template name="search">
-{{#autoForm collection="Search" id="search"}}
-  <fieldset>
-    <legend>Contact Us</legend>
-    {{> afQuickField name="keyword"}}
-    {{> afQuickField name="location"}}
-    {{> afQuickField name="radius"}}
-    <div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-      <button type="reset" class="btn btn-default">Reset</button>
-    </div>
-  </fieldset>
+  {{#autoForm collection="Search" id="search" type="normal"}}
+    <fieldset>
+      {{> afQuickField name="keyword"}}
+      {{> afQuickField name="city"}}{{> afQuickField name="state"}}
+      {{> afQuickField name="radius" type="noUiSlider" min=5 max=100 step=5}}
+      <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+    </fieldset>
   {{/autoForm}}
 </template>
