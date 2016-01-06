@@ -23,16 +23,15 @@ Template.calendar.helpers({
           events: function(start,end,timezone,callback) {
             if (Meteor.user().profile.homeAddress) {
               var event = CalEventIndex.search({city: Meteor.user().profile.homeAddress.city, state: Meteor.user().profile.homeAddress.state}).fetch();
-            } else {
-              var event = CalEventIndex.search({city: 'Xenia', state: 'OH'}).fetch();
             }
             callback(event);
           },
-          color: '#1A6ECC',
+          color: '#2780e3',
         },
         {
           events: function(start,end,timezone,callback) {
             if (Meteor.user().profile.accountId) {
+              console.log('Toaster');
               var events = CalEventIndex.search({owner: Meteor.userId()}).fetch();
               callback(events);
             } else {
@@ -40,26 +39,17 @@ Template.calendar.helpers({
             }
           },
           editable: true,
-          color: '#3FB618',
+          color: '#3fb618',
         },
-        // {
-        //   event: function(start,end,timezone,callback) {
-        //     console.log('Toaster');
-        //     if (Meteor.user()) {
-        //       var events = [];
-        //       var att = Attendee.find({owner: Meteor.userId()}).fetch();
-        //       _.forEach(att, function(item) {
+        {
+          events: function(start,end,timezone,callback) {
 
-        //         if ((item.eventId !== "refunded" )){
-        //           events.push(CalEventIndex.search({_id: item.eventId}));
-        //         }
-        //       });
-        //       callback(events);
-        //     } else {
-        //       callback(null);
-        //     }
-        //   }
-        // }
+            var events = Session.get('classes');
+            callback(events);
+
+          },
+          color: '#9954bb',
+        }
       ],
 
       // dayClick: funct30n(date, jsEvent, view) {

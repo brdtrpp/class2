@@ -2,7 +2,7 @@
 
 ##To-Do
 * Allergies
-* Searchn function broken
+* Categories
 * Default location display
 * All Day broken
 * Timezone and Daylight savings time
@@ -21,3 +21,6 @@
 * Limit Credit Card Information & selectable
 * Add animations
 * User added Users
+* Change Calendar Layout
+* Refund and delete from event_item
+* Editing Past Item
