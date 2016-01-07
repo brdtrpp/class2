@@ -19,7 +19,20 @@ Template.eventItemList.helpers({
     return cPrice.toFixed(2);
   },
 
+  timeRes: function () {
+    var start = moment(CalEvent.findOne({_id: this._id}).start).subtract(1, "days");
+    return moment().isBefore(start);
+  },
+
   isAttendee: function() {
-    return this.owner === Meteor.userId();
+    return true;
+  },
+});
+
+Template.eventItemList.events({
+  'click .refund' : function () {
+    var att = Attendee.findOne({eventId: this._id, owner: Meteor.userId(),});
+    console.log(att);
+    Meteor.call('refundAttendee', att);
   },
 });

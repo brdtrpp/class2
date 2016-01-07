@@ -86,6 +86,43 @@ CalEvent.attachSchema(new SimpleSchema({
     },
   },
 
+  category: {
+    type: String,
+    allowedValues: [
+      'academic',
+      'beauty_style',
+      'computer',
+      'crafts_hobbies',
+      'culinary',
+      'health_wellness',
+      'language',
+      'music',
+      'performance',
+      'sports',
+      'fitness',
+      'arts',
+      'other'
+    ],
+    autoform: {
+      type: "select",
+      options: {
+        academic: "Academics",
+        beauty_style: "Beauty & Style",
+        computer: "Computers & Technology",
+        crafts_hobbies: "Craft & Hobbies",
+        culinary: "Culinary",
+        health_wellness: "Health & Wellness",
+        language: "Language",
+        music: "Music",
+        performance: "Performaning Arts",
+        sports: "Sports & Athletics",
+        fitness: "Fitness",
+        arts: "Creative Arts",
+        other: "Other"
+      }
+    }
+  },
+
   description: {
     type: String,
     optional: true,
@@ -165,5 +202,5 @@ CalEvent.attachSchema(new SimpleSchema({
     autoform: {
       omit: true
     },
-  }
+  },
 }));

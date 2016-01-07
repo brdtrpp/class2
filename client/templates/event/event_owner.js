@@ -1,6 +1,8 @@
 Template.eventOwner.helpers({
   isOwner: function() {
-    return this.owner === Meteor.userId();
+    if ((this.owner ===Meteor.userId()) && moment(this.start).isAfter(moment())) {
+      return true;
+    }
   },
   
   // totalRefund: function() {

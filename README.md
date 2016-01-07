@@ -23,4 +23,3 @@
 * User added Users
 * Change Calendar Layout
 * Refund and delete from event_item
-* Editing Past Item

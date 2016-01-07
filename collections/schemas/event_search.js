@@ -1,10 +1,43 @@
 Search = new Mongo.Collection('search');
 
 Search.attachSchema( new SimpleSchema ({ 
-  keyword: {
+  category: {
     type: String,
-    optional: true,
+    allowedValues: [
+      'academic',
+      'beauty_style',
+      'computer',
+      'crafts_hobbies',
+      'culinary',
+      'health_wellness',
+      'language',
+      'music',
+      'performance',
+      'sports',
+      'fitness',
+      'arts',
+      'other'
+    ],
+    autoform: {
+      type: "select",
+      options: {
+        academic: "Academics",
+        beauty_style: "Beauty & Style",
+        computer: "Computers & Technology",
+        crafts_hobbies: "Craft & Hobbies",
+        culinary: "Culinary",
+        health_wellness: "Health & Wellness",
+        language: "Language",
+        music: "Music",
+        performance: "Performaning Arts",
+        sports: "Sports & Athletics",
+        fitness: "Fitness",
+        arts: "Creative Arts",
+        other: "Other"
+      }
+    }
   },
+  
   city: {
     type: String,
     max: 50

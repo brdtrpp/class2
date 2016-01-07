@@ -69,6 +69,7 @@ Meteor.methods({
         title: doc.title,
         start: moment(doc.start).toISOString(),
         end: moment(doc.end).toISOString(),
+        category: doc.category,
         description: doc.description,
         owner: doc.owner,
         allDay: doc.allDay,
@@ -80,6 +81,27 @@ Meteor.methods({
         zip: doc.zip,
         courseId: doc.courseId,
       });
+    }
+  },
+
+  updateCalEvent: function(doc, id) {
+    if (CalEvent.findOne({_id: id}) && moment(doc.$set.start).isAfter(moment())) {
+      CalEvent.update({_id: id}, {$set: {
+        title: doc.$set.title,
+        start: moment(doc.$set.start).toISOString(),
+        end: moment(doc.$set.end).toISOString(),
+        category: doc.$set.category,
+        description: doc.$set.description,
+        owner: doc.$set.owner,
+        allDay: doc.$set.allDay,
+        price: doc.$set.price,
+        attendeeCount: doc.$set.attendeeCount,
+        street: doc.$set.street,
+        city: doc.$set.city,
+        state: doc.$set.state,
+        zip: doc.$set.zip,
+        courseId: doc.$set.courseId,
+      }});
     }
   },
 

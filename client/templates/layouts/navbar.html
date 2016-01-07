@@ -46,7 +46,7 @@
             </ul>
           </li>
             {{#if hasAccount}}
-              <li><a href="{{pathFor 'eventInsert'}}">New Class</a></li>
+              <li><a data-toggle="modal" data-target="#newClass">New Class</a></li>
             {{/if}}
           {{else}}
           <li><a href="{{pathFor 'calendar'}}">Calendar</a></li>
@@ -63,4 +63,21 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
+  {{#if hasAccount}}
+    <!-- Modal -->
+    <div class="modal fade" id="newClass" tabindex="-1" role="dialog" aria-labelledby="newClassModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="newClassModal">Cancel Class</h4>
+          </div>
+          <div class="modal-body">
+            {{> quickForm collection="CalEvent" id="insertClass" type="insert"}}
+            <!--{{> quickForm collection="CalEvent" id="insertClass" type="insert"}}-->
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/if}}
 </template>

@@ -1,9 +1,6 @@
 <template name="myAttend">
   <a class="btn btn-default {{status}}">{{status}}</a>
     {{#each attendee}}
-      <h2>{{title}}</h2>{{_id}}
-    <!--  {{#each event}}-->
-    <!--    {{> eventItemList}}-->
-    <!--  {{/each}}-->
+      {{> eventItemList}}
     {{/each}}
 </template>
