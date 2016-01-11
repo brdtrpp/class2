@@ -1,6 +1,12 @@
 #CLASS
 
 ##To-Do
+* Update Modal close on submit
+* Refund and delete from event_item
+* Move future/past events to bottomButtons
+* Edit function on my-classes
+* Refunded and attending move to bottomButtons
+* Make search pop-down
 * Allergies
 * Search with Categories
 * All Day broken
@@ -20,6 +26,4 @@
 * Limit Credit Card Information & selectable
 * Add animations
 * User added Users
-* Change Calendar Layout
-* Refund and delete from event_item
 * Affilate Program

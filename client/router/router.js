@@ -25,7 +25,13 @@ Router.route('/account', function () {
   this.render('account');
 });
 
-Router.route('/account-dashboard', {name: 'getPaid'});
+Router.route('/account-dashboard', {
+  name: 'getPaid',
+  onBeforeAction: function () {
+    Session.set('page', "dashboard");
+    this.next();
+  }
+});
 Router.route('/payment-method', {name: 'payout'});
 Router.route('/user-profile', {name: 'profileEdit'});
 Router.route('/my-classes', {name: 'myEvent'});
@@ -37,7 +43,7 @@ Router.route('/new-class', {name: 'eventInsert'});
 Router.route('/user/:username', {
   name: 'profile',
   data: function() {
-    if (Meteor.user({username: this.username}) != undefined) {
+    if (Meteor.user({username: this.username}) ) {
       return Meteor.users.find({username: this.username});
     } else {
       return Meteor.users.find({_id: this.params._id});

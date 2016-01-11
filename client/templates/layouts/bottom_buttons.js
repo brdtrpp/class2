@@ -3,6 +3,18 @@ Template.bottomButtons.helpers({
     var view = Session.get('view');
     return view;
   },
+
+  isUser: function() {
+    if (Meteor.user()) {
+      return true;
+    }
+  },
+
+  isAccount: function() {
+    if (Meteor.user().profile.accountId) {
+      return true;
+    }
+  }
 });
 
 Template.bottomButtons.events({

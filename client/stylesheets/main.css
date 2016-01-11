@@ -28,14 +28,15 @@ select
     text-align: center;
   }
 
-.body {
-  background-color: #eee;
+body {
+  background-color: #efefef !important;
+  padding-bottom: 70px;
 }
 
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin: 0px 0px !important;
 }
 
-.navbar-xs { min-height:28px; height: 28px; }
-.navbar-xs .navbar-brand{ padding: 0px 15px;font-size: 16px;line-height: 28px; }
-.navbar-xs .navbar-nav > li > a {  padding-top: 0px; padding-bottom: 0px; line-height: 28px; }
+.navbar-fixed-bottom {
+  margin-bottom: -11px !important;
+}

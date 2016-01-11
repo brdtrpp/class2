@@ -1,9 +1,19 @@
 <template name="bottomButtons">
-  <div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-default prev"><i class="material-icons">keyboard_arrow_left</i></a>
-    <a href="#" class="btn btn-default search"><i class="material-icons">search</i></a>
-    <a href="#" class="btn btn-default today"><i class="material-icons">today</i></a>
-    <a href="#" class="btn btn-default {{view}}"><i class="material-icons">event_note</i></a>
-    <a href="#" class="btn btn-default next"><i class="material-icons">keyboard_arrow_right</i></a>
-  </div>
+{{#if isUser}}
+  <nav class="navbar navbar-fixed-bottom">
+    <div class="btn-group-sm btn-group-justified" role="group">
+      <a href="#" class="btn btn-default prev"><i class="material-icons">keyboard_arrow_left</i></a>
+      <a href="#" class="btn btn-default search"><i class="material-icons">search</i></a>
+      <a href="#" class="btn btn-default today"><i class="material-icons">today</i></a>
+      {{#if isAccount}}
+        <a href="{{pathFor 'getPaid'}}" class="btn btn-default"><i class="material-icons">home</i></a>
+      {{else}}
+        
+      {{/if}}
+      <a href="#" class="btn btn-default"><i class="material-icons">notifications</i></a>
+      <a href="#" class="btn btn-default {{view}}"><i class="material-icons">event_note</i></a>
+      <a href="#" class="btn btn-default next"><i class="material-icons">keyboard_arrow_right</i></a>
+    </div>
+  </nav>
+{{/if}}
 </template>
