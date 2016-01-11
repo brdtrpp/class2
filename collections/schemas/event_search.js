@@ -1,6 +1,6 @@
 Search = new Mongo.Collection('search');
 
-Search.attachSchema( new SimpleSchema ({ 
+Search.attachSchema( new SimpleSchema ({
   category: {
     type: String,
     allowedValues: [
@@ -35,9 +35,10 @@ Search.attachSchema( new SimpleSchema ({
         arts: "Creative Arts",
         other: "Other"
       }
-    }
+    },
+    optional: true,
   },
-  
+
   city: {
     type: String,
     max: 50
@@ -56,6 +57,6 @@ Search.attachSchema( new SimpleSchema ({
   radius: {
     type: Number,
     optional: true,
-    defaultValue: 25, 
+    defaultValue: 25,
   }
 }));

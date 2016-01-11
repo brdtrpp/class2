@@ -4,16 +4,17 @@
     <div class="btn-group-sm btn-group-justified" role="group">
       {{#if calendar}}
         <a class="btn btn-default prev"><i class="material-icons">keyboard_arrow_left</i></a>
-        <a class="btn btn-default today"><i class="material-icons">today</i></a>
       {{/if}}
+        <a class="btn btn-default today"><i class="material-icons">today</i></a>
+      
       <a class="btn btn-default search"><i class="material-icons">search</i></a>
 
       <a class="btn btn-default home"><i class="material-icons">home</i></a>
       
       <a class="btn btn-default nots"><i class="material-icons">notifications</i></a>
+      
       <a class="btn btn-default cached"><i class="material-icons">cached</i></a>
       {{#if calendar}}
-        <a class="btn btn-default {{view}}"><i class="material-icons">event_note</i></a>
         <a class="btn btn-default next"><i class="material-icons">keyboard_arrow_right</i></a>
       {{/if}}
     </div>

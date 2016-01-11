@@ -105,7 +105,7 @@ Template.calendar.helpers({
 
 
 Template.calendar.onRendered(function() {
-  Session.set('view', 'month');
+  Session.set('view', 'basicWeek');
   Tracker.autorun(function() {
       $('#calendarView').fullCalendar('refetchEvents');
   });

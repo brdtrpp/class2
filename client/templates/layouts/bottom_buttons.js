@@ -39,8 +39,7 @@ Template.bottomButtons.events({
   },
   'click .agendaday': function() {
     Session.set('view', 'month');
-    var fc = $('.fc');
-    fc.fullCalendar( 'changeView', 'agendaDay' );
+
   },
   'click .prev': function() {
     var fc = $('.fc');
@@ -51,14 +50,29 @@ Template.bottomButtons.events({
     fc.fullCalendar('next');
   },
   'click .today': function() {
-    var fc = $('.fc');
-    fc.fullCalendar('today');
+    if (Session.equals('page', 'calendar')){
+      var fc = $('.fc');
+      fc.fullCalendar('today');
+    } else {
+      Router.go('calendar');
+    }
+
   },
 
   'click .home': function() {
-    Router.go("getPaid");
+    if (Meteor.user().profile.accountId) {
+      if(Session.equals('page', 'getPaid')){
+        Router.go("myEvent");
+      } else {
+        Router.go("getPaid");
+      }
+
+    } else {
+      Router.go("myAttend");
+    }
+
   },
-  
+
   'click .cached': function() {
     if (Session.equals('page', 'myEvent')){
       if (Session.equals("tense", "future")) {
@@ -66,6 +80,29 @@ Template.bottomButtons.events({
       } else {
         Session.set("tense", "future");
       }
+    } else if (Session.equals('page', 'myAttend')){
+        if (Session.equals("status", "attending")){
+        Session.set('status', 'attended');
+      } else if (Session.equals("status", "attended")) {
+        Session.set('status', 'refunded');
+      } else {
+        Session.set('status', 'attending');
+      }
+    } else if (Session.equals('page', "calendar")){
+        if (Session.equals('view', 'basicWeek')) {
+          Session.set('view', 'basicDay');
+        } else if (Session.equals('view', 'basicDay')){
+          Session.set('view', 'month');
+        } else if (Session.equals('view', 'month')) {
+          Session.set('view', 'agendaWeek');
+        } else if (Session.equals('view', 'agendaWeek')) {
+          Session.set('view', 'agendaDay');
+        } else if (Session.equals('view', 'agendaDay')) {
+          Session.set('view', 'basicWeek');
+        }
+
+      var fc = $('.fc');
+      fc.fullCalendar('changeView', Session.get('view'));
     }
   },
 

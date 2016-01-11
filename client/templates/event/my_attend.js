@@ -22,11 +22,7 @@ Template.myAttend.helpers({
   },
 
   status: function() {
-    if (Session.equals("status", "attending")){
-      return "refunded";
-    } else if (Session.equals("status", "refunded")) {
-      return "attending";
-    }
+    return Session.get("status").toUpperCase();
   },
 });
 
