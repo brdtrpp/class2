@@ -17,30 +17,6 @@ Template.bottomButtons.helpers({
 });
 
 Template.bottomButtons.events({
-  'click .month': function() {
-    Session.set('view', 'week');
-    var fc = $('.fc');
-    fc.fullCalendar( 'changeView', 'month' );
-  },
-  'click .week': function() {
-    Session.set('view', 'day');
-    var fc = $('.fc');
-    fc.fullCalendar( 'changeView', 'basicWeek' );
-  },
-  'click .day': function() {
-    Session.set('view', 'agendaweek');
-    var fc = $('.fc');
-    fc.fullCalendar( 'changeView', 'basicDay' );
-  },
-  'click .agendaweek': function() {
-    Session.set('view', 'agendaday');
-    var fc = $('.fc');
-    fc.fullCalendar( 'changeView', 'agendaWeek' );
-  },
-  'click .agendaday': function() {
-    Session.set('view', 'month');
-
-  },
   'click .prev': function() {
     var fc = $('.fc');
     fc.fullCalendar('prev');
@@ -66,7 +42,6 @@ Template.bottomButtons.events({
       } else {
         Router.go("getPaid");
       }
-
     } else {
       Router.go("myAttend");
     }
