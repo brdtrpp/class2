@@ -2,8 +2,7 @@
 
 ##To-Do
 * Allergies
-* Categories
-* Default location display
+* Search with Categories
 * All Day broken
 * Timezone and Daylight savings time
 * How it Works on getting paid
@@ -23,3 +22,4 @@
 * User added Users
 * Change Calendar Layout
 * Refund and delete from event_item
+* Affilate Program

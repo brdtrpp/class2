@@ -7,14 +7,15 @@ Template.calendar.helpers({
   options: function() {
     return {
       // theme: true,
-      height: $(window).height() - 115,
+      height: $(window).height() - 125,
       timezone: "local",
-      defaultView:'agendaWeek',
+      defaultView:'basicWeek',
       handleWindowResize: true,
       selectable: true,
       header: {
-        left: "month,agendaWeek,agendaDay",
+        left: "",
         center: "title",
+        right: "",
       },
       eventLimit: true,
       slotDuration: '00:30:00',
@@ -52,7 +53,7 @@ Template.calendar.helpers({
         }
       ],
 
-      // dayClick: funct30n(date, jsEvent, view) {
+      // dayClick: functn(date, jsEvent, view) {
       //   var ce = {};
       //   ce.start = date.format();
       //   ce.end = date.add(1,"h").format();
@@ -98,11 +99,13 @@ Template.calendar.helpers({
         }
       },
     };
-  }
+  },
 });
 
 
+
 Template.calendar.onRendered(function() {
+  Session.set('view', 'month');
   Tracker.autorun(function() {
       $('#calendarView').fullCalendar('refetchEvents');
   });
