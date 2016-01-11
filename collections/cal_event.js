@@ -120,7 +120,8 @@ CalEvent.attachSchema(new SimpleSchema({
         arts: "Creative Arts",
         other: "Other"
       }
-    }
+    },
+    optional: true
   },
 
   description: {

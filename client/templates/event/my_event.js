@@ -105,7 +105,7 @@ Template.myEvent.events({
   },
 
   'click .tense' : function() {
-    if (Session.get("tense") == "future") {
+    if (Session.equals("tense", "future")) {
       Session.set("tense", "past");
     } else {
       Session.set("tense", "future");

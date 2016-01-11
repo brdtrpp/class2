@@ -10,11 +10,10 @@ Template.bottomButtons.helpers({
     }
   },
 
-  isAccount: function() {
-    if (Meteor.user().profile.accountId) {
-      return true;
-    }
+  calendar: function() {
+    return Session.equals('page', "calendar");
   }
+
 });
 
 Template.bottomButtons.events({
@@ -55,5 +54,31 @@ Template.bottomButtons.events({
     var fc = $('.fc');
     fc.fullCalendar('today');
   },
-  //
+
+  'click .home': function() {
+    Router.go("getPaid");
+  },
+  
+  'click .cached': function() {
+    if (Session.equals('page', 'myEvent')){
+      if (Session.equals("tense", "future")) {
+        Session.set("tense", "past");
+      } else {
+        Session.set("tense", "future");
+      }
+    }
+  },
+
+  "click .search": function() {
+    if ((Session.equals('page', 'calendar') || Session.equals('page', 'eventSearch'))) {
+      if ( Session.equals('search', false)) {
+        Session.set('search', true);
+      } else if (Session.equals('search', true)){
+        Session.set('search', false);
+      }
+    } else {
+      Session.set('search', true);
+      Router.go('eventSearch');
+    }
+  }
 });

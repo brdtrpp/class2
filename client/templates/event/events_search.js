@@ -10,3 +10,11 @@ Template.eventSearch.helpers({
     return classes;
   }
 });
+Template.eventSearch.onRendered( function() {
+  Session.set("search", true);
+});
+
+
+Template.eventSearch.onDestroyed( function() {
+  Session.set("search", false);
+});

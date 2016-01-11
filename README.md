@@ -3,6 +3,8 @@
 ##To-Do
 * Update Modal close on submit
 * Refund and delete from event_item
+* Attendee-list fix event_item
+* Width fix event_item
 * Move future/past events to bottomButtons
 * Edit function on my-classes
 * Refunded and attending move to bottomButtons
