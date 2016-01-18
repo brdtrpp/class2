@@ -19,7 +19,7 @@ var requireLogin = function() {
   }
 };
 
-Router.route('/home/:id?', {
+Router.route('/', {
   name: 'home',
   onRun: function () {
     var id = this.params.id;
@@ -31,10 +31,6 @@ Router.route('/home/:id?', {
 
 Router.route('/calendar', {
   name: 'calendar',
-  onBeforeAction: function () {
-    Session.set('search', true);
-    this.next();
-  }
 });
 
 Router.route('/account', function () {
@@ -83,5 +79,10 @@ Router.onBeforeAction(requireLogin, {only: [
   'myAttend',
   'account'
 ]});
+
+// Transitioner.default({
+//   in: 'transition.fadeIn',
+//   out: 'transition.fadeOut'
+// });
 
 

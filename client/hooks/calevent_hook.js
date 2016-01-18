@@ -8,7 +8,7 @@ AutoForm.hooks({
         } else {
           Meteor.call('saveCalEvent',doc);
         }
-        Router.go('/my-classes');
+        
         $('#afModal').modal('hide');
         return false;
       }
@@ -26,6 +26,7 @@ AutoForm.hooks({
           Meteor.call('updateCalEvent',doc, id);
         }
         Router.go('/class/' + id);
+        $('#afModal').modal('hide');
         return false;
       }
     },

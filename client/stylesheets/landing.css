@@ -1,0 +1,15 @@
+.landing-header {
+  margin-top: 280px;
+  margin-bottom: 280px;
+}
+
+.mr-footer {
+  z-index: 5;
+  font-weight: 600;
+  background: #161616;
+  color: #999;
+  padding-top: 10px;
+  min-height: 230px;
+  margin-top: 25px;
+  margin-bottom: -75px;
+}

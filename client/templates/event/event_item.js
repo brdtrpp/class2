@@ -4,23 +4,19 @@ Template.eventItem.helpers({
   },
 
   attendee: function() {
-    return Attendee.find({eventId: this._id});
-  },
-
-  refunded: function() {
     var atts = [];
-    var att = Attendee.find({reEventId: this._id}).fetch();
-    var ret = Attendee.find({eventId: this._id}).fetch();
-    att.forEach( function(item){
-      console.log(item);
-      atts.push(item);
-    });
-    ret.forEach( function(items) {
-      atts.push(item);
-      console.log(item);
-    });
-    console.log(atts);
-    // return atts;
+    var att = Attendee.find({eventId: this._id}).fetch();
+    var ret = Attendee.find({reEventId: this._id}).fetch();
+    if (Session.equals('attView', 'current')){
+      att.forEach( function(item){
+        atts.push(item);
+      });
+    } else if(Session.equals('attView', 'refunded')){
+      ret.forEach( function(items) {
+        atts.push(items);
+      });
+    }
+    return atts;
   },
 
   aCount: function() {
@@ -49,6 +45,14 @@ Template.eventItem.helpers({
     return moment().isBefore(start);
   },
 
+  attendeeList: function() {
+    if (Session.equals('attView', 'current')){
+      return "Attendees";
+    } else if (Session.equals('attView', 'refunded')){
+      return "Past/Refunded Attendees";
+    }
+  }
+
 });
 
 Template.eventItem.events({
@@ -56,3 +60,7 @@ Template.eventItem.events({
     $('#attend').modal('hide');
   },
 });
+
+Template.eventItem.onRendered(function(){
+  Session.set('attView', "current");
+})

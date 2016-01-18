@@ -20,9 +20,13 @@
       <div class="panel-body">
         <p>{{description}}</p>
       </div>
-      <div class="panel-footer">
-        TOASTER
-      </div>
+      {{#if isAttendee}}
+        <div class="panel-footer">
+          {{#each attendee}}
+          {{> attendeesItem}}
+        {{/each}}
+        </div>
+      {{/if}}
     </div>
   </div>
 </template>

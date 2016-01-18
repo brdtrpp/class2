@@ -25,7 +25,14 @@ Template.eventItemList.helpers({
   },
 
   isAttendee: function() {
-    return true;
+    if (Attendee.find({eventId: this._id}).count() > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  },
+  attendee: function() {
+    return Attendee.find({eventId: this._id});
   },
 });
 

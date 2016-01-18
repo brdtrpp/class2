@@ -8,6 +8,7 @@ Meteor.methods({
         if (CalEvent.findOne({_id: doc._id}).owner === Meteor.userId()) {
           Meteor.call('refundEvent', doc);
           CalEvent.remove({_id: doc._id});
+          Router.route('/my-classes');
         }
       }
     }

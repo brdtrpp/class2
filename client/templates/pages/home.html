@@ -1,10 +1,7 @@
 <template name="home">
-  <div class="container-fluid">
-    {{#if currentUser}}
-      <h3>TOASTER</h3>
-    {{else}}
-    <h2>Home</h2>
-    {{/if}}
-    {{ip}}
-  </div>
+  {{#if currentUser}}
+    <h3>TOASTER</h3>
+  {{else}}
+    {{> landing}}
+  {{/if}}
 </template>

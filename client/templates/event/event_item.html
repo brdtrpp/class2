@@ -1,5 +1,5 @@
 <template name="eventItem">
-  <div class="container-fluid">
+  <div class="container">
     <div class="panel panel-default">
       <div class="panel-heading">
           <ul class="panel-title pull-right">
@@ -29,17 +29,10 @@
       </div>
     </div>
     <ul class="list-group">
-      <h3>Attendees</h3>
+      <h3 class="text-center">{{attendeeList}}</h3>
       {{#each attendee}}
         {{> attendeesItem}}
       {{/each}}
-    </ul>
-    <ul class="list-group">
-      <h3>Refunded Attendees</h3>
-      {{refunded}}
-      <!--{{#each refunded}}-->
-      <!--  {{> attendeesItem}}-->
-      <!--{{/each}}-->
     </ul>
   </div>
 

@@ -23,7 +23,7 @@ Template.calendar.helpers({
         {
           events: function(start,end,timezone,callback) {
             if (Meteor.user().profile.homeAddress) {
-              var event = CalEventIndex.search({city: Meteor.user().profile.homeAddress.city, state: Meteor.user().profile.homeAddress.state}).fetch();
+              var event = CalEvent.find({city: Meteor.user().profile.homeAddress.city, state: Meteor.user().profile.homeAddress.state}).fetch();
             }
             callback(event);
           },
@@ -32,8 +32,7 @@ Template.calendar.helpers({
         {
           events: function(start,end,timezone,callback) {
             if (Meteor.user().profile.accountId) {
-              console.log('Toaster');
-              var events = CalEventIndex.search({owner: Meteor.userId()}).fetch();
+              var events = CalEvent.find({owner: Meteor.userId()}).fetch();
               callback(events);
             } else {
               callback(null);
@@ -60,13 +59,12 @@ Template.calendar.helpers({
       //   Meteor.call('saveCalEvent',ce);
       // },
       eventClick: function(event, jsEvent, view) {
-        var cal = CalEvent.findOne(event.__originalId);
-        Router.go('/class/'+ cal._id, {
-        });
+        var id = event._id;
+        Router.go('/class/'+ id);
       },
 
       eventDrop: function(event, delta, revertFunc, jsEvent, ui, view) {
-        var id = CalEvent.findOne(event.__originalId)._id;
+        var id = event._id;
         Meteor.call('moveEvent', id, delta);
       },
 
@@ -81,13 +79,14 @@ Template.calendar.helpers({
       select: function(start, end, jsEvent, view) {
         var user = Meteor.user();
         var doc = {};
-        doc.start = start._d.toISOString();
-        doc.end = end._d.toISOString();
+        doc.start = start._d;
+        doc.end = end._d;
         doc.street = user.profile.businessAddress.street;
         doc.city = user.profile.businessAddress.city;
         doc.state = user.profile.businessAddress.state;
         doc.zip = user.profile.businessAddress.zip;
         Meteor.call('saveCalEvent', doc);
+        console.log(doc);
       },
 
       eventResize: function(event, delta, revertFunc, jsEvent, ui, view) {
@@ -118,3 +117,5 @@ Template.calendar.onRendered(function() {
     fc.fullCalendar('refetchEvents');
   });
 });
+
+

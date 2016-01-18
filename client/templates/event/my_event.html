@@ -5,6 +5,9 @@
     <table class="table table-hover">
       <thead>
         <tr>
+          <th>
+            <i class="material-icons">event_busy</i>
+          </th>
           <th>Title</th>
           <th>Date</th>
           <th>Attending</th>
@@ -14,6 +17,7 @@
       <tbody>
         {{#each calevent}}
           <tr>
+            <td><i class="material-icons">check_box_outline_blank</i></td>
             <td class='clickable-column'><a href="{{pathFor 'eventItem'}}">{{title}}</a></td>
             <td class='clickable-column'>{{startDate}}</td>
             <td class='clickable-column'>{{attending}}/{{attendeeCount}}</td>

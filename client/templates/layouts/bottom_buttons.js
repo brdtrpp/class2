@@ -10,6 +10,10 @@ Template.bottomButtons.helpers({
     }
   },
 
+  hasAccount: function() {
+    return Meteor.user().profile.accountId;
+  },
+
   calendar: function() {
     return Session.equals('page', "calendar");
   }
@@ -37,10 +41,10 @@ Template.bottomButtons.events({
 
   'click .home': function() {
     if (Meteor.user().profile.accountId) {
-      if(Session.equals('page', 'getPaid')){
-        Router.go("myEvent");
-      } else {
+      if(Session.equals('page', 'myEvent')){
         Router.go("getPaid");
+      } else {
+        Router.go("myEvent");
       }
     } else {
       Router.go("myAttend");
@@ -78,6 +82,12 @@ Template.bottomButtons.events({
 
       var fc = $('.fc');
       fc.fullCalendar('changeView', Session.get('view'));
+    } else if (Session.equals('page', 'eventItem')) {
+      if(Session.equals('attView', "current")) {
+        Session.set('attView', "refunded");
+      } else {
+        Session.set('attView', "current");
+      }
     }
   },
 
