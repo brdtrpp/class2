@@ -1,15 +1,20 @@
 .landing-header {
-  margin-top: 280px;
-  margin-bottom: 280px;
+  padding-top: 15em;
+  padding-bottom: 20em;
+}
+.white-bg {
+  background-color: white;
+}
+.grey-bg {
+  background-color: #CCC;
 }
 
-.mr-footer {
-  z-index: 5;
-  font-weight: 600;
-  background: #161616;
-  color: #999;
-  padding-top: 10px;
-  min-height: 230px;
-  margin-top: 40px;
-  margin-bottom: -75px;
+.bgi1{
+    background: url(/images/bgi1.jpg);
+    background-size: cover;
+}
+
+.bgi2{
+    background: url(/images/photo-1449973405711-881157523e5a.jpg);
+    background-size: cover;
 }

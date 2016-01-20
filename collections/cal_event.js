@@ -204,4 +204,11 @@ CalEvent.attachSchema(new SimpleSchema({
       omit: true
     },
   },
+  canceled: {
+    type: Boolean,
+    defaultValue: false,
+    autoform: {
+      omit: true
+    }
+  },
 }));
