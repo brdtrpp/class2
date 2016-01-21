@@ -33,8 +33,8 @@ Router.route('/calendar', {
   name: 'calendar',
 });
 
-Router.route('/account', function () {
-  this.render('account');
+Router.route('/account', {
+  name: 'account'
 });
 
 Router.route('/account-dashboard', {

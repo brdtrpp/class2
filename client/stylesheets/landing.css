@@ -9,12 +9,6 @@
   background-color: #CCC;
 }
 
-.bgi1{
-    background: url(/images/bgi1.jpg);
-    background-size: cover;
-}
-
-.bgi2{
-    background: url(/images/photo-1449973405711-881157523e5a.jpg);
-    background-size: cover;
+.green-bg {
+  background-color: #3FB618;
 }

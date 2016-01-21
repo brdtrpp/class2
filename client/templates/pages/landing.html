@@ -1,32 +1,31 @@
 <template name="landing">
   <div class="container-fluid">
     <div class="row">
-      <div class='col-md-6 bgi1'>
-        <div class="col-md-8 col-md-offset-4 landing-header" align="right">
+      <div class='container-fluid landing-header' align='center'>
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2">
             <h1>
-              <span style="background-color: #fff">
-                <strong> Find your next hobby, lesson, or class by a local instructor </strong>
-              </span>
+              <strong>
+                {{headline}}
+              </strong>
             </h1>
-          <div class='btn btn-success btn-lg'>
-            Find a Class
+            <h2>
+              {{subtext}}
+            </h2>
           </div>
         </div>
+        <div class="row">
+          <p>
+            <a class="btn btn-lg student">Students & Athletes</a>
+            <a class="btn btn-lg instructor">Instructors</a>
+            <a class="btn btn-lg home">Home Schoolers</a>
+          </p>
+        </div>
+        <div class='row'>
+          <a href='{{pathFor "register"}}' class="btn btn-success btn-lg">Register Now</a>
+        </div>
+
       </div>
-
-      <div class='col-md-6 bgi2'>
-        <div class="col-md-8 landing-header">
-          <h1 align="left">
-            <span style="background-color: #fff">
-              <strong>Extremely easy class management, registering, and payment acceptance</strong>
-            </span>
-          </h1>
-          <div class='btn btn-primary btn-lg'>
-            Start Instructing
-          </div>
-        </div>
-    </div>
-
     </div>
 
     <div class='row white-bg'>
@@ -34,45 +33,63 @@
         <h1 align='center' >
           - <strong>How it Works for <span class='userType'><strong>{{userType}}</strong></span></strong> -
         </h1>
-        {{#if isStudent}}
           <div class='col-md-4'>
             <h4>Step: 1</h4>
             <h3>
-              Update profile
+              {{step1}}
             </h3>
           </div>
           <div class='col-md-4'>
             <h4>Step: 2</h4>
             <h3>
-              Find What Interestes You
+              {{step2}}
             </h3>
           </div>
           <div class='col-md-4'>
             <h4>Step: 3</h4>
             <h3>
-              Register for Classes
+              {{step3}}
             </h3>
           </div>
-        {{else}}
-          <div class='col-md-4'>
-            <h4>Step: 1</h4>
-            <h3>
-              Update Account
-            </h3>
-          </div>
-          <div class='col-md-4'>
-            <h4>Step: 2</h4>
-            <h3>
-              Create Classes
-            </h3>
-          </div>
-          <div class='col-md-4'>
-            <h4>Step: 3</h4>
-            <h3>
-              Manage Attendees
-            </h3>
-          </div>
-        {{/if}}
+        <!--{{#if isStudent}}-->
+        <!--  <div class='col-md-4'>-->
+        <!--    <h4>Step: 1</h4>-->
+        <!--    <h3>-->
+        <!--      Update profile-->
+        <!--    </h3>-->
+        <!--  </div>-->
+        <!--  <div class='col-md-4'>-->
+        <!--    <h4>Step: 2</h4>-->
+        <!--    <h3>-->
+        <!--      Find What Interestes You-->
+        <!--    </h3>-->
+        <!--  </div>-->
+        <!--  <div class='col-md-4'>-->
+        <!--    <h4>Step: 3</h4>-->
+        <!--    <h3>-->
+        <!--      Register for Classes-->
+        <!--    </h3>-->
+        <!--  </div>-->
+        <!--{{else}}-->
+        <!--  <div class='col-md-4'>-->
+        <!--    <h4>Step: 1</h4>-->
+        <!--    <h3>-->
+        <!--      Update Account-->
+        <!--    </h3>-->
+        <!--  </div>-->
+        <!--  <div class='col-md-4'>-->
+        <!--    <h4>Step: 2</h4>-->
+        <!--    <h3>-->
+        <!--      Create Classes-->
+        <!--    </h3>-->
+        <!--  </div>-->
+        <!--  <div class='col-md-4'>-->
+        <!--    <h4>Step: 3</h4>-->
+        <!--    <h3>-->
+        <!--      Manage Attendees-->
+        <!--    </h3>-->
+        <!--  </div>-->
+        <!--{{/if}}-->
       </div>
     </div>
 
