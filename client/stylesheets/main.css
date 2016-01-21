@@ -3,6 +3,10 @@
   margin-bottom: -35px;
 }
 
+.userType {
+  text-decoration: none;
+}
+
 input[type="text"]
   {
       font-size:16px;

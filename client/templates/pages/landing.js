@@ -5,6 +5,10 @@ Template.landing.helpers({
     } else if (Session.equals('userType', "instructor")) {
       return "Instructors";
     }
+  },
+  
+  isStudent: function() {
+    return Session.equals('userType', 'student');
   }
 });
 

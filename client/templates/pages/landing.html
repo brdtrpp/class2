@@ -4,8 +4,10 @@
       <div class='col-md-6 bgi1'>
         <div class="col-md-8 col-md-offset-4 landing-header" align="right">
             <h1>
-            <strong>Find your next hobby, lesson, or class by a local instructor</strong>
-          </h1>
+              <span style="background-color: #fff">
+                <strong> Find your next hobby, lesson, or class by a local instructor </strong>
+              </span>
+            </h1>
           <div class='btn btn-success btn-lg'>
             Find a Class
           </div>
@@ -15,7 +17,9 @@
       <div class='col-md-6 bgi2'>
         <div class="col-md-8 landing-header">
           <h1 align="left">
-            <strong>Extremely easy class management, registering, and payment acceptance</strong>
+            <span style="background-color: #fff">
+              <strong>Extremely easy class management, registering, and payment acceptance</strong>
+            </span>
           </h1>
           <div class='btn btn-primary btn-lg'>
             Start Instructing
@@ -26,22 +30,51 @@
     </div>
 
     <div class='row white-bg'>
-      <div class='container'>
+      <div class='container' align='center'>
         <h1 align='center' >
-          - <strong>How it Works for <span class='btn btn-primary btn-lg userType'><strong>{{userType}}</strong></span></strong> -
+          - <strong>How it Works for <span class='userType'><strong>{{userType}}</strong></span></strong> -
         </h1>
-        <div class='col-md-4'>
-          <h2 align='center'>Step: 1</h2>
-        </div>
-        <div class='col-md-4'>
-          <h2 align='center'>Step: 2</h2>
-        </div>
-        <div class='col-md-4'>
-          <h2 align='center'>Step: 3</h2>
-        </div>
+        {{#if isStudent}}
+          <div class='col-md-4'>
+            <h4>Step: 1</h4>
+            <h3>
+              Update profile
+            </h3>
+          </div>
+          <div class='col-md-4'>
+            <h4>Step: 2</h4>
+            <h3>
+              Find What Interestes You
+            </h3>
+          </div>
+          <div class='col-md-4'>
+            <h4>Step: 3</h4>
+            <h3>
+              Register for Classes
+            </h3>
+          </div>
+        {{else}}
+          <div class='col-md-4'>
+            <h4>Step: 1</h4>
+            <h3>
+              Update Account
+            </h3>
+          </div>
+          <div class='col-md-4'>
+            <h4>Step: 2</h4>
+            <h3>
+              Create Classes
+            </h3>
+          </div>
+          <div class='col-md-4'>
+            <h4>Step: 3</h4>
+            <h3>
+              Manage Attendees
+            </h3>
+          </div>
+        {{/if}}
       </div>
     </div>
-
 
     <div class='row grey-bg'>
       <div class='container'>
