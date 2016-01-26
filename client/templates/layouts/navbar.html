@@ -17,6 +17,11 @@
         <a class="navbar-brand" href="{{pathFor 'home'}}">
           <img alt="Class" height="20" src="/images/class-type.png">
         </a>
+        {{#if currentUser}}
+        <!--<span class='navbar-brand pull-right' >-->
+        <!--  <span role="button" class='back'><i class="material-icons">notifications_none</i></span>-->
+        <!--</span>-->
+        {{/if}}
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -27,27 +32,27 @@
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Classes <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               {{#if hasAccount}}
-                <li><a href="{{pathFor 'myEvent'}}">Instructing</a></li>
+                <li><a class='navclose' href="{{pathFor 'myEvent'}}">Instructing</a></li>
+              {{else}}
+                <li><a class='navclose' href="{{pathFor 'getPaid'}}">Start Instructin</a></li>
               {{/if}}
-              <li><a href="{{pathFor 'myAttend'}}">Attending</a></li>
-              <li><a href="{{pathFor 'eventSearch'}}">Search</a></li>
+              <li><a class='navclose' href="{{pathFor 'myAttend'}}">Attending</a></li>
+              <li><a class='navclose' href="{{pathFor 'eventSearch'}}">Search</a></li>
               <li class="divider"></li>
-              <li><a href="{{pathFor 'calendar'}}">My Calendar</a></li>
+              <li><a class='navclose' href="{{pathFor 'calendar'}}">My Calendar</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Account <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="{{pathFor 'profileEdit'}}">Edit Profile</a></li>
+              <li><a class='navclose' href="{{pathFor 'profileEdit'}}">Edit Profile</a></li>
               <li class="divider"></li>
-              <li><a href="{{pathFor 'payout'}}">Payment Method</a></li>
-              <li><a href="{{pathFor 'getPaid'}}">
-                {{#if hasAccount}}
+              <li><a class='navclose' href="{{pathFor 'payout'}}">Payment Method</a></li>
+              {{#if hasAccount}}
+                <li><a class='navclose' href="{{pathFor 'getPaid'}}">
                   Account Dashboard
-                {{else}}
-                  Start Instructing
-                {{/if}}
-              </a></li>
+                </a></li>
+              {{/if}}
             </ul>
           </li>
           {{else}}

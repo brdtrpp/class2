@@ -10,3 +10,10 @@ Template.navbar.helpers({
     }
   },
 });
+
+Template.navbar.events({
+  'click .navclose': function() {
+
+    $('.navbar-toggle').click(); //bootstrap 3.x by Richard
+  }
+});

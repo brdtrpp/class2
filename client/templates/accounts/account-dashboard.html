@@ -1,11 +1,17 @@
 <template name="getPaid">
   <div class="col-md-8 col-md-offset-2">
     {{#if hasAccount}}
-      <h2>Account Dashboard</h2>
-        <h3>{{account.business_name}}</h3>
-        <p>
+    <h2 align='center'>Account Dashboard</h2>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{account.business_name}}</h3>
+          <span class='pull-right' role='button'><i class="material-icons">mode_edit</i></span>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
           <h4><small>Account Representitive: </small>{{account.legal_entity.first_name}} {{account.legal_entity.last_name}} <small>email: </small>{{account.email}} </h4>
-        </p>
         {{account.legal_entity.dob.day}}/{{account.legal_entity.dob.month}}/{{account.legal_entity.dob.year}}
         {{account.external_accounts.data.[0].bank_name}}
         {{account.external_accounts.data.[0].last4}}
