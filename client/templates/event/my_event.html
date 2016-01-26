@@ -6,8 +6,8 @@
       <thead>
         <tr>
           <th>
-            <i class="material-icons bulk">done_all</i>
-            <i class="material-icons delete">delete</i>
+            <span role='button'><i class="material-icons bulk">done_all</i></span>
+            <span role='button'><i class="material-icons delete">delete</i></span>
           </th>
           <th>Title</th>
           <th>Date</th>
@@ -17,7 +17,7 @@
       <tbody>
         {{#each calevent}}
           <tr>
-            <td><span class='{{select}}'><i class="material-icons">{{checkbox}}</i></span></td>
+            <td><span class='{{select}}' role="button"><i class="material-icons">{{checkbox}}</i></span></td>
             <td class='clickable-column'><a href="{{pathFor 'eventItem'}}">{{title}}</a></td>
             <td class='clickable-column'>{{startDate}}</td>
             <td class='clickable-column'>{{attending}}/{{attendeeCount}}</td>

@@ -8,7 +8,8 @@ Router.configure({
   onBeforeAction: function () {
     Session.set('page', Router.current().route.getName());
     this.next();
-  }
+  },
+
 });
 
 var requireLogin = function() {

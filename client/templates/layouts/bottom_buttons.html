@@ -11,7 +11,12 @@
 
       <a class="btn btn-default home"><i class="material-icons">home</i></a>
 
-      <a class="btn btn-default nots"><i class="material-icons">notifications</i></a>
+
+        {{#afModal class="btn btn-default" collection="CalEvent" formId="insertClass" operation="insert" title="Start a New Class"}}
+         <i class="material-icons">add_box</i>
+        {{/afModal}}
+
+
 
       <a class="btn btn-default cached"><i class="material-icons">cached</i></a>
 

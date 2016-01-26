@@ -4,15 +4,16 @@
     <div class="container-fluid">
       <div class="navbar-header">
 
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <i class="glyphicon glyphicon-menu-hamburger"></i>
+
+        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only"></span>
+          <i class="material-icons">menu</i>
         </button>
-        {{#if currentUser}}
-        <a class='navbar-brand'>
-          <i class="material-icons">arrow_back</i>
-        </a>
-        {{/if}}
+        <!--{{#if currentUser}}-->
+        <!--<span class='navbar-brand' >-->
+        <!--  <span role="button" class='back'><i class="material-icons">arrow_back</i></span>-->
+        <!--</span>-->
+        <!--{{/if}}-->
         <a class="navbar-brand" href="{{pathFor 'home'}}">
           <img alt="Class" height="20" src="/images/class-type.png">
         </a>
@@ -49,13 +50,6 @@
               </a></li>
             </ul>
           </li>
-            {{#if hasAccount}}
-            <li>
-              {{#afModal collection="CalEvent" formId="insertClass" operation="insert"}}
-                New Class
-              {{/afModal}}
-            </li>
-            {{/if}}
           {{else}}
           <li><a href="{{pathFor 'calendar'}}">Calendar</a></li>
           <li><a href="{{pathFor 'eventSearch'}}">Classes</a></li>

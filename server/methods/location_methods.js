@@ -10,7 +10,7 @@ Meteor.methods({
     } else {
     var rad = Zipcodes.radius(l[0].zip, doc.radius);
       _.forEach(rad, function(item){
-        var event = CalEvent.find({zip: item}).fetch();
+        var event = CalEvent.find({zip: item, canceled: false}).fetch();
         _.forEach(event, function(items){
           if (_.findWhere(events, {_id: items._id}) === undefined) {
             events.push(items);

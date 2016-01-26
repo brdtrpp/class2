@@ -17,11 +17,6 @@ AddressSchema = new SimpleSchema({
         });
       }
     }
-    // options: function () {
-    //     _.map(, function (c, i) {
-    //       return {label: "Color " + i + ": " + c, value: c};
-    //     });
-    //   }
   },
   zip: {
     type: String,
