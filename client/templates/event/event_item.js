@@ -36,7 +36,7 @@ Template.eventItem.helpers({
   },
 
   customerPrice: function() {
-    var cPrice = this.price * 1.1;
+    var cPrice = this.price * 1.05;
     return cPrice.toFixed(2);
   },
 

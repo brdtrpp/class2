@@ -1,5 +1,6 @@
 Meteor.methods({
   removeCal: function(doc) {
+    console.log(doc);
     //refund to antendees
     if (doc.owner === Meteor.userId()){
       if (moment(moment(doc.start).toISOString()).isBefore(moment())) {
@@ -8,7 +9,6 @@ Meteor.methods({
         if (CalEvent.findOne({_id: doc._id}).owner === Meteor.userId()) {
           Meteor.call('refundEvent', doc);
           CalEvent.update({_id: doc._id}, {$set: {canceled: true}});
-          Router.route('/my-classes');
         }
       }
     }

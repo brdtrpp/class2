@@ -1,8 +1,8 @@
 <template name="landing">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row" id="grad1">
       <div class='container-fluid landing-header' align='center'>
-        <div class="row">
+        <div class="row" >
           <div class="col-sm-8 col-sm-offset-2">
             <h1>
               <strong>
@@ -16,15 +16,14 @@
         </div>
         <div class="row">
           <p>
-            <a class="btn btn-lg student">Students & Athletes</a>
-            <a class="btn btn-lg instructor">Instructors</a>
-            <a class="btn btn-lg home">Home Schoolers</a>
+            <a class="btn btn-primary btn-xs student">Students & Athletes</a>
+            <a class="btn btn-primary btn-xs instructor">Instructors</a>
+            <a class="btn btn-primary btn-xs home">Home Schoolers</a>
           </p>
         </div>
         <div class='row'>
           <a href='{{pathFor "register"}}' class="btn btn-success btn-lg">Register Now</a>
         </div>
-
       </div>
     </div>
 
@@ -33,6 +32,9 @@
         <h1 align='center' >
           - <strong>How it Works for <span class='userType'><strong>{{userType}}</strong></span></strong> -
         </h1>
+        <h2 align='center'>
+          {{subtext2}}
+        </h2>
           <div class='col-md-4'>
             <h4>Step: 1</h4>
             <h3>
@@ -51,55 +53,71 @@
               {{step3}}
             </h3>
           </div>
-        <!--{{#if isStudent}}-->
-        <!--  <div class='col-md-4'>-->
-        <!--    <h4>Step: 1</h4>-->
-        <!--    <h3>-->
-        <!--      Update profile-->
-        <!--    </h3>-->
-        <!--  </div>-->
-        <!--  <div class='col-md-4'>-->
-        <!--    <h4>Step: 2</h4>-->
-        <!--    <h3>-->
-        <!--      Find What Interestes You-->
-        <!--    </h3>-->
-        <!--  </div>-->
-        <!--  <div class='col-md-4'>-->
-        <!--    <h4>Step: 3</h4>-->
-        <!--    <h3>-->
-        <!--      Register for Classes-->
-        <!--    </h3>-->
-        <!--  </div>-->
-        <!--{{else}}-->
-        <!--  <div class='col-md-4'>-->
-        <!--    <h4>Step: 1</h4>-->
-        <!--    <h3>-->
-        <!--      Update Account-->
-        <!--    </h3>-->
-        <!--  </div>-->
-        <!--  <div class='col-md-4'>-->
-        <!--    <h4>Step: 2</h4>-->
-        <!--    <h3>-->
-        <!--      Create Classes-->
-        <!--    </h3>-->
-        <!--  </div>-->
-        <!--  <div class='col-md-4'>-->
-        <!--    <h4>Step: 3</h4>-->
-        <!--    <h3>-->
-        <!--      Manage Attendees-->
-        <!--    </h3>-->
-        <!--  </div>-->
-        <!--{{/if}}-->
       </div>
     </div>
 
     <div class='row grey-bg'>
       <div class='container'>
-        <div class='col-md-6'>
+        <div class='col-md-8'>
           <h3 align='center'><strong>Features</strong></h3>
         </div>
-         <div class='col-md-6'>
+         <div class='col-md-4'>
           <h3 align='center'><strong>Benefits</strong></h3>
+        </div>
+        <div class='col-md-4'>
+          <h3 align='center'><strong>Features</strong></h3>
+        </div>
+         <div class='col-md-8'>
+          <h3 align='center'><strong>Benefits</strong></h3>
+        </div>
+        <div class='col-md-4'>
+          <h3 align='center'><strong>Features</strong></h3>
+        </div>
+         <div class='col-md-8'>
+          <h3 align='center'><strong>Benefits</strong></h3>
+        </div>
+        <div class='col-md-4'>
+          <h3 align='center'><strong>Features</strong></h3>
+        </div>
+         <div class='col-md-8'>
+          <h3 align='center'><strong>Benefits</strong></h3>
+        </div>
+      </div>
+    </div>
+
+    <div class='row' id="grad2">
+      <div class='container'>
+        <h1 align='center'>Pricing and Payments</h1>
+        <h3>Class is free to join, free to use and we only collect fees when money exchanges hand. We mark-up the transaction by 5%, but you don't have to do any math</h3>
+        <div class="row">
+          <div class='col-md-3 '>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                Toaster
+              </div>
+            </div>
+          </div>
+          <div class='col-md-3 '>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                Toaster
+              </div>
+            </div>
+          </div>
+          <div class='col-md-3 '>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                Toaster
+              </div>
+            </div>
+          </div>
+          <div class='col-md-3 '>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                Toaster
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

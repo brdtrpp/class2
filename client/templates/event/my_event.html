@@ -6,25 +6,21 @@
       <thead>
         <tr>
           <th>
-            <i class="material-icons">event_busy</i>
+            <i class="material-icons bulk">done_all</i>
+            <i class="material-icons delete">delete</i>
           </th>
           <th>Title</th>
           <th>Date</th>
           <th>Attending</th>
-          <!--<th>{{edit}}</th>-->
         </tr>
       </thead>
       <tbody>
         {{#each calevent}}
           <tr>
-            <td><i class="material-icons">check_box_outline_blank</i></td>
+            <td><span class='{{select}}'><i class="material-icons">{{checkbox}}</i></span></td>
             <td class='clickable-column'><a href="{{pathFor 'eventItem'}}">{{title}}</a></td>
             <td class='clickable-column'>{{startDate}}</td>
             <td class='clickable-column'>{{attending}}/{{attendeeCount}}</td>
-            <!--<td>-->
-              <!--<a class="glyphicon glyphicon-pencil" aria-hidden="true"></a>-->
-              <!--<a class="glyphicon glyphicon-{{refund}}" aria-hidden="true" ></a>-->
-            <!--</td>-->
           </tr>
         {{/each}}
       </tbody>

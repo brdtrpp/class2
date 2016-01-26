@@ -8,7 +8,7 @@ Template.myEvent.helpers({
   },
   calevent: function() {
     if (Session.get('tense') == "future") {
-      return CalEvent.find({owner: Meteor.userId(), start: {$gt: moment().toISOString()}}, {sort: {start: 1}});
+      return CalEvent.find({owner: Meteor.userId(), canceled: false, start: {$gt: moment().toISOString()}}, {sort: {start: 1}});
     } else {
       return CalEvent.find({owner: Meteor.userId(), start: {$lt: moment().toISOString()}}, {sort: {start: 1}});
     }
@@ -41,16 +41,16 @@ Template.myEvent.helpers({
 
   count:function() {
     if (Session.equals('tense', "future") ) {
-      if (CalEvent.find({owner: Meteor.userId(), start: {$gt: moment().toISOString()}}, {sort: {start: 1}}).count() == 0) {
+      if (CalEvent.find({owner: Meteor.userId(), canceled: false, start: {$gt: moment().toISOString()}}, {sort: {start: 1}}).count() == 0) {
         return "no";
       } else {
-        return CalEvent.find({owner: Meteor.userId(), start: {$gt: moment().toISOString()}}, {sort: {start: 1}}).count();
+        return CalEvent.find({owner: Meteor.userId(), canceled: false, start: {$gt: moment().toISOString()}}, {sort: {start: 1}}).count();
       }
     } else if (Session.get('tense') == "past") {
-      if (CalEvent.find({owner: Meteor.userId(), start: {$lt: moment().toISOString()}}, {sort: {start: -1}}).count() == 0) {
+      if (CalEvent.find({owner: Meteor.userId(), canceled: false, start: {$lt: moment().toISOString()}}, {sort: {start: -1}}).count() == 0) {
         return "no";
       } else {
-        return CalEvent.find({owner: Meteor.userId(), start: {$lt: moment().toISOString()}}, {sort: {start: -1}}).count();
+        return CalEvent.find({owner: Meteor.userId(), canceled: false, start: {$lt: moment().toISOString()}}, {sort: {start: -1}}).count();
       }
     }
   },
@@ -73,6 +73,22 @@ Template.myEvent.helpers({
     } else if (Session.equals("tense", "future")) {
       return "remove";
     }
+  },
+
+  select:function() {
+    if (CalEvent.findOne({_id: this._id, selected: true})) {
+      return "selected";
+    } else {
+      return 'unselected';
+    }
+  },
+
+  checkbox:function() {
+    if (CalEvent.findOne({_id: this._id, selected: true})) {
+      return "check_box";
+    } else {
+      return 'check_box_outline_blank';
+    }
   }
 });
 
@@ -83,7 +99,24 @@ Template.myEvent.events({
       Meteor.call('refundEvent', doc);
     }
   },
-  
+
+  'click .delete': function() {
+    var events = CalEvent.find({selected: true}).fetch();
+    _.forEach(events, function(doc) {
+
+      Meteor.call('removeCal', doc);
+    });
+  },
+
+  'click .unselected':function() {
+    CalEvent.update({_id: this._id}, {$set: {selected: true}});
+  },
+
+  'click .selected':function() {
+    console.log("toaster");
+    CalEvent.update({_id: this._id}, {$set: {selected: false}});
+  },
+
   'click .clickable-column' : function () {
     Router.go('/class/' + this._id);
   },
