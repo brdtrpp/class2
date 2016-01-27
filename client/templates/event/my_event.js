@@ -103,6 +103,7 @@ Template.myEvent.events({
   'click .delete': function() {
     var events = CalEvent.find({selected: true}).fetch();
     _.forEach(events, function(doc) {
+
       Meteor.call('removeCal', doc);
     });
   },
@@ -112,6 +113,7 @@ Template.myEvent.events({
   },
 
   'click .selected':function() {
+    console.log("toaster");
     CalEvent.update({_id: this._id}, {$set: {selected: false}});
   },
 
@@ -130,10 +132,10 @@ Template.myEvent.events({
     }
   },
 
-  'click .glyphicon-pencil' : function() {
-    var doc = CalEvent.findOne({_id: this._id});
-    Meteor.call('editEvent', doc);
-  },
+  // 'click .glyphicon-pencil' : function() {
+  //   var doc = CalEvent.findOne({_id: this._id});
+  //   Meteor.call('editEvent', doc);
+  // },
 
   'click .tense' : function() {
     if (Session.equals("tense", "future")) {

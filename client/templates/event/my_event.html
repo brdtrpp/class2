@@ -6,21 +6,31 @@
       <thead>
         <tr>
           <th>
-            <span role='button'><i class="material-icons bulk">done_all</i></span>
-            <span role='button'><i class="material-icons delete">delete</i></span>
+            <i class="material-icons bulk">done_all</i>
+            <i class="material-icons delete">delete</i>
           </th>
           <th>Title</th>
           <th>Date</th>
           <th>Attending</th>
+          <th>{{edit}}</th>
         </tr>
       </thead>
       <tbody>
         {{#each calevent}}
           <tr>
-            <td><span class='{{select}}' role="button"><i class="material-icons">{{checkbox}}</i></span></td>
-            <td class='clickable-column'><a href="{{pathFor 'eventItem'}}">{{title}}</a></td>
-            <td class='clickable-column'>{{startDate}}</td>
-            <td class='clickable-column'>{{attending}}/{{attendeeCount}}</td>
+            <td>
+              <span role='button' class='{{select}}'><i class="material-icons">{{checkbox}}</i></span>
+              
+            </td>
+            <td role='button' class='clickable-column'>{{title}}</td>
+            <td role='button' class='clickable-column'>{{startDate}}</td>
+            <td role='button' class='clickable-column'>{{attending}}/{{attendeeCount}}</td>
+            <td>
+              <span role='button'>
+                {{#afModal  class="glyphicon glyphicon-pencil" collection="CalEvent" operation="update" doc=_id formId="updateClass" title="Edit Class"}}
+                  {{/afModal}}
+              </span>
+            </td>
           </tr>
         {{/each}}
       </tbody>
