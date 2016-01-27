@@ -25,13 +25,13 @@ Schema.UserProfile = new SimpleSchema({
       optional: true
   },
   birthday: {
-      type: Date,
-      optional: true,
-      autoform: {
-        afFieldInput: {
-          type: "bootstrap-datepicker"
-        }
+    type: Date,
+    optional: true,
+    autoform: {
+      afFieldInput: {
+        type: "bootstrap-datepicker"
       }
+    }
   },
   gender: {
       type: String,
