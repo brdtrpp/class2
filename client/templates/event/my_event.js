@@ -108,6 +108,11 @@ Template.myEvent.events({
     });
   },
 
+  'click .bulk': function() {
+    var id = Meteor.userId();
+    Meteor.call('unselect', id);
+  },
+
   'click .unselected':function() {
     CalEvent.update({_id: this._id}, {$set: {selected: true}});
   },

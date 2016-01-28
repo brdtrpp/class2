@@ -25,6 +25,7 @@ AutoForm.hooks({
                     'profile.businessAddress.city': doc.address.city,
                     'profile.businessAddress.state': doc.address.state,
                     'profile.businessAddress.zip': doc.address.zip,
+                    'profile.businessName': doc.businessName,
                   }
                 });
                 Bert.alert('Congratulations you can now host classes!');
@@ -38,7 +39,7 @@ AutoForm.hooks({
     beginSubmit: function() {},
     endSubmit: function() {}
   },
-  
+
   insertCard: {
     before: {
       insert: function(doc) {

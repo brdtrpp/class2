@@ -5,3 +5,7 @@ Template.search.helpers({
     }
   },
 });
+
+Template.search.events({
+  
+});

@@ -6,7 +6,7 @@
   background-color: white;
 }
 .grey-bg {
-  background-color: #CCC;
+  background-color: #DDD;
 }
 
 .green-bg {
@@ -17,20 +17,6 @@
   background-color: #135298;
 }
 
-#grad1 {
-    /*height: 200px;*/
-    background: #cCC; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, #c3dcf7, #4b95e8); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #c3dcf7, #4b95e8); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #c3dcf7, #4b95e8); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #c3dcf7, #4b95e8); /* Standard syntax (must be last) */
-}
-
-#grad2 {
-    /*height: 200px;*/
-    background: #cCC; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top, #135195, #4b95e8); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right, #135195, #4b95e8); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right, #135195, #4b95e8); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right, #135195, #4b95e8); /* Standard syntax (must be last) */
+.light-blue-bg {
+  background-color: #6ba8ec;
 }

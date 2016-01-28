@@ -1,6 +1,26 @@
 Search = new Mongo.Collection('search');
 
 Search.attachSchema( new SimpleSchema ({
+  createdAt: {
+    type: Date,
+    autoValue: function() {
+      if (this.isInsert) {
+        return new Date;
+      } else if (this.isUpsert) {
+        return {$setOnInsert: new Date};
+      } else {
+        this.unset();  // Prevent user from supplying their own value
+      }
+    },
+    autoform: {
+      omit: true
+    }
+  },
+  keyword: {
+    type: String,
+    optional: true
+  },
+  
   category: {
     type: String,
     allowedValues: [
@@ -39,24 +59,21 @@ Search.attachSchema( new SimpleSchema ({
     optional: true,
   },
 
-  city: {
+  zip: {
     type: String,
-    max: 50
-  },
-  state: {
-    type: String,
-    regEx: /^A[LKSZRAEP]|C[AOT]|D[EC]|F[LM]|G[AU]|HI|I[ADLN]|K[SY]|LA|M[ADEHINOPST]|N[CDEHJMVY]|O[HKR]|P[ARW]|RI|S[CD]|T[NX]|UT|V[AIT]|W[AIVY]$/,
-    autoform: {
-      options: function () {
-        return _.map(["AK","AL","AR","AZ","CA","CO","CT","DC","DE","FL","GA","GU","HI","IA","ID", "IL","IN","KS","KY","LA","MA","MD","ME","MH","MI","MN","MO","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY", "OH","OK","OR","PA","PR","PW","RI","SC","SD","TN","TX","UT","VA","VI","VT","WA","WI","WV","WY"], function (c, i) {
-          return {label: c, value: c};
-        });
-      }
-    }
+    regEx: /^[0-9]{5}$/,
   },
   radius: {
     type: Number,
     optional: true,
     defaultValue: 25,
-  }
+  },
+
+  owner: {
+    type: String,
+    autoform: {
+      omit: true
+    },
+    optional: true,
+  },
 }));

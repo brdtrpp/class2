@@ -7,6 +7,17 @@
   text-decoration: none;
 }
 
+.search-box {
+  padding-bottom: 7px;
+  padding-top: 7px;
+  background-color: #2780e3;
+}
+
+.panel {
+  margin-top:10px;
+  margin-bottom:10px !important;
+}
+
 input[type="text"]
   {
       font-size:16px;

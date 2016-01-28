@@ -1,7 +1,7 @@
 <template name="landing">
   <div class="container-fluid">
-    <div class="row" id="grad1">
-      <div class='container-fluid landing-header' align='center'>
+    <div class="row light-blue-bg">
+      <div class='container landing-header' align='center'>
         <div class="row" >
           <div class="col-sm-8 col-sm-offset-2">
             <h1>
@@ -18,7 +18,7 @@
           <p>
             <a class="btn btn-primary btn-xs student">Students & Athletes</a>
             <a class="btn btn-primary btn-xs instructor">Instructors</a>
-            <a class="btn btn-primary btn-xs home">Home Schoolers</a>
+            <a class="btn btn-primary btn-xs home">Homeschoolers</a>
           </p>
         </div>
         <div class='row'>
@@ -38,19 +38,19 @@
           <div class='col-md-4'>
             <h4>Step: 1</h4>
             <h3>
-              {{step1}}
+              {{step1.toUpperCase}}
             </h3>
           </div>
           <div class='col-md-4'>
             <h4>Step: 2</h4>
             <h3>
-              {{step2}}
+              {{step2.toUpperCase}}
             </h3>
           </div>
           <div class='col-md-4'>
             <h4>Step: 3</h4>
             <h3>
-              {{step3}}
+              {{step3.toUpperCase}}
             </h3>
           </div>
       </div>
@@ -58,66 +58,57 @@
 
     <div class='row grey-bg'>
       <div class='container'>
-        <div class='col-md-8'>
-          <h3 align='center'><strong>Features</strong></h3>
+        <div class='row'>
+          <div class='col-md-6'>
+            <h1><strong>What kind of classes can I take or host?</strong></h1>
+            <h4>That's the best part! Any class you can think of can be hosted on our site. Bootcamps, courses, clinics, class, tutor lessons, or any other kind of class are all available. We are constantly working to get more class hosts and providers.</h4>
+
+            <h4>Whether you are looking for a coding bootcamp or your local recreational clubs summer camps, Class is the place to find it. We are well suited for non-profits, because Class is free if you don't charge for the event. Churches and homeschoolers can organize super easy! We offer flexible scheduling options to. And if you don't like those options, let us an and we'll whip up something just for you!</h4>
+          </div>
+           <div class='col-md-6 pull-right'>
+            <h2><strong>Benefits</strong></h2>
+          </div>
         </div>
-         <div class='col-md-4'>
-          <h3 align='center'><strong>Benefits</strong></h3>
+        <div class='row'>
+          <div class='col-md-6'>
+            <h2><strong>Benefits</strong></h2>
+          </div>
+           <div class='col-md-6'>
+            <h1><strong>How do I find the right classes?</strong></h1>
+            <h4>We have a searchable calendar and a listings page. Enter your interests, zipcode and radius(in miles) to search for your favorite subject. If there is a class or lesson within that area it will show up on the calendar or in a easy to read listing format.</h4>
+          </div>
         </div>
-        <div class='col-md-4'>
-          <h3 align='center'><strong>Features</strong></h3>
+        <div class='row'>
+          <div class='col-md-6'>
+            <h1><strong>How do payments work?</strong></h1>
+            <h3>Students</h3>
+            <h4>As a student, of any age, you will have a card on file with Class. Every time you register your card will be charged the displayed cost of the class (if the class isn't free). To unregister, go to the class and unregister, if its short notice (with 24 before the start of the class) or if you want a refund after the class has finished you will have to ask the instructor to refund the class.</h4>
+            <h3>Instructors</h3>
+            <h4>You set your class fees, you decide how much each class will make you, you are always in control of the amount of money you make. We markup the price by 5%. Once a student registers, they are charged  when they register and your money (the price you set on the class) gets directly deposited into your account every Friday.</h4>
+          </div>
+           <div class='col-md-6'>
+            <h2><strong>Benefits</strong></h2>
+          </div>
         </div>
-         <div class='col-md-8'>
-          <h3 align='center'><strong>Benefits</strong></h3>
-        </div>
-        <div class='col-md-4'>
-          <h3 align='center'><strong>Features</strong></h3>
-        </div>
-         <div class='col-md-8'>
-          <h3 align='center'><strong>Benefits</strong></h3>
-        </div>
-        <div class='col-md-4'>
-          <h3 align='center'><strong>Features</strong></h3>
-        </div>
-         <div class='col-md-8'>
-          <h3 align='center'><strong>Benefits</strong></h3>
+        <div class='row'>
+          <div class='col-md-6'>
+            <h2><strong>Benefits</strong></h2>
+          </div>
+           <div class='col-md-6'>
+            <h2><strong>How do I know I'm protected?</strong></h2>
+            <h4>All the bank and credit card information is store on our payment processors highly protected servers. We can't even see that stuff! They have all sorts of crazy bells and whistles that prevent anyone who would steal that information, from getting to it.</h4>
+            <h4>When it comes to being ripped off by an instructor, we've got you that covered to! Let us know if you've been scammed, and we'll refund everything we can. Our customers security is really important to us. </h4>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class='row' id="grad2">
+    <div class='row blue-bg'>
       <div class='container'>
         <h1 align='center'>Pricing and Payments</h1>
-        <h3>Class is free to join, free to use and we only collect fees when money exchanges hand. We mark-up the transaction by 5%, but you don't have to do any math</h3>
+        <h3>Class is free to join, free to use and we only collect fees when money exchanges hand. We mark-up the transaction by 5%, but you don't have to do any math. It's all done with computer magic.</h3>
         <div class="row">
-          <div class='col-md-3 '>
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Toaster
-              </div>
-            </div>
-          </div>
-          <div class='col-md-3 '>
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Toaster
-              </div>
-            </div>
-          </div>
-          <div class='col-md-3 '>
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Toaster
-              </div>
-            </div>
-          </div>
-          <div class='col-md-3 '>
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Toaster
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>

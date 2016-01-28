@@ -1,5 +1,6 @@
 Meteor.methods({
   removeCal: function(doc) {
+    console.log(doc);
     //refund to antendees
     if (doc.owner === Meteor.userId()){
       if (moment(moment(doc.start).toISOString()).isBefore(moment())) {
@@ -7,7 +8,7 @@ Meteor.methods({
       } else {
         if (CalEvent.findOne({_id: doc._id}).owner === Meteor.userId()) {
           Meteor.call('refundEvent', doc);
-          CalEvent.update({_id: doc._id}, {$set: {canceled: true, selected: false}});
+          CalEvent.update({_id: doc._id}, {$set: {canceled: true}});
         }
       }
     }
@@ -153,4 +154,11 @@ Meteor.methods({
       }
     }
   },
+
+  unselect: function(id) {
+    var events = CalEvent.find({owner: id, selected: true}).fetch();
+    _.forEach(events, function(event){
+      CalEvent.update({_id: event._id}, {$set: {selected: false}});
+    });
+  }
 });

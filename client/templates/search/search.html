@@ -1,15 +1,17 @@
 <template name="search">
   {{#if isSearch}}
-    {{#autoForm collection="Search" id="search" type="normal"}}
-    <div class="form-inline">
-        {{> afQuickField name="category" class="form-control input-sm"}}
-        {{> afQuickField name="city" class="form-control input-sm"}}
-        {{> afQuickField name="state" class="form-control input-sm"}}
-        {{> afQuickField name="radius" class="form-control input-sm"}}
-      <div>
-        <button type="submit" class="btn btn-success btn-block btn-xs">Submit</button>
-      </div>
-    </div>
+    {{#autoForm collection="Search" id="search"}}
+
+        <div class="form-inline search-box" align="center">
+          {{> afQuickField name="keyword" class="form-control input-sm" autocomplete="off"}}
+          {{> afQuickField name="zip" class="form-control input-sm" autocomplete="off"}}
+          {{> afQuickField name="radius" class="form-control input-sm" autocomplete="off"}}
+
+          <div class='container'>
+            <button type="submit" class="btn btn-success btn-block btn-sm search">Search</button>
+          </div>
+        </div>
+
     {{/autoForm}}
   {{/if}}
 </template>

@@ -15,7 +15,37 @@ Template.landing.helpers({
     } else if (Session.equals('userType', "instructor")) {
       return "Start Teaching What You Know and Love";
     } else if (Session.equals('userType', 'home')) {
-      return "Develop an Improved Homeschool Experience";
+      return "An Improved Homeschool Experience";
+    }
+  },
+
+  step1: function() {
+    if (Session.equals('userType', 'student')) {
+      return "Find";
+    } else if (Session.equals('userType', "instructor")) {
+      return "create";
+    } else if (Session.equals('userType', 'home')) {
+      return "Find";
+    }
+  },
+
+  step2: function() {
+    if (Session.equals('userType', 'student')) {
+      return "register";
+    } else if (Session.equals('userType', "instructor")) {
+      return "accept";
+    } else if (Session.equals('userType', 'home')) {
+      return "register";
+    }
+  },
+
+  step3: function() {
+    if (Session.equals('userType', 'student')) {
+      return "attend";
+    } else if (Session.equals('userType', "instructor")) {
+      return "instruct";
+    } else if (Session.equals('userType', 'home')) {
+      return "gather";
     }
   },
 
@@ -35,7 +65,7 @@ Template.landing.helpers({
     } else if (Session.equals('userType', "instructor")) {
       return "Create and manage your classes. Start focusing less on the scheduling, registration, and adminstrative work and focus more on instructing and educating.";
     } else if (Session.equals('userType', 'home')) {
-      return "Easily organize with local coops and groups, create field trips. Find what interests your children and get the best experts to teach them.";
+      return "Find free and cheap expereinces for you or your kids. Expand educational expereinces, learn something new and explore the world around you one class at a time.";
     }
   }
 });

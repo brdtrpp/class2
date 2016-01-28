@@ -62,6 +62,14 @@ Schema.UserProfile = new SimpleSchema({
       omit: true
     }
   },
+  
+  businessName: {
+    type: String,
+    optional: true,
+    autoform: {
+      omit: true
+    }
+  },
 
   customerId: {
     type: String,

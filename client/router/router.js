@@ -7,9 +7,10 @@ Router.configure({
   },
   onBeforeAction: function () {
     Session.set('page', Router.current().route.getName());
+    var id = Meteor.userId();
+    Meteor.call('unselect', id);
     this.next();
-  },
-
+  }
 });
 
 var requireLogin = function() {

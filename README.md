@@ -1,12 +1,8 @@
 #CLASS
 
 ##To-Do
-* Refund and delete from event_item
-* Checkbox for bulk/mass delete
-* Edit function on my-classes
-* Refunded and attending move to bottomButtons
 * Allergies
-* Search with Categories
+
 * All Day broken
 * Timezone and Daylight savings time
 * How it Works on getting paid
