@@ -6,7 +6,7 @@
   background-color: white;
 }
 .grey-bg {
-  background-color: #DDD;
+  background-color: #f6f6f6;
 }
 
 .green-bg {
@@ -15,8 +15,23 @@
 
 .blue-bg {
   background-color: #135298;
+  color: #f6f6f6;
 }
 
 .light-blue-bg {
   background-color: #6ba8ec;
+}
+
+.page-header {
+    padding-bottom: 2em;
+    margin: 10em 0 8em;
+    text-align: center;
+    border: none !important;
+}
+
+.page-header h1 {
+    font-size: 4em;
+}
+.page-header h4 {
+  font-size: 1.6em;
 }

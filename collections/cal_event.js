@@ -135,6 +135,15 @@ CalEvent.attachSchema(new SimpleSchema({
       omit: true
     },
   },
+  ownerName: {
+    type: String,
+    autoValue: function() {
+      return Meteor.user.profile.businessName;
+    },
+    autoform: {
+      omit: true
+    },
+  },
   allDay: {
     type: Boolean,
     label: "All Day Event",

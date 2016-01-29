@@ -2,7 +2,7 @@
 
 ##To-Do
 * Allergies
-
+* Add CSS to build files
 * All Day broken
 * Timezone and Daylight savings time
 * How it Works on getting paid
