@@ -4,5 +4,9 @@ Template.home.helpers({
     console.log(city);
     return city;
   },
+  
+  isCordova: function() {
+    return Meteor.isCordova;
+  }
 });
 

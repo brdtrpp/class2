@@ -2,6 +2,12 @@
   {{#if currentUser}}
     <h3>TOASTER</h3>
   {{else}}
-    {{> landing}}
+  
+    {{#if isCordova}}
+      {{> register}}
+    {{else}}  
+      {{> landing}}
+    {{/if}}
+    
   {{/if}}
 </template>
