@@ -11,8 +11,8 @@ App.info({
 
 // Set up resources such as icons and launch screens.
 App.icons({
-  'iphone': 'public/images/apple-touch-icon.png',
-  'iphone_2x': 'public/images/apple-touch-icon.png',
+  'iphone': 'public/images/apple-touch-icon-180x180.png',
+  'iphone_2x': 'public/images/apple-touch-icon-180x180.png',
   // ... more screen sizes and platforms ...
 });
 
