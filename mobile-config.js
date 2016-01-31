@@ -2,11 +2,11 @@
 // the entire section is optional.
 App.info({
   id: 'com.example.matt.uber',
-  name: 'über',
-  description: 'Get über power in one button click',
-  author: 'Matt Development Group',
-  email: 'contact@example.com',
-  website: 'http://example.com'
+  name: 'Class',
+  description: 'a marketplace for classes',
+  author: 'Bradley Trapp',
+  email: 'support@joinclass.co',
+  website: 'http://joinclass.co'
 });
 
 // Set up resources such as icons and launch screens.

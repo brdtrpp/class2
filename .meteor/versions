@@ -28,6 +28,7 @@ callback-hook@1.0.4
 ccorcos:transitioner@2.0.2
 check@1.1.0
 coffeescript@1.0.11
+d3js:d3@3.5.8
 ddp@1.2.2
 ddp-client@1.2.1
 ddp-common@1.2.2
@@ -53,6 +54,7 @@ hot-code-push@1.0.0
 html-tools@1.0.5
 htmljs@1.0.5
 http@1.1.1
+hybrid:assets@0.2.4
 ian:accounts-ui-bootstrap-3@1.2.88
 id-map@1.0.4
 iron:controller@1.0.12
