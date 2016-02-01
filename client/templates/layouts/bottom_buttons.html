@@ -7,13 +7,13 @@
       {{/if}}
         <a class="btn btn-default today">{{> calendarIcon}}</a>
 
-      <a class="btn btn-default search"><i class="material-icons">search</i></a>
+      <a class="btn btn-default search">{{> searchIcon}}</a>
 
       <a class="btn btn-default home">{{> homeIcon}}</a>
 
       {{#if hasAccount}}
         {{#afModal class="btn btn-default" collection="CalEvent" formId="insertClass" operation="insert" title="Start a New Class"}}
-         <i class="material-icons">add_box</i>
+         {{> addEventIcon}}
         {{/afModal}}
       {{/if}}
 

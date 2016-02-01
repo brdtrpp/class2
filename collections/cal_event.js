@@ -95,6 +95,7 @@ CalEvent.attachSchema(new SimpleSchema({
       'sports',
       'fitness',
       'arts',
+      'religious',
       'other'
     ],
     autoform: {
@@ -112,6 +113,7 @@ CalEvent.attachSchema(new SimpleSchema({
         sports: "Sports & Athletics",
         fitness: "Fitness",
         arts: "Creative Arts",
+        religious: "Religious",
         other: "Other"
       }
     },
@@ -138,7 +140,7 @@ CalEvent.attachSchema(new SimpleSchema({
   ownerName: {
     type: String,
     autoValue: function() {
-      return Meteor.user.profile.businessName;
+      return Meteor.user().profile.businessName;
     },
     autoform: {
       omit: true

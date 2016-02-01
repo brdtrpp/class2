@@ -6,8 +6,7 @@
       <thead>
         <tr>
           <th>
-            <i class="material-icons bulk">done_all</i>
-            <i class="material-icons delete">delete</i>
+            {{> binIcon}}
           </th>
           <th>Title</th>
           <th>Date</th>
@@ -20,15 +19,16 @@
           <tr>
             <td>
               <span role='button' class='{{select}}'><i class="material-icons">{{checkbox}}</i></span>
-              
+
             </td>
             <td role='button' class='clickable-column'>{{title}}</td>
             <td role='button' class='clickable-column'>{{startDate}}</td>
             <td role='button' class='clickable-column'>{{attending}}/{{attendeeCount}}</td>
             <td>
               <span role='button'>
-                {{#afModal  class="glyphicon glyphicon-pencil" collection="CalEvent" operation="update" doc=_id formId="updateClass" title="Edit Class"}}
-                  {{/afModal}}
+                {{#afModal collection="CalEvent" operation="update" doc=_id formId="updateClass" title="Edit Class"}}
+                  {{> editIcon}}
+                {{/afModal}}
               </span>
             </td>
           </tr>

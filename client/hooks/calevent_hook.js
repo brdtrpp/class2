@@ -2,13 +2,12 @@ AutoForm.hooks({
   insertClass:{
     before:{
       insert: function(doc) {
-        console.log(doc.id);
         if (doc.recur) {
           Meteor.call('recur', doc);
         } else {
           Meteor.call('saveCalEvent',doc);
         }
-        
+
         $('#afModal').modal('hide');
         return false;
       }

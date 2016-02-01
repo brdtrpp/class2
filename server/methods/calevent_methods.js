@@ -1,6 +1,5 @@
 Meteor.methods({
   removeCal: function(doc) {
-    console.log(doc);
     //refund to antendees
     if (doc.owner === Meteor.userId()){
       if (moment(moment(doc.start).toISOString()).isBefore(moment())) {
@@ -73,6 +72,7 @@ Meteor.methods({
         category: doc.category,
         description: doc.description,
         owner: doc.owner,
+        businessName: doc.businessName,
         allDay: doc.allDay,
         price: doc.price,
         attendeeCount: doc.attendeeCount,
