@@ -1,10 +1,14 @@
 <template name="eventItemList">
   <div class="container-fluid">
     <div class="panel panel-default">
-      <div class="panel-heading">
-          <ul class="panel-title pull-right ">
-            <span style="font-size:24pt;"><i class="glyphicon glyphicon-usd"></i>{{customerPrice}}</span>
-            {{> eventOwner}}
+      <div class="panel-heading" href='#'>
+          <h4><strong>{{title}}<small>{{businessName}}</small></strong>
+            <ul class="pull-right">
+              <span>{{> dollarIcon}}{{customerPrice}}  </span>
+              <span>{{> usersIcon}}{{aCount}}</span>
+              {{> eventOwner}}
+            </ul>
+          </h4>
             <div class="pull-right">
               {{#if isAttendee}}
                   {{#afModal role='button' collection="Attendee" operation="update" doc=_id formId="updateAttendee" title="Edit Attendee Name"}}
@@ -15,9 +19,10 @@
                   {{/if}}
               {{/if}}
             </div>
-          </ul>
-        <h2 class="panel-title"><a href="{{pathFor 'eventItem'}}"> {{title}} <small>{{startDate}} {{endDate}}</small></a></h2>
       </div>
+      <ul class="list-group">
+        <li class="list-group-item">{{startDate}} {{endDate}} <small>{{city}}, {{state}}</small></li>
+      </ul>
       <div class="panel-body">
         <p>{{description}}</p>
       </div>

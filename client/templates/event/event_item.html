@@ -2,16 +2,13 @@
   <div class="container">
     <div class="panel panel-default">
       <div class="panel-heading">
-
-          <h4><strong>{{title}}</strong>
-          <ul class="pull-right">
-            <span>{{> dollarIcon}}{{customerPrice}}  </span>
-            <span>{{> usersIcon}}{{aCount}}</span>
-            {{> eventOwner}}
-          </ul>
+          <h4><strong>{{title}}<small>{{businessName}}</small></strong>
+            <ul class="pull-right">
+              <span>{{> dollarIcon}}{{customerPrice}}  </span>
+              <span>{{> usersIcon}}{{aCount}}</span>
+              {{> eventOwner}}
+            </ul>
           </h4>
-
-
       </div>
       <ul class="list-group">
         <li class="list-group-item">{{startDate}} {{endDate}} <small>{{city}}, {{state}}</small></li>
