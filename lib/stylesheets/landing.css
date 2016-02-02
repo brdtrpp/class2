@@ -13,6 +13,12 @@
   background-color: #3FB618;
 }
 
+.black-bg {
+  background-color: black;
+  color: #f6f6f6;
+  text-align: center;
+}
+
 .blue-bg {
   background-color: #135298;
   color: #f6f6f6;

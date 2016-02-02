@@ -5,9 +5,19 @@ Template.myAttend.helpers({
     var att = Attendee.find({owner: Meteor.userId()}).fetch();
     _.forEach(att, function (item) {
       if ((item.eventId !== "refunded" )){
-        events.push( CalEvent.findOne({_id: item.eventId}));
+        var eventsearch = CalEvent.find({_id: item.eventId}).fetch();
+        _.forEach(eventsearch, function(each){
+          if (_.findWhere(events, {_id: each._id}) === undefined) {
+            events.push(each);
+          }
+        });
       } else if ((item.eventId === "refunded" )){
-        refunded.push( CalEvent.findOne({_id: item.reEventId}));
+        var refundsearch = CalEvent.find({_id: item.eventId}).fetch();
+        _.forEach(refundsearch, function(each){
+          if (_.findWhere(events, {_id: each._id}) === undefined) {
+            refunded.push(each);
+          }
+        });
       }
     });
     if (Session.equals("status", "refunded")){
@@ -15,10 +25,6 @@ Template.myAttend.helpers({
     } else if (Session.equals("status", "attending")){
       return events;
     }
-  },
-
-  event: function() {
-    return CalEvent.find({_id: this.eventId}, {sort: {start: 1}});
   },
 
   status: function() {

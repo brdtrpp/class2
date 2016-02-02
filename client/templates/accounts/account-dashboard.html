@@ -1,54 +1,66 @@
 <template name="getPaid">
-  <div class="col-md-8 col-md-offset-2">
+  <div class='container'>
     {{#if hasAccount}}
-    <h2 align='center'>Account Dashboard</h2>
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title"><strong>{{account.business_name.toUpperCase}}</strong><small class='pull-right'> status: {{account.external_accounts.data.[0].status}}</small></h3>
-          <span class='panel-title pull-right' role='button'><i class="material-icons">mode_edit</i></span>
-        </div>
-        <div class="panel-body" align='center'>
-          <div class='row'>
-            <div class=col-sm-4>
-              <h4><small>Account Representitive:</small></h4>
-              <h4>{{account.legal_entity.first_name}} {{account.legal_entity.last_name}}</h4>
-            </div>
-            <div class=col-sm-4>
-              <h4><small>Email:</small></h4>
-              <h4>{{account.email}}</h4>
-            </div>
-            <div class=col-sm-4>
-              <h4><small>Birthdate:</small></h4>
-              <h4>{{account.legal_entity.dob.day}}/{{account.legal_entity.dob.month}}/{{account.legal_entity.dob.year}}</h4>
-            </div>
-          </div>
-          <div class="panel panel-default">
+      <div class='row'>
+        <div class="col-md-8 col-md-offset-2">
+        <h2 align='center'>Account Dashboard</h2>
+        <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title">Bank Account: <strong>{{account.external_accounts.data.[0].bank_name}}</strong></h3>
+              <h3 class="panel-title"><strong>{{account.business_name.toUpperCase}}</strong><small class='pull-right'> status: {{account.external_accounts.data.[0].status}}</small></h3>
+              <span class='panel-title pull-right' role='button'><i class="material-icons">mode_edit</i></span>
             </div>
             <div class="panel-body" align='center'>
-              <h4><small>Account Number: </small>********{{account.external_accounts.data.[0].last4}}</h4>
-              <h4><small>Routing Number: </small>{{account.external_accounts.data.[0].routing_number}}</h4>
+              <div class='row'>
+                <div class=col-sm-4>
+                  <h4><small>Account Representitive:</small></h4>
+                  <h4>{{account.legal_entity.first_name}} {{account.legal_entity.last_name}}</h4>
+                </div>
+                <div class=col-sm-4>
+                  <h4><small>Email:</small></h4>
+                  <h4>{{account.email}}</h4>
+                </div>
+                <div class=col-sm-4>
+                  <h4><small>Birthdate:</small></h4>
+                  <h4>{{account.legal_entity.dob.day}}/{{account.legal_entity.dob.month}}/{{account.legal_entity.dob.year}}</h4>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Bank Account: <strong>{{account.external_accounts.data.[0].bank_name}}</strong></h3>
+                </div>
+                <div class="panel-body" align='center'>
+                  <h4><small>Account Number: </small>********{{account.external_accounts.data.[0].last4}}</h4>
+                  <h4><small>Routing Number: </small>{{account.external_accounts.data.[0].routing_number}}</h4>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h3 class='panel-title'>Address</h3>
+                </div>
+                <div class="panel-body" align='center'>
+                  <p>
+                    {{account.legal_entity.address.line1}}
+                  </p>
+                  <p>
+                    {{account.legal_entity.address.city}}, {{account.legal_entity.address.state}} {{account.legal_entity.address.postal_code}}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class='panel-title'>Address</h3>
-            </div>
-            <div class="panel-body" align='center'>
-              <p>
-                {{account.legal_entity.address.line1}}
-              </p>
-              <p>
-                {{account.legal_entity.address.city}}, {{account.legal_entity.address.state}} {{account.legal_entity.address.postal_code}}
-              </p>
-            </div>
-          </div>
-        </div>
+      </div>
       </div>
     {{else}}
-      <h3>Start Instructing</h3>
-      {{> quickForm collection="Account" id="insertAccount" type="insert"}}
+      <h1 align='center'>Start Instructing</h1>
+      <div class='row'>
+        <div class='col-md-8'>
+          <h2>Start hosting classes!</h2>
+          <h4>TODAY!</h4>
+        </div>
+        <div class='col-md-4'>
+          {{> quickForm collection="Account" id="insertAccount" type="insert"}}
+        </div>
+      </div>
     {{/if}}
   </div>
 </template>

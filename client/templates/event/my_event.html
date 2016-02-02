@@ -18,8 +18,7 @@
         {{#each calevent}}
           <tr>
             <td>
-              <span role='button' class='{{select}}'><i class="material-icons">{{checkbox}}</i></span>
-
+              <span role='button' class='{{select}}'>{{#if checkbox}} {{> removeIcon}} {{else}} {{> removeBlankIcon}} {{/if}}</span>
             </td>
             <td role='button' class='clickable-column'>{{title}}</td>
             <td role='button' class='clickable-column'>{{startDate}}</td>

@@ -1,38 +1,32 @@
 <template name="eventItemList">
   <div class="container-fluid">
-    <div class="panel panel-default">
-      <div class="panel-heading" href='#'>
-          <h4><strong>{{title}}<small>{{businessName}}</small></strong>
-            <ul class="pull-right">
-              <span>{{> dollarIcon}}{{customerPrice}}  </span>
-              <span>{{> usersIcon}}{{aCount}}</span>
-              {{> eventOwner}}
-            </ul>
-          </h4>
-            <div class="pull-right">
-              {{#if isAttendee}}
-                  {{#afModal role='button' collection="Attendee" operation="update" doc=_id formId="updateAttendee" title="Edit Attendee Name"}}
-                    {{> editIcon}}
-                  {{/afModal}}
-                  {{#if timeRes }}
-                    <a role='button' class="refund">{{> refundIcon}}</a>
-                  {{/if}}
-              {{/if}}
+    <a href="/class/{{_id}}" role='button' class="body-click">
+      <span>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+              <h4 ><strong>{{title}}<small>{{businessName}}</small></strong>
+                <ul class="pull-right">
+                  <span>{{> dollarIcon}}{{customerPrice}}  </span>
+                  <span>{{> usersIcon}}{{aCount}}</span>
+                  {{> eventOwner}}
+                </ul>
+              </h4>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item">{{startDate}} {{endDate}} <small>{{city}}, {{state}}</small></li>
+          </ul>
+          <div class="panel-body">
+            <p>{{description}}</p>
+          </div>
+          {{#if isAttendee}}
+            <div class="panel-footer">
+              {{#each attendee}}
+                {{> attendeesItem}}
+              {{/each}}
             </div>
-      </div>
-      <ul class="list-group">
-        <li class="list-group-item">{{startDate}} {{endDate}} <small>{{city}}, {{state}}</small></li>
-      </ul>
-      <div class="panel-body">
-        <p>{{description}}</p>
-      </div>
-      {{#if isAttendee}}
-        <div class="panel-footer">
-          {{#each attendee}}
-          {{> attendeesItem}}
-        {{/each}}
+          {{/if}}
         </div>
-      {{/if}}
-    </div>
+      </span>
+    </a>
   </div>
 </template>

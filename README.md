@@ -1,13 +1,16 @@
 #CLASS
 
 ##To-Do
+* Landing Page
+* Affiliate Page
+* About Us Page
+* Contact Us Page
+* Home Manual
 * Allergies
-* Add CSS to build files
 * All Day broken
 * Timezone and Daylight savings time
-* How it Works on getting paid
+
 * Star rating system
-* Account Dashboard Styling and Editing
 * User Public Profile
 * Grab events from Craigslist
 * Display Limits

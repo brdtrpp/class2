@@ -1,6 +1,6 @@
 .main {
   margin-top: 50px;
-  margin-bottom: -35px;
+  padding-bottom: 35px;
 }
 
 .userType {
@@ -43,18 +43,23 @@ select
     font-size:16px;
     text-align: center;
   }
-  
+
 h1, .h1, h2, .h2, h3, .h3 {
     margin-top: 50px;
     margin-bottom: 10.5px;
 }
 
-body {
-  padding-bottom: 70px;
-}
-
 .navbar-nav {
   margin: 0px 0px !important;
+}
+
+.body-click {
+  color: black;
+}
+
+.body-click:hover {
+  color: black;
+  text-decoration:none;
 }
 
 .navbar-fixed-bottom {

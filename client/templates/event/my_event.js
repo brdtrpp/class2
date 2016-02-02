@@ -85,9 +85,9 @@ Template.myEvent.helpers({
 
   checkbox:function() {
     if (CalEvent.findOne({_id: this._id, selected: true})) {
-      return "check_box";
+      return true;
     } else {
-      return 'check_box_outline_blank';
+      return false;
     }
   }
 });
@@ -118,7 +118,6 @@ Template.myEvent.events({
   },
 
   'click .selected':function() {
-    console.log("toaster");
     CalEvent.update({_id: this._id}, {$set: {selected: false}});
   },
 

@@ -1,27 +1,14 @@
 <template name="navbar">
   <nav class="navbar navbar-inverse navbar-fixed-top">
-
     <div class="container-fluid">
       <div class="navbar-header">
-
-
         <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only"></span>
           {{> menuIcon}}
         </button>
-        <!--{{#if currentUser}}-->
-        <!--<span class='navbar-brand' >-->
-        <!--  <span role="button" class='back'><i class="material-icons">arrow_back</i></span>-->
-        <!--</span>-->
-        <!--{{/if}}-->
         <a class="navbar-brand" href="{{pathFor 'home'}}">
           <img alt="Class" height="20" src="/images/class-type.png">
         </a>
-        {{#if currentUser}}
-        <!--<span class='navbar-brand pull-right' >-->
-        <!--  <span role="button" class='back'><i class="material-icons">notifications_none</i></span>-->
-        <!--</span>-->
-        {{/if}}
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->

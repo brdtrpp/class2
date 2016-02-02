@@ -7,10 +7,11 @@
       <div class="pull-right">
         {{status}}
         {{#if isAttendee}}
-            {{#afModal class="glyphicon glyphicon-pencil" collection="Attendee" operation="update" doc=_id formId="updateAttendee" title="Edit Attendee Name"}}
+            {{#afModal collection="Attendee" operation="update" doc=_id formId="updateAttendee" title="Edit Attendee Name"}}
+            {{> editIcon}}
             {{/afModal}}
             {{#if timeRes }}
-              <a class="glyphicon glyphicon-remove-circle refund" role='button'></a>
+              <a role='button' class="refund">{{> refundIcon}}</a>
             {{/if}}
         {{/if}}
         {{#if isEventOwner}}
