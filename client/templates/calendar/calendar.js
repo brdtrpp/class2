@@ -7,7 +7,7 @@ Template.calendar.helpers({
   options: function() {
     return {
       // theme: true,
-      height: $(window).height() - 125,
+      height: $(window).height() - 105,
       timezone: "local",
       defaultView:'basicWeek',
       handleWindowResize: true,
@@ -43,7 +43,6 @@ Template.calendar.helpers({
         },
         {
           events: function(start,end,timezone,callback) {
-
             var events = Session.get('classes');
             callback(events);
 
@@ -105,6 +104,7 @@ Template.calendar.helpers({
 
 Template.calendar.onRendered(function() {
   Session.set('view', 'basicWeek');
+  Session.set('search', false);
   Tracker.autorun(function() {
       $('#calendarView').fullCalendar('refetchEvents');
   });
@@ -116,6 +116,10 @@ Template.calendar.onRendered(function() {
     CalEvent.find();
     fc.fullCalendar('refetchEvents');
   });
+});
+
+Template.calendar.onDestroyed(function() {
+  Session.set('search', false);
 });
 
 

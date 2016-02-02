@@ -10,6 +10,8 @@ Template.eventSearch.helpers({
     return classes;
   }
 });
+
+
 Template.eventSearch.onRendered( function() {
   Session.set("search", true);
 });

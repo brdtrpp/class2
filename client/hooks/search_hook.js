@@ -8,6 +8,7 @@ AutoForm.hooks({
           Session.set('classes', result);
         }
       });
+      Search.insert(doc);
       return false;
     },
     beginSubmit: function() {},

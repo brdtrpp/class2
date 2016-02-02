@@ -7,5 +7,7 @@ Template.search.helpers({
 });
 
 Template.search.events({
-  
+  'click .search': function () {
+    Session.set('search', false);
+  }
 });

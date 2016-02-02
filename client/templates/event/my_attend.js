@@ -26,21 +26,6 @@ Template.myAttend.helpers({
   },
 });
 
-Template.myAttend.events({
-  // 'click .refunded': function() {
-  //   Session.set("status", "refunded");
-  // },
-
-  // 'click .attending': function() {
-  //   Session.set("status", "attending");
-  // },
-
-  // 'click .attended': function() {
-  //   Session.set("status", "attended");
-  // },
-
-});
-
 Template.myAttend.onRendered( function() {
   Session.set("status", "attending");
 });
