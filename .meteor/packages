@@ -58,3 +58,4 @@ gadicohen:reactive-window
 twbs:bootstrap
 hybrid:assets
 d3js:d3
+percolate:synced-cron

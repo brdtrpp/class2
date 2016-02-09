@@ -5,4 +5,5 @@ Meteor.startup(function() {
     'description': 'text',
     'ownerName': 'text'
   });
+  SyncedCron.start();
 });
