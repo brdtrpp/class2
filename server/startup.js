@@ -5,5 +5,15 @@ Meteor.startup(function() {
     'description': 'text',
     'ownerName': 'text'
   });
-  SyncedCron.start();
+  
+  SyncedCron.add({
+    name: 'Crunch some important numbers for the marketing department',
+    schedule: function(parser) {
+      // parser is a later.parse object
+      return parser.text('every 2 minutes');
+    },
+    job: function() {
+      console.log('e')
+    }
+  });
 });
