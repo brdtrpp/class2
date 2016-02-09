@@ -9,7 +9,6 @@
 * Allergies
 * All Day broken
 * Timezone and Daylight savings time
-
 * Star rating system
 * User Public Profile
 * Grab events from Craigslist

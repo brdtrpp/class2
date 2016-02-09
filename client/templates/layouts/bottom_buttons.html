@@ -3,7 +3,7 @@
   <nav class="navbar navbar-fixed-bottom">
     <div class="btn-group-sm btn-group-justified dropup" role="group">
       {{#if calendar}}
-        <a class="btn btn-default prev"><i class="material-icons">keyboard_arrow_left</i></a>
+        <a class="btn btn-default prev">{{> leftArrow}}</a>
       {{/if}}
         <a class="btn btn-default today">{{> calendarIcon}}</a>
 
@@ -22,7 +22,7 @@
 
 
       {{#if calendar}}
-        <a class="btn btn-default next"><i class="material-icons">keyboard_arrow_right</i></a>
+        <a class="btn btn-default next">{{> rightArrow}}</a>
       {{/if}}
     </div>
   </nav>
@@ -30,16 +30,16 @@
   {{#if calendar}}
     <nav class="navbar navbar-fixed-bottom">
       <div class="btn-group-sm btn-group-justified dropup" role="group">
-        <a class="btn btn-default prev"><i class="material-icons">keyboard_arrow_left</i></a>
-        <a class="btn btn-default today"><i class="material-icons">today</i></a>
-         <a class="btn btn-default search"><i class="material-icons">search</i></a>
-        <a class="btn btn-default cached"><i class="material-icons">cached</i></a>
-        <a class="btn btn-default next"><i class="material-icons">keyboard_arrow_right</i></a>
+        <a class="btn btn-default prev">{{> leftArrow}}</a>
+        <a class="btn btn-default today">{{> calendarIcon}}</a>
+        <a class="btn btn-default search">{{> searchIcon}}</a>
+        <a class="btn btn-default cached">{{> viewCycle}}</a>
+        <a class="btn btn-default next">{{> rightArrow}}</a>
       </div>
     </nav>
   {{/if}}
-  {{#if landing}}
-    <a class="btn btn-default prev"><i class="material-icons">keyboard_arrow_left</i></a>
-  {{/if}}
+  <!--{{#if landing}}-->
+  <!--  <a class="btn btn-default prev"><i class="material-icons">keyboard_arrow_left</i></a>-->
+  <!--{{/if}}-->
 {{/if}}
 </template>

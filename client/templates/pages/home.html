@@ -1,8 +1,10 @@
 <template name="home">
   {{#if currentUser}}
-  <div class='container-fluid'>
+  <div class='container'>
+    <div class='row'>
     <h3 align="center">Welcome to Class</h3>
     <h4>This is the "manual" page. You can always get here by clicking the CLASS logo. If you have a question on what button to click to get the magic of this app working properly, come here! </h4>
+    </div>
     <div class="row">
       <h3><strong>Bottom-Bar</strong></h3>
       <h4>The bar at the bottom of your screen (we're good at naming things) is your main navigation method throughout the app. Each button reacts a little differently on each screen.</h4>
@@ -12,14 +14,14 @@
       <h4>This menu allows you to jump straight to a page, it also has the 'sign-in/sign-out', 'edit profile', and 'start instructing' functions.</h4>
     </div>
   </div>
-    
+
   {{else}}
-  
+
     {{#if isCordova}}
       {{> register}}
-    {{else}}  
+    {{else}}
       {{> landing}}
     {{/if}}
-    
+
   {{/if}}
 </template>

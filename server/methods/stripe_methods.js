@@ -52,7 +52,7 @@ Meteor.methods({
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     var owner = Meteor.users.findOne({_id: event.owner});
     var stripeCardCharge = Meteor.wrapAsync(Stripe.charges.create,Stripe.charges);
-    //end price is in cents and marked up 10%
+    //end price is in cents and marked up 5%
     var endPrice = event.price * 105;
     var appfee = endPrice - ( event.price * 100 );
     var available = event.attendeeCount - Attendee.find({eventId: event._id}).count();

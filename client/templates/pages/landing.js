@@ -31,7 +31,7 @@ Template.landing.helpers({
 
   step2: function() {
     if (Session.equals('userType', 'student')) {
-      return "register";
+      return "Register and pay for the class.";
     } else if (Session.equals('userType', "instructor")) {
       return "accept";
     } else if (Session.equals('userType', 'home')) {
