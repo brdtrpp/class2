@@ -1,8 +1,18 @@
 Template.payout.helpers({
+  hasCard:function() {
+    Meteor.call("getCard", function(error, result) {
+      if (error) {
+        Session.set('hasCard', false);
+      } else if (result) {
+        Session.set('hasCard', true);
+      }
+    });
+    return Session.get('hasCard');
+  },
+
   card : function(){
     Meteor.call("getCard", function(error, result) {
       if (error) {
-        Bert.alert("You don't have a card stored", 'warning');
       } else if (result) {
         Session.set("card", result);
       }

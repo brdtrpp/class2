@@ -21,11 +21,11 @@ Template.landing.helpers({
 
   step1: function() {
     if (Session.equals('userType', 'student')) {
-      return "Find";
+      return "Find your favorite hooby, class, or interest.";
     } else if (Session.equals('userType', "instructor")) {
-      return "create";
+      return "Create a class, write a description, set a price and attendee limit.";
     } else if (Session.equals('userType', 'home')) {
-      return "Find";
+      return "Find or start a 'co-op' in your local area.";
     }
   },
 
@@ -74,7 +74,9 @@ Template.landing.events({
   'click .userType': function() {
     if (Session.equals('userType', "student")) {
       Session.set('userType', 'instructor');
-    } else {
+    } else if (Session.equals('userType', "instructor")) {
+      Session.set('userType', 'home');
+    } else if (Session.equals('userType', "home")) {
       Session.set('userType', 'student');
     }
   },
