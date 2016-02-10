@@ -69,7 +69,3 @@ Template.eventItem.onRendered(function(){
     Session.set('rAffiliate', owner.profile.affiliateId);
   }
 });
-
-// Template.eventItem.onDestroyed(function(){
-//   Session.set('rAffiliate', 'noafid');
-// });

@@ -23,7 +23,7 @@ Template.calendar.helpers({
         {
           events: function(start,end,timezone,callback) {
             if (Meteor.user().profile.homeAddress) {
-              var event = CalEvent.find({city: Meteor.user().profile.homeAddress.city, state: Meteor.user().profile.homeAddress.state}).fetch();
+              var event = CalEvent.find({city: Meteor.user().profile.homeAddress.city, state: Meteor.user().profile.homeAddress.state, canceled: false}).fetch();
             }
             callback(event);
           },
@@ -32,7 +32,7 @@ Template.calendar.helpers({
         {
           events: function(start,end,timezone,callback) {
             if (Meteor.user().profile.accountId) {
-              var events = CalEvent.find({owner: Meteor.userId()}).fetch();
+              var events = CalEvent.find({owner: Meteor.userId(), canceled: false}).fetch();
               callback(events);
             } else {
               callback(null);

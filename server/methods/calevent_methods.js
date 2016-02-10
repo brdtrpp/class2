@@ -14,11 +14,13 @@ Meteor.methods({
   },
 
   removeCourse: function(doc) {
-    var course = CalEvent.find({courseId: doc.courseId}).fetch();
-    _.forEach(course, function(item) {
-      var doc = item;
-      Meteor.call("removeCal", doc);
-    });
+    if (doc.owner === Meteor.userId()){
+      var course = CalEvent.find({courseId: doc.courseId}).fetch();
+      _.forEach(course, function(item) {
+        var doc = item;
+        Meteor.call("removeCal", doc);
+      });
+    }
   },
 
   edit: function(doc) {

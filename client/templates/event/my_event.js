@@ -101,7 +101,7 @@ Template.myEvent.events({
   },
 
   'click .delete': function() {
-    var events = CalEvent.find({selected: true}).fetch();
+    var events = CalEvent.find({owner: Meteor.userId(), selected: true}).fetch();
     _.forEach(events, function(doc) {
 
       Meteor.call('removeCal', doc);
