@@ -13,9 +13,13 @@ Template.home.helpers({
 Template.home.onRendered( function() {
   if (Meteor.user()) {
       if (!Meteor.user().profile.affiliateId) {
-        Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.affiliateId': Session.get('affiliateId')}});
-      } else {
-        Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.affiliateId': 'nonafid'}});
+        if (Session.get('affiliateId')) {
+          Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.affiliateId': Session.get('affiliateId')}});
+        } else if (Session.get('rAffiliate')) {
+          Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.affiliateId': Session.get('rAffiliate')}});
+        } else {
+          Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.affiliateId': 'nonafid'}});
+        }
       }
     }
 });

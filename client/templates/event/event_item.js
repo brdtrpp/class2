@@ -63,4 +63,13 @@ Template.eventItem.events({
 
 Template.eventItem.onRendered(function(){
   Session.set('attView', "current");
-})
+  var ownerId = CalEvent.findOne({id: this.id}).owner;
+  var owner = Meteor.user({_id: ownerId});
+  if (owner.profile.affiliateId) {
+    Session.set('rAffiliate', owner.profile.affiliateId);
+  }
+});
+
+// Template.eventItem.onDestroyed(function(){
+//   Session.set('rAffiliate', 'noafid');
+// });
