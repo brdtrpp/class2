@@ -13,7 +13,7 @@ Meteor.startup(function() {
       return parser.text('every 2 minutes');
     },
     job: function() {
-      console.log('e')
+      console.log('e');
     }
   });
 });

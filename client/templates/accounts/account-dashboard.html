@@ -6,8 +6,7 @@
         <h2 align='center'>Account Dashboard</h2>
         <div class="panel panel-default">
             <div class="panel-heading">
-              <h3 class="panel-title"><strong>{{account.business_name.toUpperCase}}</strong><small class='pull-right'> status: {{account.external_accounts.data.[0].status}}</small></h3>
-              <span class='panel-title pull-right' role='button'><i class="material-icons">mode_edit</i></span>
+              <h3 class="panel-title"><strong>{{account.business_name.toUpperCase}}</strong><small class='pull-right'> status: {{account.external_accounts.data.[0].status}}<a role='button'>{{> editIcon}}</a></small></h3>
             </div>
             <div class="panel-body" align='center'>
               <div class='row'>
@@ -51,13 +50,43 @@
       </div>
       </div>
     {{else}}
-      <h1 align='center'>Start Instructing</h1>
+      <h1 align='center'>Start Teaching Your Passion</h1>
       <div class='row'>
-        <div class='col-md-8'>
-          <h2>Start hosting classes!</h2>
-          <h4>TODAY!</h4>
+        <div class='col-md-6'>
+          <h2>Start hosting classes or lessons!</h2>
+          <h4>Whether you own a micro-brewery lookingn for more exposure, or a karate dojo trying to manage your schedule, use Class to set up your schedule, accept money and take attendnace.</h4>
+          <h2>Why Teach?</h2>
+          <h4>
+            <ul>
+              <li><strong>Exposure</strong> - If you already run an instruction based business, we can get you more people in the door.</li>
+              <li><strong>Make Money</strong> - Decide what you make, there is no limit to amount of classes, attendees, or ticket price of class.</li>
+              <li><strong>Have Fun</strong> - Simplify your life by letting us manage all the extra stuff you don't like (i.e. marketing, payment acceptance, website management).</li>
+              <li><strong>Control Your Business</strong> - We make it simple to run your business the way you want. Your schedule, your fees, your lessons, your passion!</li>
+            </ul>
+          </h4>
+          <h2>What We Provide</h2>
+          <h4>
+            <ul>
+              <li>
+                <strong>Transparent Pricing</strong> - Here's the skinny, you set the price for your classes (original price), how much you want to make per student. We markup that price by 5%, you get the original price set and we get the 5%. Simple right?
+              </li>
+              <li>
+                <strong>Easy Registration</strong> - Once a student has a credit card on file, its as simple as clicking register on your class and typing in their name. No complicated forms, no additional information required.
+              </li>
+              <li>
+                <strong>Simple Payment Schedule</strong>
+              </li>
+              <li>
+                <strong>Limitless Listings</strong>
+              </li>
+            </ul>
+          </h4>
+          <h2>How will I get paid?</h2>
+          <h4>Every Friday a direct deposit will be made in the amount of how many charges were made on your behalf from the week prior. So if today is Friday, from Thursday of last week to last Wednesday we will add up all the charges and give you your money.</h4>
+          <h2>How does the approval process work?</h2>
+          <h4>You can start creating classes and taking registration payment immediately after filling out the form to the right. <strong>BUT</strong> until we can verify that your account is real, you will not be paid anything. This normally take 24-48 hours.</h4>
         </div>
-        <div class='col-md-4'>
+        <div class='col-md-6'>
           {{> quickForm collection="Account" id="insertAccount" type="insert"}}
         </div>
       </div>

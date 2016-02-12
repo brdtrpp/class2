@@ -1,11 +1,12 @@
 <template name='footer'>
-  <div class=container-fluid>
+  <div class='container-fluid'>
+    <div class='footer'>
     <div class='row black-bg'>
       <div class='container'>
         <div class='col-md-4'>
           <h2>About Us</h2>
           <ul>
-            <li><a href='{{pathFor "company"}}'>The Company</a></li>
+            <li><a href='{{pathFor "company"}}' role='button'>The Company</a></li>
             <!--<li>The Mission</li>-->
             <!--<li>Our Team</li>-->
             <li><a href="{{pathFor 'affiliate'}}">Affiliate Program</a></li>
@@ -25,10 +26,11 @@
             <!--<li>FAQ</li>-->
             <li><a href="{{pathFor 'terms'}}">Terms of Service</a></li>
             <!--<li>Privacy</li>-->
-            <li>Contact Us at support@joinclass.co</li>
+            <li><a>Contact Us at support@joinclass.co</a></li>
           </ul>
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>

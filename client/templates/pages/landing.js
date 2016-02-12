@@ -21,7 +21,7 @@ Template.landing.helpers({
 
   step1: function() {
     if (Session.equals('userType', 'student')) {
-      return "Find your favorite hooby, class, or interest.";
+      return "Find your favorite hobby, class, or interest.";
     } else if (Session.equals('userType', "instructor")) {
       return "Create a class, write a description, set a price and attendee limit.";
     } else if (Session.equals('userType', 'home')) {
@@ -33,19 +33,19 @@ Template.landing.helpers({
     if (Session.equals('userType', 'student')) {
       return "Register and pay for the class.";
     } else if (Session.equals('userType', "instructor")) {
-      return "accept";
+      return "Students find and register for your class.";
     } else if (Session.equals('userType', 'home')) {
-      return "register";
+      return "Register for the class (pay if it isn't free).";
     }
   },
 
   step3: function() {
     if (Session.equals('userType', 'student')) {
-      return "attend";
+      return "Attend class, course, or lesson. Learn something awesome.";
     } else if (Session.equals('userType', "instructor")) {
-      return "instruct";
+      return "Teach and track attendance. Get paid ever Friday.";
     } else if (Session.equals('userType', 'home')) {
-      return "gather";
+      return "Have fun learning something new!";
     }
   },
 

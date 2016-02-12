@@ -3,6 +3,21 @@
   padding-bottom: 35px;
 }
 
+.footer {
+  position: relative;
+  bottom: -35px;
+  color:white;
+}
+
+.footer a {
+  color: white;
+  font-size: 1.3em;
+}
+
+.footer a:hover {
+  text-decoration:none;
+}
+
 .userType {
   text-decoration: none;
 }

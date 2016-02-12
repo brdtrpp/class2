@@ -3,21 +3,39 @@
     <a href="/class/{{_id}}" role='button' class="body-click">
       <span>
         <div class="panel panel-default">
-          <div class="panel-heading">
-              <h4 ><strong>{{title}}<small>{{businessName}}</small></strong>
-                <ul class="pull-right">
-                  <span>{{> dollarIcon}}{{customerPrice}}  </span>
-                  <span>{{> usersIcon}}{{aCount}}</span>
-                  {{> eventOwner}}
-                </ul>
-              </h4>
+      <div class="panel-heading">
+        <div class='row'>
+          <div class='col-xs-6'>
+            <h4><strong>{{title}}</strong> - {{ownerName}} <strong><small>{{category}}</small></strong></h4>
           </div>
-          <ul class="list-group">
-            <li class="list-group-item">{{startDate}} {{endDate}} <small>{{city}}, {{state}}</small></li>
-          </ul>
-          <div class="panel-body">
-            <p>{{description}}</p>
+          <div class='col-xs-6'>
+            <h4 class='pull-right'>
+              <span>{{> dollarIcon}}{{customerPrice}}  </span>
+              <span>{{> usersIcon}}{{aCount}}</span>
+              {{> eventOwner}}
+            </h4>
           </div>
+        </div>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <div class='row'>
+            <div class='col-xs-6'>
+              <h4><strong>Dates</strong></h4>
+              <p><i>Start:</i> {{startDate}}</p>
+              <p><i>End:</i> {{endDate}}</p>
+            </div>
+            <div class='col-xs-6'>
+              <h4><strong>Location</strong></h4>
+              <p>{{street}}</p>
+              <p>{{city}}, {{state}}</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class='panel-body'>
+        <p>{{description}}</p>
+      </div>
           {{#if isAttendee}}
             <div class="panel-footer">
               {{#each attendee}}

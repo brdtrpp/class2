@@ -1,12 +1,10 @@
 #CLASS
 
 ##To-Do
-* Landing Page
-* Affiliate Page
-* About Us Page
-* Contact Us Page
 * Home Manual
+* Affiliate Dashboard
 * Allergies
+* Images for Events
 * All Day broken
 * Timezone and Daylight savings time
 * Star rating system
@@ -21,5 +19,4 @@
 * Limit Credit Card Information & selectable
 * Add animations
 * User added Users
-* Affilate Program
 * Infinite Scroll

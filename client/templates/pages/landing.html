@@ -31,26 +31,26 @@
       <div class='page-header'>
         <div class='container'>
           <h1 >
-            How it Works for <span class='userType'>{{userType}}</span>
+            How it Works for <span class='userType'><strong>{{userType}}</strong></span>
           </h1>
           <h2 >
             {{subtext2}}
           </h2>
             <div class='col-md-4'>
-              <h4>Step: 1</h4>
-              <h3>
-                {{step1.toUpperCase}}
-              </h3>
+              <h4><strong>Step: 1</strong></h4>
+              <h2>
+                {{step1}}
+              </h2>
             </div>
             <div class='col-md-4'>
-              <h4>Step: 2</h4>
-              <h3>{{step2}}</h3>
+              <h4><strong>Step: 2</strong></h4>
+              <h2>{{step2}}</h2>
             </div>
             <div class='col-md-4'>
-              <h4>Step: 3</h4>
-              <h3>
-                {{step3.toUpperCase}}
-              </h3>
+              <h4><strong>Step: 3</strong></h4>
+              <h2>
+                {{step3}}
+              </h2>
             </div>
         </div>
       </div>
@@ -144,14 +144,14 @@
             <h2>
               <strong>Here's how it works:</strong>
             </h2>
-            <h3>Let's say an instructor starts a class and charges $25/student. We markup that $25 by 5% ($25 x 105% =  $26.25) and that's the advertized price of the class. When a student pays the $26.25 for the class $25 goes to the instructor the other $1.25 goes to us.</h3>
+            <h3>Let's say an instructor starts a class and charges $25/student. We markup that $25 by 5% ($25 x 110% =  $27.50) and that's the advertized price of the class. When a student pays the $27.50 for the class $25 goes to the instructor the other $2.50 goes to us, to you know <i>run the business</i>.</h3>
             <h3>That's it, no extra charges, no other fees, no ultra-super bonus account options available. Instructors set a class price structure, students pay for the class. Boom, it's that easy.</h3>
             <h2><strong>Payments</strong></h2>
-            <h3>Students are charged at the time of registration for the class. Instructors are paid every Friday for every charge from Thursday of the pre to Wednesday of the previous week.</h3>
+            <h3>Students are charged at the time of registration for the class. Instructors are paid every Friday for every charge from Thursday of the week prior to Wednesday of the previous week.</h3>
           </div>
         </div>
       </div>
     </div>
   </div>
-  {{> footer}}
+
 </template>

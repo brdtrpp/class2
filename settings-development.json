@@ -3,6 +3,9 @@
     "stripe": "pk_test_Vxr8ildcaHAo9zWIcKiE0qOr"
   },
   "private": {
-    "stripe": "sk_test_DoVMrrwJ9MlbtCHBZJxIJCsz"
+    "stripe": "sk_test_DoVMrrwJ9MlbtCHBZJxIJCsz",
+    "mailgunUser": "postmaster@sandboxf7f3336de933487a88369d70d3322c17.mailgun.org",
+    "mailgunPass": "b942150e7aa8d209bc5a5415e6ed677",
+    "mailUrl":  "smtp://postmaster@sandboxf7f3336de933487a88369d70d3322c17.mailgun.org:2b942150e7aa8d209bc5a5415e6ed677@smtp.mailgun.org:587"
   }
 }

@@ -13,12 +13,14 @@ Template.profileEdit.helpers({
 AccountsTemplates.configureRoute('signIn', {
     name: 'signin',
     path: '/login',
-    template: 'account',
+    // template: 'account',
     layoutTemplate: 'masterLayout',
     redirect: '/user-profile',
 });
 
 AccountsTemplates.configure({
+  // homeRoutePath: '/user-profile',
+  //   redirectTimeout: 4000,
     termsUrl: '/terms',
     showForgotPasswordLink: true,
     sendVerificationEmail: true,

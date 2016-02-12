@@ -1,6 +1,10 @@
 <template name="profileEdit">
   <div class="container-fluid">
     <div class="col-md-6 col-md-offset-3">
+      {{#if hasAccount}}
+      {{else}}
+        <a class='btn btn-success form-control' href='{{pathFor "getPaid"}}'>Start Instructing Here</a>
+      {{/if}}
       {{> quickForm collection="Meteor.users" doc=user id="updateUserProfile" type="update"}}
     </div>
   </div>
