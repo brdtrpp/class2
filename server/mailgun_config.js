@@ -3,7 +3,6 @@
       username: Meteor.settings.private.mailgunUser,
       password: Meteor.settings.private.mailgunPass
     });
-    console.log(Meteor.settings.private.mailgunUser);
   });
 
   // In your server code: define a method that the client can call
@@ -33,7 +32,7 @@ Meteor.methods({
 Meteor.call('sendEmail',{
   to: 'support@joinclass.co',
   from: 'support@joinclass.co',
-  subject: 'I really like sending emails with Mailgun!',
-  text: 'Mailgun is totally awesome for sending emails!',
-  html: 'With meteor it&apos;s easy to set up <strong>HTML</strong> <span style="color:red">emails</span> too.'
+  subject: 'Deployed',
+  text: 'Deployed',
+  html: "Deployed"
 });
