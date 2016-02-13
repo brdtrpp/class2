@@ -1,10 +1,10 @@
 {
   "name": "joinclass",
   "version": "1.0.1",
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/brdtrpp/class2.git"
-  }
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/brdtrpp/class2.git"
+  },
   "description": "Find and sign-up for classes in your local area.",
   "scripts": {
     "start": "meteor --settings settings-development.json --port $IP:$PORT",
