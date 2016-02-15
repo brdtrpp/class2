@@ -64,7 +64,7 @@ Meteor.methods({
     //check if user is signed in or if the start date of the event is before now
     if (!this.userId || moment(moment(doc.start).toISOString()).isBefore(moment())) {
       return null;
-    } else {
+    } else if (this.user.profile.accountId) {
       //save event and dates are saved into ISO format
       return CalEvent.insert({
         createdAt: doc.createdAt,
@@ -77,6 +77,25 @@ Meteor.methods({
         businessName: doc.businessName,
         allDay: doc.allDay,
         price: doc.price,
+        attendeeCount: doc.attendeeCount,
+        street: doc.street,
+        city: doc.city,
+        state: doc.state,
+        zip: doc.zip,
+        courseId: doc.courseId,
+      });
+    } else {
+      return CalEvent.insert({
+        createdAt: doc.createdAt,
+        title: doc.title,
+        start: moment(doc.start).toISOString(),
+        end: moment(doc.end).toISOString(),
+        category: doc.category,
+        description: doc.description,
+        owner: doc.owner,
+        businessName: doc.businessName,
+        allDay: doc.allDay,
+        price: null,
         attendeeCount: doc.attendeeCount,
         street: doc.street,
         city: doc.city,

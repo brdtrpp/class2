@@ -6,19 +6,12 @@
         <a class="btn btn-default prev">{{> leftArrow}}</a>
       {{/if}}
         <a class="btn btn-default today">{{> calendarIcon}}</a>
-
-      <a class="btn btn-default search">{{> searchIcon}}</a>
-
-      <a class="btn btn-default home">{{> homeIcon}}</a>
-
-      {{#if hasAccount}}
+        <a class="btn btn-default search">{{> searchIcon}}</a>
+        <a class="btn btn-default home">{{> homeIcon}}</a>
         {{#afModal class="btn btn-default" collection="CalEvent" formId="insertClass" operation="insert" title="Start a New Class"}}
          {{> addEventIcon}}
         {{/afModal}}
-      {{/if}}
-
-
-      <a class="btn btn-default cached">{{> viewCycle}}</a>
+        <a class="btn btn-default cached">{{> viewCycle}}</a>
 
 
       {{#if calendar}}

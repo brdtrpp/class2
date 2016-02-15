@@ -7,7 +7,6 @@ AutoForm.hooks({
         } else {
           Meteor.call('saveCalEvent',doc);
         }
-
         $('#afModal').modal('hide');
         return false;
       }
