@@ -31,7 +31,7 @@ Template.calendar.helpers({
         },
         {
           events: function(start,end,timezone,callback) {
-            if (Meteor.user().profile.accountId) {
+            if (Meteor.user()) {
               var events = CalEvent.find({owner: Meteor.userId(), canceled: false}).fetch();
               callback(events);
             } else {
