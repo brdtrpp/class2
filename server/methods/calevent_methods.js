@@ -64,7 +64,7 @@ Meteor.methods({
     //check if user is signed in or if the start date of the event is before now
     if (!this.userId || moment(moment(doc.start).toISOString()).isBefore(moment())) {
       return null;
-    } else if (this.user.profile.accountId) {
+    } else if (Meteor.user({_id: this.userId}).profile.accountId) {
       //save event and dates are saved into ISO format
       return CalEvent.insert({
         createdAt: doc.createdAt,

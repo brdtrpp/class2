@@ -65,7 +65,7 @@ Template.landing.helpers({
     } else if (Session.equals('userType', "instructor")) {
       return "Create and manage your classes. Start focusing less on the scheduling, registration, and adminstrative work and focus more on instructing and educating.";
     } else if (Session.equals('userType', 'home')) {
-      return "Find free and cheap expereinces for you or your kids. Expand educational expereinces, learn something new and explore the world around you one class at a time.";
+      return "Find free and cheap experiences for you or your kids. Expand educational experiences, learn something new and explore the world around you one class at a time.";
     }
   }
 });

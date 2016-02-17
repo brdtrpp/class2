@@ -29,6 +29,8 @@ Meteor.methods({
   }
 });
 
+// Meteor.call('searchCraigs');
+
 Meteor.call('sendEmail',{
   to: 'support@joinclass.co',
   from: 'support@joinclass.co',

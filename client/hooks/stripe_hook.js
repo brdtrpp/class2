@@ -28,7 +28,7 @@ AutoForm.hooks({
                     'profile.businessName': doc.businessName,
                   }
                 });
-                Bert.alert('Congratulations you can now host classes!');
+                Bert.alert('Congratulations you can now accept payments for classes!');
                 return false;
               }
             });
