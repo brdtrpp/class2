@@ -11,22 +11,27 @@ AutoForm.hooks({
         } else {
           doc.eventId = event._id;
         }
-        Meteor.call('charge', event, att, function(error, result) {
-          if (error) {
-            Bert.alert(error.reason, 'warning');
-          } else if (result) {
-            var charge = result;
-            var amount = result.amount / 100;
-            if (doc.courseId != undefined) {
-              Meteor.call("addCourseAtt", event, att, charge);
-              Bert.alert("Your card has been charged $" + amount.toFixed(2));
-            } else {
-              Meteor.call("addAtt", event, att, charge);
-              Bert.alert("Your card has been charged $" + amount.toFixed(2));
+        if (event.price == null) {
+          var charge = 0;
+          Meteor.call("addAtt", event, att, charge);
+        } else {
+          Meteor.call('charge', event, att, function(error, result) {
+            if (error) {
+              Bert.alert(error.reason, 'warning');
+            } else if (result) {
+              var charge = result;
+              var amount = result.amount / 100;
+              if (doc.courseId != undefined) {
+                Meteor.call("addCourseAtt", event, att, charge);
+                Bert.alert("Your card has been charged $" + amount.toFixed(2));
+              } else {
+                Meteor.call("addAtt", event, att, charge);
+                Bert.alert("Your card has been charged $" + amount.toFixed(2));
+              }
+  
             }
-
-          }
-        });
+          });
+        }
       }
     },
     beginSubmit: function() {},
