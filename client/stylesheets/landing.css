@@ -33,25 +33,29 @@
 
 .page-header {
     padding-bottom: 2em;
-    margin: 10em 0 8em;
+    margin: 16em 0 11em;
     text-align: center;
     border: none !important;
 }
 
 .page-header h1 {
   font-size: 4em;
+  font-weight: 600;
 }
 
 .page-header h2 {
-  font-size: 2em;
+  font-size: 3em;
+  font-weight: 500;
 }
 
 .page-header h3 {
   font-size: 1.8em;
+  font-weight: 800;
 }
 
 .page-header h4 {
   font-size: 1.6em;
+  text-align: left !important;
 }
 
 .page-header h5 {
