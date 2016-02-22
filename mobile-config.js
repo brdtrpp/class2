@@ -1,7 +1,7 @@
 // This section sets up some basic app metadata,
 // the entire section is optional.
 App.info({
-  id: 'com.example.matt.uber',
+  id: 'com.brad.class',
   name: 'Class',
   description: 'a marketplace for classes',
   author: 'Bradley Trapp',
@@ -13,7 +13,10 @@ App.info({
 App.icons({
   'iphone': 'public/images/apple-touch-icon-180x180.png',
   'iphone_2x': 'public/images/apple-touch-icon-180x180.png',
-  // ... more screen sizes and platforms ...
+  'android_ldpi': 'public/images/apple-touch-icon-180x180.png',
+  'android_mdpi': 'public/images/apple-touch-icon-180x180.png',
+  'android_hdpi': 'public/images/apple-touch-icon-180x180.png',
+  'android_xhdpi': 'public/images/apple-touch-icon-180x180.png'
 });
 
 // App.launchScreens({
@@ -24,9 +27,9 @@ App.icons({
 
 // Set PhoneGap/Cordova preferences
 // App.setPreference('BackgroundColor', '0xff0000ff');
-App.setPreference('HideKeyboardFormAccessoryBar', true);
+App.setPreference('HideKeyboardFormAccessoryBar', false);
 App.setPreference('Orientation', 'portrait');
-App.setPreference('Orientation', 'all', 'ios');
+App.setPreference('Orientation', 'portrait', 'ios');
 
 // Pass preferences for a particular PhoneGap/Cordova plugin
 // App.configurePlugin('com.phonegap.plugins.facebookconnect', {

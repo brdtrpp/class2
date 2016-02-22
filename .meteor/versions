@@ -142,4 +142,5 @@ useraccounts:iron-routing@1.13.1
 velocityjs:velocityjs@1.2.1
 webapp@1.2.3
 webapp-hashing@1.0.5
+webtempest:animate@0.1.9
 yogiben:autoform-modals@0.3.8

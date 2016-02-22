@@ -1,5 +1,7 @@
 <template name="eventItem">
+
   <div class="container">
+    {{#animate type="zoomIn" delay="200"}}
     <div class="panel panel-default">
       <div class="panel-heading">
         <div class='row'>
@@ -50,6 +52,7 @@
 
       </div>
     </div>
+    {{/animate}}
     <ul class="list-group">
       <h3 class="text-center">{{attendeeList}}</h3>
       {{#each attendee}}
