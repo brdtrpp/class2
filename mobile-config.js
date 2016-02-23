@@ -1,7 +1,7 @@
 // This section sets up some basic app metadata,
 // the entire section is optional.
 App.info({
-  id: 'com.example.matt.uber',
+  id: 'com.production.brad.class',
   name: 'Class',
   description: 'a marketplace for classes',
   author: 'Bradley Trapp',
