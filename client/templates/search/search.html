@@ -1,7 +1,7 @@
 <template name="search">
   {{#if isSearch}}
     {{#autoForm collection="Search" id="search"}}
-
+      
         <div class="form-inline search-box" align="center">
           {{> afQuickField name="keyword" class="form-control input-sm" autocomplete="off"}}
           {{> afQuickField name="category" class="form-control input-sm" autocomplete="off"}}
@@ -12,7 +12,7 @@
             <button type="submit" class="btn btn-success btn-block btn-sm search">Search</button>
           </div>
         </div>
-
+      
     {{/autoForm}}
   {{/if}}
 </template>

@@ -4,15 +4,19 @@ Template.myEvent.helpers({
       return "Instructing";
     } else if (Session.get('tense') == "past") {
       return "Instructed";
+    } else if (Session.get('tense') == "canceled") {
+      return "Canceled";
     }
   },
+  
   calevent: function() {
     if (Session.get('tense') == "future") {
       return CalEvent.find({owner: Meteor.userId(), canceled: false, start: {$gt: moment().toISOString()}}, {sort: {start: 1}});
-    } else {
+    } else if (Session.get('tense') == "past") {
       return CalEvent.find({owner: Meteor.userId(), start: {$lt: moment().toISOString()}}, {sort: {start: 1}});
+    } else if (Session.get('tense') == "canceled") {
+      return CalEvent.find({owner: Meteor.userId(), canceled: true, start: {$gt: moment().toISOString()}}, {sort: {start: 1}});
     }
-
   },
 
   edit:function() {

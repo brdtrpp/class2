@@ -1,14 +1,15 @@
 Meteor.methods({
   removeCal: function(doc) {
     //refund to antendees
+
     if (doc.owner === Meteor.userId()){
+
       if (moment(moment(doc.start).toISOString()).isBefore(moment())) {
-        console.log(Meteor.userId() + " tried to delete event after current date");
+
       } else {
-        if (CalEvent.findOne({_id: doc._id}).owner === Meteor.userId()) {
-          Meteor.call('refundEvent', doc);
-          CalEvent.update({_id: doc._id}, {$set: {canceled: true}});
-        }
+
+        Meteor.call('refundEvent', doc);
+        CalEvent.update({_id: doc._id}, {$set: {canceled: true}});
       }
     }
   },

@@ -17,7 +17,7 @@ Template.bottomButtons.helpers({
   calendar: function() {
     return Session.equals('page', "calendar");
   },
-  
+
   landing: function() {
    if (Session.equals('page', 'home') && !Meteor.user) {
      return true;
@@ -62,7 +62,9 @@ Template.bottomButtons.events({
     if (Session.equals('page', 'myEvent')){
       if (Session.equals("tense", "future")) {
         Session.set("tense", "past");
-      } else {
+      } else if (Session.equals("tense", "past")){
+        Session.set("tense", "canceled");
+      } else if (Session.equals("tense", "canceled")){
         Session.set("tense", "future");
       }
     } else if (Session.equals('page', 'myAttend')){

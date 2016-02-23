@@ -1,7 +1,6 @@
 <template name="eventItem">
-
+  {{#animate type="fadeIn" delay="200"}}
   <div class="container">
-    {{#animate type="zoomIn" delay="200"}}
     <div class="panel panel-default">
       <div class="panel-heading">
         <div class='row'>
@@ -39,20 +38,22 @@
       <div class="panel-footer">
         {{#if currentUser}}
           {{#if timeRes}}
+            {{#if canceled}}
+              <h4>This class hass been canceled</h4>
+            {{else}}
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#attend">
               Register
             </button>
+            {{/if}}
           {{else}}
            <h4>This class is in the past...unless you have a TARDIS, you cannot attend it!</h4>
           {{/if}}
-        {{> modals}}
         {{else}}
         <p>Please <a href="{{pathFor 'register'}}">signup/login</a> to register.</p>
         {{/if}}
 
       </div>
     </div>
-    {{/animate}}
     <ul class="list-group">
       <h3 class="text-center">{{attendeeList}}</h3>
       {{#each attendee}}
@@ -60,5 +61,22 @@
       {{/each}}
     </ul>
   </div>
+{{/animate}}
 
+  <div class="modal fade" id="cancel" tabindex="-1" role="dialog" aria-labelledby="cancel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="cancel">New Class</h4>
+        </div>
+        <div class="modal-body">
+          Cancel this class of {{totalAttendees}} attendee(s) and refund them?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary refund" data-dismiss="modal">Yes, Refund Attendees</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>

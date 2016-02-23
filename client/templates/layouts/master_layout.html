@@ -1,9 +1,12 @@
 <template name="masterLayout">
   {{> navbar}}
   <div class="main">
-    {{> search}}
+    {{#transition wrap="true" in="slideInDown:250" out="slideOutUp:250"}}
+      {{> search}}
+    {{/transition}}
     {{> yield}}
   </div>
   {{> bottomButtons}}
+  {{> modals}}
   {{> autoformModals}}
 </template>

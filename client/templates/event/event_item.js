@@ -39,6 +39,11 @@ Template.eventItem.helpers({
     var cPrice = this.price * 1.10;
     return cPrice.toFixed(2);
   },
+  
+  canceled: function() {
+    console.log()
+    return this.canceled;
+  },
 
   timeRes: function () {
     var start = CalEvent.findOne({_id: this._id}).start;
@@ -59,6 +64,18 @@ Template.eventItem.events({
   'submit': function () {
     $('#attend').modal('hide');
   },
+
+  'click .refund':function() {
+    var doc = CalEvent.findOne({_id: this._id});
+    if(doc.price === null){
+      Meteor.call('removeCal', doc);
+      console.log(doc);
+    } else{
+      Meteor.call('refundEvent', doc);
+      console.log('refund');
+    }
+
+  }
 });
 
 Template.eventItem.onRendered(function(){

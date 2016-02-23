@@ -1,0 +1,37 @@
+<template name="eventInsert">
+
+    <div class="col-md-8 col-md-offset-2">
+      {{> wizard id="basic" steps=steps buttonClasses="form-control" stepsTemplate="steps"}}
+    </div>
+
+</template>
+
+<template name="recur">
+  {{#autoForm id="recur" doc=step.data schema=step.schema}}
+    {{> afQuickField name="type"}}
+    {{> afQuickField name="intervalNumber"}}
+    {{> afQuickField name="intervalType"}}
+    {{> afQuickField name="intervalStop"}}
+    {{> wizardButtons}}
+  {{/autoForm}}
+</template>
+
+<template name="dates">
+  {{#autoForm id="dates" doc=step.data schema=step.schema}}
+    {{> afQuickField name="start"}}
+    {{> afQuickField name="end"}}
+    {{> wizardButtons}}
+  {{/autoForm}}
+</template>
+
+<template name="steps">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        {{#each wizard.steps}}
+          <li><a>{{title}}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+  </nav>
+</template>
