@@ -1,37 +1,36 @@
 <template name="eventInsert">
-
-    <div class="col-md-8 col-md-offset-2">
-      {{> wizard id="basic" steps=steps buttonClasses="form-control" stepsTemplate="steps"}}
-    </div>
-
+  {{> wizard id="basic" steps=steps buttonClasses="btn btn-sm btn-success" stepsTemplate="steps"}}
 </template>
 
 <template name="recur">
-  {{#autoForm id="recur" doc=step.data schema=step.schema}}
-    {{> afQuickField name="type"}}
-    {{> afQuickField name="intervalNumber"}}
-    {{> afQuickField name="intervalType"}}
-    {{> afQuickField name="intervalStop"}}
-    {{> wizardButtons}}
-  {{/autoForm}}
+  <div class="col-md-8 col-md-offset-2">
+    {{#autoForm id="recur" doc=step.data schema=step.schema}}
+      {{> afQuickField name="type"}}
+      {{> afQuickField name="intervalNumber"}}
+      {{> afQuickField name="intervalType"}}
+      {{> afQuickField name="intervalStop"}}
+      {{> wizardButtons}}
+    {{/autoForm}}
+  </div>
 </template>
 
 <template name="dates">
-  {{#autoForm id="dates" doc=step.data schema=step.schema}}
-    {{> afQuickField name="start"}}
-    {{> afQuickField name="end"}}
-    {{> wizardButtons}}
-  {{/autoForm}}
+  <div class="col-md-8 col-md-offset-2">
+    {{#autoForm id="dates" doc=step.data schema=step.schema}}
+      {{> afQuickField name="start"}}
+      {{> afQuickField name="end"}}
+      {{> wizardButtons}}
+    {{/autoForm}}
+  </div>
 </template>
 
 <template name="steps">
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <ul class="nav navbar-nav">
+  <nav class="navbar-nav">
+
+      <div class="btn-group-sm btn-group-justified" role="group">
         {{#each wizard.steps}}
-          <li><a>{{title}}</a></li>
+          <a class="btn btn-info">{{title}}</a>
         {{/each}}
-      </ul>
-    </div>
+      </div>
   </nav>
 </template>
