@@ -1,9 +1,11 @@
 <template name="eventInsert">
-  {{> wizard id="eventInsert" steps=steps clearOnDestroy='true' buttonClasses="btn btn-sm btn-success" stepsTemplate="steps"}}
+  {{> wizard id="eventInsert" steps=steps clearOnDestroy='true' buttonClasses="btn btn-success" stepsTemplate="steps"}}
 </template>
 
 <template name="recur">
+
   <div class="col-md-8 col-md-offset-2">
+    <h2>Class Structure</h2>
     {{#autoForm id="recur" doc=step.data schema=step.schema}}
       {{> afQuickField name="type"}}
       {{> afQuickField name="intervalNumber"}}
@@ -15,7 +17,9 @@
 </template>
 
 <template name="dates">
+
   <div class="col-md-8 col-md-offset-2">
+    <h2>Dates</h2>
     {{#autoForm id="dates" doc=step.data schema=step.schema}}
       {{> afQuickField name="start"}}
       {{> afQuickField name="end"}}
@@ -25,19 +29,33 @@
 </template>
 
 <template name="location">
+
   <div class="col-md-8 col-md-offset-2">
+     <h2>Location</h2>
     {{#autoForm id="location" doc=step.data schema=step.schema}}
-      {{> afQuickField name="street"}}
-      {{> afQuickField name="city"}}
-      {{> afQuickField name="state"}}
-      {{> afQuickField name="zip"}}
+      <div class='row'>
+        <div class="col-xs-12">
+          {{> afQuickField name="street"}}
+        </div>
+        <div class='col-xs-5'>
+          {{> afQuickField name="city"}}
+        </div>
+        <div class='col-xs-3'>
+          {{> afQuickField name="state"}}
+        </div>
+        <div class='col-xs-4'>
+          {{> afQuickField name="zip"}}
+        </div>
+      </div>
       {{> wizardButtons}}
     {{/autoForm}}
   </div>
 </template>
 
 <template name="details">
+
   <div class="col-md-8 col-md-offset-2">
+    <h2>Details</h2>
     {{#autoForm id="details" doc=step.data schema=step.schema}}
       {{> afQuickField name="title"}}
       {{> afQuickField name="category"}}

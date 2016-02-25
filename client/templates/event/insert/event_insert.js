@@ -2,7 +2,7 @@ Template.eventInsert.helpers({
   steps: function() {
     return [{
       id: 'recur',
-      title: 'Recurring',
+      title: 'Structure',
       schema: 'RecurSchema',
       template: 'recur',
       formId: 'recur',
@@ -26,9 +26,12 @@ Template.eventInsert.helpers({
       formId: 'location',
       onSubmit: function(data, wizard) {
         var doc = wizard.store.keys;
+        doc.location = data;
         Meteor.call('submitCalEvent', doc, function(error, result){
           if (result == "success") {
             Router.go('/my-classes');
+          } else {
+            Bert.alert(error, 'danger');
           }
         });
       }
