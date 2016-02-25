@@ -90,7 +90,7 @@ Template.calendar.helpers({
 
       eventResize: function(event, delta, revertFunc, jsEvent, ui, view) {
         if (Meteor.userId() === event.owner) {
-          var id = CalEvent.findOne(event.__originalId)._id;
+          var id = CalEvent.findOne(event._id)._id;
           Meteor.call('resizeCalEvent', id, delta);
         } else {
           Bert.alert("You are not allowed to modify this event", "danger");

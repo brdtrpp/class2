@@ -1,13 +1,43 @@
 Meteor.methods({
+  submitCalEvent: function(doc) {
+    console.log(doc);
+    var event = {
+      title: doc.details.title,
+      category: doc.details.category,
+      description: doc.details.description,
+      price: doc.details.price,
+      attendeeCount: doc.details.attendeeCount,
+      start: doc.dates.start,
+      end: doc.dates.end,
+      recur: {
+        type: doc.recur.type,
+        intervalNumber: doc.recur.intervalNumber,
+        intervalType: doc.recur.intervalType,
+        intervalStop: doc.recur.intervalStop,
+      },
+      street: doc.location.street,
+      city: doc.location.city,
+      state: doc.location.state,
+      zip: doc.location.zip
+    };
+    
+    var doc = event;
+    
+    if (doc.recur.type == "classes") {
+      Meteor.call('saveCalEvent', doc);
+      return 'success';
+    } else {
+      Meteor.call('recur', doc);
+      return "success";
+    }
+  },
+
   removeCal: function(doc) {
     //refund to antendees
-
     if (doc.owner === Meteor.userId()){
-
       if (moment(moment(doc.start).toISOString()).isBefore(moment())) {
 
       } else {
-
         Meteor.call('refundEvent', doc);
         CalEvent.update({_id: doc._id}, {$set: {canceled: true}});
       }
@@ -62,6 +92,7 @@ Meteor.methods({
   },
 
   saveCalEvent:function(doc){
+    console.log(doc);
     //check if user is signed in or if the start date of the event is before now
     if (!this.userId || moment(moment(doc.start).toISOString()).isBefore(moment())) {
       return null;
@@ -84,8 +115,10 @@ Meteor.methods({
         state: doc.state,
         zip: doc.zip,
         courseId: doc.courseId,
+        selected: false
       });
     } else {
+
       return CalEvent.insert({
         createdAt: doc.createdAt,
         title: doc.title,

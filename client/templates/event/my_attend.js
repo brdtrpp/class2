@@ -4,8 +4,8 @@ Template.myAttend.helpers({
     var refunded = [];
     var att = Attendee.find({owner: Meteor.userId()}).fetch();
     _.forEach(att, function (item) {
-      if ((item.eventId !== "refunded" )){
-        var eventsearch = CalEvent.find({_id: item.eventId}).fetch();
+      if ((item.eventId != "refunded" )){
+        var eventsearch = CalEvent.find({_id: item.eventId, canceled: false}).fetch();
         _.forEach(eventsearch, function(each){
           if (_.findWhere(events, {_id: each._id}) === undefined) {
             events.push(each);

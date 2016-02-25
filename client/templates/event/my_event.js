@@ -80,7 +80,7 @@ Template.myEvent.helpers({
   },
 
   select:function() {
-    if (CalEvent.findOne({_id: this._id, selected: true})) {
+    if (CalEvent.findOne({_id: this._id}).selected) {
       return "selected";
     } else {
       return 'unselected';
@@ -88,11 +88,7 @@ Template.myEvent.helpers({
   },
 
   checkbox:function() {
-    if (CalEvent.findOne({_id: this._id, selected: true})) {
-      return true;
-    } else {
-      return false;
-    }
+    return CalEvent.findOne({_id: this._id}).selected
   }
 });
 

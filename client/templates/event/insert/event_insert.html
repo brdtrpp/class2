@@ -1,5 +1,5 @@
 <template name="eventInsert">
-  {{> wizard id="basic" steps=steps buttonClasses="btn btn-sm btn-success" stepsTemplate="steps"}}
+  {{> wizard id="eventInsert" steps=steps clearOnDestroy='true' buttonClasses="btn btn-sm btn-success" stepsTemplate="steps"}}
 </template>
 
 <template name="recur">
@@ -24,13 +24,28 @@
   </div>
 </template>
 
-<template name="steps">
-  <nav class="navbar-nav">
-
-      <div class="btn-group-sm btn-group-justified" role="group">
-        {{#each wizard.steps}}
-          <a class="btn btn-info">{{title}}</a>
-        {{/each}}
-      </div>
-  </nav>
+<template name="location">
+  <div class="col-md-8 col-md-offset-2">
+    {{#autoForm id="location" doc=step.data schema=step.schema}}
+      {{> afQuickField name="street"}}
+      {{> afQuickField name="city"}}
+      {{> afQuickField name="state"}}
+      {{> afQuickField name="zip"}}
+      {{> wizardButtons}}
+    {{/autoForm}}
+  </div>
 </template>
+
+<template name="details">
+  <div class="col-md-8 col-md-offset-2">
+    {{#autoForm id="details" doc=step.data schema=step.schema}}
+      {{> afQuickField name="title"}}
+      {{> afQuickField name="category"}}
+      {{> afQuickField name="description"}}
+      {{> afQuickField name="price"}}
+      {{> afQuickField name="attendeeCount"}}
+      {{> wizardButtons}}
+    {{/autoForm}}
+  </div>
+</template>
+

@@ -15,13 +15,13 @@
         </tr>
       </thead>
       <tbody>
-        
-        {{#transition  in="slideInLeft" out="slideOutRight"}}
+
+        <!--{{#transition  in="slideInLeft" out="slideOutRight"}}-->
         {{#each calevent}}
 
-            <tr class="animated out">
+            <tr>
               <td>
-                <span role='button' class='{{select}}'>{{#if checkbox}} {{> removeIcon}} {{else}} {{> removeBlankIcon}} {{/if}}</span>
+                <a role='button' class='{{select}}'>{{#if checkbox}} {{> removeIcon}} {{else}} {{> removeBlankIcon}} {{/if}}</a>
               </td>
               <td role='button' class='clickable-column'>{{title}}</td>
               <td role='button' class='clickable-column'>{{startDate}}</td>
@@ -36,7 +36,7 @@
             </tr>
 
         {{/each}}
-       {{/transition}}
+       <!--{{/transition}}-->
       </tbody>
     </table>
   </div>
