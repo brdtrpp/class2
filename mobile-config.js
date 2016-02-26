@@ -1,7 +1,7 @@
 // This section sets up some basic app metadata,
 // the entire section is optional.
 App.info({
-  id: 'com.production.brad.joinclass',
+  id: 'com.brad.joinclass',
   version: "1.0.2",
   buildNumber: "4",
   name: 'Class',
