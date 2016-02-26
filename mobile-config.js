@@ -2,6 +2,8 @@
 // the entire section is optional.
 App.info({
   id: 'com.production.brad.class',
+  version: "1.0.2",
+  buildNumber: "4",
   name: 'Class',
   description: 'a marketplace for classes',
   author: 'Bradley Trapp',

@@ -1,6 +1,7 @@
 {
   "name": "joinclass",
   "version": "1.0.2",
+  "buildNumber": "100"
   "repository" : {
     "type" : "git",
     "url" : "https://github.com/brdtrpp/class2.git"
