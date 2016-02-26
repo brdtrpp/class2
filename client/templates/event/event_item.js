@@ -67,7 +67,7 @@ Template.eventItem.events({
 
   'click .refund':function() {
     var doc = CalEvent.findOne({_id: this._id});
-    if(doc.price === null){
+    if(doc.price == null){
       Meteor.call('removeCal', doc);
       console.log(doc);
     } else{
