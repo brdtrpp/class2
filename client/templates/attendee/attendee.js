@@ -35,7 +35,7 @@ Template.attendeesItem.helpers({
 });
 
 Template.attendeesItem.events({
-  'click .refund' : function () {
+  'click .refundAtt' : function () {
     var att = Attendee.findOne({_id: this._id});
     Meteor.call('refundAttendee', att);
   },

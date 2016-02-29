@@ -8,6 +8,10 @@ Template.myEvent.helpers({
       return "Canceled";
     }
   },
+  
+  link: function() {
+    return "/classes/" + Meteor.userId();
+  },
 
   calevent: function() {
     if (Session.get('tense') == "future") {

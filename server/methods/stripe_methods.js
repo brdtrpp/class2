@@ -10,21 +10,28 @@ Meteor.methods({
   },
 
   refundAttendee: function (att) {
-    var Stripe = StripeAPI(Meteor.settings.private.stripe);
-    var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
-    stripeRefund({
-      charge: att.charge,
-      refund_application_fee: true,
-      reverse_transfer: true,
-    }, function(err, refund) {
-      if (refund) {
-        var doc = refund;
-        Meteor.call('refundAtt', doc, att);
-      } else if (err) {
-        console.log(err);
-      }
-    });
-    
+    console.log(att);
+
+    if (att.charge) {
+      var Stripe = StripeAPI(Meteor.settings.private.stripe);
+      var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
+      stripeRefund({
+        charge: att.charge,
+        refund_application_fee: true,
+        reverse_transfer: true,
+      }, function(err, refund) {
+        if (refund) {
+          var doc = refund;
+          Meteor.call('refundAtt', doc, att);
+        } else if (err) {
+          console.log(err);
+        }
+      });
+    } else {
+      var doc = "free";
+      Meteor.call('refundAtt', doc, att);
+    }
+
   },
 
   getAccount: function(aid) {
@@ -58,7 +65,7 @@ Meteor.methods({
     var available = event.attendeeCount - Attendee.find({eventId: event._id}).count();
     if (event.owner == Meteor.userId()) {
       throw new Meteor.Error('SelfReg', "Cannot signup for your own class.");
-      
+
     } else if (
       Attendee.find({
         eventId: event._id,

@@ -1,25 +1,24 @@
 <template name="attendeesItem">
      <li class="list-group-item">
        <div class="row">
-         <div class='col-xs-11'>
+         <div class='col-xs-10'>
           {{#if isEventOwner}}
             <span class="{{present}}" role='button'></span>
-
           {{/if}}
           {{attendeeFirstName}} {{attendeeLastName}} <small>registered on {{dateFormat}}</small>
         </div>
-        <div class="col-xs-1 pull-right">
+        <div class="col-xs-2">
           {{status}}
           {{#if isAttendee}}
               {{#afModal collection="Attendee" operation="update" doc=_id formId="updateAttendee" title="Edit Attendee Name"}}
               {{> editIcon}}
               {{/afModal}}
               {{#if timeRes }}
-                <a role='button' class="refund">{{> refundIcon}}</a>
+                <a role='button' class="refundAtt">{{> refundIcon}}</a>
               {{/if}}
           {{/if}}
           {{#if isEventOwner}}
-          <span class="glyphicon glyphicon-share refund" role='button'></span>
+            <a role='button' class="refundAtt">{{> refundIcon}}</a>
           {{/if}}
         </div>
       </div>

@@ -11,16 +11,18 @@ Template.myAttend.helpers({
             events.push(each);
           }
         });
-      } else if ((item.eventId === "refunded" )){
-        var refundsearch = CalEvent.find({_id: item.eventId}).fetch();
+      } else if ((item.eventId == "refunded" )){
+        var refundsearch = CalEvent.find({_id: item.reEventId}).fetch();
         _.forEach(refundsearch, function(each){
-          if (_.findWhere(events, {_id: each._id}) === undefined) {
+          if (_.findWhere(refunded, {_id: each._id}) === undefined) {
             refunded.push(each);
           }
         });
       }
     });
+
     if (Session.equals("status", "refunded")){
+      // console.log(refunded);
       return refunded;
     } else if (Session.equals("status", "attending")){
       return events;

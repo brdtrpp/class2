@@ -14,7 +14,7 @@
         </div>
         <div class='row'>
           <div class='col-xs-12'>
-            <h4><strong>{{title}}</strong> - {{ownerName}} <strong><small>{{category}}</small></strong></h4>
+            <h4><strong>{{title}}</strong> - <a href="{{link}}" role="button">{{ownerName}}</a> <strong><small>{{category}}</small></strong></h4>
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@
             {{#if canceled}}
               <h4>This class has been canceled</h4>
             {{else}}
-            <button type="button" class="btn btn-success form-control" data-toggle="modal" data-target="#attend">
+            <button type="button" class="btn btn-success btn-sm form-control" data-toggle="modal" data-target="#attend">
               Register
             </button>
             {{/if}}

@@ -2,6 +2,9 @@
 
 ##To-Do
 * Home Manual
+* Update Modal
+* List Display
+* Permalink for Classes
 * Affiliate Dashboard
 * Allergies
 * Images for Events

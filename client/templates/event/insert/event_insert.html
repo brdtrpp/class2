@@ -37,13 +37,13 @@
         <div class="col-xs-12">
           {{> afQuickField name="street"}}
         </div>
-        <div class='col-xs-5'>
+        <div class='col-xs-12'>
           {{> afQuickField name="city"}}
         </div>
-        <div class='col-xs-3'>
+        <div class='col-xs-6'>
           {{> afQuickField name="state"}}
         </div>
-        <div class='col-xs-4'>
+        <div class='col-xs-6'>
           {{> afQuickField name="zip"}}
         </div>
       </div>
@@ -60,7 +60,9 @@
       {{> afQuickField name="title"}}
       {{> afQuickField name="category"}}
       {{> afQuickField name="description"}}
-      {{> afQuickField name="price"}}
+      {{#if hasAccount}}
+        {{> afQuickField name="price"}}
+      {{/if}}
       {{> afQuickField name="attendeeCount"}}
       {{> wizardButtons}}
     {{/autoForm}}

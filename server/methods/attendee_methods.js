@@ -12,7 +12,12 @@ Meteor.methods({
   },
   
   addAtt: function(event, att, charge) {
-    if ((moment(event.start).isAfter(moment())) && (event.owner != Meteor.userId())) {
+    if ((moment(event.start).isAfter(moment()) && (Attendee.find({eventId: event._id}).count() < event.attendeeCount)) && ((event.owner != Meteor.userId()) && Attendee.find({
+        eventId: event._id,
+        attendeeFirstName: att.attendeeFirstName,
+        attendeeLastName: att.attendeeLastName,
+        owner: Meteor.userId()
+      }).count() == 0)) {
       Attendee.insert({
         eventId: event._id,
         attendeeFirstName: att.attendeeFirstName,

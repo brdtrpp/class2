@@ -38,3 +38,10 @@ Template.eventInsert.helpers({
     }];
   }
 });
+
+
+Template.details.helpers({
+  hasAccount: function() {
+    return Meteor.user().accountId;
+  }
+});

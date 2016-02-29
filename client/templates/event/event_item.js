@@ -24,13 +24,13 @@ Template.eventItem.helpers({
   },
 
   startDate:function() {
-    var start = CalEvent.findOne({_id: this._id}).start;
+    var start = this.start;
     var date = moment(start).format('LLL');
     return date;
   },
 
   endDate:function() {
-    var end = CalEvent.findOne({_id: this._id}).end;
+    var end = this.end;
     var date = moment(end).format('LLL');
     return date;
   },
@@ -39,10 +39,13 @@ Template.eventItem.helpers({
     var cPrice = this.price * 1.10;
     return cPrice.toFixed(2);
   },
-  
+
   canceled: function() {
-    console.log()
     return this.canceled;
+  },
+
+  link: function () {
+    return "/classes/" + Meteor.userId();
   },
 
   timeRes: function () {

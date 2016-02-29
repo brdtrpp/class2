@@ -19,6 +19,10 @@ Template.eventItemList.helpers({
     return cPrice.toFixed(2);
   },
 
+  aCount: function() {
+    return Attendee.find({eventId: this._id}).count();
+  },
+
   timeRes: function () {
     var start = moment(CalEvent.findOne({_id: this._id}).start).subtract(1, "days");
     return moment().isBefore(start);
@@ -32,7 +36,12 @@ Template.eventItemList.helpers({
     }
   },
   attendee: function() {
-    return Attendee.find({eventId: this._id});
+    if (Session.equals("status", "refunded")){
+      return Attendee.find({reEventId: this._id});
+    } else if (Session.equals("status", "attending")){
+      return Attendee.find({eventId: this._id});
+    }
+
   },
 });
 

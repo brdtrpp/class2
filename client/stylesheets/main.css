@@ -59,10 +59,10 @@ select
     text-align: center;
   }
 
-h1, .h1, h2, .h2, h3, .h3 {
-    margin-top: 50px;
-    margin-bottom: 10.5px;
-}
+/*h1, .h1, h2, .h2, h3, .h3 {*/
+/*    margin-top: 50px;*/
+/*    margin-bottom: 10.5px;*/
+/*}*/
 
 .navbar-nav {
   margin: 0px 0px !important;
