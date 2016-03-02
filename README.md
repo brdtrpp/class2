@@ -3,11 +3,10 @@
 ##To-Do
 * Home Manual
 * Update Modal
-* List Display
-* Permalink for Classes
+* Landing Page
 * Affiliate Dashboard
 * Allergies
-* Images for Events
+* Navbar Title-of-Page
 * All Day broken
 * Timezone and Daylight savings time
 * Star rating system
@@ -16,7 +15,6 @@
 * Display Limits
 * Notifications
 * Messaging
-* Text Area
 * Wait List
 * Publically Viewable Profile (User and Host)
 * Limit Credit Card Information & selectable
