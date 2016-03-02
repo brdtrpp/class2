@@ -8,9 +8,11 @@
     <h2>Class Structure</h2>
     {{#autoForm id="recur" doc=step.data schema=step.schema}}
       {{> afQuickField name="type"}}
-      {{> afQuickField name="intervalNumber"}}
-      {{> afQuickField name="intervalType"}}
-      {{> afQuickField name="intervalStop"}}
+
+        {{> afQuickField name="intervalNumber" disabled=classStructure defaultValue="0"}}
+        {{> afQuickField name="intervalType" disabled=classStructure defaultValue="days"}}
+        {{> afQuickField name="intervalStop" disabled=classStructure defaultValue="0"}}
+
       {{> wizardButtons}}
     {{/autoForm}}
   </div>

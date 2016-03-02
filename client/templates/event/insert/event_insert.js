@@ -6,6 +6,7 @@ Template.eventInsert.helpers({
       schema: 'RecurSchema',
       template: 'recur',
       formId: 'recur',
+
     },{
       id: 'dates',
       title: 'Dates',
@@ -26,6 +27,9 @@ Template.eventInsert.helpers({
       formId: 'location',
       onSubmit: function(data, wizard) {
         var doc = wizard.store.keys;
+        doc.start = moment(doc.dates.start)._d;
+        doc.end = moment(doc.dates.end)._d;
+        console.log(doc);
         doc.location = data;
         Meteor.call('submitCalEvent', doc, function(error, result){
           if (result == "success") {
@@ -36,6 +40,13 @@ Template.eventInsert.helpers({
         });
       }
     }];
+  }
+});
+
+Template.recur.helpers({
+  classStructure: function(){
+    // console.log(this.data);
+    return false;
   }
 });
 

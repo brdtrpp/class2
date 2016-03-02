@@ -1,14 +1,13 @@
 Meteor.methods({
   submitCalEvent: function(doc) {
-    console.log(doc);
     var event = {
       title: doc.details.title,
       category: doc.details.category,
       description: doc.details.description,
       price: doc.details.price,
       attendeeCount: doc.details.attendeeCount,
-      start: doc.dates.start,
-      end: doc.dates.end,
+      start: doc.start,
+      end: doc.end,
       recur: {
         type: doc.recur.type,
         intervalNumber: doc.recur.intervalNumber,
@@ -20,9 +19,9 @@ Meteor.methods({
       state: doc.location.state,
       zip: doc.location.zip
     };
-    
+
     var doc = event;
-    
+
     if (doc.recur.type == "classes") {
       Meteor.call('saveCalEvent', doc);
       return 'success';
@@ -85,7 +84,7 @@ Meteor.methods({
         var newEnd = moment(newStart).add(dur, 'ms');
         doc.start = moment(newStart).toISOString();
         doc.end = moment(newEnd).toISOString();
-        // console.log(doc);
+
         Meteor.call('saveCalEvent', doc);
       });
     }

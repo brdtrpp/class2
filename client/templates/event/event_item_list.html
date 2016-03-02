@@ -1,5 +1,5 @@
 <template name="eventItemList">
-  <div class="container-fluid">
+  <div class="container">
     <a href="/class/{{_id}}" role='button' class="body-click">
       <span>
         <div class="panel panel-default">
@@ -36,7 +36,7 @@
         </li>
       </ul>
       <div class='panel-body'>
-        <p>{{description}}</p>
+        <p>{{{description}}}</p>
       </div>
           {{#if isAttendee}}
             <div class="panel-footer">

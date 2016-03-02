@@ -67,3 +67,7 @@ forwarder:autoform-wizard
 velocity:core
 drewy:datetimepicker
 drewy:autoform-datetimepicker
+mpowaga:autoform-summernote
+joshowens:timezone-picker
+fortawesome:fontawesome
+djedi:sanitize-html
