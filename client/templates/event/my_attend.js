@@ -35,5 +35,7 @@ Template.myAttend.helpers({
 });
 
 Template.myAttend.onRendered( function() {
+  
   Session.set("status", "attending");
+  Session.set("title", "Attending");
 });

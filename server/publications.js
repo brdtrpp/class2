@@ -9,3 +9,7 @@ Meteor.publish('attendee', function() {
 Meteor.publish('allUsers', function() {
   return Meteor.users.find();
 });
+
+Meteor.publish('betaList', function() {
+  return BetaList.find();
+})
