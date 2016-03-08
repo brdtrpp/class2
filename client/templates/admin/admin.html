@@ -1,0 +1,14 @@
+<template name='adminPanel'>
+  <div class='container'>
+    <h1 align='center'>Admin Panel</h1>
+    <h3>User Count: {{userCount}}</h3>
+    <h3>Beta Count: {{betaCount}}</h3>
+    {{#autoForm schema=Schemas.SendEmail id="sendEmail" type="method" meteormethod="craftAdminEmail"}}
+      {{> afQuickField name='to'}}
+      {{> afQuickField name='from'}}
+      {{> afQuickField name='subject'}}
+      {{> afQuickField name='html' rows=6}}
+      <button type="submit" class="btn btn-primary form-control">Send Email</button>
+    {{/autoForm}}
+  </div>
+</template>
