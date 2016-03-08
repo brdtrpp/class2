@@ -44,7 +44,7 @@ _.forEach(beta, function (user) {
   Meteor.call('craftEmail',{
     emailTemplate: 'betaList',
     asset: 'beta_list.html',
-    to: 'support@joinclass.co',
+    to: user.email,
     from: 'support@joinclass.co',
     subject: 'Welcome to Class!',
   });
