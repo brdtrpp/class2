@@ -81,6 +81,7 @@ mdg:geolocation@1.1.0
 mdg:validation-error@0.5.1
 meteor@1.1.10
 meteor-base@1.0.1
+meteor-platform@1.2.3
 meteorhacks:async@1.0.0
 meteorhacks:npm@1.5.0
 meteorhacks:ssr@2.2.0
@@ -112,6 +113,7 @@ peerlibrary:computed-field@0.3.1
 peerlibrary:data-lookup@0.1.0
 peerlibrary:reactive-field@0.1.0
 percolate:synced-cron@1.3.0
+philip100:autoform-bs-country-field@0.0.11
 practicalmeteor:chai@2.1.0_1
 practicalmeteor:loglevel@1.2.0_2
 promise@0.5.1
@@ -138,6 +140,7 @@ softwarerero:accounts-t9n@1.2.2
 spacebars@1.0.7
 spacebars-compiler@1.0.7
 srp@1.0.4
+standard-app-packages@1.0.6
 standard-minifiers@1.0.2
 stylus@2.511.1
 summernote:standalone@0.8.1
