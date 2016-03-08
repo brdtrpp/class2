@@ -39,16 +39,16 @@ Meteor.methods({
 
 // Meteor.call('searchCraigs');
 
-var beta = BetaList.find().fetch();
-_.forEach(beta, function (user) {
-  Meteor.call('craftEmail',{
-    emailTemplate: 'betaList',
-    asset: 'beta_list.html',
-    to: user.email,
-    from: 'support@joinclass.co',
-    subject: 'Welcome to Class!',
-  });
-});
+// var beta = BetaList.find().fetch();
+// _.forEach(beta, function (user) {
+//   Meteor.call('craftEmail',{
+//     emailTemplate: 'betaList',
+//     asset: 'beta_list.html',
+//     to: user.email,
+//     from: 'support@joinclass.co',
+//     subject: 'Welcome to Class!',
+//   });
+// });
 
 // Meteor.call('sendEmail',{
 //   to: 'support@joinclass.co',
