@@ -4,6 +4,9 @@ Meteor.methods({
       Meteor.call('betaListEmail', doc);
     } else if (doc.to == 'users') {
       Meteor.call('userListEmail', doc);
+    } else if (doc.to == 'test') {
+      doc.to = 'support@joinclass.co',
+      Meteor.call('sendEmail', doc);
     }
   },
 
