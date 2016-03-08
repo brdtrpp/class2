@@ -24,7 +24,7 @@ Meteor.methods({
     // without waiting for the email sending to complete.
     this.unblock();
 
-    console.log(mailFields);
+    // console.log(mailFields);
 
     Meteor.Mailgun.send({
         to: mailFields.to,
@@ -39,7 +39,16 @@ Meteor.methods({
 
 // Meteor.call('searchCraigs');
 
-
+var beta = BetaList.find().fetch();
+_.forEach(beta, function (user) {
+  Meteor.call('craftEmail',{
+    emailTemplate: 'betaList',
+    asset: 'beta_list.html',
+    to: 'support@joinclass.co',
+    from: 'support@joinclass.co',
+    subject: 'Welcome to Class!',
+  });
+});
 
 // Meteor.call('sendEmail',{
 //   to: 'support@joinclass.co',
