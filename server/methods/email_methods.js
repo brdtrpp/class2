@@ -5,7 +5,7 @@ Meteor.methods({
     } else if (doc.to == 'users') {
       Meteor.call('userListEmail', doc);
     } else if (doc.to == 'test') {
-      doc.to = 'support@joinclass.co',
+      doc.to = 'trapp2357@gmail.com',
       Meteor.call('sendEmail', doc);
     }
   },
