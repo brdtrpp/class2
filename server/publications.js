@@ -12,4 +12,12 @@ Meteor.publish('allUsers', function() {
 
 Meteor.publish('betaList', function() {
   return BetaList.find();
-})
+});
+
+Meteor.publish('surveyOne', function () {
+  return SurveyOne.find();
+});
+
+Meteor.publish('surveyTwo', function () {
+  return SurveyTwo.find();
+});

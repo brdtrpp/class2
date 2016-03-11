@@ -1,14 +1,86 @@
 <template name='adminPanel'>
   <div class='container'>
     <h1 align='center'>Admin Panel</h1>
-    <h3>User Count: {{userCount}}</h3>
-    <h3>Beta Count: {{betaCount}}</h3>
-    {{#autoForm schema=Schemas.SendEmail id="sendEmail" type="method" meteormethod="craftAdminEmail"}}
-      {{> afQuickField name='to'}}
-      {{> afQuickField name='from'}}
-      {{> afQuickField name='subject'}}
-      {{> afQuickField name='html' rows=6}}
-      <button type="submit" class="btn btn-success form-control">Send Email</button>
-    {{/autoForm}}
+    <!--{{>areaDemo}}-->
+    <div class="row">
+      <div class="col-sm-6">
+        <h3 align='center'>User Count: {{userCount}}</h3>
+      </div>
+      <div class="col-sm-6">
+        <h3 align='center'>Beta Count: {{betaCount}}</h3>
+      </div>
+    </div>
+
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>User Type</th>
+          <th>Country</th>
+          <th>Money Spent</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each surveyOne}}
+          <tr>
+            <td>{{userType}}</td>
+            <td>{{country}}</td>
+            <td>{{moneySpent}}</td>
+            <td>{{cate}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Business Name</th>
+          <th>Website</th>
+          <th>Type</th>
+          <th>Customers</th>
+          <th>Class Size</th>
+          <th>Type of Classes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each surveyTwo}}
+          <tr>
+            <td>{{businessName}}</td>
+            <td>{{website}}</td>
+            <td>{{businessType}}</td>
+            <td>{{customerBase}}</td>
+            <td>{{classSize}}</td>
+            <td>{{classType}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+
+
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Send Messages to People
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            {{#autoForm schema=Schemas.SendEmail id="sendEmail" type="method" meteormethod="craftAdminEmail"}}
+              {{> afQuickField name='to'}}
+              {{> afQuickField name='from'}}
+              {{> afQuickField name='subject'}}
+              {{> afQuickField name='html' rows=6}}
+              <button type="submit" class="btn btn-success form-control">Send Email</button>
+            {{/autoForm}}
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
