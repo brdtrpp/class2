@@ -1,7 +1,13 @@
 <template name="profile">
-  <div class="container-fluid">
-    <h3>{{profile.username}}</h3>
-    {{profile.profile.firstName}} {{profile.profile.lastName}}
-    {{profile.profile.homeAddress.city}}
+  <!--<h3>TOASTER</h3>-->
+  <div class="container">
+    <h3>{{username}}</h3>
+    <h2 align='center'>{{emails.[0].address}}'s Profile</h2>
+    <!--<h3>Profile Created{{profile.createdAt}}</h3>-->
+    <h3>Name: <small>{{profile.firstName}} {{profile.lastName}}</small></h3>
+    <h3>Age: <small>{{profile.birthday}}</small></h3>
+    <h3>Gender: <small>{{profile.gender}}</small></h3>
+    <h3>Bio: <small>{{profile.bio}}</small></h3>
+    <h3>Location: <small>{{profile.homeAddress.city}}, {{profile.homeAddress.state}}</small></h3>
   </div>
 </template>

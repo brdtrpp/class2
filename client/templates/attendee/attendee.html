@@ -1,7 +1,8 @@
 <template name="attendeesItem">
-     <li class="list-group-item">
-       <div class="row">
-         <div class='col-xs-10'>
+  <a href="/user/{{user}}" role='button'>
+    <li class="list-group-item">
+      <div class="row">
+        <div class='col-xs-10'>
           {{#if isEventOwner}}
             <span class="{{present}}" role='button'></span>
           {{/if}}
@@ -23,4 +24,5 @@
         </div>
       </div>
     </li>
+  </a>
 </template>

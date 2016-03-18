@@ -45,7 +45,7 @@ Template.eventItem.helpers({
   },
 
   link: function () {
-    return "/classes/" + Meteor.userId();
+    return "/classes/" + this.owner;
   },
 
   timeRes: function () {

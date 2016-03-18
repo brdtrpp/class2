@@ -1,4 +1,7 @@
 Template.attendeesItem.helpers({
+  user: function () {
+    return this.owner;
+  },
   isAttendee: function() {
     return this.owner === Meteor.userId();
   },
@@ -16,7 +19,7 @@ Template.attendeesItem.helpers({
     var start = moment(CalEvent.findOne({_id: this.eventId}).start).subtract(1, "days");
     return moment().isBefore(start);
   },
-  
+
   present: function() {
     var att = Attendee.findOne({_id: this._id});
     if(att.attendance.present) {
@@ -25,7 +28,7 @@ Template.attendeesItem.helpers({
       return "glyphicon glyphicon-unchecked present";
     }
   },
-  
+
   status: function() {
     var att = Attendee.findOne({_id: this._id});
     if(att.reEventId) {
@@ -44,10 +47,10 @@ Template.attendeesItem.events({
     Attendee.update({_id: this._id}, {$set: {"attendance.present": true}});
     Bert.alert(this.attendeeFirstName + " " + this.attendeeLastName + " is present.");
   },
-  
+
   'click .unpresent' : function() {
     Attendee.update({_id: this._id}, {$set: {"attendance.present": false}});
     Bert.alert(this.attendeeFirstName + " " + this.attendeeLastName + " is NOT present.", 'warning');
   }
-  
+
 });
