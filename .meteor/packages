@@ -25,7 +25,6 @@ aldeed:template-extension
 adelq:moment-recur
 mrt:moment-timezone
 
-standard-minifiers
 meteor-base
 mobile-experience
 mongo
@@ -75,3 +74,5 @@ meteorhacks:ssr
 philip100:autoform-bs-country-field
 maazalik:highcharts
 meteorhacks:kadira
+standard-minifier-css
+standard-minifier-js

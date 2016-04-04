@@ -1,11 +1,13 @@
 <template name="profileEdit">
   <div class="container-fluid">
     <div class="col-md-6 col-md-offset-3">
+      {{> quickForm collection="Meteor.users" doc=user id="updateUserProfile" type="update"}}
       {{#if hasAccount}}
       {{else}}
-        <a class='btn btn-success form-control' href='{{pathFor "getPaid"}}'>Start Instructing Here</a>
+        <h3 align="center">Register Your Business</h3>
+        <h4>In order to accept money instantly when your customer registers for your class, you need to register as a business.</h4>
+        <a class='btn btn-success form-control' href='{{pathFor "getPaid"}}'>Register</a>
       {{/if}}
-      {{> quickForm collection="Meteor.users" doc=user id="updateUserProfile" type="update"}}
     </div>
   </div>
 </template>
