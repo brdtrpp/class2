@@ -19,4 +19,10 @@ Template.eventOwner.events({
     Meteor.call("removeCal", doc);
     Router.go('/my-classes');
   },
+
+  'click, .mailGroup':function() {
+    eventId = this._id;
+    console.log(eventId)
+    Meteor.call('userListEmail', eventId)
+  }
 });

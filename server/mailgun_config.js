@@ -9,9 +9,9 @@ Meteor.startup(function(){
 // Meteor.call('searchCraigs');
 
 
-Meteor.call('sendEmail',{
-  to: 'support@joinclass.co',
-  from: 'support@joinclass.co',
-  subject: 'Deployed',
-  html: "Deployed"
-});
+// Meteor.call('sendEmail',{
+//   to: 'support@joinclass.co',
+//   from: 'support@joinclass.co',
+//   subject: 'Deployed',
+//   html: "Deployed"
+// });

@@ -19,13 +19,26 @@ Meteor.methods({
   },
 
 
-  userListEmail: function(doc) {
-    var userList = Meteor.users.find().fetch();
-    console.log(userList);
+  userListEmail: function(eventId) {
+    var userList = Attendee.find({eventId: eventId}).fetch();
+    var owner = Meteor.user({_id: CalEvent.findOne({_id: eventId}).owner}).emails[0].address;
+    console.log(owner);
     _.forEach(userList, function(user) {
-      doc.to = user.emails[0].address;
-      Meteor.call('sendEmail', doc);
+      muser = Meteor.user({_id: user.owner});
+      doc = {
+        to: muser.emails[0].address,
+        from: owner,
+        subject: "Toaster",
+        html: "Toaster"
+      };
+
+      Meteor.call('sendEmail', doc)
+      // console.log(doc);
     });
+    // _.forEach(userList, function(user) {
+    //   doc.to = user.emails[0].address;
+    //   Meteor.call('sendEmail', doc);
+    // });
   },
 
   craftEmail: function(mailFields){
@@ -37,20 +50,27 @@ Meteor.methods({
   sendEmail: function (mailFields) {
     // console.log(mailFields);
     console.log("about to send email...");
-    check([mailFields.to, mailFields.from, mailFields.subject, mailFields.html], [String]);
+
+    // check([mailFields.to, mailFields.from, mailFields.subject, mailFields.html], [String]);
 
     // Let other method calls from the same client start running,
     // without waiting for the email sending to complete.
     this.unblock();
 
-    // console.log(mailFields);
-
     Meteor.Mailgun.send({
-      to: mailFields.to,
-      from: mailFields.from,
-      subject: mailFields.subject,
-      html: mailFields.html
+      to: mailFields.to
+      // from: mailFields.from,
+      // subject: mailFields.subject,
+      // html: mailFields.html
     });
+
+    // console.log({
+    //   to: mailFields.to,
+    //   from: mailFields.from,
+    //   subject: mailFields.subject,
+    //   html: mailFields.html
+    // });
+
     console.log("email sent!");
   }
 });
