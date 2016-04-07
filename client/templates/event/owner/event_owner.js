@@ -20,9 +20,8 @@ Template.eventOwner.events({
     Router.go('/my-classes');
   },
 
-  'click, .mailGroup':function() {
-    eventId = this._id;
-    console.log(eventId)
-    Meteor.call('userListEmail', eventId)
-  }
+  // 'click, .mailGroup':function() {
+  //   eventId = this._id;
+  //   Meteor.call('userListEmail', eventId);
+  // }
 });

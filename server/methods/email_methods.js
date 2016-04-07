@@ -19,26 +19,8 @@ Meteor.methods({
   },
 
 
-  userListEmail: function(eventId) {
-    var userList = Attendee.find({eventId: eventId}).fetch();
-    var owner = Meteor.user({_id: CalEvent.findOne({_id: eventId}).owner}).emails[0].address;
-    console.log(owner);
-    _.forEach(userList, function(user) {
-      muser = Meteor.user({_id: user.owner});
-      doc = {
-        to: muser.emails[0].address,
-        from: owner,
-        subject: "Toaster",
-        html: "Toaster"
-      };
-
-      Meteor.call('sendEmail', doc)
-      // console.log(doc);
-    });
-    // _.forEach(userList, function(user) {
-    //   doc.to = user.emails[0].address;
-    //   Meteor.call('sendEmail', doc);
-    // });
+  classEmail: function(doc) {
+    console.log(doc);
   },
 
   craftEmail: function(mailFields){
@@ -58,10 +40,10 @@ Meteor.methods({
     this.unblock();
 
     Meteor.Mailgun.send({
-      to: mailFields.to
-      // from: mailFields.from,
-      // subject: mailFields.subject,
-      // html: mailFields.html
+      to: mailFields.to,
+      from: mailFields.from,
+      subject: mailFields.subject,
+      html: mailFields.html
     });
 
     // console.log({

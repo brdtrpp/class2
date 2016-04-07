@@ -28,7 +28,7 @@ AutoForm.hooks({
                 Meteor.call("addAtt", event, att, charge);
                 Bert.alert("Your card has been charged $" + amount.toFixed(2));
               }
-  
+
             }
           });
         }

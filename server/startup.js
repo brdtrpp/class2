@@ -6,17 +6,12 @@ Meteor.startup(function() {
     'ownerName': 'text'
   });
 
-  // Meteor.Mailgun.config({
-  //   username: 'YOUR_MAILGUN_USERNAME',
-  //   password: 'YOUR_MAILGUN_PASSWORD'
+  // Meteor.call('sendEmail',{
+  //   to: 'support@joinclass.co',
+  //   from: 'support@joinclass.co',
+  //   subject: 'Deployed',
+  //   html: "Deployed"
   // });
-
-  Meteor.call('sendEmail',{
-    to: 'support@joinclass.co',
-    from: 'support@joinclass.co',
-    subject: 'Deployed',
-    html: "Deployed"
-  });
 
   // var beta = BetaList.find().fetch();
   // _.forEach(beta, function (user) {
