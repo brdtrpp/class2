@@ -6,6 +6,8 @@ Meteor.startup(function() {
     'ownerName': 'text'
   });
 
+  console.log("DEPLOYED");
+
   Meteor.call('sendEmail',{
     to: 'support@joinclass.co',
     from: 'support@joinclass.co',

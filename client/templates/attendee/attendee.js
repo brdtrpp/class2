@@ -22,11 +22,7 @@ Template.attendeesItem.helpers({
 
   present: function() {
     var att = Attendee.findOne({_id: this._id});
-    if(att.attendance.present) {
-      return "glyphicon glyphicon-check unpresent";
-    } else {
-      return "glyphicon glyphicon-unchecked present";
-    }
+    return att.attendance.present;
   },
 
   status: function() {
@@ -51,6 +47,7 @@ Template.attendeesItem.events({
   'click .unpresent' : function() {
     Attendee.update({_id: this._id}, {$set: {"attendance.present": false}});
     Bert.alert(this.attendeeFirstName + " " + this.attendeeLastName + " is NOT present.", 'warning');
-  }
+  },
+
 
 });

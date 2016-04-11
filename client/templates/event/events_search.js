@@ -7,7 +7,16 @@ Template.eventSearch.helpers({
         classes.push(event);
       }
     });
+    if(classes.length > 0){
+      Session.set('empty', false);
+    }else{
+      Session.set('empty', true);
+    }
     return classes;
+  },
+
+  empty: function() {
+    return Session.get('empty');
   }
 });
 
