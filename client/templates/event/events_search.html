@@ -3,12 +3,11 @@
     <div class="jumbotron">
       <center>
         <h1>Refine Your Search</h1>
-        <p>It appears the classes you were looking for doesn't exist yet!</p>
+        <p>It appears the classes you were looking for don't exist yet!</p>
       </center>
     </div>
-  {{else}}
-    {{#each classes}}
-      {{> eventItemList}}
-    {{/each}}
   {{/if}}
+  {{#each classes}}
+    {{> eventItemList}}
+  {{/each}}
 </template>

@@ -54,19 +54,19 @@ Meteor.methods({
     // without waiting for the email sending to complete.
     this.unblock();
 
-    Meteor.Mailgun.send({
-      to: mailFields.to,
-      from: mailFields.from,
-      subject: mailFields.subject,
-      html: mailFields.html
-    });
-
-    // console.log({
+    // Meteor.Mailgun.send({
     //   to: mailFields.to,
     //   from: mailFields.from,
     //   subject: mailFields.subject,
     //   html: mailFields.html
     // });
+
+    console.log({
+      to: mailFields.to,
+      from: mailFields.from,
+      subject: mailFields.subject,
+      html: mailFields.html
+    });
 
     console.log("email sent!");
   }
