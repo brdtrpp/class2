@@ -93,10 +93,30 @@
           {{#autoForm schema=Schemas.SendEmail id="massEmail" event=_id}}
             <div class="modal-body">
               {{> afQuickField name='subject'}}
-              {{> afQuickField name='html' rows=6}}
+              {{> afQuickField name='html'}}
             </div>
             <div class="modal-footer">
-              <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+              <button type="submit" class="btn btn-success form-control">Send Email</button>
+            </div>
+          {{/autoForm}}
+        </div>
+      </div>
+    </div>
+
+    <!--Modal-->
+    <div class="modal fade" id="mailIndividual" tabindex="-1" role="dialog" aria-labelledby="mailIndividual">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="mailIndividual">Email Attendees</h4>
+          </div>
+          {{#autoForm schema=Schemas.SendEmail id="directEmail"}}
+            <div class="modal-body">
+              {{> afQuickField name='subject'}}
+              {{> afQuickField name='html'}}
+            </div>
+            <div class="modal-footer">
               <button type="submit" class="btn btn-success form-control">Send Email</button>
             </div>
           {{/autoForm}}

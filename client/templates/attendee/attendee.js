@@ -34,6 +34,11 @@ Template.attendeesItem.helpers({
 });
 
 Template.attendeesItem.events({
+  'click .att' : function() {
+    Session.set("emailAtt", this.owner);
+    Session.set("eventIdEmail", this.eventId);
+  },
+
   'click .refundAtt' : function () {
     var att = Attendee.findOne({_id: this._id});
     Meteor.call('refundAttendee', att);

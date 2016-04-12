@@ -3,7 +3,7 @@
       <div class="row">
         <div class='col-xs-10'>
           {{#if isEventOwner}}
-            <a role='button' class='email'>{{> directEmail}}</a>
+            <a role='button' class='att' data-toggle="modal" data-target="#mailIndividual">{{> directEmail}}</a>
             {{#if present}}
               <a role='button' class='unpresent'>{{> checkBox}}</a>
             {{else}}

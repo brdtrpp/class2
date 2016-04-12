@@ -1,19 +1,4 @@
 AutoForm.hooks({
-  // insertClass:{
-  //   before:{
-  //     insert: function(doc) {
-  //       if (doc.recur) {
-  //         Meteor.call('recur', doc);
-  //       } else {
-  //         Meteor.call('saveCalEvent',doc);
-  //       }
-  //       $('#afModal').modal('hide');
-  //       return false;
-  //     }
-  //   },
-  //   beginSubmit: function() {},
-  //   endSubmit: function() {}
-  // },
   updateClass: {
     before:{
       update: function(doc) {

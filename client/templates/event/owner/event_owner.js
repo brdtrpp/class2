@@ -1,6 +1,12 @@
 Template.eventOwner.helpers({
   isOwner: function() {
-    if ((this.owner ===Meteor.userId()) && moment(this.start).isAfter(moment())) {
+    if ((this.owner ===Meteor.userId())) {
+      return true;
+    }
+  },
+
+  isPast : function () {
+    if (moment(this.start).isAfter(moment())) {
       return true;
     }
   },

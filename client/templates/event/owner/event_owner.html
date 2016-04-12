@@ -1,9 +1,11 @@
 <template name="eventOwner">
   {{#if isOwner}}
-    {{#afModal collection="CalEvent" operation="update" doc=_id formId="updateClass" title="Edit Class"}}
-      {{> editIcon}}
-    {{/afModal}}
-    <a role='button' data-toggle="modal" data-target="#cancel">{{> binIcon}}</a>
+    {{#if isPast}}
+      {{#afModal collection="CalEvent" operation="update" doc=_id formId="updateClass" title="Edit Class"}}
+        {{> editIcon}}
+      {{/afModal}}
+      <a role='button' data-toggle="modal" data-target="#cancel">{{> binIcon}}</a>
+    {{/if}}
     <a role='button' data-toggle="modal" data-target="#mailGroup">{{> massMailIcon}}</a>
   {{/if}}
 </template>

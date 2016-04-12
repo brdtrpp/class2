@@ -31,6 +31,13 @@ Meteor.methods({
 
   },
 
+  directEmail : function(doc, owner, eventId) {
+    var eventOwner = CalEvent.findOne({_id: eventId}).owner;
+    doc.from = Meteor.users.findOne({_id: eventOwner}).emails[0].address;
+    doc.to = Meteor.users.findOne({_id: owner}).emails[0].address;
+    Meteor.call('sendEmail', doc);
+  },
+
   craftEmail: function(mailFields){
     SSR.compileTemplate( mailFields.emailTemplate, Assets.getText( mailFields.asset ) );
     mailFields.html = SSR.render( mailFields.emailTemplate );
