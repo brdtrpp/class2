@@ -6,7 +6,7 @@
           <span class="sr-only"></span>
           {{> menuIcon}}
         </button>
-        <a class="navbar-brand" href="{{pathFor 'home'}}">
+        <a class="navbar-brand" href="{{pathFor 'myAttend'}}">
           <img alt="Class" height="20" src="/images/class-type.png">
         </a>
       </div>
@@ -18,11 +18,11 @@
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="true">Classes <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-                <li><a class='navclose' href="{{pathFor 'myEvent'}}">Instructing</a></li>
               {{#if hasAccount}}
               {{else}}
                 <li><a class='navclose' href="{{pathFor 'getPaid'}}">Start Accepting Money</a></li>
               {{/if}}
+              <li><a class='navclose' href="{{pathFor 'myEvent'}}">Instructing</a></li>
               <li><a class='navclose' href="{{pathFor 'myAttend'}}">Attending</a></li>
               <li><a class='navclose' href="{{pathFor 'eventSearch'}}">Search</a></li>
               <li class="divider"></li>
@@ -51,8 +51,8 @@
         <ul class="nav navbar-nav navbar-right">
           {{#if currentUser}}
             {{> atNavButton}}
-          <!--{{else}}-->
-          <!--  <li><a class='navclose' href="{{pathFor 'register'}}">Register</a></li>-->
+          {{else}}
+            <li><a class='navclose' href="{{pathFor 'register'}}">Register</a></li>
           {{/if}}
 
         </ul>

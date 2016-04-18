@@ -10,6 +10,12 @@ Template.home.helpers({
   }
 });
 
+Template.home.events({
+  'click .hint-left': function () {
+    console.log("hint Left");
+  }
+}),
+
 Template.home.onRendered( function() {
   if (Meteor.user()) {
       if (!Meteor.user().profile.affiliateId) {
