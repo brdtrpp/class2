@@ -7,8 +7,11 @@ Template.eventSearch.helpers({
         classes.push(event);
       } else if (event.pid) {
         classes.push(event);
+      } else if (event._id == "NoClass") {
+        classes.push(event);
       }
     });
+
     if(classes.length > 0){
       Session.set('empty', false);
     }else{
@@ -17,11 +20,7 @@ Template.eventSearch.helpers({
     return classes;
   },
 
-  // cClasses: function() {
-  //   var cClasses = Session.get('cClasses');
-  //   // console.log(cClasses);
-  //   return cClasses;
-  // },
+
 
   empty: function() {
     return Session.get('empty');

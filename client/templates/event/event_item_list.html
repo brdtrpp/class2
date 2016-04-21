@@ -1,6 +1,15 @@
 <template name="eventItemList">
-  <div class="container">
+  {{#if noClass}}
+    <div class="jumbotron">
+      <center>
+        <h3>No Class for You</h3>
+        <h4>It seems we don't have classes that fit your criteria, please try a different category or try again in the near future.</h4>
+      </center>
+    </div>
 
+
+  {{else}}
+  <div class="container">
     <a href="{{#if cList}} {{url}} {{else}} /class/{{_id}} {{/if}}" role='button' class="body-click">
       <span>
         <div class="panel panel-default">
@@ -62,4 +71,5 @@
       </span>
     </a>
   </div>
+  {{/if}}
 </template>

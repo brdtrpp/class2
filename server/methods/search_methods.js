@@ -76,10 +76,16 @@ Meteor.methods({
     var response = Async.runSync(function(done) {
       setTimeout(function() {
         done(null, 1001);
-      }, 1500);
+      }, 2000);
     });
     console.log(response);
-    console.log(events);
-    return _.sortBy(events, 'start');
+    if (events.length > 0 ) {
+      return _.sortBy(events, 'start');
+    } else {
+      events.push({_id: "NoClass"});
+      console.log(events);
+      return events;
+    }
+
   },
 });

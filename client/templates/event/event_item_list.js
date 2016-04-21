@@ -7,6 +7,14 @@ Template.eventItemList.helpers({
     }
   },
 
+  noClass: function() {
+    if (this._id === "NoClass") {
+      return true;
+    } else {
+      return false;
+    }
+  },
+
   isOwner: function() {
     return this.owner === Meteor.userId();
   },

@@ -1,11 +1,9 @@
 <template name="eventSearch">
   {{#if empty}}
-    <div class="jumbotron">
-      <center>
-        <h1>Refine Your Search</h1>
-        <p>It appears the classes you were looking for don't exist yet!</p>
-      </center>
-    </div>
+    <center>
+      <h1>Start Searching</h1>
+      <p>Your next interesting hobby, lessons or class is just around the corner</p>
+    </center>
   {{/if}}
   {{#each classes}}
     {{> eventItemList}}
