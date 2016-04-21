@@ -5,6 +5,8 @@ Template.eventSearch.helpers({
     _.forEach(events, function(event) {
       if (moment(event.start).isAfter(moment())){
         classes.push(event);
+      } else if (event.pid) {
+        classes.push(event);
       }
     });
     if(classes.length > 0){
@@ -14,6 +16,12 @@ Template.eventSearch.helpers({
     }
     return classes;
   },
+
+  // cClasses: function() {
+  //   var cClasses = Session.get('cClasses');
+  //   // console.log(cClasses);
+  //   return cClasses;
+  // },
 
   empty: function() {
     return Session.get('empty');

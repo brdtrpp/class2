@@ -1,4 +1,12 @@
 Template.eventItemList.helpers({
+  cList: function() {
+    if (this.pid) {
+      return true;
+    } else {
+      return false;
+    }
+  },
+
   isOwner: function() {
     return this.owner === Meteor.userId();
   },

@@ -2,9 +2,9 @@
   "name": "joinclass",
   "version": "1.0.2",
   "buildNumber": "100",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/brdtrpp/class2.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brdtrpp/class2.git"
   },
   "description": "Find and sign-up for classes in your local area.",
   "scripts": {
@@ -13,5 +13,8 @@
     "staging": "modulus env set METEOR_SETTINGS \"$(cat settings-development.json)\" -p 'class - Staging' && modulus deploy -p 'class'",
     "production": "modulus env set METEOR_SETTINGS \"$(cat settings-production.json)\" -p 'class' && modulus deploy -p 'class'",
     "galaxy": "DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy www.joinclass.co --settings settings-production.json"
+  },
+  "dependencies": {
+    "node-craigslist": "^0.1.9"
   }
 }

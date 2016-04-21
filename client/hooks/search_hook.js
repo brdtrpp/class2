@@ -8,10 +8,6 @@ AutoForm.hooks({
           Session.set('classes', result);
         }
       });
-
-      Meteor.call('cSearch', doc);
-
-      Search.insert(doc);
       return false;
     },
     beginSubmit: function() {},
