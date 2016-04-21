@@ -9,7 +9,10 @@
           <div class='col-xs-12'>
             <h4 class='pull-right'>
               <span>{{> dollarIcon}}{{customerPrice}}  </span>
-              <span>{{> usersIcon}}{{aCount}}</span>
+              {{#if cList}}
+              {{else}}
+                <span>{{> usersIcon}}{{aCount}}</span>
+              {{/if}}
               {{> eventOwner}}
             </h4>
           </div>
@@ -26,13 +29,21 @@
           <div class='row'>
             <div class='col-xs-6'>
               <h4><strong>Dates</strong></h4>
-              <p><i>Start:</i> {{startDate}}</p>
-              <p><i>End:</i> {{endDate}}</p>
+              {{#if cList}}
+                <p>On Going</p>
+              {{else}}
+                <p><i>Start:</i> {{startDate}}</p>
+                <p><i>End:</i> {{endDate}}</p>
+              {{/if}}
             </div>
             <div class='col-xs-6'>
               <h4><strong>Location</strong></h4>
-              <p>{{street}}</p>
-              <p>{{city}}, {{state}}</p>
+              {{#if cList}}
+                {{location}}
+              {{else}}
+                <p>{{street}}</p>
+                <p>{{city}}, {{state}}</p>
+              {{/if}}
             </div>
           </div>
         </li>

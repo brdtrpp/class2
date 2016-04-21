@@ -44,7 +44,7 @@ Meteor.methods({
         category : 'cls'
       };
 
-      client.search(options, ' ' , function (err, listings) {
+      client.search(options, doc.category , function (err, listings) {
         if (err) {
           // console.log(err);
         }
@@ -52,12 +52,24 @@ Meteor.methods({
           var cutList = listings.slice(0, 14);
           _.forEach(cutList, function(item) {
             if (_.findWhere(events, {pid: item.pid}) === undefined) {
+              item.url = item.url.replace(/(https?:\/\/)?([\da-zA-Z\.-]+)\.([a-z\.]{2,6})(\/\/)/g, 'https://');
+              item.location = item.location.replace(/[^a-zA-Z0-9_-]+[a-z]{3}[^a-zA-Z0-9_-]>[^a-zA-Z0-9_-]/g, '');
               events.push(item);
             }
           });
         }
       });
     });
+
+    // End Craigslist //
+
+    // // Start Meetup //
+    // console.log("start");
+    // meetup.getStreamOpenEvents({'zip': doc.zip, 'radius': doc.radius}, function(err, resp) {
+    //   console.log(err, resp);
+    // });
+    // console.log('end');
+    // // End Meetup //
 
     Search.insert(doc);
 
@@ -66,8 +78,8 @@ Meteor.methods({
         done(null, 1001);
       }, 1500);
     });
-
     console.log(response);
+    console.log(events);
     return _.sortBy(events, 'start');
   },
 });
