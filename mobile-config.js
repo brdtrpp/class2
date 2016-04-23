@@ -18,9 +18,9 @@ App.icons({
   'ipad': 'public/images/app/assets/mobileweb/appicon.png' ,
   'ipad_2x': 'public/images/app/assets/mobileweb/appicon.png' ,
   // 'android_ldpi': 'public/images/app/assets/android/appicon.png',
-  'android_mdpi': 'public/images/app/assets/android/appicon.png',
-  'android_hdpi': 'public/images/app/assets/android/appicon.png',
-  'android_xhdpi': 'public/images/app/assets/android/appicon.png'
+  'android_mdpi': 'public/images/app/assets/mobileweb/appicon.png',
+  'android_hdpi': 'public/images/app/assets/mobileweb/appicon.png',
+  'android_xhdpi': 'public/images/app/assets/mobileweb/appicon.png'
 });
 
 App.launchScreens({
