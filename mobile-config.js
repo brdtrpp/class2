@@ -13,18 +13,18 @@ App.info({
 
 // Set up resources such as icons and launch screens.
 App.icons({
-  'iphone': 'public/images/app/assets/mobileweb/appicon.png',
+  // 'iphone': 'public/images/app/assets/mobileweb/appicon.png',
   'iphone_2x': 'public/images/app/assets/mobileweb/appicon.png',
   'ipad': 'public/images/app/assets/mobileweb/appicon.png' ,
   'ipad_2x': 'public/images/app/assets/mobileweb/appicon.png' ,
-  'android_ldpi': 'public/images/app/assets/android/appicon.png',
+  // 'android_ldpi': 'public/images/app/assets/android/appicon.png',
   'android_mdpi': 'public/images/app/assets/android/appicon.png',
   'android_hdpi': 'public/images/app/assets/android/appicon.png',
   'android_xhdpi': 'public/images/app/assets/android/appicon.png'
 });
 
 App.launchScreens({
-  'iphone': 'public/images/app/assets/iphone/Default-568h@2x.png',
+  // 'iphone': 'public/images/app/assets/iphone/Default-568h@2x.png',
   'iphone_2x': 'public/images/app/assets/iphone/Default-568h@2x.png',
   'iphone5': 'public/images/app/assets/iphone/Default-Portrait-736h@3x.png',
   'iphone6': 'public/images/app/assets/iphone/Default-Portrait-736h@3x.png',
@@ -34,8 +34,8 @@ App.launchScreens({
   'ipad_portrait_2x': 'public/images/app/assets/mobileweb/apple_startup_images/Default-Portrait.png',
   'ipad_landscape': 'public/images/app/assets/mobileweb/apple_startup_images/Default-Landscape.png',
   'ipad_landscape_2x': 'public/images/app/assets/mobileweb/apple_startup_images/Default-Landscape.png',
-  'android_ldpi_portrait': 'public/images/app/assets/mobileweb/apple_startup_images/Default-Portrait.png',
-  'android_ldpi_landscape': 'public/images/app/assets/mobileweb/apple_startup_images/Default-Landscape.png',
+  // 'android_ldpi_portrait': 'public/images/app/assets/mobileweb/apple_startup_images/Default-Portrait.png',
+  // 'android_ldpi_landscape': 'public/images/app/assets/mobileweb/apple_startup_images/Default-Landscape.png',
   'android_mdpi_portrait': 'public/images/app/assets/mobileweb/apple_startup_images/Default-Portrait.png',
   'android_mdpi_landscape': 'public/images/app/assets/mobileweb/apple_startup_images/Default-Landscape.png',
   'android_hdpi_portrait': 'public/images/app/assets/mobileweb/apple_startup_images/Default-Portrait.png',
