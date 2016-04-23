@@ -49,8 +49,8 @@
           {{/if}}
         </ul>
         <ul class="nav navbar-nav navbar-right">
+          {{> atNavButton}}
           {{#if currentUser}}
-            {{> atNavButton}}
           {{else}}
             <li><a class='navclose' href="{{pathFor 'register'}}">Register</a></li>
           {{/if}}
