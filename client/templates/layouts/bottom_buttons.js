@@ -102,11 +102,14 @@ Template.bottomButtons.events({
   "click .search": function() {
     if ((Session.equals('page', 'calendar') || Session.equals('page', 'eventSearch'))) {
       if ( Session.equals('search', false)) {
+        $('html, body').animate({ scrollTop: 0 }, 'fast');
         Session.set('search', true);
       } else if (Session.equals('search', true)){
+        $('html, body').animate({ scrollTop: 0 }, 'fast');
         Session.set('search', false);
       }
     } else {
+      $('html, body').animate({ scrollTop: 0 }, 'fast');
       Session.set('search', true);
       Router.go('eventSearch');
     }
