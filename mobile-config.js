@@ -13,8 +13,8 @@ App.info({
 
 // Set up access rules
 
-App.accessRule('https://*.craigslist.org');
-App.accessRule('http://*.craigslist.org');
+App.accessRule('https://*.craigslist.org/');
+App.accessRule('http://*.craigslist.org/');
 
 // Set up resources such as icons and launch screens.
 App.icons({
