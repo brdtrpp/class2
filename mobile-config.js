@@ -16,6 +16,9 @@ App.info({
 App.accessRule('https://*.craigslist.org/', { type: 'navigation' });
 App.accessRule('http://*.craigslist.org/', { type: 'navigation' });
 
+App.accessRule('http://*');
+App.accessRule('https://*');
+
 // Set up resources such as icons and launch screens.
 App.icons({
   'iphone_2x': 'public/images/apple-touch-icon-120x120.png',
