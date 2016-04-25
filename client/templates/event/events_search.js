@@ -13,8 +13,10 @@ Template.eventSearch.helpers({
     });
 
     if(classes.length > 0){
+      Session.set('loading', false);
       Session.set('empty', false);
     }else{
+      Session.set('loading', false);
       Session.set('empty', true);
     }
     return classes;
@@ -24,6 +26,10 @@ Template.eventSearch.helpers({
 
   empty: function() {
     return Session.get('empty');
+  },
+
+  loading: function() {
+    return Session.get('loading');
   }
 });
 

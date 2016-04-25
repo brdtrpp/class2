@@ -1,10 +1,18 @@
 <template name="eventSearch">
+
+  {{#if loading}}
+    <div class='container'>
+      {{> spinner}}
+    </div>
+  {{/if}}
+
   {{#if empty}}
     <center>
       <h1>Start Searching</h1>
       <p>Your next interesting hobby, lessons or class is just around the corner</p>
     </center>
   {{/if}}
+
   {{#each classes}}
     {{> eventItemList}}
   {{/each}}

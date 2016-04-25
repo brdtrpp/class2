@@ -13,8 +13,8 @@ App.info({
 
 // Set up access rules
 
-App.accessRule('https://*.craigslist.org/', { type: 'intent' });
-App.accessRule('http://*.craigslist.org/', { type: 'intent' });
+App.accessRule('https://*.craigslist.org/', { type: 'navigation' });
+App.accessRule('http://*.craigslist.org/', { type: 'navigation' });
 
 // Set up resources such as icons and launch screens.
 App.icons({
