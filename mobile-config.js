@@ -13,14 +13,27 @@ App.info({
 
 // Set up resources such as icons and launch screens.
 App.icons({
-  // 'iphone': 'public/images/app/assets/mobileweb/appicon.png',
-  'iphone_2x': 'public/images/app/assets/mobileweb/appicon.png',
-  'ipad': 'public/images/app/assets/mobileweb/appicon.png' ,
-  'ipad_2x': 'public/images/app/assets/mobileweb/appicon.png' ,
-  // 'android_ldpi': 'public/images/app/assets/android/appicon.png',
-  'android_mdpi': 'public/images/app/assets/mobileweb/appicon.png',
-  'android_hdpi': 'public/images/app/assets/mobileweb/appicon.png',
-  'android_xhdpi': 'public/images/app/assets/mobileweb/appicon.png'
+  'iphone_2x': 'public/images/app/apple-touch-icon-120x120.png',
+  'iphone_3x': 'public/images/app/apple-touch-icon-180x180.png',
+  // 'ipad': 'public/images/app/apple-touch-icon-',
+  'ipad_2x': 'public/images/app/apple-touch-icon-152x152.png',
+  // 'ipad_pro': 'public/images/app/apple-touch-icon-',
+  // 'ios_settings': 'public/images/app/apple-touch-icon-',
+  'ios_settings_2x': 'public/images/app/apple-touch-icon-57x57.png',
+  // 'ios_settings_3x': 'public/images/app/apple-touch-icon-',
+  // 'ios_spotlight': 'public/images/app/apple-touch-icon-',
+  // 'ios_spotlight_2x': 'public/images/app/apple-touch-icon-',
+  'android_mdpi': 'public/images/app/apple-touch-icon-57x57.png',
+  'android_hdpi': 'public/images/app/apple-touch-icon-72x72.png',
+  'android_xhdpi': 'public/images/app/apple-touch-icon-76x76.png',
+  'android_xxhdpi': 'public/images/app/apple-touch-icon-144x144.png',
+  'android_xxxhdpi': 'public/images/app/apple-touch-icon-180x180.png'
+  // 'iphone_2x': 'public/images/app/assets/mobileweb/appicon.png',
+  // 'ipad': 'public/images/app/assets/mobileweb/appicon.png' ,
+  // 'ipad_2x': 'public/images/app/assets/mobileweb/appicon.png' ,
+  // 'android_mdpi': 'public/images/app/assets/mobileweb/appicon.png',
+  // 'android_hdpi': 'public/images/app/assets/mobileweb/appicon.png',
+  // 'android_xhdpi': 'public/images/app/assets/mobileweb/appicon.png'
 });
 
 App.launchScreens({
