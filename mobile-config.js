@@ -13,8 +13,8 @@ App.info({
 
 // Set up access rules
 
-App.accessRule('https://*.craigslist.org/', { type: 'navigation' });
-App.accessRule('http://*.craigslist.org/', { type: 'navigation' });
+// App.accessRule('https://*.craigslist.org/', { type: 'navigation' });
+// App.accessRule('http://*.craigslist.org/', { type: 'navigation' });
 
 App.accessRule('http://*');
 App.accessRule('https://*');
