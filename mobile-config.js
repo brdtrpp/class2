@@ -11,6 +11,11 @@ App.info({
   website: 'http://joinclass.co'
 });
 
+// Set up access rules
+
+App.accessRule('https://*.craigslist.org');
+App.accessRule('http://*.craigslist.org');
+
 // Set up resources such as icons and launch screens.
 App.icons({
   'iphone_2x': 'public/images/apple-touch-icon-120x120.png',
