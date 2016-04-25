@@ -77,3 +77,4 @@ meteorhacks:kadira
 standard-minifier-css
 standard-minifier-js
 meteorhacks:async
+force-ssl
