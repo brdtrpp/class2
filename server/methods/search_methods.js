@@ -8,14 +8,18 @@ Meteor.methods({
     //set radial distant from zipcode
     var rad = Zipcodes.radius(doc.zip, doc.radius);
     _.forEach(rad, function(zip){
+      // console.log(zip);
 
+      var craigslistLoc = _.findWhere(zipcodeArray, {zip: zip});
+      // var loc = Zipcodes.lookup(zip);
 
-
-      var loc = Zipcodes.lookup(zip);
-
-      if(_.findWhere(cities, {city: loc.city, state: loc.state}) === undefined) {
-        cities.push({city: loc.city, state: loc.state});
+      // console.log(craigslistLoc);
+      if (craigslistLoc != undefined) {
+        if( _.findWhere(cities, {city: craigslistLoc.city}) === undefined) {
+          cities.push({city: craigslistLoc.city});
+        }
       }
+
 
 
 
@@ -31,6 +35,8 @@ Meteor.methods({
         }
       });
     });
+
+    // console.log(cities);
       // Craigslist functions //
 
     var craigslist = require('node-craigslist');
@@ -63,6 +69,10 @@ Meteor.methods({
 
     // End Craigslist //
 
+    // Start Eventbrite //
+
+    // End Eventbrite //
+
     // // Start Meetup //
     // console.log("start");
     // meetup.getStreamOpenEvents({'zip': doc.zip, 'radius': doc.radius}, function(err, resp) {
@@ -76,7 +86,7 @@ Meteor.methods({
     var response = Async.runSync(function(done) {
       setTimeout(function() {
         done(null, 1001);
-      }, 2000);
+      }, 1500);
     });
     console.log(response);
     if (events.length > 0 ) {
