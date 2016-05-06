@@ -1,6 +1,7 @@
 {
   "public": {
-    "stripe": "pk_test_Vxr8ildcaHAo9zWIcKiE0qOr"
+    "stripe": "pk_test_Vxr8ildcaHAo9zWIcKiE0qOr",
+    "environ": "development"
   },
   "private": {
     "stripe": "sk_test_DoVMrrwJ9MlbtCHBZJxIJCsz",

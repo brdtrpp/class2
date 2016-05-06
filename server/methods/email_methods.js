@@ -1,19 +1,21 @@
 Meteor.methods({
-  craftAdminEmail: function(doc) {
-    if (doc.to == 'beta_list') {
-      Meteor.call('betaListEmail', doc);
-    } else if (doc.to == 'users') {
-      Meteor.call('userListEmail', doc);
-    } else if (doc.to == 'test') {
-      doc.to = 'trapp2357@gmail.com',
-      Meteor.call('sendEmail', doc);
-    }
-  },
+  // craftAdminEmail: function(doc) {
+  //   if (doc.to == 'beta_list') {
+  //     Meteor.call('betaListEmail', doc);
+  //   } else if (doc.to == 'users') {
+  //     Meteor.call('userListEmail', doc);
+  //   } else if (doc.to == 'test') {
+  //     doc.to = 'trapp2357@gmail.com',
+  //     Meteor.call('sendEmail', doc);
+  //   }
+  // },
 
-  betaListEmail: function(doc) {
-    var beta = BetaList.find().fetch();
-    _.forEach(beta, function(user) {
-      doc.to = user.email;
+  userListEmail: function(doc) {
+    var users = Meteor.users.find().fetch();
+    _.forEach(users, function(user) {
+
+      doc.to = user.emails[0].address;
+      doc.from = "support@joinclass.co";
       Meteor.call('sendEmail', doc);
     });
   },
@@ -39,6 +41,7 @@ Meteor.methods({
   },
 
   craftEmail: function(mailFields){
+    console.log(mailFields);
     SSR.compileTemplate( mailFields.emailTemplate, Assets.getText( mailFields.asset ) );
     mailFields.html = SSR.render( mailFields.emailTemplate );
     Meteor.call('sendEmail', mailFields);
@@ -54,20 +57,24 @@ Meteor.methods({
     // without waiting for the email sending to complete.
     this.unblock();
 
-    Meteor.Mailgun.send({
-      to: mailFields.to,
-      from: mailFields.from,
-      subject: mailFields.subject,
-      html: mailFields.html
-    });
 
-    // console.log({
-    //   to: mailFields.to,
-    //   from: mailFields.from,
-    //   subject: mailFields.subject,
-    //   html: mailFields.html
-    // });
+    if (Meteor.settings.public.environ == "production") {
+      Meteor.Mailgun.send({
+        to: mailFields.to,
+        from: mailFields.from,
+        subject: mailFields.subject,
+        html: mailFields.html
+      });
+    }
 
+    if (Meteor.settings.public.environ == "development") {
+      console.log({
+        to: mailFields.to,
+        from: mailFields.from,
+        subject: mailFields.subject,
+        html: mailFields.html
+      });
+    }
     console.log("email sent!");
   }
 });
