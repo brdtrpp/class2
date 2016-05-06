@@ -72,8 +72,6 @@
         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
           <div class="panel-body">
             {{#autoForm schema=Schemas.SendEmail id="sendEmail" type="method" meteormethod="userListEmail"}}
-              <!--{{> afQuickField name='to'}}-->
-              <!--{{> afQuickField name='from'}}-->
               {{> afQuickField name='subject'}}
               {{> afQuickField name='html' rows=6}}
               <button type="submit" class="btn btn-success form-control">Send Email</button>

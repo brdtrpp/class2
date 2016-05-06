@@ -1,5 +1,12 @@
 <template name="eventItem">
   {{#animate type="fadeIn" delay="200"}}
+  {{#if isOwner}}
+  <div class='container'>
+    <div class='col-md-6 col-md-offset-3'>
+      <h4>Permalink: <div class="well" align='center'>https://joinclass.co/class/{{_id}}</div></h4>
+    </div>
+  </div>
+  {{/if}}
   <div class="container">
     <div class="panel panel-default">
       <div class="panel-heading">
