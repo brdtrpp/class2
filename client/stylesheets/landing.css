@@ -55,7 +55,7 @@
 
 .page-header h4 {
   font-size: 1.6em;
-  text-align: left !important;
+  /*text-align: left !important;*/
 }
 
 .page-header h5 {
@@ -68,6 +68,6 @@
 }
 
 #rowbg1 {
-  background:url(/images/download7.jpeg);
+  background:url(/images/bgi1.jpg);
   background-size: 100% auto;
 }

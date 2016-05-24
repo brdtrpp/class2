@@ -49,12 +49,13 @@
           {{/if}}
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          {{> atNavButton}}
+
           {{#if currentUser}}
           {{else}}
+            <li><a class='navclose' href="{{pathFor 'teach'}}">Teach a Class</a></li>
             <li><a class='navclose' href="{{pathFor 'register'}}">Register</a></li>
           {{/if}}
-
+          {{> atNavButton}}
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
