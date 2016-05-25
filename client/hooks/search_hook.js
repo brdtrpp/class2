@@ -12,5 +12,20 @@ AutoForm.hooks({
     },
     beginSubmit: function() {},
     endSubmit: function() {}
+  },
+  search2:{
+    onSubmit: function(doc) {
+      console.log(doc);
+      Meteor.call('search', doc, function(error, result){
+        if (error) {
+          Bert.alert(error.message, 'warning');
+        } else {
+          Session.set('classes', result);
+        }
+      });
+      return false;
+    },
+    beginSubmit: function() {},
+    endSubmit: function() {}
   }
 });
