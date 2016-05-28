@@ -29,7 +29,7 @@ Template.eventInsert.helpers({
         var doc = wizard.store.keys;
         doc.start = moment(doc.dates.start)._d;
         doc.end = moment(doc.dates.end)._d;
-        console.log(doc);
+        // console.log(doc);
         doc.location = data;
         Meteor.call('submitCalEvent', doc, function(error, result){
           if (result == "success") {

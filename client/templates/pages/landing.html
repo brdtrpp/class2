@@ -1,192 +1,51 @@
 <template name="landing">
-  <div class="container-fluid">
-    <div class="row light-blue-bg">
-      <div class='page-header'>
-        <div class='container'>
-          <div class="row " >
-            <div class="col-sm-8 col-sm-offset-2">
-              <h1>
-                {{headline}}
-              </h1>
-              <h2>
-                {{subtext}}
-              </h2>
-            </div>
-          </div>
-          <div class="row">
-            <p>
-              <a class="btn btn-primary btn-xs student">Students & Athletes</a>
-              <a class="btn btn-primary btn-xs instructor">Instructors</a>
-              <a class="btn btn-primary btn-xs home">Homeschoolers</a>
-            </p>
-          </div>
-          <div class='row'>
-            <a href='{{pathFor "register"}}' class="btn btn-success btn-lg">Register Now</a>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class='container' align='center'>
+  <h2>CLASS is an in-person lessons marketplace that makes taking and teaching classes easy and fun.</h2>
 
-    <div class='row white-bg'>
-      <div class='page-header'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-md-8 col-md-offset-2'>
-              <img src='/images/imacleft_790x926.jpg' height="65%" width="65%">
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col-md-12'>
-            <h1 >
-              How it Works for <span class='userType'><strong>{{userType}}</strong></span>
-            </h1>
-            <h2 >
-              {{subtext2}}
-            </h2>
-              <div class='col-md-4'>
-                <h4><strong>Step: 1</strong></h4>
-                <h2>
-                  {{step1}}
-                </h2>
-              </div>
-              <div class='col-md-4'>
-                <h4><strong>Step: 2</strong></h4>
-                <h2>{{step2}}</h2>
-              </div>
-              <div class='col-md-4'>
-                <h4><strong>Step: 3</strong></h4>
-                <h2>
-                  {{step3}}
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class='container'>
-        <div class='page-header'>
-          <div class='row'>
-            <h1><strong>Do We Offer a Free Trail?</strong></h1>
-            <h4>Every user has the ability to post classes, just not accept money through our platform. So there is your free trial! So if you are interested in what Class has to offer, sign-up play around with our app and if you want to start accepting money directly, fill-out a short form and presto! You are ready to be in business!</h4>
-            <a href='{{pathFor "register"}}' class="btn btn-success btn-lg">Register Now</a>
-          </div>
-        </div>
-      </div>
-
-        <div class='container'>
-          <div class='page-header'>
-            <div class='row'>
-              <div class='col-md-4'>
-                 <img src="/images/smartphone2_506x970.jpg" height="75%" width="75%">
-                <!--{{> calendarQuestion}}-->
-              </div>
-            <div class='col-md-8'>
-                <h1>What kind of classes can I take or host?</h1>
-                <h4>That's the best part! Any class you can think of can be hosted on our site. Boot-camps, courses, clinics, class, tutor lessons, or any other kind of class are all available. We are constantly working to get more class hosts and providers.</h4>
-
-                <h4>Whether you are looking for a coding boot-camp or your local recreational clubs summer camps, Class is the place to find it. We are well suited for non-profits, because Class is free if you don't charge for the event. Churches and homeschoolers can organize super easy! We offer flexible scheduling options too. And if you don't like those options, let us know at support@joinclass.co and we'll whip up something just for you!</h4>
-              </div>
-            </div>
-          </div>
-          <div class='page-header'>
-            <div class='row'>
-
-             <div class='col-md-8'>
-              <h1>How do I find the right classes?</h1>
-              <h4>We have a search-able calendar and a listings page. Enter your interests, zipcode and radius(in miles) to search for your favorite subject. If there is a class or lesson within that area it will show up on the calendar or in a easy to read listing format.</h4>
-            </div>
-              <div class='col-md-4'>
-                <img src="/images/iphone5layinglt_1059x594.jpg" height="100%" width="100%">
-                <!--{{> searchRoundIcon}}-->
-              </div>
-            </div>
-          </div>
-          <div class='page-header'>
-              <div class='row'>
-                <div class='container'>
-                  <div class='col-md-4'>
-                    <img src="/images/Screen_Shot_2016-02-17.png" height="65%" width="65%">
-                    <!--{{> searchRoundIcon}}-->
-                  </div>
-                  <div class='col-md-8'>
-                    <h1>How do payments work for students?</h1>
-                    <h4>As a student, of any age, you will have a card on file with Class. Every time you register your card will be charged the displayed cost of the class (if the class isn't free). To unregister, go to the class and unregister, if its short notice (with 24 before the start of the class) or if you want a refund after the class has finished you will have to ask the instructor to refund the class.</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class='page-header'>
-              <div class='row'>
-                <div class='container'>
-                  <div class='col-md-8'>
-                    <h1>How do payments work for instructors?</h1>
-                    <h4>You set your class fees, you decide how much each class will make you, you are always in control of the amount of money you make. We markup the price by 10%. Once a student registers, they are charged  when they register and your money (the price you set on the class) gets directly deposited into your account every Friday.</h4>
-                  </div>
-                  <div class='col-md-4'>
-                    <img src="/images/ipad_696x1042.jpg" height="100%" width="100%">
-                    <!--{{> searchRoundIcon}}-->
-                  </div>
-                </div>
-            </div>
-          <!--</div>-->
-          </div>
-          <div class='page-header'>
-            <div class='row'>
-
-                <div class='col-sm-4'>
-                  {{> moneyShieldIcon}}
-                </div>
-
-             <div class='col-sm-8'>
-              <h1>How do I know I'm protected?</h1>
-              <h4>All the bank and credit card information is store on our payment processors highly protected servers. We can't even see that stuff! They have all sorts of crazy bells and whistles that prevent anyone who would steal that information from getting to it.*</h4>
-              <h4>When it comes to being ripped off by an instructor, we've got that covered too! Let us know if you've been scammed, and we'll refund everything we can. Our customer's security is really important to us. </h4>
-              <p>* <a href='https://stripe.com/connect/account-terms'>Stripe is our payment processors, for more information please go to https://stripe.com/connect/account-terms</a></p>
-            </div>
-          </div>
-          </div>
-        </div>
-    </div>
-
-    <div class='row blue-bg'>
-      <div class='container'>
-        <div class='page-header'>
-          <div class="row">
-            <div class='container'>
-              <div class='col-sm-4 col-sm-offset-4'>
-                {{> dollarCoinIcon}}
-              </div>
-            </div>
-          </div>
-          <div class='row'>
-            <h1>Pricing and Payments</h1>
-            <h3>Class is free to join, free to use and we only collect fees when money exchanges hands. We mark-up the transaction by 10%, but you don't have to do any math. It's all done with computer magic.</h3>
-          </div>
-        </div>
-          <div class='page-header'>
-            <div class="row">
-              <div class='container'>
-                <h1>Transparent & Simple Pricing</h1>
-                <div class='col-sm-4'>
-                  {{> percentIcon}}
-                </div>
-                <div class='col-sm-8'>
-
-                  <h2>
-                    <strong>Here's how it works:</strong>
-                  </h2>
-                  <h3>Let's say an instructor starts a class and charges $25/student. We markup that $25 by 10% ($25 x 110% =  $27.50) and that's the advertised price of the class. When a student pays the $27.50 for the class $25 goes to the instructor the other $2.50 goes to us, to you know <i>run the business</i>.</h3>
-                  <h3>That's it, no extra charges, no other fees, no ultra-super bonus account options available. Instructors set a class price structure, students pay for the class. Boom, it's that easy.</h3>
-                  <h2><strong>Payments</strong></h2>
-                  <h3>Students are charged at the time of registration for the class. Instructors are paid every Friday for every charge from Thursday of the week prior to Wednesday of the previous week.</h3>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+<h3>Explore different hobbies and interests or share your passion by leading your own class!</h3>
+<p>------------------------------------------------------------------------------------------------------------------------------------------
+Explore classes near me Teach a class
+------------------------------------------------------------------------------------------------------------------------------------------
+INSERT CAROUSEL HERE: FEATURED CLASSES
+------------------------------------------------------------------------------------------------------------------------------------------</p>
+<div align='center'>{{>iOS}}{{>android}}</div>
+<h2>Simple</h2>
+<h3>Create an account and register for a class in seconds
+OR
+Create a class and wait for registrations to come in – no legwork, to syncing payment accounts, no forms!</h3>
+<h2>Safe</h2>
+<h3>Sleep well! Our payment platform is powered by Stripe - we don’t store any of your sensitive information. Neither do your instructors.</h3>
+<h2>Transparent</h2>
+<h3>No membership fees for Learners, no silly costs for instructors. Instructors set class registration fee, we add 10% and advertise the class for that price. Learners – simply pay the advertised price. No extra math for anyone!</h3>
+Zip code
+<h1>WHO IS CLASS FOR?</h1>
+<h4>Class was created for inquisitive, curious, social people who love to learn and try new things AND for passionate folks who want to share what they know and love to do.</h4>
+<h3>Our learners</h3>
+ couples looking for a fun date
+ homeschoolers
+ active retirees who enjoy exploring new things
+ friends searching for a nontraditional night out
+ singles seeking a fun way to meet new people
+ Parents and kids who want to learn something together
+<h3>Our instructors</h3>
+ Tutors, musicians, personal trainers, artists, artisans, business and life coaches and other business owners who teach classes for a living
+ Freelancers who teach classes on the side
+ People who have never taught a class in the past but are passionate about something and want to share their passion
+<h3>HOW WE ARE DIFFERENT</h3>
+This section should have a graphic or pic for each blurb
+We believe learning should be social. We don’t list weddings, parties or family reunions and although we offer both private and group activities, we feature more group classes than other platforms. All of our classes are in person.
+We believe taking and teaching classes should be easy. We worked hard on making CLASS simple to use for both Learners and Instructors by creating a platform with Less forms, Less time, More security.
+We believe exploring classes should be fun. We encourage cool and unusual classes that you may not find on other platforms.
+HOW IT WORKS (I’m thinking of changing this header to USING CLASS IS EASY or something that doesn’t simply say “how it works, but actually offers a concise description of “how” it works, but I haven’t nailed how I want to say it yet)
+Also, we can turn these content sections into some sort of graphics/diagrams to make them look more fun…
+Another option is to create a separate “How it works” page…
+<h3>Learners</h3>
+Create a profile, add a credit card and explore exciting classes in your area.
+When you find something you like, just click register, confirm registration and you are ready to attend!
+The fee for each class is securely charged to your credit card on file via Stripe.
+<h3>Instructors</h3>
+Name your class, set date and location, name your price and wait for registration to come in!
+Teach your class and get paid at the end of the week.
+CLASS does not charge you any fees to use our platform. We add a 10% markup to your fee and the total fee is what Learners see and pay.
+</div>
 </template>

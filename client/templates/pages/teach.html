@@ -1,89 +1,221 @@
 <template name='teach'>
-  <div class='container-fluid' id="rowbg1">
-    <div class='row page-header' >
-      <h1>Teach a CLASS!</h1>
-      <h3>Getting started is easy!</h3>
-    </div>
-  </div>
-  <div class='container'>
+  <div class='container-fluid' id='rowbg1'>
     <div class='row'>
-      <div class='col-md-3'>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Panel title</h3>
-          </div>
-          <div class="panel-body">
-            Panel content
-          </div>
-        </div>
-      </div>
-      <div class='col-md-3'>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Panel title</h3>
-          </div>
-          <div class="panel-body">
-            Panel content
-          </div>
-        </div>
-      </div>
-      <div class='col-md-3'>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Panel title</h3>
-          </div>
-          <div class="panel-body">
-            Panel content
-          </div>
-        </div>
-      </div>
-      <div class='col-md-3'>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Panel title</h3>
-          </div>
-          <div class="panel-body">
-            Panel content
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='row'>
-      <div style="text-align:center;">
-        <a href='/register' class='btn btn-success' role='button' >Create My First Class</a>
-        <h3>It's Free</h3>
-      </div>
-      <div class='col-md-6'>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Panel title</h3>
-          </div>
-          <div class="panel-body">
-            Panel content
-          </div>
-        </div>
-      </div>
-      <div class='col-md-6'>
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Panel title</h3>
-          </div>
-          <div class="panel-body">
-            Panel content
-          </div>
-        </div>
+      <div class='page-header'>
+          <h1>Teach a CLASS!</h1>
+          <h2>Getting started is easy!</h2>
       </div>
     </div>
   </div>
+
+  <div class='container' align='center'>
+    <div class='row'>
+      <a style='margin-top:25px;' href='#' class='btn btn-success'>CREATE MY FIRST CLASS</a>
+      <h3>It’s FREE!</h3>
+    </div>
+  </div>
+
   <div class='container'>
-    <div class='row' >
+    <h1 align='center'>
+      WHY TEACH A CLASS?
+    </h1>
+    <h2>Share your passion</h2>
+    <h3>Whether you’ve never led a class or you do it for a living, there is certain magic in teaching others what you know, and sharing what you love. Become an instructor with CLASS and prepare for an exciting and rewarding journey!</h3>
+    <h2>Build brand awareness</h2>
+    <h3>If you run a teaching, tutoring, coaching, consulting or personal training business, using CLASS provides an opportunity to build your brand and reach students/clients you wouldn’t reach otherwise.</h3>
+    <h2>Make money</h2>
+    <h3>CLASS focuses on group lessons. What this means for you is one hour worked does not equal one hour paid. Our instructors typically make over $150 per class.</h3>
+  </div>
+
+  <div class='container-fluid blue-bg'>
+    <div class='container'>
+      <div class='row'>
+        <h1 align='center'>WHY USE CLASS?</h1>
+        <h2>Complete Security</h2>
+        <h3>We are powered by Stripe and don’t store any of your students’ sensitive information, which means you don’t have to take responsibility for safeguarding their credit card numbers.</h3>
+        <h2>Easy class management</h2>
+        <h3>We take care of registration – all you have to do is set date and location and our Learners can register for your class within seconds.</h3>
+        <h2>Weekly pay</h2>
+        <h3>You set the price of each class, our Learners pay us when they register for your class and we pay you at the end of the week.</h3>
+        <div  align='center'><a href='#' class='btn btn-success' style='margin-bottom:25px;'>CREATE MY FIRST CLASS</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class='container'>
+    <div class='row'>
       <h1 align='center'>FAQ</h1>
-      <ul>
-        <li>List1</li>
-        <li>List1</li>
-        <li>List1</li>
-        <li>List1</li>
-      </ul>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-primary">
+          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse1" role='button'>
+            <h4 class="panel-title">
+              Is there a limit on the number of Classes I can create?
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</div>
+          </div>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse2" role='button'>
+            <h4 class="panel-title">
+              Is there a limit on the number of students that can register for each Class?
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse3" role='button'>
+            <h4 class="panel-title">
+              Do you help promote my Classes?
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse4" role='button'>
+            <h4 class="panel-title">
+              Do I have to have my own venue?
+            </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse5" role='button'>
+            <h4 class="panel-title">
+              What do I do if I don’t have enough students registered to justify running the Class?
+            </h4>
+          </div>
+          <div id="collapse5" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse6" role='button'>
+            <h4 class="panel-title">
+              Can students leave reviews after I teach a Class?
+            </h4>
+          </div>
+          <div id="collapse6" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse7" role='button'>
+            <h4 class="panel-title">
+              Can I ban a student?
+            </h4>
+          </div>
+          <div id="collapse7" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse8" role='button'>
+            <h4 class="panel-title">
+              How and when do I get paid?
+            </h4>
+          </div>
+          <div id="collapse8" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse9" role='button'>
+            <h4 class="panel-title">
+              Will you send me a 1099?
+            </h4>
+          </div>
+          <div id="collapse9" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse10" role='button'>
+            <h4 class="panel-title">
+              Can students request a refund after the Class?
+            </h4>
+          </div>
+          <div id="collapse10" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse11" role='button'>
+            <h4 class="panel-title">
+              Can I contact my students via CLASS?
+            </h4>
+          </div>
+          <div id="collapse11" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</div>
+          </div>
+        </div>
+
+        <div class="panel panel-primary">
+          <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapse12" role='button'>
+            <h4 class="panel-title">
+              Do I have to pay anything?
+            </h4>
+          </div>
+          <div id="collapse12" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
   </div>
+
 </template>

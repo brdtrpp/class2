@@ -23,29 +23,32 @@
 }
 
 .blue-bg {
-  background-color: #135298;
+  background-color: #1865bb;
   color: #f6f6f6;
 }
 
 .light-blue-bg {
-  background-color: #6ba8ec;
+  background-color: #3b8ce6;
 }
 
 .page-header {
-  padding-bottom: 2em;
-  margin: 16em 0 11em;
-  text-align: center;
-  border: none !important;
+    padding-bottom: 2em;
+    margin: 16em 0 11em;
+    text-align: center;
+    border: none !important;
+
 }
 
 .page-header h1 {
   font-size: 4em;
   font-weight: 600;
+  background-color: rgba(26, 110, 204,.85);
 }
 
 .page-header h2 {
   font-size: 3em;
-  font-weight: 500;
+  font-weight: 400;
+  background-color: rgba(26, 110, 204,.85);
 }
 
 .page-header h3 {
@@ -70,4 +73,11 @@
 #rowbg1 {
   background:url(/images/bgi1.jpg);
   background-size: 100% auto;
+  color: white;
+}
+
+#logo-img {
+  height: 65px;
+  margin: 0 auto;
+  width: 165px;
 }
