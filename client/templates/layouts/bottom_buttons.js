@@ -27,6 +27,13 @@ Template.bottomButtons.helpers({
 });
 
 Template.bottomButtons.events({
+  'click .btn-default': function(o) {
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    
+    $(o.currentTarget).addClass('animated pulse').one(animationEnd, function() {
+      $(o.currentTarget).removeClass('animated pulse');
+    });
+  },
   'click .prev': function() {
     var fc = $('.fc');
     fc.fullCalendar('prev');
