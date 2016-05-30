@@ -14,7 +14,9 @@
 }
 
 .black-bg {
-  background-color: black;
+  background-color: rgba(0, 0, 0,.5);
+  padding-top: 1.5em;
+  padding-bottom: 1em;
   color: #f6f6f6;
 }
 
@@ -32,10 +34,10 @@
 }
 
 .page-header {
-    padding-bottom: 2em;
-    margin: 16em 0 11em;
-    text-align: center;
-    border: none !important;
+  padding-bottom: 2em;
+  margin: 16em 0 11em;
+  text-align: center;
+  border: none !important;
 
 }
 

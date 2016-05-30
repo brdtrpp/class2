@@ -4,23 +4,28 @@
       <div class='row page-header'>
         <h2>CLASS is an in-person lessons marketplace that makes taking and teaching classes easy and fun.</h2>
         <h3>Explore different hobbies and interests or share your passion by leading your own class!</h3>
-        <div class="form-inline">
-          {{#autoForm collection="Search" id="searchLanding"}}
-            {{> afQuickField name="zip" autocomplete="off"}}
-            {{> afQuickField name="radius" autocomplete="off"}}
-            <button type="submit" class="btn btn-success search" role='button'>Search</button>
-          {{/autoForm}}
+      </div>
+    </div>
+    <div class='container-fluid'>
+      <div class='row black-bg'>
+        <div class='col-md-6 col-md-offset-2'>
+          <div class="form-inline">
+            {{#autoForm collection="Search" id="searchLanding"}}
+              {{> afQuickField name="zip" autocomplete="off"}}
+              {{> afQuickField name="radius" autocomplete="off"}}
+              <button type="submit" style="margin-bottom:10px" class="btn btn-success search" role='button'>Search</button>
+            {{/autoForm}}
+          </div>
+        </div>
+        <div class='col-md-3'>
+          <button href='/register' class='btn btn-warning'>CREATE A CLASS</button>
         </div>
       </div>
     </div>
   </div>
 
   <div class='container' align='center'>
-      ------------------------------------------------------------------------------------------------------------------------------------------
-    Explore classes near me Teach a class
-    ------------------------------------------------------------------------------------------------------------------------------------------
     INSERT CAROUSEL HERE: FEATURED CLASSES
-    ------------------------------------------------------------------------------------------------------------------------------------------
     <div align='center'>{{>iOS}}{{>android}}</div>
     <h2>Simple</h2>
     <h3>Create an account and register for a class in seconds
@@ -85,6 +90,7 @@
           <img src="/images/photo-1463592177119-bab2a00f3ccb.jpg" class="img-responsive">
         </div>
       </div>
+      <div  align='center'><a href='/register' class='btn btn-success' style='margin-bottom:25px; margin-top:25px'>CREATE MY FIRST CLASS</a></div>
     </div>
   </div>
   <div class='container'>
