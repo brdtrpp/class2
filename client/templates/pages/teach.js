@@ -1,3 +1,5 @@
-Template.teach.onRendered(function(){
-  window.scrollTo(0, 0);
+Template.teach.helpers({
+  isAdmin: function() {
+
+  }
 });

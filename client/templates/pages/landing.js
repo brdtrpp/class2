@@ -1,3 +1,5 @@
-Template.landing.onRendered(function(){
-  window.scrollTo(0, 0);
+Template.landing.events({
+  'click .search' : function () {
+
+  }
 });

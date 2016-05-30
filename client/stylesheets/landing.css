@@ -42,18 +42,20 @@
 .page-header h1 {
   font-size: 4em;
   font-weight: 600;
-  background-color: rgba(26, 110, 204,.85);
+  background-color: rgba(26, 110, 204,.5);
 }
 
 .page-header h2 {
   font-size: 3em;
   font-weight: 400;
-  background-color: rgba(26, 110, 204,.85);
+  background-color: rgba(26, 110, 204,.5);
 }
 
 .page-header h3 {
   font-size: 1.8em;
   font-weight: 800;
+  background-color: rgba(26, 110, 204,.5);
+
 }
 
 .page-header h4 {
@@ -65,6 +67,10 @@
   font-size: 1.4em;
 }
 
+.page-header control-label {
+  background-color: rgba(26, 110, 204,.5);
+}
+
 .icon-landing {
   width:100%;
   height:100%;
@@ -72,6 +78,12 @@
 
 #rowbg1 {
   background:url(/images/bgi1.jpg);
+  background-size: 100% auto;
+  color: white;
+}
+
+#rowbg2 {
+  background:url(/images/photo-1461344577544-4e5dc9487184.jpg);
   background-size: 100% auto;
   color: white;
 }
