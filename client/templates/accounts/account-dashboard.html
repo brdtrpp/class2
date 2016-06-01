@@ -47,7 +47,7 @@
               </div>
             </div>
           </div>
-      </div>
+        </div>
       </div>
     {{else}}
       <h1 align='center'>Start Teaching Your Passion</h1>
@@ -85,7 +85,11 @@
           <h4>You can start creating classes and taking registration payment immediately after filling out the form to the right. <strong>BUT</strong> until we can verify that your account is real, you will not be paid anything. This normally take 24-48 hours.</h4>
         </div>
         <div class='col-md-6'>
-          {{> quickForm collection="Account" id="insertAccount" type="insert"}}
+            {{#transition in="fadeIn" out="fadeOut"}}
+                <div class="animated out">
+                  {{> quickForm collection="Account" id="insertAccount" type="insert"}}
+                </div>
+            {{/transition}}
         </div>
       </div>
     {{/if}}

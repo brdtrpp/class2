@@ -16,28 +16,27 @@
         </tr>
       </thead>
       <tbody>
-
-        <!--{{#transition  in="slideInLeft" out="slideOutRight"}}-->
-        {{#each calevent}}
-
-            <tr>
-              <td>
-                <a role='button' class='{{select}}'>{{#if checkbox}} {{> removeIcon}} {{else}} {{> removeBlankIcon}} {{/if}}</a>
-              </td>
-              <td role='button' class='clickable-column'>{{title}}</td>
-              <td role='button' class='clickable-column'>{{startDate}}</td>
-              <td role='button' class='clickable-column'>{{attending}}/{{attendeeCount}}</td>
-              <td>
-                <span role='button'>
-                  {{#afModal collection="CalEvent" operation="update" doc=_id formId="updateClass" title="Edit Class"}}
-                    {{> editIcon}}
-                  {{/afModal}}
-                </span>
-              </td>
-            </tr>
-
-        {{/each}}
-       <!--{{/transition}}-->
+        <!-- {{#transition in="slideInLeft" out="slideOutRight"}}
+          <div class="animated out"> -->
+            {{#each calevent}}
+                <tr>
+                  <td>
+                    <a role='button' class='{{select}}'>{{#if checkbox}} {{> removeIcon}} {{else}} {{> removeBlankIcon}} {{/if}}</a>
+                  </td>
+                  <td role='button' class='clickable-column'>{{title}}</td>
+                  <td role='button' class='clickable-column'>{{startDate}}</td>
+                  <td role='button' class='clickable-column'>{{attending}}/{{attendeeCount}}</td>
+                  <td>
+                    <span role='button'>
+                      {{#afModal collection="CalEvent" operation="update" doc=_id formId="updateClass" title="Edit Class"}}
+                        {{> editIcon}}
+                      {{/afModal}}
+                    </span>
+                  </td>
+                </tr>
+            {{/each}}
+         <!--  </div>
+       {{/transition}} -->
       </tbody>
     </table>
   </div>

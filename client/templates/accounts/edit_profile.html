@@ -1,7 +1,11 @@
 <template name="profileEdit">
   <div class="container-fluid">
     <div class="col-md-6 col-md-offset-3">
-      {{> quickForm collection="Meteor.users" doc=user id="updateUserProfile" type="update"}}
+      {{#transition in="fadeIn" out="fadeOut"}}
+        <div class="animated out">
+          {{> quickForm collection="Meteor.users" doc=user id="updateUserProfile" type="update"}}
+        </div>
+      {{/transition}}
       {{#if hasAccount}}
       {{else}}
         <h3 align="center">Register Your Business</h3>

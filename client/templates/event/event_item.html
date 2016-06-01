@@ -8,61 +8,62 @@
   </div>
   {{/if}}
   <div class="container">
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <div class='row'>
-          <div class='col-xs-12'>
-            <h4 class='pull-right'>
-              <span>{{> dollarIcon}}{{customerPrice}}  </span>
-              <span>{{> usersIcon}}{{aCount}}</span>
-              {{> eventOwner}}
-            </h4>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-xs-12'>
-            <h4><strong>{{title}}</strong> - <a href="{{link}}" role="button">{{ownerName}}</a> <strong><small>{{category}}</small></strong></h4>
-          </div>
-        </div>
-      </div>
-      <ul class="list-group">
-        <li class="list-group-item">
+    {{#transition in="bounceIn" out="bounceOut"}}
+      <div class="panel panel-default animated out">
+        <div class="panel-heading">
           <div class='row'>
-            <div class='col-xs-6'>
-              <h4><strong>Dates</strong></h4>
-              <p><i>Start:</i> {{startDate}}</p>
-              <p><i>End:</i> {{endDate}}</p>
-            </div>
-            <div class='col-xs-6'>
-              <h4><strong>Location</strong></h4>
-              <p>{{street}}</p>
-              <p>{{city}}, {{state}}</p>
+            <div class='col-xs-12'>
+              <h4 class='pull-right'>
+                <span>{{> dollarIcon}}{{customerPrice}}  </span>
+                <span>{{> usersIcon}}{{aCount}}</span>
+                {{> eventOwner}}
+              </h4>
             </div>
           </div>
-        </li>
-      </ul>
-      <div class='panel-body'>
-        <div class="summernote">{{{description}}}</div>
-      </div>
-      <div class="panel-footer">
-        {{#if currentUser}}
-          {{#if timeRes}}
-            {{#if canceled}}
-              <h4>This class has been canceled</h4>
+          <div class='row'>
+            <div class='col-xs-12'>
+              <h4><strong>{{title}}</strong> - <a href="{{link}}" role="button">{{ownerName}}</a> <strong><small>{{category}}</small></strong></h4>
+            </div>
+          </div>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class='row'>
+              <div class='col-xs-6'>
+                <h4><strong>Dates</strong></h4>
+                <p><i>Start:</i> {{startDate}}</p>
+                <p><i>End:</i> {{endDate}}</p>
+              </div>
+              <div class='col-xs-6'>
+                <h4><strong>Location</strong></h4>
+                <p>{{street}}</p>
+                <p>{{city}}, {{state}}</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class='panel-body'>
+          <div class="summernote">{{{description}}}</div>
+        </div>
+        <div class="panel-footer">
+          {{#if currentUser}}
+            {{#if timeRes}}
+              {{#if canceled}}
+                <h4>This class has been canceled</h4>
+              {{else}}
+              <button type="button" class="btn btn-success btn-sm form-control" data-toggle="modal" data-target="#attend">
+                Register
+              </button>
+              {{/if}}
             {{else}}
-            <button type="button" class="btn btn-success btn-sm form-control" data-toggle="modal" data-target="#attend">
-              Register
-            </button>
+             <h4>This class is in the past...unless you have a TARDIS, you cannot attend it!</h4>
             {{/if}}
           {{else}}
-           <h4>This class is in the past...unless you have a TARDIS, you cannot attend it!</h4>
+          <p>Please <a href="{{pathFor 'register'}}">signup/login</a> to register.</p>
           {{/if}}
-        {{else}}
-        <p>Please <a href="{{pathFor 'register'}}">signup/login</a> to register.</p>
-        {{/if}}
-
+        </div>
       </div>
-    </div>
+    {{/transition}}
     <ul class="list-group">
       <h3 class="text-center">{{attendeeList}}</h3>
       {{#each attendee}}
