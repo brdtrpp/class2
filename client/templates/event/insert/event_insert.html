@@ -3,71 +3,75 @@
 </template>
 
 <template name="recur">
+  {{#transition in="fadeIn"}}
+    <div class="col-md-8 col-md-offset-2 animated out">
+      <h2>Class Structure</h2>
+      {{#autoForm id="recur" doc=step.data schema=step.schema}}
+        {{> afQuickField name="type"}}
 
-  <div class="col-md-8 col-md-offset-2">
-    <h2>Class Structure</h2>
-    {{#autoForm id="recur" doc=step.data schema=step.schema}}
-      {{> afQuickField name="type"}}
+          {{> afQuickField name="intervalNumber" disabled=classStructure defaultValue="0"}}
+          {{> afQuickField name="intervalType" disabled=classStructure defaultValue="days"}}
+          {{> afQuickField name="intervalStop" disabled=classStructure defaultValue="0"}}
 
-        {{> afQuickField name="intervalNumber" disabled=classStructure defaultValue="0"}}
-        {{> afQuickField name="intervalType" disabled=classStructure defaultValue="days"}}
-        {{> afQuickField name="intervalStop" disabled=classStructure defaultValue="0"}}
-
-      {{> wizardButtons}}
-    {{/autoForm}}
-  </div>
+        {{> wizardButtons}}
+      {{/autoForm}}
+    </div>
+  {{/transition}}
 </template>
 
 <template name="dates">
-
-  <div class="col-md-8 col-md-offset-2">
-    <h2>Dates</h2>
-    {{#autoForm id="dates" doc=step.data schema=step.schema}}
-      {{> afQuickField name="start"}}
-      {{> afQuickField name="end"}}
-      {{> wizardButtons}}
-    {{/autoForm}}
-  </div>
+  {{#transition in="fadeIn"}}
+    <div class="col-md-8 col-md-offset-2 animated out">
+      <h2>Dates</h2>
+      {{#autoForm id="dates" doc=step.data schema=step.schema}}
+        {{> afQuickField name="start"}}
+        {{> afQuickField name="end"}}
+        {{> wizardButtons}}
+      {{/autoForm}}
+    </div>
+  {{/transition}}
 </template>
 
 <template name="location">
-
-  <div class="col-md-8 col-md-offset-2">
-     <h2>Location</h2>
-    {{#autoForm id="location" doc=step.data schema=step.schema}}
-      <div class='row'>
-        <div class="col-xs-12">
-          {{> afQuickField name="street"}}
+  {{#transition in="fadeIn"}}
+    <div class="col-md-8 col-md-offset-2 animated out">
+       <h2>Location</h2>
+      {{#autoForm id="location" doc=step.data schema=step.schema}}
+        <div class='row'>
+          <div class="col-xs-12">
+            {{> afQuickField name="street"}}
+          </div>
+          <div class='col-xs-12'>
+            {{> afQuickField name="city"}}
+          </div>
+          <div class='col-xs-6'>
+            {{> afQuickField name="state"}}
+          </div>
+          <div class='col-xs-6'>
+            {{> afQuickField name="zip"}}
+          </div>
         </div>
-        <div class='col-xs-12'>
-          {{> afQuickField name="city"}}
-        </div>
-        <div class='col-xs-6'>
-          {{> afQuickField name="state"}}
-        </div>
-        <div class='col-xs-6'>
-          {{> afQuickField name="zip"}}
-        </div>
-      </div>
-      {{> wizardButtons}}
-    {{/autoForm}}
-  </div>
+        {{> wizardButtons}}
+      {{/autoForm}}
+    </div>
+  {{/transition}}
 </template>
 
 <template name="details">
-
-  <div class="col-md-8 col-md-offset-2">
-    <h2>Details</h2>
-    {{#autoForm id="details" doc=step.data schema=step.schema}}
-      {{> afQuickField name="title"}}
-      {{> afQuickField name="category"}}
-      {{> afQuickField name="description"}}
-      {{#if hasAccount}}
-        {{> afQuickField name="price"}}
-      {{/if}}
-      {{> afQuickField name="attendeeCount"}}
-      {{> wizardButtons}}
-    {{/autoForm}}
-  </div>
+  {{#transition in="fadeIn"}}
+    <div class="col-md-8 col-md-offset-2 animated out">
+      <h2>Details</h2>
+      {{#autoForm id="details" doc=step.data schema=step.schema}}
+        {{> afQuickField name="title"}}
+        {{> afQuickField name="category"}}
+        {{> afQuickField name="description"}}
+        {{#if hasAccount}}
+          {{> afQuickField name="price"}}
+        {{/if}}
+        {{> afQuickField name="attendeeCount"}}
+        {{> wizardButtons}}
+      {{/autoForm}}
+    </div>
+  {{/transition}}
 </template>
 
