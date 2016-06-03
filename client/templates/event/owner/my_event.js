@@ -9,6 +9,36 @@ Template.myEvent.helpers({
     }
   },
   
+  templateGestures: {
+    'swipeleft .swipe tr': function (event, templateInstance) {
+      var itemList = event.target.parentElement;
+      var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+      var doc = CalEvent.findOne({_id: this._id});
+      
+      $(itemList).addClass('animated slideOutLeft').one(animationEnd, function() {
+        $(itemList).removeClass('animated slideOutLeft');
+      });
+      
+      $('#modal-confirm-delete').modal({});
+      
+      $('#delete-class').click(function() {
+        Meteor.call('removeCal', doc);
+      
+        $('#modal-confirm-delete').modal('hide');
+      });
+    },
+    'swiperight .swipe tr': function (event, templateInstance) {
+      var itemList = event.target.parentElement;
+      var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+      
+      $(itemList).addClass('animated slideOutRight').one(animationEnd, function() {
+        $(itemList).removeClass('animated slideOutRight');
+      });
+      
+      $('[href="#afModal"]').click();
+    }
+  },
+  
   link: function() {
     return "/classes/" + Meteor.userId();
   },
@@ -126,7 +156,13 @@ Template.myEvent.events({
   },
 
   'click .clickable-column' : function () {
-    Router.go('/class/' + this._id);
+    $('#modal-confirm-delete').modal('hide');
+    
+    var id = this._id;
+    
+    Meteor.setTimeout(function(){
+      Router.go('/class/' + id);
+    }, 100);
   },
 
   'click .glyphicon-remove' : function() {
@@ -163,4 +199,3 @@ Template.myEvent.onRendered(function(){
   Session.set("tense", "future");
   Bert.alert( '<h4><b>Warning:</b> this page will not ask for confirmation before editing or deleting classes. All changes that are made are permenant.</h4>', 'danger');
 });
-
