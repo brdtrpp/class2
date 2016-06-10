@@ -9,6 +9,40 @@ Template.myEvent.helpers({
     }
   },
   
+  templateGestures: {
+    'swipeleft .clickable-column': function (event, templateInstance) {
+      $(this).data('lastClick', event.timeStamp);
+
+      var itemList = event.target.parentNode;
+      var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+      var doc = CalEvent.findOne({_id: this._id});
+      
+      $(itemList).addClass('animated slideOutLeft').one(animationEnd, function() {
+        $(itemList).removeClass('animated slideOutLeft');
+      });
+      
+      $('#modal-confirm-delete').modal({});
+      
+      $('#btn-delete-class').click(function() {
+        Meteor.call('removeCal', doc);
+      
+        $('#modal-confirm-delete').modal('hide');
+      });
+    },
+    'swiperight .clickable-column': function (event, templateInstance) {
+      $(this).data('lastClick', event.timeStamp);
+      
+      var itemList = event.target.parentNode;
+      var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+      
+      $(itemList).addClass('animated slideOutRight').one(animationEnd, function() {
+        $(itemList).removeClass('animated slideOutRight');
+      });
+      
+      $('[href="#afModal"]').click();
+    }
+  },
+  
   link: function() {
     return "/classes/" + Meteor.userId();
   },
@@ -125,8 +159,12 @@ Template.myEvent.events({
     CalEvent.update({_id: this._id}, {$set: {selected: false}});
   },
 
-  'click .clickable-column' : function () {
-    Router.go('/class/' + this._id);
+  'click .clickable-column' : function (e) {
+    var lastClick = $(this).data('lastClick');
+
+    if(typeof lastClick == "undefined" || lastClick + 100 < new Date().getTime()) {
+      Router.go('/class/' + this._id);
+    }
   },
 
   'click .glyphicon-remove' : function() {
@@ -159,8 +197,7 @@ Template.myEvent.events({
   },
 });
 
-Template.myEvent.onRendered(function(){
+Template.myEvent.onRendered(function() {
   Session.set("tense", "future");
   Bert.alert( '<h4><b>Warning:</b> this page will not ask for confirmation before editing or deleting classes. All changes that are made are permenant.</h4>', 'danger');
 });
-

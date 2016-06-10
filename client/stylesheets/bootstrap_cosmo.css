@@ -5873,6 +5873,11 @@ button.close {
 .modal-open {
   overflow: hidden;
 }
+.modal-vertical-centered {
+  transform: translate(0, 30%) !important;
+  -ms-transform: translate(0, 30%) !important; /* IE 9 */
+  -webkit-transform: translate(0, 30%) !important; /* Safari and Chrome */
+}
 .modal {
   display: none;
   overflow: hidden;

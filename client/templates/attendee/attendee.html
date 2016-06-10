@@ -1,33 +1,37 @@
 <template name="attendeesItem">
-    <li class="list-group-item">
-      <div class="row">
-        <div class='col-xs-10'>
-          {{#if isEventOwner}}
-            <a role='button' class='att' data-toggle="modal" data-target="#mailIndividual">{{> directEmail}}</a>
-            {{#if present}}
-              <a role='button' class='unpresent'>{{> checkBox}}</a>
-            {{else}}
-              <a role='button' class='present'>{{> removeBlankIcon}}</a>
+  {{#HammerTouchArea gestureMap=templateGestures}}
+    <div class="swipe">
+      <li class="list-group-item">
+        <div class="row">
+          <div class='col-xs-10'>
+            {{#if isEventOwner}}
+              <a role='button' class='att' data-toggle="modal" data-target="#mailIndividual">{{> directEmail}}</a>
+              {{#if present}}
+                <a role='button' class='unpresent'>{{> checkBox}}</a>
+              {{else}}
+                <a role='button' class='present'>{{> removeBlankIcon}}</a>
+              {{/if}}
             {{/if}}
-          {{/if}}
-          <a href="/user/{{user}}" role='button'>
-            {{attendeeFirstName}} {{attendeeLastName}} <small>registered on {{dateFormat}}</small>
-          </a>
-        </div>
-        <div class="col-xs-2">
-          {{status}}
-          {{#if isAttendee}}
+            <a href="/user/{{user}}" role='button'>
+              {{attendeeFirstName}} {{attendeeLastName}} <small>registered on {{dateFormat}}</small>
+            </a>
+          </div>
+          <div class="col-xs-2">
+            {{status}}
+            {{#if isAttendee}}
               {{#afModal collection="Attendee" class='pull-right' operation="update" doc=_id formId="updateAttendee" title="Edit Attendee Name"}}
                 {{> editIcon}}
               {{/afModal}}
               {{#if timeRes }}
                 <a role='button' class="refundAtt pull-right">{{> refundIcon}}</a>
               {{/if}}
-          {{/if}}
-          {{#if isEventOwner}}
-            <a role='button' class="refundAtt pull-right">{{> refundIcon}}</a>
-          {{/if}}
+            {{/if}}
+            {{#if isEventOwner}}
+              <a role='button' class="refundAtt pull-right">{{> refundIcon}}</a>
+            {{/if}}
+          </div>
         </div>
-      </div>
-    </li>
+      </li>
+    </div>
+  {{/HammerTouchArea}}
 </template>
