@@ -51,6 +51,7 @@
         <ul class="nav navbar-nav navbar-right">
           {{#if currentUser}}
           {{else}}
+            <li><a class='navclose' href="{{pathFor 'how'}}">How It Works</a></li>
             <li><a class='navclose' href="{{pathFor 'about'}}">About Us</a></li>
             <li><a class='navclose' href="{{pathFor 'teach'}}">Teach a Class</a></li>
             <li><a class='navclose' href="{{pathFor 'register'}}">Register</a></li>
