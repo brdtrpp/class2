@@ -10,14 +10,6 @@ Meteor.publish('allUsers', function() {
   return Meteor.users.find();
 });
 
-Meteor.publish('betaList', function() {
-  return BetaList.find();
-});
-
-Meteor.publish('surveyOne', function () {
-  return SurveyOne.find();
-});
-
-Meteor.publish('surveyTwo', function () {
-  return SurveyTwo.find();
+Meteor.publish('blog', function() {
+  return Blog.find();
 });

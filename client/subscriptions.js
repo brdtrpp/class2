@@ -1,7 +1,4 @@
 Meteor.subscribe('calevent');
 Meteor.subscribe('attendee');
-Meteor.subscribe('betaList');
-Meteor.subscribe('allUsers');
-Meteor.subscribe('surveyOne');
-Meteor.subscribe('surveyTwo');
+Meteor.subscribe('blog');
 SimpleSchema.debug = true;
