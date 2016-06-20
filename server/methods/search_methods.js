@@ -1,5 +1,9 @@
 Meteor.methods({
   'search': function(doc) {
+    var craigslist = require('node-craigslist');
+    var Nbrite = require('nbrite');
+    var Meetup = require('meetup-api');
+
     var events = [];
     var cities = [];
     doc.owner = Meteor.userId();
@@ -20,9 +24,6 @@ Meteor.methods({
         }
       }
 
-
-
-
       if (doc.keyword) {
         var event = CalEvent.find({category: doc.category, zip: zip, canceled: false, $text: { $search: doc.keyword }}).fetch();
       } else {
@@ -36,11 +37,7 @@ Meteor.methods({
       });
     });
 
-    // console.log(cities);
-      // Craigslist functions //
-
-    var craigslist = require('node-craigslist');
-
+    // Craigslist functions
     _.forEach(cities, function(item) {
 
       var client = craigslist({});
@@ -66,34 +63,81 @@ Meteor.methods({
         }
       });
     });
-
     // End Craigslist //
 
     // Start Eventbrite //
+    var nbrite = new Nbrite({token: "RO5ULF6LWEEJKUGQZHYD"});
 
+    var queryNbrite = {
+      'q': doc.category,
+      'location.address': doc.zip,
+      'location.within': doc.radius + 'mi',
+      'search_type': 'class',
+      'sort_by': 'best'
+    };
+
+    nbrite.events().search(queryNbrite, function (err, data) {
+      var searchResult = data.events.slice(0, 25);
+
+      searchResult.forEach(function(item, i, arr) {
+        events.push({
+          start: item.start.utc,
+          end: item.end.utc,
+          location: item.start.timezone,
+          pid: item.id,
+          hasPic: false,
+          price: null,
+          title: item.name.text,
+          url: item.url,
+          category: doc.category
+        });
+      });
+    });
     // End Eventbrite //
 
-    // // Start Meetup //
-    // console.log("start");
-    // meetup.getStreamOpenEvents({'zip': doc.zip, 'radius': doc.radius}, function(err, resp) {
-    //   console.log(err, resp);
-    // });
-    // console.log('end');
-    // // End Meetup //
+    //Start Meetup //
+    var meetup = new Meetup({
+      key: "3d6a3e706f72216d3b71582a76495ee"
+    });
+
+    var queryMeetup = {
+      text: doc.category,
+      zip: doc.zip,
+      radius: doc.radius,
+      page: 15
+    };
+
+    meetup.getOpenEvents(queryMeetup, function(err, data) {
+      data.results.forEach(function(item, i, arr) {
+        var city = item.venue ? item.venue.city : "";
+
+        events.push({
+          start: item.time,
+          location: city,
+          pid: item.id,
+          hasPic: false,
+          price: null,
+          title: item.name,
+          url: item.event_url,
+          category: doc.category
+        });
+      });
+    });
+    // //End Meetup //
 
     Search.insert(doc);
 
     var response = Async.runSync(function(done) {
       setTimeout(function() {
         done(null, 1001);
-      }, 1500);
+      }, 3500);
     });
-    console.log(response);
+
+    // console.log(response);
     if (events.length > 0 ) {
       return _.sortBy(events, 'start');
     } else {
       events.push({_id: "NoClass"});
-      console.log(events);
       return events;
     }
 
