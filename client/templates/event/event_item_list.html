@@ -39,7 +39,9 @@
             <div class='col-xs-6'>
               <h4><strong>Dates</strong></h4>
                 <p><i>Start:</i> {{startDate}}</p>
-                <p><i>End:</i> {{endDate}}</p>
+                {{#if endDate}}
+                  <p><i>End:</i> {{endDate}}</p>
+                {{/if}}
             </div>
             <div class='col-xs-6'>
               <h4><strong>Location</strong></h4>

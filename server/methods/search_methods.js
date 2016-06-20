@@ -85,8 +85,6 @@ Meteor.methods({
           end: item.end.utc,
           location: item.start.timezone,
           pid: item.id,
-          hasPic: false,
-          price: null,
           title: item.name.text,
           url: item.url,
           category: doc.category
@@ -113,10 +111,9 @@ Meteor.methods({
 
         events.push({
           start: item.time,
+          end: false,
           location: city,
           pid: item.id,
-          hasPic: false,
-          price: null,
           title: item.name,
           url: item.event_url,
           category: doc.category
@@ -130,7 +127,7 @@ Meteor.methods({
     var response = Async.runSync(function(done) {
       setTimeout(function() {
         done(null, 1001);
-      }, 3500);
+      }, 4000);
     });
 
     // console.log(response);
