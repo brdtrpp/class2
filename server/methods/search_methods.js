@@ -80,7 +80,9 @@ Meteor.methods({
       var searchResult = data.events.slice(0, 25);
 
       searchResult.forEach(function(item, i, arr) {
+        console.log(item);
         events.push({
+          description: item.description.html,
           start: item.start.utc,
           end: item.end.utc,
           location: item.start.timezone,
@@ -108,9 +110,11 @@ Meteor.methods({
 
     meetup.getOpenEvents(queryMeetup, function(err, data) {
       data.results.forEach(function(item, i, arr) {
+
         var city = item.venue ? item.venue.city : "";
 
         events.push({
+          description: item.description,
           start: item.time,
           end: false,
           location: city,
@@ -129,7 +133,7 @@ Meteor.methods({
     var response = Async.runSync(function(done) {
       setTimeout(function() {
         done(null, 1001);
-      }, 4000);
+      }, 3000);
     });
 
     // console.log(response);
