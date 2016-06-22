@@ -1,14 +1,18 @@
 <template name="blog">
   <div class="container">
+    {{#if admin}}
     <div class="row">
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#blog">
         New Blog
       </button>
     </div>
-
+    {{/if}}
     {{#each blog}}
       <div class="row">
-        <h1>{{title}}</h1>
+        <div class="page-header">
+          <h1>{{title}}</h1>
+        </div>
+        <h3>{{author}}<small>{{createdAt}}</small></h3>
         {{{body}}}
       </div>
     {{/each}}

@@ -70,7 +70,7 @@
 }
 
 .page-header control-label {
-  background-color: rgba(26, 110, 204,.5);
+  background-color: rgba(26, 110, 204,.6);
 }
 
 .icon-landing {
@@ -79,13 +79,13 @@
 }
 
 #rowbg1 {
-  background:url(/images/bgi1.jpg);
+  background:url(/images/Teach.png);
   background-size: 100% auto;
   color: white;
 }
 
 #rowbg2 {
-  background:url(/images/photo-1461344577544-4e5dc9487184.jpg);
+  background:url(/images/Landing.png);
   background-size: 100% auto;
   color: white;
 }

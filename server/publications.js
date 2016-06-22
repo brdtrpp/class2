@@ -11,5 +11,5 @@ Meteor.publish('allUsers', function() {
 });
 
 Meteor.publish('blog', function() {
-  return Blog.find();
+  return Blog.find({}, {sort: {createdAt: -1}});
 });
