@@ -85,6 +85,7 @@ Meteor.methods({
           end: item.end.utc,
           location: item.start.timezone,
           pid: item.id,
+          price: null,
           title: item.name.text,
           url: item.url,
           category: doc.category
@@ -114,6 +115,7 @@ Meteor.methods({
           end: false,
           location: city,
           pid: item.id,
+          price: null,
           title: item.name,
           url: item.event_url,
           category: doc.category
