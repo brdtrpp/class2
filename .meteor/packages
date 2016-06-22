@@ -45,7 +45,6 @@ mdg:geolocation
 doctorpangloss:filter-collections
 easy:search
 http
-ecmascript
 underscore
 mrt:zipcodes
 email
@@ -79,3 +78,4 @@ standard-minifier-js
 meteorhacks:async
 force-ssl
 chriswessels:hammer
+ecmascript

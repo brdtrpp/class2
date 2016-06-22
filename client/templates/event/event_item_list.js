@@ -18,6 +18,7 @@ Template.eventItemList.helpers({
   isOwner: function() {
     return this.owner === Meteor.userId();
   },
+
   startDate:function() {
     var start = this.start;
     var date = moment(start).format('LLL');
@@ -26,6 +27,10 @@ Template.eventItemList.helpers({
 
   endDate:function() {
     var end = this.end;
+
+    if(!end)
+      return false;
+
     var date = moment(end).format('LLL');
     return date;
   },

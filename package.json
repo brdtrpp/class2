@@ -15,7 +15,8 @@
     "galaxy": "DEPLOY_HOSTNAME=galaxy.meteor.com meteor deploy www.joinclass.co --settings settings-production.json"
   },
   "dependencies": {
-    "meetup-api": "^1.3.10",
+    "meetup-api": "^0.1.29",
+    "nbrite": "^0.2.0",
     "node-craigslist": "^0.1.9"
   }
 }

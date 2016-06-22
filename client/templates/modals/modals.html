@@ -13,25 +13,38 @@
         </div>
       </div>
     </div>
-
-
-  {{#if hasAccount}}
-    <div class="modal fade" id="newClass" tabindex="-1" role="dialog" aria-labelledby="newClassModal">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="newClassModal">Start New Class</h4>
-          </div>
-          <div class="modal-body">
-            {{> quickForm collection="CalEvent" id="insertClass" type="insert"}}
+    {{#if hasAccount}}
+      <div class="modal fade" id="newClass" tabindex="-1" role="dialog" aria-labelledby="newClassModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="newClassModal">Start New Class</h4>
+            </div>
+            <div class="modal-body">
+              {{> quickForm collection="CalEvent" id="insertClass" type="insert"}}
+            </div>
           </div>
         </div>
       </div>
+    {{/if}}
+  {{/if}}
+  <!--Modal-->
+  <div class="modal fade modal-vertical-centered" id="modal-confirm-refund" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Confirm Refund</h4>
+        </div>
+        <div class="modal-body">
+          <span>Are you sure you want to get a refund?</span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" id="btn-refund">Refund</button>
+        </div>
+      </div>
     </div>
-  {{/if}}
-
-
-
-  {{/if}}
+  </div>
 </template>

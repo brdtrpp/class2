@@ -44,7 +44,7 @@ Template.attendeesItem.helpers({
         $(itemList).addClass('animated slideOutLeft').one(animationEnd, function() {
           $(itemList).removeClass('animated slideOutLeft');
         });
-
+        
         $('#modal-confirm-refund').modal({});
       }
       
