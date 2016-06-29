@@ -1,0 +1,1083 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Users\\BTrapp\\AppData\\Local\\.meteor\\packages\\meteor-tool\\1.3.2_4\\mt-os.windows.x86_32\\dev_bundle\\bin\\\\node.exe',
+1 verbose cli   'C:\\Users\\BTrapp\\AppData\\Local\\.meteor\\packages\\meteor-tool\\1.3.2_4\\mt-os.windows.x86_32\\dev_bundle\\lib\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'bufferutil',
+1 verbose cli   'utf-8-validate' ]
+2 info using npm@2.14.22
+3 info using node@v0.10.43
+4 verbose install initial load of C:\Users\BTrapp\class2\package.json
+5 warn package.json joinclass@1.0.2 No license field.
+6 verbose installManyTop reading scoped package data from C:\Users\BTrapp\class2\node_modules\meetup-api\package.json
+7 verbose installManyTop reading scoped package data from C:\Users\BTrapp\class2\node_modules\nbrite\package.json
+8 verbose installManyTop reading scoped package data from C:\Users\BTrapp\class2\node_modules\node-craigslist\package.json
+9 verbose readDependencies loading dependencies from C:\Users\BTrapp\class2\package.json
+10 silly cache add args [ 'bufferutil', null ]
+11 verbose cache add spec bufferutil
+12 silly cache add args [ 'utf-8-validate', null ]
+13 verbose cache add spec utf-8-validate
+14 silly cache add parsed spec { raw: 'bufferutil',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'bufferutil',
+14 silly cache add   rawSpec: '',
+14 silly cache add   spec: 'latest',
+14 silly cache add   type: 'tag' }
+15 silly addNamed bufferutil@latest
+16 verbose addNamed "latest" is being treated as a dist-tag for bufferutil
+17 info addNameTag [ 'bufferutil', 'latest' ]
+18 silly mapToRegistry name bufferutil
+19 silly mapToRegistry using default registry
+20 silly mapToRegistry registry https://registry.npmjs.org/
+21 silly mapToRegistry uri https://registry.npmjs.org/bufferutil
+22 verbose addNameTag registry:https://registry.npmjs.org/bufferutil not in flight; fetching
+23 silly cache add parsed spec { raw: 'utf-8-validate',
+23 silly cache add   scope: null,
+23 silly cache add   name: 'utf-8-validate',
+23 silly cache add   rawSpec: '',
+23 silly cache add   spec: 'latest',
+23 silly cache add   type: 'tag' }
+24 silly addNamed utf-8-validate@latest
+25 verbose addNamed "latest" is being treated as a dist-tag for utf-8-validate
+26 info addNameTag [ 'utf-8-validate', 'latest' ]
+27 silly mapToRegistry name utf-8-validate
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry uri https://registry.npmjs.org/utf-8-validate
+31 verbose addNameTag registry:https://registry.npmjs.org/utf-8-validate not in flight; fetching
+32 verbose request uri https://registry.npmjs.org/bufferutil
+33 verbose request no auth needed
+34 info attempt registry request try #1 at 17:23:52
+35 verbose request id ec44683a4701db7f
+36 verbose etag "9NLYGHUX8MGYC2LICJDWKWNPW"
+37 http request GET https://registry.npmjs.org/bufferutil
+38 verbose request uri https://registry.npmjs.org/utf-8-validate
+39 verbose request no auth needed
+40 info attempt registry request try #1 at 17:23:53
+41 verbose etag "E7XYFT7FUBMH6H6XYWMIRAGJ0"
+42 http request GET https://registry.npmjs.org/utf-8-validate
+43 http 304 https://registry.npmjs.org/bufferutil
+44 verbose headers { date: 'Wed, 22 Jun 2016 21:23:51 GMT',
+44 verbose headers   via: '1.1 varnish',
+44 verbose headers   'cache-control': 'max-age=300',
+44 verbose headers   etag: '"9NLYGHUX8MGYC2LICJDWKWNPW"',
+44 verbose headers   age: '257',
+44 verbose headers   connection: 'keep-alive',
+44 verbose headers   'x-served-by': 'cache-dfw1833-DFW',
+44 verbose headers   'x-cache': 'HIT',
+44 verbose headers   'x-cache-hits': '1',
+44 verbose headers   'x-timer': 'S1466630631.698454,VS0,VE0',
+44 verbose headers   vary: 'Accept-Encoding' }
+45 silly get cb [ 304,
+45 silly get   { date: 'Wed, 22 Jun 2016 21:23:51 GMT',
+45 silly get     via: '1.1 varnish',
+45 silly get     'cache-control': 'max-age=300',
+45 silly get     etag: '"9NLYGHUX8MGYC2LICJDWKWNPW"',
+45 silly get     age: '257',
+45 silly get     connection: 'keep-alive',
+45 silly get     'x-served-by': 'cache-dfw1833-DFW',
+45 silly get     'x-cache': 'HIT',
+45 silly get     'x-cache-hits': '1',
+45 silly get     'x-timer': 'S1466630631.698454,VS0,VE0',
+45 silly get     vary: 'Accept-Encoding' } ]
+46 verbose etag https://registry.npmjs.org/bufferutil from cache
+47 verbose get saving bufferutil to C:\Users\BTrapp\AppData\Roaming\npm-cache\registry.npmjs.org\bufferutil\.cache.json
+48 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+49 silly addNameTag next cb for bufferutil with tag latest
+50 silly addNamed bufferutil@1.2.1
+51 verbose addNamed "1.2.1" is a plain semver version for bufferutil
+52 silly cache afterAdd bufferutil@1.2.1
+53 verbose afterAdd C:\Users\BTrapp\AppData\Roaming\npm-cache\bufferutil\1.2.1\package\package.json not in flight; writing
+54 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+55 verbose afterAdd C:\Users\BTrapp\AppData\Roaming\npm-cache\bufferutil\1.2.1\package\package.json written
+56 http 304 https://registry.npmjs.org/utf-8-validate
+57 verbose headers { date: 'Wed, 22 Jun 2016 21:23:52 GMT',
+57 verbose headers   via: '1.1 varnish',
+57 verbose headers   'cache-control': 'max-age=300',
+57 verbose headers   etag: '"E7XYFT7FUBMH6H6XYWMIRAGJ0"',
+57 verbose headers   age: '94',
+57 verbose headers   connection: 'keep-alive',
+57 verbose headers   'x-served-by': 'cache-dfw1830-DFW',
+57 verbose headers   'x-cache': 'HIT',
+57 verbose headers   'x-cache-hits': '2',
+57 verbose headers   'x-timer': 'S1466630632.101331,VS0,VE0',
+57 verbose headers   vary: 'Accept-Encoding' }
+58 silly get cb [ 304,
+58 silly get   { date: 'Wed, 22 Jun 2016 21:23:52 GMT',
+58 silly get     via: '1.1 varnish',
+58 silly get     'cache-control': 'max-age=300',
+58 silly get     etag: '"E7XYFT7FUBMH6H6XYWMIRAGJ0"',
+58 silly get     age: '94',
+58 silly get     connection: 'keep-alive',
+58 silly get     'x-served-by': 'cache-dfw1830-DFW',
+58 silly get     'x-cache': 'HIT',
+58 silly get     'x-cache-hits': '2',
+58 silly get     'x-timer': 'S1466630632.101331,VS0,VE0',
+58 silly get     vary: 'Accept-Encoding' } ]
+59 verbose etag https://registry.npmjs.org/utf-8-validate from cache
+60 verbose get saving utf-8-validate to C:\Users\BTrapp\AppData\Roaming\npm-cache\registry.npmjs.org\utf-8-validate\.cache.json
+61 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+62 silly addNameTag next cb for utf-8-validate with tag latest
+63 silly addNamed utf-8-validate@1.2.1
+64 verbose addNamed "1.2.1" is a plain semver version for utf-8-validate
+65 silly cache afterAdd utf-8-validate@1.2.1
+66 verbose afterAdd C:\Users\BTrapp\AppData\Roaming\npm-cache\utf-8-validate\1.2.1\package\package.json not in flight; writing
+67 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+68 verbose afterAdd C:\Users\BTrapp\AppData\Roaming\npm-cache\utf-8-validate\1.2.1\package\package.json written
+69 silly install resolved [ { name: 'bufferutil',
+69 silly install resolved     version: '1.2.1',
+69 silly install resolved     description: 'WebSocket buffer utils',
+69 silly install resolved     main: 'index.js',
+69 silly install resolved     scripts:
+69 silly install resolved      { test: 'echo "Only testing builds, test have to be extraced from `ws`" && exit 0',
+69 silly install resolved        install: 'node-gyp rebuild' },
+69 silly install resolved     repository:
+69 silly install resolved      { type: 'git',
+69 silly install resolved        url: 'git+https://github.com/websockets/bufferutil.git' },
+69 silly install resolved     keywords: [ 'bufferutil' ],
+69 silly install resolved     author:
+69 silly install resolved      { name: 'Einar Otto Stangvik',
+69 silly install resolved        email: 'einaros@gmail.com',
+69 silly install resolved        url: 'http://2x.io' },
+69 silly install resolved     license: 'MIT',
+69 silly install resolved     bugs: { url: 'https://github.com/websockets/bufferutil/issues' },
+69 silly install resolved     homepage: 'https://github.com/websockets/bufferutil',
+69 silly install resolved     dependencies: { bindings: '1.2.x', nan: '^2.0.5' },
+69 silly install resolved     gypfile: true,
+69 silly install resolved     gitHead: 'cb7163377b8032fb79ddd835a549c83488585859',
+69 silly install resolved     _id: 'bufferutil@1.2.1',
+69 silly install resolved     _shasum: '37be5d36e1e06492221e68d474b1ac58e510cbd7',
+69 silly install resolved     _from: 'bufferutil@latest',
+69 silly install resolved     _npmVersion: '2.9.1',
+69 silly install resolved     _nodeVersion: '0.12.3',
+69 silly install resolved     _npmUser: { name: '3rdeden', email: 'npm@3rd-Eden.com' },
+69 silly install resolved     maintainers: [ [Object], [Object] ],
+69 silly install resolved     dist:
+69 silly install resolved      { shasum: '37be5d36e1e06492221e68d474b1ac58e510cbd7',
+69 silly install resolved        tarball: 'https://registry.npmjs.org/bufferutil/-/bufferutil-1.2.1.tgz' },
+69 silly install resolved     directories: {},
+69 silly install resolved     _resolved: 'https://registry.npmjs.org/bufferutil/-/bufferutil-1.2.1.tgz',
+69 silly install resolved     readme: 'ERROR: No README data found!' },
+69 silly install resolved   { name: 'utf-8-validate',
+69 silly install resolved     version: '1.2.1',
+69 silly install resolved     description: 'Validate UTF-8 for Web',
+69 silly install resolved     main: 'index.js',
+69 silly install resolved     scripts:
+69 silly install resolved      { test: 'echo "Only testing builds, test have to be extraced from `ws`" && exit 0',
+69 silly install resolved        install: 'node-gyp rebuild' },
+69 silly install resolved     repository:
+69 silly install resolved      { type: 'git',
+69 silly install resolved        url: 'git+https://github.com/websockets/utf-8-validate.git' },
+69 silly install resolved     keywords: [ 'utf-8-validate' ],
+69 silly install resolved     author:
+69 silly install resolved      { name: 'Einar Otto Stangvik',
+69 silly install resolved        email: 'einaros@gmail.com',
+69 silly install resolved        url: 'http://2x.io' },
+69 silly install resolved     license: 'MIT',
+69 silly install resolved     bugs: { url: 'https://github.com/websockets/utf-8-validate/issues' },
+69 silly install resolved     homepage: 'https://github.com/websockets/utf-8-validate',
+69 silly install resolved     dependencies: { bindings: '1.2.x', nan: '^2.0.5' },
+69 silly install resolved     gypfile: true,
+69 silly install resolved     gitHead: '8067ecff68899b9a1bb31d6906c80e1d5e88bcc7',
+69 silly install resolved     _id: 'utf-8-validate@1.2.1',
+69 silly install resolved     _shasum: '44cb7c6eead73d6b40448f71f745904357b9f72c',
+69 silly install resolved     _from: 'utf-8-validate@latest',
+69 silly install resolved     _npmVersion: '2.9.1',
+69 silly install resolved     _nodeVersion: '0.12.3',
+69 silly install resolved     _npmUser: { name: '3rdeden', email: 'npm@3rd-Eden.com' },
+69 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+69 silly install resolved     dist:
+69 silly install resolved      { shasum: '44cb7c6eead73d6b40448f71f745904357b9f72c',
+69 silly install resolved        tarball: 'https://registry.npmjs.org/utf-8-validate/-/utf-8-validate-1.2.1.tgz' },
+69 silly install resolved     directories: {},
+69 silly install resolved     _resolved: 'https://registry.npmjs.org/utf-8-validate/-/utf-8-validate-1.2.1.tgz',
+69 silly install resolved     readme: 'ERROR: No README data found!' } ]
+70 info install bufferutil@1.2.1 into C:\Users\BTrapp\class2
+71 info install utf-8-validate@1.2.1 into C:\Users\BTrapp\class2
+72 info installOne bufferutil@1.2.1
+73 verbose installOne of bufferutil to C:\Users\BTrapp\class2 not in flight; installing
+74 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+75 info installOne utf-8-validate@1.2.1
+76 verbose installOne of utf-8-validate to C:\Users\BTrapp\class2 not in flight; installing
+77 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks correctMkdir already in flight; waiting
+78 verbose lock using C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks\bufferutil-c99d511e6c6130e5.lock for C:\Users\BTrapp\class2\node_modules\bufferutil
+79 verbose lock using C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks\utf-8-validate-41f83881e1fa13d2.lock for C:\Users\BTrapp\class2\node_modules\utf-8-validate
+80 silly install write writing bufferutil 1.2.1 to C:\Users\BTrapp\class2\node_modules\bufferutil
+81 silly install write writing utf-8-validate 1.2.1 to C:\Users\BTrapp\class2\node_modules\utf-8-validate
+82 verbose unbuild node_modules\bufferutil
+83 verbose unbuild node_modules\utf-8-validate
+84 silly gentlyRm C:\Users\BTrapp\class2\node_modules\bufferutil is being purged from base C:\Users\BTrapp\class2
+85 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\bufferutil
+86 verbose tar unpack C:\Users\BTrapp\AppData\Roaming\npm-cache\bufferutil\1.2.1\package.tgz
+87 verbose tar unpacking to C:\Users\BTrapp\class2\node_modules\bufferutil
+88 silly gentlyRm C:\Users\BTrapp\class2\node_modules\bufferutil is being purged
+89 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\bufferutil
+90 silly gentlyRm C:\Users\BTrapp\class2\node_modules\utf-8-validate is being purged from base C:\Users\BTrapp\class2
+91 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\utf-8-validate
+92 silly gunzTarPerm modes [ '777', '666' ]
+93 verbose tar unpack C:\Users\BTrapp\AppData\Roaming\npm-cache\utf-8-validate\1.2.1\package.tgz
+94 verbose tar unpacking to C:\Users\BTrapp\class2\node_modules\utf-8-validate
+95 silly gentlyRm C:\Users\BTrapp\class2\node_modules\utf-8-validate is being purged
+96 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\utf-8-validate
+97 silly gunzTarPerm modes [ '777', '666' ]
+98 silly gunzTarPerm extractEntry package.json
+99 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+100 silly gunzTarPerm extractEntry package.json
+101 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+102 silly gunzTarPerm extractEntry .npmignore
+103 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+104 silly gunzTarPerm extractEntry README.md
+105 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+106 silly gunzTarPerm extractEntry .npmignore
+107 silly gunzTarPerm modified mode [ '.npmignore', 420, 438 ]
+108 silly gunzTarPerm extractEntry README.md
+109 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+110 silly gunzTarPerm extractEntry fallback.js
+111 silly gunzTarPerm modified mode [ 'fallback.js', 420, 438 ]
+112 silly gunzTarPerm extractEntry index.js
+113 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+114 silly gunzTarPerm extractEntry fallback.js
+115 silly gunzTarPerm modified mode [ 'fallback.js', 420, 438 ]
+116 silly gunzTarPerm extractEntry index.js
+117 silly gunzTarPerm modified mode [ 'index.js', 420, 438 ]
+118 silly gunzTarPerm extractEntry binding.gyp
+119 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+120 silly gunzTarPerm extractEntry .travis.yml
+121 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+122 silly gunzTarPerm extractEntry .travis.yml
+123 silly gunzTarPerm modified mode [ '.travis.yml', 420, 438 ]
+124 silly gunzTarPerm extractEntry binding.gyp
+125 silly gunzTarPerm modified mode [ 'binding.gyp', 420, 438 ]
+126 silly gunzTarPerm extractEntry src/validation.cc
+127 silly gunzTarPerm modified mode [ 'src/validation.cc', 420, 438 ]
+128 silly gunzTarPerm extractEntry src/bufferutil.cc
+129 silly gunzTarPerm modified mode [ 'src/bufferutil.cc', 420, 438 ]
+130 verbose write writing to C:\Users\BTrapp\class2\node_modules\utf-8-validate\package.json
+131 verbose write writing to C:\Users\BTrapp\class2\node_modules\bufferutil\package.json
+132 info preinstall bufferutil@1.2.1
+133 verbose readDependencies loading dependencies from C:\Users\BTrapp\class2\node_modules\bufferutil\package.json
+134 silly prepareForInstallMany adding bindings@1.2.x from bufferutil dependencies
+135 silly prepareForInstallMany adding nan@^2.0.5 from bufferutil dependencies
+136 verbose readDependencies loading dependencies from C:\Users\BTrapp\class2\node_modules\bufferutil\package.json
+137 info preinstall utf-8-validate@1.2.1
+138 verbose readDependencies loading dependencies from C:\Users\BTrapp\class2\node_modules\utf-8-validate\package.json
+139 silly cache add args [ 'bindings@1.2.x', null ]
+140 verbose cache add spec bindings@1.2.x
+141 silly cache add args [ 'nan@^2.0.5', null ]
+142 verbose cache add spec nan@^2.0.5
+143 silly cache add parsed spec { raw: 'bindings@1.2.x',
+143 silly cache add   scope: null,
+143 silly cache add   name: 'bindings',
+143 silly cache add   rawSpec: '1.2.x',
+143 silly cache add   spec: '>=1.2.0 <1.3.0',
+143 silly cache add   type: 'range' }
+144 silly addNamed bindings@>=1.2.0 <1.3.0
+145 verbose addNamed ">=1.2.0 <1.3.0" is a valid semver range for bindings
+146 silly addNameRange { name: 'bindings', range: '>=1.2.0 <1.3.0', hasData: false }
+147 silly mapToRegistry name bindings
+148 silly mapToRegistry using default registry
+149 silly mapToRegistry registry https://registry.npmjs.org/
+150 silly mapToRegistry uri https://registry.npmjs.org/bindings
+151 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
+152 silly cache add parsed spec { raw: 'nan@^2.0.5',
+152 silly cache add   scope: null,
+152 silly cache add   name: 'nan',
+152 silly cache add   rawSpec: '^2.0.5',
+152 silly cache add   spec: '>=2.0.5 <3.0.0',
+152 silly cache add   type: 'range' }
+153 silly addNamed nan@>=2.0.5 <3.0.0
+154 verbose addNamed ">=2.0.5 <3.0.0" is a valid semver range for nan
+155 silly addNameRange { name: 'nan', range: '>=2.0.5 <3.0.0', hasData: false }
+156 silly mapToRegistry name nan
+157 silly mapToRegistry using default registry
+158 silly mapToRegistry registry https://registry.npmjs.org/
+159 silly mapToRegistry uri https://registry.npmjs.org/nan
+160 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+161 silly prepareForInstallMany adding bindings@1.2.x from utf-8-validate dependencies
+162 silly prepareForInstallMany adding nan@^2.0.5 from utf-8-validate dependencies
+163 verbose readDependencies loading dependencies from C:\Users\BTrapp\class2\node_modules\utf-8-validate\package.json
+164 verbose request uri https://registry.npmjs.org/bindings
+165 verbose request no auth needed
+166 info attempt registry request try #1 at 17:23:54
+167 verbose etag "33TX4J3DNTGF7K41ZUV6OA182"
+168 http request GET https://registry.npmjs.org/bindings
+169 verbose request uri https://registry.npmjs.org/nan
+170 verbose request no auth needed
+171 info attempt registry request try #1 at 17:23:54
+172 verbose etag "12RFHNMU7CS3WJ1892HQLM0NB"
+173 http request GET https://registry.npmjs.org/nan
+174 silly cache add args [ 'bindings@1.2.x', null ]
+175 verbose cache add spec bindings@1.2.x
+176 silly cache add args [ 'nan@^2.0.5', null ]
+177 verbose cache add spec nan@^2.0.5
+178 silly cache add parsed spec { raw: 'bindings@1.2.x',
+178 silly cache add   scope: null,
+178 silly cache add   name: 'bindings',
+178 silly cache add   rawSpec: '1.2.x',
+178 silly cache add   spec: '>=1.2.0 <1.3.0',
+178 silly cache add   type: 'range' }
+179 silly addNamed bindings@>=1.2.0 <1.3.0
+180 verbose addNamed ">=1.2.0 <1.3.0" is a valid semver range for bindings
+181 silly addNameRange { name: 'bindings', range: '>=1.2.0 <1.3.0', hasData: false }
+182 silly mapToRegistry name bindings
+183 silly mapToRegistry using default registry
+184 silly mapToRegistry registry https://registry.npmjs.org/
+185 silly mapToRegistry uri https://registry.npmjs.org/bindings
+186 verbose addNameRange registry:https://registry.npmjs.org/bindings already in flight; waiting
+187 silly cache add parsed spec { raw: 'nan@^2.0.5',
+187 silly cache add   scope: null,
+187 silly cache add   name: 'nan',
+187 silly cache add   rawSpec: '^2.0.5',
+187 silly cache add   spec: '>=2.0.5 <3.0.0',
+187 silly cache add   type: 'range' }
+188 silly addNamed nan@>=2.0.5 <3.0.0
+189 verbose addNamed ">=2.0.5 <3.0.0" is a valid semver range for nan
+190 silly addNameRange { name: 'nan', range: '>=2.0.5 <3.0.0', hasData: false }
+191 silly mapToRegistry name nan
+192 silly mapToRegistry using default registry
+193 silly mapToRegistry registry https://registry.npmjs.org/
+194 silly mapToRegistry uri https://registry.npmjs.org/nan
+195 verbose addNameRange registry:https://registry.npmjs.org/nan already in flight; waiting
+196 http 304 https://registry.npmjs.org/bindings
+197 verbose headers { date: 'Wed, 22 Jun 2016 21:23:52 GMT',
+197 verbose headers   via: '1.1 varnish',
+197 verbose headers   'cache-control': 'max-age=300',
+197 verbose headers   etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
+197 verbose headers   age: '4',
+197 verbose headers   connection: 'keep-alive',
+197 verbose headers   'x-served-by': 'cache-dfw1839-DFW',
+197 verbose headers   'x-cache': 'HIT',
+197 verbose headers   'x-cache-hits': '1',
+197 verbose headers   'x-timer': 'S1466630632.786978,VS0,VE0',
+197 verbose headers   vary: 'Accept-Encoding' }
+198 silly get cb [ 304,
+198 silly get   { date: 'Wed, 22 Jun 2016 21:23:52 GMT',
+198 silly get     via: '1.1 varnish',
+198 silly get     'cache-control': 'max-age=300',
+198 silly get     etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
+198 silly get     age: '4',
+198 silly get     connection: 'keep-alive',
+198 silly get     'x-served-by': 'cache-dfw1839-DFW',
+198 silly get     'x-cache': 'HIT',
+198 silly get     'x-cache-hits': '1',
+198 silly get     'x-timer': 'S1466630632.786978,VS0,VE0',
+198 silly get     vary: 'Accept-Encoding' } ]
+199 verbose etag https://registry.npmjs.org/bindings from cache
+200 verbose get saving bindings to C:\Users\BTrapp\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
+201 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+202 http 304 https://registry.npmjs.org/nan
+203 verbose headers { date: 'Wed, 22 Jun 2016 21:23:52 GMT',
+203 verbose headers   via: '1.1 varnish',
+203 verbose headers   'cache-control': 'max-age=300',
+203 verbose headers   etag: '"12RFHNMU7CS3WJ1892HQLM0NB"',
+203 verbose headers   age: '281',
+203 verbose headers   connection: 'keep-alive',
+203 verbose headers   'x-served-by': 'cache-dfw1825-DFW',
+203 verbose headers   'x-cache': 'HIT',
+203 verbose headers   'x-cache-hits': '11',
+203 verbose headers   'x-timer': 'S1466630632.800494,VS0,VE0',
+203 verbose headers   vary: 'Accept-Encoding' }
+204 silly get cb [ 304,
+204 silly get   { date: 'Wed, 22 Jun 2016 21:23:52 GMT',
+204 silly get     via: '1.1 varnish',
+204 silly get     'cache-control': 'max-age=300',
+204 silly get     etag: '"12RFHNMU7CS3WJ1892HQLM0NB"',
+204 silly get     age: '281',
+204 silly get     connection: 'keep-alive',
+204 silly get     'x-served-by': 'cache-dfw1825-DFW',
+204 silly get     'x-cache': 'HIT',
+204 silly get     'x-cache-hits': '11',
+204 silly get     'x-timer': 'S1466630632.800494,VS0,VE0',
+204 silly get     vary: 'Accept-Encoding' } ]
+205 verbose etag https://registry.npmjs.org/nan from cache
+206 verbose get saving nan to C:\Users\BTrapp\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+207 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+208 silly addNameRange number 2 { name: 'bindings', range: '>=1.2.0 <1.3.0', hasData: true }
+209 silly addNameRange versions [ 'bindings',
+209 silly addNameRange   [ '0.0.1',
+209 silly addNameRange     '0.1.0',
+209 silly addNameRange     '0.1.1',
+209 silly addNameRange     '0.2.0',
+209 silly addNameRange     '0.2.1',
+209 silly addNameRange     '0.2.2',
+209 silly addNameRange     '0.2.3',
+209 silly addNameRange     '0.2.4',
+209 silly addNameRange     '0.3.0',
+209 silly addNameRange     '0.4.0',
+209 silly addNameRange     '1.0.0',
+209 silly addNameRange     '1.1.0',
+209 silly addNameRange     '1.1.1',
+209 silly addNameRange     '1.2.0',
+209 silly addNameRange     '1.2.1' ] ]
+210 silly addNamed bindings@1.2.1
+211 verbose addNamed "1.2.1" is a plain semver version for bindings
+212 silly addNameRange number 2 { name: 'bindings', range: '>=1.2.0 <1.3.0', hasData: true }
+213 silly addNameRange versions [ 'bindings',
+213 silly addNameRange   [ '0.0.1',
+213 silly addNameRange     '0.1.0',
+213 silly addNameRange     '0.1.1',
+213 silly addNameRange     '0.2.0',
+213 silly addNameRange     '0.2.1',
+213 silly addNameRange     '0.2.2',
+213 silly addNameRange     '0.2.3',
+213 silly addNameRange     '0.2.4',
+213 silly addNameRange     '0.3.0',
+213 silly addNameRange     '0.4.0',
+213 silly addNameRange     '1.0.0',
+213 silly addNameRange     '1.1.0',
+213 silly addNameRange     '1.1.1',
+213 silly addNameRange     '1.2.0',
+213 silly addNameRange     '1.2.1' ] ]
+214 silly addNamed bindings@1.2.1
+215 verbose addNamed "1.2.1" is a plain semver version for bindings
+216 silly addNameRange number 2 { name: 'nan', range: '>=2.0.5 <3.0.0', hasData: true }
+217 silly addNameRange versions [ 'nan',
+217 silly addNameRange   [ '0.3.0-wip',
+217 silly addNameRange     '0.3.0-wip2',
+217 silly addNameRange     '0.3.0',
+217 silly addNameRange     '0.3.1',
+217 silly addNameRange     '0.3.2',
+217 silly addNameRange     '0.4.0',
+217 silly addNameRange     '0.4.1',
+217 silly addNameRange     '0.4.2',
+217 silly addNameRange     '0.4.3',
+217 silly addNameRange     '0.4.4',
+217 silly addNameRange     '0.5.0',
+217 silly addNameRange     '0.5.1',
+217 silly addNameRange     '0.5.2',
+217 silly addNameRange     '0.6.0',
+217 silly addNameRange     '0.7.0',
+217 silly addNameRange     '0.7.1',
+217 silly addNameRange     '0.8.0',
+217 silly addNameRange     '1.0.0',
+217 silly addNameRange     '1.1.0',
+217 silly addNameRange     '1.1.1',
+217 silly addNameRange     '1.1.2',
+217 silly addNameRange     '1.2.0',
+217 silly addNameRange     '1.3.0',
+217 silly addNameRange     '1.4.0',
+217 silly addNameRange     '1.4.1',
+217 silly addNameRange     '1.5.0',
+217 silly addNameRange     '1.4.2',
+217 silly addNameRange     '1.4.3',
+217 silly addNameRange     '1.5.1',
+217 silly addNameRange     '1.5.2',
+217 silly addNameRange     '1.6.0',
+217 silly addNameRange     '1.5.3',
+217 silly addNameRange     '1.6.1',
+217 silly addNameRange     '1.6.2',
+217 silly addNameRange     '1.7.0',
+217 silly addNameRange     '1.8.0',
+217 silly addNameRange     '1.8.1',
+217 silly addNameRange     '1.8.2',
+217 silly addNameRange     '1.8.3',
+217 silly addNameRange     '1.8.4',
+217 silly addNameRange     '1.9.0',
+217 silly addNameRange     '2.0.0',
+217 silly addNameRange     '2.0.1',
+217 silly addNameRange     '2.0.2',
+217 silly addNameRange     '2.0.3',
+217 silly addNameRange     '2.0.4',
+217 silly addNameRange     '2.0.5',
+217 silly addNameRange     '2.0.6',
+217 silly addNameRange     '2.0.7',
+217 silly addNameRange     '2.0.8',
+217 silly addNameRange     '2.0.9',
+217 silly addNameRange     '2.1.0',
+217 silly addNameRange     '2.2.0',
+217 silly addNameRange     '2.2.1',
+217 silly addNameRange     '2.3.0',
+217 silly addNameRange     '2.3.1',
+217 silly addNameRange     '2.3.2',
+217 silly addNameRange     '2.3.3',
+217 silly addNameRange     '2.3.4',
+217 silly addNameRange     '2.3.5' ] ]
+218 silly addNamed nan@2.3.5
+219 verbose addNamed "2.3.5" is a plain semver version for nan
+220 silly addNameRange number 2 { name: 'nan', range: '>=2.0.5 <3.0.0', hasData: true }
+221 silly addNameRange versions [ 'nan',
+221 silly addNameRange   [ '0.3.0-wip',
+221 silly addNameRange     '0.3.0-wip2',
+221 silly addNameRange     '0.3.0',
+221 silly addNameRange     '0.3.1',
+221 silly addNameRange     '0.3.2',
+221 silly addNameRange     '0.4.0',
+221 silly addNameRange     '0.4.1',
+221 silly addNameRange     '0.4.2',
+221 silly addNameRange     '0.4.3',
+221 silly addNameRange     '0.4.4',
+221 silly addNameRange     '0.5.0',
+221 silly addNameRange     '0.5.1',
+221 silly addNameRange     '0.5.2',
+221 silly addNameRange     '0.6.0',
+221 silly addNameRange     '0.7.0',
+221 silly addNameRange     '0.7.1',
+221 silly addNameRange     '0.8.0',
+221 silly addNameRange     '1.0.0',
+221 silly addNameRange     '1.1.0',
+221 silly addNameRange     '1.1.1',
+221 silly addNameRange     '1.1.2',
+221 silly addNameRange     '1.2.0',
+221 silly addNameRange     '1.3.0',
+221 silly addNameRange     '1.4.0',
+221 silly addNameRange     '1.4.1',
+221 silly addNameRange     '1.5.0',
+221 silly addNameRange     '1.4.2',
+221 silly addNameRange     '1.4.3',
+221 silly addNameRange     '1.5.1',
+221 silly addNameRange     '1.5.2',
+221 silly addNameRange     '1.6.0',
+221 silly addNameRange     '1.5.3',
+221 silly addNameRange     '1.6.1',
+221 silly addNameRange     '1.6.2',
+221 silly addNameRange     '1.7.0',
+221 silly addNameRange     '1.8.0',
+221 silly addNameRange     '1.8.1',
+221 silly addNameRange     '1.8.2',
+221 silly addNameRange     '1.8.3',
+221 silly addNameRange     '1.8.4',
+221 silly addNameRange     '1.9.0',
+221 silly addNameRange     '2.0.0',
+221 silly addNameRange     '2.0.1',
+221 silly addNameRange     '2.0.2',
+221 silly addNameRange     '2.0.3',
+221 silly addNameRange     '2.0.4',
+221 silly addNameRange     '2.0.5',
+221 silly addNameRange     '2.0.6',
+221 silly addNameRange     '2.0.7',
+221 silly addNameRange     '2.0.8',
+221 silly addNameRange     '2.0.9',
+221 silly addNameRange     '2.1.0',
+221 silly addNameRange     '2.2.0',
+221 silly addNameRange     '2.2.1',
+221 silly addNameRange     '2.3.0',
+221 silly addNameRange     '2.3.1',
+221 silly addNameRange     '2.3.2',
+221 silly addNameRange     '2.3.3',
+221 silly addNameRange     '2.3.4',
+221 silly addNameRange     '2.3.5' ] ]
+222 silly addNamed nan@2.3.5
+223 verbose addNamed "2.3.5" is a plain semver version for nan
+224 silly cache afterAdd bindings@1.2.1
+225 verbose afterAdd C:\Users\BTrapp\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json not in flight; writing
+226 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+227 silly cache afterAdd bindings@1.2.1
+228 verbose afterAdd C:\Users\BTrapp\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json already in flight; not writing
+229 silly cache afterAdd nan@2.3.5
+230 verbose afterAdd C:\Users\BTrapp\AppData\Roaming\npm-cache\nan\2.3.5\package\package.json not in flight; writing
+231 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+232 silly cache afterAdd nan@2.3.5
+233 verbose afterAdd C:\Users\BTrapp\AppData\Roaming\npm-cache\nan\2.3.5\package\package.json already in flight; not writing
+234 verbose afterAdd C:\Users\BTrapp\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json written
+235 verbose afterAdd C:\Users\BTrapp\AppData\Roaming\npm-cache\nan\2.3.5\package\package.json written
+236 silly install resolved [ { name: 'bindings',
+236 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+236 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+236 silly install resolved     version: '1.2.1',
+236 silly install resolved     author:
+236 silly install resolved      { name: 'Nathan Rajlich',
+236 silly install resolved        email: 'nathan@tootallnate.net',
+236 silly install resolved        url: 'http://tootallnate.net' },
+236 silly install resolved     repository:
+236 silly install resolved      { type: 'git',
+236 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+236 silly install resolved     main: './bindings.js',
+236 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+236 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+236 silly install resolved     license: 'MIT',
+236 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+236 silly install resolved     _id: 'bindings@1.2.1',
+236 silly install resolved     scripts: {},
+236 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+236 silly install resolved     _from: 'bindings@>=1.2.0 <1.3.0',
+236 silly install resolved     _npmVersion: '1.4.14',
+236 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+236 silly install resolved     maintainers: [ [Object], [Object] ],
+236 silly install resolved     dist:
+236 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+236 silly install resolved        tarball: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+236 silly install resolved     directories: {},
+236 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+236 silly install resolved     readme: 'ERROR: No README data found!' },
+236 silly install resolved   { name: 'nan',
+236 silly install resolved     version: '2.3.5',
+236 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 6 compatibility',
+236 silly install resolved     main: 'include_dirs.js',
+236 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+236 silly install resolved     scripts:
+236 silly install resolved      { test: 'tap --gc --stderr test/js/*-test.js',
+236 silly install resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2013 --directory test',
+236 silly install resolved        docs: 'doc/.build.sh' },
+236 silly install resolved     contributors:
+236 silly install resolved      [ [Object],
+236 silly install resolved        [Object],
+236 silly install resolved        [Object],
+236 silly install resolved        [Object],
+236 silly install resolved        [Object],
+236 silly install resolved        [Object],
+236 silly install resolved        [Object] ],
+236 silly install resolved     devDependencies:
+236 silly install resolved      { bindings: '~1.2.1',
+236 silly install resolved        commander: '^2.8.1',
+236 silly install resolved        glob: '^5.0.14',
+236 silly install resolved        'node-gyp': '~3.0.1',
+236 silly install resolved        tap: '~0.7.1',
+236 silly install resolved        xtend: '~4.0.0' },
+236 silly install resolved     license: 'MIT',
+236 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+236 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+236 silly install resolved     _id: 'nan@2.3.5',
+236 silly install resolved     _shasum: '822a0dc266290ce4cd3a12282ca3e7e364668a08',
+236 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.3.5.tgz',
+236 silly install resolved     _from: 'nan@>=2.0.5 <3.0.0',
+236 silly install resolved     _npmVersion: '3.3.6',
+236 silly install resolved     _nodeVersion: '5.0.0',
+236 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+236 silly install resolved     dist:
+236 silly install resolved      { shasum: '822a0dc266290ce4cd3a12282ca3e7e364668a08',
+236 silly install resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-2.3.5.tgz' },
+236 silly install resolved     maintainers: [ [Object], [Object] ],
+236 silly install resolved     _npmOperationalInternal:
+236 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+236 silly install resolved        tmp: 'tmp/nan-2.3.5.tgz_1464707164994_0.4295874561648816' },
+236 silly install resolved     directories: {},
+236 silly install resolved     readme: 'ERROR: No README data found!' } ]
+237 info install bindings@1.2.1 into C:\Users\BTrapp\class2\node_modules\utf-8-validate
+238 info install nan@2.3.5 into C:\Users\BTrapp\class2\node_modules\utf-8-validate
+239 info installOne bindings@1.2.1
+240 verbose installOne of bindings to C:\Users\BTrapp\class2\node_modules\utf-8-validate not in flight; installing
+241 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+242 info installOne nan@2.3.5
+243 verbose installOne of nan to C:\Users\BTrapp\class2\node_modules\utf-8-validate not in flight; installing
+244 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+245 silly install resolved [ { name: 'bindings',
+245 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+245 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+245 silly install resolved     version: '1.2.1',
+245 silly install resolved     author:
+245 silly install resolved      { name: 'Nathan Rajlich',
+245 silly install resolved        email: 'nathan@tootallnate.net',
+245 silly install resolved        url: 'http://tootallnate.net' },
+245 silly install resolved     repository:
+245 silly install resolved      { type: 'git',
+245 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+245 silly install resolved     main: './bindings.js',
+245 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+245 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+245 silly install resolved     license: 'MIT',
+245 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+245 silly install resolved     _id: 'bindings@1.2.1',
+245 silly install resolved     scripts: {},
+245 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+245 silly install resolved     _from: 'bindings@>=1.2.0 <1.3.0',
+245 silly install resolved     _npmVersion: '1.4.14',
+245 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+245 silly install resolved     maintainers: [ [Object], [Object] ],
+245 silly install resolved     dist:
+245 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+245 silly install resolved        tarball: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+245 silly install resolved     directories: {},
+245 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+245 silly install resolved     readme: 'ERROR: No README data found!' },
+245 silly install resolved   { name: 'nan',
+245 silly install resolved     version: '2.3.5',
+245 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 6 compatibility',
+245 silly install resolved     main: 'include_dirs.js',
+245 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+245 silly install resolved     scripts:
+245 silly install resolved      { test: 'tap --gc --stderr test/js/*-test.js',
+245 silly install resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2013 --directory test',
+245 silly install resolved        docs: 'doc/.build.sh' },
+245 silly install resolved     contributors:
+245 silly install resolved      [ [Object],
+245 silly install resolved        [Object],
+245 silly install resolved        [Object],
+245 silly install resolved        [Object],
+245 silly install resolved        [Object],
+245 silly install resolved        [Object],
+245 silly install resolved        [Object] ],
+245 silly install resolved     devDependencies:
+245 silly install resolved      { bindings: '~1.2.1',
+245 silly install resolved        commander: '^2.8.1',
+245 silly install resolved        glob: '^5.0.14',
+245 silly install resolved        'node-gyp': '~3.0.1',
+245 silly install resolved        tap: '~0.7.1',
+245 silly install resolved        xtend: '~4.0.0' },
+245 silly install resolved     license: 'MIT',
+245 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+245 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+245 silly install resolved     _id: 'nan@2.3.5',
+245 silly install resolved     _shasum: '822a0dc266290ce4cd3a12282ca3e7e364668a08',
+245 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.3.5.tgz',
+245 silly install resolved     _from: 'nan@>=2.0.5 <3.0.0',
+245 silly install resolved     _npmVersion: '3.3.6',
+245 silly install resolved     _nodeVersion: '5.0.0',
+245 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+245 silly install resolved     dist:
+245 silly install resolved      { shasum: '822a0dc266290ce4cd3a12282ca3e7e364668a08',
+245 silly install resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-2.3.5.tgz' },
+245 silly install resolved     maintainers: [ [Object], [Object] ],
+245 silly install resolved     _npmOperationalInternal:
+245 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+245 silly install resolved        tmp: 'tmp/nan-2.3.5.tgz_1464707164994_0.4295874561648816' },
+245 silly install resolved     directories: {},
+245 silly install resolved     readme: 'ERROR: No README data found!' } ]
+246 info install bindings@1.2.1 into C:\Users\BTrapp\class2\node_modules\bufferutil
+247 info install nan@2.3.5 into C:\Users\BTrapp\class2\node_modules\bufferutil
+248 info installOne bindings@1.2.1
+249 verbose installOne of bindings to C:\Users\BTrapp\class2\node_modules\bufferutil not in flight; installing
+250 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+251 info installOne nan@2.3.5
+252 verbose installOne of nan to C:\Users\BTrapp\class2\node_modules\bufferutil not in flight; installing
+253 verbose correctMkdir C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+254 verbose lock using C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks\bindings-ba8be9df5c90ac9b.lock for C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\bindings
+255 verbose lock using C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks\nan-22ee509d4d5600dc.lock for C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\nan
+256 silly install write writing bindings 1.2.1 to C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\bindings
+257 silly install write writing nan 2.3.5 to C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\nan
+258 verbose lock using C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks\bindings-5fc98ad9e1bda0ba.lock for C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\bindings
+259 verbose lock using C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks\nan-68336f40505f6853.lock for C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\nan
+260 silly install write writing bindings 1.2.1 to C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\bindings
+261 silly install write writing nan 2.3.5 to C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\nan
+262 verbose unbuild node_modules\utf-8-validate\node_modules\bindings
+263 verbose unbuild node_modules\utf-8-validate\node_modules\nan
+264 verbose unbuild node_modules\bufferutil\node_modules\bindings
+265 verbose unbuild node_modules\bufferutil\node_modules\nan
+266 silly gentlyRm C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\bindings is being purged from base C:\Users\BTrapp\class2
+267 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\bindings
+268 silly gentlyRm C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\nan is being purged from base C:\Users\BTrapp\class2
+269 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\nan
+270 verbose tar unpack C:\Users\BTrapp\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+271 verbose tar unpacking to C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\bindings
+272 silly gentlyRm C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\bindings is being purged
+273 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\bindings
+274 verbose tar unpack C:\Users\BTrapp\AppData\Roaming\npm-cache\nan\2.3.5\package.tgz
+275 verbose tar unpacking to C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\nan
+276 silly gentlyRm C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\nan is being purged
+277 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\nan
+278 silly gentlyRm C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\bindings is being purged from base C:\Users\BTrapp\class2
+279 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\bindings
+280 silly gentlyRm C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\nan is being purged from base C:\Users\BTrapp\class2
+281 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\nan
+282 silly gunzTarPerm modes [ '777', '666' ]
+283 silly gunzTarPerm modes [ '777', '666' ]
+284 verbose tar unpack C:\Users\BTrapp\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+285 verbose tar unpacking to C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\bindings
+286 silly gentlyRm C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\bindings is being purged
+287 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\bindings
+288 verbose tar unpack C:\Users\BTrapp\AppData\Roaming\npm-cache\nan\2.3.5\package.tgz
+289 verbose tar unpacking to C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\nan
+290 silly gentlyRm C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\nan is being purged
+291 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\nan
+292 silly gunzTarPerm modes [ '777', '666' ]
+293 silly gunzTarPerm modes [ '777', '666' ]
+294 silly gunzTarPerm extractEntry package.json
+295 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+296 silly gunzTarPerm extractEntry package.json
+297 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+298 silly gunzTarPerm extractEntry README.md
+299 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+300 silly gunzTarPerm extractEntry bindings.js
+301 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+302 silly gunzTarPerm extractEntry README.md
+303 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+304 silly gunzTarPerm extractEntry bindings.js
+305 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+306 silly gunzTarPerm extractEntry package.json
+307 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+308 silly gunzTarPerm extractEntry package.json
+309 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+310 silly gunzTarPerm extractEntry README.md
+311 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+312 silly gunzTarPerm extractEntry README.md
+313 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+314 silly gunzTarPerm extractEntry include_dirs.js
+315 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+316 silly gunzTarPerm extractEntry include_dirs.js
+317 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+318 silly gunzTarPerm extractEntry nan_converters.h
+319 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
+320 silly gunzTarPerm extractEntry LICENSE.md
+321 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+322 silly gunzTarPerm extractEntry doc/node_misc.md
+323 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
+324 silly gunzTarPerm extractEntry nan_converters.h
+325 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
+326 silly gunzTarPerm extractEntry LICENSE.md
+327 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+328 silly gunzTarPerm extractEntry doc/node_misc.md
+329 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
+330 silly gunzTarPerm extractEntry doc/asyncworker.md
+331 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
+332 silly gunzTarPerm extractEntry doc/asyncworker.md
+333 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
+334 verbose write writing to C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\bindings\package.json
+335 verbose write writing to C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\bindings\package.json
+336 silly gunzTarPerm extractEntry doc/callback.md
+337 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
+338 silly gunzTarPerm extractEntry doc/converters.md
+339 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
+340 info preinstall bindings@1.2.1
+341 verbose readDependencies loading dependencies from C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\bindings\package.json
+342 silly gunzTarPerm extractEntry doc/callback.md
+343 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
+344 silly gunzTarPerm extractEntry doc/converters.md
+345 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
+346 info preinstall bindings@1.2.1
+347 verbose readDependencies loading dependencies from C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\bindings\package.json
+348 verbose readDependencies loading dependencies from C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\bindings\package.json
+349 silly gunzTarPerm extractEntry doc/errors.md
+350 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
+351 silly gunzTarPerm extractEntry doc/maybe_types.md
+352 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+353 silly gunzTarPerm extractEntry doc/errors.md
+354 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
+355 silly gunzTarPerm extractEntry doc/maybe_types.md
+356 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+357 silly install resolved []
+358 verbose about to build C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\bindings
+359 info build C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\bindings
+360 verbose readDependencies loading dependencies from C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\bindings\package.json
+361 info linkStuff bindings@1.2.1
+362 silly linkStuff bindings@1.2.1 has C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules as its parent node_modules
+363 silly install resolved []
+364 verbose about to build C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\bindings
+365 info build C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\bindings
+366 info linkStuff bindings@1.2.1
+367 silly linkStuff bindings@1.2.1 has C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules as its parent node_modules
+368 silly gunzTarPerm extractEntry doc/methods.md
+369 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+370 silly gunzTarPerm extractEntry doc/new.md
+371 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
+372 silly gunzTarPerm extractEntry doc/methods.md
+373 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+374 silly gunzTarPerm extractEntry doc/new.md
+375 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
+376 verbose linkBins bindings@1.2.1
+377 verbose linkMans bindings@1.2.1
+378 verbose rebuildBundles bindings@1.2.1
+379 info install bindings@1.2.1
+380 info postinstall bindings@1.2.1
+381 verbose linkBins bindings@1.2.1
+382 verbose linkMans bindings@1.2.1
+383 verbose rebuildBundles bindings@1.2.1
+384 info install bindings@1.2.1
+385 verbose unlock done using C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks\bindings-ba8be9df5c90ac9b.lock for C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\bindings
+386 info postinstall bindings@1.2.1
+387 silly gunzTarPerm extractEntry doc/buffers.md
+388 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
+389 silly gunzTarPerm extractEntry doc/object_wrappers.md
+390 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 438 ]
+391 silly gunzTarPerm extractEntry doc/buffers.md
+392 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
+393 silly gunzTarPerm extractEntry doc/object_wrappers.md
+394 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 438 ]
+395 verbose unlock done using C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks\bindings-5fc98ad9e1bda0ba.lock for C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\bindings
+396 silly gunzTarPerm extractEntry doc/persistent.md
+397 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
+398 silly gunzTarPerm extractEntry doc/scopes.md
+399 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
+400 silly gunzTarPerm extractEntry doc/persistent.md
+401 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
+402 silly gunzTarPerm extractEntry doc/scopes.md
+403 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
+404 silly gunzTarPerm extractEntry doc/script.md
+405 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
+406 silly gunzTarPerm extractEntry doc/string_bytes.md
+407 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
+408 silly gunzTarPerm extractEntry doc/script.md
+409 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
+410 silly gunzTarPerm extractEntry doc/string_bytes.md
+411 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
+412 silly gunzTarPerm extractEntry doc/v8_internals.md
+413 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
+414 silly gunzTarPerm extractEntry doc/v8_misc.md
+415 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
+416 silly gunzTarPerm extractEntry doc/v8_internals.md
+417 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
+418 silly gunzTarPerm extractEntry doc/v8_misc.md
+419 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
+420 silly gunzTarPerm extractEntry nan.h
+421 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+422 silly gunzTarPerm extractEntry nan_callbacks.h
+423 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
+424 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+425 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
+426 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+427 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+428 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+429 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
+430 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+431 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
+432 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+433 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+434 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+435 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+436 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+437 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
+438 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+439 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
+440 silly gunzTarPerm extractEntry nan_new.h
+441 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+442 silly gunzTarPerm extractEntry nan_object_wrap.h
+443 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
+444 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+445 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
+446 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+447 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
+448 silly gunzTarPerm extractEntry nan_string_bytes.h
+449 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+450 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+451 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 438 ]
+452 silly gunzTarPerm extractEntry nan_weak.h
+453 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
+454 silly gunzTarPerm extractEntry CHANGELOG.md
+455 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+456 silly gunzTarPerm extractEntry tools/package.json
+457 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
+458 silly gunzTarPerm extractEntry tools/README.md
+459 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
+460 silly gunzTarPerm extractEntry tools/1to2.js
+461 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
+462 silly gunzTarPerm extractEntry nan.h
+463 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+464 silly gunzTarPerm extractEntry nan_callbacks.h
+465 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
+466 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+467 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
+468 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+469 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+470 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+471 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
+472 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+473 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
+474 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+475 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+476 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+477 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+478 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+479 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
+480 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+481 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
+482 silly gunzTarPerm extractEntry nan_new.h
+483 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+484 silly gunzTarPerm extractEntry nan_object_wrap.h
+485 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
+486 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+487 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
+488 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+489 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
+490 silly gunzTarPerm extractEntry nan_string_bytes.h
+491 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+492 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+493 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 438 ]
+494 silly gunzTarPerm extractEntry nan_weak.h
+495 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
+496 silly gunzTarPerm extractEntry CHANGELOG.md
+497 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+498 silly gunzTarPerm extractEntry tools/package.json
+499 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
+500 silly gunzTarPerm extractEntry tools/README.md
+501 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
+502 silly gunzTarPerm extractEntry tools/1to2.js
+503 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
+504 verbose write writing to C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\nan\package.json
+505 verbose write writing to C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\nan\package.json
+506 info preinstall nan@2.3.5
+507 info preinstall nan@2.3.5
+508 verbose readDependencies loading dependencies from C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\nan\package.json
+509 verbose readDependencies loading dependencies from C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\nan\package.json
+510 verbose readDependencies loading dependencies from C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\nan\package.json
+511 verbose readDependencies loading dependencies from C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\nan\package.json
+512 silly install resolved []
+513 verbose about to build C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\nan
+514 info build C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\nan
+515 silly install resolved []
+516 verbose about to build C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\nan
+517 info build C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\nan
+518 info linkStuff nan@2.3.5
+519 silly linkStuff nan@2.3.5 has C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules as its parent node_modules
+520 info linkStuff nan@2.3.5
+521 silly linkStuff nan@2.3.5 has C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules as its parent node_modules
+522 verbose linkBins nan@2.3.5
+523 verbose linkMans nan@2.3.5
+524 verbose rebuildBundles nan@2.3.5
+525 info install nan@2.3.5
+526 verbose linkBins nan@2.3.5
+527 verbose linkMans nan@2.3.5
+528 verbose rebuildBundles nan@2.3.5
+529 info install nan@2.3.5
+530 info postinstall nan@2.3.5
+531 info postinstall nan@2.3.5
+532 verbose unlock done using C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks\nan-68336f40505f6853.lock for C:\Users\BTrapp\class2\node_modules\bufferutil\node_modules\nan
+533 verbose about to build C:\Users\BTrapp\class2\node_modules\bufferutil
+534 info build C:\Users\BTrapp\class2\node_modules\bufferutil
+535 info linkStuff bufferutil@1.2.1
+536 silly linkStuff bufferutil@1.2.1 has C:\Users\BTrapp\class2\node_modules as its parent node_modules
+537 verbose unlock done using C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks\nan-22ee509d4d5600dc.lock for C:\Users\BTrapp\class2\node_modules\utf-8-validate\node_modules\nan
+538 verbose about to build C:\Users\BTrapp\class2\node_modules\utf-8-validate
+539 info build C:\Users\BTrapp\class2\node_modules\utf-8-validate
+540 info linkStuff utf-8-validate@1.2.1
+541 silly linkStuff utf-8-validate@1.2.1 has C:\Users\BTrapp\class2\node_modules as its parent node_modules
+542 verbose linkBins bufferutil@1.2.1
+543 verbose linkMans bufferutil@1.2.1
+544 verbose rebuildBundles bufferutil@1.2.1
+545 verbose rebuildBundles [ 'bindings', 'nan' ]
+546 info install bufferutil@1.2.1
+547 verbose unsafe-perm in lifecycle true
+548 verbose linkBins utf-8-validate@1.2.1
+549 verbose linkMans utf-8-validate@1.2.1
+550 verbose rebuildBundles utf-8-validate@1.2.1
+551 verbose rebuildBundles [ 'bindings', 'nan' ]
+552 info install utf-8-validate@1.2.1
+553 info bufferutil@1.2.1 Failed to exec install script
+554 verbose unsafe-perm in lifecycle true
+555 verbose unlock done using C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks\bufferutil-c99d511e6c6130e5.lock for C:\Users\BTrapp\class2\node_modules\bufferutil
+556 info utf-8-validate@1.2.1 Failed to exec install script
+557 verbose unlock done using C:\Users\BTrapp\AppData\Roaming\npm-cache\_locks\utf-8-validate-41f83881e1fa13d2.lock for C:\Users\BTrapp\class2\node_modules\utf-8-validate
+558 verbose stack Error: bufferutil@1.2.1 install: `node-gyp rebuild`
+558 verbose stack Exit status 1
+558 verbose stack     at EventEmitter.<anonymous> (C:\Users\BTrapp\AppData\Local\.meteor\packages\meteor-tool\1.3.2_4\mt-os.windows.x86_32\dev_bundle\lib\node_modules\npm\lib\utils\lifecycle.js:217:16)
+558 verbose stack     at EventEmitter.emit (events.js:98:17)
+558 verbose stack     at ChildProcess.<anonymous> (C:\Users\BTrapp\AppData\Local\.meteor\packages\meteor-tool\1.3.2_4\mt-os.windows.x86_32\dev_bundle\lib\node_modules\npm\lib\utils\spawn.js:24:14)
+558 verbose stack     at ChildProcess.emit (events.js:98:17)
+558 verbose stack     at maybeClose (child_process.js:766:16)
+558 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:833:5)
+559 verbose pkgid bufferutil@1.2.1
+560 verbose cwd C:\Users\BTrapp\class2
+561 error Windows_NT 10.0.10586
+562 error argv "C:\\Users\\BTrapp\\AppData\\Local\\.meteor\\packages\\meteor-tool\\1.3.2_4\\mt-os.windows.x86_32\\dev_bundle\\bin\\\\node.exe" "C:\\Users\\BTrapp\\AppData\\Local\\.meteor\\packages\\meteor-tool\\1.3.2_4\\mt-os.windows.x86_32\\dev_bundle\\lib\\node_modules\\npm\\bin\\npm-cli.js" "install" "--save" "bufferutil" "utf-8-validate"
+563 error node v0.10.43
+564 error npm  v2.14.22
+565 error code ELIFECYCLE
+566 error bufferutil@1.2.1 install: `node-gyp rebuild`
+566 error Exit status 1
+567 error Failed at the bufferutil@1.2.1 install script 'node-gyp rebuild'.
+567 error This is most likely a problem with the bufferutil package,
+567 error not with npm itself.
+567 error Tell the author that this fails on your system:
+567 error     node-gyp rebuild
+567 error You can get information on how to open an issue for this project with:
+567 error     npm bugs bufferutil
+567 error Or if that isn't available, you can get their info via:
+567 error
+567 error     npm owner ls bufferutil
+567 error There is likely additional logging output above.
+568 verbose exit [ 1, true ]
+569 verbose unbuild node_modules\bufferutil
+570 info preuninstall bufferutil@1.2.1
+571 info uninstall bufferutil@1.2.1
+572 verbose unbuild rmStuff bufferutil@1.2.1 from C:\Users\BTrapp\class2\node_modules
+573 info postuninstall bufferutil@1.2.1
+574 silly gentlyRm C:\Users\BTrapp\class2\node_modules\bufferutil is being purged from base C:\Users\BTrapp\class2
+575 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\bufferutil
+576 silly vacuum-fs purging C:\Users\BTrapp\class2\node_modules\bufferutil
+577 silly vacuum-fs quitting because other entries in C:\Users\BTrapp\class2\node_modules
+578 verbose unbuild node_modules\utf-8-validate
+579 info preuninstall utf-8-validate@1.2.1
+580 info uninstall utf-8-validate@1.2.1
+581 verbose unbuild rmStuff utf-8-validate@1.2.1 from C:\Users\BTrapp\class2\node_modules
+582 info postuninstall utf-8-validate@1.2.1
+583 silly gentlyRm C:\Users\BTrapp\class2\node_modules\utf-8-validate is being purged from base C:\Users\BTrapp\class2
+584 verbose gentlyRm don't care about contents; nuking C:\Users\BTrapp\class2\node_modules\utf-8-validate
+585 silly vacuum-fs purging C:\Users\BTrapp\class2\node_modules\utf-8-validate
+586 silly vacuum-fs quitting because other entries in C:\Users\BTrapp\class2\node_modules
