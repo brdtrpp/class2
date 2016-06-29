@@ -10,8 +10,6 @@ Meteor.methods({
   },
 
   refundAttendee: function (att) {
-    console.log(att);
-
     if (att.charge) {
       var Stripe = StripeAPI(Meteor.settings.private.stripe);
       var stripeRefund = Meteor.wrapAsync(Stripe.refunds.create,Stripe.refunds);
@@ -56,29 +54,23 @@ Meteor.methods({
 
   charge: function(event, att) {
     var Stripe = StripeAPI(Meteor.settings.private.stripe);
-    var user = Meteor.users.findOne({_id: Meteor.userId()});
-    var owner = Meteor.users.findOne({_id: event.owner});
     var stripeCardCharge = Meteor.wrapAsync(Stripe.charges.create,Stripe.charges);
+
+    var user = Meteor.users.findOne({_id: att.owner});
+    var owner = Meteor.users.findOne({_id: event.owner});
+
     //end price is in cents and marked up 5%
     var endPrice = event.price * 110;
     var appfee = endPrice - ( event.price * 100 );
     var available = event.attendeeCount - Attendee.find({eventId: event._id}).count();
-    if (event.owner == Meteor.userId()) {
+    if (event.owner == att.owner) {
       throw new Meteor.Error('SelfReg', "Cannot signup for your own class.");
 
-    } else if (
-      Attendee.find({
-        eventId: event._id,
-        attendeeFirstName: att.attendeeFirstName,
-        attendeeLastName: att.attendeeLastName,
-        owner: Meteor.userId()
-      }).count() != 0){
-        throw new Meteor.Error('already', "That person has already registered for this class.");
-    } else if (Meteor.user().profile.cardId == undefined) {
+    } else if (user.profile.cardId == undefined) {
       throw new Meteor.Error('NoCard', "You don't have a card stored.");
     } else if (available === 0) {
       throw new Meteor.Error('NoSpace', "This class is full");
-    } else try{
+    } else try {
       return stripeCardCharge({
           amount: endPrice.toFixed(0),
           currency: "USD",
@@ -90,8 +82,8 @@ Meteor.methods({
     } catch(error) {
       throw new Meteor.Error("StripeAPIFailure", error.message);
     }
-  },
 
+  },
 
   createCustomer : function() {
     var Stripe = StripeAPI(Meteor.settings.private.stripe);

@@ -30,13 +30,19 @@ Meteor.methods({
       doc.to = Meteor.users.findOne({_id: att.owner}).emails[0].address;
       Meteor.call('sendEmail', doc);
     });
-
   },
 
   directEmail : function(doc, owner, eventId) {
     var eventOwner = CalEvent.findOne({_id: eventId}).owner;
     doc.from = Meteor.users.findOne({_id: eventOwner}).emails[0].address;
     doc.to = Meteor.users.findOne({_id: owner}).emails[0].address;
+    Meteor.call('sendEmail', doc);
+  },
+
+  chargeEmail : function(doc, owner) {
+    doc.from = "support@joinclass.co";
+    doc.to = Meteor.users.findOne({_id: owner}).emails[0].address;
+    
     Meteor.call('sendEmail', doc);
   },
 

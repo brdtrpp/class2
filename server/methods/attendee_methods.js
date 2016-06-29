@@ -27,6 +27,16 @@ Meteor.methods({
     }
   },
   
+  updateCharge: function(attendeeId, chargeId) {
+    Attendee.update(
+      { _id: attendeeId },
+      { $set:
+        {
+          charge: chargeId
+        },
+    });
+  },
+
   removeAtt: function(doc, att) {
     console.log(doc, att);
   },
