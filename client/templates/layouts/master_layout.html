@@ -1,6 +1,6 @@
 <template name="masterLayout">
   {{> navbar}}
-  <div class="main">
+  <div class="main" id='main'>
     {{#transition wrap="true" in="slideInDown:250" out="slideOutUp:250"}}
       {{> search}}
     {{/transition}}

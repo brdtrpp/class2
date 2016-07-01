@@ -7,5 +7,10 @@
     "stripe": "sk_test_DoVMrrwJ9MlbtCHBZJxIJCsz",
     "mailgunUser": "postmaster@sandboxf7f3336de933487a88369d70d3322c17.mailgun.org",
     "mailgunPass": "2b942150e7aa8d209bc5a5415e6ed67"
+  },
+  "galaxy.meteor.com": {
+    "env": {
+      "MONGO_URL": "mongodb://brdtrpp:Gr##nM0use3@ds025724-a0.mlab.com:25724,ds025724-a1.mlab.com:25724/<dbname>?replicaSet=rs-ds025724"
+    }
   }
 }
