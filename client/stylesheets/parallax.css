@@ -13,6 +13,8 @@
     color: white;
 }
 
+
+
 .parallax-landing-1 {
     /* The image used */
     background-image: url("/images/36814218_l.jpg");
@@ -26,5 +28,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    font-weight: bold;
+}
+
+.parallax-landing-2 {
+    /* The image used */
+    background-image: url("/images/MOSAIC.jpg");
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Set text colors */
+    color: black;
     font-weight: bold;
 }
