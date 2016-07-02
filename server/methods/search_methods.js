@@ -69,7 +69,7 @@ Meteor.methods({
     var nbrite = new Nbrite({token: "RO5ULF6LWEEJKUGQZHYD"});
 
     var queryNbrite = {
-      'q': doc.category,
+      'q': doc.category + " class",
       'location.address': doc.zip,
       'location.within': doc.radius + 'mi',
       'search_type': 'class',
@@ -80,7 +80,7 @@ Meteor.methods({
       var searchResult = data.events.slice(0, 25);
 
       searchResult.forEach(function(item, i, arr) {
-        console.log(item);
+        // console.log(item);
         events.push({
           description: item.description.html,
           start: item.start.utc,
@@ -102,7 +102,7 @@ Meteor.methods({
     });
 
     var queryMeetup = {
-      text: doc.category,
+      text: doc.category + " class",
       zip: doc.zip,
       radius: doc.radius,
       page: 15
