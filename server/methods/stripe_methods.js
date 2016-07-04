@@ -137,6 +137,7 @@ Meteor.methods({
         legal_entity: {
           first_name: doc.legalEntity.firstName,
           last_name: doc.legalEntity.lastName,
+          ssn_last_4: doc.legalEntity.last4,
           type: doc.legalEntity.type,
           address: {
             city: doc.address.city,
