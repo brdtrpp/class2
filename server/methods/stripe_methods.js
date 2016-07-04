@@ -127,6 +127,7 @@ Meteor.methods({
     var Stripe = StripeAPI(Meteor.settings.private.stripe);
     var user = Meteor.users.findOne({_id: Meteor.userId()});
     var stripeCreateAccount = Meteor.wrapAsync(Stripe.accounts.create,Stripe.accounts);
+    console.log(doc);
     try {
       return stripeCreateAccount({
         managed: true,
@@ -135,6 +136,7 @@ Meteor.methods({
         business_name: doc.businessName,
         external_account: stripeToken,
         legal_entity: {
+          business_name: doc.businessName, 
           first_name: doc.legalEntity.firstName,
           last_name: doc.legalEntity.lastName,
           ssn_last_4: doc.legalEntity.last4,
