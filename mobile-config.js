@@ -2,13 +2,13 @@
 // the entire section is optional.
 App.info({
   id: 'com.brad.joinclass',
-  version: "1.0.2",
+  version: "1.0.5",
   buildNumber: "4",
   name: 'Class',
   description: 'a marketplace for classes',
   author: 'Bradley Trapp',
   email: 'support@joinclass.co',
-  website: 'http://joinclass.co'
+  website: 'https://www.joinclass.co'
 });
 
 // Set up access rules

@@ -11,7 +11,7 @@
 
 .parallax-30em {
   /* Full height */
-  height: 30em;
+  height: 25em;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -19,20 +19,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
-}
-
-.parallax-about-4 {
-    /* The image used */
-    background-image: url("/images/missionpeak.jpg");
-
-    /* Full height */
-    height: 30em;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .parallax-faq {
