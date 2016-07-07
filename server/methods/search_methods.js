@@ -69,7 +69,7 @@ Meteor.methods({
     var nbrite = new Nbrite({token: "RO5ULF6LWEEJKUGQZHYD"});
 
     var queryNbrite = {
-      'q': doc.category + " class",
+      'q': doc.category + " classes",
       'location.address': doc.zip,
       'location.within': doc.radius + 'mi',
       'search_type': 'class',
@@ -102,7 +102,7 @@ Meteor.methods({
     });
 
     var queryMeetup = {
-      text: doc.category + " class",
+      text: doc.category + " classes",
       zip: doc.zip,
       radius: doc.radius,
       page: 15

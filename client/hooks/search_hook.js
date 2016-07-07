@@ -1,34 +1,69 @@
 AutoForm.hooks({
-  search:{
+  // search:{
+  //   onSubmit: function(doc) {
+  //     console.log('LANDING');
+  //
+  //     Session.set('search', false);
+  //     Session.set('loading', true);
+  //     Meteor.call('search', doc, function(error, result){
+  //       if (error) {
+  //         Bert.alert(error.message, 'warning');
+  //       } else {
+  //         Session.set('classes', result);
+  //       }
+  //     });
+  //     return false;
+  //   },
+  //   beginSubmit: function() {},
+  //   endSubmit: function() {}
+  // },
+
+  searchLanding:{
     onSubmit: function(doc) {
-      Meteor.call('search', doc, function(error, result){
-        if (error) {
-          Bert.alert(error.message, 'warning');
-        } else {
-          Session.set('classes', result);
+      var page = Session.get('page')
+      console.log(page);
+      if(page != 'eventSearch') {
+        Router.go('/classes');
+      }
+
+      if ( doc.zip || doc.radius != undefined) {
+
+        //Randomly generate category if no category is supplied
+        if (doc.category === undefined) {
+          doc.category = _.sample([
+            'academic',
+            'beauty_style',
+            'computer',
+            'crafts_hobbies',
+            'culinary',
+            'health_wellness',
+            'language',
+            'music',
+            'performance',
+            'sports',
+            'fitness',
+            'arts',
+            'religious',
+            'homeschool',
+            'other'
+          ]);
         }
-      });
+
+        //close modal
+        $('#searchModal').modal('hide')
+        Session.set('loading', true);
+        Meteor.call('search', doc, function(error, result){
+          if (error) {
+            Bert.alert(error.message, 'warning');
+          } else {
+            Session.set('classes', result);
+          }
+        });
+      }
       return false;
     },
     beginSubmit: function() {},
     endSubmit: function() {}
   },
 
-  searchLanding:{
-    onSubmit: function(doc) {
-      Router.go('/classes');
-      Session.set('search', false);
-      Session.set('loading', true);
-      Meteor.call('search', doc, function(error, result){
-        if (error) {
-          Bert.alert(error.message, 'warning');
-        } else {
-          Session.set('classes', result);
-        }
-      });
-      return false;
-    },
-    beginSubmit: function() {},
-    endSubmit: function() {}
-  },
 });

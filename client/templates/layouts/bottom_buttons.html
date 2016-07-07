@@ -5,8 +5,8 @@
       {{#if calendar}}
         <a class="btn btn-default prev">{{> leftArrow}}</a>
       {{/if}}
-        <a class="btn btn-default today">{{> calendarIcon}}</a>
-        <a class="btn btn-default search">{{> searchIcon}}</a>
+        <!-- <a class="btn btn-default today">{{> calendarIcon}}</a> -->
+        <a class="btn btn-default" data-toggle="modal" data-target="#searchModal">{{> searchIcon}}</a>
         <a class="btn btn-default home">{{> homeIcon}}</a>
         <a href="{{pathFor 'eventInsert'}}" class="btn btn-default">{{> addEventIcon}}</a>
         <a class="btn btn-default cached">{{> viewCycle}}</a>
