@@ -9,7 +9,3 @@ Meteor.publish('attendee', function() {
 Meteor.publish('allUsers', function() {
   return Meteor.users.find();
 });
-
-Meteor.publish('blog', function() {
-  return Blog.find({}, {sort: {createdAt: -1}});
-});

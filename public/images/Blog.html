@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://localhost:3000/blog -->
+<html class="gr__localhost"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="./Blog_files/merged-stylesheets.css">
+<script async="" id="facebook-jssdk" src="./Blog_files/sdk.js"></script><script async="" id="twitter-wjs" src="./Blog_files/widgets.js"></script><script type="text/javascript" src="./Blog_files/saved_resource"></script>
+	<script type="text/javascript" src="./Blog_files/checkout.js"></script>
+<meta name="fragment" content="!">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons"-->
+    <!--  rel="stylesheet">-->
+    <!--<link href="https://maxcdn.bootstrapcdn.com/bootswatch/latest/cosmo/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="shortcut icon" href="http://localhost:3000/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="http://localhost:3000/images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="http://localhost:3000/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="http://localhost:3000/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="http://localhost:3000/images/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="http://localhost:3000/images/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="http://localhost:3000/images/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="http://localhost:3000/images/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="http://localhost:3000/images/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost:3000/images/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="http://localhost:3000/images/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="http://localhost:3000/images/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="http://localhost:3000/images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="http://localhost:3000/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="http://localhost:3000/images/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="msapplication-config" content="browserconfig.xml">
+  <title>Blog</title>
+
+<style type="text/css"></style><link href="./Blog_files/github.min.css" rel="stylesheet"><link href="./Blog_files/font-awesome.css" rel="stylesheet"><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://fbstatic-a.akamaihd.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body data-gr-c-s-loaded="true">
+
+
+
+<script type="text/javascript">__meteor_runtime_config__ = JSON.parse(decodeURIComponent("%7B%22meteorRelease%22%3A%22METEOR%401.3.4.1%22%2C%22meteorEnv%22%3A%7B%22NODE_ENV%22%3A%22development%22%2C%22TEST_METADATA%22%3A%22%7B%7D%22%7D%2C%22PUBLIC_SETTINGS%22%3A%7B%22stripe%22%3A%22pk_test_Vxr8ildcaHAo9zWIcKiE0qOr%22%2C%22environ%22%3A%22development%22%7D%2C%22ROOT_URL%22%3A%22http%3A%2F%2Flocalhost%3A3000%2F%22%2C%22ROOT_URL_PATH_PREFIX%22%3A%22%22%2C%22accountsConfigCalled%22%3Atrue%2C%22appId%22%3A%22kppx571h1hmeu1hrdy25%22%2C%22autoupdateVersion%22%3A%22f2ece3d47d482adf3d438c06bb57660d48dae1f7%22%2C%22autoupdateVersionRefreshable%22%3A%22cc9c97c1935e4e324e097c4dd0172fd9158b7a36%22%2C%22autoupdateVersionCordova%22%3A%22none%22%7D"));</script>
+
+  <script type="text/javascript" src="./Blog_files/underscore.js"></script>
+  <script type="text/javascript" src="./Blog_files/meteor.js"></script>
+  <script type="text/javascript" src="./Blog_files/tracker.js"></script>
+  <script type="text/javascript" src="./Blog_files/deps.js"></script>
+  <script type="text/javascript" src="./Blog_files/modules-runtime.js"></script>
+  <script type="text/javascript" src="./Blog_files/modules.js"></script>
+  <script type="text/javascript" src="./Blog_files/jquery.js"></script>
+  <script type="text/javascript" src="./Blog_files/base64.js"></script>
+  <script type="text/javascript" src="./Blog_files/ejson.js"></script>
+  <script type="text/javascript" src="./Blog_files/check.js"></script>
+  <script type="text/javascript" src="./Blog_files/htmljs.js"></script>
+  <script type="text/javascript" src="./Blog_files/id-map.js"></script>
+  <script type="text/javascript" src="./Blog_files/promise.js"></script>
+  <script type="text/javascript" src="./Blog_files/ecmascript-runtime.js"></script>
+  <script type="text/javascript" src="./Blog_files/babel-compiler.js"></script>
+  <script type="text/javascript" src="./Blog_files/ecmascript.js"></script>
+  <script type="text/javascript" src="./Blog_files/babel-runtime.js"></script>
+  <script type="text/javascript" src="./Blog_files/random.js"></script>
+  <script type="text/javascript" src="./Blog_files/mongo-id.js"></script>
+  <script type="text/javascript" src="./Blog_files/diff-sequence.js"></script>
+  <script type="text/javascript" src="./Blog_files/observe-sequence.js"></script>
+  <script type="text/javascript" src="./Blog_files/reactive-var.js"></script>
+  <script type="text/javascript" src="./Blog_files/blaze.js"></script>
+  <script type="text/javascript" src="./Blog_files/ui.js"></script>
+  <script type="text/javascript" src="./Blog_files/spacebars.js"></script>
+  <script type="text/javascript" src="./Blog_files/templating.js"></script>
+  <script type="text/javascript" src="./Blog_files/iron_core.js"></script>
+  <script type="text/javascript" src="./Blog_files/iron_dynamic-template.js"></script>
+  <script type="text/javascript" src="./Blog_files/iron_layout.js"></script>
+  <script type="text/javascript" src="./Blog_files/iron_url.js"></script>
+  <script type="text/javascript" src="./Blog_files/iron_middleware-stack.js"></script>
+  <script type="text/javascript" src="./Blog_files/iron_location.js"></script>
+  <script type="text/javascript" src="./Blog_files/ordered-dict.js"></script>
+  <script type="text/javascript" src="./Blog_files/geojson-utils.js"></script>
+  <script type="text/javascript" src="./Blog_files/minimongo.js"></script>
+  <script type="text/javascript" src="./Blog_files/retry.js"></script>
+  <script type="text/javascript" src="./Blog_files/ddp-common.js"></script>
+  <script type="text/javascript" src="./Blog_files/reload.js"></script>
+  <script type="text/javascript" src="./Blog_files/ddp-client.js"></script>
+  <script type="text/javascript" src="./Blog_files/ddp.js"></script>
+  <script type="text/javascript" src="./Blog_files/ddp-server.js"></script>
+  <script type="text/javascript" src="./Blog_files/allow-deny.js"></script>
+  <script type="text/javascript" src="./Blog_files/mongo.js"></script>
+  <script type="text/javascript" src="./Blog_files/reactive-dict.js"></script>
+  <script type="text/javascript" src="./Blog_files/iron_controller.js"></script>
+  <script type="text/javascript" src="./Blog_files/iron_router.js"></script>
+  <script type="text/javascript" src="./Blog_files/npm-bcrypt.js"></script>
+  <script type="text/javascript" src="./Blog_files/ddp-rate-limiter.js"></script>
+  <script type="text/javascript" src="./Blog_files/localstorage.js"></script>
+  <script type="text/javascript" src="./Blog_files/callback-hook.js"></script>
+  <script type="text/javascript" src="./Blog_files/accounts-base.js"></script>
+  <script type="text/javascript" src="./Blog_files/sha.js"></script>
+  <script type="text/javascript" src="./Blog_files/srp.js"></script>
+  <script type="text/javascript" src="./Blog_files/accounts-password.js"></script>
+  <script type="text/javascript" src="./Blog_files/mrgalaxy_stripe.js"></script>
+  <script type="text/javascript" src="./Blog_files/session.js"></script>
+  <script type="text/javascript" src="./Blog_files/stylus.js"></script>
+  <script type="text/javascript" src="./Blog_files/anti_i18n.js"></script>
+  <script type="text/javascript" src="./Blog_files/twbs_bootstrap.js"></script>
+  <script type="text/javascript" src="./Blog_files/ian_accounts-ui-bootstrap-3.js"></script>
+  <script type="text/javascript" src="./Blog_files/aldeed_simple-schema.js"></script>
+  <script type="text/javascript" src="./Blog_files/livedata.js"></script>
+  <script type="text/javascript" src="./Blog_files/momentjs_moment.js"></script>
+  <script type="text/javascript" src="./Blog_files/mrt_moment.js"></script>
+  <script type="text/javascript" src="./Blog_files/mrt_moment-timezone.js"></script>
+  <script type="text/javascript" src="./Blog_files/raix_eventemitter.js"></script>
+  <script type="text/javascript" src="./Blog_files/aldeed_collection2-core.js"></script>
+  <script type="text/javascript" src="./Blog_files/aldeed_schema-index.js"></script>
+  <script type="text/javascript" src="./Blog_files/aldeed_schema-deny.js"></script>
+  <script type="text/javascript" src="./Blog_files/aldeed_collection2.js"></script>
+  <script type="text/javascript" src="./Blog_files/aldeed_autoform.js"></script>
+  <script type="text/javascript" src="./Blog_files/aldeed_autoform-bs-datetimepicker.js"></script>
+  <script type="text/javascript" src="./Blog_files/less.js"></script>
+  <script type="text/javascript" src="./Blog_files/coffeescript.js"></script>
+  <script type="text/javascript" src="./Blog_files/raix_handlebar-helpers.js"></script>
+  <script type="text/javascript" src="./Blog_files/html-tools.js"></script>
+  <script type="text/javascript" src="./Blog_files/blaze-tools.js"></script>
+  <script type="text/javascript" src="./Blog_files/spacebars-compiler.js"></script>
+  <script type="text/javascript" src="./Blog_files/mpowaga_string-template.js"></script>
+  <script type="text/javascript" src="./Blog_files/yogiben_autoform-modals.js"></script>
+  <script type="text/javascript" src="./Blog_files/rzymek_fullcalendar.js"></script>
+  <script type="text/javascript" src="./Blog_files/alanning_roles.js"></script>
+  <script type="text/javascript" src="./Blog_files/ongoworks_security.js"></script>
+  <script type="text/javascript" src="./Blog_files/useraccounts_core.js"></script>
+  <script type="text/javascript" src="./Blog_files/softwarerero_accounts-t9n.js"></script>
+  <script type="text/javascript" src="./Blog_files/useraccounts_iron-routing.js"></script>
+  <script type="text/javascript" src="./Blog_files/useraccounts_bootstrap.js"></script>
+  <script type="text/javascript" src="./Blog_files/aldeed_autoform-bs-button-group-input.js"></script>
+  <script type="text/javascript" src="./Blog_files/service-configuration.js"></script>
+  <script type="text/javascript" src="./Blog_files/tsega_bootstrap3-datetimepicker.js"></script>
+  <script type="text/javascript" src="./Blog_files/aldeed_template-extension.js"></script>
+  <script type="text/javascript" src="./Blog_files/adelq_moment-recur.js"></script>
+  <script type="text/javascript" src="./Blog_files/meteor-base.js"></script>
+  <script type="text/javascript" src="./Blog_files/mobile-experience.js"></script>
+  <script type="text/javascript" src="./Blog_files/blaze-html-templates.js"></script>
+  <script type="text/javascript" src="./Blog_files/logging.js"></script>
+  <script type="text/javascript" src="./Blog_files/fourseven_scss.js"></script>
+  <script type="text/javascript" src="./Blog_files/fortawesome_fontawesome.js"></script>
+  <script type="text/javascript" src="./Blog_files/themeteorchef_bert.js"></script>
+  <script type="text/javascript" src="./Blog_files/sacha_spin.js"></script>
+  <script type="text/javascript" src="./Blog_files/aldeed_autoform-bs-datepicker.js"></script>
+  <script type="text/javascript" src="./Blog_files/rajit_bootstrap3-datepicker.js"></script>
+  <script type="text/javascript" src="./Blog_files/mdg_geolocation.js"></script>
+  <script type="text/javascript" src="./Blog_files/doctorpangloss_filter-collections.js"></script>
+  <script type="text/javascript" src="./Blog_files/easysearch_core.js"></script>
+  <script type="text/javascript" src="./Blog_files/peerlibrary_assert.js"></script>
+  <script type="text/javascript" src="./Blog_files/peerlibrary_reactive-field.js"></script>
+  <script type="text/javascript" src="./Blog_files/peerlibrary_computed-field.js"></script>
+  <script type="text/javascript" src="./Blog_files/peerlibrary_base-component.js"></script>
+  <script type="text/javascript" src="./Blog_files/peerlibrary_data-lookup.js"></script>
+  <script type="text/javascript" src="./Blog_files/peerlibrary_blaze-components.js"></script>
+  <script type="text/javascript" src="./Blog_files/easysearch_components.js"></script>
+  <script type="text/javascript" src="./Blog_files/easy_search.js"></script>
+  <script type="text/javascript" src="./Blog_files/url.js"></script>
+  <script type="text/javascript" src="./Blog_files/http.js"></script>
+  <script type="text/javascript" src="./Blog_files/mrt_zipcodes.js"></script>
+  <script type="text/javascript" src="./Blog_files/email.js"></script>
+  <script type="text/javascript" src="./Blog_files/velocityjs_velocityjs.js"></script>
+  <script type="text/javascript" src="./Blog_files/ccorcos_transitioner.js"></script>
+  <script type="text/javascript" src="./Blog_files/rcy_nouislider.js"></script>
+  <script type="text/javascript" src="./Blog_files/elevatedevdesign_autoform-nouislider.js"></script>
+  <script type="text/javascript" src="./Blog_files/aldeed_autoform-select2.js"></script>
+  <script type="text/javascript" src="./Blog_files/mrt_isolate-value.js"></script>
+  <script type="text/javascript" src="./Blog_files/gadicohen_reactive-window.js"></script>
+  <script type="text/javascript" src="./Blog_files/hybrid_assets.js"></script>
+  <script type="text/javascript" src="./Blog_files/d3js_d3.js"></script>
+  <script type="text/javascript" src="./Blog_files/percolate_synced-cron.js"></script>
+  <script type="text/javascript" src="./Blog_files/cunneen_mailgun.js"></script>
+  <script type="text/javascript" src="./Blog_files/meteorhacks_npm.js"></script>
+  <script type="text/javascript" src="./Blog_files/npm-container.js"></script>
+  <script type="text/javascript" src="./Blog_files/webtempest_animate.js"></script>
+  <script type="text/javascript" src="./Blog_files/forwarder_autoform-wizard.js"></script>
+  <script type="text/javascript" src="./Blog_files/webapp.js"></script>
+  <script type="text/javascript" src="./Blog_files/velocity_meteor-internals.js"></script>
+  <script type="text/javascript" src="./Blog_files/velocity_core.js"></script>
+  <script type="text/javascript" src="./Blog_files/drewy_datetimepicker.js"></script>
+  <script type="text/javascript" src="./Blog_files/drewy_autoform-datetimepicker.js"></script>
+  <script type="text/javascript" src="./Blog_files/summernote_standalone.js"></script>
+  <script type="text/javascript" src="./Blog_files/mpowaga_autoform-summernote.js"></script>
+  <script type="text/javascript" src="./Blog_files/joshowens_timezone-picker.js"></script>
+  <script type="text/javascript" src="./Blog_files/djedi_sanitize-html.js"></script>
+  <script type="text/javascript" src="./Blog_files/meteorhacks_ssr.js"></script>
+  <script type="text/javascript" src="./Blog_files/standard-app-packages.js"></script>
+  <script type="text/javascript" src="./Blog_files/autoupdate.js"></script>
+  <script type="text/javascript" src="./Blog_files/meteor-platform.js"></script>
+  <script type="text/javascript" src="./Blog_files/launch-screen.js"></script>
+  <script type="text/javascript" src="./Blog_files/philip100_autoform-bs-country-field.js"></script>
+  <script type="text/javascript" src="./Blog_files/maazalik_highcharts.js"></script>
+  <script type="text/javascript" src="./Blog_files/meteorhacks_kadira.js"></script>
+  <script type="text/javascript" src="./Blog_files/standard-minifier-css.js"></script>
+  <script type="text/javascript" src="./Blog_files/standard-minifier-js.js"></script>
+  <script type="text/javascript" src="./Blog_files/meteorhacks_async.js"></script>
+  <script type="text/javascript" src="./Blog_files/chriswessels_hammer.js"></script>
+  <script type="text/javascript" src="./Blog_files/mrt_underscore-string-latest.js"></script>
+  <script type="text/javascript" src="./Blog_files/kaptron_minimongoid.js"></script>
+  <script type="text/javascript" src="./Blog_files/meteorhacks_inject-data.js"></script>
+  <script type="text/javascript" src="./Blog_files/chuangbo_cookie.js"></script>
+  <script type="text/javascript" src="./Blog_files/meteorhacks_fast-render.js"></script>
+  <script type="text/javascript" src="./Blog_files/meteorhacks_subs-manager.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_standard-packages.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_base-package.js"></script>
+  <script type="text/javascript" src="./Blog_files/mongo-livedata.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_storage-adapter.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_gridfs.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_s3.js"></script>
+  <script type="text/javascript" src="./Blog_files/aslagle_reactive-table.js"></script>
+  <script type="text/javascript" src="./Blog_files/liberation_shareit.js"></script>
+  <script type="text/javascript" src="./Blog_files/flawless_meteor-toastr.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_data-man.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_file.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_tempstore.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_http-methods.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_http-publish.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_access-point.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_reactive-property.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_reactive-list.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_power-queue.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_upload-http.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_collection.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_collection-filters.js"></script>
+  <script type="text/javascript" src="./Blog_files/cfs_worker.js"></script>
+  <script type="text/javascript" src="./Blog_files/spiderable.js"></script>
+  <script type="text/javascript" src="./Blog_files/ryw_blog.js"></script>
+  <script type="text/javascript" src="./Blog_files/hot-code-push.js"></script>
+  <script type="text/javascript" src="./Blog_files/global-imports.js"></script>
+  <script type="text/javascript" src="./Blog_files/app.js"></script>
+  <script type="text/javascript" src="./Blog_files/mdg_validation-error.js"></script>
+
+
+
+
+<iframe name="stripeXDM_default674527_provider" id="stripeXDM_default674527_provider" src="https://js.stripe.com/v2/channel.html?stripe_xdm_e=http%3A%2F%2Flocalhost%3A3000&amp;stripe_xdm_c=default674527&amp;stripe_xdm_p=1#__stripe_transport__" frameborder="0" style="position: absolute; top: -2000px; left: 0px;"></iframe>
+
+	<div class="modal" id="login-buttons-reset-password-modal-success">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title">Reset your password</h4>
+				</div>
+				<div class="modal-body">
+					
+	
+				</div>
+				<div class="modal-footer">
+					<a class="btn btn-default" id="login-buttons-dismiss-reset-password-success">Dismiss</a>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dalog -->
+	</div><!-- /.modal -->
+	
+	
+	
+	<div class="modal" id="login-buttons-message-dialog">
+		
+	</div><div class="bert-alert clearfix">
+    <div class="bert-container">
+      <div class="bert-gem">
+        <i class="fa"></i>
+      </div>
+      <div class="bert-content">
+        
+        <p></p>
+      </div>
+    </div>
+  </div><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f21ea0a427982e8&amp;origin=http%3A%2F%2Flocalhost%3A3000" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f21ea0a427982e8&amp;origin=http%3A%2F%2Flocalhost%3A3000" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div><nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only"></span>
+          <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<g id="Frame_-_24px">
+	<rect style="fill:none;" width="24" height="24"></rect>
+</g>
+<g id="Line_Icons">
+	<g>
+		<g>
+			<rect x="4" y="5" style="fill:white;" width="16" height="2"></rect>
+		</g>
+		<g>
+			<rect x="4" y="8.999" style="fill:white;" width="16" height="2"></rect>
+		</g>
+		<g>
+			<rect x="4" y="13" style="fill:white;" width="16" height="2"></rect>
+		</g>
+		<g>
+			<rect x="4" y="17" style="fill:white;" width="16" height="2"></rect>
+		</g>
+	</g>
+</g>
+</svg>
+        </button>
+        <a class="navbar-brand navclose" href="http://localhost:3000/">
+          <img alt="Class" height="20" src="./Blog_files/class-type.png">
+        </a>
+        
+        <ul class="nav navbar-nav pull-right">
+          <li><a style="padding-top: 12px; padding-bottom: 8px;" role="button" data-toggle="modal" data-target="#searchModal"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<g id="Frame_-_24px">
+	<rect y="0" style="fill:none;" width="24" height="24"></rect>
+</g>
+<g id="Line_Icons">
+	<g>
+		<path style="fill:white;" d="M21.707,20.293L16.314,14.9C17.403,13.504,18,11.799,18,10c0-2.137-0.833-4.146-2.344-5.656
+			C14.146,2.832,12.137,2,10,2S5.854,2.832,4.344,4.344C2.833,5.854,2,7.863,2,10s0.833,4.146,2.344,5.656
+			C5.854,17.168,7.863,18,10,18c1.799,0,3.504-0.596,4.9-1.686l5.393,5.392L21.707,20.293z M10,16c-1.603,0-3.109-0.624-4.242-1.757
+			C4.624,13.11,4,11.603,4,10c0-1.602,0.624-3.109,1.758-4.242C6.891,4.624,8.397,4,10,4s3.109,0.624,4.242,1.758
+			C15.376,6.891,16,8.398,16,10c0,1.603-0.624,3.11-1.758,4.243C13.109,15.376,11.603,16,10,16z"></path>
+	</g>
+</g>
+</svg></a></li>
+        </ul>
+        
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          
+            <li><a class="navclose" href="http://localhost:3000/how">How It Works</a></li>
+            <li><a class="navclose" href="http://localhost:3000/about">About Us</a></li>
+            <li><a class="navclose" href="http://localhost:3000/teach">Teach a Class</a></li>
+            <li><a class="navclose" href="http://localhost:3000/blog">Blog</a></li>
+            <li><a class="navclose" href="http://localhost:3000/register">Register</a></li>
+          
+          <li><a role="button" class="navclose" id="at-nav-button">Sign In</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="main" id="main">
+    <div class="meteor-blog-index">
+    
+      
+    This blog is looking pretty empty...
+  
+      
+    
+  </div>
+  </div>
+  
+  
+
+  
+  <!--Modal-->
+  <div class="modal fade modal-vertical-centered" id="modal-confirm-refund" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="myModalLabel">Confirm Refund</h4>
+        </div>
+        <div class="modal-body">
+          <span>Are you sure you want to get a refund?</span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary" id="btn-refund">Refund</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Modal-->
+  <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title" id="myModalLabel">Search Classes</h4>
+        </div>
+        <div class="modal-body">
+          
+  
+    
+    
+    
+  
+  
+  <form id="searchLanding" novalidate="novalidate">
+    
+
+    
+      
+    
+    
+      
+        
+  
+    
+    
+    <div class="form-group">
+    
+    <label for="2AkBPLaaRLa59Ft4g" class="control-label">Category</label>
+    
+    
+  
+    
+    
+    <select name="category" id="2AkBPLaaRLa59Ft4g" data-schema-key="category" autocomplete="off" class="form-control">
+    
+    
+    <option value="">(Select One)</option>
+    
+    
+    
+    <option value="academic">Academics</option>
+    
+    
+    
+    <option value="beauty_style">Beauty &amp; Style</option>
+    
+    
+    
+    <option value="computer">Computers &amp; Technology</option>
+    
+    
+    
+    <option value="crafts_hobbies">Craft &amp; Hobbies</option>
+    
+    
+    
+    <option value="culinary">Culinary</option>
+    
+    
+    
+    <option value="health_wellness">Health &amp; Wellness</option>
+    
+    
+    
+    <option value="language">Language</option>
+    
+    
+    
+    <option value="music">Music</option>
+    
+    
+    
+    <option value="performance">Performing Arts</option>
+    
+    
+    
+    <option value="sports">Sports &amp; Athletics</option>
+    
+    
+    
+    <option value="fitness">Fitness</option>
+    
+    
+    
+    <option value="arts">Creative Arts</option>
+    
+    
+    
+    <option value="religious">Religious</option>
+    
+    
+    
+    <option value="homeschool">Homeschool</option>
+    
+    
+    
+    <option value="other">Other</option>
+    
+    
+  </select>
+  
+  
+    <span class="help-block"></span>
+  </div>
+  
+  
+      
+    
+  
+  
+    
+    
+      
+        
+  
+    
+    
+    <div class="form-group" data-required="true">
+    
+    <label for="PwguBGxbLPPMcxMs8" class="control-label">Zip</label>
+    
+    
+  
+    
+    
+    <input type="text" name="zip" id="PwguBGxbLPPMcxMs8" required="" data-schema-key="zip" class="form-control">
+  
+  
+    <span class="help-block"></span>
+  </div>
+  
+  
+      
+    
+  
+  
+    
+    
+      
+        
+  
+    
+    
+    <div class="form-group">
+    
+    <label for="dxwvpw9JwSQC92FNp" class="control-label">Radius</label>
+    
+    
+  
+    
+    
+    <input type="number" name="radius" id="dxwvpw9JwSQC92FNp" data-schema-key="radius" class="form-control">
+  
+  
+    <span class="help-block"></span>
+  </div>
+  
+  
+      
+    
+  
+  
+    
+
+    
+
+    
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">
+          
+          Submit
+          
+        </button>
+      </div>
+    
+
+  
+  </form>
+  
+  
+  
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="afModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+					<h4 class="modal-title"></h4>
+				</div>
+				<div class="modal-body">
+					
+				</div>
+				
+			</div>
+		</div>
+	</div><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;"></iframe></body></html>

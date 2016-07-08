@@ -44,19 +44,19 @@
 .page-header h1 {
   font-size: 4em;
   font-weight: 600;
-  background-color: rgba(26, 110, 204,.5);
+  background-color: rgba(26, 110, 204,.75);
 }
 
 .page-header h2 {
   font-size: 3em;
   font-weight: 400;
-  background-color: rgba(26, 110, 204,.5);
+  background-color: rgba(26, 110, 204,.75);
 }
 
 .page-header h3 {
   font-size: 1.8em;
   font-weight: 800;
-  background-color: rgba(26, 110, 204,.5);
+  background-color: rgba(26, 110, 204,.75);
 
 }
 
