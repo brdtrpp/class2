@@ -1,12 +1,9 @@
 AutoForm.hooks({
-  blogInsert : {
-    before: {
-      insert:function(doc){
-        $('#blog').modal('hide');
-        return doc;
-      }
-    },
-    beginSubmit: function() {},
-    endSubmit: function() {}
-  }
+  // emailBlogAdmin:{
+  //   onSubmit: function(doc){
+  //     console.log(doc);
+  //   },
+  //   beginSubmit: function() {},
+  //   endSubmit: function() {}
+  // }
 });

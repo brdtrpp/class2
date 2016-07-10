@@ -136,7 +136,7 @@ Meteor.methods({
         business_name: doc.businessName,
         external_account: stripeToken,
         legal_entity: {
-          business_name: doc.businessName, 
+          business_name: doc.businessName,
           first_name: doc.legalEntity.firstName,
           last_name: doc.legalEntity.lastName,
           ssn_last_4: doc.legalEntity.last4,

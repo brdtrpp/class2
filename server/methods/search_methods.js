@@ -67,9 +67,9 @@ Meteor.methods({
 
     // Start Eventbrite //
     var nbrite = new Nbrite({token: "RO5ULF6LWEEJKUGQZHYD"});
-
+    console.log(doc);
     var queryNbrite = {
-      'q': doc.category + " classes",
+      'q': doc.category + " #Class",
       'location.address': doc.zip,
       'location.within': doc.radius + 'mi',
       'search_type': 'class',
@@ -78,9 +78,8 @@ Meteor.methods({
 
     nbrite.events().search(queryNbrite, function (err, data) {
       var searchResult = data.events.slice(0, 25);
-
       searchResult.forEach(function(item, i, arr) {
-        // console.log(item);
+        console.log("PRICE " + item.price);
         events.push({
           description: item.description.html,
           start: item.start.utc,
@@ -102,7 +101,7 @@ Meteor.methods({
     });
 
     var queryMeetup = {
-      text: doc.category + " classes",
+      text: doc.category + " lesson -trivia",
       zip: doc.zip,
       radius: doc.radius,
       page: 15
@@ -110,7 +109,7 @@ Meteor.methods({
 
     meetup.getOpenEvents(queryMeetup, function(err, data) {
       data.results.forEach(function(item, i, arr) {
-
+        console.log(item)
         var city = item.venue ? item.venue.city : "";
 
         events.push({
