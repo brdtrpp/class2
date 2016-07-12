@@ -1,0 +1,7 @@
+<template name="signInNav">
+  {{#if currentUser}}
+    <li><a role="button" class='navclose logout' id="at-nav-button">Sign Out</a></li>
+  {{else}}
+    <li><a role="button" class='navclose' id="at-nav-button" href={{pathFor 'signIn'}}>Sign In</a></li>
+  {{/if}}
+</template>
