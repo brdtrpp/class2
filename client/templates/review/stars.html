@@ -1,0 +1,42 @@
+<template name="stars">
+    <fieldset class="rating" data-event="{{_id}}" data-event-owner="{{eventOwner}}">{{average}}
+        <input type="checkbox" class="star5" name="rating" value="5" /><label class = "full" for="star5" title="5 stars" data-rating="5"><span class="glyphicon glyphicon-star"></span></label>
+        <input type="checkbox" class="star4" name="rating" value="4" /><label class = "full" for="star4" title="4 stars" data-rating="4"><span class="glyphicon glyphicon-star"></span></label>
+        <input type="checkbox" class="star3" name="rating" value="3" /><label class = "full" for="star3" title="3 stars" data-rating="3"><span class="glyphicon glyphicon-star"></span></label>
+        <input type="checkbox" class="star2" name="rating" value="2" /><label class = "full" for="star2" title="2 stars" data-rating="2"><span class="glyphicon glyphicon-star"></span></label>
+        <input type="checkbox" class="star1" name="rating" value="1" /><label class = "full" for="star1" title="1 star" data-rating="1"><span class="glyphicon glyphicon-star"></span></label>
+    </fieldset>
+
+    <!--MODAL-->
+
+    <div class="modal fade align-left" id="createReviewModal" role="dialog" aria-labelledby="createReviewModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <h4>Title: <strong id="modalTitle"></strong></h4>
+                        </div>
+                        <div class="form-group">
+                            <h4>Stars: <strong id="modalStars"></strong></h4>
+                        </div>
+                        <div class="form-group">
+                            <label for="review" class="control-label">Review:</label>
+                            <textarea class="form-control" id="modalReview"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button id="send-review" type="button" class="btn btn-primary">Send review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</template>
+

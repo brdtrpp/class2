@@ -64,6 +64,13 @@ Template.eventItemList.helpers({
     }
 
   },
+  isAvailableForVoting: function() {
+    if((new Date(this.end)).getTime() <= (new Date().getTime()))
+      if(Attendee.findOne({eventId: this._id, owner: Meteor.userId()}))
+        return true;
+
+    return false;
+  }
 });
 
 Template.eventItemList.events({

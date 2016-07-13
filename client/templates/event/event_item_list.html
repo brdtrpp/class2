@@ -28,7 +28,11 @@
         </div>
         <div class='row'>
           <div class='col-xs-12'>
-            <h4><strong>{{title}}</strong> - {{ownerName}} <strong><small>{{category}}</small></strong></h4>
+            <h4><strong>{{title}}</strong> - {{ownerName}} <strong><small>{{category}}</small></strong>
+                {{#if isAvailableForVoting}}
+                    <div class="pull-right">{{> stars}}</div>
+                {{/if}}
+            </h4>
           </div>
         </div>
       </div>
@@ -58,6 +62,10 @@
       <div class='panel-body'>
         <p>{{{description}}}</p>
       </div>
+        <div>
+            <hr>
+            {{> reviewList}}
+        </div>
           {{#if isAttendee}}
             <div class="panel-footer">
               {{#each attendee}}
