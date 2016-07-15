@@ -8,7 +8,7 @@
   },
   "description": "Find and sign-up for classes in your local area.",
   "scripts": {
-    "start": "meteor --settings settings-development.json --port $IP:$PORT",
+    "start": "meteor --settings settings-development.json",
     "test": "meteor deploy btclass.meteor.com --settings settings-development.json",
     "staging": "modulus env set METEOR_SETTINGS \"$(cat settings-development.json)\" -p 'class - Staging' && modulus deploy -p 'class'",
     "production": "modulus env set METEOR_SETTINGS \"$(cat settings-production.json)\" -p 'class' && modulus deploy -p 'class'",
