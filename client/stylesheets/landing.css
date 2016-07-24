@@ -98,3 +98,13 @@
   margin: 0 auto;
   width: 165px;
 }
+
+/*rgb(52,136,229)*/
+
+#grad {
+  background: '#1a6ecc'; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, rgba(75,149,232,.75),rgba(52,136,229,1)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(75,149,232,.75),rgba(52,136,229,1)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(75,149,232,.75),rgba(52,136,229,1)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(75,149,232,.75),rgba(52,136,229,1)); /* Standard syntax */
+}
