@@ -3,7 +3,5 @@ Template.teach.helpers({
 
   },
 
-  blog: function () {
-    return Blog.find().fetch()
-  }
+
 });
