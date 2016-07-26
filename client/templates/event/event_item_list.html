@@ -7,67 +7,77 @@
       </center>
     </div>
 
-
   {{else}}
-  <div class="container">
-      <a href="{{#if cList}} # {{else}} /class/{{_id}} {{/if}}" onclick="{{#if cList}} window.open('{{{url}}}', '_system'); {{else}} {{/if}}" role='button' class="body-click">
-      <span>
-        <div class="panel panel-default">
-      <div class="panel-heading">
-        <div class='row'>
-          <div class='col-xs-12'>
-            <h4 class='pull-right'>
-              <span>{{> dollarIcon}}{{customerPrice}}  </span>
-              {{#if cList}}
-              {{else}}
-                <span>{{> usersIcon}}{{aCount}}</span>
-              {{/if}}
-              {{> eventOwner}}
-            </h4>
-          </div>
-        </div>
-        <div class='row'>
-          <div class='col-xs-12'>
-            <h4><strong>{{title}}</strong> - {{ownerName}} <strong><small>{{category}}</small></strong></h4>
-          </div>
-        </div>
-      </div>
-
-      <ul class="list-group">
-        <li class="list-group-item">
+    <div class="container">
+        <a href="{{#if cList}} {{{url}}} {{else}} /class/{{_id}} {{/if}}" role='button' class="body-click" name="{{#if cList}}weblink{{else}}{{/if}}">
+        <span>
+          <div class="panel panel-default">
+        <div class="panel-heading">
           <div class='row'>
-            <div class='col-xs-6'>
-              <h4><strong>Dates</strong></h4>
-                <p><i>Start:</i> {{startDate}}</p>
-                {{#if endDate}}
-                  <p><i>End:</i> {{endDate}}</p>
+            <div class='col-xs-12'>
+              <h4 class='pull-right'>
+                <span>{{> dollarIcon}}{{customerPrice}}</span>
+                {{#if cList}}
+                {{else}}
+                  <span>{{> usersIcon}}{{aCount}}</span>
                 {{/if}}
-            </div>
-            <div class='col-xs-6'>
-              <h4><strong>Location</strong></h4>
-              {{#if cList}}
-                {{location}}
-              {{else}}
-                <p>{{street}}</p>
-                <p>{{city}}, {{state}}</p>
-              {{/if}}
+                {{> eventOwner}}
+              </h4>
             </div>
           </div>
-        </li>
-      </ul>
-      <div class='panel-body'>
-        <p>{{{description}}}</p>
-      </div>
-          {{#if isAttendee}}
-            <div class="panel-footer">
-              {{#each attendee}}
-                {{> attendeesItem}}
-              {{/each}}
+          <div class='row share-content'>
+            <div class='col-xs-12'>
+              <h4><strong class="title">{{title}}</strong> - {{ownerName}} <strong><small>{{category}}</small></strong>
+                  {{#if isAvailableForVoting}}
+                      <div class="pull-right">{{> stars}}</div>
+                  {{/if}}
+              </h4>
+              {{ #with this }}
+                {{ > share }}
+              {{ /with }}
             </div>
-          {{/if}}
+          </div>
         </div>
-      </span>
-    </a>
-  </div>
+
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div class='row'>
+              <div class='col-xs-6'>
+                <h4><strong>Dates</strong></h4>
+                  <p><i>Start:</i> {{startDate}}</p>
+                  {{#if endDate}}
+                    <p><i>End:</i> {{endDate}}</p>
+                  {{/if}}
+              </div>
+              <div class='col-xs-6'>
+                <h4><strong>Location</strong></h4>
+                {{#if cList}}
+                  {{location}}
+                {{else}}
+                  <p>{{street}}</p>
+                  <p>{{city}}, {{state}}</p>
+                {{/if}}
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class='panel-body'>
+          <p class="description">{{{description}}}</p>
+        </div>
+          <div>
+              <hr>
+              {{> reviewList}}
+          </div>
+            {{#if isAttendee}}
+              <div class="panel-footer">
+                {{#each attendee}}
+                  {{> attendeesItem}}
+                {{/each}}
+              </div>
+            {{/if}}
+          </div>
+        </span>
+      </a>
+    </div>
   {{/if}}
 </template>

@@ -8,6 +8,11 @@ Template.myAttend.helpers({
         var eventsearch = CalEvent.find({_id: item.eventId, canceled: false}).fetch();
         _.forEach(eventsearch, function(each){
           if (_.findWhere(events, {_id: each._id}) === undefined) {
+            var reviews = Review.find({eventId: each._id});
+            each.reviews = {
+              voted: !!Review.findOne({eventId: each._id, owner: Meteor.userId()}),
+              list: Review.find({eventId: each._id}).fetch()
+            };
             events.push(each);
           }
         });
@@ -20,7 +25,6 @@ Template.myAttend.helpers({
         });
       }
     });
-
     if (Session.equals("status", "refunded")){
       // console.log(refunded);
       return refunded;
@@ -28,7 +32,6 @@ Template.myAttend.helpers({
       return events;
     }
   },
-
   status: function() {
     return Session.get("status").toUpperCase();
   },

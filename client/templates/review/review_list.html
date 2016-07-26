@@ -1,0 +1,8 @@
+<template name="reviewList">
+    {{#if isExist}}
+        <div class="padding-left-hack"><b>REVIEWS</b></div>
+    {{/if}}
+    {{#each reviews}}
+        {{> reviewItem}}
+    {{/each}}
+</template>

@@ -79,7 +79,7 @@ Meteor.methods({
     nbrite.events().search(queryNbrite, function (err, data) {
       var searchResult = data.events.slice(0, 25);
       searchResult.forEach(function(item, i, arr) {
-        console.log("PRICE " + item.price);
+
         events.push({
           description: item.description.html,
           start: item.start.utc,
