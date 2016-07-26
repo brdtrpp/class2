@@ -32,11 +32,11 @@ AutoForm.hooks({
         if (doc.category === undefined) {
           doc.category = _.sample([
             'academic',
-            'beauty_style',
+            'style',
             'computer',
-            'crafts_hobbies',
+            'crafts',
             'culinary',
-            'health_wellness',
+            'health',
             'language',
             'music',
             'performance',

@@ -13,12 +13,11 @@ Template.eventSearch.helpers({
     });
 
     if(classes.length > 0){
-      Session.set('loading', false);
       Session.set('empty', false);
     }else{
-      Session.set('loading', false);
       Session.set('empty', true);
     }
+    Session.set('loading', false);
     return classes;
   },
 
@@ -36,9 +35,13 @@ Template.eventSearch.helpers({
 
 Template.eventSearch.onRendered( function() {
   Session.set("search", true);
+  Session.set('loading', true);
+  Session.set('classes', false);
 });
 
 
 Template.eventSearch.onDestroyed( function() {
   Session.set("search", false);
+  Session.set('loading', false);
+  Session.set('classes', false);
 });
