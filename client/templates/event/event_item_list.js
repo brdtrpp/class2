@@ -6,7 +6,7 @@ Template.eventItemList.helpers({
       return false;
     }
   },
-
+  
   noClass: function() {
     if (this._id === "NoClass") {
       return true;
@@ -62,7 +62,6 @@ Template.eventItemList.helpers({
     } else if (Session.equals("status", "attending")){
       return Attendee.find({eventId: this._id});
     }
-
   },
   isAvailableForVoting: function() {
     if((new Date(this.end)).getTime() <= (new Date().getTime()))
@@ -74,9 +73,20 @@ Template.eventItemList.helpers({
 });
 
 Template.eventItemList.events({
+  'click .body-click' : function (event) {
+    event.stopImmediatePropagation();
+
+    if (/facebook|twitter/.test(event.target.className)) {
+      return false;
+    }
+    else if(event.currentTarget.name == "weblink") {
+      window.open(event.currentTarget.href, '_system')
+
+      return false;
+    }
+  },
   'click .refund' : function () {
     var att = Attendee.findOne({eventId: this._id, owner: Meteor.userId(),});
-    console.log(att);
     Meteor.call('refundAttendee', att);
   },
 });

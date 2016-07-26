@@ -80,7 +80,6 @@ Meteor.methods({
       var searchResult = data.events.slice(0, 25);
 
       searchResult.forEach(function(item, i, arr) {
-        console.log(item);
         events.push({
           description: item.description.html,
           start: item.start.utc,
