@@ -9,7 +9,7 @@
     </div>
     <div class='container-fluid'>
       <div class='row black-bg'>
-        <div class='col-md-6 col-md-offset-2'>
+        <div class='col-md-12' align='center'>
           <div class="form-inline">
             {{#autoForm collection="Search" id="searchLanding"}}
               {{> afQuickField name="zip" autocomplete="off"}}
@@ -17,9 +17,6 @@
               <button type="submit" style="margin-bottom:10px" class="btn btn-success search" role='button'>Search</button>
             {{/autoForm}}
           </div>
-        </div>
-        <div class='col-md-3'>
-          <button href='/register' class='btn btn-warning'>CREATE A CLASS</button>
         </div>
       </div>
     </div>
@@ -125,41 +122,9 @@
       </div>
     </div>
 
-
-  <div class='container-fluid parallax-100' style="background-image:url(/images/watercolor-paper.jpg)">
-    <div class='container' align='center'>
-      <h1 align='center'><b>HOW WE ARE DIFFERENT</b></h1>
-      <div class='row'>
-        <div class='col-md-8'>
-          <h2><b>We believe learning should be social.</b> We don’t list weddings, parties or family reunions and although we offer both private and group activities, we feature more group classes than other platforms. All of our classes are in person.</h2>
-        </div>
-        <div class='col-md-4'>
-          <img src="/images/45183318_l.jpg" alt="..." class="img-responsive">
-        </div>
-      </div>
-      <div class='row'>
-        <div class='col-md-4'>
-          <img src="/images/14231677_l.jpg" alt="..." class="img-responsive">
-        </div>
-        <div class='col-md-8'>
-          <h2><b>We believe taking and teaching classes should be easy.</b> We worked hard on making CLASS simple to use for both Learners and Instructors by creating a platform with Less forms, Less time, More security.</h2>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='col-md-8'>
-          <h2><b>We believe exploring classes should be fun.</b> We encourage cool and unusual classes that you may not find on other platforms.</h2>
-        </div>
-        <div class='col-md-4'>
-          <img src="/images/41461713_l.jpg" alt="..." class="img-responsive">
-        </div>
-      </div>
-      <div  align='center'><a href='/register' class='btn btn-success' style='margin-bottom:25px; margin-top:25px'>CREATE MY FIRST CLASS</a></div>
-    </div>
-  </div>
-
-  <div class='container'>
+  <div class='container-fluid grey-bg'>
     <div class='row' align=center>
-      <h1><b>HOW IT WORKS</b></h1>
+      <h1><b><a href="{{pathFor 'how'}}">HOW IT WORKS</a></b></h1>
       <div class='col-md-6'>
         <h2>Learners</h2>
         <h3>Create a profile, add a credit card and explore exciting classes in your area.</h3>

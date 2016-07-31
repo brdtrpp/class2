@@ -78,7 +78,20 @@ Template.eventItem.events({
       console.log('refund');
     }
 
-  }
+  },
+
+  'click .body-click' : function (event) {
+    event.stopImmediatePropagation();
+
+    if (/facebook|twitter/.test(event.target.className)) {
+      return false;
+    }
+    else if(event.currentTarget.name == "weblink") {
+      window.open(event.currentTarget.href, '_system')
+
+      return false;
+    }
+  },
 });
 
 Template.eventItem.onRendered(function(){

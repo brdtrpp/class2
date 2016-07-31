@@ -20,12 +20,20 @@
               </h4>
             </div>
           </div>
-          <div class='row'>
+          <div class='row share-content'>
             <div class='col-xs-12'>
-              <h4><strong>{{title}}</strong> - <a href="{{link}}" role="button">{{ownerName}}</a> <strong><small>{{category}}</small></strong></h4>
+              <h4><strong class="title">{{title}}</strong> - {{ownerName}} <strong><small>{{category}}</small></strong>
+                  {{#if isAvailableForVoting}}
+                      <div class="pull-right">{{> stars}}</div>
+                  {{/if}}
+              </h4>
+              {{ #with this }}
+                {{ > share }}
+              {{ /with }}
             </div>
           </div>
         </div>
+        
         <ul class="list-group">
           <li class="list-group-item">
             <div class='row'>
