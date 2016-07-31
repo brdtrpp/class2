@@ -54,6 +54,7 @@ ecmascript-runtime@0.2.11_1
 ejson@1.0.12
 elevatedevdesign:autoform-nouislider@0.1.2
 email@1.0.14_1
+es5-shim@4.5.12_1
 facebook@1.2.8
 fastclick@1.0.12
 force-ssl@1.0.12
@@ -79,6 +80,7 @@ iron:router@1.0.13
 iron:url@1.0.11
 joshowens:timezone-picker@0.1.2
 jquery@1.11.9
+kadira:dochead@1.5.0
 launch-screen@1.0.12
 less@2.6.3_1
 livedata@1.0.18
@@ -91,6 +93,8 @@ meteor@1.1.15_1
 meteor-base@1.0.4
 meteor-platform@1.2.6
 meteorhacks:async@1.0.0
+meteorhacks:inject-data@2.0.0
+meteorhacks:inject-initial@1.0.4
 meteorhacks:kadira@2.29.1
 meteorhacks:meteorx@1.4.1
 meteorhacks:npm@1.5.0

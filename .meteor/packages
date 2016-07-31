@@ -82,3 +82,6 @@ ecmascript
 
 accounts-facebook
 accounts-twitter
+kadira:dochead
+meteorhacks:inject-data
+meteorhacks:inject-initial
